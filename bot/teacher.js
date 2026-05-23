@@ -23,9 +23,11 @@ function saveJSON(filePath, data) {
 
 function loadProgress() {
   if (!fs.existsSync(PROGRESS_FILE)) {
-    return { phase: 1, phase1_index: 0, current_day: 0, published_videos: [], last_publish_date: null };
+    return { phase: 1, phase1_index: 0, current_day: 0, day_video_index: 0, published_videos: [], last_publish_date: null };
   }
-  return loadJSON(PROGRESS_FILE);
+  const p = loadJSON(PROGRESS_FILE);
+  if (p.day_video_index === undefined) p.day_video_index = 0;
+  return p;
 }
 
 function sleep(ms) {
@@ -173,15 +175,14 @@ async function runPhase1(progress, pageId, accessToken) {
   log(`✅ Phase 1: ${progress.phase1_index}/${PHASE1_VIDEOS.length} videos published`);
 }
 
-// Phase 2: render + publish daily curriculum
+// Phase 2: render + publish daily curriculum (split into morning/evening batches)
 async function runPhase2(progress, pageId, accessToken) {
-  log("📚 Phase 2: Daily curriculum publishing");
-
   const today = new Date().toISOString().split("T")[0];
-  if (progress.last_publish_date === today) {
-    log("✅ Already published today's lesson");
-    return;
-  }
+  const hour = new Date().getHours();
+  const batch = process.env.BATCH || (hour < 12 ? "morning" : "evening");
+  const isMorning = batch === "morning";
+
+  log(`📚 Phase 2: Daily curriculum - ${batch} batch`);
 
   const curriculum = loadJSON(CURRICULUM_FILE);
   const words = loadJSON(WORDS_FILE);
@@ -189,11 +190,24 @@ async function runPhase2(progress, pageId, accessToken) {
   const verbs = loadJSON(VERBS_FILE);
 
   if (progress.current_day >= curriculum.days.length) {
-    log("🎉 All ${curriculum.days.length} days completed!");
+    log(`🎉 All ${curriculum.days.length} days completed!`);
     return;
   }
 
   const dayData = curriculum.days[progress.current_day];
+  const startIdx = isMorning ? 0 : 2;
+  const count = isMorning ? 2 : 3;
+
+  // Guard: skip if this batch was already done
+  if (progress.day_video_index >= startIdx + count) {
+    log(`✅ ${batch} batch already done for day ${dayData.day}`);
+    return;
+  }
+  if (progress.day_video_index < startIdx) {
+    log(`⏳ Waiting for previous batch before ${batch}`);
+    return;
+  }
+
   log(`📖 Day ${dayData.day}/${curriculum.days.length} - ${dayData.theme} (${dayData.level})`);
 
   const wordMap = {};
@@ -208,8 +222,9 @@ async function runPhase2(progress, pageId, accessToken) {
   }
 
   const renderResults = [];
+  const batchActivities = dayData.activities.slice(startIdx, startIdx + count);
 
-  for (const activity of dayData.activities) {
+  for (const activity of batchActivities) {
     let compositionId, props, outputFile;
     const durations = {
       MotDuJour: 12.5,
@@ -287,11 +302,17 @@ async function runPhase2(progress, pageId, accessToken) {
     }
   }
 
-  progress.current_day += 1;
+  progress.day_video_index += batchActivities.length;
   progress.published_videos.push(...renderResults);
   progress.last_publish_date = today;
+
+  if (!isMorning) {
+    progress.current_day += 1;
+    progress.day_video_index = 0;
+  }
+
   saveJSON(PROGRESS_FILE, progress);
-  log(`✅ Day ${dayData.day} done! ${renderResults.filter((r) => r.published).length}/5 published`);
+  log(`✅ Day ${dayData.day} ${batch} batch done! ${renderResults.filter((r) => r.published).length}/${batchActivities.length} published`);
 }
 
 // Main
