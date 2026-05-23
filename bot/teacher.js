@@ -90,9 +90,10 @@ async function publishToFacebook(videoPath, description, pageId, accessToken) {
   const url = `https://graph.facebook.com/v22.0/${pageId}/videos`;
 
   try {
-    const FormData = (await import("form-data")).default;
+    const videoBuffer = fs.readFileSync(videoPath);
+    const blob = new Blob([videoBuffer], { type: "video/mp4" });
     const form = new FormData();
-    form.append("source", fs.createReadStream(videoPath));
+    form.append("source", blob, path.basename(videoPath));
     form.append("description", description);
     form.append("access_token", accessToken);
 
