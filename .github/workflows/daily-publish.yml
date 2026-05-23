@@ -39,14 +39,9 @@ jobs:
         run: node bot/teacher.js
 
       - name: Save progress
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN || github.token }}
-        run: |
-          git config user.name "French Flow Bot"
-          git config user.email "bot@french-flow.com"
-          git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
-          if [ -f bot/progress.json ] && [ -s bot/progress.json ]; then
-            git add bot/progress.json
-            git diff --staged --quiet || git commit -m "🤖 Update progress $(date +%Y-%m-%d)"
-            git push
-          fi
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "🤖 Update progress $(date +%Y-%m-%d)"
+          file_pattern: bot/progress.json
+          commit_user_name: "French Flow Bot"
+          commit_user_email: "bot@french-flow.com"
