@@ -4,7 +4,6 @@ import {
   useCurrentFrame,
   interpolate,
   Easing,
-  Sequence,
 } from "remotion";
 import {
   fonts,
@@ -47,7 +46,7 @@ const GlowText: React.FC<{
   <span
     style={{
       ...style,
-      textShadow: `0 0 30px ${color}66, 0 0 60px ${color}33`,
+      textShadow: `0 0 40px ${color}88, 0 0 80px ${color}44, 0 0 120px ${color}22`,
     }}
   >
     {text}
@@ -61,15 +60,15 @@ const TagPill: React.FC<{ text: string; color?: string }> = ({
   <div
     style={{
       display: "inline-block",
-      padding: "6px 18px",
-      borderRadius: 20,
+      padding: "10px 28px",
+      borderRadius: 30,
       background: `${color}22`,
       border: `1px solid ${color}44`,
-      fontSize: 13,
-      fontWeight: 500,
+      fontSize: 18,
+      fontWeight: 600,
       fontFamily: fonts.body,
       color: color,
-      letterSpacing: 1,
+      letterSpacing: 2,
     }}
   >
     {text}
@@ -110,7 +109,6 @@ interface QuizData {
   correctIndex: number;
 }
 
-// ─── Motivation du Jour ────────────────────────────────────────
 export const MotDuJour: React.FC<{
   word: WordData;
   totalDuration: number;
@@ -130,42 +128,39 @@ export const MotDuJour: React.FC<{
       <GradientBackground />
       <TopBar label="MOT DU JOUR" progress={cf / contentFrames} />
       <AbsoluteFill style={{ justifyContent: "center", alignItems: "center" }}>
-        {/* French word */}
-        <div style={{ opacity: s, transform: `scale(${s})`, marginBottom: 8 }}>
+        <div style={{ opacity: s, transform: `scale(${s})`, marginBottom: 12 }}>
           <TagPill text={word.level} color={colors.accent2} />
         </div>
         <GlowText
           text={word.french}
           color={colors.accent}
           style={{
-            fontSize: 72,
+            fontSize: 96,
             fontWeight: 700,
             fontFamily: fonts.heading,
             color: colors.text,
-            marginBottom: 8,
+            marginBottom: 12,
             opacity: s,
             transform: `scale(${s})`,
           }}
         />
-        {/* Arabic translation */}
         <div
           style={{
-            fontSize: 28,
-            fontWeight: 400,
+            fontSize: 40,
+            fontWeight: 500,
             fontFamily: fonts.body,
             color: colors.accent2,
             opacity: s,
-            marginBottom: 36,
+            marginBottom: 48,
           }}
         >
           {word.arabic}
         </div>
-        {/* Example */}
         <GlassCard>
           <div
             style={{
-              fontSize: 18,
-              fontWeight: 300,
+              fontSize: 26,
+              fontWeight: 400,
               fontFamily: fonts.body,
               color: colors.text,
               fontStyle: "italic",
@@ -179,12 +174,12 @@ export const MotDuJour: React.FC<{
           </div>
           <div
             style={{
-              fontSize: 14,
+              fontSize: 20,
               fontWeight: 300,
               fontFamily: fonts.body,
               color: colors.textMuted,
               opacity: exOp * 0.7,
-              marginTop: 8,
+              marginTop: 12,
               textAlign: "center",
             }}
           >
@@ -196,7 +191,6 @@ export const MotDuJour: React.FC<{
   );
 };
 
-// ─── Phrase du Jour ────────────────────────────────────────────
 export const PhraseDuJour: React.FC<{
   word: WordData;
   totalDuration: number;
@@ -216,32 +210,31 @@ export const PhraseDuJour: React.FC<{
       <GradientBackground />
       <TopBar label="PHRASE DU JOUR" progress={cf / contentFrames} />
       <AbsoluteFill style={{ justifyContent: "center", alignItems: "center" }}>
-        <GlassCard width="90%">
+        <GlassCard width="92%">
           <div
             style={{
-              fontSize: 22,
-              fontWeight: 500,
+              fontSize: 32,
+              fontWeight: 600,
               fontFamily: fonts.heading,
               color: colors.text,
               textAlign: "center",
-              lineHeight: 2.2,
+              lineHeight: 2.4,
               display: "flex",
               flexWrap: "wrap",
               justifyContent: "center",
-              gap: 6,
+              gap: 8,
             }}
           >
             {words.map((w, i) => {
               const { opacity, y } = fadeSlide(cf, i * 8);
-              const bg = `${colors.glass}`;
               return (
                 <span
                   key={i}
                   style={{
                     display: "inline-block",
-                    padding: "6px 14px",
-                    borderRadius: 10,
-                    background: bg,
+                    padding: "10px 20px",
+                    borderRadius: 14,
+                    background: colors.glass,
                     border: `1px solid ${colors.glassBorder}`,
                     opacity,
                     transform: `translateY(${y}px)`,
@@ -251,11 +244,11 @@ export const PhraseDuJour: React.FC<{
                   <span
                     style={{
                       display: "block",
-                      fontSize: 12,
+                      fontSize: 18,
                       color: colors.accent2,
-                      fontWeight: 300,
-                      marginTop: 2,
-                      opacity: 0.8,
+                      fontWeight: 400,
+                      marginTop: 4,
+                      opacity: 0.85,
                     }}
                   >
                     {arabicWords[i] || ""}
@@ -270,7 +263,6 @@ export const PhraseDuJour: React.FC<{
   );
 };
 
-// ─── Grammaire ─────────────────────────────────────────────────
 export const Grammaire: React.FC<{
   grammar: GrammarData;
   totalDuration: number;
@@ -297,25 +289,25 @@ export const Grammaire: React.FC<{
           text={grammar.title}
           color={colors.accent2}
           style={{
-            fontSize: 32,
+            fontSize: 44,
             fontWeight: 700,
             fontFamily: fonts.heading,
             color: colors.text,
             opacity: tOp,
             transform: `translateY(${tY}px)`,
-            marginBottom: 6,
+            marginBottom: 8,
             textAlign: "center",
-            padding: "0 20px",
+            padding: "0 24px",
           }}
         />
         <div
           style={{
-            fontSize: 18,
-            fontWeight: 300,
+            fontSize: 26,
+            fontWeight: 400,
             fontFamily: fonts.body,
             color: colors.textMuted,
             opacity: tOp * 0.7,
-            marginBottom: 24,
+            marginBottom: 28,
           }}
         >
           {grammar.title_ar}
@@ -323,8 +315,8 @@ export const Grammaire: React.FC<{
         <GlassCard>
           <div
             style={{
-              fontSize: 16,
-              fontWeight: 300,
+              fontSize: 24,
+              fontWeight: 350,
               fontFamily: fonts.body,
               color: colors.text,
               textAlign: "center",
@@ -338,22 +330,22 @@ export const Grammaire: React.FC<{
           <div
             style={{
               opacity: eOp,
-              marginTop: 16,
+              marginTop: 20,
               display: "flex",
               flexDirection: "column",
-              gap: 8,
+              gap: 10,
             }}
           >
             {grammar.examples.map((ex, i) => (
               <div
                 key={i}
                 style={{
-                  fontSize: 16,
-                  fontWeight: 400,
+                  fontSize: 22,
+                  fontWeight: 500,
                   fontFamily: fonts.body,
                   color: colors.accent3,
-                  padding: "10px 18px",
-                  borderRadius: 10,
+                  padding: "14px 22px",
+                  borderRadius: 12,
                   background: `${colors.accent3}11`,
                   border: `1px solid ${colors.accent3}22`,
                   textAlign: "center",
@@ -369,7 +361,6 @@ export const Grammaire: React.FC<{
   );
 };
 
-// ─── Quiz ──────────────────────────────────────────────────────
 export const Quiz: React.FC<{
   quiz: QuizData;
   totalDuration: number;
@@ -390,14 +381,15 @@ export const Quiz: React.FC<{
       <AbsoluteFill style={{ justifyContent: "center", alignItems: "center" }}>
         <div
           style={{
-            fontSize: 26,
-            fontWeight: 600,
+            fontSize: 38,
+            fontWeight: 700,
             fontFamily: fonts.heading,
             color: colors.text,
             textAlign: "center",
-            marginBottom: 32,
+            marginBottom: 40,
             padding: "0 24px",
             opacity: springIn(cf),
+            textShadow: `0 0 30px ${colors.accent2}44`,
           }}
         >
           {quiz.question}
@@ -407,8 +399,8 @@ export const Quiz: React.FC<{
           style={{
             display: "flex",
             flexDirection: "column",
-            gap: 14,
-            width: "80%",
+            gap: 16,
+            width: "85%",
           }}
         >
           {quiz.options.map((opt, i) => {
@@ -429,18 +421,17 @@ export const Quiz: React.FC<{
               <div
                 key={i}
                 style={{
-                  padding: "16px 24px",
-                  borderRadius: 14,
+                  padding: "20px 28px",
+                  borderRadius: 16,
                   background: bg,
-                  border: `1px solid ${border}`,
-                  fontSize: 18,
-                  fontWeight: 500,
+                  border: `2px solid ${border}`,
+                  fontSize: 26,
+                  fontWeight: 600,
                   fontFamily: fonts.body,
                   color: txtColor,
                   textAlign: "center",
                   opacity: s,
                   transform: `scale(${s})`,
-                  transition: "all 0.1s",
                 }}
               >
                 {String.fromCharCode(65 + i)}. {opt}
@@ -453,7 +444,6 @@ export const Quiz: React.FC<{
   );
 };
 
-// ─── Conjugaison ───────────────────────────────────────────────
 export const Conjugaison: React.FC<{
   verb: VerbData;
   totalDuration: number;
@@ -479,29 +469,29 @@ export const Conjugaison: React.FC<{
           text={verb.infinitive}
           color={colors.accent}
           style={{
-            fontSize: 40,
+            fontSize: 56,
             fontWeight: 700,
             fontFamily: fonts.heading,
             color: colors.text,
             opacity: springIn(cf),
             transform: `scale(${springIn(cf)})`,
-            marginBottom: 4,
+            marginBottom: 8,
           }}
         />
         <div
           style={{
-            fontSize: 14,
-            fontWeight: 300,
+            fontSize: 22,
+            fontWeight: 400,
             fontFamily: fonts.body,
             color: colors.textMuted,
             opacity: springIn(cf) * 0.7,
-            marginBottom: 20,
+            marginBottom: 24,
           }}
         >
           {verb.arabic}
         </div>
 
-        <GlassCard width="70%">
+        <GlassCard width="75%">
           {pronouns.map((p, i) => {
             const s = springIn(cf, i * 4);
             return (
@@ -510,7 +500,7 @@ export const Conjugaison: React.FC<{
                 style={{
                   display: "flex",
                   justifyContent: "space-between",
-                  padding: "10px 16px",
+                  padding: "14px 20px",
                   borderBottom: i < pronouns.length - 1 ? `1px solid ${colors.glassBorder}` : "none",
                   opacity: s,
                   transform: `translateY(${interpolate(s, [0, 1], [10, 0])}px)`,
@@ -518,7 +508,7 @@ export const Conjugaison: React.FC<{
               >
                 <span
                   style={{
-                    fontSize: 18,
+                    fontSize: 26,
                     fontWeight: 600,
                     fontFamily: fonts.heading,
                     color: colors.textMuted,
@@ -528,11 +518,11 @@ export const Conjugaison: React.FC<{
                 </span>
                 <span
                   style={{
-                    fontSize: 20,
-                    fontWeight: 500,
+                    fontSize: 28,
+                    fontWeight: 600,
                     fontFamily: fonts.body,
                     color: colors.accent2,
-                    textShadow: `0 0 15px ${colors.accent2}44`,
+                    textShadow: `0 0 20px ${colors.accent2}44`,
                   }}
                 >
                   {verb.present[p]}
