@@ -1,0 +1,434 @@
+[
+  {
+    "id": 1,
+    "title": "Les articles définis",
+    "title_ar": "أدوات التعريف",
+    "level": "A1",
+    "explanation": "في الفرنسية، هناك أدوات تعريف: le (مذكر), la (مؤنث), les (جمع). تستخدم قبل الاسم لتحديده.",
+    "examples": ["Le livre est sur la table.", "La maison est grande.", "Les enfants jouent dans le parc."]
+  },
+  {
+    "id": 2,
+    "title": "Les articles indéfinis",
+    "title_ar": "أدوات التنكير",
+    "level": "A1",
+    "explanation": "أدوات التنكير في الفرنسية: un (مذكر), une (مؤنث), des (جمع). تستخدم للإشارة إلى شيء غير محدد.",
+    "examples": ["C'est un ami.", "J'ai une sœur.", "Il y a des livres sur la table."]
+  },
+  {
+    "id": 3,
+    "title": "Le genre des noms",
+    "title_ar": "جنس الأسماء",
+    "level": "A1",
+    "explanation": "الأسماء في الفرنسية إما مذكر أو مؤنث. يمكن معرفة الجنس من الأداة (le/un للذكر، la/une للأنثى).",
+    "examples": ["Le chat est mignon.", "La fleur est belle.", "Un garçon et une fille jouent."]
+  },
+  {
+    "id": 4,
+    "title": "Le pluriel des noms",
+    "title_ar": "جمع الأسماء",
+    "level": "A1",
+    "explanation": "عادةً يُجمع الاسم بإضافة s في النهاية. هناك استثناءات: الأسماء المنتهية بـ -s, -x, -z لا تتغير، والمنتهية بـ -au تأخذ x.",
+    "examples": ["Un livre → des livres.", "Un oiseau → des oiseaux.", "Un mois → des mois."]
+  },
+  {
+    "id": 5,
+    "title": "Le présent - 1er groupe (-er)",
+    "title_ar": "المضارع - المجموعة الأولى",
+    "level": "A1",
+    "explanation": "أفعال المجموعة الأولى تنتهي بـ -er في المصدر. تُصرف بإزالة -er وإضافة: e, es, e, ons, ez, ent.",
+    "examples": ["Je parle français.", "Tu manges une pomme.", "Nous écoutons la musique."]
+  },
+  {
+    "id": 6,
+    "title": "Le présent - 2e groupe (-ir)",
+    "title_ar": "المضارع - المجموعة الثانية",
+    "level": "A1",
+    "explanation": "أفعال المجموعة الثانية تنتهي بـ -ir وتأخذ -iss- في الجمع. تُصرف بإزالة -ir وإضافة: is, is, it, issons, issez, issent.",
+    "examples": ["Je finis mon travail.", "Tu choisis un cadeau.", "Nous réussissons l'examen."]
+  },
+  {
+    "id": 7,
+    "title": "Le présent - 3e groupe",
+    "title_ar": "المضارع - المجموعة الثالثة",
+    "level": "A1",
+    "explanation": "المجموعة الثالثة تضم الأفعال الشاذة وغير المنتظمة. لكل فعل تصريفه الخاص مثل prendre, venir, partir.",
+    "examples": ["Je prends le bus.", "Tu viens ce soir ?", "Ils partent en vacances."]
+  },
+  {
+    "id": 8,
+    "title": "Être et Avoir au présent",
+    "title_ar": "فِعلا الكينونة والملك في المضارع",
+    "level": "A1",
+    "explanation": "être (يكون) و avoir (يملك) هما أهم فعلين في الفرنسية. يُستخدمان في تكوين الأزمنة المركبة والتعبيرات.",
+    "examples": ["Je suis étudiant.", "Tu as un chien.", "Nous sommes contents."]
+  },
+  {
+    "id": 9,
+    "title": "Aller et Venir",
+    "title_ar": "فِعلا الذهاب والمجيء",
+    "level": "A1",
+    "explanation": "aller (يذهب) و venir (يأتي) فعلان شائعان. يستخدم aller في المستقبل القريب ويستخدم venir في الماضي القريب.",
+    "examples": ["Je vais à l'école.", "Tu viens du marché.", "Ils vont au cinéma."]
+  },
+  {
+    "id": 10,
+    "title": "La négation (ne...pas)",
+    "title_ar": "النفي",
+    "level": "A1",
+    "explanation": "في الفرنسية، النفي يكون بإحاطة الفعل بـ ne ... pas. ne تصبح n' قبل حرف علة.",
+    "examples": ["Je ne parle pas anglais.", "Il n'a pas de voiture.", "Nous ne mangeons pas de viande."]
+  },
+  {
+    "id": 11,
+    "title": "L'interrogation",
+    "title_ar": "الاستفهام",
+    "level": "A1",
+    "explanation": "هناك ثلاث طرق للسؤال: رفع نبرة الصوت، استخدام est-ce que، أو عكس الفعل والفاعل.",
+    "examples": ["Tu parles français ?", "Est-ce que tu viens ?", "Parlez-vous anglais ?"]
+  },
+  {
+    "id": 12,
+    "title": "Les adjectifs possessifs",
+    "title_ar": "صفات الملكية",
+    "level": "A1",
+    "explanation": "صفات الملكية: mon/ma/mes (ملكي), ton/ta/tes (ملكك), son/sa/ses (ملكه/ملكها), notre/nos (ملكنا), votre/vos (ملككم), leur/leurs (ملكهم).",
+    "examples": ["Mon livre est intéressant.", "Ta maison est belle.", "Leurs enfants sont à l'école."]
+  },
+  {
+    "id": 13,
+    "title": "Les adjectifs démonstratifs",
+    "title_ar": "صفات الإشارة",
+    "level": "A1",
+    "explanation": "صفات الإشارة: ce (مذكر), cette (مؤنث), ces (جمع). تستخدم للإشارة إلى شيء أو شخص.",
+    "examples": ["Ce livre est à moi.", "Cette fleur est jolie.", "Ces maisons sont anciennes."]
+  },
+  {
+    "id": 14,
+    "title": "Les prépositions de lieu",
+    "title_ar": "حروف الجر للمكان",
+    "level": "A1",
+    "explanation": "حروف الجر للمكان: sur (على), sous (تحت), dans (في), devant (أمام), derrière (خلف), entre (بين), à côté de (بجانب).",
+    "examples": ["Le chat est sous la table.", "La voiture est devant la maison.", "Le parc est à côté de l'école."]
+  },
+  {
+    "id": 15,
+    "title": "Les nombres de 1 à 100",
+    "title_ar": "الأعداد من 1 إلى 100",
+    "level": "A1",
+    "explanation": "الأعداد من 1 إلى 16 لها أسماء خاصة. 17-19 = dix + رقم. 20-69 تتبع نظاماً منتظماً. 70-100 لها تراكيب خاصة.",
+    "examples": ["J'ai vingt ans.", "Il y a trente élèves dans la classe.", "Soixante-dix euros, s'il vous plaît."]
+  },
+  {
+    "id": 16,
+    "title": "Les couleurs",
+    "title_ar": "الألوان",
+    "level": "A1",
+    "explanation": "الألوان في الفرنسية: rouge, bleu, vert, jaune, noir, blanc, gris, marron, violet, rose. تتطابق مع جنس الاسم.",
+    "examples": ["La voiture rouge est rapide.", "J'aime la robe bleue.", "Les yeux verts sont rares."]
+  },
+  {
+    "id": 17,
+    "title": "L'heure",
+    "title_ar": "الساعة والوقت",
+    "level": "A1",
+    "explanation": "للسؤال عن الوقت نقول: Quelle heure est-il ? وللتعبير عن الوقت نستخدم Il est ... heure(s).",
+    "examples": ["Il est une heure.", "Il est trois heures et demie.", "Il est midi."]
+  },
+  {
+    "id": 18,
+    "title": "Les jours de la semaine",
+    "title_ar": "أيام الأسبوع",
+    "level": "A1",
+    "explanation": "أيام الأسبوع: lundi, mardi, mercredi, jeudi, vendredi, samedi, dimanche. كلها مذكرة ولا تُكتب بحرف كبير.",
+    "examples": ["Nous travaillons du lundi au vendredi.", "Le samedi, je fais du sport.", "Dimanche est un jour de repos."]
+  },
+  {
+    "id": 19,
+    "title": "Les mois de l'année",
+    "title_ar": "أشهر السنة",
+    "level": "A1",
+    "explanation": "أشهر السنة: janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre. كلها مذكرة.",
+    "examples": ["Janvier est le premier mois.", "Je vais en France en juillet.", "L'école commence en septembre."]
+  },
+  {
+    "id": 20,
+    "title": "La date",
+    "title_ar": "التاريخ",
+    "level": "A1",
+    "explanation": "للتعبير عن التاريخ: Nous sommes + le + رقم + mois. اليوم الأول هو le premier. السنوات تُقرأ كعدد.",
+    "examples": ["Nous sommes le premier janvier.", "C'est le 14 juillet.", "Nous sommes en 2024."]
+  },
+  {
+    "id": 21,
+    "title": "Le passé composé avec avoir",
+    "title_ar": "الماضي المركب مع avoir",
+    "level": "A2",
+    "explanation": "الماضي المركب مع avoir يتكون من: avoir في المضارع + التصريف الثالث للفعل. يستخدم لمعظم الأفعال.",
+    "examples": ["J'ai mangé une pomme.", "Tu as fini tes devoirs.", "Nous avons vu un film."]
+  },
+  {
+    "id": 22,
+    "title": "Le passé composé avec être",
+    "title_ar": "الماضي المركب مع être",
+    "level": "A2",
+    "explanation": "16 فعلاً (معظمها حركة) تستخدم être في الماضي المركب. التصريف الثالث يتوافق مع الفاعل في الجنس والعدد.",
+    "examples": ["Elle est allée à Paris.", "Ils sont partis ce matin.", "Nous sommes arrivés en retard."]
+  },
+  {
+    "id": 23,
+    "title": "L'imparfait",
+    "title_ar": "الماضي الناقص",
+    "level": "A2",
+    "explanation": "الماضي الناقص يُستخدم لوصف الحالات والعادات في الماضي. يُصرف من جذر nous في المضارع + ais, ais, ait, ions, iez, aient.",
+    "examples": ["Quand j'étais petit, je jouais au parc.", "Il faisait beau hier.", "Nous habitions à Lyon."]
+  },
+  {
+    "id": 24,
+    "title": "Passé composé vs Imparfait",
+    "title_ar": "الفرق بين الماضي المركب والماضي الناقص",
+    "level": "A2",
+    "explanation": "الماضي المركب للأفعال المكتملة والمتكررة بعدد. الماضي الناقص للوصف والعادات والخلفية. غالباً ما يظهران معاً.",
+    "examples": ["Il pleuvait quand je suis sorti.", "Elle lisait pendant que je cuisinais.", "Nous jouions au tennis quand il a commencé à pleuvoir."]
+  },
+  {
+    "id": 25,
+    "title": "Le futur proche",
+    "title_ar": "المستقبل القريب",
+    "level": "A1",
+    "explanation": "المستقبل القريب: aller في المضارع + المصدر. يُستخدم للتعبير عن أفعال ستحدث قريباً.",
+    "examples": ["Je vais manger maintenant.", "Il va pleuvoir demain.", "Nous allons voyager en été."]
+  },
+  {
+    "id": 26,
+    "title": "Le futur simple",
+    "title_ar": "المستقبل البسيط",
+    "level": "A2",
+    "explanation": "المستقبل البسيط: المصدر + ai, as, a, ons, ez, ont. هناك أفعال شاذة مثل être → ser-, avoir → aur-.",
+    "examples": ["Je parlerai demain.", "Elle viendra samedi.", "Nous serons en vacances."]
+  },
+  {
+    "id": 27,
+    "title": "Le conditionnel présent",
+    "title_ar": "الشرط المضارع",
+    "level": "B1",
+    "explanation": "الشرط المضارع يُستخدم للتعبير عن الطلب المؤدب والاحتمال والشرط. يُصرف مثل المستقبل البسيط لكن مع نهايات imparfait.",
+    "examples": ["Je voudrais un café, s'il vous plaît.", "Il faudrait partir tôt.", "Si j'avais le temps, je viendrais."]
+  },
+  {
+    "id": 28,
+    "title": "Le subjonctif présent",
+    "title_ar": "المضارع الشرطي",
+    "level": "B1",
+    "explanation": "المضارع الشرطي يُستخدم بعد تعبيرات معينة مثل il faut que, bien que, pour que. يُصرف من جذر ils في المضارع + e, es, e, ions, iez, ent.",
+    "examples": ["Il faut que tu studies.", "Bien qu'il soit malade, il travaille.", "Pour que nous réussissions, travaillons."]
+  },
+  {
+    "id": 29,
+    "title": "Les pronoms COD (le, la, les)",
+    "title_ar": "ضمائر المفعول به المباشر",
+    "level": "A2",
+    "explanation": "le (لمفرد مذكر), la (لمفرد مؤنث), les (لجمع). تحل محل المفعول به المباشر وتوضع قبل الفعل.",
+    "examples": ["Je vois le chat → Je le vois.", "Il mange la pomme → Il la mange.", "Tu lis les livres → Tu les lis."]
+  },
+  {
+    "id": 30,
+    "title": "Les pronoms COI (lui, leur)",
+    "title_ar": "ضمائر المفعول به غير المباشر",
+    "level": "A2",
+    "explanation": "lui (له/لها - مفرد), leur (لهم - جمع). تحل محل المفعول به غير المباشر وتوضع قبل الفعل.",
+    "examples": ["Je parle à Marie → Je lui parle.", "Il écrit à ses parents → Il leur écrit.", "Nous téléphonons à Pierre → Nous lui téléphonons."]
+  },
+  {
+    "id": 31,
+    "title": "Les pronoms toniques",
+    "title_ar": "ضمائر التأكيد",
+    "level": "A1",
+    "explanation": "ضمائر التأكيد: moi, toi, lui, elle, nous, vous, eux, elles. تستخدم بعد prepositions وللتأكيد.",
+    "examples": ["Lui, il est français.", "Je vais chez elle ce soir.", "Toi et moi, nous sommes amis."]
+  },
+  {
+    "id": 32,
+    "title": "Les pronoms relatifs (qui, que)",
+    "title_ar": "ضمائر الوصل qui و que",
+    "level": "B1",
+    "explanation": "qui تحل محل الفاعل (الذي/التي), que تحل محل المفعول به (الذي/التي). qui تتبعها directamente الفعل، que يتبعه الفاعل.",
+    "examples": ["L'homme qui parle est mon père.", "Le livre que tu lis est intéressant.", "La femme que j'ai vue est partie."]
+  },
+  {
+    "id": 33,
+    "title": "Les pronoms relatifs (où, dont)",
+    "title_ar": "ضمائر الوصل où و dont",
+    "level": "B1",
+    "explanation": "où يدل على المكان أو الزمان (حيث), dont يحل محل de + اسم (الذي/التي ... منه/منها).",
+    "examples": ["La ville où je suis né.", "Le jour où nous sommes arrivés.", "Le film dont tu m'as parlé."]
+  },
+  {
+    "id": 34,
+    "title": "Le comparatif",
+    "title_ar": "صيغة المقارنة",
+    "level": "A2",
+    "explanation": "المقارنة: plus ... que (أكثر من), moins ... que (أقل من), aussi ... que (مثل). للصفات والظروف والأسماء.",
+    "examples": ["Il est plus grand que moi.", "Elle chante aussi bien que sa sœur.", "J'ai moins de livres que toi."]
+  },
+  {
+    "id": 35,
+    "title": "Le superlatif",
+    "title_ar": "صيغة التفضيل",
+    "level": "A2",
+    "explanation": "التفضيل: le/la/les plus ... (الأكثر), le/la/les moins ... (الأقل). توضع الأداة قبل الصفة.",
+    "examples": ["C'est le plus grand immeuble de la ville.", "Elle est la moins rapide.", "Ce sont les meilleurs restaurants."]
+  },
+  {
+    "id": 36,
+    "title": "La voix passive",
+    "title_ar": "المبني للمجهول",
+    "level": "B1",
+    "explanation": "المبني للمجهول: être + التصريف الثالث + par (بواسطة). الفاعل يصبح مفعولاً به والفعل يتوافق مع الفاعل الجديد.",
+    "examples": ["Le gâteau est mangé par les enfants.", "La lettre a été écrite par Marie.", "Les fenêtres sont fermées par le gardien."]
+  },
+  {
+    "id": 37,
+    "title": "Le gérondif",
+    "title_ar": "صيغة المصدر الظرفية",
+    "level": "B1",
+    "explanation": "le gérondif: en + جذر nous في المضارع + ant. يُستخدم للتعبير عن التزامن أو الطريقة.",
+    "examples": ["Elle chante en travaillant.", "Il lit en mangeant.", "En étudiant beaucoup, tu réussiras."]
+  },
+  {
+    "id": 38,
+    "title": "Les verbes pronominaux",
+    "title_ar": "الأفعال الضمائرية",
+    "level": "A2",
+    "explanation": "الأفعال الضمائرية تأتي مع ضمير (me, te, se, nous, vous, se) قبل الفعل. في الماضي المركب تأخذ être.",
+    "examples": ["Je me lève à sept heures.", "Il se lave les mains.", "Nous nous sommes promenés."]
+  },
+  {
+    "id": 39,
+    "title": "L'impératif",
+    "title_ar": "صيغة الأمر",
+    "level": "A2",
+    "explanation": "صيغة الأمر: تُستخدم لإعطاء أوامر أو نصائح. لها ثلاث صيغ: tu, nous, vous. الأفعال الضمائرية تحتفظ بالضمير بعد الفعل.",
+    "examples": ["Parle plus fort !", "Mangeons ensemble !", "Levez-vous !"]
+  },
+  {
+    "id": 40,
+    "title": "Les expressions de temps",
+    "title_ar": "تعبيرات الزمن",
+    "level": "A2",
+    "explanation": "تعبيرات الزمن: hier (أمس), aujourd'hui (اليوم), demain (غداً), maintenant (الآن), tout de suite (حالاً), bientôt (قريباً).",
+    "examples": ["Hier, j'ai travaillé toute la journée.", "Aujourd'hui, il fait beau.", "À bientôt !"]
+  },
+  {
+    "id": 41,
+    "title": "Les quantités et les articles partitifs",
+    "title_ar": "الكميات وأدوات التبعيض",
+    "level": "A2",
+    "explanation": "du, de la, de l', des تُستخدم للتعبير عن كمية غير محددة. بعد النفي ومع التعبير عن الكمية نستخدم de فقط.",
+    "examples": ["Je bois du café.", "Il y a de l'eau dans le frigo.", "Je ne mange pas de viande."]
+  },
+  {
+    "id": 42,
+    "title": "La place des adverbes",
+    "title_ar": "موقع الظروف",
+    "level": "A2",
+    "explanation": "الظروف القصيرة (bien, mal, trop, etc.) توضع بعد الفعل المُصَرَّف. في الأزمنة المركبة توضع بين الفعل المساعد والتصريف الثالث.",
+    "examples": ["Il parle bien français.", "J'ai bien dormi cette nuit.", "Elle travaille trop."]
+  },
+  {
+    "id": 43,
+    "title": "La place des adjectifs",
+    "title_ar": "موقع الصفات",
+    "level": "A1",
+    "explanation": "معظم الصفات توضع بعد الاسم. بعض الصفات القصيرة والشائعة (beau, bon, grand, petit, jeune, vieux) توضع قبل الاسم.",
+    "examples": ["Une maison blanche.", "Un grand garçon.", "Une belle fleur rouge."]
+  },
+  {
+    "id": 44,
+    "title": "Les prépositions de temps",
+    "title_ar": "حروف الجر للزمن",
+    "level": "A2",
+    "explanation": "à (في - ساعة), en (في - شهر/سنة/موسم), dans (بعد مدة), depuis (منذ - ومازال), pendant (لمدة), il y a (منذ - وانتهى).",
+    "examples": ["Je me lève à sept heures.", "Nous partons en juillet.", "J'habite ici depuis 2020."]
+  },
+  {
+    "id": 45,
+    "title": "Le discours rapporté",
+    "title_ar": "الكلام المنقول",
+    "level": "B1",
+    "explanation": "الكلام المنقول: في الماضي، يتحول المضارع إلى imparfait والمستقبل إلى conditionnel. تتغير الضمائر والظروف.",
+    "examples": ["Il a dit qu'il était fatigué.", "Elle a annoncé qu'elle viendrait.", "Ils ont dit qu'ils avaient travaillé."]
+  },
+  {
+    "id": 46,
+    "title": "Le plus-que-parfait",
+    "title_ar": "الماضي الأسبق",
+    "level": "B1",
+    "explanation": "الماضي الأسبق: avoir/être في imparfait + التصريف الثالث. يُستخدم للتعبير عن فعل وقع قبل فعل آخر في الماضي.",
+    "examples": ["Quand je suis arrivé, il avait déjà mangé.", "Elle avait fini ses devoirs avant de sortir.", "Nous étions déjà partis quand tu as téléphoné."]
+  },
+  {
+    "id": 47,
+    "title": "La cause et la conséquence",
+    "title_ar": "السبب والنتيجة",
+    "level": "B1",
+    "explanation": "للتعبير عن السبب: parce que, car, puisque, à cause de. للنتيجة: donc, alors, par conséquent, c'est pourquoi.",
+    "examples": ["Il est fatigué parce qu'il a beaucoup travaillé.", "Il pleut, donc nous restons à la maison.", "Puisque tu es prêt, partons."]
+  },
+  {
+    "id": 48,
+    "title": "L'opposition et la concession",
+    "title_ar": "التضاد والامتياز",
+    "level": "B2",
+    "explanation": "للتعبير عن التضاد: mais, cependant, pourtant, alors que. للامتياز: bien que (+ subjonctif), malgré (+ اسم).",
+    "examples": ["Il est riche mais il n'est pas heureux.", "Bien qu'il pleuve, je sors.", "Elle travaille beaucoup, pourtant elle est fatiguée."]
+  },
+  {
+    "id": 49,
+    "title": "Les hypothèses - si + présent, futur",
+    "title_ar": "الفرضيات 1 - إن الشرطية مع المضارع والمستقبل",
+    "level": "A2",
+    "explanation": "إذا + مضارع + مستقبل بسيط: تعبر عن فرضية محتملة. Si + présent, futur simple.",
+    "examples": ["Si tu travailles, tu réussiras.", "S'il fait beau, nous irons à la plage.", "Si j'ai le temps, je viendrai."]
+  },
+  {
+    "id": 50,
+    "title": "Les hypothèses - si + imparfait, conditionnel",
+    "title_ar": "الفرضيات 2 - إن الشرطية مع imparfait و conditionnel",
+    "level": "B1",
+    "explanation": "إذا + imparfait + conditionnel présent: تعبر عن فرضية غير محتملة أو مستحيلة حالياً.",
+    "examples": ["Si j'avais de l'argent, je voyagerais.", "Si tu venais, nous serions contents.", "Si je pouvais, je t'aiderais."]
+  },
+  {
+    "id": 51,
+    "title": "Le subjonctif passé",
+    "title_ar": "الماضي الشرطي",
+    "level": "B2",
+    "explanation": "الماضي الشرطي: avoir/être في subjonctif présent + التصريف الثالث. يُستخدم للتعبير عن فعل مضى قبل فعل آخر في الجملة.",
+    "examples": ["Bien qu'il ait travaillé, il n'a pas réussi.", "Je suis content qu'elle soit venue.", "Il faut que tu aies fini avant demain."]
+  },
+  {
+    "id": 52,
+    "title": "Le conditionnel passé",
+    "title_ar": "الشرط الماضي",
+    "level": "B2",
+    "explanation": "الشرط الماضي: avoir/être في conditionnel présent + التصريف الثالث. يُستخدم للتعبير عن الندم أو فرضية لم تتحقق.",
+    "examples": ["J'aurais aimé voyager.", "Elle serait venue si elle avait su.", "Nous aurions dû partir plus tôt."]
+  },
+  {
+    "id": 53,
+    "title": "Les pronoms possessifs",
+    "title_ar": "ضمائر الملكية",
+    "level": "B1",
+    "explanation": "ضمائر الملكية: le mien/la mienne/les miens/les miennes (ملكي), le tien..., le sien..., le nôtre..., le vôtre..., le leur...",
+    "examples": ["Ce livre est le mien.", "Ta maison est grande, mais la nôtre est petite.", "Leurs idées sont différentes des siennes."]
+  },
+  {
+    "id": 54,
+    "title": "Les pronoms démonstratifs",
+    "title_ar": "ضمائر الإشارة",
+    "level": "B1",
+    "explanation": "ضمائر الإشارة: celui (مذكر مفرد), celle (مؤنث مفرد), ceux (مذكر جمع), celles (مؤنث جمع). تتبع بـ -ci (قريب) أو -là (بعيد) أو جملة وصفية.",
+    "examples": ["Celui-ci est plus grand que celui-là.", "Celle que j'ai vue est partie.", "Ceux qui travaillent réussiront."]
+  }
+]

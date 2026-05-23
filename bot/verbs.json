@@ -1,0 +1,317 @@
+[
+  {
+    "id": 1,
+    "infinitive": "être",
+    "arabic": "يكون",
+    "level": "A1",
+    "present": { "je": "suis", "tu": "es", "il/elle": "est", "nous": "sommes", "vous": "êtes", "ils/elles": "sont" },
+    "passe_compose": { "je": "ai été", "tu": "as été", "il/elle": "a été", "nous": "avons été", "vous": "avez été", "ils/elles": "ont été" },
+    "imparfait": { "je": "étais", "tu": "étais", "il/elle": "était", "nous": "étions", "vous": "étiez", "ils/elles": "étaient" }
+  },
+  {
+    "id": 2,
+    "infinitive": "avoir",
+    "arabic": "يملك",
+    "level": "A1",
+    "present": { "je": "ai", "tu": "as", "il/elle": "a", "nous": "avons", "vous": "avez", "ils/elles": "ont" },
+    "passe_compose": { "je": "ai eu", "tu": "as eu", "il/elle": "a eu", "nous": "avons eu", "vous": "avez eu", "ils/elles": "ont eu" },
+    "imparfait": { "je": "avais", "tu": "avais", "il/elle": "avait", "nous": "avions", "vous": "aviez", "ils/elles": "avaient" }
+  },
+  {
+    "id": 3,
+    "infinitive": "aller",
+    "arabic": "يذهب",
+    "level": "A1",
+    "present": { "je": "vais", "tu": "vas", "il/elle": "va", "nous": "allons", "vous": "allez", "ils/elles": "vont" },
+    "passe_compose": { "je": "suis allé", "tu": "es allé", "il/elle": "est allé", "nous": "sommes allés", "vous": "êtes allés", "ils/elles": "sont allés" },
+    "imparfait": { "je": "allais", "tu": "allais", "il/elle": "allait", "nous": "allions", "vous": "alliez", "ils/elles": "allaient" }
+  },
+  {
+    "id": 4,
+    "infinitive": "faire",
+    "arabic": "يفعل/يعمل",
+    "level": "A1",
+    "present": { "je": "fais", "tu": "fais", "il/elle": "fait", "nous": "faisons", "vous": "faites", "ils/elles": "font" },
+    "passe_compose": { "je": "ai fait", "tu": "as fait", "il/elle": "a fait", "nous": "avons fait", "vous": "avez fait", "ils/elles": "ont fait" },
+    "imparfait": { "je": "faisais", "tu": "faisais", "il/elle": "faisait", "nous": "faisions", "vous": "faisiez", "ils/elles": "faisaient" }
+  },
+  {
+    "id": 5,
+    "infinitive": "parler",
+    "arabic": "يتحدث",
+    "level": "A1",
+    "present": { "je": "parle", "tu": "parles", "il/elle": "parle", "nous": "parlons", "vous": "parlez", "ils/elles": "parlent" },
+    "passe_compose": { "je": "ai parlé", "tu": "as parlé", "il/elle": "a parlé", "nous": "avons parlé", "vous": "avez parlé", "ils/elles": "ont parlé" },
+    "imparfait": { "je": "parlais", "tu": "parlais", "il/elle": "parlait", "nous": "parlions", "vous": "parliez", "ils/elles": "parlaient" }
+  },
+  {
+    "id": 6,
+    "infinitive": "finir",
+    "arabic": "ينهي",
+    "level": "A1",
+    "present": { "je": "finis", "tu": "finis", "il/elle": "finit", "nous": "finissons", "vous": "finissez", "ils/elles": "finissent" },
+    "passe_compose": { "je": "ai fini", "tu": "as fini", "il/elle": "a fini", "nous": "avons fini", "vous": "avez fini", "ils/elles": "ont fini" },
+    "imparfait": { "je": "finissais", "tu": "finissais", "il/elle": "finissait", "nous": "finissions", "vous": "finissiez", "ils/elles": "finissaient" }
+  },
+  {
+    "id": 7,
+    "infinitive": "vendre",
+    "arabic": "يبيع",
+    "level": "A1",
+    "present": { "je": "vends", "tu": "vends", "il/elle": "vend", "nous": "vendons", "vous": "vendez", "ils/elles": "vendent" },
+    "passe_compose": { "je": "ai vendu", "tu": "as vendu", "il/elle": "a vendu", "nous": "avons vendu", "vous": "avez vendu", "ils/elles": "ont vendu" },
+    "imparfait": { "je": "vendais", "tu": "vendais", "il/elle": "vendait", "nous": "vendions", "vous": "vendiez", "ils/elles": "vendaient" }
+  },
+  {
+    "id": 8,
+    "infinitive": "pouvoir",
+    "arabic": "يستطيع",
+    "level": "A2",
+    "present": { "je": "peux", "tu": "peux", "il/elle": "peut", "nous": "pouvons", "vous": "pouvez", "ils/elles": "peuvent" },
+    "passe_compose": { "je": "ai pu", "tu": "as pu", "il/elle": "a pu", "nous": "avons pu", "vous": "avez pu", "ils/elles": "ont pu" },
+    "imparfait": { "je": "pouvais", "tu": "pouvais", "il/elle": "pouvait", "nous": "pouvions", "vous": "pouviez", "ils/elles": "pouvaient" }
+  },
+  {
+    "id": 9,
+    "infinitive": "vouloir",
+    "arabic": "يريد",
+    "level": "A2",
+    "present": { "je": "veux", "tu": "veux", "il/elle": "veut", "nous": "voulons", "vous": "voulez", "ils/elles": "veulent" },
+    "passe_compose": { "je": "ai voulu", "tu": "as voulu", "il/elle": "a voulu", "nous": "avons voulu", "vous": "avez voulu", "ils/elles": "ont voulu" },
+    "imparfait": { "je": "voulais", "tu": "voulais", "il/elle": "voulait", "nous": "voulions", "vous": "vouliez", "ils/elles": "voulaient" }
+  },
+  {
+    "id": 10,
+    "infinitive": "devoir",
+    "arabic": "يجب/يدين",
+    "level": "A2",
+    "present": { "je": "dois", "tu": "dois", "il/elle": "doit", "nous": "devons", "vous": "devez", "ils/elles": "doivent" },
+    "passe_compose": { "je": "ai dû", "tu": "as dû", "il/elle": "a dû", "nous": "avons dû", "vous": "avez dû", "ils/elles": "ont dû" },
+    "imparfait": { "je": "devais", "tu": "devais", "il/elle": "devait", "nous": "devions", "vous": "deviez", "ils/elles": "devaient" }
+  },
+  {
+    "id": 11,
+    "infinitive": "savoir",
+    "arabic": "يعرف",
+    "level": "A2",
+    "present": { "je": "sais", "tu": "sais", "il/elle": "sait", "nous": "savons", "vous": "savez", "ils/elles": "savent" },
+    "passe_compose": { "je": "ai su", "tu": "as su", "il/elle": "a su", "nous": "avons su", "vous": "avez su", "ils/elles": "ont su" },
+    "imparfait": { "je": "savais", "tu": "savais", "il/elle": "savait", "nous": "savions", "vous": "saviez", "ils/elles": "savaient" }
+  },
+  {
+    "id": 12,
+    "infinitive": "venir",
+    "arabic": "يأتي",
+    "level": "A2",
+    "present": { "je": "viens", "tu": "viens", "il/elle": "vient", "nous": "venons", "vous": "venez", "ils/elles": "viennent" },
+    "passe_compose": { "je": "suis venu", "tu": "es venu", "il/elle": "est venu", "nous": "sommes venus", "vous": "êtes venus", "ils/elles": "sont venus" },
+    "imparfait": { "je": "venais", "tu": "venais", "il/elle": "venait", "nous": "venions", "vous": "veniez", "ils/elles": "venaient" }
+  },
+  {
+    "id": 13,
+    "infinitive": "prendre",
+    "arabic": "يأخذ",
+    "level": "A2",
+    "present": { "je": "prends", "tu": "prends", "il/elle": "prend", "nous": "prenons", "vous": "prenez", "ils/elles": "prennent" },
+    "passe_compose": { "je": "ai pris", "tu": "as pris", "il/elle": "a pris", "nous": "avons pris", "vous": "avez pris", "ils/elles": "ont pris" },
+    "imparfait": { "je": "prenais", "tu": "prenais", "il/elle": "prenait", "nous": "prenions", "vous": "preniez", "ils/elles": "prenaient" }
+  },
+  {
+    "id": 14,
+    "infinitive": "mettre",
+    "arabic": "يضع",
+    "level": "A2",
+    "present": { "je": "mets", "tu": "mets", "il/elle": "met", "nous": "mettons", "vous": "mettez", "ils/elles": "mettent" },
+    "passe_compose": { "je": "ai mis", "tu": "as mis", "il/elle": "a mis", "nous": "avons mis", "vous": "avez mis", "ils/elles": "ont mis" },
+    "imparfait": { "je": "mettais", "tu": "mettais", "il/elle": "mettait", "nous": "mettions", "vous": "mettiez", "ils/elles": "mettaient" }
+  },
+  {
+    "id": 15,
+    "infinitive": "dire",
+    "arabic": "يقول",
+    "level": "A2",
+    "present": { "je": "dis", "tu": "dis", "il/elle": "dit", "nous": "disons", "vous": "dites", "ils/elles": "disent" },
+    "passe_compose": { "je": "ai dit", "tu": "as dit", "il/elle": "a dit", "nous": "avons dit", "vous": "avez dit", "ils/elles": "ont dit" },
+    "imparfait": { "je": "disais", "tu": "disais", "il/elle": "disait", "nous": "disions", "vous": "disiez", "ils/elles": "disaient" }
+  },
+  {
+    "id": 16,
+    "infinitive": "voir",
+    "arabic": "يرى",
+    "level": "A2",
+    "present": { "je": "vois", "tu": "vois", "il/elle": "voit", "nous": "voyons", "vous": "voyez", "ils/elles": "voient" },
+    "passe_compose": { "je": "ai vu", "tu": "as vu", "il/elle": "a vu", "nous": "avons vu", "vous": "avez vu", "ils/elles": "ont vu" },
+    "imparfait": { "je": "voyais", "tu": "voyais", "il/elle": "voyait", "nous": "voyions", "vous": "voyiez", "ils/elles": "voyaient" }
+  },
+  {
+    "id": 17,
+    "infinitive": "croire",
+    "arabic": "يصدق/يعتقد",
+    "level": "A2",
+    "present": { "je": "crois", "tu": "crois", "il/elle": "croit", "nous": "croyons", "vous": "croyez", "ils/elles": "croient" },
+    "passe_compose": { "je": "ai cru", "tu": "as cru", "il/elle": "a cru", "nous": "avons cru", "vous": "avez cru", "ils/elles": "ont cru" },
+    "imparfait": { "je": "croyais", "tu": "croyais", "il/elle": "croyait", "nous": "croyions", "vous": "croyiez", "ils/elles": "croyaient" }
+  },
+  {
+    "id": 18,
+    "infinitive": "écrire",
+    "arabic": "يكتب",
+    "level": "A2",
+    "present": { "je": "écris", "tu": "écris", "il/elle": "écrit", "nous": "écrivons", "vous": "écrivez", "ils/elles": "écrivent" },
+    "passe_compose": { "je": "ai écrit", "tu": "as écrit", "il/elle": "a écrit", "nous": "avons écrit", "vous": "avez écrit", "ils/elles": "ont écrit" },
+    "imparfait": { "je": "écrivais", "tu": "écrivais", "il/elle": "écrivait", "nous": "écrivions", "vous": "écriviez", "ils/elles": "écrivaient" }
+  },
+  {
+    "id": 19,
+    "infinitive": "lire",
+    "arabic": "يقرأ",
+    "level": "A2",
+    "present": { "je": "lis", "tu": "lis", "il/elle": "lit", "nous": "lisons", "vous": "lisez", "ils/elles": "lisent" },
+    "passe_compose": { "je": "ai lu", "tu": "as lu", "il/elle": "a lu", "nous": "avons lu", "vous": "avez lu", "ils/elles": "ont lu" },
+    "imparfait": { "je": "lisais", "tu": "lisais", "il/elle": "lisait", "nous": "lisions", "vous": "lisiez", "ils/elles": "lisaient" }
+  },
+  {
+    "id": 20,
+    "infinitive": "partir",
+    "arabic": "يغادر",
+    "level": "A2",
+    "present": { "je": "pars", "tu": "pars", "il/elle": "part", "nous": "partons", "vous": "partez", "ils/elles": "partent" },
+    "passe_compose": { "je": "suis parti", "tu": "es parti", "il/elle": "est parti", "nous": "sommes partis", "vous": "êtes partis", "ils/elles": "sont partis" },
+    "imparfait": { "je": "partais", "tu": "partais", "il/elle": "partait", "nous": "partions", "vous": "partiez", "ils/elles": "partaient" }
+  },
+  {
+    "id": 21,
+    "infinitive": "sortir",
+    "arabic": "يخرج",
+    "level": "A2",
+    "present": { "je": "sors", "tu": "sors", "il/elle": "sort", "nous": "sortons", "vous": "sortez", "ils/elles": "sortent" },
+    "passe_compose": { "je": "suis sorti", "tu": "es sorti", "il/elle": "est sorti", "nous": "sommes sortis", "vous": "êtes sortis", "ils/elles": "sont sortis" },
+    "imparfait": { "je": "sortais", "tu": "sortais", "il/elle": "sortait", "nous": "sortions", "vous": "sortiez", "ils/elles": "sortaient" }
+  },
+  {
+    "id": 22,
+    "infinitive": "dormir",
+    "arabic": "ينام",
+    "level": "A2",
+    "present": { "je": "dors", "tu": "dors", "il/elle": "dort", "nous": "dormons", "vous": "dormez", "ils/elles": "dorment" },
+    "passe_compose": { "je": "ai dormi", "tu": "as dormi", "il/elle": "a dormi", "nous": "avons dormi", "vous": "avez dormi", "ils/elles": "ont dormi" },
+    "imparfait": { "je": "dormais", "tu": "dormais", "il/elle": "dormait", "nous": "dormions", "vous": "dormiez", "ils/elles": "dormaient" }
+  },
+  {
+    "id": 23,
+    "infinitive": "servir",
+    "arabic": "يخدم/يقدم",
+    "level": "B1",
+    "present": { "je": "sers", "tu": "sers", "il/elle": "sert", "nous": "servons", "vous": "servez", "ils/elles": "servent" },
+    "passe_compose": { "je": "ai servi", "tu": "as servi", "il/elle": "a servi", "nous": "avons servi", "vous": "avez servi", "ils/elles": "ont servi" },
+    "imparfait": { "je": "servais", "tu": "servais", "il/elle": "servait", "nous": "servions", "vous": "serviez", "ils/elles": "servaient" }
+  },
+  {
+    "id": 24,
+    "infinitive": "ouvrir",
+    "arabic": "يفتح",
+    "level": "B1",
+    "present": { "je": "ouvre", "tu": "ouvres", "il/elle": "ouvre", "nous": "ouvrons", "vous": "ouvrez", "ils/elles": "ouvrent" },
+    "passe_compose": { "je": "ai ouvert", "tu": "as ouvert", "il/elle": "a ouvert", "nous": "avons ouvert", "vous": "avez ouvert", "ils/elles": "ont ouvert" },
+    "imparfait": { "je": "ouvrais", "tu": "ouvrais", "il/elle": "ouvrait", "nous": "ouvrions", "vous": "ouvriez", "ils/elles": "ouvraient" }
+  },
+  {
+    "id": 25,
+    "infinitive": "offrir",
+    "arabic": "يهدي",
+    "level": "B1",
+    "present": { "je": "offre", "tu": "offres", "il/elle": "offre", "nous": "offrons", "vous": "offrez", "ils/elles": "offrent" },
+    "passe_compose": { "je": "ai offert", "tu": "as offert", "il/elle": "a offert", "nous": "avons offert", "vous": "avez offert", "ils/elles": "ont offert" },
+    "imparfait": { "je": "offrais", "tu": "offrais", "il/elle": "offrait", "nous": "offrions", "vous": "offriez", "ils/elles": "offraient" }
+  },
+  {
+    "id": 26,
+    "infinitive": "souffrir",
+    "arabic": "يعاني",
+    "level": "B1",
+    "present": { "je": "souffre", "tu": "souffres", "il/elle": "souffre", "nous": "souffrons", "vous": "souffrez", "ils/elles": "souffrent" },
+    "passe_compose": { "je": "ai souffert", "tu": "as souffert", "il/elle": "a souffert", "nous": "avons souffert", "vous": "avez souffert", "ils/elles": "ont souffert" },
+    "imparfait": { "je": "souffrais", "tu": "souffrais", "il/elle": "souffrait", "nous": "souffrions", "vous": "souffriez", "ils/elles": "souffraient" }
+  },
+  {
+    "id": 27,
+    "infinitive": "connaître",
+    "arabic": "يعرف/يعلم",
+    "level": "B1",
+    "present": { "je": "connais", "tu": "connais", "il/elle": "connaît", "nous": "connaissons", "vous": "connaissez", "ils/elles": "connaissent" },
+    "passe_compose": { "je": "ai connu", "tu": "as connu", "il/elle": "a connu", "nous": "avons connu", "vous": "avez connu", "ils/elles": "ont connu" },
+    "imparfait": { "je": "connaissais", "tu": "connaissais", "il/elle": "connaissait", "nous": "connaissions", "vous": "connaissiez", "ils/elles": "connaissaient" }
+  },
+  {
+    "id": 28,
+    "infinitive": "paraître",
+    "arabic": "يبدو",
+    "level": "B1",
+    "present": { "je": "parais", "tu": "parais", "il/elle": "paraît", "nous": "paraissons", "vous": "paraissez", "ils/elles": "paraissent" },
+    "passe_compose": { "je": "ai paru", "tu": "as paru", "il/elle": "a paru", "nous": "avons paru", "vous": "avez paru", "ils/elles": "ont paru" },
+    "imparfait": { "je": "paraissais", "tu": "paraissais", "il/elle": "paraissait", "nous": "paraissions", "vous": "paraissiez", "ils/elles": "paraissaient" }
+  },
+  {
+    "id": 29,
+    "infinitive": "vivre",
+    "arabic": "يعيش",
+    "level": "B1",
+    "present": { "je": "vis", "tu": "vis", "il/elle": "vit", "nous": "vivons", "vous": "vivez", "ils/elles": "vivent" },
+    "passe_compose": { "je": "ai vécu", "tu": "as vécu", "il/elle": "a vécu", "nous": "avons vécu", "vous": "avez vécu", "ils/elles": "ont vécu" },
+    "imparfait": { "je": "vivais", "tu": "vivais", "il/elle": "vivait", "nous": "vivions", "vous": "viviez", "ils/elles": "vivaient" }
+  },
+  {
+    "id": 30,
+    "infinitive": "suivre",
+    "arabic": "يتبع",
+    "level": "B1",
+    "present": { "je": "suis", "tu": "suis", "il/elle": "suit", "nous": "suivons", "vous": "suivez", "ils/elles": "suivent" },
+    "passe_compose": { "je": "ai suivi", "tu": "as suivi", "il/elle": "a suivi", "nous": "avons suivi", "vous": "avez suivi", "ils/elles": "ont suivi" },
+    "imparfait": { "je": "suivais", "tu": "suivais", "il/elle": "suivait", "nous": "suivions", "vous": "suiviez", "ils/elles": "suivaient" }
+  },
+  {
+    "id": 31,
+    "infinitive": "rire",
+    "arabic": "يضحك",
+    "level": "B1",
+    "present": { "je": "ris", "tu": "ris", "il/elle": "rit", "nous": "rions", "vous": "riez", "ils/elles": "rient" },
+    "passe_compose": { "je": "ai ri", "tu": "as ri", "il/elle": "a ri", "nous": "avons ri", "vous": "avez ri", "ils/elles": "ont ri" },
+    "imparfait": { "je": "riais", "tu": "riais", "il/elle": "riait", "nous": "riions", "vous": "riiez", "ils/elles": "riaient" }
+  },
+  {
+    "id": 32,
+    "infinitive": "conduire",
+    "arabic": "يقود",
+    "level": "B1",
+    "present": { "je": "conduis", "tu": "conduis", "il/elle": "conduit", "nous": "conduisons", "vous": "conduisez", "ils/elles": "conduisent" },
+    "passe_compose": { "je": "ai conduit", "tu": "as conduit", "il/elle": "a conduit", "nous": "avons conduit", "vous": "avez conduit", "ils/elles": "ont conduit" },
+    "imparfait": { "je": "conduisais", "tu": "conduisais", "il/elle": "conduisait", "nous": "conduisions", "vous": "conduisiez", "ils/elles": "conduisaient" }
+  },
+  {
+    "id": 33,
+    "infinitive": "traduire",
+    "arabic": "يترجم",
+    "level": "B2",
+    "present": { "je": "traduis", "tu": "traduis", "il/elle": "traduit", "nous": "traduisons", "vous": "traduisez", "ils/elles": "traduisent" },
+    "passe_compose": { "je": "ai traduit", "tu": "as traduit", "il/elle": "a traduit", "nous": "avons traduit", "vous": "avez traduit", "ils/elles": "ont traduit" },
+    "imparfait": { "je": "traduisais", "tu": "traduisais", "il/elle": "traduisait", "nous": "traduisions", "vous": "traduisiez", "ils/elles": "traduisaient" }
+  },
+  {
+    "id": 34,
+    "infinitive": "peindre",
+    "arabic": "يرسم/يدهن",
+    "level": "B2",
+    "present": { "je": "peins", "tu": "peins", "il/elle": "peint", "nous": "peignons", "vous": "peignez", "ils/elles": "peignent" },
+    "passe_compose": { "je": "ai peint", "tu": "as peint", "il/elle": "a peint", "nous": "avons peint", "vous": "avez peint", "ils/elles": "ont peint" },
+    "imparfait": { "je": "peignais", "tu": "peignais", "il/elle": "peignait", "nous": "peignions", "vous": "peigniez", "ils/elles": "peignaient" }
+  },
+  {
+    "id": 35,
+    "infinitive": "recevoir",
+    "arabic": "يتلقى",
+    "level": "B2",
+    "present": { "je": "reçois", "tu": "reçois", "il/elle": "reçoit", "nous": "recevons", "vous": "recevez", "ils/elles": "reçoivent" },
+    "passe_compose": { "je": "ai reçu", "tu": "as reçu", "il/elle": "a reçu", "nous": "avons reçu", "vous": "avez reçu", "ils/elles": "ont reçu" },
+    "imparfait": { "je": "recevais", "tu": "recevais", "il/elle": "recevait", "nous": "recevions", "vous": "receviez", "ils/elles": "recevaient" }
+  }
+]
