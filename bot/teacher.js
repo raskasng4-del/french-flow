@@ -122,6 +122,17 @@ async function runPhase1(progress, pageId, accessToken) {
     return;
   }
 
+  // Auto-skip Phase 1 if no pre-rendered videos exist
+  const firstVideo = path.join(OUTPUT_DIR, PHASE1_VIDEOS[0].file);
+  if (!fs.existsSync(firstVideo)) {
+    log("⚠️ No pre-rendered videos found. Skipping Phase 1 → Phase 2");
+    progress.phase = 2;
+    progress.current_day = 1;
+    saveJSON(PROGRESS_FILE, progress);
+    await runPhase2(progress, pageId, accessToken);
+    return;
+  }
+
   if (progress.phase1_index >= PHASE1_VIDEOS.length) {
     log("🎉 Phase 1 complete! Moving to Phase 2");
     progress.phase = 2;
