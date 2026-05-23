@@ -1,8 +1,6 @@
 name: French Flow Daily
 
 on:
-  push:
-    branches: [main]
   schedule:
     - cron: "0 8,18 * * *"
   workflow_dispatch:
