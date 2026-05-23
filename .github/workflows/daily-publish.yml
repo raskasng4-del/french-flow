@@ -34,3 +34,13 @@ jobs:
 
       - name: Run teacher bot
         run: node bot/teacher.js
+
+      - name: Save progress
+        run: |
+          git config user.name "French Flow Bot"
+          git config user.email "bot@french-flow.com"
+          if [ -f bot/progress.json ] && [ -s bot/progress.json ]; then
+            git add bot/progress.json
+            git diff --staged --quiet || git commit -m "🤖 Update progress $(date +%Y-%m-%d)"
+            git push
+          fi
