@@ -1,0 +1,834 @@
+[
+  {
+    "id": 1,
+    "french": "bonjour",
+    "arabic": "صباح الخير",
+    "level": "A1",
+    "example": "Bonjour, comment allez-vous ?",
+    "example_ar": "صباح الخير، كيف حالكم؟"
+  },
+  {
+    "id": 2,
+    "french": "merci",
+    "arabic": "شكراً",
+    "level": "A1",
+    "example": "Merci beaucoup pour votre aide.",
+    "example_ar": "شكراً جزيلاً على مساعدتكم."
+  },
+  {
+    "id": 3,
+    "french": "au revoir",
+    "arabic": "وداعاً",
+    "level": "A1",
+    "example": "Au revoir et bonne journée !",
+    "example_ar": "وداعاً ويوم سعيد!"
+  },
+  {
+    "id": 4,
+    "french": "s'il vous plaît",
+    "arabic": "من فضلك",
+    "level": "A1",
+    "example": "Un café, s'il vous plaît.",
+    "example_ar": "قهوة، من فضلك."
+  },
+  {
+    "id": 5,
+    "french": "oui",
+    "arabic": "نعم",
+    "level": "A1",
+    "example": "Oui, je comprends.",
+    "example_ar": "نعم، أنا أفهم."
+  },
+  {
+    "id": 6,
+    "french": "non",
+    "arabic": "لا",
+    "level": "A1",
+    "example": "Non, je ne sais pas.",
+    "example_ar": "لا، لا أعرف."
+  },
+  {
+    "id": 7,
+    "french": "homme",
+    "arabic": "رجل",
+    "level": "A1",
+    "example": "L'homme parle à son ami.",
+    "example_ar": "الرجل يتحدث إلى صديقه."
+  },
+  {
+    "id": 8,
+    "french": "femme",
+    "arabic": "امرأة",
+    "level": "A1",
+    "example": "La femme travaille dans un hôpital.",
+    "example_ar": "المرأة تعمل في مستشفى."
+  },
+  {
+    "id": 9,
+    "french": "enfant",
+    "arabic": "طفل",
+    "level": "A1",
+    "example": "L'enfant joue dans le parc.",
+    "example_ar": "الطفل يلعب في الحديقة."
+  },
+  {
+    "id": 10,
+    "french": "maison",
+    "arabic": "منزل",
+    "level": "A1",
+    "example": "La maison est grande et belle.",
+    "example_ar": "المنزل كبير وجميل."
+  },
+  {
+    "id": 11,
+    "french": "livre",
+    "arabic": "كتاب",
+    "level": "A1",
+    "example": "Je lis un livre intéressant.",
+    "example_ar": "أقرأ كتاباً ممتعاً."
+  },
+  {
+    "id": 12,
+    "french": "table",
+    "arabic": "طاولة",
+    "level": "A1",
+    "example": "Le livre est sur la table.",
+    "example_ar": "الكتاب على الطاولة."
+  },
+  {
+    "id": 13,
+    "french": "eau",
+    "arabic": "ماء",
+    "level": "A1",
+    "example": "Je bois de l'eau fraîche.",
+    "example_ar": "أشرب ماءً بارداً."
+  },
+  {
+    "id": 14,
+    "french": "pain",
+    "arabic": "خبز",
+    "level": "A1",
+    "example": "Le pain est frais ce matin.",
+    "example_ar": "الخبز طازج هذا الصباح."
+  },
+  {
+    "id": 15,
+    "french": "ami",
+    "arabic": "صديق",
+    "level": "A1",
+    "example": "Mon ami habite à Paris.",
+    "example_ar": "صديقي يسكن في باريس."
+  },
+  {
+    "id": 16,
+    "french": "école",
+    "arabic": "مدرسة",
+    "level": "A1",
+    "example": "Les enfants vont à l'école.",
+    "example_ar": "الأطفال يذهبون إلى المدرسة."
+  },
+  {
+    "id": 17,
+    "french": "travail",
+    "arabic": "عمل",
+    "level": "A1",
+    "example": "Je vais au travail en bus.",
+    "example_ar": "أذهب إلى العمل بالحافلة."
+  },
+  {
+    "id": 18,
+    "french": "jour",
+    "arabic": "يوم",
+    "level": "A1",
+    "example": "Bonne journée !",
+    "example_ar": "يوم سعيد!"
+  },
+  {
+    "id": 19,
+    "french": "nuit",
+    "arabic": "ليل",
+    "level": "A1",
+    "example": "Bonne nuit, fais de beaux rêves.",
+    "example_ar": "ليلة سعيدة، أحلام سعيدة."
+  },
+  {
+    "id": 20,
+    "french": "grand",
+    "arabic": "كبير",
+    "level": "A1",
+    "example": "Paris est une grande ville.",
+    "example_ar": "باريس مدينة كبيرة."
+  },
+  {
+    "id": 21,
+    "french": "petit",
+    "arabic": "صغير",
+    "level": "A1",
+    "example": "J'ai un petit chien.",
+    "example_ar": "لدي كلب صغير."
+  },
+  {
+    "id": 22,
+    "french": "bon",
+    "arabic": "جيد",
+    "level": "A1",
+    "example": "Ce restaurant est très bon.",
+    "example_ar": "هذا المطعم جيد جداً."
+  },
+  {
+    "id": 23,
+    "french": "mauvais",
+    "arabic": "سيء",
+    "level": "A1",
+    "example": "Le temps est mauvais aujourd'hui.",
+    "example_ar": "الطقس سيء اليوم."
+  },
+  {
+    "id": 24,
+    "french": "manger",
+    "arabic": "يأكل",
+    "level": "A1",
+    "example": "Nous mangeons à midi.",
+    "example_ar": "نأكل في الظهيرة."
+  },
+  {
+    "id": 25,
+    "french": "boire",
+    "arabic": "يشرب",
+    "level": "A1",
+    "example": "Je bois du café le matin.",
+    "example_ar": "أشرب القهوة في الصباح."
+  },
+  {
+    "id": 26,
+    "french": "dormir",
+    "arabic": "ينام",
+    "level": "A1",
+    "example": "Il dort huit heures par nuit.",
+    "example_ar": "ينام ثماني ساعات في الليلة."
+  },
+  {
+    "id": 27,
+    "french": "heureux",
+    "arabic": "سعيد",
+    "level": "A2",
+    "example": "Elle est très heureuse aujourd'hui.",
+    "example_ar": "هي سعيدة جداً اليوم."
+  },
+  {
+    "id": 28,
+    "french": "triste",
+    "arabic": "حزين",
+    "level": "A2",
+    "example": "Pourquoi es-tu triste ?",
+    "example_ar": "لماذا أنت حزين؟"
+  },
+  {
+    "id": 29,
+    "french": "rapide",
+    "arabic": "سريع",
+    "level": "A2",
+    "example": "Le TGV est très rapide.",
+    "example_ar": "القطار فائق السرعة سريع جداً."
+  },
+  {
+    "id": 30,
+    "french": "lent",
+    "arabic": "بطيء",
+    "level": "A2",
+    "example": "La tortue est lente mais patiente.",
+    "example_ar": "السلحفاة بطيئة لكن صبورة."
+  },
+  {
+    "id": 31,
+    "french": "chaud",
+    "arabic": "ساخن",
+    "level": "A2",
+    "example": "Il fait chaud aujourd'hui.",
+    "example_ar": "الجو حار اليوم."
+  },
+  {
+    "id": 32,
+    "french": "froid",
+    "arabic": "بارد",
+    "level": "A2",
+    "example": "L'eau est trop froide.",
+    "example_ar": "الماء بارد جداً."
+  },
+  {
+    "id": 33,
+    "french": "acheter",
+    "arabic": "يشتري",
+    "level": "A2",
+    "example": "J'achète du pain à la boulangerie.",
+    "example_ar": "أشتري خبزاً من المخبز."
+  },
+  {
+    "id": 34,
+    "french": "vendre",
+    "arabic": "يبيع",
+    "level": "A2",
+    "example": "Il vend sa voiture.",
+    "example_ar": "يبيع سيارته."
+  },
+  {
+    "id": 35,
+    "french": "parler",
+    "arabic": "يتحدث",
+    "level": "A2",
+    "example": "Tu parles très bien français.",
+    "example_ar": "أنت تتحدث الفرنسية جيداً جداً."
+  },
+  {
+    "id": 36,
+    "french": "écouter",
+    "arabic": "يستمع",
+    "level": "A2",
+    "example": "Nous écoutons de la musique.",
+    "example_ar": "نستمع إلى الموسيقى."
+  },
+  {
+    "id": 37,
+    "french": "lire",
+    "arabic": "يقرأ",
+    "level": "A2",
+    "example": "Elle lit le journal chaque matin.",
+    "example_ar": "هي تقرأ الجريدة كل صباح."
+  },
+  {
+    "id": 38,
+    "french": "écrire",
+    "arabic": "يكتب",
+    "level": "A2",
+    "example": "J'écris une lettre à ma mère.",
+    "example_ar": "أكتب رسالة إلى أمي."
+  },
+  {
+    "id": 39,
+    "french": "ville",
+    "arabic": "مدينة",
+    "level": "A2",
+    "example": "Lyon est une belle ville.",
+    "example_ar": "ليون مدينة جميلة."
+  },
+  {
+    "id": 40,
+    "french": "campagne",
+    "arabic": "ريف",
+    "level": "A2",
+    "example": "Je préfère la campagne à la ville.",
+    "example_ar": "أفضل الريف على المدينة."
+  },
+  {
+    "id": 41,
+    "french": "argent",
+    "arabic": "نقود",
+    "level": "A2",
+    "example": "Combien d'argent as-tu ?",
+    "example_ar": "كم من النقود لديك؟"
+  },
+  {
+    "id": 42,
+    "french": "temps",
+    "arabic": "وقت",
+    "level": "A2",
+    "example": "Je n'ai pas le temps.",
+    "example_ar": "ليس لدي وقت."
+  },
+  {
+    "id": 43,
+    "french": "famille",
+    "arabic": "عائلة",
+    "level": "A2",
+    "example": "Ma famille habite à Marseille.",
+    "example_ar": "عائلتي تسكن في مرسيليا."
+  },
+  {
+    "id": 44,
+    "french": "mère",
+    "arabic": "أم",
+    "level": "A2",
+    "example": "Ma mère est médecin.",
+    "example_ar": "أمي طبيبة."
+  },
+  {
+    "id": 45,
+    "french": "père",
+    "arabic": "أب",
+    "level": "A2",
+    "example": "Mon père est professeur.",
+    "example_ar": "أبي أستاذ."
+  },
+  {
+    "id": 46,
+    "french": "frère",
+    "arabic": "أخ",
+    "level": "A2",
+    "example": "J'ai deux frères et une sœur.",
+    "example_ar": "لدي أخوان وأخت."
+  },
+  {
+    "id": 47,
+    "french": "sœur",
+    "arabic": "أخت",
+    "level": "A2",
+    "example": "Ma sœur étudie à l'université.",
+    "example_ar": "أختي تدرس في الجامعة."
+  },
+  {
+    "id": 48,
+    "french": "fils",
+    "arabic": "ابن",
+    "level": "A2",
+    "example": "Leur fils a cinq ans.",
+    "example_ar": "ابنهم عمره خمس سنوات."
+  },
+  {
+    "id": 49,
+    "french": "fille",
+    "arabic": "ابنة",
+    "level": "A2",
+    "example": "Leur fille s'appelle Marie.",
+    "example_ar": "ابنتهم اسمها ماري."
+  },
+  {
+    "id": 50,
+    "french": "mari",
+    "arabic": "زوج",
+    "level": "A2",
+    "example": "Son mari est ingénieur.",
+    "example_ar": "زوجها مهندس."
+  },
+  {
+    "id": 51,
+    "french": "épouse",
+    "arabic": "زوجة",
+    "level": "A2",
+    "example": "Son épouse est charmante.",
+    "example_ar": "زوجته ساحرة."
+  },
+  {
+    "id": 52,
+    "french": "repas",
+    "arabic": "وجبة",
+    "level": "A2",
+    "example": "Le repas est à vingt heures.",
+    "example_ar": "الوجبة في الساعة الثامنة."
+  },
+  {
+    "id": 53,
+    "french": "content",
+    "arabic": "مسرور",
+    "level": "B1",
+    "example": "Je suis content de te voir.",
+    "example_ar": "أنا مسرور برؤيتك."
+  },
+  {
+    "id": 54,
+    "french": "fatigué",
+    "arabic": "متعب",
+    "level": "B1",
+    "example": "Je suis fatigué après le travail.",
+    "example_ar": "أنا متعب بعد العمل."
+  },
+  {
+    "id": 55,
+    "french": "malade",
+    "arabic": "مريض",
+    "level": "B1",
+    "example": "Il est malade depuis trois jours.",
+    "example_ar": "هو مريض منذ ثلاثة أيام."
+  },
+  {
+    "id": 56,
+    "french": "riche",
+    "arabic": "غني",
+    "level": "B1",
+    "example": "Ce pays est très riche en pétrole.",
+    "example_ar": "هذا البلد غني جداً بالنفط."
+  },
+  {
+    "id": 57,
+    "french": "beau",
+    "arabic": "جميل",
+    "level": "B1",
+    "example": "Quel beau paysage !",
+    "example_ar": "يا له من منظر جميل!"
+  },
+  {
+    "id": 58,
+    "french": "laid",
+    "arabic": "قبيح",
+    "level": "B1",
+    "example": "Ce bâtiment moderne est très laid.",
+    "example_ar": "هذا المبنى الحديث قبيح جداً."
+  },
+  {
+    "id": 59,
+    "french": "jeune",
+    "arabic": "شاب",
+    "level": "B1",
+    "example": "Elle est encore jeune.",
+    "example_ar": "هي لا تزال شابة."
+  },
+  {
+    "id": 60,
+    "french": "vieux",
+    "arabic": "عجوز",
+    "level": "B1",
+    "example": "Ce château est très vieux.",
+    "example_ar": "هذه القلعة قديمة جداً."
+  },
+  {
+    "id": 61,
+    "french": "nouveau",
+    "arabic": "جديد",
+    "level": "B1",
+    "example": "J'ai un nouvel appartement.",
+    "example_ar": "لدي شقة جديدة."
+  },
+  {
+    "id": 62,
+    "french": "ancien",
+    "arabic": "قديم",
+    "level": "B1",
+    "example": "C'est une ancienne tradition.",
+    "example_ar": "هذا تقليد قديم."
+  },
+  {
+    "id": 63,
+    "french": "cher",
+    "arabic": "غالي",
+    "level": "B1",
+    "example": "Cette montre est très chère.",
+    "example_ar": "هذه الساعة غالية جداً."
+  },
+  {
+    "id": 64,
+    "french": "pauvre",
+    "arabic": "فقير",
+    "level": "B1",
+    "example": "Il aide les familles pauvres.",
+    "example_ar": "هو يساعد العائلات الفقيرة."
+  },
+  {
+    "id": 65,
+    "french": "fort",
+    "arabic": "قوي",
+    "level": "B1",
+    "example": "Il est très fort en mathématiques.",
+    "example_ar": "هو قوي جداً في الرياضيات."
+  },
+  {
+    "id": 66,
+    "french": "faible",
+    "arabic": "ضعيف",
+    "level": "B1",
+    "example": "Il se sent faible après la maladie.",
+    "example_ar": "يشعر بالضعف بعد المرض."
+  },
+  {
+    "id": 67,
+    "french": "propre",
+    "arabic": "نظيف",
+    "level": "B1",
+    "example": "La chambre est propre.",
+    "example_ar": "الغرفة نظيفة."
+  },
+  {
+    "id": 68,
+    "french": "sale",
+    "arabic": "وسخ",
+    "level": "B1",
+    "example": "Les vêtements sont sales.",
+    "example_ar": "الملابس وسخة."
+  },
+  {
+    "id": 69,
+    "french": "long",
+    "arabic": "طويل",
+    "level": "B1",
+    "example": "Le film était trop long.",
+    "example_ar": "الفيلم كان طويلاً جداً."
+  },
+  {
+    "id": 70,
+    "french": "court",
+    "arabic": "قصير",
+    "level": "B1",
+    "example": "Les jours sont courts en hiver.",
+    "example_ar": "الأيام قصيرة في الشتاء."
+  },
+  {
+    "id": 71,
+    "french": "facile",
+    "arabic": "سهل",
+    "level": "B1",
+    "example": "Cet exercice est facile.",
+    "example_ar": "هذا التمرين سهل."
+  },
+  {
+    "id": 72,
+    "french": "difficile",
+    "arabic": "صعب",
+    "level": "B1",
+    "example": "Le français n'est pas difficile.",
+    "example_ar": "الفرنسية ليست صعبة."
+  },
+  {
+    "id": 73,
+    "french": "important",
+    "arabic": "مهم",
+    "level": "B1",
+    "example": "C'est très important.",
+    "example_ar": "هذا مهم جداً."
+  },
+  {
+    "id": 74,
+    "french": "libre",
+    "arabic": "حر",
+    "level": "B1",
+    "example": "Es-tu libre ce soir ?",
+    "example_ar": "هل أنت حر هذا المساء؟"
+  },
+  {
+    "id": 75,
+    "french": "occupé",
+    "arabic": "مشغول",
+    "level": "B1",
+    "example": "Je suis occupé cette semaine.",
+    "example_ar": "أنا مشغول هذا الأسبوع."
+  },
+  {
+    "id": 76,
+    "french": "ouvert",
+    "arabic": "مفتوح",
+    "level": "B1",
+    "example": "Le magasin est ouvert jusqu'à vingt heures.",
+    "example_ar": "المتجر مفتوح حتى الساعة الثامنة."
+  },
+  {
+    "id": 77,
+    "french": "fermé",
+    "arabic": "مغلق",
+    "level": "B1",
+    "example": "La banque est fermée le dimanche.",
+    "example_ar": "البنك مغلق يوم الأحد."
+  },
+  {
+    "id": 78,
+    "french": "prêt",
+    "arabic": "مستعد",
+    "level": "B1",
+    "example": "Êtes-vous prêt à commencer ?",
+    "example_ar": "هل أنتم مستعدون للبدء؟"
+  },
+  {
+    "id": 79,
+    "french": "convaincre",
+    "arabic": "يقنع",
+    "level": "B2",
+    "example": "Il a réussi à convaincre tout le monde.",
+    "example_ar": "نجح في إقناع الجميع."
+  },
+  {
+    "id": 80,
+    "french": "entreprendre",
+    "arabic": "يقوم بـ",
+    "level": "B2",
+    "example": "Elle a entrepris un grand projet.",
+    "example_ar": "قامت بمشروع كبير."
+  },
+  {
+    "id": 81,
+    "french": "parvenir",
+    "arabic": "ينجح في",
+    "level": "B2",
+    "example": "Il est parvenu à ses fins.",
+    "example_ar": "نجح في تحقيق أهدافه."
+  },
+  {
+    "id": 82,
+    "french": "prétendre",
+    "arabic": "يدعي",
+    "level": "B2",
+    "example": "Il prétend tout savoir.",
+    "example_ar": "يدعي أنه يعرف كل شيء."
+  },
+  {
+    "id": 83,
+    "french": "prédire",
+    "arabic": "يتنبأ",
+    "level": "B2",
+    "example": "Personne ne peut prédire l'avenir.",
+    "example_ar": "لا أحد يستطيع أن يتنبأ بالمستقبل."
+  },
+  {
+    "id": 84,
+    "french": "se méfier",
+    "arabic": "يحترس",
+    "level": "B2",
+    "example": "Méfie-toi des apparences.",
+    "example_ar": "احترس من المظاهر."
+  },
+  {
+    "id": 85,
+    "french": "se plaindre",
+    "arabic": "يشتكي",
+    "level": "B2",
+    "example": "Il se plaint toujours du temps.",
+    "example_ar": "هو دائماً يشتكي من الطقس."
+  },
+  {
+    "id": 86,
+    "french": "se souvenir",
+    "arabic": "يتذكر",
+    "level": "B2",
+    "example": "Je me souviens de mon enfance.",
+    "example_ar": "أتذكر طفولتي."
+  },
+  {
+    "id": 87,
+    "french": "apercevoir",
+    "arabic": "يلاحظ",
+    "level": "B2",
+    "example": "J'ai aperçu un ami dans la foule.",
+    "example_ar": "لاحظت صديقاً في الزحام."
+  },
+  {
+    "id": 88,
+    "french": "distinguer",
+    "arabic": "يميز",
+    "level": "B2",
+    "example": "Il faut distinguer le bien du mal.",
+    "example_ar": "يجب أن تميز بين الخير والشر."
+  },
+  {
+    "id": 89,
+    "french": "dépendre",
+    "arabic": "يعتمد على",
+    "level": "B2",
+    "example": "Cela dépend de la météo.",
+    "example_ar": "هذا يعتمد على الطقس."
+  },
+  {
+    "id": 90,
+    "french": "insister",
+    "arabic": "يصر على",
+    "level": "B2",
+    "example": "J'insiste sur l'importance de l'éducation.",
+    "example_ar": "أصر على أهمية التعليم."
+  },
+  {
+    "id": 91,
+    "french": "exiger",
+    "arabic": "يطلب",
+    "level": "B2",
+    "example": "Ce travail exige de la patience.",
+    "example_ar": "هذا العمل يطلب صبراً."
+  },
+  {
+    "id": 92,
+    "french": "refuser",
+    "arabic": "يرفض",
+    "level": "B2",
+    "example": "Il a refusé mon invitation.",
+    "example_ar": "رفض دعوتي."
+  },
+  {
+    "id": 93,
+    "french": "permettre",
+    "arabic": "يسمح",
+    "level": "B2",
+    "example": "La loi permet de voter à dix-huit ans.",
+    "example_ar": "القانون يسمح بالتصويت في الثامنة عشرة."
+  },
+  {
+    "id": 94,
+    "french": "défendre",
+    "arabic": "يدافع",
+    "level": "B2",
+    "example": "L'avocat défend son client.",
+    "example_ar": "المحامي يدافع عن موكله."
+  },
+  {
+    "id": 95,
+    "french": "admettre",
+    "arabic": "يعترف",
+    "level": "B2",
+    "example": "Il admet ses erreurs.",
+    "example_ar": "يعترف بأخطائه."
+  },
+  {
+    "id": 96,
+    "french": "apprécier",
+    "arabic": "يقدر",
+    "level": "B2",
+    "example": "J'apprécie beaucoup ce cadeau.",
+    "example_ar": "أقدر هذه الهدية كثيراً."
+  },
+  {
+    "id": 97,
+    "french": "se passer",
+    "arabic": "يحدث",
+    "level": "B2",
+    "example": "Qu'est-ce qui se passe ici ?",
+    "example_ar": "ماذا يحدث هنا؟"
+  },
+  {
+    "id": 98,
+    "french": "se rendre compte",
+    "arabic": "يدرك",
+    "level": "B2",
+    "example": "Je me rends compte de mon erreur.",
+    "example_ar": "أدرك خطأي."
+  },
+  {
+    "id": 99,
+    "french": "néanmoins",
+    "arabic": "مع ذلك",
+    "level": "B2",
+    "example": "Il est fatigué, néanmoins il continue.",
+    "example_ar": "هو متعب، ومع ذلك يستمر."
+  },
+  {
+    "id": 100,
+    "french": "cependant",
+    "arabic": "لكن",
+    "level": "B2",
+    "example": "Cependant, il faut être prudent.",
+    "example_ar": "لكن، يجب أن نكون حذرين."
+  },
+  {
+    "id": 101,
+    "french": "toutefois",
+    "arabic": "ومع ذلك",
+    "level": "B2",
+    "example": "Toutefois, je reste optimiste.",
+    "example_ar": "ومع ذلك، أبقى متفائلاً."
+  },
+  {
+    "id": 102,
+    "french": "en effet",
+    "arabic": "في الواقع",
+    "level": "B2",
+    "example": "En effet, c'est une bonne idée.",
+    "example_ar": "في الواقع، هذه فكرة جيدة."
+  },
+  {
+    "id": 103,
+    "french": "notamment",
+    "arabic": "خصوصاً",
+    "level": "B2",
+    "example": "J'aime les fruits, notamment les fraises.",
+    "example_ar": "أحب الفواكه، خصوصاً الفراولة."
+  },
+  {
+    "id": 104,
+    "french": "actuellement",
+    "arabic": "حالياً",
+    "level": "B2",
+    "example": "Actuellement, je cherche un emploi.",
+    "example_ar": "حالياً، أبحث عن عمل."
+  }
+]
