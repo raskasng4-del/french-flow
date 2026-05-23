@@ -13,6 +13,59 @@ const OUTPUT_DIR = path.join(PROJECT_ROOT, "output");
 
 const log = (msg) => console.log(`[${new Date().toISOString()}] ${msg}`);
 
+// Spaced Repetition System
+const SRS_INTERVALS = [1, 3, 7, 14, 30];
+
+function todayStr() {
+  return new Date().toISOString().split("T")[0];
+}
+
+function addDays(dateStr, days) {
+  const d = new Date(dateStr);
+  d.setDate(d.getDate() + days);
+  return d.toISOString().split("T")[0];
+}
+
+function initSRS(progress) {
+  if (!progress.spaced_repetition) {
+    progress.spaced_repetition = { words: {}, grammar: {}, verbs: {} };
+  }
+}
+
+function trackForReview(progress, type, id) {
+  initSRS(progress);
+  const today = todayStr();
+  const map = { MotDuJour: "words", PhraseDuJour: "words", Grammaire: "grammar", Quiz: "words", Conjugaison: "verbs" };
+  const category = map[type];
+  if (!category) return;
+  const entry = progress.spaced_repetition[category][id];
+  if (!entry || entry.next_review <= today) {
+    progress.spaced_repetition[category][id] = {
+      first_seen: entry?.first_seen || today,
+      last_reviewed: today,
+      interval: entry ? Math.min(entry.interval * 2, 30) : 1,
+      next_review: addDays(today, entry ? Math.min(entry.interval * 2, 30) : 1),
+    };
+  }
+}
+
+function getDueItems(progress, words, grammar, verbs, count) {
+  initSRS(progress);
+  const today = todayStr();
+  const due = [];
+  for (const cat of ["words", "grammar", "verbs"]) {
+    const pool = cat === "words" ? words : cat === "grammar" ? grammar : verbs;
+    for (const [idStr, info] of Object.entries(progress.spaced_repetition[cat])) {
+      if (info.next_review <= today) {
+        const item = pool.find((i) => i.id === parseInt(idStr));
+        if (item) due.push({ category: cat, item, info });
+      }
+    }
+  }
+  due.sort((a, b) => a.info.next_review.localeCompare(b.info.next_review));
+  return due.slice(0, count);
+}
+
 function loadJSON(filePath) {
   return JSON.parse(fs.readFileSync(filePath, "utf-8"));
 }
@@ -42,18 +95,20 @@ const PHASE1_VIDEOS = Array.from({ length: 22 }, (_, i) => ({
 }));
 
 function buildDescription(type, data) {
-  const hashtags = "#FrenchFlow #LearnFrench #Francais #الفرنسية #تعلم_الفرنسية";
+  const hashtags = "#FrenchFlow #LearnFrench #Francais #الفرنسية #تعلم_الفرنسية #FrenchTeacher";
   switch (type) {
     case "MotDuJour":
-      return `🇫🇷 Mot du jour: ${data.french}\n📖 ${data.arabic}\n💬 ${data.example}\n\n${hashtags}`;
+      return `🇫🇷 Mot du jour avec French Flow\n\n✨ ${data.french}\n📖 ${data.arabic}\n💬 ${data.example}\n\n${hashtags}`;
     case "PhraseDuJour":
-      return `🇫🇷 Phrase du jour: ${data.example}\n📖 ${data.example_ar}\n\n${hashtags}`;
+      return `🇫🇷 Phrase du jour - French Flow\n\n🗣 ${data.example}\n📖 ${data.example_ar}\n\n${hashtags}`;
     case "Grammaire":
-      return `🇫🇷 Leçon de grammaire: ${data.title}\n📖 ${data.title_ar}\n\n${hashtags}`;
+      return `🇫🇷 Leçon de grammaire - French Flow\n\n📚 ${data.title}\n📖 ${data.title_ar}\n\n${hashtags}`;
     case "Quiz":
-      return `🇫🇷 Quiz du jour!\n❓ ${data.question}\n\n${hashtags}`;
+      return `🇫🇷 Quiz du jour - French Flow\n\n❓ ${data.question}\n💡 Réponse en commentaire\n\n${hashtags}`;
     case "Conjugaison":
-      return `🇫🇷 Conjugaison: ${data.infinitive}\n📖 ${data.arabic}\n\n${hashtags}`;
+      return `🇫🇷 Conjugaison - French Flow\n\n📝 ${data.infinitive}\n📖 ${data.arabic}\n\n${hashtags}`;
+    case "Révision":
+      return `🇫🇷 Révision - French Flow\n\n🔄 ${data.french || data.title || data.infinitive}\n📖 ${data.arabic || data.title_ar || ""}\n\n${hashtags}`;
     default:
       return `${hashtags}`;
   }
@@ -175,14 +230,96 @@ async function runPhase1(progress, pageId, accessToken) {
   log(`✅ Phase 1: ${progress.phase1_index}/${PHASE1_VIDEOS.length} videos published`);
 }
 
-// Phase 2: render + publish daily curriculum (split into morning/evening batches)
+// Render a single activity and track it for spaced repetition
+async function renderAndPublish(activity, compositionId, props, outputFile, dayNum, pageId, accessToken, progress, today) {
+  const ok = renderVideo(compositionId, props, outputFile);
+  const videoPath = path.join(OUTPUT_DIR, outputFile);
+
+  if (ok && fs.existsSync(videoPath)) {
+    const desc = buildDescription(activity.type, props[Object.keys(props)[0]] || {});
+    const published = await publishToFacebook(videoPath, desc, pageId, accessToken);
+
+    // Track for spaced repetition
+    const id = activity.word_id || activity.grammar_id || activity.verb_id;
+    if (id) trackForReview(progress, activity.type, id);
+
+    await sleep(5000);
+    return { type: activity.type, file: outputFile, published, date: today };
+  }
+  return null;
+}
+
+function getActivityProps(activity, wordMap, grammarMap, verbMap, durations) {
+  switch (activity.type) {
+    case "MotDuJour": {
+      const word = wordMap[activity.word_id];
+      if (!word) return null;
+      return {
+        compositionId: "MotDuJour",
+        props: { word, totalDuration: Math.round(durations.MotDuJour * 30) },
+        outputFile: `day${activity._dayNum}_mot.mp4`,
+      };
+    }
+    case "PhraseDuJour": {
+      const word = wordMap[activity.word_id];
+      if (!word) return null;
+      return {
+        compositionId: "PhraseDuJour",
+        props: { word, totalDuration: Math.round(durations.PhraseDuJour * 30) },
+        outputFile: `day${activity._dayNum}_phrase.mp4`,
+      };
+    }
+    case "Grammaire": {
+      const g = grammarMap[activity.grammar_id];
+      if (!g) return null;
+      return {
+        compositionId: "Grammaire",
+        props: { grammar: g, totalDuration: Math.round(durations.Grammaire * 30) },
+        outputFile: `day${activity._dayNum}_grammaire.mp4`,
+      };
+    }
+    case "Quiz": {
+      const word = wordMap[activity.word_id];
+      if (!word) return null;
+      return {
+        compositionId: "Quiz",
+        props: {
+          quiz: {
+            question: `ما هي ترجمة "${word.french}"؟`,
+            options: activity.options,
+            correctIndex: activity.correct,
+          },
+          totalDuration: Math.round(durations.Quiz * 30),
+        },
+        outputFile: `day${activity._dayNum}_quiz.mp4`,
+      };
+    }
+    case "Conjugaison": {
+      const verb = verbMap[activity.verb_id];
+      if (!verb) return null;
+      return {
+        compositionId: "Conjugaison",
+        props: { verb, totalDuration: Math.round(durations.Conjugaison * 30) },
+        outputFile: `day${activity._dayNum}_conjugaison.mp4`,
+      };
+    }
+    default:
+      return null;
+  }
+}
+
+// Phase 2: render + publish daily curriculum (French Flow Method)
 async function runPhase2(progress, pageId, accessToken) {
-  const today = new Date().toISOString().split("T")[0];
+  const today = todayStr();
   const hour = new Date().getHours();
   const batch = process.env.BATCH || (hour < 12 ? "morning" : "evening");
   const isMorning = batch === "morning";
+  const phaseLabel = isMorning ? "🔍 Discovery" : "🧠 Reinforcement";
+  // Discovery: MotDuJour + Grammaire | Reinforcement: PhraseDuJour + Quiz + Conjugaison
+  const startIdx = isMorning ? 0 : 2;
+  const count = isMorning ? 2 : 3;
 
-  log(`📚 Phase 2: Daily curriculum - ${batch} batch`);
+  log(`🎯 ${phaseLabel} - French Flow Method`);
 
   const curriculum = loadJSON(CURRICULUM_FILE);
   const words = loadJSON(WORDS_FILE);
@@ -190,29 +327,27 @@ async function runPhase2(progress, pageId, accessToken) {
   const verbs = loadJSON(VERBS_FILE);
 
   if (progress.current_day >= curriculum.days.length) {
-    log(`🎉 All ${curriculum.days.length} days completed!`);
+    log(`🏆 Félicitations! All ${curriculum.days.length} days completed!`);
     return;
   }
 
   const dayData = curriculum.days[progress.current_day];
-  const startIdx = isMorning ? 0 : 2;
-  const count = isMorning ? 2 : 3;
+  const isReviewDay = dayData.day % 7 === 0;
 
   // Guard: skip if this batch was already done
   if (progress.day_video_index >= startIdx + count) {
-    log(`✅ ${batch} batch already done for day ${dayData.day}`);
+    log(`✅ ${phaseLabel} already done for day ${dayData.day}`);
     return;
   }
   if (progress.day_video_index < startIdx) {
-    log(`⏳ Waiting for previous batch before ${batch}`);
+    log(`⏳ ${phaseLabel} not ready yet (waiting for previous batch)`);
     return;
   }
 
-  log(`📖 Day ${dayData.day}/${curriculum.days.length} - ${dayData.theme} (${dayData.level})`);
+  log(`📚 Day ${dayData.day}/${curriculum.days.length} - ${dayData.theme} (${dayData.level})`);
 
-  const wordMap = {};
-  const grammarMap = {};
-  const verbMap = {};
+  // Build lookup maps
+  const wordMap = {}, grammarMap = {}, verbMap = {};
   words.forEach((w) => (wordMap[w.id] = w));
   grammar.forEach((g) => (grammarMap[g.id] = g));
   verbs.forEach((v) => (verbMap[v.id] = v));
@@ -221,88 +356,44 @@ async function runPhase2(progress, pageId, accessToken) {
     fs.mkdirSync(OUTPUT_DIR, { recursive: true });
   }
 
+  initSRS(progress);
+  const durations = { MotDuJour: 12.5, PhraseDuJour: 14.5, Grammaire: 17.5, Quiz: 15.5, Conjugaison: 17.5 };
   const renderResults = [];
-  const batchActivities = dayData.activities.slice(startIdx, startIdx + count);
 
-  for (const activity of batchActivities) {
-    let compositionId, props, outputFile;
-    const durations = {
-      MotDuJour: 12.5,
-      PhraseDuJour: 14.5,
-      Grammaire: 17.5,
-      Quiz: 15.5,
-      Conjugaison: 17.5,
-    };
-
-    switch (activity.type) {
-      case "MotDuJour": {
-        const word = wordMap[activity.word_id];
-        if (!word) { log(`  ⚠️ Word ${activity.word_id} not found`); continue; }
-        compositionId = "MotDuJour";
-        props = { word, totalDuration: Math.round(durations.MotDuJour * 30) };
-        outputFile = `day${dayData.day}_mot.mp4`;
-        break;
+  if (isReviewDay) {
+    // 🔄 Review day: pull due items from Spaced Repetition
+    const dueItems = getDueItems(progress, words, grammar, verbs, 5);
+    if (dueItems.length > 0) {
+      log(`🔄 Révision: ${dueItems.length} items due for review`);
+      const batchItems = dueItems.slice(startIdx, startIdx + count);
+      for (const di of batchItems) {
+        const baseType = di.category === "words" ? "MotDuJour" : di.category === "grammar" ? "Grammaire" : "Conjugaison";
+        const act = { type: baseType, _dayNum: dayData.day };
+        if (di.category === "words") act.word_id = di.item.id;
+        else if (di.category === "grammar") act.grammar_id = di.item.id;
+        else act.verb_id = di.item.id;
+        const resolved = getActivityProps(act, wordMap, grammarMap, verbMap, durations);
+        if (!resolved) continue;
+        const result = await renderAndPublish(act, resolved.compositionId, resolved.props, resolved.outputFile, dayData.day, pageId, accessToken, progress, today);
+        if (result) renderResults.push(result);
       }
-      case "PhraseDuJour": {
-        const word = wordMap[activity.word_id];
-        if (!word) continue;
-        compositionId = "PhraseDuJour";
-        props = { word, totalDuration: Math.round(durations.PhraseDuJour * 30) };
-        outputFile = `day${dayData.day}_phrase.mp4`;
-        break;
-      }
-      case "Grammaire": {
-        const g = grammarMap[activity.grammar_id];
-        if (!g) continue;
-        compositionId = "Grammaire";
-        props = { grammar: g, totalDuration: Math.round(durations.Grammaire * 30) };
-        outputFile = `day${dayData.day}_grammaire.mp4`;
-        break;
-      }
-      case "Quiz": {
-        const word = wordMap[activity.word_id];
-        if (!word) continue;
-        compositionId = "Quiz";
-        props = {
-          quiz: {
-            question: `ما هي ترجمة "${word.french}"؟`,
-            options: activity.options,
-            correctIndex: activity.correct,
-          },
-          totalDuration: Math.round(durations.Quiz * 30),
-        };
-        outputFile = `day${dayData.day}_quiz.mp4`;
-        break;
-      }
-      case "Conjugaison": {
-        const verb = verbMap[activity.verb_id];
-        if (!verb) continue;
-        compositionId = "Conjugaison";
-        props = { verb, totalDuration: Math.round(durations.Conjugaison * 30) };
-        outputFile = `day${dayData.day}_conjugaison.mp4`;
-        break;
-      }
-    }
-
-    if (!compositionId) continue;
-
-    const ok = renderVideo(compositionId, props, outputFile);
-    const videoPath = path.join(OUTPUT_DIR, outputFile);
-
-    if (ok && fs.existsSync(videoPath)) {
-      const desc = buildDescription(activity.type, props[Object.keys(props)[0]] || {});
-      const published = await publishToFacebook(videoPath, desc, pageId, accessToken);
-      renderResults.push({
-        type: activity.type,
-        file: outputFile,
-        published,
-        date: today,
-      });
-      await sleep(5000);
+    } else {
+      log(`✅ No items due for review, proceeding with new lesson`);
     }
   }
 
-  progress.day_video_index += batchActivities.length;
+  // If no review items rendered (or not a review day), do normal curriculum
+  if (renderResults.length === 0) {
+    const batchActivities = dayData.activities.slice(startIdx, startIdx + count);
+    for (const activity of batchActivities) {
+      const resolved = getActivityProps(activity, wordMap, grammarMap, verbMap, durations);
+      if (!resolved) continue;
+      const result = await renderAndPublish(activity, resolved.compositionId, resolved.props, resolved.outputFile, dayData.day, pageId, accessToken, progress, today);
+      if (result) renderResults.push(result);
+    }
+  }
+
+  progress.day_video_index += count;
   progress.published_videos.push(...renderResults);
   progress.last_publish_date = today;
 
@@ -312,7 +403,7 @@ async function runPhase2(progress, pageId, accessToken) {
   }
 
   saveJSON(PROGRESS_FILE, progress);
-  log(`✅ Day ${dayData.day} ${batch} batch done! ${renderResults.filter((r) => r.published).length}/${batchActivities.length} published`);
+  log(`✅ ${phaseLabel} - Day ${dayData.day} complete! ${renderResults.filter((r) => r.published).length}/${count} videos published`);
 }
 
 // Main

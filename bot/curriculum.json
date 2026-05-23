@@ -3,12 +3,24 @@
     "title": "French Flow - Curriculum A1 to C2",
     "total_days": 365,
     "levels": {
-      "A1": { "days": "1-90" },
-      "A2": { "days": "91-180" },
-      "B1": { "days": "181-270" },
-      "B2": { "days": "271-330" },
-      "C1": { "days": "331-355" },
-      "C2": { "days": "356-365" }
+      "A1": {
+        "days": "1-90"
+      },
+      "A2": {
+        "days": "91-180"
+      },
+      "B1": {
+        "days": "181-270"
+      },
+      "B2": {
+        "days": "271-330"
+      },
+      "C1": {
+        "days": "331-355"
+      },
+      "C2": {
+        "days": "356-365"
+      }
     }
   },
   "days": [
@@ -17,11 +29,33 @@
       "level": "A1",
       "theme": "Se présenter",
       "activities": [
-        { "type": "MotDuJour", "word_id": 1 },
-        { "type": "PhraseDuJour", "word_id": 1 },
-        { "type": "Grammaire", "grammar_id": 1 },
-        { "type": "Quiz", "word_id": 1, "options": ["صباح الخير", "مساء الخير", "تصبح على خير", "وداعاً"], "correct": 0 },
-        { "type": "Conjugaison", "verb_id": 1 }
+        {
+          "type": "MotDuJour",
+          "word_id": 1
+        },
+        {
+          "type": "Grammaire",
+          "grammar_id": 1
+        },
+        {
+          "type": "PhraseDuJour",
+          "word_id": 1
+        },
+        {
+          "type": "Quiz",
+          "word_id": 1,
+          "options": [
+            "صباح الخير",
+            "مساء الخير",
+            "تصبح على خير",
+            "وداعاً"
+          ],
+          "correct": 0
+        },
+        {
+          "type": "Conjugaison",
+          "verb_id": 1
+        }
       ]
     },
     {
@@ -29,11 +63,33 @@
       "level": "A1",
       "theme": "Les salutations",
       "activities": [
-        { "type": "MotDuJour", "word_id": 2 },
-        { "type": "PhraseDuJour", "word_id": 2 },
-        { "type": "Grammaire", "grammar_id": 2 },
-        { "type": "Quiz", "word_id": 2, "options": ["آسف", "شكراً", "عفواً", "لو سمحت"], "correct": 1 },
-        { "type": "Conjugaison", "verb_id": 2 }
+        {
+          "type": "MotDuJour",
+          "word_id": 2
+        },
+        {
+          "type": "Grammaire",
+          "grammar_id": 2
+        },
+        {
+          "type": "PhraseDuJour",
+          "word_id": 2
+        },
+        {
+          "type": "Quiz",
+          "word_id": 2,
+          "options": [
+            "آسف",
+            "شكراً",
+            "عفواً",
+            "لو سمحت"
+          ],
+          "correct": 1
+        },
+        {
+          "type": "Conjugaison",
+          "verb_id": 2
+        }
       ]
     },
     {
@@ -41,11 +97,33 @@
       "level": "A1",
       "theme": "Les nombres 1-20",
       "activities": [
-        { "type": "MotDuJour", "word_id": 5 },
-        { "type": "PhraseDuJour", "word_id": 5 },
-        { "type": "Grammaire", "grammar_id": 15 },
-        { "type": "Quiz", "word_id": 5, "options": ["لا", "ربما", "نعم", "أبداً"], "correct": 2 },
-        { "type": "Conjugaison", "verb_id": 3 }
+        {
+          "type": "MotDuJour",
+          "word_id": 5
+        },
+        {
+          "type": "Grammaire",
+          "grammar_id": 15
+        },
+        {
+          "type": "PhraseDuJour",
+          "word_id": 5
+        },
+        {
+          "type": "Quiz",
+          "word_id": 5,
+          "options": [
+            "لا",
+            "ربما",
+            "نعم",
+            "أبداً"
+          ],
+          "correct": 2
+        },
+        {
+          "type": "Conjugaison",
+          "verb_id": 3
+        }
       ]
     },
     {
@@ -53,11 +131,33 @@
       "level": "A1",
       "theme": "Les jours de la semaine",
       "activities": [
-        { "type": "MotDuJour", "word_id": 18 },
-        { "type": "PhraseDuJour", "word_id": 18 },
-        { "type": "Grammaire", "grammar_id": 18 },
-        { "type": "Quiz", "word_id": 18, "options": ["أسبوع", "شهر", "سنة", "يوم"], "correct": 3 },
-        { "type": "Conjugaison", "verb_id": 4 }
+        {
+          "type": "MotDuJour",
+          "word_id": 18
+        },
+        {
+          "type": "Grammaire",
+          "grammar_id": 18
+        },
+        {
+          "type": "PhraseDuJour",
+          "word_id": 18
+        },
+        {
+          "type": "Quiz",
+          "word_id": 18,
+          "options": [
+            "أسبوع",
+            "شهر",
+            "سنة",
+            "يوم"
+          ],
+          "correct": 3
+        },
+        {
+          "type": "Conjugaison",
+          "verb_id": 4
+        }
       ]
     },
     {
@@ -65,11 +165,33 @@
       "level": "A1",
       "theme": "La famille",
       "activities": [
-        { "type": "MotDuJour", "word_id": 43 },
-        { "type": "PhraseDuJour", "word_id": 43 },
-        { "type": "Grammaire", "grammar_id": 3 },
-        { "type": "Quiz", "word_id": 43, "options": ["صديق", "عائلة", "جيران", "زملاء"], "correct": 1 },
-        { "type": "Conjugaison", "verb_id": 5 }
+        {
+          "type": "MotDuJour",
+          "word_id": 43
+        },
+        {
+          "type": "Grammaire",
+          "grammar_id": 3
+        },
+        {
+          "type": "PhraseDuJour",
+          "word_id": 43
+        },
+        {
+          "type": "Quiz",
+          "word_id": 43,
+          "options": [
+            "صديق",
+            "عائلة",
+            "جيران",
+            "زملاء"
+          ],
+          "correct": 1
+        },
+        {
+          "type": "Conjugaison",
+          "verb_id": 5
+        }
       ]
     },
     {
@@ -77,11 +199,33 @@
       "level": "A1",
       "theme": "Les couleurs",
       "activities": [
-        { "type": "MotDuJour", "word_id": 57 },
-        { "type": "PhraseDuJour", "word_id": 57 },
-        { "type": "Grammaire", "grammar_id": 16 },
-        { "type": "Quiz", "word_id": 57, "options": ["قبيح", "طويل", "جميل", "قصير"], "correct": 2 },
-        { "type": "Conjugaison", "verb_id": 6 }
+        {
+          "type": "MotDuJour",
+          "word_id": 57
+        },
+        {
+          "type": "Grammaire",
+          "grammar_id": 16
+        },
+        {
+          "type": "PhraseDuJour",
+          "word_id": 57
+        },
+        {
+          "type": "Quiz",
+          "word_id": 57,
+          "options": [
+            "قبيح",
+            "طويل",
+            "جميل",
+            "قصير"
+          ],
+          "correct": 2
+        },
+        {
+          "type": "Conjugaison",
+          "verb_id": 6
+        }
       ]
     },
     {
@@ -89,11 +233,33 @@
       "level": "A1",
       "theme": "Les mois et les saisons",
       "activities": [
-        { "type": "MotDuJour", "word_id": 42 },
-        { "type": "PhraseDuJour", "word_id": 42 },
-        { "type": "Grammaire", "grammar_id": 19 },
-        { "type": "Quiz", "word_id": 42, "options": ["مكان", "وقت", "طقس", "مسافة"], "correct": 1 },
-        { "type": "Conjugaison", "verb_id": 7 }
+        {
+          "type": "MotDuJour",
+          "word_id": 42
+        },
+        {
+          "type": "Grammaire",
+          "grammar_id": 19
+        },
+        {
+          "type": "PhraseDuJour",
+          "word_id": 42
+        },
+        {
+          "type": "Quiz",
+          "word_id": 42,
+          "options": [
+            "مكان",
+            "وقت",
+            "طقس",
+            "مسافة"
+          ],
+          "correct": 1
+        },
+        {
+          "type": "Conjugaison",
+          "verb_id": 7
+        }
       ]
     },
     {
@@ -101,11 +267,33 @@
       "level": "A1",
       "theme": "La météo",
       "activities": [
-        { "type": "MotDuJour", "word_id": 31 },
-        { "type": "PhraseDuJour", "word_id": 31 },
-        { "type": "Grammaire", "grammar_id": 14 },
-        { "type": "Quiz", "word_id": 31, "options": ["بارد", "دافئ", "ساخن", "معتدل"], "correct": 2 },
-        { "type": "Conjugaison", "verb_id": 8 }
+        {
+          "type": "MotDuJour",
+          "word_id": 31
+        },
+        {
+          "type": "Grammaire",
+          "grammar_id": 14
+        },
+        {
+          "type": "PhraseDuJour",
+          "word_id": 31
+        },
+        {
+          "type": "Quiz",
+          "word_id": 31,
+          "options": [
+            "بارد",
+            "دافئ",
+            "ساخن",
+            "معتدل"
+          ],
+          "correct": 2
+        },
+        {
+          "type": "Conjugaison",
+          "verb_id": 8
+        }
       ]
     },
     {
@@ -113,11 +301,33 @@
       "level": "A1",
       "theme": "L'école",
       "activities": [
-        { "type": "MotDuJour", "word_id": 16 },
-        { "type": "PhraseDuJour", "word_id": 16 },
-        { "type": "Grammaire", "grammar_id": 4 },
-        { "type": "Quiz", "word_id": 16, "options": ["مدرسة", "جامعة", "روضة", "معهد"], "correct": 0 },
-        { "type": "Conjugaison", "verb_id": 9 }
+        {
+          "type": "MotDuJour",
+          "word_id": 16
+        },
+        {
+          "type": "Grammaire",
+          "grammar_id": 4
+        },
+        {
+          "type": "PhraseDuJour",
+          "word_id": 16
+        },
+        {
+          "type": "Quiz",
+          "word_id": 16,
+          "options": [
+            "مدرسة",
+            "جامعة",
+            "روضة",
+            "معهد"
+          ],
+          "correct": 0
+        },
+        {
+          "type": "Conjugaison",
+          "verb_id": 9
+        }
       ]
     },
     {
@@ -125,11 +335,33 @@
       "level": "A1",
       "theme": "La maison",
       "activities": [
-        { "type": "MotDuJour", "word_id": 10 },
-        { "type": "PhraseDuJour", "word_id": 10 },
-        { "type": "Grammaire", "grammar_id": 13 },
-        { "type": "Quiz", "word_id": 10, "options": ["غرفة", "شقة", "منزل", "مكتب"], "correct": 2 },
-        { "type": "Conjugaison", "verb_id": 10 }
+        {
+          "type": "MotDuJour",
+          "word_id": 10
+        },
+        {
+          "type": "Grammaire",
+          "grammar_id": 13
+        },
+        {
+          "type": "PhraseDuJour",
+          "word_id": 10
+        },
+        {
+          "type": "Quiz",
+          "word_id": 10,
+          "options": [
+            "غرفة",
+            "شقة",
+            "منزل",
+            "مكتب"
+          ],
+          "correct": 2
+        },
+        {
+          "type": "Conjugaison",
+          "verb_id": 10
+        }
       ]
     },
     {
@@ -137,11 +369,33 @@
       "level": "A1",
       "theme": "Les animaux",
       "activities": [
-        { "type": "MotDuJour", "word_id": 21 },
-        { "type": "PhraseDuJour", "word_id": 21 },
-        { "type": "Grammaire", "grammar_id": 12 },
-        { "type": "Quiz", "word_id": 21, "options": ["كبير", "صغير", "طويل", "قصير"], "correct": 1 },
-        { "type": "Conjugaison", "verb_id": 11 }
+        {
+          "type": "MotDuJour",
+          "word_id": 21
+        },
+        {
+          "type": "Grammaire",
+          "grammar_id": 12
+        },
+        {
+          "type": "PhraseDuJour",
+          "word_id": 21
+        },
+        {
+          "type": "Quiz",
+          "word_id": 21,
+          "options": [
+            "كبير",
+            "صغير",
+            "طويل",
+            "قصير"
+          ],
+          "correct": 1
+        },
+        {
+          "type": "Conjugaison",
+          "verb_id": 11
+        }
       ]
     },
     {
@@ -149,11 +403,33 @@
       "level": "A1",
       "theme": "La nourriture et les boissons",
       "activities": [
-        { "type": "MotDuJour", "word_id": 14 },
-        { "type": "PhraseDuJour", "word_id": 14 },
-        { "type": "Grammaire", "grammar_id": 41 },
-        { "type": "Quiz", "word_id": 14, "options": ["جبن", "حليب", "خبز", "لحم"], "correct": 2 },
-        { "type": "Conjugaison", "verb_id": 12 }
+        {
+          "type": "MotDuJour",
+          "word_id": 14
+        },
+        {
+          "type": "Grammaire",
+          "grammar_id": 41
+        },
+        {
+          "type": "PhraseDuJour",
+          "word_id": 14
+        },
+        {
+          "type": "Quiz",
+          "word_id": 14,
+          "options": [
+            "جبن",
+            "حليب",
+            "خبز",
+            "لحم"
+          ],
+          "correct": 2
+        },
+        {
+          "type": "Conjugaison",
+          "verb_id": 12
+        }
       ]
     },
     {
@@ -161,11 +437,33 @@
       "level": "A1",
       "theme": "Les vêtements",
       "activities": [
-        { "type": "MotDuJour", "word_id": 20 },
-        { "type": "PhraseDuJour", "word_id": 20 },
-        { "type": "Grammaire", "grammar_id": 43 },
-        { "type": "Quiz", "word_id": 20, "options": ["جميل", "كبير", "صغير", "طويل"], "correct": 1 },
-        { "type": "Conjugaison", "verb_id": 13 }
+        {
+          "type": "MotDuJour",
+          "word_id": 20
+        },
+        {
+          "type": "Grammaire",
+          "grammar_id": 43
+        },
+        {
+          "type": "PhraseDuJour",
+          "word_id": 20
+        },
+        {
+          "type": "Quiz",
+          "word_id": 20,
+          "options": [
+            "جميل",
+            "كبير",
+            "صغير",
+            "طويل"
+          ],
+          "correct": 1
+        },
+        {
+          "type": "Conjugaison",
+          "verb_id": 13
+        }
       ]
     },
     {
@@ -173,11 +471,33 @@
       "level": "A1",
       "theme": "Le corps humain",
       "activities": [
-        { "type": "MotDuJour", "word_id": 8 },
-        { "type": "PhraseDuJour", "word_id": 8 },
-        { "type": "Grammaire", "grammar_id": 5 },
-        { "type": "Quiz", "word_id": 8, "options": ["رجل", "امرأة", "فتى", "طفل"], "correct": 1 },
-        { "type": "Conjugaison", "verb_id": 14 }
+        {
+          "type": "MotDuJour",
+          "word_id": 8
+        },
+        {
+          "type": "Grammaire",
+          "grammar_id": 5
+        },
+        {
+          "type": "PhraseDuJour",
+          "word_id": 8
+        },
+        {
+          "type": "Quiz",
+          "word_id": 8,
+          "options": [
+            "رجل",
+            "امرأة",
+            "فتى",
+            "طفل"
+          ],
+          "correct": 1
+        },
+        {
+          "type": "Conjugaison",
+          "verb_id": 14
+        }
       ]
     },
     {
@@ -185,11 +505,33 @@
       "level": "A1",
       "theme": "Les sports",
       "activities": [
-        { "type": "MotDuJour", "word_id": 29 },
-        { "type": "PhraseDuJour", "word_id": 29 },
-        { "type": "Grammaire", "grammar_id": 31 },
-        { "type": "Quiz", "word_id": 29, "options": ["بطيء", "سريع", "قوي", "ضعيف"], "correct": 1 },
-        { "type": "Conjugaison", "verb_id": 15 }
+        {
+          "type": "MotDuJour",
+          "word_id": 29
+        },
+        {
+          "type": "Grammaire",
+          "grammar_id": 31
+        },
+        {
+          "type": "PhraseDuJour",
+          "word_id": 29
+        },
+        {
+          "type": "Quiz",
+          "word_id": 29,
+          "options": [
+            "بطيء",
+            "سريع",
+            "قوي",
+            "ضعيف"
+          ],
+          "correct": 1
+        },
+        {
+          "type": "Conjugaison",
+          "verb_id": 15
+        }
       ]
     },
     {
@@ -197,11 +539,33 @@
       "level": "A1",
       "theme": "Les loisirs",
       "activities": [
-        { "type": "MotDuJour", "word_id": 11 },
-        { "type": "PhraseDuJour", "word_id": 11 },
-        { "type": "Grammaire", "grammar_id": 6 },
-        { "type": "Quiz", "word_id": 11, "options": ["قصة", "كتاب", "رسالة", "جريدة"], "correct": 1 },
-        { "type": "Conjugaison", "verb_id": 16 }
+        {
+          "type": "MotDuJour",
+          "word_id": 11
+        },
+        {
+          "type": "Grammaire",
+          "grammar_id": 6
+        },
+        {
+          "type": "PhraseDuJour",
+          "word_id": 11
+        },
+        {
+          "type": "Quiz",
+          "word_id": 11,
+          "options": [
+            "قصة",
+            "كتاب",
+            "رسالة",
+            "جريدة"
+          ],
+          "correct": 1
+        },
+        {
+          "type": "Conjugaison",
+          "verb_id": 16
+        }
       ]
     },
     {
@@ -209,11 +573,33 @@
       "level": "A1",
       "theme": "La ville",
       "activities": [
-        { "type": "MotDuJour", "word_id": 39 },
-        { "type": "PhraseDuJour", "word_id": 39 },
-        { "type": "Grammaire", "grammar_id": 7 },
-        { "type": "Quiz", "word_id": 39, "options": ["قرية", "مدينة", "ضاحية", "عاصمة"], "correct": 1 },
-        { "type": "Conjugaison", "verb_id": 17 }
+        {
+          "type": "MotDuJour",
+          "word_id": 39
+        },
+        {
+          "type": "Grammaire",
+          "grammar_id": 7
+        },
+        {
+          "type": "PhraseDuJour",
+          "word_id": 39
+        },
+        {
+          "type": "Quiz",
+          "word_id": 39,
+          "options": [
+            "قرية",
+            "مدينة",
+            "ضاحية",
+            "عاصمة"
+          ],
+          "correct": 1
+        },
+        {
+          "type": "Conjugaison",
+          "verb_id": 17
+        }
       ]
     },
     {
@@ -221,11 +607,33 @@
       "level": "A1",
       "theme": "Les transports",
       "activities": [
-        { "type": "MotDuJour", "word_id": 4 },
-        { "type": "PhraseDuJour", "word_id": 4 },
-        { "type": "Grammaire", "grammar_id": 11 },
-        { "type": "Quiz", "word_id": 4, "options": ["شكراً", "عفواً", "من فضلك", "آسف"], "correct": 2 },
-        { "type": "Conjugaison", "verb_id": 18 }
+        {
+          "type": "MotDuJour",
+          "word_id": 4
+        },
+        {
+          "type": "Grammaire",
+          "grammar_id": 11
+        },
+        {
+          "type": "PhraseDuJour",
+          "word_id": 4
+        },
+        {
+          "type": "Quiz",
+          "word_id": 4,
+          "options": [
+            "شكراً",
+            "عفواً",
+            "من فضلك",
+            "آسف"
+          ],
+          "correct": 2
+        },
+        {
+          "type": "Conjugaison",
+          "verb_id": 18
+        }
       ]
     },
     {
@@ -233,11 +641,33 @@
       "level": "A1",
       "theme": "Les professions",
       "activities": [
-        { "type": "MotDuJour", "word_id": 17 },
-        { "type": "PhraseDuJour", "word_id": 17 },
-        { "type": "Grammaire", "grammar_id": 8 },
-        { "type": "Quiz", "word_id": 17, "options": ["بيت", "عمل", "مدرسة", "مستشفى"], "correct": 1 },
-        { "type": "Conjugaison", "verb_id": 19 }
+        {
+          "type": "MotDuJour",
+          "word_id": 17
+        },
+        {
+          "type": "Grammaire",
+          "grammar_id": 8
+        },
+        {
+          "type": "PhraseDuJour",
+          "word_id": 17
+        },
+        {
+          "type": "Quiz",
+          "word_id": 17,
+          "options": [
+            "بيت",
+            "عمل",
+            "مدرسة",
+            "مستشفى"
+          ],
+          "correct": 1
+        },
+        {
+          "type": "Conjugaison",
+          "verb_id": 19
+        }
       ]
     },
     {
@@ -245,11 +675,33 @@
       "level": "A1",
       "theme": "Les magasins et les achats",
       "activities": [
-        { "type": "MotDuJour", "word_id": 33 },
-        { "type": "PhraseDuJour", "word_id": 33 },
-        { "type": "Grammaire", "grammar_id": 21 },
-        { "type": "Quiz", "word_id": 33, "options": ["يبيع", "يشتري", "يطلب", "يدفع"], "correct": 1 },
-        { "type": "Conjugaison", "verb_id": 20 }
+        {
+          "type": "MotDuJour",
+          "word_id": 33
+        },
+        {
+          "type": "Grammaire",
+          "grammar_id": 21
+        },
+        {
+          "type": "PhraseDuJour",
+          "word_id": 33
+        },
+        {
+          "type": "Quiz",
+          "word_id": 33,
+          "options": [
+            "يبيع",
+            "يشتري",
+            "يطلب",
+            "يدفع"
+          ],
+          "correct": 1
+        },
+        {
+          "type": "Conjugaison",
+          "verb_id": 20
+        }
       ]
     },
     {
@@ -257,11 +709,33 @@
       "level": "A1",
       "theme": "Les directions",
       "activities": [
-        { "type": "MotDuJour", "word_id": 6 },
-        { "type": "PhraseDuJour", "word_id": 6 },
-        { "type": "Grammaire", "grammar_id": 40 },
-        { "type": "Quiz", "word_id": 6, "options": ["نعم", "لا", "ربما", "أبداً"], "correct": 1 },
-        { "type": "Conjugaison", "verb_id": 21 }
+        {
+          "type": "MotDuJour",
+          "word_id": 6
+        },
+        {
+          "type": "Grammaire",
+          "grammar_id": 40
+        },
+        {
+          "type": "PhraseDuJour",
+          "word_id": 6
+        },
+        {
+          "type": "Quiz",
+          "word_id": 6,
+          "options": [
+            "نعم",
+            "لا",
+            "ربما",
+            "أبداً"
+          ],
+          "correct": 1
+        },
+        {
+          "type": "Conjugaison",
+          "verb_id": 21
+        }
       ]
     },
     {
@@ -269,11 +743,33 @@
       "level": "A1",
       "theme": "Les pays et les nationalités",
       "activities": [
-        { "type": "MotDuJour", "word_id": 40 },
-        { "type": "PhraseDuJour", "word_id": 40 },
-        { "type": "Grammaire", "grammar_id": 22 },
-        { "type": "Quiz", "word_id": 40, "options": ["مدينة", "ريف", "شاطئ", "جبل"], "correct": 1 },
-        { "type": "Conjugaison", "verb_id": 22 }
+        {
+          "type": "MotDuJour",
+          "word_id": 40
+        },
+        {
+          "type": "Grammaire",
+          "grammar_id": 22
+        },
+        {
+          "type": "PhraseDuJour",
+          "word_id": 40
+        },
+        {
+          "type": "Quiz",
+          "word_id": 40,
+          "options": [
+            "مدينة",
+            "ريف",
+            "شاطئ",
+            "جبل"
+          ],
+          "correct": 1
+        },
+        {
+          "type": "Conjugaison",
+          "verb_id": 22
+        }
       ]
     },
     {
@@ -281,11 +777,33 @@
       "level": "A1",
       "theme": "Les émotions",
       "activities": [
-        { "type": "MotDuJour", "word_id": 27 },
-        { "type": "PhraseDuJour", "word_id": 27 },
-        { "type": "Grammaire", "grammar_id": 23 },
-        { "type": "Quiz", "word_id": 27, "options": ["حزين", "غاضب", "سعيد", "خائف"], "correct": 2 },
-        { "type": "Conjugaison", "verb_id": 23 }
+        {
+          "type": "MotDuJour",
+          "word_id": 27
+        },
+        {
+          "type": "Grammaire",
+          "grammar_id": 23
+        },
+        {
+          "type": "PhraseDuJour",
+          "word_id": 27
+        },
+        {
+          "type": "Quiz",
+          "word_id": 27,
+          "options": [
+            "حزين",
+            "غاضب",
+            "سعيد",
+            "خائف"
+          ],
+          "correct": 2
+        },
+        {
+          "type": "Conjugaison",
+          "verb_id": 23
+        }
       ]
     },
     {
@@ -293,11 +811,33 @@
       "level": "A1",
       "theme": "L'heure et les rendez-vous",
       "activities": [
-        { "type": "MotDuJour", "word_id": 19 },
-        { "type": "PhraseDuJour", "word_id": 19 },
-        { "type": "Grammaire", "grammar_id": 17 },
-        { "type": "Quiz", "word_id": 19, "options": ["صباح", "مساء", "ليل", "نهار"], "correct": 2 },
-        { "type": "Conjugaison", "verb_id": 24 }
+        {
+          "type": "MotDuJour",
+          "word_id": 19
+        },
+        {
+          "type": "Grammaire",
+          "grammar_id": 17
+        },
+        {
+          "type": "PhraseDuJour",
+          "word_id": 19
+        },
+        {
+          "type": "Quiz",
+          "word_id": 19,
+          "options": [
+            "صباح",
+            "مساء",
+            "ليل",
+            "نهار"
+          ],
+          "correct": 2
+        },
+        {
+          "type": "Conjugaison",
+          "verb_id": 24
+        }
       ]
     },
     {
@@ -305,11 +845,33 @@
       "level": "A1",
       "theme": "La routine quotidienne",
       "activities": [
-        { "type": "MotDuJour", "word_id": 26 },
-        { "type": "PhraseDuJour", "word_id": 26 },
-        { "type": "Grammaire", "grammar_id": 38 },
-        { "type": "Quiz", "word_id": 26, "options": ["يستيقظ", "يأكل", "ينام", "يعمل"], "correct": 2 },
-        { "type": "Conjugaison", "verb_id": 25 }
+        {
+          "type": "MotDuJour",
+          "word_id": 26
+        },
+        {
+          "type": "Grammaire",
+          "grammar_id": 38
+        },
+        {
+          "type": "PhraseDuJour",
+          "word_id": 26
+        },
+        {
+          "type": "Quiz",
+          "word_id": 26,
+          "options": [
+            "يستيقظ",
+            "يأكل",
+            "ينام",
+            "يعمل"
+          ],
+          "correct": 2
+        },
+        {
+          "type": "Conjugaison",
+          "verb_id": 25
+        }
       ]
     },
     {
@@ -317,11 +879,33 @@
       "level": "A1",
       "theme": "Les activités de loisir",
       "activities": [
-        { "type": "MotDuJour", "word_id": 36 },
-        { "type": "PhraseDuJour", "word_id": 36 },
-        { "type": "Grammaire", "grammar_id": 25 },
-        { "type": "Quiz", "word_id": 36, "options": ["يسمع", "يستمع", "يتكلم", "يقرأ"], "correct": 1 },
-        { "type": "Conjugaison", "verb_id": 26 }
+        {
+          "type": "MotDuJour",
+          "word_id": 36
+        },
+        {
+          "type": "Grammaire",
+          "grammar_id": 25
+        },
+        {
+          "type": "PhraseDuJour",
+          "word_id": 36
+        },
+        {
+          "type": "Quiz",
+          "word_id": 36,
+          "options": [
+            "يسمع",
+            "يستمع",
+            "يتكلم",
+            "يقرأ"
+          ],
+          "correct": 1
+        },
+        {
+          "type": "Conjugaison",
+          "verb_id": 26
+        }
       ]
     },
     {
@@ -329,11 +913,33 @@
       "level": "A1",
       "theme": "Faire les courses",
       "activities": [
-        { "type": "MotDuJour", "word_id": 22 },
-        { "type": "PhraseDuJour", "word_id": 22 },
-        { "type": "Grammaire", "grammar_id": 29 },
-        { "type": "Quiz", "word_id": 22, "options": ["سيء", "جيد", "جميل", "قبيح"], "correct": 1 },
-        { "type": "Conjugaison", "verb_id": 27 }
+        {
+          "type": "MotDuJour",
+          "word_id": 22
+        },
+        {
+          "type": "Grammaire",
+          "grammar_id": 29
+        },
+        {
+          "type": "PhraseDuJour",
+          "word_id": 22
+        },
+        {
+          "type": "Quiz",
+          "word_id": 22,
+          "options": [
+            "سيء",
+            "جيد",
+            "جميل",
+            "قبيح"
+          ],
+          "correct": 1
+        },
+        {
+          "type": "Conjugaison",
+          "verb_id": 27
+        }
       ]
     },
     {
@@ -341,11 +947,33 @@
       "level": "A1",
       "theme": "Au restaurant",
       "activities": [
-        { "type": "MotDuJour", "word_id": 24 },
-        { "type": "PhraseDuJour", "word_id": 24 },
-        { "type": "Grammaire", "grammar_id": 30 },
-        { "type": "Quiz", "word_id": 24, "options": ["يشرب", "يأكل", "يطبخ", "يعد"], "correct": 1 },
-        { "type": "Conjugaison", "verb_id": 28 }
+        {
+          "type": "MotDuJour",
+          "word_id": 24
+        },
+        {
+          "type": "Grammaire",
+          "grammar_id": 30
+        },
+        {
+          "type": "PhraseDuJour",
+          "word_id": 24
+        },
+        {
+          "type": "Quiz",
+          "word_id": 24,
+          "options": [
+            "يشرب",
+            "يأكل",
+            "يطبخ",
+            "يعد"
+          ],
+          "correct": 1
+        },
+        {
+          "type": "Conjugaison",
+          "verb_id": 28
+        }
       ]
     },
     {
@@ -353,11 +981,33 @@
       "level": "A1",
       "theme": "Les projets et l'avenir",
       "activities": [
-        { "type": "MotDuJour", "word_id": 61 },
-        { "type": "PhraseDuJour", "word_id": 61 },
-        { "type": "Grammaire", "grammar_id": 26 },
-        { "type": "Quiz", "word_id": 61, "options": ["قديم", "جديد", "جميل", "كبير"], "correct": 1 },
-        { "type": "Conjugaison", "verb_id": 29 }
+        {
+          "type": "MotDuJour",
+          "word_id": 61
+        },
+        {
+          "type": "Grammaire",
+          "grammar_id": 26
+        },
+        {
+          "type": "PhraseDuJour",
+          "word_id": 61
+        },
+        {
+          "type": "Quiz",
+          "word_id": 61,
+          "options": [
+            "قديم",
+            "جديد",
+            "جميل",
+            "كبير"
+          ],
+          "correct": 1
+        },
+        {
+          "type": "Conjugaison",
+          "verb_id": 29
+        }
       ]
     },
     {
@@ -365,11 +1015,33 @@
       "level": "A1",
       "theme": "Révision A1",
       "activities": [
-        { "type": "MotDuJour", "word_id": 3 },
-        { "type": "PhraseDuJour", "word_id": 3 },
-        { "type": "Grammaire", "grammar_id": 24 },
-        { "type": "Quiz", "word_id": 3, "options": ["مرحباً", "وداعاً", "صباح الخير", "مساء الخير"], "correct": 1 },
-        { "type": "Conjugaison", "verb_id": 30 }
+        {
+          "type": "MotDuJour",
+          "word_id": 3
+        },
+        {
+          "type": "Grammaire",
+          "grammar_id": 24
+        },
+        {
+          "type": "PhraseDuJour",
+          "word_id": 3
+        },
+        {
+          "type": "Quiz",
+          "word_id": 3,
+          "options": [
+            "مرحباً",
+            "وداعاً",
+            "صباح الخير",
+            "مساء الخير"
+          ],
+          "correct": 1
+        },
+        {
+          "type": "Conjugaison",
+          "verb_id": 30
+        }
       ]
     }
   ]
