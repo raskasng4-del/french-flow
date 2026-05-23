@@ -13,6 +13,7 @@ import {
   IntroOverlay,
   OutroOverlay,
   TopBar,
+  VideoContainer,
 } from "./FrenchFlowBrand";
 
 const FPS = 30;
@@ -116,15 +117,25 @@ export const MotDuJour: React.FC<{
   const frame = useCurrentFrame();
   const contentFrames = totalDuration - INTRO_F - OUTRO_F;
 
-  if (frame < INTRO_F) return <IntroOverlay type="Mot du jour" />;
-  if (frame >= totalDuration - OUTRO_F) return <OutroOverlay />;
+  if (frame < INTRO_F)
+    return (
+      <VideoContainer>
+        <IntroOverlay type="Mot du jour" />
+      </VideoContainer>
+    );
+  if (frame >= totalDuration - OUTRO_F)
+    return (
+      <VideoContainer>
+        <OutroOverlay />
+      </VideoContainer>
+    );
 
   const cf = frame - INTRO_F;
   const { opacity: exOp, y: exY } = fadeSlide(cf, contentFrames * 0.45);
   const s = springIn(cf);
 
   return (
-    <AbsoluteFill>
+    <VideoContainer>
       <GradientBackground />
       <TopBar label="MOT DU JOUR" progress={cf / contentFrames} />
       <AbsoluteFill style={{ justifyContent: "center", alignItems: "center" }}>
@@ -187,7 +198,7 @@ export const MotDuJour: React.FC<{
           </div>
         </GlassCard>
       </AbsoluteFill>
-    </AbsoluteFill>
+    </VideoContainer>
   );
 };
 
@@ -198,15 +209,25 @@ export const PhraseDuJour: React.FC<{
   const frame = useCurrentFrame();
   const contentFrames = totalDuration - INTRO_F - OUTRO_F;
 
-  if (frame < INTRO_F) return <IntroOverlay type="Phrase du jour" />;
-  if (frame >= totalDuration - OUTRO_F) return <OutroOverlay />;
+  if (frame < INTRO_F)
+    return (
+      <VideoContainer>
+        <IntroOverlay type="Phrase du jour" />
+      </VideoContainer>
+    );
+  if (frame >= totalDuration - OUTRO_F)
+    return (
+      <VideoContainer>
+        <OutroOverlay />
+      </VideoContainer>
+    );
 
   const cf = frame - INTRO_F;
   const words = word.example.split(" ");
   const arabicWords = word.example_ar.split(" ");
 
   return (
-    <AbsoluteFill>
+    <VideoContainer>
       <GradientBackground />
       <TopBar label="PHRASE DU JOUR" progress={cf / contentFrames} />
       <AbsoluteFill style={{ justifyContent: "center", alignItems: "center" }}>
@@ -259,7 +280,7 @@ export const PhraseDuJour: React.FC<{
           </div>
         </GlassCard>
       </AbsoluteFill>
-    </AbsoluteFill>
+    </VideoContainer>
   );
 };
 
@@ -270,15 +291,25 @@ export const Grammaire: React.FC<{
   const frame = useCurrentFrame();
   const contentFrames = totalDuration - INTRO_F - OUTRO_F;
 
-  if (frame < INTRO_F) return <IntroOverlay type="Grammaire" />;
-  if (frame >= totalDuration - OUTRO_F) return <OutroOverlay />;
+  if (frame < INTRO_F)
+    return (
+      <VideoContainer>
+        <IntroOverlay type="Grammaire" />
+      </VideoContainer>
+    );
+  if (frame >= totalDuration - OUTRO_F)
+    return (
+      <VideoContainer>
+        <OutroOverlay />
+      </VideoContainer>
+    );
 
   const cf = frame - INTRO_F;
   const { opacity: tOp, y: tY } = fadeSlide(cf);
   const { opacity: eOp, y: eY } = fadeSlide(cf, contentFrames * 0.35);
 
   return (
-    <AbsoluteFill>
+    <VideoContainer>
       <GradientBackground />
       <TopBar label="GRAMMAIRE" progress={cf / contentFrames} />
       <AbsoluteFill style={{ justifyContent: "center", alignItems: "center" }}>
@@ -357,7 +388,7 @@ export const Grammaire: React.FC<{
           </div>
         </GlassCard>
       </AbsoluteFill>
-    </AbsoluteFill>
+    </VideoContainer>
   );
 };
 
@@ -368,14 +399,24 @@ export const Quiz: React.FC<{
   const frame = useCurrentFrame();
   const contentFrames = totalDuration - INTRO_F - OUTRO_F;
 
-  if (frame < INTRO_F) return <IntroOverlay type="Quiz" />;
-  if (frame >= totalDuration - OUTRO_F) return <OutroOverlay />;
+  if (frame < INTRO_F)
+    return (
+      <VideoContainer>
+        <IntroOverlay type="Quiz" />
+      </VideoContainer>
+    );
+  if (frame >= totalDuration - OUTRO_F)
+    return (
+      <VideoContainer>
+        <OutroOverlay />
+      </VideoContainer>
+    );
 
   const cf = frame - INTRO_F;
   const revealFrame = contentFrames * 0.65;
 
   return (
-    <AbsoluteFill>
+    <VideoContainer>
       <GradientBackground />
       <TopBar label="QUIZ" progress={cf / contentFrames} />
       <AbsoluteFill style={{ justifyContent: "center", alignItems: "center" }}>
@@ -440,7 +481,7 @@ export const Quiz: React.FC<{
           })}
         </div>
       </AbsoluteFill>
-    </AbsoluteFill>
+    </VideoContainer>
   );
 };
 
@@ -451,14 +492,24 @@ export const Conjugaison: React.FC<{
   const frame = useCurrentFrame();
   const contentFrames = totalDuration - INTRO_F - OUTRO_F;
 
-  if (frame < INTRO_F) return <IntroOverlay type="Conjugaison" />;
-  if (frame >= totalDuration - OUTRO_F) return <OutroOverlay />;
+  if (frame < INTRO_F)
+    return (
+      <VideoContainer>
+        <IntroOverlay type="Conjugaison" />
+      </VideoContainer>
+    );
+  if (frame >= totalDuration - OUTRO_F)
+    return (
+      <VideoContainer>
+        <OutroOverlay />
+      </VideoContainer>
+    );
 
   const cf = frame - INTRO_F;
   const pronouns = ["je", "tu", "il/elle", "nous", "vous", "ils/elles"];
 
   return (
-    <AbsoluteFill>
+    <VideoContainer>
       <GradientBackground />
       <TopBar label="CONJUGAISON" progress={cf / contentFrames} />
       <AbsoluteFill style={{ justifyContent: "center", alignItems: "center" }}>
@@ -532,6 +583,6 @@ export const Conjugaison: React.FC<{
           })}
         </GlassCard>
       </AbsoluteFill>
-    </AbsoluteFill>
+    </VideoContainer>
   );
 };

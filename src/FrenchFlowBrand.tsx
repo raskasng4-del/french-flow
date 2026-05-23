@@ -1,5 +1,6 @@
 import React from "react";
-import { AbsoluteFill, interpolate, useCurrentFrame } from "remotion";
+import { AbsoluteFill, interpolate, useCurrentFrame, staticFile } from "remotion";
+import { Audio } from "@remotion/media";
 import { loadFont } from "@remotion/google-fonts/Poppins";
 import { loadFont as loadInter } from "@remotion/google-fonts/Inter";
 
@@ -94,6 +95,17 @@ export const GlassCard: React.FC<{
   >
     {children}
   </div>
+);
+
+export const BackgroundMusic: React.FC<{ volume?: number }> = ({ volume = 0.12 }) => (
+  <Audio src={staticFile("bg-music.mp3")} volume={volume} />
+);
+
+export const VideoContainer: React.FC<{ children: React.ReactNode }> = ({ children }) => (
+  <AbsoluteFill>
+    <BackgroundMusic />
+    {children}
+  </AbsoluteFill>
 );
 
 export const IntroOverlay: React.FC<{ type: string }> = ({ type }) => {
