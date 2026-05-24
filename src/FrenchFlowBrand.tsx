@@ -97,7 +97,7 @@ export const GlassCard: React.FC<{
   </div>
 );
 
-export const BackgroundMusic: React.FC<{ volume?: number }> = ({ volume = 0.12 }) => (
+export const BackgroundMusic: React.FC<{ volume?: number }> = ({ volume = 1.0 }) => (
   <Audio src={staticFile("bg-music.mp3")} volume={volume} />
 );
 
