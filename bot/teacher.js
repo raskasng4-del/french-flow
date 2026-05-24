@@ -204,6 +204,27 @@ function buildDescription(type, data) {
   }
 }
 
+// Generate TTS audio for a text, returns audio path
+function generateAudioFile(text, name) {
+  const AUDIO_DIR = path.join(PROJECT_ROOT, "public", "audio");
+  if (!fs.existsSync(AUDIO_DIR)) fs.mkdirSync(AUDIO_DIR, { recursive: true });
+  const filename = `${name}.mp3`;
+  const filepath = path.join(AUDIO_DIR, filename);
+  if (!fs.existsSync(filepath)) {
+    try {
+      const escaped = text.replace(/'/g, "'\\''");
+      execSync(
+        `python3 -c "from gtts import gTTS; gTTS('${escaped}', lang='fr', slow=False).save('${filepath}')"`,
+        { timeout: 15000, stdio: "pipe" }
+      );
+      log(`  🔊 Generated: ${name}.mp3`);
+    } catch (err) {
+      log(`  ⚠️ TTS failed: ${err.message}`);
+    }
+  }
+  return `audio/${filename}`;
+}
+
 // Render a Remotion composition to video
 function renderVideo(compositionId, props, outputFile) {
   const outputPath = path.join(OUTPUT_DIR, outputFile);
@@ -344,6 +365,8 @@ function getActivityProps(activity, wordMap, grammarMap, verbMap, durations) {
     case "MotDuJour": {
       const word = wordMap[activity.word_id];
       if (!word) return null;
+      word.audioSrc = generateAudioFile(word.french, `word_${word.id}`);
+      word.exampleAudioSrc = generateAudioFile(word.example, `example_${word.id}`);
       return {
         compositionId: "MotDuJour",
         props: { word, totalDuration: Math.round(durations.MotDuJour * 30) },
@@ -353,6 +376,7 @@ function getActivityProps(activity, wordMap, grammarMap, verbMap, durations) {
     case "PhraseDuJour": {
       const word = wordMap[activity.word_id];
       if (!word) return null;
+      word.phraseAudioSrc = generateAudioFile(word.example, `phrase_${word.id}`);
       return {
         compositionId: "PhraseDuJour",
         props: { word, totalDuration: Math.round(durations.PhraseDuJour * 30) },
@@ -362,6 +386,7 @@ function getActivityProps(activity, wordMap, grammarMap, verbMap, durations) {
     case "Grammaire": {
       const g = grammarMap[activity.grammar_id];
       if (!g) return null;
+      g.audioSrc = generateAudioFile(`${g.title}. ${g.explanation}`, `grammar_${g.id}`);
       return {
         compositionId: "Grammaire",
         props: { grammar: g, totalDuration: Math.round(durations.Grammaire * 30) },
@@ -371,13 +396,15 @@ function getActivityProps(activity, wordMap, grammarMap, verbMap, durations) {
     case "Quiz": {
       const word = wordMap[activity.word_id];
       if (!word) return null;
+      const qText = `Quelle est la traduction de "${word.french}" ?`;
       return {
         compositionId: "Quiz",
         props: {
           quiz: {
-            question: `ما هي ترجمة "${word.french}"؟`,
+            question: qText,
             options: activity.options,
             correctIndex: activity.correct,
+            audioSrc: generateAudioFile(qText, `quiz_${word.id}`),
           },
           totalDuration: Math.round(durations.Quiz * 30),
         },
@@ -387,6 +414,7 @@ function getActivityProps(activity, wordMap, grammarMap, verbMap, durations) {
     case "Conjugaison": {
       const verb = verbMap[activity.verb_id];
       if (!verb) return null;
+      verb.audioSrc = generateAudioFile(verb.infinitive, `verb_${verb.id}`);
       return {
         compositionId: "Conjugaison",
         props: { verb, totalDuration: Math.round(durations.Conjugaison * 30) },

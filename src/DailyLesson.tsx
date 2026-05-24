@@ -4,7 +4,10 @@ import {
   useCurrentFrame,
   interpolate,
   Easing,
+  Sequence,
+  staticFile,
 } from "remotion";
+import { Audio } from "@remotion/media";
 import {
   fonts,
   colors,
@@ -83,6 +86,9 @@ interface WordData {
   level: string;
   example: string;
   example_ar: string;
+  audioSrc?: string;
+  exampleAudioSrc?: string;
+  phraseAudioSrc?: string;
 }
 
 interface GrammarData {
@@ -92,6 +98,7 @@ interface GrammarData {
   level: string;
   explanation: string;
   examples: string[];
+  audioSrc?: string;
 }
 
 interface VerbData {
@@ -102,12 +109,14 @@ interface VerbData {
   present: Record<string, string>;
   passe_compose?: Record<string, string>;
   imparfait?: Record<string, string>;
+  audioSrc?: string;
 }
 
 interface QuizData {
   question: string;
   options: string[];
   correctIndex: number;
+  audioSrc?: string;
 }
 
 export const MotDuJour: React.FC<{
@@ -138,6 +147,16 @@ export const MotDuJour: React.FC<{
     <VideoContainer>
       <GradientBackground />
       <TopBar label="MOT DU JOUR" progress={cf / contentFrames} icon="🎯" />
+      {word.audioSrc && (
+        <Sequence from={INTRO_F} durationInFrames={Math.round(contentFrames * 0.45)}>
+          <Audio src={staticFile(word.audioSrc)} volume={0.9} />
+        </Sequence>
+      )}
+      {word.exampleAudioSrc && (
+        <Sequence from={INTRO_F + Math.round(contentFrames * 0.45)} durationInFrames={Math.round(contentFrames * 0.55)}>
+          <Audio src={staticFile(word.exampleAudioSrc)} volume={0.9} />
+        </Sequence>
+      )}
       <AbsoluteFill style={{ justifyContent: "center", alignItems: "center" }}>
         <div style={{ opacity: s, transform: `scale(${s})`, marginBottom: 12 }}>
           <TagPill text={word.level} color={colors.accent2} />
@@ -204,6 +223,11 @@ export const PhraseDuJour: React.FC<{
     <VideoContainer>
       <GradientBackground />
       <TopBar label="PHRASE DU JOUR" progress={cf / contentFrames} icon="💬" />
+      {word.phraseAudioSrc && (
+        <Sequence from={INTRO_F} durationInFrames={contentFrames}>
+          <Audio src={staticFile(word.phraseAudioSrc)} volume={0.9} />
+        </Sequence>
+      )}
       <AbsoluteFill style={{ justifyContent: "center", alignItems: "center" }}>
         <GlassCard width="92%">
           <div
@@ -274,6 +298,11 @@ export const Grammaire: React.FC<{
     <VideoContainer>
       <GradientBackground />
       <TopBar label="GRAMMAIRE" progress={cf / contentFrames} icon="📚" />
+      {grammar.audioSrc && (
+        <Sequence from={INTRO_F} durationInFrames={contentFrames}>
+          <Audio src={staticFile(grammar.audioSrc)} volume={0.9} />
+        </Sequence>
+      )}
       <AbsoluteFill style={{ justifyContent: "center", alignItems: "center" }}>
         <div style={{ opacity: tOp, transform: `translateY(${tY}px)`, textAlign: "center", marginBottom: 16 }}>
           <TagPill text={grammar.level} color={colors.accent3} />
@@ -369,6 +398,11 @@ export const Quiz: React.FC<{
     <VideoContainer>
       <GradientBackground />
       <TopBar label="QUIZ" progress={cf / contentFrames} icon="❓" />
+      {quiz.audioSrc && (
+        <Sequence from={INTRO_F} durationInFrames={contentFrames}>
+          <Audio src={staticFile(quiz.audioSrc)} volume={0.9} />
+        </Sequence>
+      )}
       <AbsoluteFill style={{ justifyContent: "center", alignItems: "center" }}>
         <div
           style={{
@@ -462,6 +496,11 @@ export const Conjugaison: React.FC<{
     <VideoContainer>
       <GradientBackground />
       <TopBar label="CONJUGAISON" progress={cf / contentFrames} icon="📝" />
+      {verb.audioSrc && (
+        <Sequence from={INTRO_F} durationInFrames={contentFrames}>
+          <Audio src={staticFile(verb.audioSrc)} volume={0.9} />
+        </Sequence>
+      )}
       <AbsoluteFill style={{ justifyContent: "center", alignItems: "center" }}>
         <div style={{ textAlign: "center", marginBottom: 20, opacity: springIn(cf) }}>
           <TagPill text={verb.level} color={colors.accent} />
