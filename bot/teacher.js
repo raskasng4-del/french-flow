@@ -595,6 +595,27 @@ async function renderDialogue(pageId, accessToken, progress) {
   const today = todayStr();
   const dayNum = progress.current_day || 1;
   const dialogue = dialogues[(dayNum - 1) % dialogues.length];
+
+  // Generate TTS audio for each dialogue line
+  log(`  🔊 Generating TTS for ${dialogue.lines.length} lines...`);
+  const AUDIO_DIR = path.join(PROJECT_ROOT, "public", "audio");
+  if (!fs.existsSync(AUDIO_DIR)) fs.mkdirSync(AUDIO_DIR, { recursive: true });
+  dialogue.lines.forEach((line, i) => {
+    const filename = `dialogue_${dialogue.id}_${i}.mp3`;
+    const filepath = path.join(AUDIO_DIR, filename);
+    line.audioSrc = `audio/${filename}`;
+    if (!fs.existsSync(filepath)) {
+      try {
+        const escaped = line.french.replace(/'/g, "'\\''");
+        execSync(`python3 -c "from gtts import gTTS; gTTS('${escaped}', lang='fr', slow=False).save('${filepath}')"`, { timeout: 15000, stdio: "pipe" });
+        log(`    ✅ ${filename}`);
+      } catch (err) {
+        log(`    ⚠️ TTS failed: ${err.message}`);
+      }
+    }
+  });
+  await sleep(2000);
+
   const INTRO_F = 45;
   const PER_LINE_F = 80;
   const OUTRO_F = 30;

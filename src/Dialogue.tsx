@@ -4,7 +4,10 @@ import {
   useCurrentFrame,
   interpolate,
   Easing,
+  Sequence,
+  staticFile,
 } from "remotion";
+import { Audio } from "@remotion/media";
 import {
   fonts,
   colors,
@@ -25,6 +28,7 @@ interface DialogueLine {
   name: string;
   french: string;
   arabic: string;
+  audioSrc?: string;
 }
 
 interface DialogueData {
@@ -163,6 +167,13 @@ export const Dialogue: React.FC<{
         progress={cf / contentFrames}
         icon="💬"
       />
+
+      {dialogue.lines.map((line, i) => (
+        <Sequence key={i} from={INTRO_F + i * PER_LINE_F} durationInFrames={PER_LINE_F}>
+          {line.audioSrc && <Audio src={staticFile(line.audioSrc)} volume={0.9} />}
+        </Sequence>
+      ))}
+
       <AbsoluteFill style={{ justifyContent: "center" }}>
         <div
           style={{
