@@ -97,7 +97,7 @@ const PHASE1_VIDEOS = Array.from({ length: 22 }, (_, i) => ({
 }));
 
 function buildDescription(type, data) {
-  const hashtags = "#FrenchFlow #LearnFrench #Francais #الفرنسية #تعلم_الفرنسية #FrenchTeacher";
+  const hashtags = "#FrenchFlow #ApprendreLeFrancais #Francais #LearnFrench #FrenchTeacher";
   switch (type) {
     case "MotDuJour":
       return (
@@ -561,7 +561,7 @@ async function renderUserPhrases(pageId, accessToken, progress) {
 
     if (fs.existsSync(outputPath)) {
       log(`  ✅ FrenchShorts rendered (${(fs.statSync(outputPath).size / 1024 / 1024).toFixed(1)} MB)`);
-      const desc = `🇫🇷 ${data.title}\n\n${data.phrases.map(p => `• ${p.french} = ${p.arabic}`).join("\n")}\n\n#FrenchFlow #LearnFrench #Francais #الفرنسية #تعلم_الفرنسية #FrenchTeacher`;
+      const desc = `🇫🇷 ${data.title}\n\n${data.phrases.map(p => `• ${p.french}`).join("\n")}\n\n#FrenchFlow #LearnFrench #Francais #FrenchTeacher`;
       const published = await publishToFacebook(outputPath, desc, pageId, accessToken);
       if (published) {
         progress.published_videos.push({
