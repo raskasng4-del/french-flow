@@ -102,10 +102,50 @@ function buildDescription(type, data) {
     case "MotDuJour":
       return (
         `🇫🇷 **Mot du jour** - French Flow\n\n` +
-        `✨ ${data.french} = ${data.arabic}\n` +
+        `✨ ${data.french}\n` +
         `💬 ${data.example}\n` +
-        `\n💡 **Astuce** : Répétez ce mot 10 fois aujourd'hui dans différents contextes.` +
-        `\n💡 **نصيحة** : كرر هاذ الكلمة 10 مرات اليوم فسياقات مختلفة.\n\n${hashtags}`
+        `\n💡 **Astuce** : Répétez ce mot 10 fois aujourd'hui dans différents contextes.\n\n${hashtags}`
+      );
+    case "PhraseDuJour":
+      return (
+        `🇫🇷 **Phrase du jour** - French Flow\n\n` +
+        `🗣 ${data.example}\n` +
+        `\n💡 **Astuce** : Essayez d'utiliser cette phrase dans une vraie conversation aujourd'hui !\n\n${hashtags}`
+      );
+    case "Grammaire":
+      return (
+        `🇫🇷 **Leçon de grammaire** - French Flow\n\n` +
+        `📚 ${data.title}\n\n` +
+        `💡 **Astuce** : Écrivez 3 phrases personnelles avec cette règle dans votre cahier.\n\n${hashtags}`
+      );
+    case "Quiz":
+      return (
+        `🇫🇷 **Quiz du jour** - French Flow\n\n` +
+        `❓ ${data.question}\n` +
+        `\n💡 **Astuce** : Mettez pause et répondez avant la fin de la vidéo !\n\n${hashtags}`
+      );
+    case "Conjugaison":
+      const tenses = data.passe_compose ? "Présent + Passé composé" : data.imparfait ? "Présent + Imparfait" : "Présent";
+      return (
+        `🇫🇷 **Conjugaison** - French Flow\n\n` +
+        `📝 ${data.infinitive} (${data.level})\n` +
+        `🔄 ${tenses}\n` +
+        `\n💡 **Astuce** : Conjuguez ce verbe à voix haute avec tous les pronoms 3 fois.\n\n${hashtags}`
+      );
+    case "Révision":
+      return (
+        `🇫🇷 **Révision** - French Flow\n\n` +
+        `🔄 ${data.french || data.title || data.infinitive}\n` +
+        `\n💡 **Astuce** : La répétition espacée est la clé de la mémorisation à long terme !\n\n${hashtags}`
+      );
+    case "Dialogue":
+      const lines = data.lines || [];
+      const conversation = lines.map(l => `${l.speaker === "femme" ? "👩" : "👨"} ${l.name}: ${l.french}`).join("\n");
+      return (
+        `🇫🇷 **Dialogue** - French Flow\n\n` +
+        `💬 ${data.title} (${data.level})\n\n` +
+        `${conversation}\n\n` +
+        `💡 **Astuce** : Regardez 2 fois — 1x pour comprendre, 1x pour répéter à voix haute.\n\n${hashtags}`
       );
     case "PhraseDuJour":
       return (

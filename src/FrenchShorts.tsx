@@ -91,23 +91,12 @@ const Header: React.FC<{ title: string; progress: number }> = ({
 
 const PhraseCard: React.FC<{
   french: string;
-  arabic: string;
   frame: number;
-}> = ({ french, arabic, frame }) => {
+}> = ({ french, frame }) => {
   const frenchScale = spring({
     frame,
     fps: FPS,
     config: { damping: 12, stiffness: 100 },
-  });
-  const arabicOpacity = interpolate(frame, [15, 30], [0, 1], {
-    extrapolateLeft: "clamp",
-    extrapolateRight: "clamp",
-    easing: Easing.bezier(0.16, 1, 0.3, 1),
-  });
-  const arabicY = interpolate(frame, [15, 35], [30, 0], {
-    extrapolateLeft: "clamp",
-    extrapolateRight: "clamp",
-    easing: Easing.bezier(0.16, 1, 0.3, 1),
   });
 
   return (
@@ -142,21 +131,6 @@ const PhraseCard: React.FC<{
           }}
         >
           {french}
-        </div>
-        <div
-          style={{
-            marginTop: 32,
-            fontSize: 32,
-            fontWeight: 500,
-            fontFamily: fonts.body,
-            color: colors.accent2,
-            textAlign: "center",
-            opacity: arabicOpacity,
-            transform: `translateY(${arabicY}px)`,
-            textShadow: `0 0 20px ${colors.accent2}44`,
-          }}
-        >
-          {arabic}
         </div>
       </div>
     </AbsoluteFill>
@@ -281,7 +255,6 @@ export const FrenchShorts: React.FC<FrenchShortsProps> = ({
           )}
           <PhraseCard
             french={phrase.french}
-            arabic={phrase.arabic}
             frame={frame - i * itemFrames}
           />
         </Sequence>

@@ -155,18 +155,6 @@ export const MotDuJour: React.FC<{
             transform: `scale(${s})`,
           }}
         />
-        <div
-          style={{
-            fontSize: 40,
-            fontWeight: 500,
-            fontFamily: fonts.body,
-            color: colors.accent2,
-            opacity: s,
-            marginBottom: 48,
-          }}
-        >
-          {word.arabic}
-        </div>
         <GlassCard>
           <div
             style={{
@@ -182,19 +170,6 @@ export const MotDuJour: React.FC<{
             }}
           >
             {word.example}
-          </div>
-          <div
-            style={{
-              fontSize: 20,
-              fontWeight: 300,
-              fontFamily: fonts.body,
-              color: colors.textMuted,
-              opacity: exOp * 0.7,
-              marginTop: 12,
-              textAlign: "center",
-            }}
-          >
-            {word.example_ar}
           </div>
         </GlassCard>
       </AbsoluteFill>
@@ -224,7 +199,6 @@ export const PhraseDuJour: React.FC<{
 
   const cf = frame - INTRO_F;
   const words = word.example.split(" ");
-  const arabicWords = word.example_ar.split(" ");
 
   return (
     <VideoContainer>
@@ -262,18 +236,6 @@ export const PhraseDuJour: React.FC<{
                   }}
                 >
                   {w}
-                  <span
-                    style={{
-                      display: "block",
-                      fontSize: 18,
-                      color: colors.accent2,
-                      fontWeight: 400,
-                      marginTop: 4,
-                      opacity: 0.85,
-                    }}
-                  >
-                    {arabicWords[i] || ""}
-                  </span>
                 </span>
               );
             })}
@@ -331,18 +293,6 @@ export const Grammaire: React.FC<{
             padding: "0 24px",
           }}
         />
-        <div
-          style={{
-            fontSize: 26,
-            fontWeight: 400,
-            fontFamily: fonts.body,
-            color: colors.textMuted,
-            opacity: tOp * 0.7,
-            marginBottom: 28,
-          }}
-        >
-          {grammar.title_ar}
-        </div>
         <GlassCard>
           <div
             style={{
@@ -529,19 +479,6 @@ export const Conjugaison: React.FC<{
             marginBottom: 8,
           }}
         />
-        <div
-          style={{
-            fontSize: 22,
-            fontWeight: 400,
-            fontFamily: fonts.body,
-            color: colors.textMuted,
-            opacity: springIn(cf) * 0.7,
-            marginBottom: 24,
-          }}
-        >
-          {verb.arabic}
-        </div>
-
         <GlassCard width="75%">
           {pronouns.map((p, i) => {
             const s = springIn(cf, i * 4);

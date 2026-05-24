@@ -179,7 +179,7 @@ export const OutroOverlay: React.FC = () => {
             marginTop: 10,
           }}
         >
-          French Flow &mdash; إلى اللقاء
+          French Flow
         </div>
       </AbsoluteFill>
     </AbsoluteFill>

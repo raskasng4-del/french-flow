@@ -126,19 +126,6 @@ const ChatBubble: React.FC<{
         >
           {line.french}
         </div>
-        <div
-          style={{
-            fontSize: 16,
-            fontWeight: 400,
-            fontFamily: fonts.body,
-            color: colors.textMuted,
-            marginTop: 4,
-            direction: "rtl",
-            textAlign: "right",
-          }}
-        >
-          {line.arabic}
-        </div>
       </div>
     </div>
   );
