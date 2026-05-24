@@ -16,6 +16,8 @@ jobs:
   publish:
     runs-on: ubuntu-latest
     timeout-minutes: 180
+    permissions:
+      contents: write
 
     steps:
       - uses: actions/checkout@v4
@@ -39,33 +41,17 @@ jobs:
         run: node bot/teacher.js
 
       - name: Save progress
-        uses: actions/github-script@v7
-        with:
-          script: |
-            const fs = require('fs');
-            const filePath = 'bot/progress.json';
-            if (!fs.existsSync(filePath)) {
-              console.log('No progress file found');
-              return;
-            }
-            const content = fs.readFileSync(filePath, 'utf8');
-            let sha;
-            try {
-              const { data: file } = await github.rest.repos.getContent({
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                path: filePath,
-              });
-              sha = file.sha;
-            } catch (e) {
-              console.log('File does not exist yet, creating...');
-            }
-            await github.rest.repos.createOrUpdateFileContents({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              path: filePath,
-              message: `🤖 Update progress ${new Date().toISOString().split('T')[0]}`,
-              content: Buffer.from(content).toString('base64'),
-              sha: sha,
-            });
-            console.log('Progress saved successfully');
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if [ -f bot/progress.json ] && [ -s bot/progress.json ]; then
+            CONTENT=$(base64 -w0 bot/progress.json)
+            SHA=$(curl -s -H "Authorization: token $GH_TOKEN" \
+              "https://api.github.com/repos/${{ github.repository }}/contents/bot/progress.json" | \
+              python3 -c "import sys,json; print(json.load(sys.stdin).get('sha',''))" 2>/dev/null || echo "")
+            RESP=$(curl -s -X PUT -H "Authorization: token $GH_TOKEN" \
+              -H "Content-Type: application/json" \
+              -d "{\"message\":\"🤖 Update progress $(date +%Y-%m-%d)\",\"content\":\"$CONTENT\",\"sha\":\"$SHA\"}" \
+              "https://api.github.com/repos/${{ github.repository }}/contents/bot/progress.json")
+            echo "$RESP" | python3 -c "import sys,json; d=json.load(sys.stdin); print('✅' if d.get('commit') else '❌ '+d.get('message',str(d)))" 2>/dev/null
+          fi
