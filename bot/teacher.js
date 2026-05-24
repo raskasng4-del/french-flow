@@ -398,15 +398,24 @@ function getActivityProps(activity, wordMap, grammarMap, verbMap, durations) {
     case "Quiz": {
       const word = wordMap[activity.word_id];
       if (!word) return null;
-      const qText = `Quelle est la traduction de "${word.french}" ?`;
+      const allWords = Object.values(wordMap);
+      const distractors = allWords
+        .filter(w => w.id !== word.id && w.level === word.level)
+        .sort(() => Math.random() - 0.5)
+        .slice(0, 3)
+        .map(w => w.french);
+      while (distractors.length < 3) distractors.push("???");
+      const allOptions = [word.french, ...distractors].sort(() => Math.random() - 0.5);
+      const correctIndex = allOptions.indexOf(word.french);
+      const qText = "Quel est ce mot ?";
       return {
         compositionId: "Quiz",
         props: {
           quiz: {
             question: qText,
-            options: activity.options,
-            correctIndex: activity.correct,
-            audioSrc: generateAudioFile(qText, `quiz_${word.id}`),
+            options: allOptions,
+            correctIndex,
+            audioSrc: generateAudioFile(word.french, `quiz_word_${word.id}`),
           },
           totalDuration: Math.round(durations.Quiz * 30),
         },
@@ -506,6 +515,7 @@ async function runPhase2(progress, pageId, accessToken) {
   if (renderResults.length === 0) {
     const batchActivities = dayData.activities.slice(startIdx, startIdx + count);
     for (const activity of batchActivities) {
+      activity._dayNum = dayData.day;
       const resolved = getActivityProps(activity, wordMap, grammarMap, verbMap, durations);
       if (!resolved) continue;
       const result = await renderAndPublish(activity, resolved.compositionId, resolved.props, resolved.outputFile, dayData.day, pageId, accessToken, progress, today);

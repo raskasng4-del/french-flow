@@ -117,6 +117,7 @@ interface QuizData {
   options: string[];
   correctIndex: number;
   audioSrc?: string;
+  wordAudioSrc?: string;
 }
 
 export const MotDuJour: React.FC<{
