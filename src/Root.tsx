@@ -8,6 +8,7 @@ import {
   Conjugaison,
 } from "./DailyLesson";
 import { FrenchShorts } from "./FrenchShorts";
+import { Dialogue } from "./Dialogue";
 
 const FPS = 30;
 
@@ -123,6 +124,31 @@ export const RemotionRoot: React.FC = () => {
             { french: "je ne comprends pas", arabic: "أنا لا أفهم", audioSrc: "audio/phrase_5.mp3" },
           ],
           durationPerItem: 3,
+        }}
+      />
+      <Composition
+        id="Dialogue"
+        component={Dialogue}
+        durationInFrames={Math.round(17.5 * FPS)}
+        fps={FPS}
+        width={1080}
+        height={1920}
+        defaultProps={{
+          dialogue: {
+            id: 1,
+            title: "Se présenter",
+            title_ar: "التعريف بالنفس",
+            level: "A1",
+            lines: [
+              { speaker: "homme", name: "Pierre", french: "Bonjour ! Je m'appelle Pierre.", arabic: "مرحباً! اسمي بيير." },
+              { speaker: "femme", name: "Marie", french: "Salut Pierre ! Moi, c'est Marie.", arabic: "مرحباً بيير! أنا ماري." },
+              { speaker: "homme", name: "Pierre", french: "Enchanté ! Tu es française ?", arabic: "تشرفت! هل أنت فرنسية؟" },
+              { speaker: "femme", name: "Marie", french: "Oui, je suis française. Et toi ?", arabic: "نعم، أنا فرنسية. وأنت؟" },
+              { speaker: "homme", name: "Pierre", french: "Moi aussi ! Je suis de Paris.", arabic: "أنا أيضاً! أنا من باريس." },
+              { speaker: "femme", name: "Marie", french: "Super ! Moi, je suis de Lyon.", arabic: "رائع! أنا من ليون." },
+            ],
+          },
+          totalDuration: Math.round(17.5 * FPS),
         }}
       />
     </>

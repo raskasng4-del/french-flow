@@ -10,6 +10,7 @@ const VERBS_FILE = path.join(BOT_DIR, "verbs.json");
 const CURRICULUM_FILE = path.join(BOT_DIR, "curriculum.json");
 const PROGRESS_FILE = path.join(BOT_DIR, "progress.json");
 const USER_PHRASES_FILE = path.join(BOT_DIR, "user_phrases.json");
+const DIALOGUES_FILE = path.join(BOT_DIR, "dialogues.json");
 const OUTPUT_DIR = path.join(PROJECT_ROOT, "output");
 
 const log = (msg) => console.log(`[${new Date().toISOString()}] ${msg}`);
@@ -110,6 +111,8 @@ function buildDescription(type, data) {
       return `🇫🇷 Conjugaison - French Flow\n\n📝 ${data.infinitive}\n📖 ${data.arabic}\n\n${hashtags}`;
     case "Révision":
       return `🇫🇷 Révision - French Flow\n\n🔄 ${data.french || data.title || data.infinitive}\n📖 ${data.arabic || data.title_ar || ""}\n\n${hashtags}`;
+    case "Dialogue":
+      return `🇫🇷 Dialogue - French Flow\n\n💬 ${data.title}\n📖 ${data.title_ar}\n🗣 ${data.lines.map(l => `${l.name}: ${l.french}`).join(" | ")}\n\n${hashtags}`;
     default:
       return `${hashtags}`;
   }
@@ -490,6 +493,64 @@ async function renderUserPhrases(pageId, accessToken, progress) {
   }
 }
 
+// Render daily dialogue as bonus video
+async function renderDialogue(pageId, accessToken, progress) {
+  if (!fs.existsSync(DIALOGUES_FILE)) {
+    log("ℹ️ No dialogues.json found, skipping dialogue video");
+    return;
+  }
+
+  const dialogues = loadJSON(DIALOGUES_FILE);
+  if (dialogues.length === 0) {
+    log("ℹ️ dialogues.json is empty, skipping dialogue video");
+    return;
+  }
+
+  const today = todayStr();
+  const dayNum = progress.current_day || 1;
+  const dialogue = dialogues[(dayNum - 1) % dialogues.length];
+  const INTRO_F = 45;
+  const PER_LINE_F = 80;
+  const OUTRO_F = 30;
+  const totalDuration = INTRO_F + dialogue.lines.length * PER_LINE_F + OUTRO_F;
+
+  log(`🎬 Rendering Dialogue: "${dialogue.title}" (${dialogue.level})`);
+
+  const outputFile = `dialogue_day${dayNum}.mp4`;
+  const outputPath = path.join(OUTPUT_DIR, outputFile);
+
+  const props = { dialogue, totalDuration };
+  const propsJSON = JSON.stringify(props).replace(/"/g, '\\"');
+  const cmd = `npx remotion render Dialogue "${outputPath}" --props="${propsJSON}" --overwrite`;
+
+  try {
+    execSync(cmd, {
+      cwd: PROJECT_ROOT,
+      stdio: ["pipe", "pipe", "pipe"],
+      timeout: 120000,
+      env: { ...process.env, NODE_OPTIONS: "--max-old-space-size=2048" },
+    });
+
+    if (fs.existsSync(outputPath)) {
+      log(`  ✅ Dialogue rendered (${(fs.statSync(outputPath).size / 1024 / 1024).toFixed(1)} MB)`);
+      const desc = buildDescription("Dialogue", dialogue);
+      const published = await publishToFacebook(outputPath, desc, pageId, accessToken);
+      if (published) {
+        progress.published_videos.push({
+          type: "Dialogue",
+          file: outputFile,
+          published: true,
+          date: today,
+        });
+        saveJSON(PROGRESS_FILE, progress);
+        log(`  ✅ Dialogue published to Facebook`);
+      }
+    }
+  } catch (err) {
+    log(`  ❌ Dialogue render failed: ${err.message}`);
+  }
+}
+
 // Main
 async function main() {
   const pageId = process.env.FB_PAGE_ID;
@@ -515,6 +576,9 @@ async function main() {
 
   // Bonus: render and publish user phrases as FrenchShorts
   await renderUserPhrases(pageId, accessToken, progress);
+
+  // Bonus: render daily dialogue (communication practice)
+  await renderDialogue(pageId, accessToken, progress);
 
   log("✨ Done!");
 }
