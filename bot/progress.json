@@ -1,13 +1,40 @@
 {
-  "phase": 1,
+  "phase": 2,
   "phase1_index": 0,
-  "current_day": 0,
-  "day_video_index": 0,
-  "published_videos": [],
-  "last_publish_date": null,
+  "current_day": 1,
+  "day_video_index": 2,
+  "published_videos": [
+    {
+      "type": "MotDuJour",
+      "file": "dayundefined_mot.mp4",
+      "published": true,
+      "date": "2026-05-24"
+    },
+    {
+      "type": "Grammaire",
+      "file": "dayundefined_grammaire.mp4",
+      "published": true,
+      "date": "2026-05-24"
+    }
+  ],
+  "last_publish_date": "2026-05-24",
   "spaced_repetition": {
-    "words": {},
-    "grammar": {},
+    "words": {
+      "2": {
+        "first_seen": "2026-05-24",
+        "last_reviewed": "2026-05-24",
+        "interval": 1,
+        "next_review": "2026-05-25"
+      }
+    },
+    "grammar": {
+      "2": {
+        "first_seen": "2026-05-24",
+        "last_reviewed": "2026-05-24",
+        "interval": 1,
+        "next_review": "2026-05-25"
+      }
+    },
     "verbs": {}
   }
 }
