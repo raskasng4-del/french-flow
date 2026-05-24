@@ -100,19 +100,65 @@ function buildDescription(type, data) {
   const hashtags = "#FrenchFlow #LearnFrench #Francais #الفرنسية #تعلم_الفرنسية #FrenchTeacher";
   switch (type) {
     case "MotDuJour":
-      return `🇫🇷 Mot du jour avec French Flow\n\n✨ ${data.french}\n📖 ${data.arabic}\n💬 ${data.example}\n\n${hashtags}`;
+      return (
+        `🇫🇷 **Mot du jour** - French Flow\n\n` +
+        `✨ ${data.french} = ${data.arabic}\n` +
+        `💬 ${data.example}\n` +
+        `\n💡 **Astuce** : Répétez ce mot 10 fois aujourd'hui dans différents contextes.` +
+        `\n💡 **نصيحة** : كرر هاذ الكلمة 10 مرات اليوم فسياقات مختلفة.\n\n${hashtags}`
+      );
     case "PhraseDuJour":
-      return `🇫🇷 Phrase du jour - French Flow\n\n🗣 ${data.example}\n📖 ${data.example_ar}\n\n${hashtags}`;
+      return (
+        `🇫🇷 **Phrase du jour** - French Flow\n\n` +
+        `🗣 ${data.example}\n` +
+        `📖 ${data.example_ar}\n` +
+        `\n💡 **Astuce** : Essayez d'utiliser cette phrase dans une vraie conversation aujourd'hui !` +
+        `\n💡 **نصيحة** : حاول تستعمل هاذ الجملة فمحادثة حقيقية اليوم!\n\n${hashtags}`
+      );
     case "Grammaire":
-      return `🇫🇷 Leçon de grammaire - French Flow\n\n📚 ${data.title}\n📖 ${data.title_ar}\n\n${hashtags}`;
+      return (
+        `🇫🇷 **Leçon de grammaire** - French Flow\n\n` +
+        `📚 ${data.title}\n` +
+        `📖 ${data.title_ar}\n\n` +
+        `💡 **Astuce** : Écrivez 3 phrases personnelles avec cette règle dans votre cahier.` +
+        `\n💡 **نصيحة** : اكتب 3 جمل شخصية بهاد القاعدة فدفترك.\n\n${hashtags}`
+      );
     case "Quiz":
-      return `🇫🇷 Quiz du jour - French Flow\n\n❓ ${data.question}\n💡 Réponse en commentaire\n\n${hashtags}`;
+      return (
+        `🇫🇷 **Quiz du jour** - French Flow\n\n` +
+        `❓ ${data.question}\n` +
+        `\n💡 **Astuce** : Mettez pause et répondez avant la fin de la vidéo !` +
+        `\n💡 **نصيحة** : وقف الفيديو وجاوب قبل ما تشوف الجواب!\n\n${hashtags}`
+      );
     case "Conjugaison":
-      return `🇫🇷 Conjugaison - French Flow\n\n📝 ${data.infinitive}\n📖 ${data.arabic}\n\n${hashtags}`;
+      const tenses = data.passe_compose ? "Présent + Passé composé" : data.imparfait ? "Présent + Imparfait" : "Présent";
+      return (
+        `🇫🇷 **Conjugaison** - French Flow\n\n` +
+        `📝 ${data.infinitive} (${data.level})\n` +
+        `📖 ${data.arabic}\n` +
+        `🔄 Temps: ${tenses}\n` +
+        `\n💡 **Astuce** : Conjuguez ce verbe à voix haute avec tous les pronoms 3 fois.` +
+        `\n💡 **نصيحة** : صرف هاذ الفعل بصوت عال مع جميع الضمائر 3 مرات.\n\n${hashtags}`
+      );
     case "Révision":
-      return `🇫🇷 Révision - French Flow\n\n🔄 ${data.french || data.title || data.infinitive}\n📖 ${data.arabic || data.title_ar || ""}\n\n${hashtags}`;
+      return (
+        `🇫🇷 **Révision** - French Flow\n\n` +
+        `🔄 ${data.french || data.title || data.infinitive}\n` +
+        `📖 ${data.arabic || data.title_ar || ""}\n` +
+        `\n💡 **Astuce** : La répétition espacée est la clé de la mémorisation à long terme !` +
+        `\n💡 **نصيحة** : التكرار المتباعد هو مفتاح الحفظ على المدى الطويل!\n\n${hashtags}`
+      );
     case "Dialogue":
-      return `🇫🇷 Dialogue - French Flow\n\n💬 ${data.title}\n📖 ${data.title_ar}\n🗣 ${data.lines.map(l => `${l.name}: ${l.french}`).join(" | ")}\n\n${hashtags}`;
+      const lines = data.lines || [];
+      const conversation = lines.map(l => `${l.speaker === "femme" ? "👩" : "👨"} ${l.name}: ${l.french}`).join("\n");
+      return (
+        `🇫🇷 **Dialogue** - French Flow\n\n` +
+        `💬 ${data.title}\n` +
+        `📖 ${data.title_ar} (${data.level})\n\n` +
+        `${conversation}\n\n` +
+        `💡 **Astuce** : Regardez 2 fois — 1x pour comprendre, 1x pour répéter à voix haute.` +
+        `\n💡 **نصيحة** : شاهد الحوار مرتين — مرة للفهم ومرة للتكرار بصوت عال.\n\n${hashtags}`
+      );
     default:
       return `${hashtags}`;
   }
