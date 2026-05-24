@@ -1,8 +1,6 @@
 name: French Flow Daily
 
 on:
-  push:
-    branches: [main]
   schedule:
     - cron: "0 8,18 * * *"
   workflow_dispatch:
@@ -10,7 +8,6 @@ on:
 env:
   FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
   FB_ACCESS_TOKEN: ${{ secrets.FB_ACCESS_TOKEN }}
-  BATCH: morning
 
 jobs:
   publish:
