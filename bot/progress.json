@@ -1,8 +1,8 @@
 {
   "phase": 2,
   "phase1_index": 0,
-  "current_day": 1,
-  "day_video_index": 2,
+  "current_day": 2,
+  "day_video_index": 0,
   "published_videos": [
     {
       "type": "MotDuJour",
@@ -13,6 +13,24 @@
     {
       "type": "Grammaire",
       "file": "dayundefined_grammaire.mp4",
+      "published": true,
+      "date": "2026-05-24"
+    },
+    {
+      "type": "PhraseDuJour",
+      "file": "dayundefined_phrase.mp4",
+      "published": true,
+      "date": "2026-05-24"
+    },
+    {
+      "type": "Conjugaison",
+      "file": "dayundefined_conjugaison.mp4",
+      "published": true,
+      "date": "2026-05-24"
+    },
+    {
+      "type": "FrenchShorts",
+      "file": "french_shorts_2026-05-24.mp4",
       "published": true,
       "date": "2026-05-24"
     }
@@ -35,6 +53,13 @@
         "next_review": "2026-05-25"
       }
     },
-    "verbs": {}
+    "verbs": {
+      "2": {
+        "first_seen": "2026-05-24",
+        "last_reviewed": "2026-05-24",
+        "interval": 1,
+        "next_review": "2026-05-25"
+      }
+    }
   }
 }
