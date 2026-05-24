@@ -9,6 +9,7 @@ const GRAMMAR_FILE = path.join(BOT_DIR, "grammar.json");
 const VERBS_FILE = path.join(BOT_DIR, "verbs.json");
 const CURRICULUM_FILE = path.join(BOT_DIR, "curriculum.json");
 const PROGRESS_FILE = path.join(BOT_DIR, "progress.json");
+const USER_PHRASES_FILE = path.join(BOT_DIR, "user_phrases.json");
 const OUTPUT_DIR = path.join(PROJECT_ROOT, "output");
 
 const log = (msg) => console.log(`[${new Date().toISOString()}] ${msg}`);
@@ -406,6 +407,57 @@ async function runPhase2(progress, pageId, accessToken) {
   log(`✅ ${phaseLabel} - Day ${dayData.day} complete! ${renderResults.filter((r) => r.published).length}/${count} videos published`);
 }
 
+// Render user phrases as FrenchShorts video (bonus content)
+async function renderUserPhrases(pageId, accessToken, progress) {
+  if (!fs.existsSync(USER_PHRASES_FILE)) {
+    log("ℹ️ No user_phrases.json found, skipping bonus video");
+    return;
+  }
+
+  const data = loadJSON(USER_PHRASES_FILE);
+  if (!data.phrases || data.phrases.length === 0) {
+    log("ℹ️ user_phrases.json is empty, skipping bonus video");
+    return;
+  }
+
+  log(`🎬 Rendering FrenchShorts (${data.phrases.length} phrases): ${data.title}`);
+
+  const today = todayStr();
+  const props = { title: data.title, phrases: data.phrases, durationPerItem: 3 };
+  const propsJSON = JSON.stringify(props).replace(/"/g, '\\"');
+  const outputFile = `french_shorts_${today}.mp4`;
+  const outputPath = path.join(OUTPUT_DIR, outputFile);
+
+  const cmd = `npx remotion render FrenchShorts "${outputPath}" --props="${propsJSON}" --overwrite`;
+
+  try {
+    execSync(cmd, {
+      cwd: PROJECT_ROOT,
+      stdio: ["pipe", "pipe", "pipe"],
+      timeout: 300000,
+      env: { ...process.env, NODE_OPTIONS: "--max-old-space-size=2048" },
+    });
+
+    if (fs.existsSync(outputPath)) {
+      log(`  ✅ FrenchShorts rendered (${(fs.statSync(outputPath).size / 1024 / 1024).toFixed(1)} MB)`);
+      const desc = `🇫🇷 ${data.title}\n\n${data.phrases.map(p => `• ${p.french} = ${p.arabic}`).join("\n")}\n\n#FrenchFlow #LearnFrench #Francais #الفرنسية #تعلم_الفرنسية #FrenchTeacher`;
+      const published = await publishToFacebook(outputPath, desc, pageId, accessToken);
+      if (published) {
+        progress.published_videos.push({
+          type: "FrenchShorts",
+          file: outputFile,
+          published: true,
+          date: today,
+        });
+        saveJSON(PROGRESS_FILE, progress);
+        log(`  ✅ FrenchShorts published to Facebook`);
+      }
+    }
+  } catch (err) {
+    log(`  ❌ FrenchShorts render failed: ${err.message}`);
+  }
+}
+
 // Main
 async function main() {
   const pageId = process.env.FB_PAGE_ID;
@@ -428,6 +480,9 @@ async function main() {
   } else {
     await runPhase2(progress, pageId, accessToken);
   }
+
+  // Bonus: render and publish user phrases as FrenchShorts
+  await renderUserPhrases(pageId, accessToken, progress);
 
   log("✨ Done!");
 }
