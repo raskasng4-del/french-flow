@@ -6,7 +6,9 @@ import {
   Easing,
   Sequence,
   spring,
+  staticFile,
 } from "remotion";
+import { Audio } from "@remotion/media";
 import {
   fonts,
   colors,
@@ -273,11 +275,10 @@ export const FrenchShorts: React.FC<FrenchShortsProps> = ({
       <Header title={title} progress={progress} />
 
       {phrases.map((phrase, i) => (
-        <Sequence
-          key={i}
-          from={i * itemFrames}
-          durationInFrames={itemFrames + FPS}
-        >
+        <Sequence key={i} from={i * itemFrames} durationInFrames={itemFrames + FPS}>
+          {phrase.audioSrc && (
+            <Audio src={staticFile(phrase.audioSrc)} volume={0.9} />
+          )}
           <PhraseCard
             french={phrase.french}
             arabic={phrase.arabic}

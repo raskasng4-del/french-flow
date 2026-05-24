@@ -116,11 +116,11 @@ export const RemotionRoot: React.FC = () => {
         defaultProps={{
           title: "تعلم اللغة الفرنسية 🇫🇷",
           phrases: [
-            { french: "arrête de parler", arabic: "توقف عن الكلام" },
-            { french: "je suis fatigué", arabic: "أنا متعب" },
-            { french: "où est la gare ?", arabic: "أين المحطة؟" },
-            { french: "combien ça coûte ?", arabic: "بكم هذا؟" },
-            { french: "je ne comprends pas", arabic: "أنا لا أفهم" },
+            { french: "arrête de parler", arabic: "توقف عن الكلام", audioSrc: "audio/phrase_1.mp3" },
+            { french: "je suis fatigué", arabic: "أنا متعب", audioSrc: "audio/phrase_2.mp3" },
+            { french: "où est la gare ?", arabic: "أين المحطة؟", audioSrc: "audio/phrase_3.mp3" },
+            { french: "combien ça coûte ?", arabic: "بكم هذا؟", audioSrc: "audio/phrase_4.mp3" },
+            { french: "je ne comprends pas", arabic: "أنا لا أفهم", audioSrc: "audio/phrase_5.mp3" },
           ],
           durationPerItem: 3,
         }}

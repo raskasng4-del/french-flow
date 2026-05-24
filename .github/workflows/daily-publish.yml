@@ -22,8 +22,11 @@ jobs:
       - name: Install system deps
         run: |
           sudo apt-get update -qq
-          sudo apt-get install -y ffmpeg imagemagick fonts-noto
+          sudo apt-get install -y ffmpeg imagemagick fonts-noto espeak espeak-data
           sudo fc-cache -f
+
+      - name: Install Python TTS
+        run: pip3 install gtts
 
       - name: Setup Node.js
         uses: actions/setup-node@v4

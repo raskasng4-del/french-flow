@@ -407,6 +407,31 @@ async function runPhase2(progress, pageId, accessToken) {
   log(`✅ ${phaseLabel} - Day ${dayData.day} complete! ${renderResults.filter((r) => r.published).length}/${count} videos published`);
 }
 
+// Generate TTS audio for a phrase if missing
+function generateAudio(phrase, index) {
+  const AUDIO_DIR = path.join(PROJECT_ROOT, "public", "audio");
+  if (!fs.existsSync(AUDIO_DIR)) {
+    fs.mkdirSync(AUDIO_DIR, { recursive: true });
+  }
+
+  const filename = `phrase_${index}.mp3`;
+  const filepath = path.join(AUDIO_DIR, filename);
+
+  // Generate if missing or if phrase has no audioSrc
+  if (!phrase.audioSrc || !fs.existsSync(filepath)) {
+    phrase.audioSrc = `audio/${filename}`;
+    try {
+      execSync(
+        `python3 -c "from gtts import gTTS; gTTS('${phrase.french.replace(/'/g, "'\\''")}', lang='fr', slow=False).save('${filepath}')"`,
+        { timeout: 15000, stdio: "pipe" }
+      );
+      log(`    🔊 Generated audio: ${filename}`);
+    } catch (err) {
+      log(`    ⚠️ TTS failed for "${phrase.french}": ${err.message}`);
+    }
+  }
+}
+
 // Render user phrases as FrenchShorts video (bonus content)
 async function renderUserPhrases(pageId, accessToken, progress) {
   if (!fs.existsSync(USER_PHRASES_FILE)) {
@@ -421,6 +446,13 @@ async function renderUserPhrases(pageId, accessToken, progress) {
   }
 
   log(`🎬 Rendering FrenchShorts (${data.phrases.length} phrases): ${data.title}`);
+
+  // Generate audio for each phrase if missing
+  data.phrases.forEach((p, i) => generateAudio(p, i + 1));
+  saveJSON(USER_PHRASES_FILE, data);
+
+  // Wait for audio files to be ready
+  await sleep(2000);
 
   const today = todayStr();
   const props = { title: data.title, phrases: data.phrases, durationPerItem: 3 };
