@@ -212,14 +212,14 @@ function generateAudioFile(text, name) {
   const filepath = path.join(AUDIO_DIR, filename);
   if (!fs.existsSync(filepath)) {
     try {
-      const escaped = text.replace(/'/g, "'\\''");
-      execSync(
-        `python3 -c "from gtts import gTTS; gTTS('${escaped}', lang='fr', slow=False).save('${filepath}')"`,
-        { timeout: 15000, stdio: "pipe" }
-      );
+      execSync(`python3 "${path.join(BOT_DIR, "tts_helper.py")}" "${filepath}"`, {
+        input: text,
+        timeout: 15000,
+        stdio: ["pipe", "pipe", "pipe"],
+      });
       log(`  🔊 Generated: ${name}.mp3`);
     } catch (err) {
-      log(`  ⚠️ TTS failed: ${err.message}`);
+      log(`  ⚠️ TTS failed for "${text.slice(0, 30)}": ${err.message}`);
     }
   }
   return `audio/${filename}`;
@@ -538,10 +538,11 @@ function generateAudio(phrase, index) {
   if (!phrase.audioSrc || !fs.existsSync(filepath)) {
     phrase.audioSrc = `audio/${filename}`;
     try {
-      execSync(
-        `python3 -c "from gtts import gTTS; gTTS('${phrase.french.replace(/'/g, "'\\''")}', lang='fr', slow=False).save('${filepath}')"`,
-        { timeout: 15000, stdio: "pipe" }
-      );
+      execSync(`python3 "${path.join(BOT_DIR, "tts_helper.py")}" "${filepath}"`, {
+        input: phrase.french,
+        timeout: 15000,
+        stdio: ["pipe", "pipe", "pipe"],
+      });
       log(`    🔊 Generated audio: ${filename}`);
     } catch (err) {
       log(`    ⚠️ TTS failed for "${phrase.french}": ${err.message}`);
@@ -634,8 +635,11 @@ async function renderDialogue(pageId, accessToken, progress) {
     line.audioSrc = `audio/${filename}`;
     if (!fs.existsSync(filepath)) {
       try {
-        const escaped = line.french.replace(/'/g, "'\\''");
-        execSync(`python3 -c "from gtts import gTTS; gTTS('${escaped}', lang='fr', slow=False).save('${filepath}')"`, { timeout: 15000, stdio: "pipe" });
+        execSync(`python3 "${path.join(BOT_DIR, "tts_helper.py")}" "${filepath}"`, {
+          input: line.french,
+          timeout: 15000,
+          stdio: ["pipe", "pipe", "pipe"],
+        });
         log(`    ✅ ${filename}`);
       } catch (err) {
         log(`    ⚠️ TTS failed: ${err.message}`);
