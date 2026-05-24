@@ -14,7 +14,6 @@ import {
   colors,
   GradientBackground,
   FrenchFlagBar,
-  BackgroundMusic,
 } from "./FrenchFlowBrand";
 
 const FPS = 30;

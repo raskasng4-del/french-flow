@@ -124,29 +124,31 @@ function buildDescription(type, data) {
         `❓ ${data.question}\n` +
         `\n💡 **Astuce** : Mettez pause et répondez avant la fin de la vidéo !\n\n${hashtags}`
       );
-    case "Conjugaison":
-      const tenses = data.passe_compose ? "Présent + Passé composé" : data.imparfait ? "Présent + Imparfait" : "Présent";
+    case "Conjugaison": {
+      const cTenses = data.passe_compose ? "Présent + Passé composé" : data.imparfait ? "Présent + Imparfait" : "Présent";
       return (
         `🇫🇷 **Conjugaison** - French Flow\n\n` +
         `📝 ${data.infinitive} (${data.level})\n` +
-        `🔄 ${tenses}\n` +
+        `🔄 ${cTenses}\n` +
         `\n💡 **Astuce** : Conjuguez ce verbe à voix haute avec tous les pronoms 3 fois.\n\n${hashtags}`
       );
+    }
     case "Révision":
       return (
         `🇫🇷 **Révision** - French Flow\n\n` +
         `🔄 ${data.french || data.title || data.infinitive}\n` +
         `\n💡 **Astuce** : La répétition espacée est la clé de la mémorisation à long terme !\n\n${hashtags}`
       );
-    case "Dialogue":
-      const lines = data.lines || [];
-      const conversation = lines.map(l => `${l.speaker === "femme" ? "👩" : "👨"} ${l.name}: ${l.french}`).join("\n");
+    case "Dialogue": {
+      const dLines = data.lines || [];
+      const conversation = dLines.map(l => `${l.speaker === "femme" ? "👩" : "👨"} ${l.name}: ${l.french}`).join("\n");
       return (
         `🇫🇷 **Dialogue** - French Flow\n\n` +
         `💬 ${data.title} (${data.level})\n\n` +
         `${conversation}\n\n` +
         `💡 **Astuce** : Regardez 2 fois — 1x pour comprendre, 1x pour répéter à voix haute.\n\n${hashtags}`
       );
+    }
     case "PhraseDuJour":
       return (
         `🇫🇷 **Phrase du jour** - French Flow\n\n` +
