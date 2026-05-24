@@ -6,7 +6,7 @@
     "level": "A1",
     "lines": [
       { "speaker": "homme", "name": "Pierre", "french": "Bonjour ! Je m'appelle Pierre.", "arabic": "مرحباً! اسمي بيير." },
-      { "speaker": "femme", "name": "Marie", "french": "Salut Pierre ! Moi, c'est Marie.", "arabic": "مرحباً بيير! أنا ماري." },
+      { "speaker": "femme", "name": "Marie", "french": "Salut Pierre ! Moi, c'est Marie.", "arabic": "أهلاً بيير! أنا ماري." },
       { "speaker": "homme", "name": "Pierre", "french": "Enchanté, Marie ! Tu es française ?", "arabic": "تشرفت بمعرفتك يا ماري! هل أنت فرنسية؟" },
       { "speaker": "femme", "name": "Marie", "french": "Oui, je suis française. Et toi ?", "arabic": "نعم، أنا فرنسية. وأنت؟" },
       { "speaker": "homme", "name": "Pierre", "french": "Moi aussi ! Je suis de Paris.", "arabic": "أنا أيضاً! أنا من باريس." },
@@ -22,7 +22,7 @@
       { "speaker": "femme", "name": "Marie", "french": "Bonjour ! Qu'est-ce que tu veux boire ?", "arabic": "مرحباً! ماذا تريد أن تشرب؟" },
       { "speaker": "homme", "name": "Pierre", "french": "Je voudrais un café, s'il te plaît.", "arabic": "أريد قهوة، من فضلك." },
       { "speaker": "femme", "name": "Marie", "french": "Moi, je prends un thé vert.", "arabic": "أما أنا فآخذ شاياً أخضر." },
-      { "speaker": "homme", "name": "Pierre", "french": "Tu veux un croissant aussi ?", "arabic": "هل تريد كرواسون أيضاً؟" },
+      { "speaker": "homme", "name": "Pierre", "french": "Tu veux un croissant aussi ?", "arabic": "هل تريدين كرواسون أيضاً؟" },
       { "speaker": "femme", "name": "Marie", "french": "Oui, volontiers ! Merci.", "arabic": "نعم، بكل سرور! شكراً." },
       { "speaker": "homme", "name": "Pierre", "french": "Parfait ! Je vais commander.", "arabic": "ممتاز! سأطلب." }
     ]
@@ -34,7 +34,7 @@
     "level": "A1",
     "lines": [
       { "speaker": "homme", "name": "Pierre", "french": "Excusez-moi, où est la gare ?", "arabic": "عذراً، أين المحطة؟" },
-      { "speaker": "femme", "name": "Marie", "french": "La gare ? C'est tout droit.", "arabic": "المحطة؟ إنها straight ahead." },
+      { "speaker": "femme", "name": "Marie", "french": "La gare ? C'est tout droit.", "arabic": "المحطة؟ إنها مباشرةً." },
       { "speaker": "homme", "name": "Pierre", "french": "C'est loin d'ici ?", "arabic": "هل هي بعيدة من هنا؟" },
       { "speaker": "femme", "name": "Marie", "french": "Non, c'est à cinq minutes à pied.", "arabic": "لا، إنها على بعد خمس دقائق مشياً." },
       { "speaker": "homme", "name": "Pierre", "french": "Merci beaucoup madame !", "arabic": "شكراً جزيلاً سيدتي!" },
@@ -64,7 +64,7 @@
       { "speaker": "femme", "name": "Marie", "french": "Qu'est-ce que tu aimes faire ?", "arabic": "ماذا تحب أن تفعل؟" },
       { "speaker": "homme", "name": "Pierre", "french": "J'aime le sport. Je joue au foot.", "arabic": "أحب الرياضة. ألعب كرة القدم." },
       { "speaker": "femme", "name": "Marie", "french": "Cool ! Moi, j'aime la musique.", "arabic": "رائع! أنا أحب الموسيقى." },
-      { "speaker": "homme", "name": "Pierre", "french": "Tu joues d'un instrument ?", "arabic": "هل تعزف على آلة موسيقية؟" },
+      { "speaker": "homme", "name": "Pierre", "french": "Tu joues d'un instrument ?", "arabic": "هل تعزفين على آلة موسيقية؟" },
       { "speaker": "femme", "name": "Marie", "french": "Oui, je joue de la guitare.", "arabic": "نعم، أعزف على الغيتار." },
       { "speaker": "homme", "name": "Pierre", "french": "Super ! On peut faire un concert !", "arabic": "رائع! يمكننا عمل حفل موسيقي!" }
     ]
