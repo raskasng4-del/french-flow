@@ -120,7 +120,7 @@ export const MotDuJour: React.FC<{
   if (frame < INTRO_F)
     return (
       <VideoContainer>
-        <IntroOverlay type="Mot du jour" />
+        <IntroOverlay type="Mot du jour" icon="🎯" />
       </VideoContainer>
     );
   if (frame >= totalDuration - OUTRO_F)
@@ -137,7 +137,7 @@ export const MotDuJour: React.FC<{
   return (
     <VideoContainer>
       <GradientBackground />
-      <TopBar label="MOT DU JOUR" progress={cf / contentFrames} />
+      <TopBar label="MOT DU JOUR" progress={cf / contentFrames} icon="🎯" />
       <AbsoluteFill style={{ justifyContent: "center", alignItems: "center" }}>
         <div style={{ opacity: s, transform: `scale(${s})`, marginBottom: 12 }}>
           <TagPill text={word.level} color={colors.accent2} />
@@ -212,7 +212,7 @@ export const PhraseDuJour: React.FC<{
   if (frame < INTRO_F)
     return (
       <VideoContainer>
-        <IntroOverlay type="Phrase du jour" />
+        <IntroOverlay type="Phrase du jour" icon="💬" />
       </VideoContainer>
     );
   if (frame >= totalDuration - OUTRO_F)
@@ -229,7 +229,7 @@ export const PhraseDuJour: React.FC<{
   return (
     <VideoContainer>
       <GradientBackground />
-      <TopBar label="PHRASE DU JOUR" progress={cf / contentFrames} />
+      <TopBar label="PHRASE DU JOUR" progress={cf / contentFrames} icon="💬" />
       <AbsoluteFill style={{ justifyContent: "center", alignItems: "center" }}>
         <GlassCard width="92%">
           <div
@@ -294,7 +294,7 @@ export const Grammaire: React.FC<{
   if (frame < INTRO_F)
     return (
       <VideoContainer>
-        <IntroOverlay type="Grammaire" />
+        <IntroOverlay type="Grammaire" icon="📚" />
       </VideoContainer>
     );
   if (frame >= totalDuration - OUTRO_F)
@@ -311,7 +311,7 @@ export const Grammaire: React.FC<{
   return (
     <VideoContainer>
       <GradientBackground />
-      <TopBar label="GRAMMAIRE" progress={cf / contentFrames} />
+      <TopBar label="GRAMMAIRE" progress={cf / contentFrames} icon="📚" />
       <AbsoluteFill style={{ justifyContent: "center", alignItems: "center" }}>
         <div style={{ opacity: tOp, transform: `translateY(${tY}px)`, textAlign: "center", marginBottom: 16 }}>
           <TagPill text={grammar.level} color={colors.accent3} />
@@ -402,7 +402,7 @@ export const Quiz: React.FC<{
   if (frame < INTRO_F)
     return (
       <VideoContainer>
-        <IntroOverlay type="Quiz" />
+        <IntroOverlay type="Quiz" icon="❓" />
       </VideoContainer>
     );
   if (frame >= totalDuration - OUTRO_F)
@@ -418,7 +418,7 @@ export const Quiz: React.FC<{
   return (
     <VideoContainer>
       <GradientBackground />
-      <TopBar label="QUIZ" progress={cf / contentFrames} />
+      <TopBar label="QUIZ" progress={cf / contentFrames} icon="❓" />
       <AbsoluteFill style={{ justifyContent: "center", alignItems: "center" }}>
         <div
           style={{
@@ -495,7 +495,7 @@ export const Conjugaison: React.FC<{
   if (frame < INTRO_F)
     return (
       <VideoContainer>
-        <IntroOverlay type="Conjugaison" />
+        <IntroOverlay type="Conjugaison" icon="📝" />
       </VideoContainer>
     );
   if (frame >= totalDuration - OUTRO_F)
@@ -511,7 +511,7 @@ export const Conjugaison: React.FC<{
   return (
     <VideoContainer>
       <GradientBackground />
-      <TopBar label="CONJUGAISON" progress={cf / contentFrames} />
+      <TopBar label="CONJUGAISON" progress={cf / contentFrames} icon="📝" />
       <AbsoluteFill style={{ justifyContent: "center", alignItems: "center" }}>
         <div style={{ textAlign: "center", marginBottom: 20, opacity: springIn(cf) }}>
           <TagPill text={verb.level} color={colors.accent} />
