@@ -7,6 +7,7 @@ import {
   Quiz,
   Conjugaison,
 } from "./DailyLesson";
+import { FrenchShorts } from "./FrenchShorts";
 
 const FPS = 30;
 
@@ -103,6 +104,25 @@ export const RemotionRoot: React.FC = () => {
         defaultProps={{
           verb: sampleVerb,
           totalDuration: Math.round(17.5 * FPS),
+        }}
+      />
+      <Composition
+        id="FrenchShorts"
+        component={FrenchShorts}
+        durationInFrames={Math.round(18 * FPS)}
+        fps={FPS}
+        width={1080}
+        height={1920}
+        defaultProps={{
+          title: "تعلم اللغة الفرنسية 🇫🇷",
+          phrases: [
+            { french: "arrête de parler", arabic: "توقف عن الكلام" },
+            { french: "je suis fatigué", arabic: "أنا متعب" },
+            { french: "où est la gare ?", arabic: "أين المحطة؟" },
+            { french: "combien ça coûte ?", arabic: "بكم هذا؟" },
+            { french: "je ne comprends pas", arabic: "أنا لا أفهم" },
+          ],
+          durationPerItem: 3,
         }}
       />
     </>
