@@ -149,13 +149,10 @@ def get_pexels_video(query, api_key):
             print(f"  ⚠️ No Pexels video for '{query}'")
             return None
         video = data["videos"][0]
-        video_url = None
-        for f in video.get("video_files", []):
-            if f.get("quality") in ("hd", "sd") and f.get("width", 9999) <= 1920:
-                video_url = f["link"]
-                break
-        if not video_url:
-            video_url = video["video_files"][0]["link"]
+        # Pick best quality ≤ 1920w, prefer 1080p or highest available
+        files = [f for f in video.get("video_files", []) if f.get("width", 0) <= 1920]
+        files.sort(key=lambda f: f.get("width", 0), reverse=True)
+        video_url = files[0]["link"] if files else video["video_files"][0]["link"]
         os.makedirs(TEMP_DIR, exist_ok=True)
         dst = TEMP_DIR / f"pexels_{video['id']}.mp4"
         r = requests.get(video_url, stream=True, timeout=30)
