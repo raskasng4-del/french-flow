@@ -95,6 +95,12 @@
       "file": "day4_grammaire.mp4",
       "published": true,
       "date": "2026-05-25"
+    },
+    {
+      "type": "PhraseDuJour",
+      "file": "day4_phrase.mp4",
+      "published": false,
+      "date": "2026-05-25"
     }
   ],
   "last_publish_date": "2026-05-25",
@@ -119,6 +125,12 @@
         "next_review": "2026-05-26"
       },
       "7": {
+        "first_seen": "2026-05-25",
+        "last_reviewed": "2026-05-25",
+        "interval": 1,
+        "next_review": "2026-05-26"
+      },
+      "8": {
         "first_seen": "2026-05-25",
         "last_reviewed": "2026-05-25",
         "interval": 1,
@@ -160,7 +172,7 @@
       }
     }
   },
-  "curriculum_idx": 17,
+  "curriculum_idx": 18,
   "generated_count": 0,
   "used_combos": []
 }
