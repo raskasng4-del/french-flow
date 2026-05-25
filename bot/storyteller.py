@@ -175,19 +175,64 @@ def create_static_video(text_lines, audio_path, output_path, audio_duration, tit
 async def publish_to_fb(video_path, desc, page_id, access_token):
     if not page_id or not access_token:
         print("  ⚠️ No FB credentials"); return False
+
+    file_size = os.path.getsize(video_path)
+    api_base = f"https://graph.facebook.com/v22.0/{page_id}"
+
     import aiohttp
     async with aiohttp.ClientSession() as session:
+        # Small files: direct upload
+        if file_size < 50 * 1024 * 1024:
+            with open(video_path, 'rb') as f:
+                data = aiohttp.FormData()
+                data.add_field('source', f, filename='video.mp4', content_type='video/mp4')
+                data.add_field('description', desc)
+                data.add_field('access_token', access_token)
+                async with session.post(f'{api_base}/videos', data=data) as resp:
+                    r = await resp.json()
+                    if r.get('id'):
+                        print(f"  ✅ Published ID: {r['id']}"); return True
+                    print(f"  ❌ FB: {r}"); return False
+
+        # Large files: resumable upload
+        print(f"  📤 Resumable upload ({file_size / 1024 / 1024:.0f} MB)...")
+
+        # Step 1: Start
+        async with session.post(f'{api_base}/videos', params={
+            "upload_phase": "start", "file_size": file_size,
+            "access_token": access_token,
+        }) as resp:
+            start = await resp.json()
+            if "start_offset" not in start.get("video", {}):
+                print(f"  ❌ FB start: {start}"); return False
+            upload_session_id = start["video"]["upload_session_id"]
+            video_id = start["video"].get("video_id")
+            start_offset = int(start["video"]["start_offset"])
+            print(f"     Session: {upload_session_id}, video_id: {video_id}")
+
+        # Step 2: Transfer (single chunk for simplicity)
         with open(video_path, 'rb') as f:
-            data = aiohttp.FormData()
-            data.add_field('source', f, filename='video.mp4', content_type='video/mp4')
-            data.add_field('description', desc)
-            data.add_field('access_token', access_token)
-            async with session.post(f'https://graph.facebook.com/v22.0/{page_id}/videos',
-                                    data=data) as resp:
-                r = await resp.json()
-                if r.get('id'):
-                    print(f"  ✅ Published ID: {r['id']}"); return True
-                print(f"  ❌ FB: {r}"); return False
+            f.seek(start_offset)
+            chunk = f.read()
+        async with session.post(f'{api_base}/videos', params={
+            "upload_phase": "transfer", "upload_session_id": upload_session_id,
+            "start_offset": start_offset, "access_token": access_token,
+        }, data={"source": chunk}) as resp:
+            transfer = await resp.json()
+            if transfer.get("success") != 1:
+                print(f"  ❌ FB transfer: {transfer}"); return False
+            print(f"     Transferred {len(chunk) / 1024 / 1024:.0f} MB")
+
+        # Step 3: Finish
+        async with session.post(f'{api_base}/videos', params={
+            "upload_phase": "finish", "upload_session_id": upload_session_id,
+            "access_token": access_token, "description": desc,
+        }) as resp:
+            finish = await resp.json()
+            if finish.get("success") == 1 or finish.get("id"):
+                vid = finish.get("id", video_id)
+                print(f"  ✅ Published ID: {vid}"); return True
+            print(f"  ❌ FB finish: {finish}"); return False
 
 
 # ── Format A: Grammar Quiz ──────────────────────────────────────────────
