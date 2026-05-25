@@ -3,21 +3,21 @@
     "id": 1,
     "title": "Les articles définis",
     "level": "A1",
-    "explanation": "Les articles définis (le, la, les) sont utilisés pour parler d'une chose spécifique.",
+    "explanation": "في الفرنسية، هناك أدوات تعريف: le (مذكر), la (مؤنث), les (جمع). تستخدم قبل الاسم لتحديده.",
     "examples": [
       "Le livre est sur la table.",
       "La maison est grande.",
-      "Les enfants jouent."
+      "Les enfants jouent dans le parc."
     ]
   },
   {
     "id": 2,
     "title": "Les articles indéfinis",
     "level": "A1",
-    "explanation": "Les articles indéfinis (un, une, des) sont utilisés pour parler d'une chose non spécifique.",
+    "explanation": "أدوات التنكير في الفرنسية: un (مذكر), une (مؤنث), des (جمع). تستخدم للإشارة إلى شيء غير محدد.",
     "examples": [
       "C'est un ami.",
-      "J'ai une soeur.",
+      "J'ai une sœur.",
       "Il y a des livres sur la table."
     ]
   },
@@ -25,561 +25,582 @@
     "id": 3,
     "title": "Le genre des noms",
     "level": "A1",
-    "explanation": "Les noms ont un genre : masculin ou féminin. En général, les noms masculins finissent par une consonne et les noms féminins par -e.",
+    "explanation": "الأسماء في الفرنسية إما مذكر أو مؤنث. يمكن معرفة الجنس من الأداة (le/un للذكر، la/une للأنثى).",
     "examples": [
-      "Le garçon (masculin)",
-      "La fille (féminin)",
-      "Le livre est sur la table."
+      "Le chat est mignon.",
+      "La fleur est belle.",
+      "Un garçon et une fille jouent."
     ]
   },
   {
     "id": 4,
     "title": "Le pluriel des noms",
     "level": "A1",
-    "explanation": "En général, on ajoute -s pour former le pluriel des noms.",
+    "explanation": "عادةً يُجمع الاسم بإضافة s في النهاية. هناك استثناءات: الأسماء المنتهية بـ -s, -x, -z لا تتغير، والمنتهية بـ -au تأخذ x.",
     "examples": [
-      "Un livre → des livres",
-      "Une chaise → des chaises",
-      "Un nez → des nez"
+      "Un livre → des livres.",
+      "Un oiseau → des oiseaux.",
+      "Un mois → des mois."
     ]
   },
   {
     "id": 5,
     "title": "Le présent - 1er groupe",
     "level": "A1",
-    "explanation": "Les verbes en -ER : je -e, tu -es, il/elle -e, nous -ons, vous -ez, ils/elles -ent.",
+    "explanation": "أفعال المجموعة الأولى تنتهي بـ -er في المصدر. تُصرف بإزالة -er وإضافة: e, es, e, ons, ez, ent.",
     "examples": [
       "Je parle français.",
       "Tu manges une pomme.",
-      "Il chante bien."
+      "Nous écoutons la musique."
     ]
   },
   {
     "id": 6,
     "title": "Le présent - 2e groupe",
     "level": "A1",
-    "explanation": "Les verbes en -IR (-issant) : je -is, tu -is, il/elle -it, nous -issons, vous -issez, ils/elles -issent.",
+    "explanation": "أفعال المجموعة الثانية تنتهي بـ -ir وتأخذ -iss- في الجمع. تُصرف بإزالة -ir وإضافة: is, is, it, issons, issez, issent.",
     "examples": [
       "Je finis mon travail.",
-      "Tu choisis un livre.",
-      "Il réussit l'examen."
+      "Tu choisis un cadeau.",
+      "Nous réussissons l'examen."
     ]
   },
   {
     "id": 7,
     "title": "Le présent - 3e groupe",
     "level": "A1",
-    "explanation": "Les verbes irréguliers du 3e groupe : être, avoir, aller, faire, etc.",
+    "explanation": "المجموعة الثالثة تضم الأفعال الشاذة وغير المنتظمة. لكل فعل تصريفه الخاص مثل prendre, venir, partir.",
     "examples": [
-      "Je suis étudiant.",
-      "Tu as un chat.",
-      "Il va à l'école."
+      "Je prends le bus.",
+      "Tu viens ce soir ?",
+      "Ils partent en vacances."
     ]
   },
   {
     "id": 8,
     "title": "Être et Avoir",
     "level": "A1",
-    "explanation": "Les verbes 'être' et 'avoir' sont les deux verbes les plus importants en français.",
+    "explanation": "être (يكون) و avoir (يملك) هما أهم فعلين في الفرنسية. يُستخدمان في تكوين الأزمنة المركبة والتعبيرات.",
     "examples": [
-      "Je suis content.",
-      "Tu es fatigué ?",
-      "Il a faim."
+      "Je suis étudiant.",
+      "Tu as un chien.",
+      "Nous sommes contents."
     ]
   },
   {
     "id": 9,
     "title": "Aller et Venir",
     "level": "A1",
-    "explanation": "Aller (je vais) et Venir (je viens) sont des verbes irréguliers très utilisés.",
+    "explanation": "aller (يذهب) و venir (يأتي) فعلان شائعان. يستخدم aller في المستقبل القريب ويستخدم venir في الماضي القريب.",
     "examples": [
-      "Je vais au marché.",
-      "Tu viens avec moi ?",
-      "Il va à Paris."
+      "Je vais à l'école.",
+      "Tu viens du marché.",
+      "Ils vont au cinéma."
     ]
   },
   {
     "id": 10,
     "title": "La négation (ne...pas)",
     "level": "A1",
-    "explanation": "Pour former la négation, on entoure le verbe par 'ne' et 'pas'.",
+    "explanation": "في الفرنسية، النفي يكون بإحاطة الفعل بـ ne ... pas. ne تصبح n' قبل حرف علة.",
     "examples": [
       "Je ne parle pas anglais.",
-      "Tu ne manges pas ?",
-      "Il ne vient pas."
+      "Il n'a pas de voiture.",
+      "Nous ne mangeons pas de viande."
     ]
   },
   {
     "id": 11,
     "title": "L'interrogation",
     "level": "A1",
-    "explanation": "Il y a trois façons de poser une question en français.",
+    "explanation": "هناك ثلاث طرق للسؤال: رفع نبرة الصوت، استخدام est-ce que، أو عكس الفعل والفاعل.",
     "examples": [
       "Tu parles français ?",
-      "Parles-tu français ?",
-      "Est-ce que tu parles français ?"
+      "Est-ce que tu viens ?",
+      "Parlez-vous anglais ?"
     ]
   },
   {
     "id": 12,
     "title": "Les adjectifs possessifs",
     "level": "A1",
-    "explanation": "Mon, ton, son, notre, votre, leur s'accordent avec le nom possédé.",
+    "explanation": "صفات الملكية: mon/ma/mes (ملكي), ton/ta/tes (ملكك), son/sa/ses (ملكه/ملكها), notre/nos (ملكنا), votre/vos (ملككم), leur/leurs (ملكهم).",
     "examples": [
-      "Mon livre est rouge.",
+      "Mon livre est intéressant.",
       "Ta maison est belle.",
-      "Son chien est petit."
+      "Leurs enfants sont à l'école."
     ]
   },
   {
     "id": 13,
     "title": "Les adjectifs démonstratifs",
     "level": "A1",
-    "explanation": "Ce, cet, cette, ces servent à montrer quelque chose.",
+    "explanation": "صفات الإشارة: ce (مذكر), cette (مؤنث), ces (جمع). تستخدم للإشارة إلى شيء أو شخص.",
     "examples": [
-      "Ce livre est intéressant.",
-      "Cet arbre est grand.",
-      "Cette fleur est belle."
+      "Ce livre est à moi.",
+      "Cette fleur est jolie.",
+      "Ces maisons sont anciennes."
     ]
   },
   {
     "id": 14,
     "title": "Les prépositions de lieu",
     "level": "A1",
-    "explanation": "Sur, sous, dans, devant, derrière, entre indiquent une position.",
+    "explanation": "حروف الجر للمكان: sur (على), sous (تحت), dans (في), devant (أمام), derrière (خلف), entre (بين), à côté de (بجانب).",
     "examples": [
-      "Le livre est sur la table.",
-      "Le chat est sous la chaise.",
-      "La balle est dans le coffre."
+      "Le chat est sous la table.",
+      "La voiture est devant la maison.",
+      "Le parc est à côté de l'école."
     ]
   },
   {
     "id": 15,
     "title": "Les nombres 1-100",
     "level": "A1",
-    "explanation": "Compter de 1 à 100 en français.",
+    "explanation": "الأعداد من 1 إلى 16 لها أسماء خاصة. 17-19 = dix + رقم. 20-69 تتبع نظاماً منتظماً. 70-100 لها تراكيب خاصة.",
     "examples": [
-      "J'ai dix euros.",
-      "Il y a vingt étudiants.",
-      "Cent personnes."
+      "J'ai vingt ans.",
+      "Il y a trente élèves dans la classe.",
+      "Soixante-dix euros, s'il vous plaît."
     ]
   },
   {
     "id": 16,
     "title": "Les couleurs",
     "level": "A1",
-    "explanation": "Rouge, bleu, vert, jaune, noir, blanc sont des couleurs de base.",
+    "explanation": "الألوان في الفرنسية: rouge, bleu, vert, jaune, noir, blanc, gris, marron, violet, rose. تتطابق مع جنس الاسم.",
     "examples": [
-      "Une voiture rouge.",
-      "Le ciel est bleu.",
-      "L'herbe est verte."
+      "La voiture rouge est rapide.",
+      "J'aime la robe bleue.",
+      "Les yeux verts sont rares."
     ]
   },
   {
     "id": 17,
     "title": "L'heure",
     "level": "A1",
-    "explanation": "Pour dire l'heure en français, on utilise 'Il est' + nombre.",
+    "explanation": "للسؤال عن الوقت نقول: Quelle heure est-il ? وللتعبير عن الوقت نستخدم Il est ... heure(s).",
     "examples": [
-      "Il est huit heures.",
-      "Il est midi.",
-      "Il est trois heures et demie."
+      "Il est une heure.",
+      "Il est trois heures et demie.",
+      "Il est midi."
     ]
   },
   {
     "id": 18,
     "title": "Les jours de la semaine",
     "level": "A1",
-    "explanation": "Les jours de la semaine : lundi, mardi, mercredi, jeudi, vendredi, samedi, dimanche.",
+    "explanation": "أيام الأسبوع: lundi, mardi, mercredi, jeudi, vendredi, samedi, dimanche. كلها مذكرة ولا تُكتب بحرف كبير.",
     "examples": [
-      "Aujourd'hui c'est lundi.",
-      "Je travaille le mardi.",
-      "Samedi je me repose."
+      "Nous travaillons du lundi au vendredi.",
+      "Le samedi, je fais du sport.",
+      "Dimanche est un jour de repos."
     ]
   },
   {
     "id": 19,
     "title": "Les mois de l'année",
     "level": "A1",
-    "explanation": "Janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre.",
+    "explanation": "أشهر السنة: janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre. كلها مذكرة.",
     "examples": [
       "Janvier est le premier mois.",
-      "En été il fait chaud.",
-      "Décembre est le dernier mois."
+      "Je vais en France en juillet.",
+      "L'école commence en septembre."
     ]
   },
   {
     "id": 20,
     "title": "La date",
     "level": "A1",
-    "explanation": "Pour dire la date en français, on utilise 'Nous sommes le' + nombre + mois.",
+    "explanation": "للتعبير عن التاريخ: Nous sommes + le + رقم + mois. اليوم الأول هو le premier. السنوات تُقرأ كعدد.",
     "examples": [
-      "Nous sommes le 1er janvier.",
+      "Nous sommes le premier janvier.",
       "C'est le 14 juillet.",
-      "Mon anniversaire est le 5 mai."
+      "Nous sommes en 2024."
     ]
   },
   {
     "id": 21,
-    "title": "Le futur proche",
-    "level": "A1",
-    "explanation": "Aller + infinitif pour exprimer une action qui va se produire bientôt.",
+    "title": "Le passé composé avec avoir",
+    "title_ar": "الماضي المركب مع avoir",
+    "level": "A2",
+    "explanation": "الماضي المركب مع avoir يتكون من: avoir في المضارع + التصريف الثالث للفعل. يستخدم لمعظم الأفعال.",
     "examples": [
-      "Je vais manger.",
-      "Tu vas dormir.",
-      "Il va pleuvoir."
+      "J'ai mangé une pomme.",
+      "Tu as fini tes devoirs.",
+      "Nous avons vu un film."
     ]
   },
   {
     "id": 22,
-    "title": "Le passé récent",
-    "level": "A1",
-    "explanation": "Venir de + infinitif pour exprimer une action qui vient de se produire.",
+    "title": "Le passé composé avec être",
+    "title_ar": "الماضي المركب مع être",
+    "level": "A2",
+    "explanation": "16 فعلاً (معظمها حركة) تستخدم être في الماضي المركب. التصريف الثالث يتوافق مع الفاعل في الجنس والعدد.",
     "examples": [
-      "Je viens de manger.",
-      "Tu viens de finir.",
-      "Il vient de partir."
+      "Elle est allée à Paris.",
+      "Ils sont partis ce matin.",
+      "Nous sommes arrivés en retard."
     ]
   },
   {
     "id": 23,
-    "title": "Les pronoms toniques",
-    "level": "A1",
-    "explanation": "Moi, toi, lui, elle, nous, vous, eux, elles sont les pronoms toniques.",
+    "title": "L'imparfait",
+    "title_ar": "الماضي الناقص",
+    "level": "A2",
+    "explanation": "الماضي الناقص يُستخدم لوصف الحالات والعادات في الماضي. يُصرف من جذر nous في المضارع + ais, ais, ait, ions, iez, aient.",
     "examples": [
-      "Lui, il est français.",
-      "Moi, je suis marocain.",
-      "Eux, ils sont contents."
+      "Quand j'étais petit, je jouais au parc.",
+      "Il faisait beau hier.",
+      "Nous habitions à Lyon."
     ]
   },
   {
     "id": 24,
-    "title": "La place des adjectifs",
-    "level": "A1",
-    "explanation": "La plupart des adjectifs se placent après le nom en français.",
+    "title": "Passé composé vs Imparfait",
+    "title_ar": "الفرق بين الماضي المركب والماضي الناقص",
+    "level": "A2",
+    "explanation": "الماضي المركب للأفعال المكتملة والمتكررة بعدد. الماضي الناقص للوصف والعادات والخلفية. غالباً ما يظهران معاً.",
     "examples": [
-      "Une voiture rouge.",
-      "Un homme grand.",
-      "Une belle maison (exceptions)."
+      "Il pleuvait quand je suis sorti.",
+      "Elle lisait pendant que je cuisinais.",
+      "Nous jouions au tennis quand il a commencé à pleuvoir."
     ]
   },
   {
     "id": 25,
     "title": "Les verbes pronominaux",
     "level": "A1",
-    "explanation": "Les verbes pronominaux se conjuguent avec un pronom réfléchi (me, te, se...).",
+    "explanation": "المستقبل القريب: aller في المضارع + المصدر. يُستخدم للتعبير عن أفعال ستحدث قريباً.",
     "examples": [
-      "Je me lève à sept heures.",
-      "Tu te laves les mains.",
-      "Il se promène."
+      "Je vais manger maintenant.",
+      "Il va pleuvoir demain.",
+      "Nous allons voyager en été."
     ]
   },
   {
     "id": 26,
-    "title": "L'impératif",
-    "level": "A1",
-    "explanation": "L'impératif sert à donner un ordre ou un conseil.",
+    "title": "Le futur simple",
+    "title_ar": "المستقبل البسيط",
+    "level": "A2",
+    "explanation": "المستقبل البسيط: المصدر + ai, as, a, ons, ez, ont. هناك أفعال شاذة مثل être → ser-, avoir → aur-.",
     "examples": [
-      "Parle plus fort !",
-      "Mangeons ensemble !",
-      "Dormez bien !"
+      "Je parlerai demain.",
+      "Elle viendra samedi.",
+      "Nous serons en vacances."
     ]
   },
   {
     "id": 27,
-    "title": "Les expressions de temps",
-    "level": "A1",
-    "explanation": "Avant, après, pendant, depuis sont des indicateurs de temps.",
+    "title": "Le conditionnel présent",
+    "title_ar": "الشرط المضارع",
+    "level": "B1",
+    "explanation": "الشرط المضارع يُستخدم للتعبير عن الطلب المؤدب والاحتمال والشرط. يُصرف مثل المستقبل البسيط لكن مع نهايات imparfait.",
     "examples": [
-      "Avant de manger, je me lave.",
-      "Après l'école, je joue.",
-      "Je travaille depuis huit heures."
+      "Je voudrais un café, s'il vous plaît.",
+      "Il faudrait partir tôt.",
+      "Si j'avais le temps, je viendrais."
     ]
   },
   {
     "id": 28,
-    "title": "Le partitif",
-    "level": "A1",
-    "explanation": "Du, de la, de l', des pour exprimer une quantité indéfinie.",
+    "title": "Le subjonctif présent",
+    "title_ar": "المضارع الشرطي",
+    "level": "B1",
+    "explanation": "المضارع الشرطي يُستخدم بعد تعبيرات معينة مثل il faut que, bien que, pour que. يُصرف من جذر ils في المضارع + e, es, e, ions, iez, ent.",
     "examples": [
-      "Je bois du lait.",
-      "Elle mange de la salade.",
-      "Il prend de l'eau."
+      "Il faut que tu studies.",
+      "Bien qu'il soit malade, il travaille.",
+      "Pour que nous réussissions, travaillons."
     ]
   },
   {
     "id": 29,
     "title": "Le passé composé avec être",
     "level": "A2",
-    "explanation": "Le passé composé avec l'auxiliaire 'être' s'emploie pour 14 verbes de mouvement et les verbes pronominaux.",
+    "explanation": "le (لمفرد مذكر), la (لمفرد مؤنث), les (لجمع). تحل محل المفعول به المباشر وتوضع قبل الفعل.",
     "examples": [
-      "Je suis allé à Paris.",
-      "Elle est partie tôt.",
-      "Ils sont arrivés hier."
+      "Je vois le chat → Je le vois.",
+      "Il mange la pomme → Il la mange.",
+      "Tu lis les livres → Tu les lis."
     ]
   },
   {
     "id": 30,
     "title": "L'imparfait",
     "level": "A2",
-    "explanation": "L'imparfait décrit une action passée qui dure, une habitude ou une situation dans le passé.",
+    "explanation": "lui (له/لها - مفرد), leur (لهم - جمع). تحل محل المفعول به غير المباشر وتوضع قبل الفعل.",
     "examples": [
-      "Quand j'étais petit...",
-      "Il faisait beau.",
-      "Je jouais au foot."
+      "Je parle à Marie → Je lui parle.",
+      "Il écrit à ses parents → Il leur écrit.",
+      "Nous téléphonons à Pierre → Nous lui téléphonons."
     ]
   },
   {
     "id": 31,
-    "title": "Le futur simple",
-    "level": "A2",
-    "explanation": "Le futur simple exprime une action future. On ajoute les terminaisons à l'infinitif.",
+    "title": "Les pronoms toniques",
+    "title_ar": "ضمائر التأكيد",
+    "level": "A1",
+    "explanation": "ضمائر التأكيد: moi, toi, lui, elle, nous, vous, eux, elles. تستخدم بعد prepositions وللتأكيد.",
     "examples": [
-      "Je parlerai demain.",
-      "Tu finiras bientôt.",
-      "Il viendra plus tard."
+      "Lui, il est français.",
+      "Je vais chez elle ce soir.",
+      "Toi et moi, nous sommes amis."
     ]
   },
   {
     "id": 32,
-    "title": "Le comparatif",
-    "level": "A2",
-    "explanation": "Le comparatif permet de comparer deux éléments : plus...que, moins...que, aussi...que.",
+    "title": "Les pronoms relatifs (qui, que)",
+    "title_ar": "ضمائر الوصل qui و que",
+    "level": "B1",
+    "explanation": "qui تحل محل الفاعل (الذي/التي), que تحل محل المفعول به (الذي/التي). qui تتبعها directamente الفعل، que يتبعه الفاعل.",
     "examples": [
-      "Il est plus grand que moi.",
-      "Elle est moins rapide.",
-      "Il est aussi fort que toi."
+      "L'homme qui parle est mon père.",
+      "Le livre que tu lis est intéressant.",
+      "La femme que j'ai vue est partie."
     ]
   },
   {
     "id": 33,
-    "title": "Le superlatif",
-    "level": "A2",
-    "explanation": "Le superlatif exprime le degré le plus haut ou le plus bas.",
+    "title": "Les pronoms relatifs (où, dont)",
+    "title_ar": "ضمائر الوصل où و dont",
+    "level": "B1",
+    "explanation": "où يدل على المكان أو الزمان (حيث), dont يحل محل de + اسم (الذي/التي ... منه/منها).",
     "examples": [
-      "C'est le plus grand.",
-      "Elle est la plus belle.",
-      "C'est le moins cher."
+      "La ville où je suis né.",
+      "Le jour où nous sommes arrivés.",
+      "Le film dont tu m'as parlé."
     ]
   },
   {
     "id": 34,
     "title": "Les pronoms COD",
     "level": "A2",
-    "explanation": "Les pronoms COD (le, la, les) remplacent un complément d'objet direct.",
+    "explanation": "المقارنة: plus ... que (أكثر من), moins ... que (أقل من), aussi ... que (مثل). للصفات والظروف والأسماء.",
     "examples": [
-      "Je vois le chat → Je le vois.",
-      "Elle lit la lettre → Elle la lit.",
-      "Il mange les pommes → Il les mange."
+      "Il est plus grand que moi.",
+      "Elle chante aussi bien que sa sœur.",
+      "J'ai moins de livres que toi."
     ]
   },
   {
     "id": 35,
     "title": "Les pronoms COI",
     "level": "A2",
-    "explanation": "Les pronoms COI (lui, leur) remplacent un complément d'objet indirect.",
+    "explanation": "التفضيل: le/la/les plus ... (الأكثر), le/la/les moins ... (الأقل). توضع الأداة قبل الصفة.",
     "examples": [
-      "Je parle à Pierre → Je lui parle.",
-      "Il écrit à Marie → Il lui écrit.",
-      "Je téléphone aux parents → Je leur téléphone."
+      "C'est le plus grand immeuble de la ville.",
+      "Elle est la moins rapide.",
+      "Ce sont les meilleurs restaurants."
     ]
   },
   {
     "id": 36,
-    "title": "Le passé récent",
-    "level": "A2",
-    "explanation": "Venir de + infinitif pour une action qui vient de se produire.",
+    "title": "La voix passive",
+    "title_ar": "المبني للمجهول",
+    "level": "B1",
+    "explanation": "المبني للمجهول: être + التصريف الثالث + par (بواسطة). الفاعل يصبح مفعولاً به والفعل يتوافق مع الفاعل الجديد.",
     "examples": [
-      "Je viens de manger.",
-      "Tu viens de finir.",
-      "Il vient de partir."
+      "Le gâteau est mangé par les enfants.",
+      "La lettre a été écrite par Marie.",
+      "Les fenêtres sont fermées par le gardien."
     ]
   },
   {
     "id": 37,
-    "title": "Le futur proche",
-    "level": "A2",
-    "explanation": "Aller + infinitif pour une action proche dans le futur.",
+    "title": "Le gérondif",
+    "title_ar": "صيغة المصدر الظرفية",
+    "level": "B1",
+    "explanation": "le gérondif: en + جذر nous في المضارع + ant. يُستخدم للتعبير عن التزامن أو الطريقة.",
     "examples": [
-      "Je vais manger.",
-      "Tu vas dormir.",
-      "Il va pleuvoir."
+      "Elle chante en travaillant.",
+      "Il lit en mangeant.",
+      "En étudiant beaucoup, tu réussiras."
     ]
   },
   {
     "id": 38,
     "title": "Les pronoms relatifs qui/que",
     "level": "A2",
-    "explanation": "Qui (sujet) et que (objet) relient deux phrases.",
+    "explanation": "الأفعال الضمائرية تأتي مع ضمير (me, te, se, nous, vous, se) قبل الفعل. في الماضي المركب تأخذ être.",
     "examples": [
-      "L'homme qui parle est mon père.",
-      "Le livre que je lis est intéressant.",
-      "La femme que tu vois est ma mère."
+      "Je me lève à sept heures.",
+      "Il se lave les mains.",
+      "Nous nous sommes promenés."
     ]
   },
   {
     "id": 39,
     "title": "Les pronoms relatifs où/dont",
     "level": "A2",
-    "explanation": "Où (lieu/temps) et dont (complément) introduisent une subordonnée.",
+    "explanation": "صيغة الأمر: تُستخدم لإعطاء أوامر أو نصائح. لها ثلاث صيغ: tu, nous, vous. الأفعال الضمائرية تحتفظ بالضمير بعد الفعل.",
     "examples": [
-      "La ville où j'habite est belle.",
-      "Le film dont je parle est connu.",
-      "Le jour où je suis né."
+      "Parle plus fort !",
+      "Mangeons ensemble !",
+      "Levez-vous !"
     ]
   },
   {
     "id": 40,
     "title": "La voix passive",
     "level": "A2",
-    "explanation": "La voix passive se forme avec être + participe passé + par.",
+    "explanation": "تعبيرات الزمن: hier (أمس), aujourd'hui (اليوم), demain (غداً), maintenant (الآن), tout de suite (حالاً), bientôt (قريباً).",
     "examples": [
-      "La lettre est écrite par Marie.",
-      "La maison a été construite.",
-      "Le gâteau est préparé par Paul."
+      "Hier, j'ai travaillé toute la journée.",
+      "Aujourd'hui, il fait beau.",
+      "À bientôt !"
     ]
   },
   {
     "id": 41,
     "title": "La cause et la conséquence",
     "level": "A2",
-    "explanation": "Parce que, puisque, car (cause). Donc, alors, ainsi (conséquence).",
+    "explanation": "du, de la, de l', des تُستخدم للتعبير عن كمية غير محددة. بعد النفي ومع التعبير عن الكمية نستخدم de فقط.",
     "examples": [
-      "Il est fatigué parce qu'il a travaillé.",
-      "Il pleut, donc je reste.",
-      "Puisque tu es là, aide-moi."
+      "Je bois du café.",
+      "Il y a de l'eau dans le frigo.",
+      "Je ne mange pas de viande."
     ]
   },
   {
     "id": 42,
     "title": "Le but",
     "level": "A2",
-    "explanation": "Pour, afin de, dans le but de expriment le but.",
+    "explanation": "الظروف القصيرة (bien, mal, trop, etc.) توضع بعد الفعل المُصَرَّف. في الأزمنة المركبة توضع بين الفعل المساعد والتصريف الثالث.",
     "examples": [
-      "J'étudie pour réussir.",
-      "Il économise afin d'acheter une voiture.",
-      "Elle travaille pour gagner sa vie."
+      "Il parle bien français.",
+      "J'ai bien dormi cette nuit.",
+      "Elle travaille trop."
     ]
   },
   {
     "id": 43,
-    "title": "Les adverbes de fréquence",
-    "level": "A2",
-    "explanation": "Toujours, souvent, parfois, rarement, jamais.",
+    "title": "La place des adjectifs",
+    "title_ar": "موقع الصفات",
+    "level": "A1",
+    "explanation": "معظم الصفات توضع بعد الاسم. بعض الصفات القصيرة والشائعة (beau, bon, grand, petit, jeune, vieux) توضع قبل الاسم.",
     "examples": [
-      "Je vais souvent au cinéma.",
-      "Il mange parfois au restaurant.",
-      "Elle n'est jamais en retard."
+      "Une maison blanche.",
+      "Un grand garçon.",
+      "Une belle fleur rouge."
     ]
   },
   {
     "id": 44,
     "title": "Les adverbes de manière",
     "level": "A2",
-    "explanation": "Bien, mal, vite, lentement, doucement, facilement.",
+    "explanation": "à (في - ساعة), en (في - شهر/سنة/موسم), dans (بعد مدة), depuis (منذ - ومازال), pendant (لمدة), il y a (منذ - وانتهى).",
     "examples": [
-      "Il parle bien français.",
-      "Elle chante mal.",
-      "Il court vite."
+      "Je me lève à sept heures.",
+      "Nous partons en juillet.",
+      "J'habite ici depuis 2020."
     ]
   },
   {
     "id": 45,
-    "title": "Les prépositions de temps",
-    "level": "A2",
-    "explanation": "À, dans, en, pendant, depuis, pour, il y a.",
+    "title": "Le discours rapporté",
+    "title_ar": "الكلام المنقول",
+    "level": "B1",
+    "explanation": "الكلام المنقول: في الماضي، يتحول المضارع إلى imparfait والمستقبل إلى conditionnel. تتغير الضمائر والظروف.",
     "examples": [
-      "Je pars à huit heures.",
-      "Il revient dans cinq minutes.",
-      "Je travaille depuis 2010."
+      "Il a dit qu'il était fatigué.",
+      "Elle a annoncé qu'elle viendrait.",
+      "Ils ont dit qu'ils avaient travaillé."
     ]
   },
   {
     "id": 46,
-    "title": "Les nombres ordinaux",
-    "level": "A2",
-    "explanation": "Premier, deuxième, troisième, quatrième, etc.",
+    "title": "Le plus-que-parfait",
+    "title_ar": "الماضي الأسبق",
+    "level": "B1",
+    "explanation": "الماضي الأسبق: avoir/être في imparfait + التصريف الثالث. يُستخدم للتعبير عن فعل وقع قبل فعل آخر في الماضي.",
     "examples": [
-      "C'est mon premier jour.",
-      "Il est arrivé deuxième.",
-      "Le troisième étage."
+      "Quand je suis arrivé, il avait déjà mangé.",
+      "Elle avait fini ses devoirs avant de sortir.",
+      "Nous étions déjà partis quand tu as téléphoné."
     ]
   },
   {
     "id": 47,
-    "title": "Les expressions de quantité",
-    "level": "A2",
-    "explanation": "Beaucoup de, peu de, assez de, trop de, la plupart de.",
+    "title": "La cause et la conséquence",
+    "title_ar": "السبب والنتيجة",
+    "level": "B1",
+    "explanation": "للتعبير عن السبب: parce que, car, puisque, à cause de. للنتيجة: donc, alors, par conséquent, c'est pourquoi.",
     "examples": [
-      "Il y a beaucoup de monde.",
-      "J'ai peu d'argent.",
-      "Il a trop de travail."
+      "Il est fatigué parce qu'il a beaucoup travaillé.",
+      "Il pleut, donc nous restons à la maison.",
+      "Puisque tu es prêt, partons."
     ]
   },
   {
     "id": 48,
-    "title": "Le gérondif",
-    "level": "A2",
-    "explanation": "En + participe présent pour exprimer la simultanéité ou la manière.",
+    "title": "L'opposition et la concession",
+    "title_ar": "التضاد والامتياز",
+    "level": "B2",
+    "explanation": "للتعبير عن التضاد: mais, cependant, pourtant, alors que. للامتياز: bien que (+ subjonctif), malgré (+ اسم).",
     "examples": [
-      "En parlant, il mange.",
-      "Elle chante en travaillant.",
-      "Il lit en mangeant."
+      "Il est riche mais il n'est pas heureux.",
+      "Bien qu'il pleuve, je sors.",
+      "Elle travaille beaucoup, pourtant elle est fatiguée."
     ]
   },
   {
     "id": 49,
     "title": "Le discours rapporté au présent",
     "level": "A2",
-    "explanation": "Rapporter les paroles de quelqu'un au présent.",
+    "explanation": "إذا + مضارع + مستقبل بسيط: تعبر عن فرضية محتملة. Si + présent, futur simple.",
     "examples": [
-      "Il dit qu'il vient.",
-      "Elle annonce qu'elle est prête.",
-      "Ils disent qu'ils partent demain."
+      "Si tu travailles, tu réussiras.",
+      "S'il fait beau, nous irons à la plage.",
+      "Si j'ai le temps, je viendrai."
     ]
   },
   {
     "id": 50,
-    "title": "Les indéfinis",
-    "level": "A2",
-    "explanation": "Quelqu'un, quelque chose, personne, rien, aucun, chaque.",
+    "title": "Les hypothèses - si + imparfait, conditionnel",
+    "title_ar": "الفرضيات 2 - إن الشرطية مع imparfait و conditionnel",
+    "level": "B1",
+    "explanation": "إذا + imparfait + conditionnel présent: تعبر عن فرضية غير محتملة أو مستحيلة حالياً.",
     "examples": [
-      "Quelqu'un m'attend.",
-      "Je n'ai rien vu.",
-      "Personne n'est venu."
+      "Si j'avais de l'argent, je voyagerais.",
+      "Si tu venais, nous serions contents.",
+      "Si je pouvais, je t'aiderais."
     ]
   },
   {
     "id": 51,
-    "title": "Les prépositions avec les pays",
-    "level": "A2",
-    "explanation": "En (féminin), au (masculin), aux (pluriel) pour les pays.",
+    "title": "Le subjonctif passé",
+    "title_ar": "الماضي الشرطي",
+    "level": "B2",
+    "explanation": "الماضي الشرطي: avoir/être في subjonctif présent + التصريف الثالث. يُستخدم للتعبير عن فعل مضى قبل فعل آخر في الجملة.",
     "examples": [
-      "Je vais en France.",
-      "Il habite au Canada.",
-      "Elle vient des États-Unis."
+      "Bien qu'il ait travaillé, il n'a pas réussi.",
+      "Je suis content qu'elle soit venue.",
+      "Il faut que tu aies fini avant demain."
     ]
   },
   {
     "id": 52,
-    "title": "Exprimer l'opinion",
-    "level": "A2",
-    "explanation": "À mon avis, selon moi, je pense que, je crois que.",
+    "title": "Le conditionnel passé",
+    "title_ar": "الشرط الماضي",
+    "level": "B2",
+    "explanation": "الشرط الماضي: avoir/être في conditionnel présent + التصريف الثالث. يُستخدم للتعبير عن الندم أو فرضية لم تتحقق.",
     "examples": [
-      "À mon avis, c'est une bonne idée.",
-      "Je pense qu'il a raison.",
-      "Selon moi, c'est faux."
+      "J'aurais aimé voyager.",
+      "Elle serait venue si elle avait su.",
+      "Nous aurions dû partir plus tôt."
     ]
   },
   {
     "id": 53,
-    "title": "Exprimer l'accord et le désaccord",
-    "level": "A2",
-    "explanation": "Je suis d'accord, je ne suis pas d'accord, tu as raison/tort.",
+    "title": "Les pronoms possessifs",
+    "title_ar": "ضمائر الملكية",
+    "level": "B1",
+    "explanation": "ضمائر الملكية: le mien/la mienne/les miens/les miennes (ملكي), le tien..., le sien..., le nôtre..., le vôtre..., le leur...",
     "examples": [
-      "Je suis tout à fait d'accord.",
-      "Je ne suis pas d'accord.",
-      "Tu as raison."
+      "Ce livre est le mien.",
+      "Ta maison est grande, mais la nôtre est petite.",
+      "Leurs idées sont différentes des siennes."
     ]
   },
   {
@@ -619,803 +640,406 @@
     "id": 57,
     "title": "Le passé composé avec avoir",
     "level": "B1",
-    "explanation": "Le passé composé se forme avec l'auxiliaire 'avoir' au présent + le participe passé du verbe.",
+    "explanation": "ضمائر الإشارة: celui (مذكر مفرد), celle (مؤنث مفرد), ceux (مذكر جمع), celles (مؤنث جمع). تتبع بـ -ci (قريب) أو -là (بعيد) أو جملة وصفية.",
     "examples": [
-      "J'ai parlé hier.",
-      "Tu as fini ton travail.",
-      "Il a mangé une pomme."
+      "Celui-ci est plus grand que celui-là.",
+      "Celle que j'ai vue est partie.",
+      "Ceux qui travaillent réussiront."
     ]
   },
   {
-    "id": 58,
-    "title": "Le passé composé avec être",
-    "level": "B1",
-    "explanation": "Certains verbes utilisent l'auxiliaire 'être' au passé composé. Le participe s'accorde avec le sujet.",
+    "title": "Les mois et les saisons",
+    "title_ar": "الأشهر والفصول",
+    "level": "A1",
+    "explanation": "الفصول: le printemps (ربيع), l'été (صيف), l'automne (خريف), l'hiver (شتاء).",
     "examples": [
-      "Je suis allé à Paris.",
-      "Elle est partie tôt.",
-      "Ils sont arrivés hier."
-    ]
+      "L'été, il fait chaud.",
+      "En hiver, il neige.",
+      "Le printemps est ma saison préférée."
+    ],
+    "id": 55
   },
   {
-    "id": 59,
-    "title": "L'imparfait",
-    "level": "B1",
-    "explanation": "L'imparfait est utilisé pour les descriptions et les habitudes dans le passé.",
+    "title": "L'accord du participe passé",
+    "title_ar": "مطابقة التصريف الثالث",
+    "level": "A2",
+    "explanation": "مع être يطابق التصريف الثالث الفاعل في الجنس والعدد. مع avoir يطابق المفعول به إذا سبقه.",
     "examples": [
-      "Quand j'étais petit...",
-      "Il faisait beau.",
-      "Je jouais au foot."
-    ]
+      "Elle est allée au marché.",
+      "Ils sont arrivés hier.",
+      "La lettre que j'ai écrite."
+    ],
+    "id": 56
   },
   {
-    "id": 60,
-    "title": "Passé composé vs Imparfait",
-    "level": "B1",
-    "explanation": "Le passé composé exprime une action ponctuelle. L'imparfait exprime une description ou une habitude.",
-    "examples": [
-      "Il pleuvait quand je suis sorti.",
-      "Je lisais quand tu as téléphoné.",
-      "Il neigeait quand nous sommes arrivés."
-    ]
-  },
-  {
-    "id": 61,
-    "title": "Le futur simple",
-    "level": "B1",
-    "explanation": "Le futur simple se forme en ajoutant les terminaisons à l'infinitif.",
-    "examples": [
-      "Je parlerai demain.",
-      "Tu finiras bientôt.",
-      "Il viendra plus tard."
-    ]
-  },
-  {
-    "id": 62,
     "title": "Les pronoms COD",
-    "level": "B1",
-    "explanation": "Le, la, les remplacent un Complément d'Objet Direct.",
+    "title_ar": "ضمائر المفعول به المباشر",
+    "level": "A2",
+    "explanation": "ضمائر COD: me (ني), te (ك), le (ه), la (ها), nous (نا), vous (كم/كن), les (هم/هن).",
     "examples": [
-      "Je vois le chat → Je le vois.",
-      "Elle lit la lettre → Elle la lit.",
-      "Il mange les pommes → Il les mange."
-    ]
+      "Je le vois.",
+      "Je la regarde.",
+      "Je les aime."
+    ],
+    "id": 57
   },
   {
-    "id": 63,
     "title": "Les pronoms COI",
-    "level": "B1",
-    "explanation": "Lui, leur remplacent un Complément d'Objet Indirect.",
+    "title_ar": "ضمائر المفعول به غير المباشر",
+    "level": "A2",
+    "explanation": "ضمائر COI: me (لي), te (لك), lui (له/لها), nous (لنا), vous (لكم/لكن), leur (لهم/لهن).",
     "examples": [
-      "Je parle à Pierre → Je lui parle.",
-      "Il écrit à Marie → Il lui écrit.",
-      "Je téléphone aux parents → Je leur téléphone."
-    ]
+      "Je lui parle.",
+      "Il leur donne un cadeau.",
+      "Nous te téléphonons."
+    ],
+    "id": 58
   },
   {
-    "id": 64,
-    "title": "Le comparatif",
+    "title": "Le discours indirect",
+    "title_ar": "الكلام المنقول",
     "level": "B1",
-    "explanation": "Plus...que, moins...que, aussi...que pour comparer.",
+    "explanation": "لنقل ما قاله شخص: Il dit que..., Il a dit que... مع تغيير الضمائر والأزمنة.",
     "examples": [
-      "Il est plus grand que moi.",
-      "Elle est moins rapide.",
-      "Il est aussi fort que toi."
-    ]
+      "Il dit qu'il est fatigué.",
+      "Elle a dit qu'elle viendrait.",
+      "Ils ont annoncé qu'ils partaient."
+    ],
+    "id": 59
   },
   {
-    "id": 65,
-    "title": "Le superlatif",
+    "title": "Les pronoms relatifs (qui/que)",
+    "title_ar": "الضمائر الموصولة",
     "level": "B1",
-    "explanation": "Le/la/les plus/moins pour exprimer le degré extrême.",
-    "examples": [
-      "C'est le plus grand.",
-      "Elle est la plus belle.",
-      "C'est le moins cher."
-    ]
-  },
-  {
-    "id": 66,
-    "title": "Qui et Que",
-    "level": "B1",
-    "explanation": "Qui (sujet) et Que (objet) sont des pronoms relatifs.",
+    "explanation": "qui للفاعل (الذي)، que للمفعول به (الذي). قد يصبح qu' أمام حرف علة.",
     "examples": [
       "L'homme qui parle est mon père.",
-      "Le livre que je lis est intéressant.",
-      "La femme que tu vois est ma mère."
-    ]
+      "Le livre que tu lis est intéressant.",
+      "La femme que j'ai rencontrée est sympa."
+    ],
+    "id": 60
   },
   {
-    "id": 67,
-    "title": "Où et Dont",
+    "title": "Les pronoms relatifs (dont/où)",
+    "title_ar": "الضمائر الموصولة dont و où",
     "level": "B1",
-    "explanation": "Où (lieu/temps) et Dont (complément) sont des pronoms relatifs.",
+    "explanation": "dont = الذي/التي (بدلاً من de + qui/lequel)، où = حيث/عندما (زمان أو مكان).",
     "examples": [
-      "La ville où j'habite est belle.",
-      "Le film dont je parle est connu.",
-      "Le jour où je suis né."
-    ]
+      "Le film dont tu parles est génial.",
+      "La ville où je suis né.",
+      "Le jour où nous nous sommes rencontrés."
+    ],
+    "id": 61
   },
   {
-    "id": 68,
-    "title": "La voix passive",
+    "title": "L'expression de la cause",
+    "title_ar": "التعبير عن السبب",
     "level": "B1",
-    "explanation": "Être + participe passé + par pour la forme passive.",
+    "explanation": "للتعبير عن السبب: parce que (لأن), puisque (بما أن), car (لأن), à cause de (بسبب).",
     "examples": [
-      "La lettre est écrite par Marie.",
-      "La maison a été construite.",
-      "Le gâteau est préparé par Paul."
-    ]
+      "Je reste parce qu'il pleut.",
+      "Puisque tu es là, aide-moi.",
+      "Il a raté le train à cause du traffic."
+    ],
+    "id": 62
   },
   {
-    "id": 69,
-    "title": "Le gérondif",
+    "title": "L'expression de la conséquence",
+    "title_ar": "التعبير عن النتيجة",
     "level": "B1",
-    "explanation": "En + participe présent exprime la simultanéité.",
+    "explanation": "للتعبير عن النتيجة: donc (إذاً), alors (لهذا), c'est pourquoi (لهذا السبب), tellement...que (لدرجة أن).",
     "examples": [
-      "En parlant, il mange.",
-      "Elle chante en travaillant.",
-      "Il lit en mangeant."
-    ]
+      "J'ai faim donc je mange.",
+      "Il a tellement plu que la route est inondée.",
+      "C'est pourquoi je suis parti."
+    ],
+    "id": 63
   },
   {
-    "id": 70,
-    "title": "Le discours rapporté",
+    "title": "L'expression du but",
+    "title_ar": "التعبير عن الهدف",
     "level": "B1",
-    "explanation": "Rapporter ce que quelqu'un a dit.",
+    "explanation": "للتعبير عن الهدف: pour (لكي/لـ), afin de (من أجل), dans le but de (بهدف).",
     "examples": [
-      "Il dit qu'il vient.",
-      "Elle a dit qu'elle était fatiguée.",
-      "Ils ont annoncé qu'ils partaient."
-    ]
+      "J'étudie pour réussir.",
+      "Il travaille afin d'acheter une maison.",
+      "Nous économisons dans le but de voyager."
+    ],
+    "id": 64
   },
   {
-    "id": 71,
-    "title": "Le plus-que-parfait",
-    "level": "B1",
-    "explanation": "Avoir/Être à l'imparfait + participe passé pour une action antérieure.",
+    "title": "L'hypothèse (si)",
+    "title_ar": "الفرضية مع if",
+    "level": "B2",
+    "explanation": "Si + présent → futur (احتمال). Si + imparfait → conditionnel (غير محتمل). Si + plus-que-parfait → conditionnel passé (مستحيل).",
     "examples": [
-      "J'avais déjà mangé quand tu es arrivé.",
-      "Elle était partie avant moi.",
-      "Ils avaient fini leur travail."
-    ]
+      "Si j'ai le temps, je viendrai.",
+      "Si j'avais de l'argent, j'achèterais une maison.",
+      "Si j'avais su, je serais venu."
+    ],
+    "id": 65
   },
   {
-    "id": 72,
-    "title": "La cause et la conséquence",
-    "level": "B1",
-    "explanation": "Parce que, comme, donc, alors expriment la cause et la conséquence.",
+    "title": "Les articulateurs logiques",
+    "title_ar": "الروابط المنطقية",
+    "level": "B2",
+    "explanation": "لتنظيم الكلام: d'une part...d'autre part (من جهة), en revanche (في المقابل), par ailleurs (علاوة على ذلك).",
     "examples": [
-      "Il est fatigué parce qu'il a travaillé.",
-      "Il pleut, donc je reste à la maison.",
-      "Comme il est tard, je pars."
-    ]
+      "D'une part c'est cher, d'autre part c'est de qualité.",
+      "Il est gentil; en revanche il est désorganisé.",
+      "Par ailleurs, le projet avance bien."
+    ],
+    "id": 66
   },
   {
-    "id": 73,
-    "title": "Les hypothèses",
-    "level": "B1",
-    "explanation": "Si + présent, futur simple pour exprimer une hypothèse.",
+    "title": "Le participe présent",
+    "title_ar": "اسم الفاعل",
+    "level": "B2",
+    "explanation": "participe présent = radical + -ant. يمكن استخدامه كصفة أو ظرف.",
     "examples": [
-      "Si tu viens, je serai content.",
-      "S'il fait beau, on sortira.",
-      "Si j'ai le temps, je t'aiderai."
-    ]
+      "Une histoire intéressante.",
+      "Étant fatigué, il est resté chez lui.",
+      "Tout en parlant, il marchait."
+    ],
+    "id": 67
   },
   {
-    "id": 74,
-    "title": "Les pronoms possessifs",
-    "level": "B1",
-    "explanation": "Le mien, le tien, le sien, etc. remplacent un nom + adjectif possessif.",
-    "examples": [
-      "Ce livre est le mien.",
-      "Ta maison est plus grande que la sienne.",
-      "Nos amis et les leurs."
-    ]
-  },
-  {
-    "id": 75,
-    "title": "Les pronoms démonstratifs",
-    "level": "B1",
-    "explanation": "Celui, celle, ceux, celles remplacent un nom + adjectif démonstratif.",
-    "examples": [
-      "Celui-ci est rouge.",
-      "Celle que je préfère est bleue.",
-      "Ceux qui parlent sont mes amis."
-    ]
-  },
-  {
-    "id": 76,
-    "title": "L'opposition et la concession",
-    "level": "B1",
-    "explanation": "Mais, pourtant, bien que, malgré expriment l'opposition.",
-    "examples": [
-      "Il est riche mais il n'est pas heureux.",
-      "Bien qu'il pleuve, je sors.",
-      "Malgré la pluie, je sors."
-    ]
-  },
-  {
-    "id": 77,
-    "title": "Le conditionnel présent",
-    "level": "B1",
-    "explanation": "Infinitif + terminaisons de l'imparfait pour le conditionnel présent.",
-    "examples": [
-      "Je voudrais un café.",
-      "Tu devrais travailler.",
-      "Il pourrait venir."
-    ]
-  },
-  {
-    "id": 78,
-    "title": "Le conditionnel passé",
-    "level": "B1",
-    "explanation": "Avoir/Être au conditionnel + participe passé.",
-    "examples": [
-      "J'aurais voulu venir.",
-      "Tu aurais dû étudier.",
-      "Il serait parti plus tôt."
-    ]
-  },
-  {
-    "id": 79,
-    "title": "Le subjonctif présent",
-    "level": "B1",
-    "explanation": "Que + verbe au subjonctif pour exprimer le doute, le souhait, la nécessité.",
-    "examples": [
-      "Il faut que je parte.",
-      "Je veux que tu viennes.",
-      "Bien qu'il soit fatigué..."
-    ]
-  },
-  {
-    "id": 80,
-    "title": "Le subjonctif passé",
-    "level": "B1",
-    "explanation": "Avoir/Être au subjonctif + participe passé.",
-    "examples": [
-      "Je suis content qu'il ait réussi.",
-      "Il faut que tu sois venu.",
-      "Je doute qu'il ait compris."
-    ]
-  },
-  {
-    "id": 81,
-    "title": "L'interrogation avec inversion",
-    "level": "B1",
-    "explanation": "Verbe + pronom pour une question formelle.",
-    "examples": [
-      "Parlez-vous français ?",
-      "Peut-il venir ?",
-      "Où vont-ils ?"
-    ]
-  },
-  {
-    "id": 82,
-    "title": "Les adverbes de fréquence",
-    "level": "B1",
-    "explanation": "Toujours, souvent, parfois, rarement, jamais.",
-    "examples": [
-      "Je vais souvent au cinéma.",
-      "Il mange parfois au restaurant.",
-      "Elle n'est jamais en retard."
-    ]
-  },
-  {
-    "id": 83,
-    "title": "Les adverbes de manière",
-    "level": "B1",
-    "explanation": "Bien, mal, vite, lentement, facilement.",
-    "examples": [
-      "Il parle bien français.",
-      "Elle chante mal.",
-      "Il court vite."
-    ]
-  },
-  {
-    "id": 84,
-    "title": "Les prépositions de temps",
-    "level": "B1",
-    "explanation": "À, dans, en, pendant, depuis, pour.",
-    "examples": [
-      "Je pars à huit heures.",
-      "Il revient dans cinq minutes.",
-      "Je travaille depuis 2010."
-    ]
-  },
-  {
-    "id": 85,
-    "title": "Les nombres ordinaux",
-    "level": "B1",
-    "explanation": "Premier, deuxième, troisième, etc.",
-    "examples": [
-      "C'est mon premier jour.",
-      "Il est arrivé deuxième.",
-      "Le troisième étage."
-    ]
-  },
-  {
-    "id": 86,
-    "title": "Les expressions de quantité",
-    "level": "B1",
-    "explanation": "Beaucoup de, peu de, assez de, trop de.",
-    "examples": [
-      "Il y a beaucoup de monde.",
-      "J'ai peu d'argent.",
-      "Il a trop de travail."
-    ]
-  },
-  {
-    "id": 87,
-    "title": "Les verbes avec prépositions",
-    "level": "B1",
-    "explanation": "Penser à, rêver de, commencer par, etc.",
-    "examples": [
-      "Je pense à toi.",
-      "Il rêve de voyager.",
-      "Elle commence par lire."
-    ]
-  },
-  {
-    "id": 88,
-    "title": "Les mots de liaison",
-    "level": "B1",
-    "explanation": "D'abord, ensuite, puis, enfin, finalement.",
-    "examples": [
-      "D'abord, je me lève.",
-      "Ensuite, je prends mon café.",
-      "Enfin, je pars au travail."
-    ]
-  },
-  {
-    "id": 89,
-    "title": "Les indéfinis",
-    "level": "B1",
-    "explanation": "Quelqu'un, quelque chose, personne, rien, aucun.",
-    "examples": [
-      "Quelqu'un m'attend.",
-      "Je n'ai rien vu.",
-      "Personne n'est venu."
-    ]
-  },
-  {
-    "id": 90,
-    "title": "Les prépositions avec pays",
-    "level": "B1",
-    "explanation": "En France, au Maroc, aux États-Unis.",
-    "examples": [
-      "Je vais en France.",
-      "Il habite au Canada.",
-      "Elle vient des États-Unis."
-    ]
-  },
-  {
-    "id": 91,
-    "title": "Le verbe plaire",
-    "level": "B1",
-    "explanation": "Plaire à = faire plaisir, être agréable.",
-    "examples": [
-      "Ce film me plaît.",
-      "Tu lui plais.",
-      "Cette chanson plaît à tout le monde."
-    ]
-  },
-  {
-    "id": 92,
-    "title": "Le verbe manquer",
-    "level": "B1",
-    "explanation": "Manquer à quelqu'un = être absent pour quelqu'un.",
-    "examples": [
-      "Tu me manques.",
-      "Il manque à sa famille.",
-      "Paris me manque."
-    ]
-  },
-  {
-    "id": 93,
-    "title": "Les participes présents",
-    "level": "B1",
-    "explanation": "Formation en -ant.",
-    "examples": [
-      "Un homme parlant français.",
-      "Une femme souriante.",
-      "Des enfants jouant."
-    ]
-  },
-  {
-    "id": 94,
-    "title": "Les participes passés",
-    "level": "B1",
-    "explanation": "Formes régulières et irrégulières.",
-    "examples": [
-      "Mangé, fini, vendu, pris, mis.",
-      "Un travail fini.",
-      "Une lettre écrite."
-    ]
-  },
-  {
-    "id": 95,
-    "title": "Le tutoiement et le vouvoiement",
-    "level": "B1",
-    "explanation": "Tu (informel) vs Vous (formel).",
-    "examples": [
-      "Tu vas bien ? (ami)",
-      "Comment allez-vous ?",
-      "Tu veux un café ?"
-    ]
-  },
-  {
-    "id": 96,
-    "title": "Les formules de politesse",
-    "level": "B1",
-    "explanation": "S'il vous plaît, merci, pardon, excusez-moi.",
-    "examples": [
-      "Excusez-moi, où est la gare ?",
-      "Merci beaucoup.",
-      "Je vous en prie."
-    ]
-  },
-  {
-    "id": 97,
-    "title": "Exprimer l'accord et le désaccord",
-    "level": "B1",
-    "explanation": "Je suis d'accord, pas d'accord, tu as raison.",
-    "examples": [
-      "Je suis tout à fait d'accord.",
-      "Je ne suis pas d'accord.",
-      "Tu as raison."
-    ]
-  },
-  {
-    "id": 98,
-    "title": "Exprimer la certitude et le doute",
-    "level": "B1",
-    "explanation": "Je suis sûr, probablement, peut-être, il se peut que.",
-    "examples": [
-      "Je suis sûr de cela.",
-      "Il est probablement fatigué.",
-      "Peut-être qu'il viendra."
-    ]
-  },
-  {
-    "id": 99,
-    "title": "Exprimer l'obligation et l'interdiction",
-    "level": "B1",
-    "explanation": "Devoir, il faut, interdiction de.",
-    "examples": [
-      "Je dois travailler.",
-      "Il faut finir.",
-      "Il est interdit de fumer."
-    ]
-  },
-  {
-    "id": 100,
-    "title": "Exprimer la possibilité",
-    "level": "B1",
-    "explanation": "Pouvoir, il est possible de, on peut.",
-    "examples": [
-      "Je peux venir.",
-      "Il est possible qu'il pleuve.",
-      "On peut sortir ?"
-    ]
-  },
-  {
-    "id": 101,
-    "title": "Exprimer le souhait",
-    "level": "B1",
-    "explanation": "Je voudrais, j'aimerais, je souhaite.",
-    "examples": [
-      "Je voudrais un café.",
-      "J'aimerais voyager.",
-      "Je souhaite réussir."
-    ]
-  },
-  {
-    "id": 102,
-    "title": "Exprimer le regret",
-    "level": "B1",
-    "explanation": "Je regrette, dommage, si seulement.",
-    "examples": [
-      "Je regrette mon erreur.",
-      "Dommage que tu ne viennes pas.",
-      "Si seulement j'avais su."
-    ]
-  },
-  {
-    "id": 103,
-    "title": "Exprimer la joie",
-    "level": "B1",
-    "explanation": "Je suis heureux, je suis content, je suis ravi.",
-    "examples": [
-      "Je suis très heureux.",
-      "Quelle joie de te voir !",
-      "Je suis content de cette nouvelle."
-    ]
-  },
-  {
-    "id": 104,
-    "title": "Exprimer la tristesse",
-    "level": "B1",
-    "explanation": "Je suis triste, ça me rend triste.",
-    "examples": [
-      "Je suis triste de partir.",
-      "Cette nouvelle m'attriste.",
-      "Ça me rend malheureux."
-    ]
-  },
-  {
-    "id": 105,
-    "title": "Exprimer la surprise",
-    "level": "B1",
-    "explanation": "Je suis surpris, vraiment ?",
-    "examples": [
-      "Je suis très surpris !",
-      "Vraiment ? C'est incroyable.",
-      "Quelle surprise !"
-    ]
-  },
-  {
-    "id": 106,
-    "title": "Exprimer la fatigue",
-    "level": "B1",
-    "explanation": "Je suis fatigué, épuisé, crevé.",
-    "examples": [
-      "Je suis fatigué aujourd'hui.",
-      "Je suis épuisé après le travail.",
-      "Je suis crevé !"
-    ]
-  },
-  {
-    "id": 107,
-    "title": "Exprimer l'enthousiasme",
-    "level": "B1",
-    "explanation": "Super, génial, formidable, excellent.",
-    "examples": [
-      "C'est super !",
-      "Quelle idée géniale !",
-      "Formidable, j'adore !"
-    ]
-  },
-  {
-    "id": 108,
-    "title": "Exprimer l'indifférence",
-    "level": "B1",
-    "explanation": "Ça m'est égal, peu importe.",
-    "examples": [
-      "Ça m'est égal.",
-      "Peu importe ce qu'il dit.",
-      "Je m'en fiche."
-    ]
-  },
-  {
-    "id": 109,
-    "title": "Exprimer la satisfaction",
-    "level": "B1",
-    "explanation": "Je suis satisfait, ça me convient.",
-    "examples": [
-      "Je suis satisfait du résultat.",
-      "Ça me convient parfaitement.",
-      "Je suis content de mon travail."
-    ]
-  },
-  {
-    "id": 110,
-    "title": "Exprimer l'insatisfaction",
-    "level": "B1",
-    "explanation": "Insatisfait, mécontent, déçu.",
-    "examples": [
-      "Je suis mécontent du service.",
-      "C'est inacceptable !",
-      "Je ne suis pas satisfait."
-    ]
-  },
-  {
-    "id": 111,
-    "title": "Les verbes d'opinion",
-    "level": "B1",
-    "explanation": "Croire, penser, trouver, estimer.",
-    "examples": [
-      "Je crois qu'il a raison.",
-      "Je pense que c'est juste.",
-      "Je trouve ce film intéressant."
-    ]
-  },
-  {
-    "id": 112,
-    "title": "Les verbes de sentiment",
-    "level": "B1",
-    "explanation": "Aimer, adorer, détester, préférer.",
-    "examples": [
-      "J'aime le chocolat.",
-      "J'adore ce film.",
-      "Je déteste le mensonge."
-    ]
-  },
-  {
-    "id": 113,
-    "title": "Les verbes de perception",
-    "level": "B1",
-    "explanation": "Voir, entendre, sentir, goûter, toucher.",
-    "examples": [
-      "Je vois un oiseau.",
-      "J'entends la musique.",
-      "Je sens le parfum des fleurs."
-    ]
-  },
-  {
-    "id": 114,
-    "title": "Les gallicismes",
-    "level": "B1",
-    "explanation": "C'est, il y a, voici, voilà sont des expressions typiquement françaises.",
-    "examples": [
-      "C'est un ami.",
-      "Il y a un problème.",
-      "Voici mon frère."
-    ]
-  },
-  {
-    "id": 115,
     "title": "La nominalisation",
-    "level": "B1",
-    "explanation": "Transformer un verbe en nom.",
-    "examples": [
-      "Parler → la parole",
-      "Chanter → le chant",
-      "Danser → la danse"
-    ]
-  },
-  {
-    "id": 116,
-    "title": "L'ordre des pronoms",
-    "level": "B1",
-    "explanation": "Me/te/se/le/la/les/lui/leur/y/en ont un ordre spécifique.",
-    "examples": [
-      "Je le lui donne.",
-      "Il me la montre.",
-      "Donne-le-moi !"
-    ]
-  },
-  {
-    "id": 117,
-    "title": "Les sigles et abréviations",
-    "level": "B1",
-    "explanation": "SVP, BD, SMS, TV sont des abréviations courantes.",
-    "examples": [
-      "Envoie-moi un SMS.",
-      "Je regarde la TV.",
-      "Il lit une BD."
-    ]
-  },
-  {
-    "id": 118,
-    "title": "Les salutations",
-    "level": "B1",
-    "explanation": "Bonjour, bonsoir, au revoir, salut.",
-    "examples": [
-      "Bonjour madame.",
-      "Bonsoir monsieur.",
-      "Salut, ça va ?"
-    ]
-  },
-  {
-    "id": 119,
-    "title": "Demander et donner son avis",
-    "level": "B1",
-    "explanation": "À mon avis, selon moi, je pense que.",
-    "examples": [
-      "À mon avis, c'est une bonne idée.",
-      "Selon moi, il a raison.",
-      "Je pense que oui."
-    ]
-  },
-  {
-    "id": 120,
-    "title": "Exprimer l'obligation avec 'il faut'",
-    "level": "B1",
-    "explanation": "'Il faut' est suivi de l'infinitif ou du subjonctif.",
-    "examples": [
-      "Il faut travailler.",
-      "Il faut que tu viennes.",
-      "Il faut partir maintenant."
-    ]
-  },
-  {
-    "id": 121,
-    "title": "Exprimer l'habitude",
-    "level": "B1",
-    "explanation": "Avoir l'habitude de, d'habitude, généralement.",
-    "examples": [
-      "J'ai l'habitude de me lever tôt.",
-      "D'habitude, je bois du café.",
-      "Généralement, il arrive à l'heure."
-    ]
-  },
-  {
-    "id": 122,
-    "title": "Le subjonctif présent",
+    "title_ar": "الاشتقاق الاسمي",
     "level": "B2",
-    "explanation": "Le subjonctif exprime le doute, le souhait, l'obligation, l'émotion. Il est introduit par 'que'.",
+    "explanation": "تحويل الفعل أو الصفة إلى اسم. مثلاً: agir → action, heureux → bonheur, possible → possibilité.",
     "examples": [
-      "Il faut que je parte.",
-      "Je veux que tu viennes.",
-      "Bien qu'il soit fatigué."
-    ]
+      "Il a pris la décision de partir.",
+      "La transformation est impressionnante.",
+      "L'organisation de l'événement est parfaite."
+    ],
+    "id": 68
   },
   {
-    "id": 123,
-    "title": "Le subjonctif passé",
+    "title": "Les préfixes et suffixes",
+    "title_ar": "السوابق واللواحق",
     "level": "B2",
-    "explanation": "Avoir/Être au subjonctif + participe passé pour une action antérieure.",
+    "explanation": "السوابق: re- (again), dé- (un-), pré- (pre-). اللواحق: -tion, -ment, -eur, -able.",
     "examples": [
-      "Je suis content qu'il ait réussi.",
-      "Il faut que tu sois venu.",
-      "Je doute qu'il ait compris."
-    ]
+      "Refaire = faire again.",
+      "Défaire = défaire.",
+      "Heureusement = fortunately."
+    ],
+    "id": 69
   },
   {
-    "id": 124,
-    "title": "Le conditionnel présent",
+    "title": "La concession",
+    "title_ar": "الاستدراك",
     "level": "B2",
-    "explanation": "Infinitif + terminaisons de l'imparfait pour exprimer un souhait ou une hypothèse.",
-    "examples": [
-      "Je voudrais un café.",
-      "Tu devrais travailler.",
-      "Il pourrait venir."
-    ]
-  },
-  {
-    "id": 125,
-    "title": "Le conditionnel passé",
-    "level": "B2",
-    "explanation": "Avoir/Être au conditionnel + participe passé pour un regret ou une hypothèse non réalisée.",
-    "examples": [
-      "J'aurais voulu venir.",
-      "Tu aurais dû étudier.",
-      "Il serait parti plus tôt."
-    ]
-  },
-  {
-    "id": 126,
-    "title": "Les hypothèses (si + imparfait, conditionnel)",
-    "level": "B2",
-    "explanation": "Si + imparfait, conditionnel présent pour une hypothèse irréelle.",
-    "examples": [
-      "Si j'avais de l'argent, je voyagerais.",
-      "Si tu venais, je serais content.",
-      "S'il faisait beau, on sortirait."
-    ]
-  },
-  {
-    "id": 127,
-    "title": "L'opposition et la concession",
-    "level": "B2",
-    "explanation": "Bien que, quoique (subjonctif) ; malgré, en dépit de (nom).",
+    "explanation": "للتعبير عن الاستدراك: bien que + subjonctif (على الرغم من), malgré (رغم), quoique (مع أن).",
     "examples": [
       "Bien qu'il pleuve, je sors.",
-      "Malgré la pluie, je sors.",
-      "Quoiqu'il soit tard, je reste."
-    ]
+      "Malgré la pluie, ils sont venus.",
+      "Quoique fatigué, il continue."
+    ],
+    "id": 70
   },
   {
-    "id": 128,
-    "title": "Les pronoms démonstratifs",
+    "title": "L'opposition",
+    "title_ar": "التضاد",
     "level": "B2",
-    "explanation": "Celui, celle, ceux, celles remplacent un nom précédé d'un démonstratif.",
+    "explanation": "للتعبير عن التضاد: alors que (بينما), tandis que (في حين), contrairement à (خلافاً لـ).",
     "examples": [
-      "Celui-ci est rouge.",
-      "Celle que je préfère est bleue.",
-      "Ceux qui parlent sont mes amis."
-    ]
+      "Il est riche alors que son frère est pauvre.",
+      "Tandis que certains travaillent, d'autres se reposent.",
+      "Contrairement à ce que tu penses, il a raison."
+    ],
+    "id": 71
   },
   {
-    "id": 129,
-    "title": "Les pronoms possessifs",
-    "level": "B2",
-    "explanation": "Le mien, le tien, le sien, le nôtre, le vôtre, le leur.",
+    "title": "Le subjonctif imparfait",
+    "title_ar": "المضارع الشرطي الناقص",
+    "level": "C1",
+    "explanation": "subjonctif imparfait يستخدم في اللغة الرسمية. يُصرف من passé simple + -sse, -sses, -^t, -ssions, -ssiez, -ssent.",
     "examples": [
-      "Ce livre est le mien.",
-      "Ta maison est plus grande que la sienne.",
-      "Nos amis et les leurs."
-    ]
+      "Il fallait qu'il parlât plus fort.",
+      "Bien qu'elle vînt tard, elle était la bienvenue.",
+      "Je doutais qu'ils eussent raison."
+    ],
+    "id": 72
+  },
+  {
+    "title": "Le passé simple",
+    "title_ar": "الماضي البسيط",
+    "level": "C1",
+    "explanation": "passé simple هو زمن أدبي يستخدم في الكتابة الرسمية والروايات. له ثلاث مجموعات من التصريف.",
+    "examples": [
+      "Il parla pendant une heure.",
+      "Elle naquit en 1950.",
+      "Ils partirent sans dire au revoir."
+    ],
+    "id": 73
+  },
+  {
+    "title": "Le futur antérieur",
+    "title_ar": "المستقبل التام",
+    "level": "C1",
+    "explanation": "futur antérieur = aurai/auras/aura/aurons/aurez/auront + participe passé. يعبر عن حدث مستقبلي قبل حدث آخر.",
+    "examples": [
+      "Quand tu arriveras, j'aurai déjà fini.",
+      "Il sera déjà parti quand nous arriverons.",
+      "J'aurai terminé ce rapport avant vendredi."
+    ],
+    "id": 74
+  },
+  {
+    "title": "La forme impersonnelle",
+    "title_ar": "الصيغة غير الشخصية",
+    "level": "C1",
+    "explanation": "تستخدم il كفاعل غير شخصي: il faut (يجب), il est important de (من المهم), il s'agit de (يتعلق بـ).",
+    "examples": [
+      "Il est essentiel de comprendre.",
+      "Il s'agit d'un problème complexe.",
+      "Il convient de noter que..."
+    ],
+    "id": 75
+  },
+  {
+    "title": "Les mots de liaison avancés",
+    "title_ar": "أدوات الربط المتقدمة",
+    "level": "C1",
+    "explanation": "أدوات ربط متقدمة: néanmoins (مع ذلك), toutefois (لكن), cependant (لكن), en effet (في الواقع).",
+    "examples": [
+      "Néanmoins, il faut continuer.",
+      "Ce projet est ambitieux ; toutefois, il est réalisable.",
+      "En effet, les résultats sont excellents."
+    ],
+    "id": 76
+  },
+  {
+    "title": "Le discours rapporté au passé",
+    "title_ar": "الكلام المنقول في الماضي",
+    "level": "C1",
+    "explanation": "عند نقل الكلام في الماضي: présent → imparfait, futur → conditionnel, passé composé → plus-que-parfait.",
+    "examples": [
+      "Il a dit qu'il était fatigué.",
+      "Elle a annoncé qu'elle viendrait.",
+      "Ils ont expliqué qu'ils avaient fini."
+    ],
+    "id": 77
+  },
+  {
+    "title": "La phrase complexe",
+    "title_ar": "الجملة المركبة",
+    "level": "C1",
+    "explanation": "الجمل المركبة تجمع بين جملة رئيسية وواحدة أو أكثر من الجمل الثانوية باستخدام que, dont, où, lequel.",
+    "examples": [
+      "C'est un problème dont je comprends l'importance.",
+      "Il a pris une décision que tout le monde respecte.",
+      "Voici les raisons pour lesquelles je suis parti."
+    ],
+    "id": 78
+  },
+  {
+    "title": "Les figures de style",
+    "title_ar": "الصور البلاغية",
+    "level": "C1",
+    "explanation": "الصور البلاغية: métaphore (استعارة), comparaison (تشبيه), personnification (تشخيص), hyperbole (مبالغة).",
+    "examples": [
+      "La vie est un long voyage (métaphore).",
+      "Il court comme le vent (comparaison).",
+      "Je t'ai attendu une éternité (hyperbole)."
+    ],
+    "id": 79
+  },
+  {
+    "title": "Le subjonctif plus-que-parfait",
+    "title_ar": "الشرط التام",
+    "level": "C2",
+    "explanation": "subjonctif plus-que-parfait = avoir/être (subjonctif imparfait) + participe passé. يستخدم في اللغة الأدبية الرسمية.",
+    "examples": [
+      "J'aurais aimé qu'il fût venu.",
+      "Il regretta qu'elle n'eût pas accepté.",
+      "Je doutais qu'ils eussent compris."
+    ],
+    "id": 80
+  },
+  {
+    "title": "La concordance des temps",
+    "title_ar": "تطابق الأزمنة",
+    "level": "C2",
+    "explanation": "تطابق الأزمنة في الفرنسية يحدد العلاقة الزمنية بين الفعل الرئيسي والثانوي. يعتمد على زمن الفعل الرئيسي.",
+    "examples": [
+      "Je pense qu'il viendra.",
+      "Je pensais qu'il viendrait.",
+      "J'ai pensé qu'il était venu."
+    ],
+    "id": 81
+  },
+  {
+    "title": "L'infinitif passé",
+    "title_ar": "المصدر الماضي",
+    "level": "C2",
+    "explanation": "infinitif passé = avoir/être (infinitif) + participe passé. يعبر عن فعل تم قبل فعل آخر.",
+    "examples": [
+      "Après avoir fini, je suis sorti.",
+      "Être arrivé en avance m'a aidé.",
+      "Pour avoir bien travaillé, il a réussi."
+    ],
+    "id": 82
+  },
+  {
+    "title": "Le participe composé",
+    "title_ar": "اسم الفاعل المركب",
+    "level": "C2",
+    "explanation": "participe composé = ayant/étant + participe passé. يعبر عن فعل تم قبل فعل آخر في نفس الجملة.",
+    "examples": [
+      "Ayant fini son travail, il est parti.",
+      "Étant arrivé en retard, il s'est excusé.",
+      "S'étant levé tôt, il était en forme."
+    ],
+    "id": 83
+  },
+  {
+    "title": "Le style indirect libre",
+    "title_ar": "الأسلوب غير المباشر الحر",
+    "level": "C2",
+    "explanation": "الأسلوب غير المباشر الحر هو تقنية أدبية تمزج بين الخطاب المباشر وغير المباشر بدون علامات اقتباس ou que.",
+    "examples": [
+      "Il regarda par la fenêtre. Comme il faisait beau aujourd'hui ! Peut-être irait-il se promener.",
+      "Elle était heureuse. Enfin, il était là ! Il l'avait attendue si longtemps."
+    ],
+    "id": 84
+  },
+  {
+    "title": "Les gallicismes",
+    "title_ar": "التعابير الفرنسية الخاصة",
+    "level": "C2",
+    "explanation": "gallicismes هي تراكيب خاصة بالفرنسية: venir de (فعل حديثاً), être en train de (يكون في طور), aller + infinitif (المستقبل القريب).",
+    "examples": [
+      "Je viens de le voir.",
+      "Je suis en train de travailler.",
+      "Je vais partir demain."
+    ],
+    "id": 85
+  },
+  {
+    "title": "Les nuances stylistiques",
+    "title_ar": "الفروق الأسلوبية",
+    "level": "C2",
+    "explanation": "اختيار الكلمات حسب المستوى اللغوي: familier (عامي), courant (عادي), soutenu (رسمي). مثال: voiture, bagnole, automobile.",
+    "examples": [
+      "Il est très sympa (courant) / Il est fort sympathique (soutenu).",
+      "J'ai trop la flemme (familier) / Je manque de motivation (courant).",
+      "Il est fort aimable (soutenu)."
+    ],
+    "id": 86
+  },
+  {
+    "title": "Les archaïsmes et néologismes",
+    "title_ar": "الألفاظ المهجورة والمستحدثة",
+    "level": "C2",
+    "explanation": "archaïsmes كلمات قديمة (moult = beaucoup), néologismes كلمات جديدة (selfie, covidé, déconfinement).",
+    "examples": [
+      "Moult remerciements (très formel).",
+      "Il a été covidé pendant deux semaines.",
+      "Le déconfinement a été progressif."
+    ],
+    "id": 87
   }
 ]

@@ -2055,7428 +2055,943 @@
     "id": 343,
     "french": "disparaître",
     "level": "B2",
-    "example": "Le mot \"disparaître\" est important."
+    "example": "Actuellement, je cherche un emploi.",
+    "example_ar": "حالياً، أبحث عن عمل."
   },
   {
-    "id": 344,
-    "french": "disposer",
-    "level": "B2",
-    "example": "Le mot \"disposer\" est important."
-  },
-  {
-    "id": 345,
-    "french": "distance",
-    "level": "B2",
-    "example": "Le mot \"distance\" est important."
-  },
-  {
-    "id": 346,
-    "french": "distinguer",
-    "level": "B2",
-    "example": "Le mot \"distinguer\" est important."
-  },
-  {
-    "id": 347,
-    "french": "divers",
-    "level": "B2",
-    "example": "Le mot \"divers\" est important."
-  },
-  {
-    "id": 348,
-    "french": "docteur",
-    "level": "B2",
-    "example": "Le mot \"docteur\" est important."
-  },
-  {
-    "id": 349,
-    "french": "document",
-    "level": "B2",
-    "example": "Le mot \"document\" est important."
-  },
-  {
-    "id": 350,
-    "french": "doigt",
-    "level": "B2",
-    "example": "Le mot \"doigt\" est important."
-  },
-  {
-    "id": 351,
-    "french": "domaine",
-    "level": "B2",
-    "example": "Le mot \"domaine\" est important."
-  },
-  {
-    "id": 352,
-    "french": "domestique",
-    "level": "B2",
-    "example": "Le mot \"domestique\" est important."
-  },
-  {
-    "id": 353,
-    "french": "dommage",
-    "level": "B2",
-    "example": "Le mot \"dommage\" est important."
-  },
-  {
-    "id": 354,
-    "french": "donc",
-    "level": "B2",
-    "example": "Le mot \"donc\" est important."
-  },
-  {
-    "id": 355,
-    "french": "dos",
-    "level": "B2",
-    "example": "Le mot \"dos\" est important."
-  },
-  {
-    "id": 356,
-    "french": "dossier",
-    "level": "B2",
-    "example": "Le mot \"dossier\" est important."
-  },
-  {
-    "id": 357,
-    "french": "douce",
-    "level": "B2",
-    "example": "Le mot \"douce\" est important."
-  },
-  {
-    "id": 358,
-    "french": "doucement",
-    "level": "B2",
-    "example": "Le mot \"doucement\" est important."
-  },
-  {
-    "id": 359,
-    "french": "douche",
-    "level": "B2",
-    "example": "Le mot \"douche\" est important."
-  },
-  {
-    "id": 360,
-    "french": "douleur",
-    "level": "B2",
-    "example": "Le mot \"douleur\" est important."
-  },
-  {
-    "id": 361,
-    "french": "doute",
-    "level": "B2",
-    "example": "Le mot \"doute\" est important."
-  },
-  {
-    "id": 362,
-    "french": "droit",
-    "level": "B2",
-    "example": "Le mot \"droit\" est important."
-  },
-  {
-    "id": 363,
-    "french": "drôle",
-    "level": "B2",
-    "example": "Le mot \"drôle\" est important."
-  },
-  {
-    "id": 364,
-    "french": "dur",
-    "level": "B2",
-    "example": "Le mot \"dur\" est important."
-  },
-  {
-    "id": 365,
-    "french": "durant",
-    "level": "B2",
-    "example": "Le mot \"durant\" est important."
-  },
-  {
-    "id": 366,
-    "french": "durer",
-    "level": "B2",
-    "example": "Le mot \"durer\" est important."
-  },
-  {
-    "id": 367,
-    "french": "échange",
-    "level": "B2",
-    "example": "Le mot \"échange\" est important."
-  },
-  {
-    "id": 368,
-    "french": "échapper",
-    "level": "B2",
-    "example": "Le mot \"échapper\" est important."
-  },
-  {
-    "id": 369,
-    "french": "échec",
-    "level": "B2",
-    "example": "Le mot \"échec\" est important."
-  },
-  {
-    "id": 370,
-    "french": "échelle",
-    "level": "B2",
-    "example": "Le mot \"échelle\" est important."
-  },
-  {
-    "id": 371,
-    "french": "économie",
-    "level": "B2",
-    "example": "Le mot \"économie\" est important."
-  },
-  {
-    "id": 372,
-    "french": "écouter",
-    "level": "B2",
-    "example": "Le mot \"écouter\" est important."
-  },
-  {
-    "id": 373,
-    "french": "écraser",
-    "level": "B2",
-    "example": "Le mot \"écraser\" est important."
-  },
-  {
-    "id": 374,
-    "french": "écrit",
-    "level": "B2",
-    "example": "Le mot \"écrit\" est important."
-  },
-  {
-    "id": 375,
-    "french": "éducation",
-    "level": "B2",
-    "example": "Le mot \"éducation\" est important."
-  },
-  {
-    "id": 376,
-    "french": "effacer",
-    "level": "B2",
-    "example": "Le mot \"effacer\" est important."
-  },
-  {
-    "id": 377,
-    "french": "effet",
-    "level": "B2",
-    "example": "Le mot \"effet\" est important."
-  },
-  {
-    "id": 378,
-    "french": "effort",
-    "level": "B2",
-    "example": "Le mot \"effort\" est important."
-  },
-  {
-    "id": 379,
-    "french": "égal",
-    "level": "B2",
-    "example": "Le mot \"égal\" est important."
-  },
-  {
-    "id": 380,
-    "french": "église",
-    "level": "B2",
-    "example": "Le mot \"église\" est important."
-  },
-  {
-    "id": 381,
-    "french": "élève",
-    "level": "B2",
-    "example": "Le mot \"élève\" est important."
-  },
-  {
-    "id": 382,
-    "french": "élever",
-    "level": "B2",
-    "example": "Le mot \"élever\" est important."
-  },
-  {
-    "id": 383,
-    "french": "éloigner",
-    "level": "B2",
-    "example": "Le mot \"éloigner\" est important."
-  },
-  {
-    "id": 384,
-    "french": "embrasser",
-    "level": "B2",
-    "example": "Le mot \"embrasser\" est important."
-  },
-  {
-    "id": 385,
-    "french": "émission",
-    "level": "B2",
-    "example": "Le mot \"émission\" est important."
-  },
-  {
-    "id": 386,
-    "french": "emmener",
-    "level": "B2",
-    "example": "Le mot \"emmener\" est important."
-  },
-  {
-    "id": 387,
-    "french": "émotion",
-    "level": "B2",
-    "example": "Le mot \"émotion\" est important."
-  },
-  {
-    "id": 388,
-    "french": "emploi",
-    "level": "B2",
-    "example": "Le mot \"emploi\" est important."
-  },
-  {
-    "id": 389,
-    "french": "employer",
-    "level": "B2",
-    "example": "Le mot \"employer\" est important."
-  },
-  {
-    "id": 390,
-    "french": "emporter",
-    "level": "B2",
-    "example": "Le mot \"emporter\" est important."
-  },
-  {
-    "id": 391,
-    "french": "encourager",
-    "level": "B2",
-    "example": "Le mot \"encourager\" est important."
-  },
-  {
-    "id": 392,
-    "french": "endroit",
-    "level": "B2",
-    "example": "Le mot \"endroit\" est important."
-  },
-  {
-    "id": 393,
-    "french": "énergie",
-    "level": "B2",
-    "example": "Le mot \"énergie\" est important."
-  },
-  {
-    "id": 394,
-    "french": "enfance",
-    "level": "B2",
-    "example": "Le mot \"enfance\" est important."
-  },
-  {
-    "id": 395,
-    "french": "enfermer",
-    "level": "B2",
-    "example": "Le mot \"enfermer\" est important."
-  },
-  {
-    "id": 396,
-    "french": "enfin",
-    "level": "B2",
-    "example": "Le mot \"enfin\" est important."
-  },
-  {
-    "id": 397,
-    "french": "engagement",
-    "level": "B2",
-    "example": "Le mot \"engagement\" est important."
-  },
-  {
-    "id": 398,
-    "french": "enlever",
-    "level": "B2",
-    "example": "Le mot \"enlever\" est important."
-  },
-  {
-    "id": 399,
-    "french": "ennemi",
-    "level": "B2",
-    "example": "Le mot \"ennemi\" est important."
-  },
-  {
-    "id": 400,
-    "french": "ennui",
-    "level": "B2",
-    "example": "Le mot \"ennui\" est important."
-  },
-  {
-    "id": 401,
-    "french": "énorme",
-    "level": "B2",
-    "example": "Le mot \"énorme\" est important."
-  },
-  {
-    "id": 402,
-    "french": "enquête",
-    "level": "B2",
-    "example": "Le mot \"enquête\" est important."
-  },
-  {
-    "id": 403,
-    "french": "enregistrer",
-    "level": "B2",
-    "example": "Le mot \"enregistrer\" est important."
-  },
-  {
-    "id": 404,
-    "french": "enseignement",
-    "level": "B2",
-    "example": "Le mot \"enseignement\" est important."
-  },
-  {
-    "id": 405,
-    "french": "ensemble",
-    "level": "B2",
-    "example": "Le mot \"ensemble\" est important."
-  },
-  {
-    "id": 406,
-    "french": "ensuite",
-    "level": "B2",
-    "example": "Le mot \"ensuite\" est important."
-  },
-  {
-    "id": 407,
-    "french": "entendre",
-    "level": "B2",
-    "example": "Le mot \"entendre\" est important."
-  },
-  {
-    "id": 408,
-    "french": "entier",
-    "level": "B2",
-    "example": "Le mot \"entier\" est important."
-  },
-  {
-    "id": 409,
-    "french": "entourer",
-    "level": "B2",
-    "example": "Le mot \"entourer\" est important."
-  },
-  {
-    "id": 410,
-    "french": "entraîner",
-    "level": "B2",
-    "example": "Le mot \"entraîner\" est important."
-  },
-  {
-    "id": 411,
-    "french": "entreprise",
-    "level": "B2",
-    "example": "Le mot \"entreprise\" est important."
-  },
-  {
-    "id": 412,
-    "french": "entrer",
-    "level": "B2",
-    "example": "Le mot \"entrer\" est important."
-  },
-  {
-    "id": 413,
-    "french": "enveloppe",
-    "level": "B2",
-    "example": "Le mot \"enveloppe\" est important."
-  },
-  {
-    "id": 414,
-    "french": "envie",
-    "level": "B2",
-    "example": "Le mot \"envie\" est important."
-  },
-  {
-    "id": 415,
-    "french": "environ",
-    "level": "B2",
-    "example": "Le mot \"environ\" est important."
-  },
-  {
-    "id": 416,
-    "french": "envoyer",
-    "level": "B2",
-    "example": "Le mot \"envoyer\" est important."
-  },
-  {
-    "id": 417,
-    "french": "époque",
-    "level": "B2",
-    "example": "Le mot \"époque\" est important."
-  },
-  {
-    "id": 418,
-    "french": "équipe",
-    "level": "B2",
-    "example": "Le mot \"équipe\" est important."
-  },
-  {
-    "id": 419,
-    "french": "erreur",
-    "level": "B2",
-    "example": "Le mot \"erreur\" est important."
-  },
-  {
-    "id": 420,
-    "french": "escalier",
-    "level": "B2",
-    "example": "Le mot \"escalier\" est important."
-  },
-  {
-    "id": 421,
-    "french": "espace",
-    "level": "B2",
-    "example": "Le mot \"espace\" est important."
-  },
-  {
-    "id": 422,
-    "french": "espèce",
-    "level": "B2",
-    "example": "Le mot \"espèce\" est important."
-  },
-  {
-    "id": 423,
-    "french": "espérer",
-    "level": "B2",
-    "example": "Le mot \"espérer\" est important."
-  },
-  {
-    "id": 424,
-    "french": "espoir",
-    "level": "B2",
-    "example": "Le mot \"espoir\" est important."
-  },
-  {
-    "id": 425,
-    "french": "essai",
-    "level": "B2",
-    "example": "Le mot \"essai\" est important."
-  },
-  {
-    "id": 426,
-    "french": "essayer",
-    "level": "B2",
-    "example": "Le mot \"essayer\" est important."
-  },
-  {
-    "id": 427,
-    "french": "essence",
-    "level": "B2",
-    "example": "Le mot \"essence\" est important."
-  },
-  {
-    "id": 428,
-    "french": "essentiel",
-    "level": "B2",
-    "example": "Le mot \"essentiel\" est important."
-  },
-  {
-    "id": 429,
-    "french": "établir",
-    "level": "B2",
-    "example": "Le mot \"établir\" est important."
-  },
-  {
-    "id": 430,
-    "french": "étage",
-    "level": "B2",
-    "example": "Le mot \"étage\" est important."
-  },
-  {
-    "id": 431,
-    "french": "étape",
-    "level": "B2",
-    "example": "Le mot \"étape\" est important."
-  },
-  {
-    "id": 432,
-    "french": "état",
-    "level": "B2",
-    "example": "Le mot \"état\" est important."
-  },
-  {
-    "id": 433,
-    "french": "été",
-    "level": "B2",
-    "example": "Le mot \"été\" est important."
-  },
-  {
-    "id": 434,
-    "french": "éteindre",
-    "level": "B2",
-    "example": "Le mot \"éteindre\" est important."
-  },
-  {
-    "id": 435,
-    "french": "étendre",
-    "level": "B2",
-    "example": "Le mot \"étendre\" est important."
-  },
-  {
-    "id": 436,
-    "french": "étiquette",
-    "level": "B2",
-    "example": "Le mot \"étiquette\" est important."
-  },
-  {
-    "id": 437,
-    "french": "étoile",
-    "level": "B2",
-    "example": "Le mot \"étoile\" est important."
-  },
-  {
-    "id": 438,
-    "french": "étonner",
-    "level": "B2",
-    "example": "Le mot \"étonner\" est important."
-  },
-  {
-    "id": 439,
-    "french": "étranger",
-    "level": "B2",
-    "example": "Le mot \"étranger\" est important."
-  },
-  {
-    "id": 440,
-    "french": "étroit",
-    "level": "B2",
-    "example": "Le mot \"étroit\" est important."
-  },
-  {
-    "id": 441,
-    "french": "étude",
-    "level": "B2",
-    "example": "Le mot \"étude\" est important."
-  },
-  {
-    "id": 442,
-    "french": "événement",
-    "level": "B2",
-    "example": "Le mot \"événement\" est important."
-  },
-  {
-    "id": 443,
-    "french": "éviter",
-    "level": "B2",
-    "example": "Le mot \"éviter\" est important."
-  },
-  {
-    "id": 444,
-    "french": "évolution",
-    "level": "B2",
-    "example": "Le mot \"évolution\" est important."
-  },
-  {
-    "id": 445,
-    "french": "exact",
-    "level": "B2",
-    "example": "Le mot \"exact\" est important."
-  },
-  {
-    "id": 446,
-    "french": "examiner",
-    "level": "B2",
-    "example": "Le mot \"examiner\" est important."
-  },
-  {
-    "id": 447,
-    "french": "excellent",
-    "level": "B2",
-    "example": "Le mot \"excellent\" est important."
-  },
-  {
-    "id": 448,
-    "french": "exception",
-    "level": "B2",
-    "example": "Le mot \"exception\" est important."
-  },
-  {
-    "id": 449,
-    "french": "excès",
-    "level": "B2",
-    "example": "Le mot \"excès\" est important."
-  },
-  {
-    "id": 450,
-    "french": "excuse",
-    "level": "B2",
-    "example": "Le mot \"excuse\" est important."
-  },
-  {
-    "id": 451,
-    "french": "exemple",
-    "level": "B2",
-    "example": "Le mot \"exemple\" est important."
-  },
-  {
-    "id": 452,
-    "french": "exercice",
-    "level": "B2",
-    "example": "Le mot \"exercice\" est important."
-  },
-  {
-    "id": 453,
-    "french": "exiger",
-    "level": "B2",
-    "example": "Le mot \"exiger\" est important."
-  },
-  {
-    "id": 454,
-    "french": "existence",
-    "level": "B2",
-    "example": "Le mot \"existence\" est important."
-  },
-  {
-    "id": 455,
-    "french": "expérience",
-    "level": "B2",
-    "example": "Le mot \"expérience\" est important."
-  },
-  {
-    "id": 456,
-    "french": "explication",
-    "level": "B2",
-    "example": "Le mot \"explication\" est important."
-  },
-  {
-    "id": 457,
-    "french": "expliquer",
-    "level": "B2",
-    "example": "Le mot \"expliquer\" est important."
-  },
-  {
-    "id": 458,
-    "french": "exploiter",
-    "level": "B2",
-    "example": "Le mot \"exploiter\" est important."
-  },
-  {
-    "id": 459,
-    "french": "explorer",
-    "level": "B2",
-    "example": "Le mot \"explorer\" est important."
-  },
-  {
-    "id": 460,
-    "french": "exposer",
-    "level": "B2",
-    "example": "Le mot \"exposer\" est important."
-  },
-  {
-    "id": 461,
-    "french": "exprimer",
-    "level": "B2",
-    "example": "Le mot \"exprimer\" est important."
-  },
-  {
-    "id": 462,
-    "french": "extraire",
-    "level": "B2",
-    "example": "Le mot \"extraire\" est important."
-  },
-  {
-    "id": 463,
-    "french": "extrême",
-    "level": "C1",
-    "example": "Le mot \"extrême\" est important."
-  },
-  {
-    "id": 464,
-    "french": "fabrication",
-    "level": "C1",
-    "example": "Le mot \"fabrication\" est important."
-  },
-  {
-    "id": 465,
-    "french": "face",
-    "level": "C1",
-    "example": "Le mot \"face\" est important."
-  },
-  {
-    "id": 466,
-    "french": "façon",
-    "level": "C1",
-    "example": "Le mot \"façon\" est important."
-  },
-  {
-    "id": 467,
-    "french": "facteur",
-    "level": "C1",
-    "example": "Le mot \"facteur\" est important."
-  },
-  {
-    "id": 468,
-    "french": "faculté",
-    "level": "C1",
-    "example": "Le mot \"faculté\" est important."
-  },
-  {
-    "id": 469,
-    "french": "faible",
-    "level": "C1",
-    "example": "Le mot \"faible\" est important."
-  },
-  {
-    "id": 470,
-    "french": "faim",
-    "level": "C1",
-    "example": "Le mot \"faim\" est important."
-  },
-  {
-    "id": 471,
-    "french": "fait",
-    "level": "C1",
-    "example": "Le mot \"fait\" est important."
-  },
-  {
-    "id": 472,
-    "french": "falloir",
-    "level": "C1",
-    "example": "Le mot \"falloir\" est important."
-  },
-  {
-    "id": 473,
-    "french": "fameux",
-    "level": "C1",
-    "example": "Le mot \"fameux\" est important."
-  },
-  {
-    "id": 474,
-    "french": "farce",
-    "level": "C1",
-    "example": "Le mot \"farce\" est important."
-  },
-  {
-    "id": 475,
-    "french": "fatigue",
-    "level": "C1",
-    "example": "Le mot \"fatigue\" est important."
-  },
-  {
-    "id": 476,
-    "french": "faute",
-    "level": "C1",
-    "example": "Le mot \"faute\" est important."
-  },
-  {
-    "id": 477,
-    "french": "faux",
-    "level": "C1",
-    "example": "Le mot \"faux\" est important."
-  },
-  {
-    "id": 478,
-    "french": "faveur",
-    "level": "C1",
-    "example": "Le mot \"faveur\" est important."
-  },
-  {
-    "id": 479,
-    "french": "féliciter",
-    "level": "C1",
-    "example": "Le mot \"féliciter\" est important."
-  },
-  {
-    "id": 480,
-    "french": "fenêtre",
-    "level": "C1",
-    "example": "Le mot \"fenêtre\" est important."
-  },
-  {
-    "id": 481,
-    "french": "fer",
-    "level": "C1",
-    "example": "Le mot \"fer\" est important."
-  },
-  {
-    "id": 482,
-    "french": "ferme",
-    "level": "C1",
-    "example": "Le mot \"ferme\" est important."
-  },
-  {
-    "id": 483,
-    "french": "fermer",
-    "level": "C1",
-    "example": "Le mot \"fermer\" est important."
-  },
-  {
-    "id": 484,
-    "french": "fête",
-    "level": "C1",
-    "example": "Le mot \"fête\" est important."
-  },
-  {
-    "id": 485,
-    "french": "feu",
-    "level": "C1",
-    "example": "Le mot \"feu\" est important."
-  },
-  {
-    "id": 486,
-    "french": "feuille",
-    "level": "C1",
-    "example": "Le mot \"feuille\" est important."
-  },
-  {
-    "id": 487,
-    "french": "fidèle",
-    "level": "C1",
-    "example": "Le mot \"fidèle\" est important."
-  },
-  {
-    "id": 488,
-    "french": "fier",
-    "level": "C1",
-    "example": "Le mot \"fier\" est important."
-  },
-  {
-    "id": 489,
-    "french": "fièvre",
-    "level": "C1",
-    "example": "Le mot \"fièvre\" est important."
-  },
-  {
-    "id": 490,
-    "french": "figure",
-    "level": "C1",
-    "example": "Le mot \"figure\" est important."
-  },
-  {
-    "id": 491,
-    "french": "filet",
-    "level": "C1",
-    "example": "Le mot \"filet\" est important."
-  },
-  {
-    "id": 492,
-    "french": "film",
-    "level": "C1",
-    "example": "Le mot \"film\" est important."
-  },
-  {
-    "id": 493,
-    "french": "fin",
-    "level": "C1",
-    "example": "Le mot \"fin\" est important."
-  },
-  {
-    "id": 494,
-    "french": "final",
-    "level": "C1",
-    "example": "Le mot \"final\" est important."
-  },
-  {
-    "id": 495,
-    "french": "finance",
-    "level": "C1",
-    "example": "Le mot \"finance\" est important."
-  },
-  {
-    "id": 496,
-    "french": "finir",
-    "level": "C1",
-    "example": "Le mot \"finir\" est important."
-  },
-  {
-    "id": 497,
-    "french": "fixe",
-    "level": "C1",
-    "example": "Le mot \"fixe\" est important."
-  },
-  {
-    "id": 498,
-    "french": "flamme",
-    "level": "C1",
-    "example": "Le mot \"flamme\" est important."
-  },
-  {
-    "id": 499,
-    "french": "fleuve",
-    "level": "C1",
-    "example": "Le mot \"fleuve\" est important."
-  },
-  {
-    "id": 500,
-    "french": "foi",
-    "level": "C1",
-    "example": "Le mot \"foi\" est important."
-  },
-  {
-    "id": 501,
-    "french": "foire",
-    "level": "C1",
-    "example": "Le mot \"foire\" est important."
-  },
-  {
-    "id": 502,
-    "french": "fois",
-    "level": "C1",
-    "example": "Le mot \"fois\" est important."
-  },
-  {
-    "id": 503,
-    "french": "folie",
-    "level": "C1",
-    "example": "Le mot \"folie\" est important."
-  },
-  {
-    "id": 504,
-    "french": "fonction",
-    "level": "C1",
-    "example": "Le mot \"fonction\" est important."
-  },
-  {
-    "id": 505,
-    "french": "fond",
-    "level": "C1",
-    "example": "Le mot \"fond\" est important."
-  },
-  {
-    "id": 506,
-    "french": "fonder",
-    "level": "C1",
-    "example": "Le mot \"fonder\" est important."
-  },
-  {
-    "id": 507,
-    "french": "fontaine",
-    "level": "C1",
-    "example": "Le mot \"fontaine\" est important."
-  },
-  {
-    "id": 508,
-    "french": "force",
-    "level": "C1",
-    "example": "Le mot \"force\" est important."
-  },
-  {
-    "id": 509,
-    "french": "forêt",
-    "level": "C1",
-    "example": "Le mot \"forêt\" est important."
-  },
-  {
-    "id": 510,
-    "french": "forme",
-    "level": "C1",
-    "example": "Le mot \"forme\" est important."
-  },
-  {
-    "id": 511,
-    "french": "former",
-    "level": "C1",
-    "example": "Le mot \"former\" est important."
-  },
-  {
-    "id": 512,
-    "french": "formidable",
-    "level": "C1",
-    "example": "Le mot \"formidable\" est important."
-  },
-  {
-    "id": 513,
-    "french": "formule",
-    "level": "C1",
-    "example": "Le mot \"formule\" est important."
-  },
-  {
-    "id": 514,
-    "french": "fort",
-    "level": "C1",
-    "example": "Le mot \"fort\" est important."
-  },
-  {
-    "id": 515,
-    "french": "fou",
-    "level": "C1",
-    "example": "Le mot \"fou\" est important."
-  },
-  {
-    "id": 516,
-    "french": "foule",
-    "level": "C1",
-    "example": "Le mot \"foule\" est important."
-  },
-  {
-    "id": 517,
-    "french": "four",
-    "level": "C1",
-    "example": "Le mot \"four\" est important."
-  },
-  {
-    "id": 518,
-    "french": "fourchette",
-    "level": "C1",
-    "example": "Le mot \"fourchette\" est important."
-  },
-  {
-    "id": 519,
-    "french": "fournir",
-    "level": "C1",
-    "example": "Le mot \"fournir\" est important."
-  },
-  {
-    "id": 520,
-    "french": "frais",
-    "level": "C1",
-    "example": "Le mot \"frais\" est important."
-  },
-  {
-    "id": 521,
-    "french": "français",
-    "level": "C1",
-    "example": "Le mot \"français\" est important."
-  },
-  {
-    "id": 522,
-    "french": "frapper",
-    "level": "C1",
-    "example": "Le mot \"frapper\" est important."
-  },
-  {
-    "id": 523,
-    "french": "fromage",
-    "level": "C1",
-    "example": "Le mot \"fromage\" est important."
-  },
-  {
-    "id": 524,
-    "french": "front",
-    "level": "C1",
-    "example": "Le mot \"front\" est important."
-  },
-  {
-    "id": 525,
-    "french": "fruit",
-    "level": "C1",
-    "example": "Le mot \"fruit\" est important."
-  },
-  {
-    "id": 526,
-    "french": "fuir",
-    "level": "C1",
-    "example": "Le mot \"fuir\" est important."
-  },
-  {
-    "id": 527,
-    "french": "fumée",
-    "level": "C1",
-    "example": "Le mot \"fumée\" est important."
-  },
-  {
-    "id": 528,
-    "french": "fumer",
-    "level": "C1",
-    "example": "Le mot \"fumer\" est important."
-  },
-  {
-    "id": 529,
-    "french": "futur",
-    "level": "C1",
-    "example": "Le mot \"futur\" est important."
-  },
-  {
-    "id": 530,
-    "french": "gagner",
-    "level": "C1",
-    "example": "Le mot \"gagner\" est important."
-  },
-  {
-    "id": 531,
-    "french": "garage",
-    "level": "C1",
-    "example": "Le mot \"garage\" est important."
-  },
-  {
-    "id": 532,
-    "french": "garçon",
-    "level": "C1",
-    "example": "Le mot \"garçon\" est important."
-  },
-  {
-    "id": 533,
-    "french": "garde",
-    "level": "C1",
-    "example": "Le mot \"garde\" est important."
-  },
-  {
-    "id": 534,
-    "french": "garder",
-    "level": "C1",
-    "example": "Le mot \"garder\" est important."
-  },
-  {
-    "id": 535,
-    "french": "gare",
-    "level": "C1",
-    "example": "Le mot \"gare\" est important."
-  },
-  {
-    "id": 536,
-    "french": "gâteau",
-    "level": "C1",
-    "example": "Le mot \"gâteau\" est important."
-  },
-  {
-    "id": 537,
-    "french": "gauche",
-    "level": "C1",
-    "example": "Le mot \"gauche\" est important."
-  },
-  {
-    "id": 538,
-    "french": "gel",
-    "level": "C1",
-    "example": "Le mot \"gel\" est important."
-  },
-  {
-    "id": 539,
-    "french": "général",
-    "level": "C1",
-    "example": "Le mot \"général\" est important."
-  },
-  {
-    "id": 540,
-    "french": "genou",
-    "level": "C1",
-    "example": "Le mot \"genou\" est important."
-  },
-  {
-    "id": 541,
-    "french": "genre",
-    "level": "C1",
-    "example": "Le mot \"genre\" est important."
-  },
-  {
-    "id": 542,
-    "french": "gens",
-    "level": "C1",
-    "example": "Le mot \"gens\" est important."
-  },
-  {
-    "id": 543,
-    "french": "geste",
-    "level": "C1",
-    "example": "Le mot \"geste\" est important."
-  },
-  {
-    "id": 544,
-    "french": "glace",
-    "level": "C1",
-    "example": "Le mot \"glace\" est important."
-  },
-  {
-    "id": 545,
-    "french": "gloire",
-    "level": "C1",
-    "example": "Le mot \"gloire\" est important."
-  },
-  {
-    "id": 546,
-    "french": "goût",
-    "level": "C1",
-    "example": "Le mot \"goût\" est important."
-  },
-  {
-    "id": 547,
-    "french": "goutte",
-    "level": "C1",
-    "example": "Le mot \"goutte\" est important."
-  },
-  {
-    "id": 548,
-    "french": "gouvernement",
-    "level": "C1",
-    "example": "Le mot \"gouvernement\" est important."
-  },
-  {
-    "id": 549,
-    "french": "grâce",
-    "level": "C1",
-    "example": "Le mot \"grâce\" est important."
-  },
-  {
-    "id": 550,
-    "french": "grain",
-    "level": "C1",
-    "example": "Le mot \"grain\" est important."
-  },
-  {
-    "id": 551,
-    "french": "grandeur",
-    "level": "C1",
-    "example": "Le mot \"grandeur\" est important."
-  },
-  {
-    "id": 552,
-    "french": "grandir",
-    "level": "C1",
-    "example": "Le mot \"grandir\" est important."
-  },
-  {
-    "id": 553,
-    "french": "gratuit",
-    "level": "C1",
-    "example": "Le mot \"gratuit\" est important."
-  },
-  {
-    "id": 554,
-    "french": "grave",
-    "level": "C1",
-    "example": "Le mot \"grave\" est important."
-  },
-  {
-    "id": 555,
-    "french": "grimper",
-    "level": "C1",
-    "example": "Le mot \"grimper\" est important."
-  },
-  {
-    "id": 556,
-    "french": "gris",
-    "level": "C1",
-    "example": "Le mot \"gris\" est important."
-  },
-  {
-    "id": 557,
-    "french": "gros",
-    "level": "C1",
-    "example": "Le mot \"gros\" est important."
-  },
-  {
-    "id": 558,
-    "french": "groupe",
-    "level": "C1",
-    "example": "Le mot \"groupe\" est important."
-  },
-  {
-    "id": 559,
-    "french": "guerre",
-    "level": "C1",
-    "example": "Le mot \"guerre\" est important."
-  },
-  {
-    "id": 560,
-    "french": "guide",
-    "level": "C1",
-    "example": "Le mot \"guide\" est important."
-  },
-  {
-    "id": 561,
-    "french": "habiller",
-    "level": "C1",
-    "example": "Le mot \"habiller\" est important."
-  },
-  {
-    "id": 562,
-    "french": "habitant",
-    "level": "C1",
-    "example": "Le mot \"habitant\" est important."
-  },
-  {
-    "id": 563,
-    "french": "habitude",
-    "level": "C1",
-    "example": "Le mot \"habitude\" est important."
-  },
-  {
-    "id": 564,
-    "french": "haine",
-    "level": "C1",
-    "example": "Le mot \"haine\" est important."
-  },
-  {
-    "id": 565,
-    "french": "hasard",
-    "level": "C1",
-    "example": "Le mot \"hasard\" est important."
-  },
-  {
-    "id": 566,
-    "french": "haut",
-    "level": "C1",
-    "example": "Le mot \"haut\" est important."
-  },
-  {
-    "id": 567,
-    "french": "hauteur",
-    "level": "C1",
-    "example": "Le mot \"hauteur\" est important."
-  },
-  {
-    "id": 568,
-    "french": "héritage",
-    "level": "C1",
-    "example": "Le mot \"héritage\" est important."
-  },
-  {
-    "id": 569,
-    "french": "herbe",
-    "level": "C1",
-    "example": "Le mot \"herbe\" est important."
-  },
-  {
-    "id": 570,
-    "french": "héros",
-    "level": "C1",
-    "example": "Le mot \"héros\" est important."
-  },
-  {
-    "id": 571,
-    "french": "heure",
-    "level": "C1",
-    "example": "Le mot \"heure\" est important."
-  },
-  {
-    "id": 572,
-    "french": "heurter",
-    "level": "C1",
-    "example": "Le mot \"heurter\" est important."
-  },
-  {
-    "id": 573,
-    "french": "hier",
-    "level": "C1",
-    "example": "Le mot \"hier\" est important."
-  },
-  {
-    "id": 574,
-    "french": "histoire",
-    "level": "C1",
-    "example": "Le mot \"histoire\" est important."
-  },
-  {
-    "id": 575,
-    "french": "hiver",
-    "level": "C1",
-    "example": "Le mot \"hiver\" est important."
-  },
-  {
-    "id": 576,
-    "french": "honnête",
-    "level": "C1",
-    "example": "Le mot \"honnête\" est important."
-  },
-  {
-    "id": 577,
-    "french": "honneur",
-    "level": "C1",
-    "example": "Le mot \"honneur\" est important."
-  },
-  {
-    "id": 578,
-    "french": "honte",
-    "level": "C1",
-    "example": "Le mot \"honte\" est important."
-  },
-  {
-    "id": 579,
-    "french": "hôpital",
-    "level": "C1",
-    "example": "Le mot \"hôpital\" est important."
-  },
-  {
-    "id": 580,
-    "french": "horloge",
-    "level": "C1",
-    "example": "Le mot \"horloge\" est important."
-  },
-  {
-    "id": 581,
-    "french": "horreur",
-    "level": "C1",
-    "example": "Le mot \"horreur\" est important."
-  },
-  {
-    "id": 582,
-    "french": "hôtel",
-    "level": "C1",
-    "example": "Le mot \"hôtel\" est important."
-  },
-  {
-    "id": 583,
-    "french": "huile",
-    "level": "C2",
-    "example": "Le mot \"huile\" est important."
-  },
-  {
-    "id": 584,
-    "french": "humain",
-    "level": "C2",
-    "example": "Le mot \"humain\" est important."
-  },
-  {
-    "id": 585,
-    "french": "humeur",
-    "level": "C2",
-    "example": "Le mot \"humeur\" est important."
-  },
-  {
-    "id": 586,
-    "french": "humour",
-    "level": "C2",
-    "example": "Le mot \"humour\" est important."
-  },
-  {
-    "id": 587,
-    "french": "idée",
-    "level": "C2",
-    "example": "Le mot \"idée\" est important."
-  },
-  {
-    "id": 588,
-    "french": "identique",
-    "level": "C2",
-    "example": "Le mot \"identique\" est important."
-  },
-  {
-    "id": 589,
-    "french": "identité",
-    "level": "C2",
-    "example": "Le mot \"identité\" est important."
-  },
-  {
-    "id": 590,
-    "french": "ignorer",
-    "level": "C2",
-    "example": "Le mot \"ignorer\" est important."
-  },
-  {
-    "id": 591,
-    "french": "île",
-    "level": "C2",
-    "example": "Le mot \"île\" est important."
-  },
-  {
-    "id": 592,
-    "french": "image",
-    "level": "C2",
-    "example": "Le mot \"image\" est important."
-  },
-  {
-    "id": 593,
-    "french": "imaginer",
-    "level": "C2",
-    "example": "Le mot \"imaginer\" est important."
-  },
-  {
-    "id": 594,
-    "french": "immédiat",
-    "level": "C2",
-    "example": "Le mot \"immédiat\" est important."
-  },
-  {
-    "id": 595,
-    "french": "immense",
-    "level": "C2",
-    "example": "Le mot \"immense\" est important."
-  },
-  {
-    "id": 596,
-    "french": "importance",
-    "level": "C2",
-    "example": "Le mot \"importance\" est important."
-  },
-  {
-    "id": 597,
-    "french": "important",
-    "level": "C2",
-    "example": "Le mot \"important\" est important."
-  },
-  {
-    "id": 598,
-    "french": "importer",
-    "level": "C2",
-    "example": "Le mot \"importer\" est important."
-  },
-  {
-    "id": 599,
-    "french": "imposer",
-    "level": "C2",
-    "example": "Le mot \"imposer\" est important."
-  },
-  {
-    "id": 600,
-    "french": "impossible",
-    "level": "C2",
-    "example": "Le mot \"impossible\" est important."
-  },
-  {
-    "id": 601,
-    "french": "impôt",
-    "level": "C2",
-    "example": "Le mot \"impôt\" est important."
-  },
-  {
-    "id": 602,
-    "french": "impression",
-    "level": "C2",
-    "example": "Le mot \"impression\" est important."
-  },
-  {
-    "id": 603,
-    "french": "imprimer",
-    "level": "C2",
-    "example": "Le mot \"imprimer\" est important."
-  },
-  {
-    "id": 604,
-    "french": "incendie",
-    "level": "C2",
-    "example": "Le mot \"incendie\" est important."
-  },
-  {
-    "id": 605,
-    "french": "inclure",
-    "level": "C2",
-    "example": "Le mot \"inclure\" est important."
-  },
-  {
-    "id": 606,
-    "french": "inconnu",
-    "level": "C2",
-    "example": "Le mot \"inconnu\" est important."
-  },
-  {
-    "id": 607,
-    "french": "incroyable",
-    "level": "C2",
-    "example": "Le mot \"incroyable\" est important."
-  },
-  {
-    "id": 608,
-    "french": "indication",
-    "level": "C2",
-    "example": "Le mot \"indication\" est important."
-  },
-  {
-    "id": 609,
-    "french": "indice",
-    "level": "C2",
-    "example": "Le mot \"indice\" est important."
-  },
-  {
-    "id": 610,
-    "french": "indiquer",
-    "level": "C2",
-    "example": "Le mot \"indiquer\" est important."
-  },
-  {
-    "id": 611,
-    "french": "individu",
-    "level": "C2",
-    "example": "Le mot \"individu\" est important."
-  },
-  {
-    "id": 612,
-    "french": "industrie",
-    "level": "C2",
-    "example": "Le mot \"industrie\" est important."
-  },
-  {
-    "id": 613,
-    "french": "infini",
-    "level": "C2",
-    "example": "Le mot \"infini\" est important."
-  },
-  {
-    "id": 614,
-    "french": "influence",
-    "level": "C2",
-    "example": "Le mot \"influence\" est important."
-  },
-  {
-    "id": 615,
-    "french": "information",
-    "level": "C2",
-    "example": "Le mot \"information\" est important."
-  },
-  {
-    "id": 616,
-    "french": "informatique",
-    "level": "C2",
-    "example": "Le mot \"informatique\" est important."
-  },
-  {
-    "id": 617,
-    "french": "ingénieur",
-    "level": "C2",
-    "example": "Le mot \"ingénieur\" est important."
-  },
-  {
-    "id": 618,
-    "french": "innocent",
-    "level": "C2",
-    "example": "Le mot \"innocent\" est important."
-  },
-  {
-    "id": 619,
-    "french": "inquiet",
-    "level": "C2",
-    "example": "Le mot \"inquiet\" est important."
-  },
-  {
-    "id": 620,
-    "french": "inspirer",
-    "level": "C2",
-    "example": "Le mot \"inspirer\" est important."
-  },
-  {
-    "id": 621,
-    "french": "installer",
-    "level": "C2",
-    "example": "Le mot \"installer\" est important."
-  },
-  {
-    "id": 622,
-    "french": "instant",
-    "level": "C2",
-    "example": "Le mot \"instant\" est important."
-  },
-  {
-    "id": 623,
-    "french": "instinct",
-    "level": "C2",
-    "example": "Le mot \"instinct\" est important."
-  },
-  {
-    "id": 624,
-    "french": "instruction",
-    "level": "C2",
-    "example": "Le mot \"instruction\" est important."
-  },
-  {
-    "id": 625,
-    "french": "instrument",
-    "level": "C2",
-    "example": "Le mot \"instrument\" est important."
-  },
-  {
-    "id": 626,
-    "french": "intelligent",
-    "level": "C2",
-    "example": "Le mot \"intelligent\" est important."
-  },
-  {
-    "id": 627,
-    "french": "intense",
-    "level": "C2",
-    "example": "Le mot \"intense\" est important."
-  },
-  {
-    "id": 628,
-    "french": "intention",
-    "level": "C2",
-    "example": "Le mot \"intention\" est important."
-  },
-  {
-    "id": 629,
-    "french": "interdire",
-    "level": "C2",
-    "example": "Le mot \"interdire\" est important."
-  },
-  {
-    "id": 630,
-    "french": "intéressant",
-    "level": "C2",
-    "example": "Le mot \"intéressant\" est important."
-  },
-  {
-    "id": 631,
-    "french": "intérêt",
-    "level": "C2",
-    "example": "Le mot \"intérêt\" est important."
-  },
-  {
-    "id": 632,
-    "french": "intérieur",
-    "level": "C2",
-    "example": "Le mot \"intérieur\" est important."
-  },
-  {
-    "id": 633,
-    "french": "international",
-    "level": "C2",
-    "example": "Le mot \"international\" est important."
-  },
-  {
-    "id": 634,
-    "french": "interroger",
-    "level": "C2",
-    "example": "Le mot \"interroger\" est important."
-  },
-  {
-    "id": 635,
-    "french": "interrompre",
-    "level": "C2",
-    "example": "Le mot \"interrompre\" est important."
-  },
-  {
-    "id": 636,
-    "french": "intervenir",
-    "level": "C2",
-    "example": "Le mot \"intervenir\" est important."
-  },
-  {
-    "id": 637,
-    "french": "intime",
-    "level": "C2",
-    "example": "Le mot \"intime\" est important."
-  },
-  {
-    "id": 638,
-    "french": "introduction",
-    "level": "C2",
-    "example": "Le mot \"introduction\" est important."
-  },
-  {
-    "id": 639,
-    "french": "inutile",
-    "level": "C2",
-    "example": "Le mot \"inutile\" est important."
-  },
-  {
-    "id": 640,
-    "french": "inventer",
-    "level": "C2",
-    "example": "Le mot \"inventer\" est important."
-  },
-  {
-    "id": 641,
-    "french": "invitation",
-    "level": "C2",
-    "example": "Le mot \"invitation\" est important."
-  },
-  {
-    "id": 642,
-    "french": "inviter",
-    "level": "C2",
-    "example": "Le mot \"inviter\" est important."
-  },
-  {
-    "id": 643,
-    "french": "jaloux",
-    "level": "C2",
-    "example": "Le mot \"jaloux\" est important."
-  },
-  {
-    "id": 644,
-    "french": "jamais",
-    "level": "C2",
-    "example": "Le mot \"jamais\" est important."
-  },
-  {
-    "id": 645,
-    "french": "jambe",
-    "level": "C2",
-    "example": "Le mot \"jambe\" est important."
-  },
-  {
-    "id": 646,
-    "french": "jardin",
-    "level": "C2",
-    "example": "Le mot \"jardin\" est important."
-  },
-  {
-    "id": 647,
-    "french": "jaune",
-    "level": "C2",
-    "example": "Le mot \"jaune\" est important."
-  },
-  {
-    "id": 648,
-    "french": "jeter",
-    "level": "C2",
-    "example": "Le mot \"jeter\" est important."
-  },
-  {
-    "id": 649,
-    "french": "jeu",
-    "level": "C2",
-    "example": "Le mot \"jeu\" est important."
-  },
-  {
-    "id": 650,
-    "french": "jeudi",
-    "level": "C2",
-    "example": "Le mot \"jeudi\" est important."
-  },
-  {
-    "id": 651,
-    "french": "joie",
-    "level": "C2",
-    "example": "Le mot \"joie\" est important."
-  },
-  {
-    "id": 652,
-    "french": "joli",
-    "level": "C2",
-    "example": "Le mot \"joli\" est important."
-  },
-  {
-    "id": 653,
-    "french": "joue",
-    "level": "C2",
-    "example": "Le mot \"joue\" est important."
-  },
-  {
-    "id": 654,
-    "french": "jouet",
-    "level": "C2",
-    "example": "Le mot \"jouet\" est important."
-  },
-  {
-    "id": 655,
-    "french": "joueur",
-    "level": "C2",
-    "example": "Le mot \"joueur\" est important."
-  },
-  {
-    "id": 656,
-    "french": "journal",
-    "level": "C2",
-    "example": "Le mot \"journal\" est important."
-  },
-  {
-    "id": 657,
-    "french": "journée",
-    "level": "C2",
-    "example": "Le mot \"journée\" est important."
-  },
-  {
-    "id": 658,
-    "french": "juge",
-    "level": "C2",
-    "example": "Le mot \"juge\" est important."
-  },
-  {
-    "id": 659,
-    "french": "juger",
-    "level": "C2",
-    "example": "Le mot \"juger\" est important."
-  },
-  {
-    "id": 660,
-    "french": "juillet",
-    "level": "C2",
-    "example": "Le mot \"juillet\" est important."
-  },
-  {
-    "id": 661,
-    "french": "juin",
-    "level": "C2",
-    "example": "Le mot \"juin\" est important."
-  },
-  {
-    "id": 662,
-    "french": "jupe",
-    "level": "C2",
-    "example": "Le mot \"jupe\" est important."
-  },
-  {
-    "id": 663,
-    "french": "jurer",
-    "level": "C2",
-    "example": "Le mot \"jurer\" est important."
-  },
-  {
-    "id": 664,
-    "french": "jus",
-    "level": "C2",
-    "example": "Le mot \"jus\" est important."
-  },
-  {
-    "id": 665,
-    "french": "jusque",
-    "level": "C2",
-    "example": "Le mot \"jusque\" est important."
-  },
-  {
-    "id": 666,
-    "french": "juste",
-    "level": "C2",
-    "example": "Le mot \"juste\" est important."
-  },
-  {
-    "id": 667,
-    "french": "justice",
-    "level": "C2",
-    "example": "Le mot \"justice\" est important."
-  },
-  {
-    "id": 668,
-    "french": "lac",
-    "level": "C2",
-    "example": "Le mot \"lac\" est important."
-  },
-  {
-    "id": 669,
-    "french": "laid",
-    "level": "C2",
-    "example": "Le mot \"laid\" est important."
-  },
-  {
-    "id": 670,
-    "french": "laine",
-    "level": "C2",
-    "example": "Le mot \"laine\" est important."
-  },
-  {
-    "id": 671,
-    "french": "laisser",
-    "level": "C2",
-    "example": "Le mot \"laisser\" est important."
-  },
-  {
-    "id": 672,
-    "french": "lait",
-    "level": "C2",
-    "example": "Le mot \"lait\" est important."
-  },
-  {
-    "id": 673,
-    "french": "lampe",
-    "level": "C2",
-    "example": "Le mot \"lampe\" est important."
-  },
-  {
-    "id": 674,
-    "french": "lancer",
-    "level": "C2",
-    "example": "Le mot \"lancer\" est important."
-  },
-  {
-    "id": 675,
-    "french": "langage",
-    "level": "C2",
-    "example": "Le mot \"langage\" est important."
-  },
-  {
-    "id": 676,
-    "french": "langue",
-    "level": "C2",
-    "example": "Le mot \"langue\" est important."
-  },
-  {
-    "id": 677,
-    "french": "large",
-    "level": "C2",
-    "example": "Le mot \"large\" est important."
-  },
-  {
-    "id": 678,
-    "french": "larme",
-    "level": "C2",
-    "example": "Le mot \"larme\" est important."
-  },
-  {
-    "id": 679,
-    "french": "laver",
-    "level": "C2",
-    "example": "Le mot \"laver\" est important."
-  },
-  {
-    "id": 680,
-    "french": "leçon",
-    "level": "C2",
-    "example": "Le mot \"leçon\" est important."
-  },
-  {
-    "id": 681,
-    "french": "lecture",
-    "level": "C2",
-    "example": "Le mot \"lecture\" est important."
-  },
-  {
-    "id": 682,
-    "french": "légal",
-    "level": "C2",
-    "example": "Le mot \"légal\" est important."
-  },
-  {
-    "id": 683,
-    "french": "légende",
-    "level": "C2",
-    "example": "Le mot \"légende\" est important."
-  },
-  {
-    "id": 684,
-    "french": "léger",
-    "level": "C2",
-    "example": "Le mot \"léger\" est important."
-  },
-  {
-    "id": 685,
-    "french": "légume",
-    "level": "C2",
-    "example": "Le mot \"légume\" est important."
-  },
-  {
-    "id": 686,
-    "french": "lendemain",
-    "level": "C2",
-    "example": "Le mot \"lendemain\" est important."
-  },
-  {
-    "id": 687,
-    "french": "lettre",
-    "level": "C2",
-    "example": "Le mot \"lettre\" est important."
-  },
-  {
-    "id": 688,
-    "french": "lever",
-    "level": "C2",
-    "example": "Le mot \"lever\" est important."
-  },
-  {
-    "id": 689,
-    "french": "lèvre",
-    "level": "C2",
-    "example": "Le mot \"lèvre\" est important."
-  },
-  {
-    "id": 690,
-    "french": "liberté",
-    "level": "C2",
-    "example": "Le mot \"liberté\" est important."
-  },
-  {
-    "id": 691,
-    "french": "librairie",
-    "level": "C2",
-    "example": "Le mot \"librairie\" est important."
-  },
-  {
-    "id": 692,
-    "french": "libre",
-    "level": "C2",
-    "example": "Le mot \"libre\" est important."
-  },
-  {
-    "id": 693,
-    "french": "lien",
-    "level": "C2",
-    "example": "Le mot \"lien\" est important."
-  },
-  {
-    "id": 694,
-    "french": "lier",
-    "level": "C2",
-    "example": "Le mot \"lier\" est important."
-  },
-  {
-    "id": 695,
-    "french": "lieu",
-    "level": "C2",
-    "example": "Le mot \"lieu\" est important."
-  },
-  {
-    "id": 696,
-    "french": "ligne",
-    "level": "C2",
-    "example": "Le mot \"ligne\" est important."
-  },
-  {
-    "id": 697,
-    "french": "limite",
-    "level": "C2",
-    "example": "Le mot \"limite\" est important."
-  },
-  {
-    "id": 698,
-    "french": "linge",
-    "level": "C2",
-    "example": "Le mot \"linge\" est important."
-  },
-  {
-    "id": 699,
-    "french": "lion",
-    "level": "C2",
-    "example": "Le mot \"lion\" est important."
-  },
-  {
-    "id": 700,
-    "french": "liquide",
-    "level": "C2",
-    "example": "Le mot \"liquide\" est important."
-  },
-  {
-    "id": 701,
-    "french": "lisible",
-    "level": "C2",
-    "example": "Le mot \"lisible\" est important."
-  },
-  {
-    "id": 702,
-    "french": "liste",
-    "level": "C2",
-    "example": "Le mot \"liste\" est important."
-  },
-  {
-    "id": 703,
-    "french": "lit",
-    "level": "A2",
-    "example": "Le mot \"lit\" est important."
-  },
-  {
-    "id": 704,
-    "french": "litre",
-    "level": "A2",
-    "example": "Le mot \"litre\" est important."
-  },
-  {
-    "id": 705,
-    "french": "livrer",
-    "level": "A2",
-    "example": "Le mot \"livrer\" est important."
-  },
-  {
-    "id": 706,
-    "french": "local",
-    "level": "A2",
-    "example": "Le mot \"local\" est important."
-  },
-  {
-    "id": 707,
-    "french": "location",
-    "level": "A2",
-    "example": "Le mot \"location\" est important."
-  },
-  {
-    "id": 708,
-    "french": "logement",
-    "level": "A2",
-    "example": "Le mot \"logement\" est important."
-  },
-  {
-    "id": 709,
-    "french": "loi",
-    "level": "A2",
-    "example": "Le mot \"loi\" est important."
-  },
-  {
-    "id": 710,
-    "french": "loin",
-    "level": "A2",
-    "example": "Le mot \"loin\" est important."
-  },
-  {
-    "id": 711,
-    "french": "loisir",
-    "level": "A2",
-    "example": "Le mot \"loisir\" est important."
-  },
-  {
-    "id": 712,
-    "french": "long",
-    "level": "A2",
-    "example": "Le mot \"long\" est important."
-  },
-  {
-    "id": 713,
-    "french": "longtemps",
-    "level": "A2",
-    "example": "Le mot \"longtemps\" est important."
-  },
-  {
-    "id": 714,
-    "french": "lorsque",
-    "level": "A2",
-    "example": "Le mot \"lorsque\" est important."
-  },
-  {
-    "id": 715,
-    "french": "louer",
-    "level": "A2",
-    "example": "Le mot \"louer\" est important."
-  },
-  {
-    "id": 716,
-    "french": "lourd",
-    "level": "A2",
-    "example": "Le mot \"lourd\" est important."
-  },
-  {
-    "id": 717,
-    "french": "loyer",
-    "level": "A2",
-    "example": "Le mot \"loyer\" est important."
-  },
-  {
-    "id": 718,
-    "french": "lumière",
-    "level": "A2",
-    "example": "Le mot \"lumière\" est important."
-  },
-  {
-    "id": 719,
-    "french": "lundi",
-    "level": "A2",
-    "example": "Le mot \"lundi\" est important."
-  },
-  {
-    "id": 720,
-    "french": "lune",
-    "level": "A2",
-    "example": "Le mot \"lune\" est important."
-  },
-  {
-    "id": 721,
-    "french": "lunettes",
-    "level": "A2",
-    "example": "Le mot \"lunettes\" est important."
-  },
-  {
-    "id": 722,
-    "french": "lutte",
-    "level": "A2",
-    "example": "Le mot \"lutte\" est important."
-  },
-  {
-    "id": 723,
-    "french": "lycée",
-    "level": "A2",
-    "example": "Le mot \"lycée\" est important."
-  },
-  {
-    "id": 724,
-    "french": "machine",
-    "level": "A2",
-    "example": "Le mot \"machine\" est important."
-  },
-  {
-    "id": 725,
-    "french": "madame",
-    "level": "A2",
-    "example": "Le mot \"madame\" est important."
-  },
-  {
-    "id": 726,
-    "french": "magnifique",
-    "level": "A2",
-    "example": "Le mot \"magnifique\" est important."
-  },
-  {
-    "id": 727,
-    "french": "mai",
-    "level": "A2",
-    "example": "Le mot \"mai\" est important."
-  },
-  {
-    "id": 728,
-    "french": "main",
-    "level": "A2",
-    "example": "Le mot \"main\" est important."
-  },
-  {
-    "id": 729,
-    "french": "maintenant",
-    "level": "A2",
-    "example": "Le mot \"maintenant\" est important."
-  },
-  {
-    "id": 730,
-    "french": "maître",
-    "level": "A2",
-    "example": "Le mot \"maître\" est important."
-  },
-  {
-    "id": 731,
-    "french": "mal",
-    "level": "A2",
-    "example": "Le mot \"mal\" est important."
-  },
-  {
-    "id": 732,
-    "french": "maladie",
-    "level": "A2",
-    "example": "Le mot \"maladie\" est important."
-  },
-  {
-    "id": 733,
-    "french": "malgré",
-    "level": "A2",
-    "example": "Le mot \"malgré\" est important."
-  },
-  {
-    "id": 734,
-    "french": "malheur",
-    "level": "A2",
-    "example": "Le mot \"malheur\" est important."
-  },
-  {
-    "id": 735,
-    "french": "maman",
-    "level": "A2",
-    "example": "Le mot \"maman\" est important."
-  },
-  {
-    "id": 736,
-    "french": "manche",
-    "level": "A2",
-    "example": "Le mot \"manche\" est important."
-  },
-  {
-    "id": 737,
-    "french": "mandat",
-    "level": "A2",
-    "example": "Le mot \"mandat\" est important."
-  },
-  {
-    "id": 738,
-    "french": "manière",
-    "level": "A2",
-    "example": "Le mot \"manière\" est important."
-  },
-  {
-    "id": 739,
-    "french": "manifester",
-    "level": "A2",
-    "example": "Le mot \"manifester\" est important."
-  },
-  {
-    "id": 740,
-    "french": "manquer",
-    "level": "A2",
-    "example": "Le mot \"manquer\" est important."
-  },
-  {
-    "id": 741,
-    "french": "manteau",
-    "level": "A2",
-    "example": "Le mot \"manteau\" est important."
-  },
-  {
-    "id": 742,
-    "french": "marchand",
-    "level": "A2",
-    "example": "Le mot \"marchand\" est important."
-  },
-  {
-    "id": 743,
-    "french": "marché",
-    "level": "A2",
-    "example": "Le mot \"marché\" est important."
-  },
-  {
-    "id": 744,
-    "french": "mardi",
-    "level": "A2",
-    "example": "Le mot \"mardi\" est important."
-  },
-  {
-    "id": 745,
-    "french": "marée",
-    "level": "A2",
-    "example": "Le mot \"marée\" est important."
-  },
-  {
-    "id": 746,
-    "french": "marge",
-    "level": "A2",
-    "example": "Le mot \"marge\" est important."
-  },
-  {
-    "id": 747,
-    "french": "mariage",
-    "level": "A2",
-    "example": "Le mot \"mariage\" est important."
-  },
-  {
-    "id": 748,
-    "french": "marier",
-    "level": "A2",
-    "example": "Le mot \"marier\" est important."
-  },
-  {
-    "id": 749,
-    "french": "marin",
-    "level": "A2",
-    "example": "Le mot \"marin\" est important."
-  },
-  {
-    "id": 750,
-    "french": "marque",
-    "level": "A2",
-    "example": "Le mot \"marque\" est important."
-  },
-  {
-    "id": 751,
-    "french": "marquer",
-    "level": "A2",
-    "example": "Le mot \"marquer\" est important."
-  },
-  {
-    "id": 752,
-    "french": "marron",
-    "level": "A2",
-    "example": "Le mot \"marron\" est important."
-  },
-  {
-    "id": 753,
-    "french": "marteau",
-    "level": "A2",
-    "example": "Le mot \"marteau\" est important."
-  },
-  {
-    "id": 754,
-    "french": "masse",
-    "level": "A2",
-    "example": "Le mot \"masse\" est important."
-  },
-  {
-    "id": 755,
-    "french": "matelas",
-    "level": "A2",
-    "example": "Le mot \"matelas\" est important."
-  },
-  {
-    "id": 756,
-    "french": "matériel",
-    "level": "A2",
-    "example": "Le mot \"matériel\" est important."
-  },
-  {
-    "id": 757,
-    "french": "matin",
-    "level": "A2",
-    "example": "Le mot \"matin\" est important."
-  },
-  {
-    "id": 758,
-    "french": "médecin",
-    "level": "A2",
-    "example": "Le mot \"médecin\" est important."
-  },
-  {
-    "id": 759,
-    "french": "médecine",
-    "level": "A2",
-    "example": "Le mot \"médecine\" est important."
-  },
-  {
-    "id": 760,
-    "french": "médicament",
-    "level": "A2",
-    "example": "Le mot \"médicament\" est important."
-  },
-  {
-    "id": 761,
-    "french": "meilleur",
-    "level": "A2",
-    "example": "Le mot \"meilleur\" est important."
-  },
-  {
-    "id": 762,
-    "french": "mélanger",
-    "level": "A2",
-    "example": "Le mot \"mélanger\" est important."
-  },
-  {
-    "id": 763,
-    "french": "membre",
-    "level": "A2",
-    "example": "Le mot \"membre\" est important."
-  },
-  {
-    "id": 764,
-    "french": "mémoire",
-    "level": "A2",
-    "example": "Le mot \"mémoire\" est important."
-  },
-  {
-    "id": 765,
-    "french": "menacer",
-    "level": "A2",
-    "example": "Le mot \"menacer\" est important."
-  },
-  {
-    "id": 766,
-    "french": "ménage",
-    "level": "A2",
-    "example": "Le mot \"ménage\" est important."
-  },
-  {
-    "id": 767,
-    "french": "mener",
-    "level": "A2",
-    "example": "Le mot \"mener\" est important."
-  },
-  {
-    "id": 768,
-    "french": "mensonge",
-    "level": "A2",
-    "example": "Le mot \"mensonge\" est important."
-  },
-  {
-    "id": 769,
-    "french": "mental",
-    "level": "A2",
-    "example": "Le mot \"mental\" est important."
-  },
-  {
-    "id": 770,
-    "french": "mentir",
-    "level": "A2",
-    "example": "Le mot \"mentir\" est important."
-  },
-  {
-    "id": 771,
-    "french": "menu",
-    "level": "A2",
-    "example": "Le mot \"menu\" est important."
-  },
-  {
-    "id": 772,
-    "french": "mer",
-    "level": "A2",
-    "example": "Le mot \"mer\" est important."
-  },
-  {
-    "id": 773,
-    "french": "mercredi",
-    "level": "A2",
-    "example": "Le mot \"mercredi\" est important."
-  },
-  {
-    "id": 774,
-    "french": "mesure",
-    "level": "A2",
-    "example": "Le mot \"mesure\" est important."
-  },
-  {
-    "id": 775,
-    "french": "métier",
-    "level": "A2",
-    "example": "Le mot \"métier\" est important."
-  },
-  {
-    "id": 776,
-    "french": "mètre",
-    "level": "A2",
-    "example": "Le mot \"mètre\" est important."
-  },
-  {
-    "id": 777,
-    "french": "meuble",
-    "level": "A2",
-    "example": "Le mot \"meuble\" est important."
-  },
-  {
-    "id": 778,
-    "french": "midi",
-    "level": "A2",
-    "example": "Le mot \"midi\" est important."
-  },
-  {
-    "id": 779,
-    "french": "mieux",
-    "level": "A2",
-    "example": "Le mot \"mieux\" est important."
-  },
-  {
-    "id": 780,
-    "french": "milieu",
-    "level": "A2",
-    "example": "Le mot \"milieu\" est important."
-  },
-  {
-    "id": 781,
-    "french": "militaire",
-    "level": "A2",
-    "example": "Le mot \"militaire\" est important."
-  },
-  {
-    "id": 782,
-    "french": "mille",
-    "level": "A2",
-    "example": "Le mot \"mille\" est important."
-  },
-  {
-    "id": 783,
-    "french": "million",
-    "level": "A2",
-    "example": "Le mot \"million\" est important."
-  },
-  {
-    "id": 784,
-    "french": "mince",
-    "level": "A2",
-    "example": "Le mot \"mince\" est important."
-  },
-  {
-    "id": 785,
-    "french": "ministre",
-    "level": "A2",
-    "example": "Le mot \"ministre\" est important."
-  },
-  {
-    "id": 786,
-    "french": "minuit",
-    "level": "A2",
-    "example": "Le mot \"minuit\" est important."
-  },
-  {
-    "id": 787,
-    "french": "minute",
-    "level": "A2",
-    "example": "Le mot \"minute\" est important."
-  },
-  {
-    "id": 788,
-    "french": "miracle",
-    "level": "A2",
-    "example": "Le mot \"miracle\" est important."
-  },
-  {
-    "id": 789,
-    "french": "miroir",
-    "level": "A2",
-    "example": "Le mot \"miroir\" est important."
-  },
-  {
-    "id": 790,
-    "french": "mission",
-    "level": "A2",
-    "example": "Le mot \"mission\" est important."
-  },
-  {
-    "id": 791,
-    "french": "mobile",
-    "level": "A2",
-    "example": "Le mot \"mobile\" est important."
-  },
-  {
-    "id": 792,
-    "french": "mode",
-    "level": "A2",
-    "example": "Le mot \"mode\" est important."
-  },
-  {
-    "id": 793,
-    "french": "modèle",
-    "level": "A2",
-    "example": "Le mot \"modèle\" est important."
-  },
-  {
-    "id": 794,
-    "french": "moderne",
-    "level": "A2",
-    "example": "Le mot \"moderne\" est important."
-  },
-  {
-    "id": 795,
-    "french": "modeste",
-    "level": "A2",
-    "example": "Le mot \"modeste\" est important."
-  },
-  {
-    "id": 796,
-    "french": "modifier",
-    "level": "A2",
-    "example": "Le mot \"modifier\" est important."
-  },
-  {
-    "id": 797,
-    "french": "moindre",
-    "level": "A2",
-    "example": "Le mot \"moindre\" est important."
-  },
-  {
-    "id": 798,
-    "french": "moins",
-    "level": "A2",
-    "example": "Le mot \"moins\" est important."
-  },
-  {
-    "id": 799,
-    "french": "mois",
-    "level": "A2",
-    "example": "Le mot \"mois\" est important."
-  },
-  {
-    "id": 800,
-    "french": "moitié",
-    "level": "A2",
-    "example": "Le mot \"moitié\" est important."
-  },
-  {
-    "id": 801,
-    "french": "moment",
-    "level": "A2",
-    "example": "Le mot \"moment\" est important."
-  },
-  {
-    "id": 802,
-    "french": "monde",
-    "level": "A2",
-    "example": "Le mot \"monde\" est important."
-  },
-  {
-    "id": 803,
-    "french": "monnaie",
-    "level": "A2",
-    "example": "Le mot \"monnaie\" est important."
-  },
-  {
-    "id": 804,
-    "french": "monsieur",
-    "level": "A2",
-    "example": "Le mot \"monsieur\" est important."
-  },
-  {
-    "id": 805,
-    "french": "montagne",
-    "level": "A2",
-    "example": "Le mot \"montagne\" est important."
-  },
-  {
-    "id": 806,
-    "french": "monter",
-    "level": "A2",
-    "example": "Le mot \"monter\" est important."
-  },
-  {
-    "id": 807,
-    "french": "montre",
-    "level": "A2",
-    "example": "Le mot \"montre\" est important."
-  },
-  {
-    "id": 808,
-    "french": "montrer",
-    "level": "A2",
-    "example": "Le mot \"montrer\" est important."
-  },
-  {
-    "id": 809,
-    "french": "moral",
-    "level": "A2",
-    "example": "Le mot \"moral\" est important."
-  },
-  {
-    "id": 810,
-    "french": "morceau",
-    "level": "A2",
-    "example": "Le mot \"morceau\" est important."
-  },
-  {
-    "id": 811,
-    "french": "mordre",
-    "level": "A2",
-    "example": "Le mot \"mordre\" est important."
-  },
-  {
-    "id": 812,
-    "french": "mort",
-    "level": "A2",
-    "example": "Le mot \"mort\" est important."
-  },
-  {
-    "id": 813,
-    "french": "mot",
-    "level": "A2",
-    "example": "Le mot \"mot\" est important."
-  },
-  {
-    "id": 814,
-    "french": "motif",
-    "level": "A2",
-    "example": "Le mot \"motif\" est important."
-  },
-  {
-    "id": 815,
-    "french": "mou",
-    "level": "A2",
-    "example": "Le mot \"mou\" est important."
-  },
-  {
-    "id": 816,
-    "french": "mouche",
-    "level": "A2",
-    "example": "Le mot \"mouche\" est important."
-  },
-  {
-    "id": 817,
-    "french": "mouchoir",
-    "level": "A2",
-    "example": "Le mot \"mouchoir\" est important."
-  },
-  {
-    "id": 818,
-    "french": "mourir",
-    "level": "A2",
-    "example": "Le mot \"mourir\" est important."
-  },
-  {
-    "id": 819,
-    "french": "mouton",
-    "level": "A2",
-    "example": "Le mot \"mouton\" est important."
-  },
-  {
-    "id": 820,
-    "french": "mouvement",
-    "level": "A2",
-    "example": "Le mot \"mouvement\" est important."
-  },
-  {
-    "id": 821,
-    "french": "moyen",
-    "level": "A2",
-    "example": "Le mot \"moyen\" est important."
-  },
-  {
-    "id": 822,
-    "french": "muet",
-    "level": "A2",
-    "example": "Le mot \"muet\" est important."
-  },
-  {
-    "id": 823,
-    "french": "mur",
-    "level": "B1",
-    "example": "Le mot \"mur\" est important."
-  },
-  {
-    "id": 824,
-    "french": "musée",
-    "level": "B1",
-    "example": "Le mot \"musée\" est important."
-  },
-  {
-    "id": 825,
-    "french": "musique",
-    "level": "B1",
-    "example": "Le mot \"musique\" est important."
-  },
-  {
-    "id": 826,
-    "french": "naissance",
-    "level": "B1",
-    "example": "Le mot \"naissance\" est important."
-  },
-  {
-    "id": 827,
-    "french": "naître",
-    "level": "B1",
-    "example": "Le mot \"naître\" est important."
-  },
-  {
-    "id": 828,
-    "french": "nation",
-    "level": "B1",
-    "example": "Le mot \"nation\" est important."
-  },
-  {
-    "id": 829,
-    "french": "nature",
-    "level": "B1",
-    "example": "Le mot \"nature\" est important."
-  },
-  {
-    "id": 830,
-    "french": "naturel",
-    "level": "B1",
-    "example": "Le mot \"naturel\" est important."
-  },
-  {
-    "id": 831,
-    "french": "navire",
-    "level": "B1",
-    "example": "Le mot \"navire\" est important."
-  },
-  {
-    "id": 832,
-    "french": "nécessaire",
-    "level": "B1",
-    "example": "Le mot \"nécessaire\" est important."
-  },
-  {
-    "id": 833,
-    "french": "nerveux",
-    "level": "B1",
-    "example": "Le mot \"nerveux\" est important."
-  },
-  {
-    "id": 834,
-    "french": "nettoyer",
-    "level": "B1",
-    "example": "Le mot \"nettoyer\" est important."
-  },
-  {
-    "id": 835,
-    "french": "neuf",
-    "level": "B1",
-    "example": "Le mot \"neuf\" est important."
-  },
-  {
-    "id": 836,
-    "french": "nez",
-    "level": "B1",
-    "example": "Le mot \"nez\" est important."
-  },
-  {
-    "id": 837,
-    "french": "niveau",
-    "level": "B1",
-    "example": "Le mot \"niveau\" est important."
-  },
-  {
-    "id": 838,
-    "french": "Noël",
-    "level": "B1",
-    "example": "Le mot \"Noël\" est important."
-  },
-  {
-    "id": 839,
-    "french": "noir",
-    "level": "B1",
-    "example": "Le mot \"noir\" est important."
-  },
-  {
-    "id": 840,
-    "french": "nom",
-    "level": "B1",
-    "example": "Le mot \"nom\" est important."
-  },
-  {
-    "id": 841,
-    "french": "nombre",
-    "level": "B1",
-    "example": "Le mot \"nombre\" est important."
-  },
-  {
-    "id": 842,
-    "french": "nombreux",
-    "level": "B1",
-    "example": "Le mot \"nombreux\" est important."
-  },
-  {
-    "id": 843,
-    "french": "nommer",
-    "level": "B1",
-    "example": "Le mot \"nommer\" est important."
-  },
-  {
-    "id": 844,
-    "french": "nord",
-    "level": "B1",
-    "example": "Le mot \"nord\" est important."
-  },
-  {
-    "id": 845,
-    "french": "normal",
-    "level": "B1",
-    "example": "Le mot \"normal\" est important."
-  },
-  {
-    "id": 846,
-    "french": "note",
-    "level": "B1",
-    "example": "Le mot \"note\" est important."
-  },
-  {
-    "id": 847,
-    "french": "noter",
-    "level": "B1",
-    "example": "Le mot \"noter\" est important."
-  },
-  {
-    "id": 848,
-    "french": "nouer",
-    "level": "B1",
-    "example": "Le mot \"nouer\" est important."
-  },
-  {
-    "id": 849,
-    "french": "nourrir",
-    "level": "B1",
-    "example": "Le mot \"nourrir\" est important."
-  },
-  {
-    "id": 850,
-    "french": "nourriture",
-    "level": "B1",
-    "example": "Le mot \"nourriture\" est important."
-  },
-  {
-    "id": 851,
-    "french": "nouveau",
-    "level": "B1",
-    "example": "Le mot \"nouveau\" est important."
-  },
-  {
-    "id": 852,
-    "french": "nouvelle",
-    "level": "B1",
-    "example": "Le mot \"nouvelle\" est important."
-  },
-  {
-    "id": 853,
-    "french": "nu",
-    "level": "B1",
-    "example": "Le mot \"nu\" est important."
-  },
-  {
-    "id": 854,
-    "french": "nuage",
-    "level": "B1",
-    "example": "Le mot \"nuage\" est important."
-  },
-  {
-    "id": 855,
-    "french": "nuance",
-    "level": "B1",
-    "example": "Le mot \"nuance\" est important."
-  },
-  {
-    "id": 856,
-    "french": "nuit",
-    "level": "B1",
-    "example": "Le mot \"nuit\" est important."
-  },
-  {
-    "id": 857,
-    "french": "numéro",
-    "level": "B1",
-    "example": "Le mot \"numéro\" est important."
-  },
-  {
-    "id": 858,
-    "french": "obéir",
-    "level": "B1",
-    "example": "Le mot \"obéir\" est important."
-  },
-  {
-    "id": 859,
-    "french": "objet",
-    "level": "B1",
-    "example": "Le mot \"objet\" est important."
-  },
-  {
-    "id": 860,
-    "french": "obligation",
-    "level": "B1",
-    "example": "Le mot \"obligation\" est important."
-  },
-  {
-    "id": 861,
-    "french": "obliger",
-    "level": "B1",
-    "example": "Le mot \"obliger\" est important."
-  },
-  {
-    "id": 862,
-    "french": "obscur",
-    "level": "B1",
-    "example": "Le mot \"obscur\" est important."
-  },
-  {
-    "id": 863,
-    "french": "observer",
-    "level": "B1",
-    "example": "Le mot \"observer\" est important."
-  },
-  {
-    "id": 864,
-    "french": "obstacle",
-    "level": "B1",
-    "example": "Le mot \"obstacle\" est important."
-  },
-  {
-    "id": 865,
-    "french": "obtenir",
-    "level": "B1",
-    "example": "Le mot \"obtenir\" est important."
-  },
-  {
-    "id": 866,
-    "french": "occasion",
-    "level": "B1",
-    "example": "Le mot \"occasion\" est important."
-  },
-  {
-    "id": 867,
-    "french": "occuper",
-    "level": "B1",
-    "example": "Le mot \"occuper\" est important."
-  },
-  {
-    "id": 868,
-    "french": "océan",
-    "level": "B1",
-    "example": "Le mot \"océan\" est important."
-  },
-  {
-    "id": 869,
-    "french": "octobre",
-    "level": "B1",
-    "example": "Le mot \"octobre\" est important."
-  },
-  {
-    "id": 870,
-    "french": "odeur",
-    "level": "B1",
-    "example": "Le mot \"odeur\" est important."
-  },
-  {
-    "id": 871,
-    "french": "oeil",
-    "level": "B1",
-    "example": "Le mot \"oeil\" est important."
-  },
-  {
-    "id": 872,
-    "french": "oeuvre",
-    "level": "B1",
-    "example": "Le mot \"oeuvre\" est important."
-  },
-  {
-    "id": 873,
-    "french": "officiel",
-    "level": "B1",
-    "example": "Le mot \"officiel\" est important."
-  },
-  {
-    "id": 874,
-    "french": "offre",
-    "level": "B1",
-    "example": "Le mot \"offre\" est important."
-  },
-  {
-    "id": 875,
-    "french": "offrir",
-    "level": "B1",
-    "example": "Le mot \"offrir\" est important."
-  },
-  {
-    "id": 876,
-    "french": "oiseau",
-    "level": "B1",
-    "example": "Le mot \"oiseau\" est important."
-  },
-  {
-    "id": 877,
-    "french": "ombre",
-    "level": "B1",
-    "example": "Le mot \"ombre\" est important."
-  },
-  {
-    "id": 878,
-    "french": "oncle",
-    "level": "B1",
-    "example": "Le mot \"oncle\" est important."
-  },
-  {
-    "id": 879,
-    "french": "ongle",
-    "level": "B1",
-    "example": "Le mot \"ongle\" est important."
-  },
-  {
-    "id": 880,
-    "french": "opéra",
-    "level": "B1",
-    "example": "Le mot \"opéra\" est important."
-  },
-  {
-    "id": 881,
-    "french": "opération",
-    "level": "B1",
-    "example": "Le mot \"opération\" est important."
-  },
-  {
-    "id": 882,
-    "french": "opinion",
-    "level": "B1",
-    "example": "Le mot \"opinion\" est important."
-  },
-  {
-    "id": 883,
-    "french": "opposer",
-    "level": "B1",
-    "example": "Le mot \"opposer\" est important."
-  },
-  {
-    "id": 884,
-    "french": "or",
-    "level": "B1",
-    "example": "Le mot \"or\" est important."
-  },
-  {
-    "id": 885,
-    "french": "orage",
-    "level": "B1",
-    "example": "Le mot \"orage\" est important."
-  },
-  {
-    "id": 886,
-    "french": "orange",
-    "level": "B1",
-    "example": "Le mot \"orange\" est important."
-  },
-  {
-    "id": 887,
-    "french": "orchestre",
-    "level": "B1",
-    "example": "Le mot \"orchestre\" est important."
-  },
-  {
-    "id": 888,
-    "french": "ordinateur",
-    "level": "B1",
-    "example": "Le mot \"ordinateur\" est important."
-  },
-  {
-    "id": 889,
-    "french": "ordre",
-    "level": "B1",
-    "example": "Le mot \"ordre\" est important."
-  },
-  {
-    "id": 890,
-    "french": "oreille",
-    "level": "B1",
-    "example": "Le mot \"oreille\" est important."
-  },
-  {
-    "id": 891,
-    "french": "organisation",
-    "level": "B1",
-    "example": "Le mot \"organisation\" est important."
-  },
-  {
-    "id": 892,
-    "french": "organiser",
-    "level": "B1",
-    "example": "Le mot \"organiser\" est important."
-  },
-  {
-    "id": 893,
-    "french": "orgueil",
-    "level": "B1",
-    "example": "Le mot \"orgueil\" est important."
-  },
-  {
-    "id": 894,
-    "french": "orient",
-    "level": "B1",
-    "example": "Le mot \"orient\" est important."
-  },
-  {
-    "id": 895,
-    "french": "original",
-    "level": "B1",
-    "example": "Le mot \"original\" est important."
-  },
-  {
-    "id": 896,
-    "french": "oser",
-    "level": "B1",
-    "example": "Le mot \"oser\" est important."
-  },
-  {
-    "id": 897,
-    "french": "oublier",
-    "level": "B1",
-    "example": "Le mot \"oublier\" est important."
-  },
-  {
-    "id": 898,
-    "french": "ouest",
-    "level": "B1",
-    "example": "Le mot \"ouest\" est important."
-  },
-  {
-    "id": 899,
-    "french": "outil",
-    "level": "B1",
-    "example": "Le mot \"outil\" est important."
-  },
-  {
-    "id": 900,
-    "french": "ouvert",
-    "level": "B1",
-    "example": "Le mot \"ouvert\" est important."
-  },
-  {
-    "id": 901,
-    "french": "ouverture",
-    "level": "B1",
-    "example": "Le mot \"ouverture\" est important."
-  },
-  {
-    "id": 902,
-    "french": "ouvrage",
-    "level": "B1",
-    "example": "Le mot \"ouvrage\" est important."
-  },
-  {
-    "id": 903,
-    "french": "ouvrier",
-    "level": "B1",
-    "example": "Le mot \"ouvrier\" est important."
-  },
-  {
-    "id": 904,
-    "french": "ouvrir",
-    "level": "B1",
-    "example": "Le mot \"ouvrir\" est important."
-  },
-  {
-    "id": 905,
-    "french": "page",
-    "level": "B1",
-    "example": "Le mot \"page\" est important."
-  },
-  {
-    "id": 906,
-    "french": "paille",
-    "level": "B1",
-    "example": "Le mot \"paille\" est important."
-  },
-  {
-    "id": 907,
-    "french": "paire",
-    "level": "B1",
-    "example": "Le mot \"paire\" est important."
-  },
-  {
-    "id": 908,
-    "french": "paix",
-    "level": "B1",
-    "example": "Le mot \"paix\" est important."
-  },
-  {
-    "id": 909,
-    "french": "palais",
-    "level": "B1",
-    "example": "Le mot \"palais\" est important."
-  },
-  {
-    "id": 910,
-    "french": "panier",
-    "level": "B1",
-    "example": "Le mot \"panier\" est important."
-  },
-  {
-    "id": 911,
-    "french": "panne",
-    "level": "B1",
-    "example": "Le mot \"panne\" est important."
-  },
-  {
-    "id": 912,
-    "french": "panneau",
-    "level": "B1",
-    "example": "Le mot \"panneau\" est important."
-  },
-  {
-    "id": 913,
-    "french": "papier",
-    "level": "B1",
-    "example": "Le mot \"papier\" est important."
-  },
-  {
-    "id": 914,
-    "french": "paquet",
-    "level": "B1",
-    "example": "Le mot \"paquet\" est important."
-  },
-  {
-    "id": 915,
-    "french": "paraître",
-    "level": "B1",
-    "example": "Le mot \"paraître\" est important."
-  },
-  {
-    "id": 916,
-    "french": "parc",
-    "level": "B1",
-    "example": "Le mot \"parc\" est important."
-  },
-  {
-    "id": 917,
-    "french": "parcourir",
-    "level": "B1",
-    "example": "Le mot \"parcourir\" est important."
-  },
-  {
-    "id": 918,
     "french": "pardon",
-    "level": "B1",
-    "example": "Le mot \"pardon\" est important."
+    "arabic": "عفواً/سمحاً",
+    "level": "A1",
+    "example": "Pardon, je suis en retard.",
+    "example_ar": "سمحاً، أنا متأخر.",
+    "id": 105
   },
   {
-    "id": 919,
-    "french": "parent",
-    "level": "B1",
-    "example": "Le mot \"parent\" est important."
+    "french": "bonsoir",
+    "arabic": "مساء الخير",
+    "level": "A1",
+    "example": "Bonsoir madame Dupont.",
+    "example_ar": "مساء الخير سيدة دوبون.",
+    "id": 106
   },
   {
-    "id": 920,
-    "french": "parfait",
-    "level": "B1",
-    "example": "Le mot \"parfait\" est important."
+    "french": "bonne nuit",
+    "arabic": "تصبح على خير",
+    "level": "A1",
+    "example": "Bonne nuit, fais de beaux rêves.",
+    "example_ar": "تصبح على خير، أحلام سعيدة.",
+    "id": 107
   },
   {
-    "id": 921,
-    "french": "parfois",
-    "level": "B1",
-    "example": "Le mot \"parfois\" est important."
+    "french": "beaucoup",
+    "arabic": "كثيراً",
+    "level": "A1",
+    "example": "Je t'aime beaucoup.",
+    "example_ar": "أحبك كثيراً.",
+    "id": 108
   },
   {
-    "id": 922,
-    "french": "parfum",
-    "level": "B1",
-    "example": "Le mot \"parfum\" est important."
-  },
-  {
-    "id": 923,
-    "french": "parmi",
-    "level": "B1",
-    "example": "Le mot \"parmi\" est important."
-  },
-  {
-    "id": 924,
-    "french": "parole",
-    "level": "B1",
-    "example": "Le mot \"parole\" est important."
-  },
-  {
-    "id": 925,
-    "french": "part",
-    "level": "B1",
-    "example": "Le mot \"part\" est important."
-  },
-  {
-    "id": 926,
-    "french": "partage",
-    "level": "B1",
-    "example": "Le mot \"partage\" est important."
-  },
-  {
-    "id": 927,
-    "french": "partager",
-    "level": "B1",
-    "example": "Le mot \"partager\" est important."
-  },
-  {
-    "id": 928,
-    "french": "participer",
-    "level": "B1",
-    "example": "Le mot \"participer\" est important."
-  },
-  {
-    "id": 929,
-    "french": "partie",
-    "level": "B1",
-    "example": "Le mot \"partie\" est important."
-  },
-  {
-    "id": 930,
-    "french": "partout",
-    "level": "B1",
-    "example": "Le mot \"partout\" est important."
-  },
-  {
-    "id": 931,
-    "french": "parvenir",
-    "level": "B1",
-    "example": "Le mot \"parvenir\" est important."
-  },
-  {
-    "id": 932,
-    "french": "passage",
-    "level": "B1",
-    "example": "Le mot \"passage\" est important."
-  },
-  {
-    "id": 933,
-    "french": "passer",
-    "level": "B1",
-    "example": "Le mot \"passer\" est important."
-  },
-  {
-    "id": 934,
-    "french": "passion",
-    "level": "B1",
-    "example": "Le mot \"passion\" est important."
-  },
-  {
-    "id": 935,
-    "french": "patient",
-    "level": "B1",
-    "example": "Le mot \"patient\" est important."
-  },
-  {
-    "id": 936,
-    "french": "patron",
-    "level": "B1",
-    "example": "Le mot \"patron\" est important."
-  },
-  {
-    "id": 937,
-    "french": "patte",
-    "level": "B1",
-    "example": "Le mot \"patte\" est important."
-  },
-  {
-    "id": 938,
-    "french": "pauvre",
-    "level": "B1",
-    "example": "Le mot \"pauvre\" est important."
-  },
-  {
-    "id": 939,
-    "french": "pause",
-    "level": "B1",
-    "example": "Le mot \"pause\" est important."
-  },
-  {
-    "id": 940,
-    "french": "payer",
-    "level": "B1",
-    "example": "Le mot \"payer\" est important."
-  },
-  {
-    "id": 941,
-    "french": "pays",
-    "level": "B1",
-    "example": "Le mot \"pays\" est important."
-  },
-  {
-    "id": 942,
-    "french": "paysage",
-    "level": "B1",
-    "example": "Le mot \"paysage\" est important."
-  },
-  {
-    "id": 943,
-    "french": "paysan",
-    "level": "B2",
-    "example": "Le mot \"paysan\" est important."
-  },
-  {
-    "id": 944,
-    "french": "peau",
-    "level": "B2",
-    "example": "Le mot \"peau\" est important."
-  },
-  {
-    "id": 945,
-    "french": "pêche",
-    "level": "B2",
-    "example": "Le mot \"pêche\" est important."
-  },
-  {
-    "id": 946,
-    "french": "peigne",
-    "level": "B2",
-    "example": "Le mot \"peigne\" est important."
-  },
-  {
-    "id": 947,
-    "french": "peindre",
-    "level": "B2",
-    "example": "Le mot \"peindre\" est important."
-  },
-  {
-    "id": 948,
-    "french": "peine",
-    "level": "B2",
-    "example": "Le mot \"peine\" est important."
-  },
-  {
-    "id": 949,
-    "french": "peintre",
-    "level": "B2",
-    "example": "Le mot \"peintre\" est important."
-  },
-  {
-    "id": 950,
-    "french": "peinture",
-    "level": "B2",
-    "example": "Le mot \"peinture\" est important."
-  },
-  {
-    "id": 951,
-    "french": "pendant",
-    "level": "B2",
-    "example": "Le mot \"pendant\" est important."
-  },
-  {
-    "id": 952,
-    "french": "pénétrer",
-    "level": "B2",
-    "example": "Le mot \"pénétrer\" est important."
-  },
-  {
-    "id": 953,
-    "french": "pensée",
-    "level": "B2",
-    "example": "Le mot \"pensée\" est important."
-  },
-  {
-    "id": 954,
-    "french": "penser",
-    "level": "B2",
-    "example": "Le mot \"penser\" est important."
-  },
-  {
-    "id": 955,
-    "french": "perdre",
-    "level": "B2",
-    "example": "Le mot \"perdre\" est important."
-  },
-  {
-    "id": 956,
-    "french": "perdu",
-    "level": "B2",
-    "example": "Le mot \"perdu\" est important."
-  },
-  {
-    "id": 957,
-    "french": "période",
-    "level": "B2",
-    "example": "Le mot \"période\" est important."
-  },
-  {
-    "id": 958,
-    "french": "perle",
-    "level": "B2",
-    "example": "Le mot \"perle\" est important."
-  },
-  {
-    "id": 959,
-    "french": "permettre",
-    "level": "B2",
-    "example": "Le mot \"permettre\" est important."
-  },
-  {
-    "id": 960,
-    "french": "permis",
-    "level": "B2",
-    "example": "Le mot \"permis\" est important."
-  },
-  {
-    "id": 961,
-    "french": "personnage",
-    "level": "B2",
-    "example": "Le mot \"personnage\" est important."
-  },
-  {
-    "id": 962,
-    "french": "personne",
-    "level": "B2",
-    "example": "Le mot \"personne\" est important."
-  },
-  {
-    "id": 963,
-    "french": "personnel",
-    "level": "B2",
-    "example": "Le mot \"personnel\" est important."
-  },
-  {
-    "id": 964,
-    "french": "persuader",
-    "level": "B2",
-    "example": "Le mot \"persuader\" est important."
-  },
-  {
-    "id": 965,
-    "french": "perte",
-    "level": "B2",
-    "example": "Le mot \"perte\" est important."
-  },
-  {
-    "id": 966,
-    "french": "peser",
-    "level": "B2",
-    "example": "Le mot \"peser\" est important."
-  },
-  {
-    "id": 967,
-    "french": "pétrole",
-    "level": "B2",
-    "example": "Le mot \"pétrole\" est important."
-  },
-  {
-    "id": 968,
-    "french": "peu",
-    "level": "B2",
-    "example": "Le mot \"peu\" est important."
-  },
-  {
-    "id": 969,
-    "french": "peuple",
-    "level": "B2",
-    "example": "Le mot \"peuple\" est important."
-  },
-  {
-    "id": 970,
-    "french": "peur",
-    "level": "B2",
-    "example": "Le mot \"peur\" est important."
-  },
-  {
-    "id": 971,
-    "french": "peut-être",
-    "level": "B2",
-    "example": "Le mot \"peut-être\" est important."
-  },
-  {
-    "id": 972,
-    "french": "phare",
-    "level": "B2",
-    "example": "Le mot \"phare\" est important."
-  },
-  {
-    "id": 973,
-    "french": "phase",
-    "level": "B2",
-    "example": "Le mot \"phase\" est important."
-  },
-  {
-    "id": 974,
-    "french": "phénomène",
-    "level": "B2",
-    "example": "Le mot \"phénomène\" est important."
-  },
-  {
-    "id": 975,
-    "french": "philosophie",
-    "level": "B2",
-    "example": "Le mot \"philosophie\" est important."
-  },
-  {
-    "id": 976,
-    "french": "photo",
-    "level": "B2",
-    "example": "Le mot \"photo\" est important."
-  },
-  {
-    "id": 977,
-    "french": "phrase",
-    "level": "B2",
-    "example": "Le mot \"phrase\" est important."
-  },
-  {
-    "id": 978,
-    "french": "physique",
-    "level": "B2",
-    "example": "Le mot \"physique\" est important."
-  },
-  {
-    "id": 979,
-    "french": "piano",
-    "level": "B2",
-    "example": "Le mot \"piano\" est important."
-  },
-  {
-    "id": 980,
-    "french": "pièce",
-    "level": "B2",
-    "example": "Le mot \"pièce\" est important."
-  },
-  {
-    "id": 981,
-    "french": "pied",
-    "level": "B2",
-    "example": "Le mot \"pied\" est important."
-  },
-  {
-    "id": 982,
-    "french": "pierre",
-    "level": "B2",
-    "example": "Le mot \"pierre\" est important."
-  },
-  {
-    "id": 983,
-    "french": "pilote",
-    "level": "B2",
-    "example": "Le mot \"pilote\" est important."
-  },
-  {
-    "id": 984,
-    "french": "piscine",
-    "level": "B2",
-    "example": "Le mot \"piscine\" est important."
-  },
-  {
-    "id": 985,
-    "french": "piste",
-    "level": "B2",
-    "example": "Le mot \"piste\" est important."
-  },
-  {
-    "id": 986,
-    "french": "pitié",
-    "level": "B2",
-    "example": "Le mot \"pitié\" est important."
-  },
-  {
-    "id": 987,
-    "french": "place",
-    "level": "B2",
-    "example": "Le mot \"place\" est important."
-  },
-  {
-    "id": 988,
-    "french": "placer",
-    "level": "B2",
-    "example": "Le mot \"placer\" est important."
-  },
-  {
-    "id": 989,
-    "french": "plage",
-    "level": "B2",
-    "example": "Le mot \"plage\" est important."
-  },
-  {
-    "id": 990,
-    "french": "plaindre",
-    "level": "B2",
-    "example": "Le mot \"plaindre\" est important."
-  },
-  {
-    "id": 991,
-    "french": "plaine",
-    "level": "B2",
-    "example": "Le mot \"plaine\" est important."
-  },
-  {
-    "id": 992,
-    "french": "plainte",
-    "level": "B2",
-    "example": "Le mot \"plainte\" est important."
-  },
-  {
-    "id": 993,
-    "french": "plaire",
-    "level": "B2",
-    "example": "Le mot \"plaire\" est important."
-  },
-  {
-    "id": 994,
-    "french": "plaisir",
-    "level": "B2",
-    "example": "Le mot \"plaisir\" est important."
-  },
-  {
-    "id": 995,
-    "french": "plan",
-    "level": "B2",
-    "example": "Le mot \"plan\" est important."
-  },
-  {
-    "id": 996,
-    "french": "planche",
-    "level": "B2",
-    "example": "Le mot \"planche\" est important."
-  },
-  {
-    "id": 997,
-    "french": "planète",
-    "level": "B2",
-    "example": "Le mot \"planète\" est important."
-  },
-  {
-    "id": 998,
-    "french": "plante",
-    "level": "B2",
-    "example": "Le mot \"plante\" est important."
-  },
-  {
-    "id": 999,
-    "french": "planter",
-    "level": "B2",
-    "example": "Le mot \"planter\" est important."
-  },
-  {
-    "id": 1000,
-    "french": "plat",
-    "level": "B2",
-    "example": "Le mot \"plat\" est important."
-  },
-  {
-    "id": 1001,
-    "french": "plateau",
-    "level": "B2",
-    "example": "Le mot \"plateau\" est important."
-  },
-  {
-    "id": 1002,
-    "french": "plein",
-    "level": "B2",
-    "example": "Le mot \"plein\" est important."
-  },
-  {
-    "id": 1003,
-    "french": "pleuvoir",
-    "level": "B2",
-    "example": "Le mot \"pleuvoir\" est important."
-  },
-  {
-    "id": 1004,
-    "french": "plonger",
-    "level": "B2",
-    "example": "Le mot \"plonger\" est important."
-  },
-  {
-    "id": 1005,
-    "french": "pluie",
-    "level": "B2",
-    "example": "Le mot \"pluie\" est important."
-  },
-  {
-    "id": 1006,
-    "french": "plume",
-    "level": "B2",
-    "example": "Le mot \"plume\" est important."
-  },
-  {
-    "id": 1007,
-    "french": "plupart",
-    "level": "B2",
-    "example": "Le mot \"plupart\" est important."
-  },
-  {
-    "id": 1008,
-    "french": "plutôt",
-    "level": "B2",
-    "example": "Le mot \"plutôt\" est important."
-  },
-  {
-    "id": 1009,
-    "french": "poche",
-    "level": "B2",
-    "example": "Le mot \"poche\" est important."
-  },
-  {
-    "id": 1010,
-    "french": "poème",
-    "level": "B2",
-    "example": "Le mot \"poème\" est important."
-  },
-  {
-    "id": 1011,
-    "french": "poésie",
-    "level": "B2",
-    "example": "Le mot \"poésie\" est important."
-  },
-  {
-    "id": 1012,
-    "french": "poids",
-    "level": "B2",
-    "example": "Le mot \"poids\" est important."
-  },
-  {
-    "id": 1013,
-    "french": "poing",
-    "level": "B2",
-    "example": "Le mot \"poing\" est important."
-  },
-  {
-    "id": 1014,
-    "french": "point",
-    "level": "B2",
-    "example": "Le mot \"point\" est important."
-  },
-  {
-    "id": 1015,
-    "french": "poire",
-    "level": "B2",
-    "example": "Le mot \"poire\" est important."
-  },
-  {
-    "id": 1016,
-    "french": "poison",
-    "level": "B2",
-    "example": "Le mot \"poison\" est important."
-  },
-  {
-    "id": 1017,
-    "french": "poisson",
-    "level": "B2",
-    "example": "Le mot \"poisson\" est important."
-  },
-  {
-    "id": 1018,
-    "french": "poitrine",
-    "level": "B2",
-    "example": "Le mot \"poitrine\" est important."
-  },
-  {
-    "id": 1019,
-    "french": "police",
-    "level": "B2",
-    "example": "Le mot \"police\" est important."
-  },
-  {
-    "id": 1020,
-    "french": "politique",
-    "level": "B2",
-    "example": "Le mot \"politique\" est important."
-  },
-  {
-    "id": 1021,
-    "french": "pomme",
-    "level": "B2",
-    "example": "Le mot \"pomme\" est important."
-  },
-  {
-    "id": 1022,
-    "french": "pont",
-    "level": "B2",
-    "example": "Le mot \"pont\" est important."
-  },
-  {
-    "id": 1023,
-    "french": "populaire",
-    "level": "B2",
-    "example": "Le mot \"populaire\" est important."
-  },
-  {
-    "id": 1024,
-    "french": "population",
-    "level": "B2",
-    "example": "Le mot \"population\" est important."
-  },
-  {
-    "id": 1025,
-    "french": "port",
-    "level": "B2",
-    "example": "Le mot \"port\" est important."
-  },
-  {
-    "id": 1026,
-    "french": "portable",
-    "level": "B2",
-    "example": "Le mot \"portable\" est important."
-  },
-  {
-    "id": 1027,
-    "french": "porte",
-    "level": "B2",
-    "example": "Le mot \"porte\" est important."
-  },
-  {
-    "id": 1028,
-    "french": "portefeuille",
-    "level": "B2",
-    "example": "Le mot \"portefeuille\" est important."
-  },
-  {
-    "id": 1029,
-    "french": "portrait",
-    "level": "B2",
-    "example": "Le mot \"portrait\" est important."
-  },
-  {
-    "id": 1030,
-    "french": "poser",
-    "level": "B2",
-    "example": "Le mot \"poser\" est important."
-  },
-  {
-    "id": 1031,
-    "french": "position",
-    "level": "B2",
-    "example": "Le mot \"position\" est important."
-  },
-  {
-    "id": 1032,
-    "french": "posséder",
-    "level": "B2",
-    "example": "Le mot \"posséder\" est important."
-  },
-  {
-    "id": 1033,
-    "french": "possible",
-    "level": "B2",
-    "example": "Le mot \"possible\" est important."
-  },
-  {
-    "id": 1034,
-    "french": "poste",
-    "level": "B2",
-    "example": "Le mot \"poste\" est important."
-  },
-  {
-    "id": 1035,
-    "french": "poudre",
-    "level": "B2",
-    "example": "Le mot \"poudre\" est important."
-  },
-  {
-    "id": 1036,
-    "french": "poule",
-    "level": "B2",
-    "example": "Le mot \"poule\" est important."
-  },
-  {
-    "id": 1037,
-    "french": "poulet",
-    "level": "B2",
-    "example": "Le mot \"poulet\" est important."
-  },
-  {
-    "id": 1038,
-    "french": "poumon",
-    "level": "B2",
-    "example": "Le mot \"poumon\" est important."
-  },
-  {
-    "id": 1039,
-    "french": "pourboire",
-    "level": "B2",
-    "example": "Le mot \"pourboire\" est important."
-  },
-  {
-    "id": 1040,
-    "french": "pourcentage",
-    "level": "B2",
-    "example": "Le mot \"pourcentage\" est important."
-  },
-  {
-    "id": 1041,
-    "french": "pourtant",
-    "level": "B2",
-    "example": "Le mot \"pourtant\" est important."
-  },
-  {
-    "id": 1042,
-    "french": "pourquoi",
-    "level": "B2",
-    "example": "Le mot \"pourquoi\" est important."
-  },
-  {
-    "id": 1043,
-    "french": "poursuivre",
-    "level": "B2",
-    "example": "Le mot \"poursuivre\" est important."
-  },
-  {
-    "id": 1044,
-    "french": "pousser",
-    "level": "B2",
-    "example": "Le mot \"pousser\" est important."
-  },
-  {
-    "id": 1045,
-    "french": "poussière",
-    "level": "B2",
-    "example": "Le mot \"poussière\" est important."
-  },
-  {
-    "id": 1046,
-    "french": "pratique",
-    "level": "B2",
-    "example": "Le mot \"pratique\" est important."
-  },
-  {
-    "id": 1047,
-    "french": "pratiquer",
-    "level": "B2",
-    "example": "Le mot \"pratiquer\" est important."
-  },
-  {
-    "id": 1048,
-    "french": "précautions",
-    "level": "B2",
-    "example": "Le mot \"précautions\" est important."
-  },
-  {
-    "id": 1049,
-    "french": "précédent",
-    "level": "B2",
-    "example": "Le mot \"précédent\" est important."
-  },
-  {
-    "id": 1050,
-    "french": "précieux",
-    "level": "B2",
-    "example": "Le mot \"précieux\" est important."
-  },
-  {
-    "id": 1051,
-    "french": "précipiter",
-    "level": "B2",
-    "example": "Le mot \"précipiter\" est important."
-  },
-  {
-    "id": 1052,
-    "french": "précis",
-    "level": "B2",
-    "example": "Le mot \"précis\" est important."
-  },
-  {
-    "id": 1053,
-    "french": "préférer",
-    "level": "B2",
-    "example": "Le mot \"préférer\" est important."
-  },
-  {
-    "id": 1054,
-    "french": "premier",
-    "level": "B2",
-    "example": "Le mot \"premier\" est important."
-  },
-  {
-    "id": 1055,
-    "french": "préparation",
-    "level": "B2",
-    "example": "Le mot \"préparation\" est important."
-  },
-  {
-    "id": 1056,
-    "french": "préparer",
-    "level": "B2",
-    "example": "Le mot \"préparer\" est important."
-  },
-  {
-    "id": 1057,
-    "french": "présence",
-    "level": "B2",
-    "example": "Le mot \"présence\" est important."
-  },
-  {
-    "id": 1058,
-    "french": "présent",
-    "level": "B2",
-    "example": "Le mot \"présent\" est important."
-  },
-  {
-    "id": 1059,
-    "french": "présenter",
-    "level": "B2",
-    "example": "Le mot \"présenter\" est important."
-  },
-  {
-    "id": 1060,
-    "french": "président",
-    "level": "B2",
-    "example": "Le mot \"président\" est important."
-  },
-  {
-    "id": 1061,
-    "french": "presque",
-    "level": "B2",
-    "example": "Le mot \"presque\" est important."
-  },
-  {
-    "id": 1062,
-    "french": "presser",
-    "level": "B2",
-    "example": "Le mot \"presser\" est important."
-  },
-  {
-    "id": 1063,
-    "french": "pression",
-    "level": "C1",
-    "example": "Le mot \"pression\" est important."
-  },
-  {
-    "id": 1064,
-    "french": "prêt",
-    "level": "C1",
-    "example": "Le mot \"prêt\" est important."
-  },
-  {
-    "id": 1065,
-    "french": "prétendre",
-    "level": "C1",
-    "example": "Le mot \"prétendre\" est important."
-  },
-  {
-    "id": 1066,
-    "french": "prêter",
-    "level": "C1",
-    "example": "Le mot \"prêter\" est important."
-  },
-  {
-    "id": 1067,
-    "french": "preuve",
-    "level": "C1",
-    "example": "Le mot \"preuve\" est important."
-  },
-  {
-    "id": 1068,
-    "french": "prévenir",
-    "level": "C1",
-    "example": "Le mot \"prévenir\" est important."
-  },
-  {
-    "id": 1069,
-    "french": "prévoir",
-    "level": "C1",
-    "example": "Le mot \"prévoir\" est important."
-  },
-  {
-    "id": 1070,
-    "french": "prier",
-    "level": "C1",
-    "example": "Le mot \"prier\" est important."
-  },
-  {
-    "id": 1071,
-    "french": "prière",
-    "level": "C1",
-    "example": "Le mot \"prière\" est important."
-  },
-  {
-    "id": 1072,
-    "french": "prince",
-    "level": "C1",
-    "example": "Le mot \"prince\" est important."
-  },
-  {
-    "id": 1073,
-    "french": "principal",
-    "level": "C1",
-    "example": "Le mot \"principal\" est important."
-  },
-  {
-    "id": 1074,
-    "french": "principe",
-    "level": "C1",
-    "example": "Le mot \"principe\" est important."
-  },
-  {
-    "id": 1075,
-    "french": "printemps",
-    "level": "C1",
-    "example": "Le mot \"printemps\" est important."
-  },
-  {
-    "id": 1076,
-    "french": "priorité",
-    "level": "C1",
-    "example": "Le mot \"priorité\" est important."
-  },
-  {
-    "id": 1077,
-    "french": "prison",
-    "level": "C1",
-    "example": "Le mot \"prison\" est important."
-  },
-  {
-    "id": 1078,
-    "french": "privé",
-    "level": "C1",
-    "example": "Le mot \"privé\" est important."
-  },
-  {
-    "id": 1079,
-    "french": "prix",
-    "level": "C1",
-    "example": "Le mot \"prix\" est important."
-  },
-  {
-    "id": 1080,
-    "french": "probable",
-    "level": "C1",
-    "example": "Le mot \"probable\" est important."
-  },
-  {
-    "id": 1081,
-    "french": "problème",
-    "level": "C1",
-    "example": "Le mot \"problème\" est important."
-  },
-  {
-    "id": 1082,
-    "french": "prochain",
-    "level": "C1",
-    "example": "Le mot \"prochain\" est important."
-  },
-  {
-    "id": 1083,
-    "french": "proche",
-    "level": "C1",
-    "example": "Le mot \"proche\" est important."
-  },
-  {
-    "id": 1084,
-    "french": "production",
-    "level": "C1",
-    "example": "Le mot \"production\" est important."
-  },
-  {
-    "id": 1085,
-    "french": "produire",
-    "level": "C1",
-    "example": "Le mot \"produire\" est important."
-  },
-  {
-    "id": 1086,
-    "french": "produit",
-    "level": "C1",
-    "example": "Le mot \"produit\" est important."
-  },
-  {
-    "id": 1087,
-    "french": "professeur",
-    "level": "C1",
-    "example": "Le mot \"professeur\" est important."
-  },
-  {
-    "id": 1088,
-    "french": "profession",
-    "level": "C1",
-    "example": "Le mot \"profession\" est important."
-  },
-  {
-    "id": 1089,
-    "french": "profiter",
-    "level": "C1",
-    "example": "Le mot \"profiter\" est important."
-  },
-  {
-    "id": 1090,
-    "french": "profond",
-    "level": "C1",
-    "example": "Le mot \"profond\" est important."
-  },
-  {
-    "id": 1091,
-    "french": "programme",
-    "level": "C1",
-    "example": "Le mot \"programme\" est important."
-  },
-  {
-    "id": 1092,
-    "french": "progrès",
-    "level": "C1",
-    "example": "Le mot \"progrès\" est important."
-  },
-  {
-    "id": 1093,
-    "french": "projet",
-    "level": "C1",
-    "example": "Le mot \"projet\" est important."
-  },
-  {
-    "id": 1094,
-    "french": "promenade",
-    "level": "C1",
-    "example": "Le mot \"promenade\" est important."
-  },
-  {
-    "id": 1095,
-    "french": "promener",
-    "level": "C1",
-    "example": "Le mot \"promener\" est important."
-  },
-  {
-    "id": 1096,
-    "french": "promettre",
-    "level": "C1",
-    "example": "Le mot \"promettre\" est important."
-  },
-  {
-    "id": 1097,
-    "french": "promotion",
-    "level": "C1",
-    "example": "Le mot \"promotion\" est important."
-  },
-  {
-    "id": 1098,
-    "french": "prononcer",
-    "level": "C1",
-    "example": "Le mot \"prononcer\" est important."
-  },
-  {
-    "id": 1099,
-    "french": "propos",
-    "level": "C1",
-    "example": "Le mot \"propos\" est important."
-  },
-  {
-    "id": 1100,
-    "french": "proposer",
-    "level": "C1",
-    "example": "Le mot \"proposer\" est important."
-  },
-  {
-    "id": 1101,
-    "french": "propre",
-    "level": "C1",
-    "example": "Le mot \"propre\" est important."
-  },
-  {
-    "id": 1102,
-    "french": "propriété",
-    "level": "C1",
-    "example": "Le mot \"propriété\" est important."
-  },
-  {
-    "id": 1103,
-    "french": "protéger",
-    "level": "C1",
-    "example": "Le mot \"protéger\" est important."
-  },
-  {
-    "id": 1104,
-    "french": "prouver",
-    "level": "C1",
-    "example": "Le mot \"prouver\" est important."
-  },
-  {
-    "id": 1105,
-    "french": "province",
-    "level": "C1",
-    "example": "Le mot \"province\" est important."
-  },
-  {
-    "id": 1106,
-    "french": "prudent",
-    "level": "C1",
-    "example": "Le mot \"prudent\" est important."
-  },
-  {
-    "id": 1107,
-    "french": "public",
-    "level": "C1",
-    "example": "Le mot \"public\" est important."
-  },
-  {
-    "id": 1108,
-    "french": "publicité",
-    "level": "C1",
-    "example": "Le mot \"publicité\" est important."
-  },
-  {
-    "id": 1109,
-    "french": "puis",
-    "level": "C1",
-    "example": "Le mot \"puis\" est important."
-  },
-  {
-    "id": 1110,
-    "french": "puisque",
-    "level": "C1",
-    "example": "Le mot \"puisque\" est important."
-  },
-  {
-    "id": 1111,
-    "french": "puissance",
-    "level": "C1",
-    "example": "Le mot \"puissance\" est important."
-  },
-  {
-    "id": 1112,
-    "french": "punir",
-    "level": "C1",
-    "example": "Le mot \"punir\" est important."
-  },
-  {
-    "id": 1113,
-    "french": "pur",
-    "level": "C1",
-    "example": "Le mot \"pur\" est important."
-  },
-  {
-    "id": 1114,
-    "french": "qualité",
-    "level": "C1",
-    "example": "Le mot \"qualité\" est important."
-  },
-  {
-    "id": 1115,
-    "french": "quantité",
-    "level": "C1",
-    "example": "Le mot \"quantité\" est important."
-  },
-  {
-    "id": 1116,
-    "french": "quarante",
-    "level": "C1",
-    "example": "Le mot \"quarante\" est important."
-  },
-  {
-    "id": 1117,
-    "french": "quart",
-    "level": "C1",
-    "example": "Le mot \"quart\" est important."
-  },
-  {
-    "id": 1118,
-    "french": "quartier",
-    "level": "C1",
-    "example": "Le mot \"quartier\" est important."
-  },
-  {
-    "id": 1119,
-    "french": "quatre",
-    "level": "C1",
-    "example": "Le mot \"quatre\" est important."
-  },
-  {
-    "id": 1120,
-    "french": "question",
-    "level": "C1",
-    "example": "Le mot \"question\" est important."
-  },
-  {
-    "id": 1121,
-    "french": "queue",
-    "level": "C1",
-    "example": "Le mot \"queue\" est important."
-  },
-  {
-    "id": 1122,
-    "french": "quinze",
-    "level": "C1",
-    "example": "Le mot \"quinze\" est important."
-  },
-  {
-    "id": 1123,
-    "french": "quitter",
-    "level": "C1",
-    "example": "Le mot \"quitter\" est important."
-  },
-  {
-    "id": 1124,
-    "french": "quotidien",
-    "level": "C1",
-    "example": "Le mot \"quotidien\" est important."
-  },
-  {
-    "id": 1125,
-    "french": "race",
-    "level": "C1",
-    "example": "Le mot \"race\" est important."
-  },
-  {
-    "id": 1126,
-    "french": "racine",
-    "level": "C1",
-    "example": "Le mot \"racine\" est important."
-  },
-  {
-    "id": 1127,
-    "french": "raconter",
-    "level": "C1",
-    "example": "Le mot \"raconter\" est important."
-  },
-  {
-    "id": 1128,
-    "french": "raison",
-    "level": "C1",
-    "example": "Le mot \"raison\" est important."
-  },
-  {
-    "id": 1129,
-    "french": "ralentir",
-    "level": "C1",
-    "example": "Le mot \"ralentir\" est important."
-  },
-  {
-    "id": 1130,
-    "french": "ramasser",
-    "level": "C1",
-    "example": "Le mot \"ramasser\" est important."
-  },
-  {
-    "id": 1131,
-    "french": "ramener",
-    "level": "C1",
-    "example": "Le mot \"ramener\" est important."
-  },
-  {
-    "id": 1132,
-    "french": "rang",
-    "level": "C1",
-    "example": "Le mot \"rang\" est important."
-  },
-  {
-    "id": 1133,
-    "french": "ranger",
-    "level": "C1",
-    "example": "Le mot \"ranger\" est important."
-  },
-  {
-    "id": 1134,
-    "french": "rapide",
-    "level": "C1",
-    "example": "Le mot \"rapide\" est important."
-  },
-  {
-    "id": 1135,
-    "french": "rappeler",
-    "level": "C1",
-    "example": "Le mot \"rappeler\" est important."
-  },
-  {
-    "id": 1136,
-    "french": "rapport",
-    "level": "C1",
-    "example": "Le mot \"rapport\" est important."
-  },
-  {
-    "id": 1137,
-    "french": "rapporter",
-    "level": "C1",
-    "example": "Le mot \"rapporter\" est important."
-  },
-  {
-    "id": 1138,
-    "french": "rare",
-    "level": "C1",
-    "example": "Le mot \"rare\" est important."
-  },
-  {
-    "id": 1139,
-    "french": "rassembler",
-    "level": "C1",
-    "example": "Le mot \"rassembler\" est important."
-  },
-  {
-    "id": 1140,
-    "french": "rayon",
-    "level": "C1",
-    "example": "Le mot \"rayon\" est important."
-  },
-  {
-    "id": 1141,
-    "french": "réaction",
-    "level": "C1",
-    "example": "Le mot \"réaction\" est important."
-  },
-  {
-    "id": 1142,
-    "french": "réagir",
-    "level": "C1",
-    "example": "Le mot \"réagir\" est important."
-  },
-  {
-    "id": 1143,
-    "french": "réalisation",
-    "level": "C1",
-    "example": "Le mot \"réalisation\" est important."
-  },
-  {
-    "id": 1144,
-    "french": "réaliser",
-    "level": "C1",
-    "example": "Le mot \"réaliser\" est important."
-  },
-  {
-    "id": 1145,
-    "french": "réalité",
-    "level": "C1",
-    "example": "Le mot \"réalité\" est important."
-  },
-  {
-    "id": 1146,
-    "french": "recevoir",
-    "level": "C1",
-    "example": "Le mot \"recevoir\" est important."
-  },
-  {
-    "id": 1147,
-    "french": "réchauffer",
-    "level": "C1",
-    "example": "Le mot \"réchauffer\" est important."
-  },
-  {
-    "id": 1148,
-    "french": "recherche",
-    "level": "C1",
-    "example": "Le mot \"recherche\" est important."
-  },
-  {
-    "id": 1149,
-    "french": "rechercher",
-    "level": "C1",
-    "example": "Le mot \"rechercher\" est important."
-  },
-  {
-    "id": 1150,
-    "french": "récit",
-    "level": "C1",
-    "example": "Le mot \"récit\" est important."
-  },
-  {
-    "id": 1151,
-    "french": "réclamation",
-    "level": "C1",
-    "example": "Le mot \"réclamation\" est important."
-  },
-  {
-    "id": 1152,
-    "french": "réclamer",
-    "level": "C1",
-    "example": "Le mot \"réclamer\" est important."
-  },
-  {
-    "id": 1153,
-    "french": "récolte",
-    "level": "C1",
-    "example": "Le mot \"récolte\" est important."
-  },
-  {
-    "id": 1154,
-    "french": "recommander",
-    "level": "C1",
-    "example": "Le mot \"recommander\" est important."
-  },
-  {
-    "id": 1155,
-    "french": "recommencer",
-    "level": "C1",
-    "example": "Le mot \"recommencer\" est important."
-  },
-  {
-    "id": 1156,
-    "french": "récompense",
-    "level": "C1",
-    "example": "Le mot \"récompense\" est important."
-  },
-  {
-    "id": 1157,
-    "french": "reconnaître",
-    "level": "C1",
-    "example": "Le mot \"reconnaître\" est important."
-  },
-  {
-    "id": 1158,
-    "french": "record",
-    "level": "C1",
-    "example": "Le mot \"record\" est important."
-  },
-  {
-    "id": 1159,
-    "french": "récréation",
-    "level": "C1",
-    "example": "Le mot \"récréation\" est important."
-  },
-  {
-    "id": 1160,
-    "french": "reculer",
-    "level": "C1",
-    "example": "Le mot \"reculer\" est important."
-  },
-  {
-    "id": 1161,
-    "french": "rédaction",
-    "level": "C1",
-    "example": "Le mot \"rédaction\" est important."
-  },
-  {
-    "id": 1162,
-    "french": "redouter",
-    "level": "C1",
-    "example": "Le mot \"redouter\" est important."
-  },
-  {
-    "id": 1163,
-    "french": "réduire",
-    "level": "C1",
-    "example": "Le mot \"réduire\" est important."
-  },
-  {
-    "id": 1164,
-    "french": "réel",
-    "level": "C1",
-    "example": "Le mot \"réel\" est important."
-  },
-  {
-    "id": 1165,
-    "french": "réfléchir",
-    "level": "C1",
-    "example": "Le mot \"réfléchir\" est important."
-  },
-  {
-    "id": 1166,
-    "french": "réflexion",
-    "level": "C1",
-    "example": "Le mot \"réflexion\" est important."
-  },
-  {
-    "id": 1167,
-    "french": "réforme",
-    "level": "C1",
-    "example": "Le mot \"réforme\" est important."
-  },
-  {
-    "id": 1168,
-    "french": "refroidir",
-    "level": "C1",
-    "example": "Le mot \"refroidir\" est important."
-  },
-  {
-    "id": 1169,
-    "french": "refuge",
-    "level": "C1",
-    "example": "Le mot \"refuge\" est important."
-  },
-  {
-    "id": 1170,
-    "french": "refuser",
-    "level": "C1",
-    "example": "Le mot \"refuser\" est important."
-  },
-  {
-    "id": 1171,
-    "french": "regard",
-    "level": "C1",
-    "example": "Le mot \"regard\" est important."
-  },
-  {
-    "id": 1172,
-    "french": "regarder",
-    "level": "C1",
-    "example": "Le mot \"regarder\" est important."
-  },
-  {
-    "id": 1173,
-    "french": "régime",
-    "level": "C1",
-    "example": "Le mot \"régime\" est important."
-  },
-  {
-    "id": 1174,
-    "french": "région",
-    "level": "C1",
-    "example": "Le mot \"région\" est important."
-  },
-  {
-    "id": 1175,
-    "french": "règle",
-    "level": "C1",
-    "example": "Le mot \"règle\" est important."
-  },
-  {
-    "id": 1176,
-    "french": "régler",
-    "level": "C1",
-    "example": "Le mot \"régler\" est important."
-  },
-  {
-    "id": 1177,
-    "french": "regret",
-    "level": "C1",
-    "example": "Le mot \"regret\" est important."
-  },
-  {
-    "id": 1178,
-    "french": "regretter",
-    "level": "C1",
-    "example": "Le mot \"regretter\" est important."
-  },
-  {
-    "id": 1179,
-    "french": "régulier",
-    "level": "C1",
-    "example": "Le mot \"régulier\" est important."
-  },
-  {
-    "id": 1180,
-    "french": "reine",
-    "level": "C1",
-    "example": "Le mot \"reine\" est important."
-  },
-  {
-    "id": 1181,
-    "french": "rejeter",
-    "level": "C1",
-    "example": "Le mot \"rejeter\" est important."
-  },
-  {
-    "id": 1182,
-    "french": "rejoindre",
-    "level": "C1",
-    "example": "Le mot \"rejoindre\" est important."
-  },
-  {
-    "id": 1183,
-    "french": "relation",
-    "level": "C2",
-    "example": "Le mot \"relation\" est important."
-  },
-  {
-    "id": 1184,
-    "french": "religion",
-    "level": "C2",
-    "example": "Le mot \"religion\" est important."
-  },
-  {
-    "id": 1185,
-    "french": "remarquer",
-    "level": "C2",
-    "example": "Le mot \"remarquer\" est important."
-  },
-  {
-    "id": 1186,
-    "french": "remercier",
-    "level": "C2",
-    "example": "Le mot \"remercier\" est important."
-  },
-  {
-    "id": 1187,
-    "french": "remettre",
-    "level": "C2",
-    "example": "Le mot \"remettre\" est important."
-  },
-  {
-    "id": 1188,
-    "french": "remonter",
-    "level": "C2",
-    "example": "Le mot \"remonter\" est important."
-  },
-  {
-    "id": 1189,
-    "french": "remplacer",
-    "level": "C2",
-    "example": "Le mot \"remplacer\" est important."
-  },
-  {
-    "id": 1190,
-    "french": "remplir",
-    "level": "C2",
-    "example": "Le mot \"remplir\" est important."
-  },
-  {
-    "id": 1191,
-    "french": "rencontre",
-    "level": "C2",
-    "example": "Le mot \"rencontre\" est important."
-  },
-  {
-    "id": 1192,
-    "french": "rencontrer",
-    "level": "C2",
-    "example": "Le mot \"rencontrer\" est important."
-  },
-  {
-    "id": 1193,
-    "french": "rendez-vous",
-    "level": "C2",
-    "example": "Le mot \"rendez-vous\" est important."
-  },
-  {
-    "id": 1194,
-    "french": "rendre",
-    "level": "C2",
-    "example": "Le mot \"rendre\" est important."
-  },
-  {
-    "id": 1195,
-    "french": "renforcer",
-    "level": "C2",
-    "example": "Le mot \"renforcer\" est important."
-  },
-  {
-    "id": 1196,
-    "french": "renoncer",
-    "level": "C2",
-    "example": "Le mot \"renoncer\" est important."
-  },
-  {
-    "id": 1197,
-    "french": "renseignement",
-    "level": "C2",
-    "example": "Le mot \"renseignement\" est important."
-  },
-  {
-    "id": 1198,
-    "french": "rentrer",
-    "level": "C2",
-    "example": "Le mot \"rentrer\" est important."
-  },
-  {
-    "id": 1199,
-    "french": "renverser",
-    "level": "C2",
-    "example": "Le mot \"renverser\" est important."
-  },
-  {
-    "id": 1200,
-    "french": "renvoyer",
-    "level": "C2",
-    "example": "Le mot \"renvoyer\" est important."
-  },
-  {
-    "id": 1201,
-    "french": "repas",
-    "level": "C2",
-    "example": "Le mot \"repas\" est important."
-  },
-  {
-    "id": 1202,
-    "french": "répéter",
-    "level": "C2",
-    "example": "Le mot \"répéter\" est important."
-  },
-  {
-    "id": 1203,
-    "french": "répondre",
-    "level": "C2",
-    "example": "Le mot \"répondre\" est important."
-  },
-  {
-    "id": 1204,
-    "french": "réponse",
-    "level": "C2",
-    "example": "Le mot \"réponse\" est important."
-  },
-  {
-    "id": 1205,
-    "french": "repos",
-    "level": "C2",
-    "example": "Le mot \"repos\" est important."
-  },
-  {
-    "id": 1206,
-    "french": "reposer",
-    "level": "C2",
-    "example": "Le mot \"reposer\" est important."
-  },
-  {
-    "id": 1207,
-    "french": "reprendre",
-    "level": "C2",
-    "example": "Le mot \"reprendre\" est important."
-  },
-  {
-    "id": 1208,
-    "french": "représenter",
-    "level": "C2",
-    "example": "Le mot \"représenter\" est important."
-  },
-  {
-    "id": 1209,
-    "french": "reproche",
-    "level": "C2",
-    "example": "Le mot \"reproche\" est important."
-  },
-  {
-    "id": 1210,
-    "french": "réputation",
-    "level": "C2",
-    "example": "Le mot \"réputation\" est important."
-  },
-  {
-    "id": 1211,
-    "french": "réseau",
-    "level": "C2",
-    "example": "Le mot \"réseau\" est important."
-  },
-  {
-    "id": 1212,
-    "french": "réserver",
-    "level": "C2",
-    "example": "Le mot \"réserver\" est important."
-  },
-  {
-    "id": 1213,
-    "french": "résistance",
-    "level": "C2",
-    "example": "Le mot \"résistance\" est important."
-  },
-  {
-    "id": 1214,
-    "french": "résister",
-    "level": "C2",
-    "example": "Le mot \"résister\" est important."
-  },
-  {
-    "id": 1215,
-    "french": "résoudre",
-    "level": "C2",
-    "example": "Le mot \"résoudre\" est important."
-  },
-  {
-    "id": 1216,
-    "french": "respect",
-    "level": "C2",
-    "example": "Le mot \"respect\" est important."
-  },
-  {
-    "id": 1217,
-    "french": "respecter",
-    "level": "C2",
-    "example": "Le mot \"respecter\" est important."
-  },
-  {
-    "id": 1218,
-    "french": "respirer",
-    "level": "C2",
-    "example": "Le mot \"respirer\" est important."
-  },
-  {
-    "id": 1219,
-    "french": "responsable",
-    "level": "C2",
-    "example": "Le mot \"responsable\" est important."
-  },
-  {
-    "id": 1220,
-    "french": "ressembler",
-    "level": "C2",
-    "example": "Le mot \"ressembler\" est important."
-  },
-  {
-    "id": 1221,
-    "french": "ressentir",
-    "level": "C2",
-    "example": "Le mot \"ressentir\" est important."
-  },
-  {
-    "id": 1222,
-    "french": "ressource",
-    "level": "C2",
-    "example": "Le mot \"ressource\" est important."
-  },
-  {
-    "id": 1223,
-    "french": "reste",
-    "level": "C2",
-    "example": "Le mot \"reste\" est important."
-  },
-  {
-    "id": 1224,
-    "french": "rester",
-    "level": "C2",
-    "example": "Le mot \"rester\" est important."
-  },
-  {
-    "id": 1225,
-    "french": "résultat",
-    "level": "C2",
-    "example": "Le mot \"résultat\" est important."
-  },
-  {
-    "id": 1226,
-    "french": "retard",
-    "level": "C2",
-    "example": "Le mot \"retard\" est important."
-  },
-  {
-    "id": 1227,
-    "french": "retenir",
-    "level": "C2",
-    "example": "Le mot \"retenir\" est important."
-  },
-  {
-    "id": 1228,
-    "french": "retirer",
-    "level": "C2",
-    "example": "Le mot \"retirer\" est important."
-  },
-  {
-    "id": 1229,
-    "french": "retour",
-    "level": "C2",
-    "example": "Le mot \"retour\" est important."
-  },
-  {
-    "id": 1230,
-    "french": "retourner",
-    "level": "C2",
-    "example": "Le mot \"retourner\" est important."
-  },
-  {
-    "id": 1231,
-    "french": "retraite",
-    "level": "C2",
-    "example": "Le mot \"retraite\" est important."
-  },
-  {
-    "id": 1232,
-    "french": "retrouver",
-    "level": "C2",
-    "example": "Le mot \"retrouver\" est important."
-  },
-  {
-    "id": 1233,
-    "french": "réunion",
-    "level": "C2",
-    "example": "Le mot \"réunion\" est important."
-  },
-  {
-    "id": 1234,
-    "french": "réunir",
-    "level": "C2",
-    "example": "Le mot \"réunir\" est important."
-  },
-  {
-    "id": 1235,
-    "french": "réussir",
-    "level": "C2",
-    "example": "Le mot \"réussir\" est important."
-  },
-  {
-    "id": 1236,
-    "french": "réussite",
-    "level": "C2",
-    "example": "Le mot \"réussite\" est important."
-  },
-  {
-    "id": 1237,
-    "french": "rêve",
-    "level": "C2",
-    "example": "Le mot \"rêve\" est important."
-  },
-  {
-    "id": 1238,
-    "french": "réveil",
-    "level": "C2",
-    "example": "Le mot \"réveil\" est important."
-  },
-  {
-    "id": 1239,
-    "french": "réveiller",
-    "level": "C2",
-    "example": "Le mot \"réveiller\" est important."
-  },
-  {
-    "id": 1240,
-    "french": "révéler",
-    "level": "C2",
-    "example": "Le mot \"révéler\" est important."
-  },
-  {
-    "id": 1241,
-    "french": "revenir",
-    "level": "C2",
-    "example": "Le mot \"revenir\" est important."
-  },
-  {
-    "id": 1242,
-    "french": "rêver",
-    "level": "C2",
-    "example": "Le mot \"rêver\" est important."
-  },
-  {
-    "id": 1243,
-    "french": "revoir",
-    "level": "C2",
-    "example": "Le mot \"revoir\" est important."
-  },
-  {
-    "id": 1244,
-    "french": "révolution",
-    "level": "C2",
-    "example": "Le mot \"révolution\" est important."
-  },
-  {
-    "id": 1245,
-    "french": "riche",
-    "level": "C2",
-    "example": "Le mot \"riche\" est important."
-  },
-  {
-    "id": 1246,
-    "french": "rideau",
-    "level": "C2",
-    "example": "Le mot \"rideau\" est important."
-  },
-  {
-    "id": 1247,
-    "french": "rien",
-    "level": "C2",
-    "example": "Le mot \"rien\" est important."
-  },
-  {
-    "id": 1248,
-    "french": "rire",
-    "level": "C2",
-    "example": "Le mot \"rire\" est important."
-  },
-  {
-    "id": 1249,
-    "french": "risque",
-    "level": "C2",
-    "example": "Le mot \"risque\" est important."
-  },
-  {
-    "id": 1250,
-    "french": "rivière",
-    "level": "C2",
-    "example": "Le mot \"rivière\" est important."
-  },
-  {
-    "id": 1251,
-    "french": "robe",
-    "level": "C2",
-    "example": "Le mot \"robe\" est important."
-  },
-  {
-    "id": 1252,
-    "french": "roche",
-    "level": "C2",
-    "example": "Le mot \"roche\" est important."
-  },
-  {
-    "id": 1253,
-    "french": "rocher",
-    "level": "C2",
-    "example": "Le mot \"rocher\" est important."
-  },
-  {
-    "id": 1254,
-    "french": "roi",
-    "level": "C2",
-    "example": "Le mot \"roi\" est important."
-  },
-  {
-    "id": 1255,
-    "french": "rue",
-    "level": "C2",
-    "example": "Le mot \"rue\" est important."
-  },
-  {
-    "id": 1256,
-    "french": "ruine",
-    "level": "C2",
-    "example": "Le mot \"ruine\" est important."
-  },
-  {
-    "id": 1257,
-    "french": "rythme",
-    "level": "C2",
-    "example": "Le mot \"rythme\" est important."
-  },
-  {
-    "id": 1258,
-    "french": "sable",
-    "level": "C2",
-    "example": "Le mot \"sable\" est important."
-  },
-  {
-    "id": 1259,
-    "french": "sac",
-    "level": "C2",
-    "example": "Le mot \"sac\" est important."
-  },
-  {
-    "id": 1260,
-    "french": "saisir",
-    "level": "C2",
-    "example": "Le mot \"saisir\" est important."
-  },
-  {
-    "id": 1261,
-    "french": "saison",
-    "level": "C2",
-    "example": "Le mot \"saison\" est important."
-  },
-  {
-    "id": 1262,
-    "french": "salaire",
-    "level": "C2",
-    "example": "Le mot \"salaire\" est important."
-  },
-  {
-    "id": 1263,
-    "french": "sale",
-    "level": "C2",
-    "example": "Le mot \"sale\" est important."
-  },
-  {
-    "id": 1264,
-    "french": "salle",
-    "level": "C2",
-    "example": "Le mot \"salle\" est important."
-  },
-  {
-    "id": 1265,
-    "french": "salon",
-    "level": "C2",
-    "example": "Le mot \"salon\" est important."
-  },
-  {
-    "id": 1266,
-    "french": "samedi",
-    "level": "C2",
-    "example": "Le mot \"samedi\" est important."
-  },
-  {
-    "id": 1267,
-    "french": "sang",
-    "level": "C2",
-    "example": "Le mot \"sang\" est important."
-  },
-  {
-    "id": 1268,
-    "french": "santé",
-    "level": "C2",
-    "example": "Le mot \"santé\" est important."
-  },
-  {
-    "id": 1269,
-    "french": "satellite",
-    "level": "C2",
-    "example": "Le mot \"satellite\" est important."
-  },
-  {
-    "id": 1270,
-    "french": "satisfaire",
-    "level": "C2",
-    "example": "Le mot \"satisfaire\" est important."
-  },
-  {
-    "id": 1271,
-    "french": "sauter",
-    "level": "C2",
-    "example": "Le mot \"sauter\" est important."
-  },
-  {
-    "id": 1272,
-    "french": "sauvage",
-    "level": "C2",
-    "example": "Le mot \"sauvage\" est important."
-  },
-  {
-    "id": 1273,
-    "french": "sauver",
-    "level": "C2",
-    "example": "Le mot \"sauver\" est important."
-  },
-  {
-    "id": 1274,
-    "french": "savoir",
-    "level": "C2",
-    "example": "Le mot \"savoir\" est important."
-  },
-  {
-    "id": 1275,
-    "french": "scandale",
-    "level": "C2",
-    "example": "Le mot \"scandale\" est important."
-  },
-  {
-    "id": 1276,
-    "french": "scène",
-    "level": "C2",
-    "example": "Le mot \"scène\" est important."
-  },
-  {
-    "id": 1277,
-    "french": "science",
-    "level": "C2",
-    "example": "Le mot \"science\" est important."
-  },
-  {
-    "id": 1278,
-    "french": "sculpture",
-    "level": "C2",
-    "example": "Le mot \"sculpture\" est important."
-  },
-  {
-    "id": 1279,
-    "french": "sec",
-    "level": "C2",
-    "example": "Le mot \"sec\" est important."
-  },
-  {
-    "id": 1280,
-    "french": "sécher",
-    "level": "C2",
-    "example": "Le mot \"sécher\" est important."
-  },
-  {
-    "id": 1281,
-    "french": "second",
-    "level": "C2",
-    "example": "Le mot \"second\" est important."
-  },
-  {
-    "id": 1282,
-    "french": "secret",
-    "level": "C2",
-    "example": "Le mot \"secret\" est important."
-  },
-  {
-    "id": 1283,
-    "french": "secrétaire",
-    "level": "C2",
-    "example": "Le mot \"secrétaire\" est important."
-  },
-  {
-    "id": 1284,
-    "french": "secteur",
-    "level": "C2",
-    "example": "Le mot \"secteur\" est important."
-  },
-  {
-    "id": 1285,
-    "french": "sécurité",
-    "level": "C2",
-    "example": "Le mot \"sécurité\" est important."
-  },
-  {
-    "id": 1286,
-    "french": "séduire",
-    "level": "C2",
-    "example": "Le mot \"séduire\" est important."
-  },
-  {
-    "id": 1287,
-    "french": "sein",
-    "level": "C2",
-    "example": "Le mot \"sein\" est important."
-  },
-  {
-    "id": 1288,
-    "french": "séjour",
-    "level": "C2",
-    "example": "Le mot \"séjour\" est important."
-  },
-  {
-    "id": 1289,
-    "french": "sel",
-    "level": "C2",
-    "example": "Le mot \"sel\" est important."
-  },
-  {
-    "id": 1290,
-    "french": "semaine",
-    "level": "C2",
-    "example": "Le mot \"semaine\" est important."
-  },
-  {
-    "id": 1291,
-    "french": "semblable",
-    "level": "C2",
-    "example": "Le mot \"semblable\" est important."
-  },
-  {
-    "id": 1292,
-    "french": "sembler",
-    "level": "C2",
-    "example": "Le mot \"sembler\" est important."
-  },
-  {
-    "id": 1293,
-    "french": "semer",
-    "level": "C2",
-    "example": "Le mot \"semer\" est important."
-  },
-  {
-    "id": 1294,
-    "french": "sens",
-    "level": "C2",
-    "example": "Le mot \"sens\" est important."
-  },
-  {
-    "id": 1295,
-    "french": "sensation",
-    "level": "C2",
-    "example": "Le mot \"sensation\" est important."
-  },
-  {
-    "id": 1296,
-    "french": "sentier",
-    "level": "C2",
-    "example": "Le mot \"sentier\" est important."
-  },
-  {
-    "id": 1297,
-    "french": "sentiment",
-    "level": "C2",
-    "example": "Le mot \"sentiment\" est important."
-  },
-  {
-    "id": 1298,
-    "french": "sentir",
-    "level": "C2",
-    "example": "Le mot \"sentir\" est important."
-  },
-  {
-    "id": 1299,
-    "french": "séparer",
-    "level": "C2",
-    "example": "Le mot \"séparer\" est important."
-  },
-  {
-    "id": 1300,
-    "french": "sept",
-    "level": "C2",
-    "example": "Le mot \"sept\" est important."
-  },
-  {
-    "id": 1301,
-    "french": "série",
-    "level": "C2",
-    "example": "Le mot \"série\" est important."
-  },
-  {
-    "id": 1302,
-    "french": "sérieux",
-    "level": "C2",
-    "example": "Le mot \"sérieux\" est important."
-  },
-  {
-    "id": 1303,
-    "french": "serpent",
-    "level": "A2",
-    "example": "Le mot \"serpent\" est important."
-  },
-  {
-    "id": 1304,
-    "french": "serrer",
-    "level": "A2",
-    "example": "Le mot \"serrer\" est important."
-  },
-  {
-    "id": 1305,
-    "french": "service",
-    "level": "A2",
-    "example": "Le mot \"service\" est important."
-  },
-  {
-    "id": 1306,
-    "french": "servir",
-    "level": "A2",
-    "example": "Le mot \"servir\" est important."
-  },
-  {
-    "id": 1307,
-    "french": "serviette",
-    "level": "A2",
-    "example": "Le mot \"serviette\" est important."
-  },
-  {
-    "id": 1308,
-    "french": "seuil",
-    "level": "A2",
-    "example": "Le mot \"seuil\" est important."
-  },
-  {
-    "id": 1309,
-    "french": "seul",
-    "level": "A2",
-    "example": "Le mot \"seul\" est important."
-  },
-  {
-    "id": 1310,
-    "french": "sévère",
-    "level": "A2",
-    "example": "Le mot \"sévère\" est important."
-  },
-  {
-    "id": 1311,
-    "french": "siècle",
-    "level": "A2",
-    "example": "Le mot \"siècle\" est important."
-  },
-  {
-    "id": 1312,
-    "french": "siège",
-    "level": "A2",
-    "example": "Le mot \"siège\" est important."
-  },
-  {
-    "id": 1313,
-    "french": "signal",
-    "level": "A2",
-    "example": "Le mot \"signal\" est important."
-  },
-  {
-    "id": 1314,
-    "french": "signe",
-    "level": "A2",
-    "example": "Le mot \"signe\" est important."
-  },
-  {
-    "id": 1315,
-    "french": "signer",
-    "level": "A2",
-    "example": "Le mot \"signer\" est important."
-  },
-  {
-    "id": 1316,
-    "french": "signifier",
-    "level": "A2",
-    "example": "Le mot \"signifier\" est important."
-  },
-  {
-    "id": 1317,
-    "french": "silence",
-    "level": "A2",
-    "example": "Le mot \"silence\" est important."
-  },
-  {
-    "id": 1318,
-    "french": "silencieux",
-    "level": "A2",
-    "example": "Le mot \"silencieux\" est important."
-  },
-  {
-    "id": 1319,
-    "french": "simple",
-    "level": "A2",
-    "example": "Le mot \"simple\" est important."
-  },
-  {
-    "id": 1320,
-    "french": "simplicité",
-    "level": "A2",
-    "example": "Le mot \"simplicité\" est important."
-  },
-  {
-    "id": 1321,
-    "french": "situation",
-    "level": "A2",
-    "example": "Le mot \"situation\" est important."
-  },
-  {
-    "id": 1322,
-    "french": "six",
-    "level": "A2",
-    "example": "Le mot \"six\" est important."
-  },
-  {
-    "id": 1323,
-    "french": "social",
-    "level": "A2",
-    "example": "Le mot \"social\" est important."
-  },
-  {
-    "id": 1324,
-    "french": "société",
-    "level": "A2",
-    "example": "Le mot \"société\" est important."
-  },
-  {
-    "id": 1325,
-    "french": "soeur",
-    "level": "A2",
-    "example": "Le mot \"soeur\" est important."
-  },
-  {
-    "id": 1326,
-    "french": "soif",
-    "level": "A2",
-    "example": "Le mot \"soif\" est important."
-  },
-  {
-    "id": 1327,
-    "french": "soin",
-    "level": "A2",
-    "example": "Le mot \"soin\" est important."
-  },
-  {
-    "id": 1328,
-    "french": "soir",
-    "level": "A2",
-    "example": "Le mot \"soir\" est important."
-  },
-  {
-    "id": 1329,
-    "french": "soirée",
-    "level": "A2",
-    "example": "Le mot \"soirée\" est important."
-  },
-  {
-    "id": 1330,
-    "french": "soldat",
-    "level": "A2",
-    "example": "Le mot \"soldat\" est important."
-  },
-  {
-    "id": 1331,
-    "french": "soleil",
-    "level": "A2",
-    "example": "Le mot \"soleil\" est important."
-  },
-  {
-    "id": 1332,
-    "french": "solide",
-    "level": "A2",
-    "example": "Le mot \"solide\" est important."
-  },
-  {
-    "id": 1333,
-    "french": "solitude",
-    "level": "A2",
-    "example": "Le mot \"solitude\" est important."
-  },
-  {
-    "id": 1334,
-    "french": "solution",
-    "level": "A2",
-    "example": "Le mot \"solution\" est important."
-  },
-  {
-    "id": 1335,
-    "french": "sombre",
-    "level": "A2",
-    "example": "Le mot \"sombre\" est important."
-  },
-  {
-    "id": 1336,
-    "french": "somme",
-    "level": "A2",
-    "example": "Le mot \"somme\" est important."
-  },
-  {
-    "id": 1337,
-    "french": "sommeil",
-    "level": "A2",
-    "example": "Le mot \"sommeil\" est important."
-  },
-  {
-    "id": 1338,
-    "french": "sommet",
-    "level": "A2",
-    "example": "Le mot \"sommet\" est important."
-  },
-  {
-    "id": 1339,
-    "french": "son",
-    "level": "A2",
-    "example": "Le mot \"son\" est important."
-  },
-  {
-    "id": 1340,
-    "french": "sondage",
-    "level": "A2",
-    "example": "Le mot \"sondage\" est important."
-  },
-  {
-    "id": 1341,
-    "french": "songer",
-    "level": "A2",
-    "example": "Le mot \"songer\" est important."
-  },
-  {
-    "id": 1342,
-    "french": "sonner",
-    "level": "A2",
-    "example": "Le mot \"sonner\" est important."
-  },
-  {
-    "id": 1343,
-    "french": "sorte",
-    "level": "A2",
-    "example": "Le mot \"sorte\" est important."
-  },
-  {
-    "id": 1344,
-    "french": "souci",
-    "level": "A2",
-    "example": "Le mot \"souci\" est important."
-  },
-  {
-    "id": 1345,
-    "french": "soudain",
-    "level": "A2",
-    "example": "Le mot \"soudain\" est important."
-  },
-  {
-    "id": 1346,
-    "french": "souffrance",
-    "level": "A2",
-    "example": "Le mot \"souffrance\" est important."
-  },
-  {
-    "id": 1347,
-    "french": "souffrir",
-    "level": "A2",
-    "example": "Le mot \"souffrir\" est important."
-  },
-  {
-    "id": 1348,
-    "french": "souhaiter",
-    "level": "A2",
-    "example": "Le mot \"souhaiter\" est important."
-  },
-  {
-    "id": 1349,
-    "french": "soulager",
-    "level": "A2",
-    "example": "Le mot \"soulager\" est important."
-  },
-  {
-    "id": 1350,
-    "french": "soulever",
-    "level": "A2",
-    "example": "Le mot \"soulever\" est important."
-  },
-  {
-    "id": 1351,
-    "french": "souligner",
-    "level": "A2",
-    "example": "Le mot \"souligner\" est important."
-  },
-  {
-    "id": 1352,
-    "french": "soumettre",
-    "level": "A2",
-    "example": "Le mot \"soumettre\" est important."
-  },
-  {
-    "id": 1353,
-    "french": "soupe",
-    "level": "A2",
-    "example": "Le mot \"soupe\" est important."
-  },
-  {
-    "id": 1354,
-    "french": "sourire",
-    "level": "A2",
-    "example": "Le mot \"sourire\" est important."
-  },
-  {
-    "id": 1355,
-    "french": "soutenir",
-    "level": "A2",
-    "example": "Le mot \"soutenir\" est important."
-  },
-  {
-    "id": 1356,
-    "french": "souvenir",
-    "level": "A2",
-    "example": "Le mot \"souvenir\" est important."
-  },
-  {
-    "id": 1357,
-    "french": "souvent",
-    "level": "A2",
-    "example": "Le mot \"souvent\" est important."
-  },
-  {
-    "id": 1358,
-    "french": "spécial",
-    "level": "A2",
-    "example": "Le mot \"spécial\" est important."
-  },
-  {
-    "id": 1359,
-    "french": "spectacle",
-    "level": "A2",
-    "example": "Le mot \"spectacle\" est important."
-  },
-  {
-    "id": 1360,
-    "french": "spectateur",
-    "level": "A2",
-    "example": "Le mot \"spectateur\" est important."
-  },
-  {
-    "id": 1361,
-    "french": "sport",
-    "level": "A2",
-    "example": "Le mot \"sport\" est important."
-  },
-  {
-    "id": 1362,
-    "french": "sportif",
-    "level": "A2",
-    "example": "Le mot \"sportif\" est important."
-  },
-  {
-    "id": 1363,
-    "french": "stade",
-    "level": "A2",
-    "example": "Le mot \"stade\" est important."
-  },
-  {
-    "id": 1364,
-    "french": "stage",
-    "level": "A2",
-    "example": "Le mot \"stage\" est important."
-  },
-  {
-    "id": 1365,
-    "french": "station",
-    "level": "A2",
-    "example": "Le mot \"station\" est important."
-  },
-  {
-    "id": 1366,
-    "french": "statue",
-    "level": "A2",
-    "example": "Le mot \"statue\" est important."
-  },
-  {
-    "id": 1367,
-    "french": "stimuler",
-    "level": "A2",
-    "example": "Le mot \"stimuler\" est important."
-  },
-  {
-    "id": 1368,
-    "french": "stratégie",
-    "level": "A2",
-    "example": "Le mot \"stratégie\" est important."
-  },
-  {
-    "id": 1369,
-    "french": "stress",
-    "level": "A2",
-    "example": "Le mot \"stress\" est important."
-  },
-  {
-    "id": 1370,
-    "french": "structure",
-    "level": "A2",
-    "example": "Le mot \"structure\" est important."
-  },
-  {
-    "id": 1371,
-    "french": "style",
-    "level": "A2",
-    "example": "Le mot \"style\" est important."
-  },
-  {
-    "id": 1372,
-    "french": "stylo",
-    "level": "A2",
-    "example": "Le mot \"stylo\" est important."
-  },
-  {
-    "id": 1373,
-    "french": "sucre",
-    "level": "A2",
-    "example": "Le mot \"sucre\" est important."
-  },
-  {
-    "id": 1374,
-    "french": "sud",
-    "level": "A2",
-    "example": "Le mot \"sud\" est important."
-  },
-  {
-    "id": 1375,
-    "french": "suffire",
-    "level": "A2",
-    "example": "Le mot \"suffire\" est important."
-  },
-  {
-    "id": 1376,
-    "french": "suffisant",
-    "level": "A2",
-    "example": "Le mot \"suffisant\" est important."
-  },
-  {
-    "id": 1377,
-    "french": "suggestion",
-    "level": "A2",
-    "example": "Le mot \"suggestion\" est important."
-  },
-  {
-    "id": 1378,
-    "french": "suite",
-    "level": "A2",
-    "example": "Le mot \"suite\" est important."
-  },
-  {
-    "id": 1379,
-    "french": "suivant",
-    "level": "A2",
-    "example": "Le mot \"suivant\" est important."
-  },
-  {
-    "id": 1380,
-    "french": "suivre",
-    "level": "A2",
-    "example": "Le mot \"suivre\" est important."
-  },
-  {
-    "id": 1381,
-    "french": "sujet",
-    "level": "A2",
-    "example": "Le mot \"sujet\" est important."
-  },
-  {
-    "id": 1382,
-    "french": "superbe",
-    "level": "A2",
-    "example": "Le mot \"superbe\" est important."
-  },
-  {
-    "id": 1383,
-    "french": "supérieur",
-    "level": "A2",
-    "example": "Le mot \"supérieur\" est important."
-  },
-  {
-    "id": 1384,
-    "french": "supporter",
-    "level": "A2",
-    "example": "Le mot \"supporter\" est important."
-  },
-  {
-    "id": 1385,
-    "french": "supposer",
-    "level": "A2",
-    "example": "Le mot \"supposer\" est important."
-  },
-  {
-    "id": 1386,
-    "french": "sûr",
-    "level": "A2",
-    "example": "Le mot \"sûr\" est important."
-  },
-  {
-    "id": 1387,
-    "french": "surface",
-    "level": "A2",
-    "example": "Le mot \"surface\" est important."
-  },
-  {
-    "id": 1388,
-    "french": "surgir",
-    "level": "A2",
-    "example": "Le mot \"surgir\" est important."
-  },
-  {
-    "id": 1389,
-    "french": "surmonter",
-    "level": "A2",
-    "example": "Le mot \"surmonter\" est important."
-  },
-  {
-    "id": 1390,
-    "french": "surprise",
-    "level": "A2",
-    "example": "Le mot \"surprise\" est important."
-  },
-  {
-    "id": 1391,
-    "french": "surtout",
-    "level": "A2",
-    "example": "Le mot \"surtout\" est important."
-  },
-  {
-    "id": 1392,
-    "french": "surveiller",
-    "level": "A2",
-    "example": "Le mot \"surveiller\" est important."
-  },
-  {
-    "id": 1393,
-    "french": "symbole",
-    "level": "A2",
-    "example": "Le mot \"symbole\" est important."
-  },
-  {
-    "id": 1394,
-    "french": "sympa",
-    "level": "A2",
-    "example": "Le mot \"sympa\" est important."
-  },
-  {
-    "id": 1395,
-    "french": "sympathie",
-    "level": "A2",
-    "example": "Le mot \"sympathie\" est important."
-  },
-  {
-    "id": 1396,
-    "french": "système",
-    "level": "A2",
-    "example": "Le mot \"système\" est important."
-  },
-  {
-    "id": 1397,
-    "french": "tableau",
-    "level": "A2",
-    "example": "Le mot \"tableau\" est important."
-  },
-  {
-    "id": 1398,
-    "french": "tablette",
-    "level": "A2",
-    "example": "Le mot \"tablette\" est important."
-  },
-  {
-    "id": 1399,
-    "french": "tache",
-    "level": "A2",
-    "example": "Le mot \"tache\" est important."
-  },
-  {
-    "id": 1400,
-    "french": "tâche",
-    "level": "A2",
-    "example": "Le mot \"tâche\" est important."
-  },
-  {
-    "id": 1401,
-    "french": "taille",
-    "level": "A2",
-    "example": "Le mot \"taille\" est important."
-  },
-  {
-    "id": 1402,
-    "french": "taire",
-    "level": "A2",
-    "example": "Le mot \"taire\" est important."
-  },
-  {
-    "id": 1403,
-    "french": "talent",
-    "level": "A2",
-    "example": "Le mot \"talent\" est important."
-  },
-  {
-    "id": 1404,
-    "french": "tandis",
-    "level": "A2",
-    "example": "Le mot \"tandis\" est important."
-  },
-  {
-    "id": 1405,
-    "french": "tant",
-    "level": "A2",
-    "example": "Le mot \"tant\" est important."
-  },
-  {
-    "id": 1406,
-    "french": "tante",
-    "level": "A2",
-    "example": "Le mot \"tante\" est important."
-  },
-  {
-    "id": 1407,
-    "french": "tapis",
-    "level": "A2",
-    "example": "Le mot \"tapis\" est important."
-  },
-  {
-    "id": 1408,
-    "french": "tard",
-    "level": "A2",
-    "example": "Le mot \"tard\" est important."
-  },
-  {
-    "id": 1409,
-    "french": "tarif",
-    "level": "A2",
-    "example": "Le mot \"tarif\" est important."
-  },
-  {
-    "id": 1410,
-    "french": "tasse",
-    "level": "A2",
-    "example": "Le mot \"tasse\" est important."
-  },
-  {
-    "id": 1411,
-    "french": "taxe",
-    "level": "A2",
-    "example": "Le mot \"taxe\" est important."
-  },
-  {
-    "id": 1412,
-    "french": "technique",
-    "level": "A2",
-    "example": "Le mot \"technique\" est important."
-  },
-  {
-    "id": 1413,
-    "french": "tel",
-    "level": "A2",
-    "example": "Le mot \"tel\" est important."
-  },
-  {
-    "id": 1414,
-    "french": "téléphone",
-    "level": "A2",
-    "example": "Le mot \"téléphone\" est important."
-  },
-  {
-    "id": 1415,
-    "french": "télévision",
-    "level": "A2",
-    "example": "Le mot \"télévision\" est important."
-  },
-  {
-    "id": 1416,
-    "french": "témoin",
-    "level": "A2",
-    "example": "Le mot \"témoin\" est important."
-  },
-  {
-    "id": 1417,
-    "french": "température",
-    "level": "A2",
-    "example": "Le mot \"température\" est important."
-  },
-  {
-    "id": 1418,
-    "french": "tempête",
-    "level": "A2",
-    "example": "Le mot \"tempête\" est important."
-  },
-  {
-    "id": 1419,
-    "french": "temple",
-    "level": "A2",
-    "example": "Le mot \"temple\" est important."
-  },
-  {
-    "id": 1420,
-    "french": "tendance",
-    "level": "A2",
-    "example": "Le mot \"tendance\" est important."
-  },
-  {
-    "id": 1421,
-    "french": "tendre",
-    "level": "A2",
-    "example": "Le mot \"tendre\" est important."
-  },
-  {
-    "id": 1422,
-    "french": "tenir",
-    "level": "A2",
-    "example": "Le mot \"tenir\" est important."
-  },
-  {
-    "id": 1423,
-    "french": "tension",
-    "level": "B1",
-    "example": "Le mot \"tension\" est important."
-  },
-  {
-    "id": 1424,
-    "french": "tentative",
-    "level": "B1",
-    "example": "Le mot \"tentative\" est important."
-  },
-  {
-    "id": 1425,
-    "french": "tenter",
-    "level": "B1",
-    "example": "Le mot \"tenter\" est important."
-  },
-  {
-    "id": 1426,
-    "french": "terme",
-    "level": "B1",
-    "example": "Le mot \"terme\" est important."
-  },
-  {
-    "id": 1427,
-    "french": "terminer",
-    "level": "B1",
-    "example": "Le mot \"terminer\" est important."
-  },
-  {
-    "id": 1428,
-    "french": "terrain",
-    "level": "B1",
-    "example": "Le mot \"terrain\" est important."
-  },
-  {
-    "id": 1429,
-    "french": "terrasse",
-    "level": "B1",
-    "example": "Le mot \"terrasse\" est important."
-  },
-  {
-    "id": 1430,
-    "french": "terre",
-    "level": "B1",
-    "example": "Le mot \"terre\" est important."
-  },
-  {
-    "id": 1431,
-    "french": "terrible",
-    "level": "B1",
-    "example": "Le mot \"terrible\" est important."
-  },
-  {
-    "id": 1432,
-    "french": "territoire",
-    "level": "B1",
-    "example": "Le mot \"territoire\" est important."
-  },
-  {
-    "id": 1433,
-    "french": "test",
-    "level": "B1",
-    "example": "Le mot \"test\" est important."
-  },
-  {
-    "id": 1434,
-    "french": "tête",
-    "level": "B1",
-    "example": "Le mot \"tête\" est important."
-  },
-  {
-    "id": 1435,
-    "french": "texte",
-    "level": "B1",
-    "example": "Le mot \"texte\" est important."
-  },
-  {
-    "id": 1436,
-    "french": "thé",
-    "level": "B1",
-    "example": "Le mot \"thé\" est important."
-  },
-  {
-    "id": 1437,
-    "french": "théâtre",
-    "level": "B1",
-    "example": "Le mot \"théâtre\" est important."
-  },
-  {
-    "id": 1438,
-    "french": "thème",
-    "level": "B1",
-    "example": "Le mot \"thème\" est important."
-  },
-  {
-    "id": 1439,
-    "french": "timbre",
-    "level": "B1",
-    "example": "Le mot \"timbre\" est important."
-  },
-  {
-    "id": 1440,
-    "french": "timide",
-    "level": "B1",
-    "example": "Le mot \"timide\" est important."
-  },
-  {
-    "id": 1441,
-    "french": "tirer",
-    "level": "B1",
-    "example": "Le mot \"tirer\" est important."
-  },
-  {
-    "id": 1442,
-    "french": "tissu",
-    "level": "B1",
-    "example": "Le mot \"tissu\" est important."
-  },
-  {
-    "id": 1443,
-    "french": "titre",
-    "level": "B1",
-    "example": "Le mot \"titre\" est important."
-  },
-  {
-    "id": 1444,
-    "french": "toile",
-    "level": "B1",
-    "example": "Le mot \"toile\" est important."
-  },
-  {
-    "id": 1445,
-    "french": "toit",
-    "level": "B1",
-    "example": "Le mot \"toit\" est important."
-  },
-  {
-    "id": 1446,
-    "french": "tomate",
-    "level": "B1",
-    "example": "Le mot \"tomate\" est important."
-  },
-  {
-    "id": 1447,
-    "french": "tombe",
-    "level": "B1",
-    "example": "Le mot \"tombe\" est important."
-  },
-  {
-    "id": 1448,
-    "french": "ton",
-    "level": "B1",
-    "example": "Le mot \"ton\" est important."
-  },
-  {
-    "id": 1449,
-    "french": "tonne",
-    "level": "B1",
-    "example": "Le mot \"tonne\" est important."
-  },
-  {
-    "id": 1450,
-    "french": "tort",
-    "level": "B1",
-    "example": "Le mot \"tort\" est important."
-  },
-  {
-    "id": 1451,
-    "french": "tôt",
-    "level": "B1",
-    "example": "Le mot \"tôt\" est important."
-  },
-  {
-    "id": 1452,
-    "french": "total",
-    "level": "B1",
-    "example": "Le mot \"total\" est important."
-  },
-  {
-    "id": 1453,
-    "french": "toucher",
-    "level": "B1",
-    "example": "Le mot \"toucher\" est important."
-  },
-  {
-    "id": 1454,
-    "french": "toujours",
-    "level": "B1",
-    "example": "Le mot \"toujours\" est important."
-  },
-  {
-    "id": 1455,
-    "french": "tour",
-    "level": "B1",
-    "example": "Le mot \"tour\" est important."
-  },
-  {
-    "id": 1456,
-    "french": "tourisme",
-    "level": "B1",
-    "example": "Le mot \"tourisme\" est important."
-  },
-  {
-    "id": 1457,
-    "french": "touriste",
-    "level": "B1",
-    "example": "Le mot \"touriste\" est important."
-  },
-  {
-    "id": 1458,
-    "french": "tourner",
-    "level": "B1",
-    "example": "Le mot \"tourner\" est important."
-  },
-  {
-    "id": 1459,
-    "french": "tous",
-    "level": "B1",
-    "example": "Le mot \"tous\" est important."
-  },
-  {
-    "id": 1460,
-    "french": "tout",
-    "level": "B1",
-    "example": "Le mot \"tout\" est important."
-  },
-  {
-    "id": 1461,
-    "french": "toux",
-    "level": "B1",
-    "example": "Le mot \"toux\" est important."
-  },
-  {
-    "id": 1462,
-    "french": "tradition",
-    "level": "B1",
-    "example": "Le mot \"tradition\" est important."
-  },
-  {
-    "id": 1463,
-    "french": "traduction",
-    "level": "B1",
-    "example": "Le mot \"traduction\" est important."
-  },
-  {
-    "id": 1464,
-    "french": "traduire",
-    "level": "B1",
-    "example": "Le mot \"traduire\" est important."
-  },
-  {
-    "id": 1465,
-    "french": "train",
-    "level": "B1",
-    "example": "Le mot \"train\" est important."
-  },
-  {
-    "id": 1466,
-    "french": "trait",
-    "level": "B1",
-    "example": "Le mot \"trait\" est important."
-  },
-  {
-    "id": 1467,
-    "french": "traiter",
-    "level": "B1",
-    "example": "Le mot \"traiter\" est important."
-  },
-  {
-    "id": 1468,
-    "french": "tranquille",
-    "level": "B1",
-    "example": "Le mot \"tranquille\" est important."
-  },
-  {
-    "id": 1469,
-    "french": "transformer",
-    "level": "B1",
-    "example": "Le mot \"transformer\" est important."
-  },
-  {
-    "id": 1470,
-    "french": "transmettre",
-    "level": "B1",
-    "example": "Le mot \"transmettre\" est important."
-  },
-  {
-    "id": 1471,
-    "french": "transport",
-    "level": "B1",
-    "example": "Le mot \"transport\" est important."
-  },
-  {
-    "id": 1472,
-    "french": "travail",
-    "level": "B1",
-    "example": "Le mot \"travail\" est important."
-  },
-  {
-    "id": 1473,
-    "french": "travers",
-    "level": "B1",
-    "example": "Le mot \"travers\" est important."
-  },
-  {
-    "id": 1474,
-    "french": "traverser",
-    "level": "B1",
-    "example": "Le mot \"traverser\" est important."
-  },
-  {
-    "id": 1475,
-    "french": "traitement",
-    "level": "B1",
-    "example": "Le mot \"traitement\" est important."
-  },
-  {
-    "id": 1476,
-    "french": "trembler",
-    "level": "B1",
-    "example": "Le mot \"trembler\" est important."
-  },
-  {
-    "id": 1477,
-    "french": "trentaine",
-    "level": "B1",
-    "example": "Le mot \"trentaine\" est important."
-  },
-  {
-    "id": 1478,
-    "french": "très",
-    "level": "B1",
-    "example": "Le mot \"très\" est important."
-  },
-  {
-    "id": 1479,
-    "french": "trésor",
-    "level": "B1",
-    "example": "Le mot \"trésor\" est important."
-  },
-  {
-    "id": 1480,
-    "french": "tribu",
-    "level": "B1",
-    "example": "Le mot \"tribu\" est important."
-  },
-  {
-    "id": 1481,
-    "french": "tribunal",
-    "level": "B1",
-    "example": "Le mot \"tribunal\" est important."
-  },
-  {
-    "id": 1482,
-    "french": "tricher",
-    "level": "B1",
-    "example": "Le mot \"tricher\" est important."
-  },
-  {
-    "id": 1483,
-    "french": "triste",
-    "level": "B1",
-    "example": "Le mot \"triste\" est important."
-  },
-  {
-    "id": 1484,
-    "french": "trois",
-    "level": "B1",
-    "example": "Le mot \"trois\" est important."
-  },
-  {
-    "id": 1485,
-    "french": "troisième",
-    "level": "B1",
-    "example": "Le mot \"troisième\" est important."
-  },
-  {
-    "id": 1486,
-    "french": "tromper",
-    "level": "B1",
-    "example": "Le mot \"tromper\" est important."
-  },
-  {
-    "id": 1487,
-    "french": "trop",
-    "level": "B1",
-    "example": "Le mot \"trop\" est important."
-  },
-  {
-    "id": 1488,
-    "french": "trottoir",
-    "level": "B1",
-    "example": "Le mot \"trottoir\" est important."
-  },
-  {
-    "id": 1489,
-    "french": "trou",
-    "level": "B1",
-    "example": "Le mot \"trou\" est important."
-  },
-  {
-    "id": 1490,
-    "french": "trouble",
-    "level": "B1",
-    "example": "Le mot \"trouble\" est important."
-  },
-  {
-    "id": 1491,
-    "french": "troupe",
-    "level": "B1",
-    "example": "Le mot \"troupe\" est important."
-  },
-  {
-    "id": 1492,
-    "french": "trouver",
-    "level": "B1",
-    "example": "Le mot \"trouver\" est important."
-  },
-  {
-    "id": 1493,
-    "french": "tuer",
-    "level": "B1",
-    "example": "Le mot \"tuer\" est important."
-  },
-  {
-    "id": 1494,
-    "french": "type",
-    "level": "B1",
-    "example": "Le mot \"type\" est important."
-  },
-  {
-    "id": 1495,
-    "french": "univers",
-    "level": "B1",
-    "example": "Le mot \"univers\" est important."
-  },
-  {
-    "id": 1496,
-    "french": "université",
-    "level": "B1",
-    "example": "Le mot \"université\" est important."
-  },
-  {
-    "id": 1497,
-    "french": "urgence",
-    "level": "B1",
-    "example": "Le mot \"urgence\" est important."
-  },
-  {
-    "id": 1498,
-    "french": "usage",
-    "level": "B1",
-    "example": "Le mot \"usage\" est important."
-  },
-  {
-    "id": 1499,
-    "french": "usine",
-    "level": "B1",
-    "example": "Le mot \"usine\" est important."
-  },
-  {
-    "id": 1500,
-    "french": "utiliser",
-    "level": "B1",
-    "example": "Le mot \"utiliser\" est important."
-  },
-  {
-    "id": 1501,
-    "french": "utile",
-    "level": "B1",
-    "example": "Le mot \"utile\" est important."
-  },
-  {
-    "id": 1502,
-    "french": "vacances",
-    "level": "B1",
-    "example": "Le mot \"vacances\" est important."
-  },
-  {
-    "id": 1503,
-    "french": "vache",
-    "level": "B1",
-    "example": "Le mot \"vache\" est important."
-  },
-  {
-    "id": 1504,
-    "french": "vague",
-    "level": "B1",
-    "example": "Le mot \"vague\" est important."
-  },
-  {
-    "id": 1505,
-    "french": "vaisselle",
-    "level": "B1",
-    "example": "Le mot \"vaisselle\" est important."
-  },
-  {
-    "id": 1506,
-    "french": "valable",
-    "level": "B1",
-    "example": "Le mot \"valable\" est important."
-  },
-  {
-    "id": 1507,
-    "french": "valise",
-    "level": "B1",
-    "example": "Le mot \"valise\" est important."
-  },
-  {
-    "id": 1508,
-    "french": "valeur",
-    "level": "B1",
-    "example": "Le mot \"valeur\" est important."
-  },
-  {
-    "id": 1509,
-    "french": "valoir",
-    "level": "B1",
-    "example": "Le mot \"valoir\" est important."
-  },
-  {
-    "id": 1510,
-    "french": "vapeur",
-    "level": "B1",
-    "example": "Le mot \"vapeur\" est important."
-  },
-  {
-    "id": 1511,
-    "french": "vaste",
-    "level": "B1",
-    "example": "Le mot \"vaste\" est important."
-  },
-  {
-    "id": 1512,
-    "french": "vedette",
-    "level": "B1",
-    "example": "Le mot \"vedette\" est important."
-  },
-  {
-    "id": 1513,
-    "french": "véhicule",
-    "level": "B1",
-    "example": "Le mot \"véhicule\" est important."
-  },
-  {
-    "id": 1514,
-    "french": "veiller",
-    "level": "B1",
-    "example": "Le mot \"veiller\" est important."
-  },
-  {
-    "id": 1515,
-    "french": "vendeur",
-    "level": "B1",
-    "example": "Le mot \"vendeur\" est important."
-  },
-  {
-    "id": 1516,
-    "french": "vendre",
-    "level": "B1",
-    "example": "Le mot \"vendre\" est important."
-  },
-  {
-    "id": 1517,
-    "french": "vendredi",
-    "level": "B1",
-    "example": "Le mot \"vendredi\" est important."
-  },
-  {
-    "id": 1518,
-    "french": "vent",
-    "level": "B1",
-    "example": "Le mot \"vent\" est important."
-  },
-  {
-    "id": 1519,
-    "french": "vente",
-    "level": "B1",
-    "example": "Le mot \"vente\" est important."
-  },
-  {
-    "id": 1520,
-    "french": "ventre",
-    "level": "B1",
-    "example": "Le mot \"ventre\" est important."
-  },
-  {
-    "id": 1521,
-    "french": "verbe",
-    "level": "B1",
-    "example": "Le mot \"verbe\" est important."
-  },
-  {
-    "id": 1522,
-    "french": "vérité",
-    "level": "B1",
-    "example": "Le mot \"vérité\" est important."
-  },
-  {
-    "id": 1523,
-    "french": "verre",
-    "level": "B1",
-    "example": "Le mot \"verre\" est important."
-  },
-  {
-    "id": 1524,
-    "french": "vers",
-    "level": "B1",
-    "example": "Le mot \"vers\" est important."
-  },
-  {
-    "id": 1525,
-    "french": "verser",
-    "level": "B1",
-    "example": "Le mot \"verser\" est important."
-  },
-  {
-    "id": 1526,
-    "french": "vert",
-    "level": "B1",
-    "example": "Le mot \"vert\" est important."
-  },
-  {
-    "id": 1527,
-    "french": "veste",
-    "level": "B1",
-    "example": "Le mot \"veste\" est important."
-  },
-  {
-    "id": 1528,
-    "french": "vêtement",
-    "level": "B1",
-    "example": "Le mot \"vêtement\" est important."
-  },
-  {
-    "id": 1529,
-    "french": "viande",
-    "level": "B1",
-    "example": "Le mot \"viande\" est important."
-  },
-  {
-    "id": 1530,
-    "french": "victime",
-    "level": "B1",
-    "example": "Le mot \"victime\" est important."
-  },
-  {
-    "id": 1531,
-    "french": "victoire",
-    "level": "B1",
-    "example": "Le mot \"victoire\" est important."
-  },
-  {
-    "id": 1532,
-    "french": "vide",
-    "level": "B1",
-    "example": "Le mot \"vide\" est important."
-  },
-  {
-    "id": 1533,
-    "french": "vider",
-    "level": "B1",
-    "example": "Le mot \"vider\" est important."
-  },
-  {
-    "id": 1534,
-    "french": "vie",
-    "level": "B1",
-    "example": "Le mot \"vie\" est important."
-  },
-  {
-    "id": 1535,
-    "french": "vieillard",
-    "level": "B1",
-    "example": "Le mot \"vieillard\" est important."
-  },
-  {
-    "id": 1536,
-    "french": "vieillesse",
-    "level": "B1",
-    "example": "Le mot \"vieillesse\" est important."
-  },
-  {
-    "id": 1537,
-    "french": "vieillir",
-    "level": "B1",
-    "example": "Le mot \"vieillir\" est important."
-  },
-  {
-    "id": 1538,
-    "french": "vieux",
-    "level": "B1",
-    "example": "Le mot \"vieux\" est important."
-  },
-  {
-    "id": 1539,
-    "french": "village",
-    "level": "B1",
-    "example": "Le mot \"village\" est important."
-  },
-  {
-    "id": 1540,
-    "french": "vin",
-    "level": "B1",
-    "example": "Le mot \"vin\" est important."
-  },
-  {
-    "id": 1541,
-    "french": "vingt",
-    "level": "B1",
-    "example": "Le mot \"vingt\" est important."
-  },
-  {
-    "id": 1542,
-    "french": "violence",
-    "level": "B1",
-    "example": "Le mot \"violence\" est important."
-  },
-  {
-    "id": 1543,
-    "french": "violent",
-    "level": "B2",
-    "example": "Le mot \"violent\" est important."
-  },
-  {
-    "id": 1544,
-    "french": "violon",
-    "level": "B2",
-    "example": "Le mot \"violon\" est important."
-  },
-  {
-    "id": 1545,
-    "french": "visage",
-    "level": "B2",
-    "example": "Le mot \"visage\" est important."
-  },
-  {
-    "id": 1546,
-    "french": "visible",
-    "level": "B2",
-    "example": "Le mot \"visible\" est important."
-  },
-  {
-    "id": 1547,
-    "french": "vision",
-    "level": "B2",
-    "example": "Le mot \"vision\" est important."
-  },
-  {
-    "id": 1548,
-    "french": "visite",
-    "level": "B2",
-    "example": "Le mot \"visite\" est important."
-  },
-  {
-    "id": 1549,
-    "french": "visiter",
-    "level": "B2",
-    "example": "Le mot \"visiter\" est important."
-  },
-  {
-    "id": 1550,
-    "french": "visiteur",
-    "level": "B2",
-    "example": "Le mot \"visiteur\" est important."
-  },
-  {
-    "id": 1551,
-    "french": "vite",
-    "level": "B2",
-    "example": "Le mot \"vite\" est important."
-  },
-  {
-    "id": 1552,
-    "french": "vitesse",
-    "level": "B2",
-    "example": "Le mot \"vitesse\" est important."
-  },
-  {
-    "id": 1553,
-    "french": "vitre",
-    "level": "B2",
-    "example": "Le mot \"vitre\" est important."
-  },
-  {
-    "id": 1554,
-    "french": "vivant",
-    "level": "B2",
-    "example": "Le mot \"vivant\" est important."
-  },
-  {
-    "id": 1555,
-    "french": "vivre",
-    "level": "B2",
-    "example": "Le mot \"vivre\" est important."
-  },
-  {
-    "id": 1556,
-    "french": "vocabulaire",
-    "level": "B2",
-    "example": "Le mot \"vocabulaire\" est important."
-  },
-  {
-    "id": 1557,
-    "french": "voici",
-    "level": "B2",
-    "example": "Le mot \"voici\" est important."
-  },
-  {
-    "id": 1558,
-    "french": "voie",
-    "level": "B2",
-    "example": "Le mot \"voie\" est important."
-  },
-  {
-    "id": 1559,
-    "french": "voilà",
-    "level": "B2",
-    "example": "Le mot \"voilà\" est important."
-  },
-  {
-    "id": 1560,
-    "french": "voile",
-    "level": "B2",
-    "example": "Le mot \"voile\" est important."
-  },
-  {
-    "id": 1561,
-    "french": "voisin",
-    "level": "B2",
-    "example": "Le mot \"voisin\" est important."
-  },
-  {
-    "id": 1562,
     "french": "voiture",
-    "level": "B2",
-    "example": "Le mot \"voiture\" est important."
+    "arabic": "سيارة",
+    "level": "A1",
+    "example": "La voiture est rouge.",
+    "example_ar": "السيارة حمراء.",
+    "id": 109
   },
   {
-    "id": 1563,
-    "french": "voix",
-    "level": "B2",
-    "example": "Le mot \"voix\" est important."
+    "french": "chat",
+    "arabic": "قط",
+    "level": "A1",
+    "example": "Le chat dort sur le canapé.",
+    "example_ar": "القط نائم على الأريكة.",
+    "id": 110
   },
   {
-    "id": 1564,
-    "french": "vol",
-    "level": "B2",
-    "example": "Le mot \"vol\" est important."
+    "french": "chien",
+    "arabic": "كلب",
+    "level": "A1",
+    "example": "Le chien court dans le parc.",
+    "example_ar": "الكلب يجري في الحديقة.",
+    "id": 111
   },
   {
-    "id": 1565,
-    "french": "voler",
-    "level": "B2",
-    "example": "Le mot \"voler\" est important."
+    "french": "soleil",
+    "arabic": "شمس",
+    "level": "A1",
+    "example": "Le soleil brille aujourd'hui.",
+    "example_ar": "الشمس تشرق اليوم.",
+    "id": 112
   },
   {
-    "id": 1566,
-    "french": "volonté",
-    "level": "B2",
-    "example": "Le mot \"volonté\" est important."
+    "french": "pluie",
+    "arabic": "مطر",
+    "level": "A1",
+    "example": "Il pleut aujourd'hui.",
+    "example_ar": "إنها تمطر اليوم.",
+    "id": 113
   },
   {
-    "id": 1567,
-    "french": "volume",
-    "level": "B2",
-    "example": "Le mot \"volume\" est important."
+    "french": "vite",
+    "arabic": "بسرعة",
+    "level": "A2",
+    "example": "Il court très vite.",
+    "example_ar": "يجري بسرعة كبيرة.",
+    "id": 114
   },
   {
-    "id": 1568,
-    "french": "vouloir",
-    "level": "B2",
-    "example": "Le mot \"vouloir\" est important."
+    "french": "lentement",
+    "arabic": "ببطء",
+    "level": "A2",
+    "example": "Parle lentement s'il te plaît.",
+    "example_ar": "تكلم ببطء من فضلك.",
+    "id": 115
   },
   {
-    "id": 1569,
+    "french": "toujours",
+    "arabic": "دائماً",
+    "level": "A2",
+    "example": "Elle est toujours souriante.",
+    "example_ar": "هي دائماً مبتسمة.",
+    "id": 116
+  },
+  {
+    "french": "parfois",
+    "arabic": "أحياناً",
+    "level": "A2",
+    "example": "Parfois je vais au cinéma.",
+    "example_ar": "أحياناً أذهب إلى السينما.",
+    "id": 117
+  },
+  {
+    "french": "souvent",
+    "arabic": "غالباً",
+    "level": "A2",
+    "example": "Nous allons souvent à la plage.",
+    "example_ar": "نذهب غالباً إلى الشاطئ.",
+    "id": 118
+  },
+  {
+    "french": "jamais",
+    "arabic": "أبداً",
+    "level": "A2",
+    "example": "Je ne fume jamais.",
+    "example_ar": "أنا لا أدخن أبداً.",
+    "id": 119
+  },
+  {
+    "french": "ensemble",
+    "arabic": "معاً",
+    "level": "A2",
+    "example": "Nous travaillons ensemble.",
+    "example_ar": "نعمل معاً.",
+    "id": 120
+  },
+  {
+    "french": "costume",
+    "arabic": "بدلة",
+    "level": "A2",
+    "example": "Il porte un costume noir.",
+    "example_ar": "يرتدي بدلة سوداء.",
+    "id": 121
+  },
+  {
+    "french": "chaussures",
+    "arabic": "أحذية",
+    "level": "A2",
+    "example": "Mes chaussures sont neuves.",
+    "example_ar": "حذائي جديد.",
+    "id": 122
+  },
+  {
+    "french": "cuisine",
+    "arabic": "مطبخ",
+    "level": "A2",
+    "example": "La cuisine est moderne.",
+    "example_ar": "المطبخ حديث.",
+    "id": 123
+  },
+  {
+    "french": "chambre",
+    "arabic": "غرفة نوم",
+    "level": "A2",
+    "example": "Ma chambre est bleue.",
+    "example_ar": "غرفتي زرقاء.",
+    "id": 124
+  },
+  {
+    "french": "jardin",
+    "arabic": "حديقة",
+    "level": "A2",
+    "example": "Le jardin est magnifique.",
+    "example_ar": "الحديقة رائعة.",
+    "id": 125
+  },
+  {
+    "french": "fenêtre",
+    "arabic": "نافذة",
+    "level": "A2",
+    "example": "Ouvre la fenêtre s'il te plaît.",
+    "example_ar": "افتح النافذة من فضلك.",
+    "id": 126
+  },
+  {
+    "french": "porte",
+    "arabic": "باب",
+    "level": "A2",
+    "example": "Ferme la porte derrière toi.",
+    "example_ar": "أغلق الباب وراءك.",
+    "id": 127
+  },
+  {
+    "french": "bureau",
+    "arabic": "مكتب",
+    "level": "A2",
+    "example": "Le bureau est en désordre.",
+    "example_ar": "المكتب في فوضى.",
+    "id": 128
+  },
+  {
+    "french": "chaise",
+    "arabic": "كرسي",
+    "level": "A2",
+    "example": "La chaise est confortable.",
+    "example_ar": "الكرسي مريح.",
+    "id": 129
+  },
+  {
+    "french": "vêtements",
+    "arabic": "ملابس",
+    "level": "A2",
+    "example": "Ses vêtements sont élégants.",
+    "example_ar": "ملابسه أنيقة.",
+    "id": 130
+  },
+  {
+    "french": "magasin",
+    "arabic": "متجر",
+    "level": "A2",
+    "example": "Le magasin est fermé le dimanche.",
+    "example_ar": "المتجر مغلق يوم الأحد.",
+    "id": 131
+  },
+  {
+    "french": "entreprise",
+    "arabic": "شركة",
+    "level": "B1",
+    "example": "Il travaille dans une grande entreprise.",
+    "example_ar": "يعمل في شركة كبيرة.",
+    "id": 132
+  },
+  {
+    "french": "salaire",
+    "arabic": "راتب",
+    "level": "B1",
+    "example": "Le salaire est payé mensuellement.",
+    "example_ar": "الراتب يدفع شهرياً.",
+    "id": 133
+  },
+  {
+    "french": "réunion",
+    "arabic": "اجتماع",
+    "level": "B1",
+    "example": "La réunion commence à 10h.",
+    "example_ar": "الاجتماع يبدأ في العاشرة.",
+    "id": 134
+  },
+  {
+    "french": "rendez-vous",
+    "arabic": "موعد",
+    "level": "B1",
+    "example": "J'ai un rendez-vous chez le médecin.",
+    "example_ar": "عندي موعد عند الطبيب.",
+    "id": 135
+  },
+  {
     "french": "voyage",
-    "level": "B2",
-    "example": "Le mot \"voyage\" est important."
+    "arabic": "سفر",
+    "level": "B1",
+    "example": "Le voyage dure trois heures.",
+    "example_ar": "السفر يستغرق ثلاث ساعات.",
+    "id": 136
   },
   {
-    "id": 1570,
-    "french": "voyager",
-    "level": "B2",
-    "example": "Le mot \"voyager\" est important."
+    "french": "bagage",
+    "arabic": "حقائب",
+    "level": "B1",
+    "example": "Mes bagages sont dans la voiture.",
+    "example_ar": "حقائبي في السيارة.",
+    "id": 137
   },
   {
-    "id": 1571,
-    "french": "voyageur",
-    "level": "B2",
-    "example": "Le mot \"voyageur\" est important."
+    "french": "aéroport",
+    "arabic": "مطار",
+    "level": "B1",
+    "example": "L'aéroport est loin du centre.",
+    "example_ar": "المطار بعيد عن المركز.",
+    "id": 138
   },
   {
-    "id": 1572,
-    "french": "vrai",
-    "level": "B2",
-    "example": "Le mot \"vrai\" est important."
+    "french": "gare",
+    "arabic": "محطة القطار",
+    "level": "B1",
+    "example": "La gare est à droite.",
+    "example_ar": "المحطة على اليمين.",
+    "id": 139
   },
   {
-    "id": 1573,
-    "french": "vue",
-    "level": "B2",
-    "example": "Le mot \"vue\" est important."
+    "french": "billet",
+    "arabic": "تذكرة",
+    "level": "B1",
+    "example": "J'ai acheté un billet aller-retour.",
+    "example_ar": "اشتريت تذكرة ذهاب وإياب.",
+    "id": 140
   },
   {
-    "id": 1574,
-    "french": "wagon",
-    "level": "B2",
-    "example": "Le mot \"wagon\" est important."
+    "french": "hôtel",
+    "arabic": "فندق",
+    "level": "B1",
+    "example": "L'hôtel est très confortable.",
+    "example_ar": "الفندق مريح جداً.",
+    "id": 141
   },
   {
-    "id": 1575,
-    "french": "week-end",
-    "level": "B2",
-    "example": "Le mot \"week-end\" est important."
+    "french": "réservation",
+    "arabic": "حجز",
+    "level": "B1",
+    "example": "J'ai fait une réservation pour ce soir.",
+    "example_ar": "قمت بحجز لهذا المساء.",
+    "id": 142
   },
   {
-    "id": 1576,
-    "french": "yaourt",
-    "level": "B2",
-    "example": "Le mot \"yaourt\" est important."
+    "french": "facture",
+    "arabic": "فاتورة",
+    "level": "B1",
+    "example": "La facture est sur la table.",
+    "example_ar": "الفاتورة على الطاولة.",
+    "id": 143
   },
   {
-    "id": 1577,
-    "french": "zèbre",
-    "level": "B2",
-    "example": "Le mot \"zèbre\" est important."
+    "french": "banque",
+    "arabic": "بنك",
+    "level": "B1",
+    "example": "La banque ouvre à 9 heures.",
+    "example_ar": "البنك يفتح في التاسعة.",
+    "id": 144
   },
   {
-    "id": 1578,
-    "french": "zéro",
-    "level": "B2",
-    "example": "Le mot \"zéro\" est important."
+    "french": "compte",
+    "arabic": "حساب",
+    "level": "B1",
+    "example": "J'ai ouvert un compte bancaire.",
+    "example_ar": "فتحت حساباً بنكياً.",
+    "id": 145
   },
   {
-    "id": 1579,
-    "french": "zone",
-    "level": "B2",
-    "example": "Le mot \"zone\" est important."
+    "french": "assurance",
+    "arabic": "تأمين",
+    "level": "B1",
+    "example": "L'assurance couvre tous les risques.",
+    "example_ar": "التأمين يغطي كل المخاطر.",
+    "id": 146
   },
   {
-    "id": 1580,
-    "french": "zoo",
+    "french": "médecin",
+    "arabic": "طبيب",
+    "level": "B1",
+    "example": "Le médecin consulte de 14h à 18h.",
+    "example_ar": "الطبيب يستقبل من الثانية إلى السادسة.",
+    "id": 147
+  },
+  {
+    "french": "hôpital",
+    "arabic": "مستشفى",
+    "level": "B1",
+    "example": "L'hôpital est en centre-ville.",
+    "example_ar": "المستشفى في وسط المدينة.",
+    "id": 148
+  },
+  {
+    "french": "pharmacie",
+    "arabic": "صيدلية",
+    "level": "B1",
+    "example": "La pharmacie est ouverte la nuit.",
+    "example_ar": "الصيدلية مفتوحة ليلاً.",
+    "id": 149
+  },
+  {
+    "french": "ordonnance",
+    "arabic": "وصفة طبية",
+    "level": "B1",
+    "example": "Le docteur m'a donné une ordonnance.",
+    "example_ar": "أعطاني الطبيب وصفة طبية.",
+    "id": 150
+  },
+  {
+    "french": "impôt",
+    "arabic": "ضريبة",
+    "level": "B1",
+    "example": "Je dois payer mes impôts avant le 31 mai.",
+    "example_ar": "يجب أن أدفع ضرائبي قبل 31 مايو.",
+    "id": 151
+  },
+  {
+    "french": "loyer",
+    "arabic": "إيجار",
+    "level": "B1",
+    "example": "Le loyer est de 800 euros par mois.",
+    "example_ar": "الإيجار 800 يورو في الشهر.",
+    "id": 152
+  },
+  {
+    "french": "voisin",
+    "arabic": "جار",
+    "level": "B1",
+    "example": "Mon voisin est très sympathique.",
+    "example_ar": "جاري ودود جداً.",
+    "id": 153
+  },
+  {
+    "french": "courrier",
+    "arabic": "بريد",
+    "level": "B1",
+    "example": "J'attends un courrier important.",
+    "example_ar": "أنتظر بريداً مهماً.",
+    "id": 154
+  },
+  {
+    "french": "colis",
+    "arabic": "طرد",
+    "level": "B1",
+    "example": "Le colis est arrivé ce matin.",
+    "example_ar": "الطرد وصل هذا الصباح.",
+    "id": 155
+  },
+  {
+    "french": "abonnement",
+    "arabic": "اشتراك",
+    "level": "B1",
+    "example": "J'ai un abonnement mensuel.",
+    "example_ar": "عندي اشتراك شهري.",
+    "id": 156
+  },
+  {
+    "french": "négociation",
+    "arabic": "تفاوض",
     "level": "B2",
-    "example": "Le mot \"zoo\" est important."
+    "example": "Les négociations ont échoué.",
+    "example_ar": "المفاوضات فشلت.",
+    "id": 157
+  },
+  {
+    "french": "investissement",
+    "arabic": "استثمار",
+    "level": "B2",
+    "example": "L'investissement est rentable.",
+    "example_ar": "الاستثمار مربح.",
+    "id": 158
+  },
+  {
+    "french": "concurrence",
+    "arabic": "منافسة",
+    "level": "B2",
+    "example": "La concurrence est très forte.",
+    "example_ar": "المنافسة شديدة جداً.",
+    "id": 159
+  },
+  {
+    "french": "partenariat",
+    "arabic": "شراكة",
+    "level": "B2",
+    "example": "Nous avons signé un partenariat.",
+    "example_ar": "وقعنا شراكة.",
+    "id": 160
+  },
+  {
+    "french": "stratégie",
+    "arabic": "استراتيجية",
+    "level": "B2",
+    "example": "La stratégie de l'entreprise a changé.",
+    "example_ar": "استراتيجية الشركة تغيرت.",
+    "id": 161
+  },
+  {
+    "french": "innovation",
+    "arabic": "ابتكار",
+    "level": "B2",
+    "example": "L'innovation est essentielle.",
+    "example_ar": "الابتكار أساسي.",
+    "id": 162
+  },
+  {
+    "french": "développement durable",
+    "arabic": "تنمية مستدامة",
+    "level": "B2",
+    "example": "Le développement durable est une priorité.",
+    "example_ar": "التنمية المستدامة أولوية.",
+    "id": 163
+  },
+  {
+    "french": "démocratie",
+    "arabic": "ديمقراطية",
+    "level": "B2",
+    "example": "La démocratie est un système politique.",
+    "example_ar": "الديمقراطية نظام سياسي.",
+    "id": 164
+  },
+  {
+    "french": "citoyenneté",
+    "arabic": "مواطنة",
+    "level": "B2",
+    "example": "La citoyenneté donne des droits et des devoirs.",
+    "example_ar": "المواطنة تعطي حقوقاً وواجباتاً.",
+    "id": 165
+  },
+  {
+    "french": "discrimination",
+    "arabic": "تمييز",
+    "level": "B2",
+    "example": "La discrimination est interdite par la loi.",
+    "example_ar": "التمييز ممنوع قانوناً.",
+    "id": 166
+  },
+  {
+    "french": "égalité",
+    "arabic": "مساواة",
+    "level": "B2",
+    "example": "L'égalité des sexes est un droit fondamental.",
+    "example_ar": "المساواة بين الجنسين حق أساسي.",
+    "id": 167
+  },
+  {
+    "french": "justice",
+    "arabic": "عدالة",
+    "level": "B2",
+    "example": "La justice est indépendante.",
+    "example_ar": "العدالة مستقلة.",
+    "id": 168
+  },
+  {
+    "french": "liberté",
+    "arabic": "حرية",
+    "level": "B2",
+    "example": "La liberté d'expression est protégée.",
+    "example_ar": "حرية التعبير محمية.",
+    "id": 169
+  },
+  {
+    "french": "responsabilité",
+    "arabic": "مسؤولية",
+    "level": "B2",
+    "example": "La responsabilité est partagée.",
+    "example_ar": "المسؤولية مشتركة.",
+    "id": 170
+  },
+  {
+    "french": "engagement",
+    "arabic": "التزام",
+    "level": "B2",
+    "example": "Son engagement est remarquable.",
+    "example_ar": "التزامه ملحوظ.",
+    "id": 171
+  },
+  {
+    "french": "conscience",
+    "arabic": "ضمير",
+    "level": "B2",
+    "example": "Il a une conscience professionnelle.",
+    "example_ar": "لديه ضمير مهني.",
+    "id": 172
+  },
+  {
+    "french": "ambition",
+    "arabic": "طموح",
+    "level": "B2",
+    "example": "L'ambition est une qualité.",
+    "example_ar": "الطموح صفة حميدة.",
+    "id": 173
+  },
+  {
+    "french": "détermination",
+    "arabic": "عزيمة",
+    "level": "B2",
+    "example": "Sa détermination est impressionnante.",
+    "example_ar": "عزيمته مدهشة.",
+    "id": 174
+  },
+  {
+    "french": "persévérance",
+    "arabic": "مثابرة",
+    "level": "B2",
+    "example": "La persévérance mène au succès.",
+    "example_ar": "المثابرة تؤدي إلى النجاح.",
+    "id": 175
+  },
+  {
+    "french": "patience",
+    "arabic": "صبر",
+    "level": "B2",
+    "example": "La patience est une vertu.",
+    "example_ar": "الصبر فضيلة.",
+    "id": 176
+  },
+  {
+    "french": "confiance",
+    "arabic": "ثقة",
+    "level": "B2",
+    "example": "La confiance est importante.",
+    "example_ar": "الثقة مهمة.",
+    "id": 177
+  },
+  {
+    "french": "sincérité",
+    "arabic": "إخلاص",
+    "level": "B2",
+    "example": "La sincérité est appréciée.",
+    "example_ar": "الإخلاص محبوب.",
+    "id": 178
+  },
+  {
+    "french": "humilité",
+    "arabic": "تواضع",
+    "level": "B2",
+    "example": "L'humilité est une grande qualité.",
+    "example_ar": "التواضع صفة عظيمة.",
+    "id": 179
+  },
+  {
+    "french": "générosité",
+    "arabic": "كرم",
+    "level": "B2",
+    "example": "Sa générosité est connue de tous.",
+    "example_ar": "كرمه معروف للجميع.",
+    "id": 180
+  },
+  {
+    "french": "tolérance",
+    "arabic": "تسامح",
+    "level": "B2",
+    "example": "La tolérance est essentielle.",
+    "example_ar": "التسامح ضروري.",
+    "id": 181
+  },
+  {
+    "french": "réfutation",
+    "arabic": "دحض",
+    "level": "C1",
+    "example": "Sa réfutation de l'argument était convaincante.",
+    "example_ar": "دحضه للحجة كان مقنعاً.",
+    "id": 182
+  },
+  {
+    "french": "pléthore",
+    "arabic": "وفرة",
+    "level": "C1",
+    "example": "Il y a une pléthore d'options.",
+    "example_ar": "هناك وفرة من الخيارات.",
+    "id": 183
+  },
+  {
+    "french": "ubiquité",
+    "arabic": "شيوع/وجود في كل مكان",
+    "level": "C1",
+    "example": "L'ubiquité d'Internet a changé nos vies.",
+    "example_ar": "شيوع الإنترنت غير حياتنا.",
+    "id": 184
+  },
+  {
+    "french": "anachronisme",
+    "arabic": "خطأ زمني",
+    "level": "C1",
+    "example": "Ce terme est un anachronisme.",
+    "example_ar": "هذا المصطلح خطأ زمني.",
+    "id": 185
+  },
+  {
+    "french": "antagonisme",
+    "arabic": "عداء/تناقض",
+    "level": "C1",
+    "example": "L'antagonisme entre les deux groupes est ancien.",
+    "example_ar": "العداء بين المجموعتين قديم.",
+    "id": 186
+  },
+  {
+    "french": "conjecture",
+    "arabic": "تخمين",
+    "level": "C1",
+    "example": "Ce n'est qu'une conjecture.",
+    "example_ar": "هذا مجرد تخمين.",
+    "id": 187
+  },
+  {
+    "french": "dichotomie",
+    "arabic": "انقسام ثنائي",
+    "level": "C1",
+    "example": "Il y a une dichotomie entre théorie et pratique.",
+    "example_ar": "هناك انقسام بين النظرية والتطبيق.",
+    "id": 188
+  },
+  {
+    "french": "hégémonie",
+    "arabic": "هيمنة",
+    "level": "C1",
+    "example": "L'hégémonie économique est contestée.",
+    "example_ar": "الهيمنة الاقتصادية محل نزاع.",
+    "id": 189
+  },
+  {
+    "french": "métamorphose",
+    "arabic": "تحول جذري",
+    "level": "C1",
+    "example": "La ville a subi une métamorphose complète.",
+    "example_ar": "المدينة خضعت لتحول جذري.",
+    "id": 190
+  },
+  {
+    "french": "paradigme",
+    "arabic": "نموذج فكري",
+    "level": "C1",
+    "example": "C'est un changement de paradigme.",
+    "example_ar": "هذا تغيير في النموذج الفكري.",
+    "id": 191
+  },
+  {
+    "french": "pléonasme",
+    "arabic": "حشو لفظي",
+    "level": "C1",
+    "example": "'Monter en haut' est un pléonasme.",
+    "example_ar": "'يصعد إلى الأعلى' هو حشو لفظي.",
+    "id": 192
+  },
+  {
+    "french": "sophisme",
+    "arabic": "مغالطة منطقية",
+    "level": "C1",
+    "example": "Ce raisonnement est un sophisme.",
+    "example_ar": "هذا الاستدلال مغالطة منطقية.",
+    "id": 193
+  },
+  {
+    "french": "dialectique",
+    "arabic": "جدلية",
+    "level": "C1",
+    "example": "La dialectique hégélienne est complexe.",
+    "example_ar": "الجدلية الهيغلية معقدة.",
+    "id": 194
+  },
+  {
+    "french": "épistémologie",
+    "arabic": "نظرية المعرفة",
+    "level": "C1",
+    "example": "L'épistémologie étudie la connaissance.",
+    "example_ar": "نظرية المعرفة تدرس المعرفة.",
+    "id": 195
+  },
+  {
+    "french": "herméneutique",
+    "arabic": "تأويلية",
+    "level": "C1",
+    "example": "L'herméneutique est l'art de l'interprétation.",
+    "example_ar": "التأويلية هي فن التفسير.",
+    "id": 196
+  },
+  {
+    "french": "ontologie",
+    "arabic": "أنطولوجيا",
+    "level": "C1",
+    "example": "L'ontologie étudie l'être.",
+    "example_ar": "الأنطولوجيا تدرس الوجود.",
+    "id": 197
+  },
+  {
+    "french": "phénoménologie",
+    "arabic": "فينومينولوجيا",
+    "level": "C1",
+    "example": "La phénoménologie examine l'expérience vécue.",
+    "example_ar": "الفينومينولوجيا تدرس التجربة المعاشة.",
+    "id": 198
+  },
+  {
+    "french": "sémiotique",
+    "arabic": "سيميائية",
+    "level": "C1",
+    "example": "La sémiotique analyse les signes.",
+    "example_ar": "السيميائية تحلل العلامات.",
+    "id": 199
+  },
+  {
+    "french": "subsidiarité",
+    "arabic": "تبعية",
+    "level": "C1",
+    "example": "Le principe de subsidiarité est européen.",
+    "example_ar": "مبدأ التبعية أوروبي.",
+    "id": 200
+  },
+  {
+    "french": "transversalité",
+    "arabic": "عرضية",
+    "level": "C1",
+    "example": "La transversalité des compétences est essentielle.",
+    "example_ar": "عرضية المهارات أساسية.",
+    "id": 201
+  },
+  {
+    "french": "exacerbation",
+    "arabic": "تفاقم",
+    "level": "C2",
+    "example": "L'exacerbation des tensions est préoccupante.",
+    "example_ar": "تفاقم التوترات مقلق.",
+    "id": 202
+  },
+  {
+    "french": "oblitérer",
+    "arabic": "يمحو/يزيل",
+    "level": "C2",
+    "example": "Le temps n'a pas oblitéré les souvenirs.",
+    "example_ar": "الزمن لم يمح الذكريات.",
+    "id": 203
+  },
+  {
+    "french": "délictueux",
+    "arabic": "مخالف للقانون",
+    "level": "C2",
+    "example": "Ce comportement est délictueux.",
+    "example_ar": "هذا السلوك مخالف للقانون.",
+    "id": 204
+  },
+  {
+    "french": "exogène",
+    "arabic": "خارجي المنشأ",
+    "level": "C2",
+    "example": "Les facteurs exogènes influencent l'économie.",
+    "example_ar": "العوامل الخارجية تؤثر على الاقتصاد.",
+    "id": 205
+  },
+  {
+    "french": "endogène",
+    "arabic": "داخلي المنشأ",
+    "level": "C2",
+    "example": "Le développement endogène est durable.",
+    "example_ar": "التنمية الداخلية مستدامة.",
+    "id": 206
+  },
+  {
+    "french": "récalcitrant",
+    "arabic": "متمرد/عاصٍ",
+    "level": "C2",
+    "example": "Ce problème est récalcitrant.",
+    "example_ar": "هذه المشكلة متمردة.",
+    "id": 207
+  },
+  {
+    "french": "sycophante",
+    "arabic": "متملق",
+    "level": "C2",
+    "example": "Le sycophante cherche les faveurs du roi.",
+    "example_ar": "المتملق يبحث عن حظوة الملك.",
+    "id": 208
+  },
+  {
+    "french": "prosaïque",
+    "arabic": "عادي/نثري",
+    "level": "C2",
+    "example": "La vie prosaïque n'a rien d'exceptionnel.",
+    "example_ar": "الحياة العادية لا شيء استثنائي فيها.",
+    "id": 209
+  },
+  {
+    "french": "ésotérique",
+    "arabic": "باطني/غامض",
+    "level": "C2",
+    "example": "Ce texte ésotérique est difficile à comprendre.",
+    "example_ar": "هذا النص الغامض صعب الفهم.",
+    "id": 210
+  },
+  {
+    "french": "exotérique",
+    "arabic": "واضح/عام",
+    "level": "C2",
+    "example": "La version exotérique est pour le grand public.",
+    "example_ar": "النسخة العامة للجمهور العريض.",
+    "id": 211
+  },
+  {
+    "french": "hétéroclite",
+    "arabic": "متنوع/غير متجانس",
+    "level": "C2",
+    "example": "Un groupe hétéroclite de personnes.",
+    "example_ar": "مجموعة غير متجانسة من الناس.",
+    "id": 212
+  },
+  {
+    "french": "magnanime",
+    "arabic": "كريم النفس/عظيم",
+    "level": "C2",
+    "example": "Un geste magnanime de sa part.",
+    "example_ar": "لفتة كريمة منه.",
+    "id": 213
+  },
+  {
+    "french": "pusillanime",
+    "arabic": "جبان/ضعيف القلب",
+    "level": "C2",
+    "example": "Une décision pusillanime.",
+    "example_ar": "قرار جبان.",
+    "id": 214
+  },
+  {
+    "french": "sempiternel",
+    "arabic": "أبدي/دائم",
+    "level": "C2",
+    "example": "La sempiternelle question du sens de la vie.",
+    "example_ar": "السؤال الأبدي عن معنى الحياة.",
+    "id": 215
+  },
+  {
+    "french": "tautologie",
+    "arabic": "تكرار/ترادف",
+    "level": "C2",
+    "example": "C'est une tautologie inutile.",
+    "example_ar": "هذا تكرار لا طائل منه.",
+    "id": 216
+  },
+  {
+    "french": "vociférer",
+    "arabic": "يصرخ/يهتف",
+    "level": "C2",
+    "example": "Il vociférait contre l'injustice.",
+    "example_ar": "كان يصرخ ضد الظلم.",
+    "id": 217
+  },
+  {
+    "french": "dulcifié",
+    "arabic": "محلى",
+    "level": "C2",
+    "example": "Un langage dulcifié pour plaire à tous.",
+    "example_ar": "لغة محلاة لإرضاء الجميع.",
+    "id": 218
+  },
+  {
+    "french": "usurier",
+    "arabic": "مرابٍ",
+    "level": "C2",
+    "example": "L'usurier pratique des taux exorbitants.",
+    "example_ar": "المرابي يمارس فوائد باهظة.",
+    "id": 219
+  },
+  {
+    "french": "vaticiner",
+    "arabic": "يتنبأ",
+    "level": "C2",
+    "example": "Les experts vaticinent sur l'avenir.",
+    "example_ar": "الخبراء يتنبؤون بالمستقبل.",
+    "id": 220
+  },
+  {
+    "french": "ubuesque",
+    "arabic": "عبثي/سخيف (على طريقة أوبو)",
+    "level": "C2",
+    "example": "Une situation ubuesque et absurde.",
+    "example_ar": "موقف عبثي وسخيف.",
+    "id": 221
   }
 ]
