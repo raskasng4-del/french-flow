@@ -89,30 +89,46 @@ def wrap_text(text, width=40):
     return wrapped
 
 
-def compress_video(input_path, max_mb=100):
+def compress_video(input_path, output_path):
+    """Compress video to under 50MB using targeted bitrate."""
     size_mb = os.path.getsize(input_path) / (1024 * 1024)
-    if size_mb <= max_mb:
-        return False
-    print(f"  🗜️ {size_mb:.0f} MB → <{max_mb} MB...")
-    tmp = input_path.with_suffix(".tmp.mp4")
-    for height, crf in [(720, 30), (540, 33)]:
+    if size_mb <= 50:
+        print(f"  ✅ Already {size_mb:.0f} MB, no compression needed")
+        if input_path != output_path:
+            os.replace(input_path, output_path)
+        return True
+
+    base_name = Path(output_path).stem
+    tmp_dir = Path(output_path).parent
+
+    # Try progressively lower bitrates until under 50MB
+    for bitrate in [500, 300, 200, 100]:
+        out = tmp_dir / f"{base_name}_b{bitrate}.mp4"
         cmd = [
-            "ffmpeg", "-y", "-i", str(input_path),
-            "-vf", f"scale=-2:{height}",
-            "-c:v", "libx264", "-preset", "fast", "-crf", str(crf),
-            "-c:a", "aac", "-b:a", "96k", "-movflags", "+faststart",
-            str(tmp),
+            "ffmpeg", "-y",
+            "-i", str(input_path),
+            "-c:v", "libx264", "-crf", "28", "-preset", "medium",
+            "-b:v", f"{bitrate}k",
+            "-c:a", "aac", "-b:a", "128k",
+            "-movflags", "+faststart",
+            str(out),
         ]
+        print(f"  🗜️ Trying {bitrate}k bitrate...")
         subprocess.run(cmd, capture_output=True, text=True)
-        if tmp.exists():
-            ns = os.path.getsize(tmp) / (1024 * 1024)
-            print(f"     {height}p CRF{crf} → {ns:.0f} MB")
-            if ns <= max_mb:
-                os.replace(tmp, input_path)
-                print(f"  ✅ {ns:.0f} MB")
+        if out.exists():
+            ns = os.path.getsize(out) / (1024 * 1024)
+            print(f"     → {ns:.0f} MB")
+            if ns <= 50:
+                os.replace(out, output_path)
+                print(f"  ✅ Compressed {size_mb:.0f} MB → {ns:.0f} MB")
                 return True
-            tmp.unlink(missing_ok=True)
-    print("  ⚠️ Could not compress under 100MB")
+            out.unlink(missing_ok=True)
+
+    # Fallback: keep best attempt
+    best = tmp_dir / f"{base_name}_b200.mp4"
+    if best.exists():
+        os.replace(best, output_path)
+    print(f"  ⚠️ Best effort: {os.path.getsize(output_path) / (1024*1024):.0f} MB")
     return True
 
 
@@ -203,7 +219,10 @@ async def publish_to_fb(video_path, desc, page_id, access_token):
     if not page_id or not access_token:
         print("  ⚠️ No FB credentials"); return False
 
-    compress_video(video_path, max_mb=100)
+    compressed = video_path.with_suffix(".compressed.mp4")
+    compress_video(video_path, compressed)
+    if compressed.exists() and compressed != video_path:
+        os.replace(compressed, video_path)
 
     file_size = os.path.getsize(video_path)
     api_base = f"https://graph.facebook.com/v22.0/{page_id}"
@@ -385,7 +404,10 @@ async def generate_storytelling(progress):
     if not ok:
         return None
 
-    compress_video(output, max_mb=100)
+    compressed = output.with_suffix(".compressed.mp4")
+    compress_video(output, compressed)
+    if compressed.exists() and compressed != output:
+        os.replace(compressed, output)
     size = os.path.getsize(output) / 1024 / 1024
     print(f"  ✅ Story: {size:.1f} MB")
     desc = (
