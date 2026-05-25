@@ -149,6 +149,12 @@
       "file": "day6_phrase.mp4",
       "published": true,
       "date": "2026-05-25"
+    },
+    {
+      "type": "Quiz",
+      "file": "day6_quiz.mp4",
+      "published": true,
+      "date": "2026-05-25"
     }
   ],
   "last_publish_date": "2026-05-25",
@@ -256,7 +262,7 @@
       }
     }
   },
-  "curriculum_idx": 28,
+  "curriculum_idx": 29,
   "generated_count": 0,
   "used_combos": []
 }
