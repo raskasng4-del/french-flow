@@ -178,7 +178,7 @@ function generateAudioFile(text, name) {
     try {
       execSync(`python3 "${path.join(BOT_DIR, "tts_helper.py")}" "${filepath}"`, {
         input: text,
-        timeout: 15000,
+        timeout: 30000,
         stdio: ["pipe", "pipe", "pipe"],
       });
       log(`  🔊 Generated: ${name}.mp3`);
@@ -584,7 +584,7 @@ async function renderDialogueVideo(dialogue, pageId, accessToken, progress, toda
       try {
         execSync(`python3 "${path.join(BOT_DIR, "tts_helper.py")}" "${filepath}"`, {
           input: line.french,
-          timeout: 15000, stdio: ["pipe", "pipe", "pipe"],
+          timeout: 30000, stdio: ["pipe", "pipe", "pipe"],
         });
       } catch (err) {
         log(`  ⚠️ TTS failed: ${err.message}`);

@@ -28,7 +28,7 @@ jobs:
           sudo fc-cache -f
 
       - name: Install Python TTS
-        run: pip3 install gtts
+        run: pip3 install edge-tts
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
