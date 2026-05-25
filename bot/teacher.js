@@ -134,31 +134,31 @@ function buildDescription(type, data, question) {
       desc = `🇫🇷 **Mot du jour** - French Flow\n\n✨ ${data.french} = ${data.arabic || ""}\n💬 ${data.example}`;
       break;
     case "PhraseDuJour":
-      desc = `🇫🇷 **Phrase du jour** - French Flow\n\n🗣 ${data.example}\n📖 ${data.example_ar || ""}`;
+      desc = `🇫🇷 **Phrase du jour** - French Flow\n\n🗣 ${data.example}`;
       break;
     case "Grammaire":
-      desc = `🇫🇷 **Leçon de grammaire** - French Flow\n\n📚 ${data.title}\n📖 ${data.title_ar || ""}`;
+      desc = `🇫🇷 **Leçon de grammaire** - French Flow\n\n📚 ${data.title}`;
       break;
     case "Quiz":
       desc = `🇫🇷 **Quiz du jour** - French Flow\n\n❓ ${typeof data === "string" ? data : data.question}`;
       break;
     case "Conjugaison":
       const tenses = data.passe_compose ? "Présent + Passé composé" : data.imparfait ? "Présent + Imparfait" : "Présent";
-      desc = `🇫🇷 **Conjugaison** - French Flow\n\n📝 ${data.infinitive} (${data.level})\n📖 ${data.arabic || ""}\n🔄 ${tenses}`;
+      desc = `🇫🇷 **Conjugaison** - French Flow\n\n📝 ${data.infinitive} (${data.level})\n🔄 ${tenses}`;
       break;
     case "Idiome":
-      desc = `🇫🇷 **Idiome du jour** - French Flow\n\n🗣 ${data.expression}\n📖 ${data.arabic}\n💡 ${data.meaning}\n✏️ ${data.example}`;
+      desc = `🇫🇷 **Idiome du jour** - French Flow\n\n🗣 ${data.expression}\n💡 ${data.meaning}\n✏️ ${data.example}`;
       break;
     case "Culture":
-      desc = `🇫🇷 **Culture française** - French Flow\n\n📖 ${data.title}\n📖 ${data.title_ar || ""}\n\n${data.summary}`;
+      desc = `🇫🇷 **Culture française** - French Flow\n\n📖 ${data.title}`;
       break;
     case "Révision":
-      desc = `🇫🇷 **Révision** - French Flow\n\n🔄 ${data.french || data.title || data.infinitive || data.expression}\n📖 ${data.arabic || data.title_ar || ""}`;
+      desc = `🇫🇷 **Révision** - French Flow\n\n🔄 ${data.french || data.title || data.infinitive || data.expression}`;
       break;
     case "Dialogue": {
       const dLines = data.lines || [];
       const conversation = dLines.map(l => `${l.speaker === "femme" ? "👩" : "👨"} ${l.name}: ${l.french}`).join("\n");
-      desc = `🇫🇷 **Dialogue** - French Flow\n\n💬 ${data.title} (${data.level})\n📖 ${data.title_ar || ""}\n\n${conversation}`;
+      desc = `🇫🇷 **Dialogue** - French Flow\n\n💬 ${data.title} (${data.level})\n\n${conversation}`;
       break;
     }
     default:
