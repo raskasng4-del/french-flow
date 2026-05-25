@@ -1,8 +1,4 @@
 {
-  "phase": 2,
-  "phase1_index": 0,
-  "current_day": 2,
-  "day_video_index": 2,
   "published_videos": [
     {
       "type": "MotDuJour",
@@ -35,30 +31,6 @@
       "date": "2026-05-24"
     },
     {
-      "type": "FrenchShorts",
-      "file": "french_shorts_2026-05-24.mp4",
-      "published": true,
-      "date": "2026-05-24"
-    },
-    {
-      "type": "Dialogue",
-      "file": "dialogue_day2.mp4",
-      "published": true,
-      "date": "2026-05-24"
-    },
-    {
-      "type": "Dialogue",
-      "file": "dialogue_day2.mp4",
-      "published": true,
-      "date": "2026-05-24"
-    },
-    {
-      "type": "Dialogue",
-      "file": "dialogue_day2.mp4",
-      "published": true,
-      "date": "2026-05-24"
-    },
-    {
       "type": "Dialogue",
       "file": "dialogue_day2.mp4",
       "published": true,
@@ -73,18 +45,6 @@
     {
       "type": "Grammaire",
       "file": "day3_grammaire.mp4",
-      "published": true,
-      "date": "2026-05-25"
-    },
-    {
-      "type": "Dialogue",
-      "file": "dialogue_day2.mp4",
-      "published": true,
-      "date": "2026-05-25"
-    },
-    {
-      "type": "Dialogue",
-      "file": "dialogue_day2.mp4",
       "published": true,
       "date": "2026-05-25"
     },
@@ -133,5 +93,8 @@
         "next_review": "2026-05-25"
       }
     }
-  }
+  },
+  "curriculum_idx": 12,
+  "generated_count": 0,
+  "used_combos": []
 }

@@ -15,6 +15,16 @@ const OUTPUT_DIR = path.join(PROJECT_ROOT, "output");
 
 const log = (msg) => console.log(`[${new Date().toISOString()}] ${msg}`);
 
+const ACTIVITY_TYPES = ["MotDuJour", "Grammaire", "PhraseDuJour", "Quiz", "Conjugaison"];
+const INTERACTIVE_QUESTIONS = [
+  "Écrivez votre réponse dans les commentaires ! 👇",
+  "Quelle est votre réponse ? Commentez ! 💬",
+  "Partagez votre phrase dans les commentaires ! ✍️",
+  "À vous ! Dites-nous en commentaire. 🗣",
+  "Entraînez-vous à voix haute et commentez ! 🎯",
+  "Quiz ! Réfléchissez et répondez en commentaire. 🤔",
+];
+
 // Spaced Repetition System
 const SRS_INTERVALS = [1, 3, 7, 14, 30];
 
@@ -78,10 +88,12 @@ function saveJSON(filePath, data) {
 
 function loadProgress() {
   if (!fs.existsSync(PROGRESS_FILE)) {
-    return { phase: 1, phase1_index: 0, current_day: 0, day_video_index: 0, published_videos: [], last_publish_date: null };
+    return { curriculum_idx: 0, generated_count: 0, published_videos: [], last_publish_date: null, used_combos: [] };
   }
   const p = loadJSON(PROGRESS_FILE);
-  if (p.day_video_index === undefined) p.day_video_index = 0;
+  if (p.curriculum_idx === undefined) p.curriculum_idx = 0;
+  if (p.generated_count === undefined) p.generated_count = 0;
+  if (!p.used_combos) p.used_combos = [];
   return p;
 }
 
@@ -89,121 +101,40 @@ function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
-// Phase 1: 22 pre-rendered videos, 5 per day
-const PHASE1_VIDEOS = Array.from({ length: 22 }, (_, i) => ({
-  type: ["MotDuJour", "PhraseDuJour", "Grammaire", "Quiz", "Conjugaison"][i % 5],
-  file: `phase1_video_${i + 1}.mp4`,
-  description: `French Flow - Leçon ${i + 1}`,
-}));
-
-function buildDescription(type, data) {
+function buildDescription(type, data, question) {
   const hashtags = "#FrenchFlow #ApprendreLeFrancais #Francais #LearnFrench #FrenchTeacher";
+  let desc = "";
   switch (type) {
     case "MotDuJour":
-      return (
-        `🇫🇷 **Mot du jour** - French Flow\n\n` +
-        `✨ ${data.french}\n` +
-        `💬 ${data.example}\n` +
-        `\n💡 **Astuce** : Répétez ce mot 10 fois aujourd'hui dans différents contextes.\n\n${hashtags}`
-      );
+      desc = `🇫🇷 **Mot du jour** - French Flow\n\n✨ ${data.french}\n💬 ${data.example}`;
+      break;
     case "PhraseDuJour":
-      return (
-        `🇫🇷 **Phrase du jour** - French Flow\n\n` +
-        `🗣 ${data.example}\n` +
-        `\n💡 **Astuce** : Essayez d'utiliser cette phrase dans une vraie conversation aujourd'hui !\n\n${hashtags}`
-      );
+      desc = `🇫🇷 **Phrase du jour** - French Flow\n\n🗣 ${data.example}\n📖 ${data.example_ar || ""}`;
+      break;
     case "Grammaire":
-      return (
-        `🇫🇷 **Leçon de grammaire** - French Flow\n\n` +
-        `📚 ${data.title}\n\n` +
-        `💡 **Astuce** : Écrivez 3 phrases personnelles avec cette règle dans votre cahier.\n\n${hashtags}`
-      );
+      desc = `🇫🇷 **Leçon de grammaire** - French Flow\n\n📚 ${data.title}\n📖 ${data.title_ar || ""}`;
+      break;
     case "Quiz":
-      return (
-        `🇫🇷 **Quiz du jour** - French Flow\n\n` +
-        `❓ ${data.question}\n` +
-        `\n💡 **Astuce** : Mettez pause et répondez avant la fin de la vidéo !\n\n${hashtags}`
-      );
-    case "Conjugaison": {
-      const cTenses = data.passe_compose ? "Présent + Passé composé" : data.imparfait ? "Présent + Imparfait" : "Présent";
-      return (
-        `🇫🇷 **Conjugaison** - French Flow\n\n` +
-        `📝 ${data.infinitive} (${data.level})\n` +
-        `🔄 ${cTenses}\n` +
-        `\n💡 **Astuce** : Conjuguez ce verbe à voix haute avec tous les pronoms 3 fois.\n\n${hashtags}`
-      );
-    }
+      desc = `🇫🇷 **Quiz du jour** - French Flow\n\n❓ ${data.question}`;
+      break;
+    case "Conjugaison":
+      const tenses = data.passe_compose ? "Présent + Passé composé" : data.imparfait ? "Présent + Imparfait" : "Présent";
+      desc = `🇫🇷 **Conjugaison** - French Flow\n\n📝 ${data.infinitive} (${data.level})\n📖 ${data.arabic || ""}\n🔄 ${tenses}`;
+      break;
     case "Révision":
-      return (
-        `🇫🇷 **Révision** - French Flow\n\n` +
-        `🔄 ${data.french || data.title || data.infinitive}\n` +
-        `\n💡 **Astuce** : La répétition espacée est la clé de la mémorisation à long terme !\n\n${hashtags}`
-      );
+      desc = `🇫🇷 **Révision** - French Flow\n\n🔄 ${data.french || data.title || data.infinitive}\n📖 ${data.arabic || data.title_ar || ""}`;
+      break;
     case "Dialogue": {
       const dLines = data.lines || [];
       const conversation = dLines.map(l => `${l.speaker === "femme" ? "👩" : "👨"} ${l.name}: ${l.french}`).join("\n");
-      return (
-        `🇫🇷 **Dialogue** - French Flow\n\n` +
-        `💬 ${data.title} (${data.level})\n\n` +
-        `${conversation}\n\n` +
-        `💡 **Astuce** : Regardez 2 fois — 1x pour comprendre, 1x pour répéter à voix haute.\n\n${hashtags}`
-      );
+      desc = `🇫🇷 **Dialogue** - French Flow\n\n💬 ${data.title} (${data.level})\n📖 ${data.title_ar || ""}\n\n${conversation}`;
+      break;
     }
-    case "PhraseDuJour":
-      return (
-        `🇫🇷 **Phrase du jour** - French Flow\n\n` +
-        `🗣 ${data.example}\n` +
-        `📖 ${data.example_ar}\n` +
-        `\n💡 **Astuce** : Essayez d'utiliser cette phrase dans une vraie conversation aujourd'hui !` +
-        `\n💡 **نصيحة** : حاول تستعمل هاذ الجملة فمحادثة حقيقية اليوم!\n\n${hashtags}`
-      );
-    case "Grammaire":
-      return (
-        `🇫🇷 **Leçon de grammaire** - French Flow\n\n` +
-        `📚 ${data.title}\n` +
-        `📖 ${data.title_ar}\n\n` +
-        `💡 **Astuce** : Écrivez 3 phrases personnelles avec cette règle dans votre cahier.` +
-        `\n💡 **نصيحة** : اكتب 3 جمل شخصية بهاد القاعدة فدفترك.\n\n${hashtags}`
-      );
-    case "Quiz":
-      return (
-        `🇫🇷 **Quiz du jour** - French Flow\n\n` +
-        `❓ ${data.question}\n` +
-        `\n💡 **Astuce** : Mettez pause et répondez avant la fin de la vidéo !` +
-        `\n💡 **نصيحة** : وقف الفيديو وجاوب قبل ما تشوف الجواب!\n\n${hashtags}`
-      );
-    case "Conjugaison":
-      const tenses = data.passe_compose ? "Présent + Passé composé" : data.imparfait ? "Présent + Imparfait" : "Présent";
-      return (
-        `🇫🇷 **Conjugaison** - French Flow\n\n` +
-        `📝 ${data.infinitive} (${data.level})\n` +
-        `📖 ${data.arabic}\n` +
-        `🔄 Temps: ${tenses}\n` +
-        `\n💡 **Astuce** : Conjuguez ce verbe à voix haute avec tous les pronoms 3 fois.` +
-        `\n💡 **نصيحة** : صرف هاذ الفعل بصوت عال مع جميع الضمائر 3 مرات.\n\n${hashtags}`
-      );
-    case "Révision":
-      return (
-        `🇫🇷 **Révision** - French Flow\n\n` +
-        `🔄 ${data.french || data.title || data.infinitive}\n` +
-        `📖 ${data.arabic || data.title_ar || ""}\n` +
-        `\n💡 **Astuce** : La répétition espacée est la clé de la mémorisation à long terme !` +
-        `\n💡 **نصيحة** : التكرار المتباعد هو مفتاح الحفظ على المدى الطويل!\n\n${hashtags}`
-      );
-    case "Dialogue":
-      const lines = data.lines || [];
-      const conversation = lines.map(l => `${l.speaker === "femme" ? "👩" : "👨"} ${l.name}: ${l.french}`).join("\n");
-      return (
-        `🇫🇷 **Dialogue** - French Flow\n\n` +
-        `💬 ${data.title}\n` +
-        `📖 ${data.title_ar} (${data.level})\n\n` +
-        `${conversation}\n\n` +
-        `💡 **Astuce** : Regardez 2 fois — 1x pour comprendre, 1x pour répéter à voix haute.` +
-        `\n💡 **نصيحة** : شاهد الحوار مرتين — مرة للفهم ومرة للتكرار بصوت عال.\n\n${hashtags}`
-      );
     default:
-      return `${hashtags}`;
+      desc = `🇫🇷 **French Flow**`;
   }
+  if (question) desc += `\n\n❓ **${question}**\n${INTERACTIVE_QUESTIONS[Math.floor(Math.random() * INTERACTIVE_QUESTIONS.length)]}`;
+  return desc + `\n\n${hashtags}`;
 }
 
 // Generate TTS audio for a text, returns audio path
@@ -344,12 +275,12 @@ async function runPhase1(progress, pageId, accessToken) {
 }
 
 // Render a single activity and track it for spaced repetition
-async function renderAndPublish(activity, compositionId, props, outputFile, dayNum, pageId, accessToken, progress, today) {
+async function renderAndPublish(activity, compositionId, props, outputFile, pageId, accessToken, progress, today, question) {
   const ok = renderVideo(compositionId, props, outputFile);
   const videoPath = path.join(OUTPUT_DIR, outputFile);
 
   if (ok && fs.existsSync(videoPath)) {
-    const desc = buildDescription(activity.type, props[Object.keys(props)[0]] || {});
+    const desc = buildDescription(activity.type, props[Object.keys(props)[0]] || {}, question);
     const published = await publishToFacebook(videoPath, desc, pageId, accessToken);
 
     // Track for spaced repetition
@@ -437,220 +368,146 @@ function getActivityProps(activity, wordMap, grammarMap, verbMap, durations) {
   }
 }
 
-// Phase 2: render + publish daily curriculum (French Flow Method)
-async function runPhase2(progress, pageId, accessToken) {
+// Generate interactive question based on activity type
+function generateQuestion(activity, wordMap, grammarMap, verbMap) {
+  const questions = {
+    MotDuJour: (w) => `Connaissez-vous un autre mot lié à "${w.french}" ?`,
+    PhraseDuJour: (w) => `Pouvez-vous créer une phrase similaire avec "${w.french}" ?`,
+    Grammaire: (g) => `Pouvez-vous donner un autre exemple pour cette règle : "${g.title}" ?`,
+    Quiz: () => `Avez-vous trouvé la bonne réponse ?`,
+    Conjugaison: (v) => `Pouvez-vous conjuguer "${v.infinitive}" au futur proche ?`,
+    Dialogue: () => `Qu'avez-vous compris de ce dialogue ?`,
+    Révision: () => `Avez-vous mémorisé ce mot ?`,
+  };
+  const fn = questions[activity.type] || questions.Révision;
+  let data = {};
+  if (activity.word_id) data = wordMap[activity.word_id] || {};
+  else if (activity.grammar_id) data = grammarMap[activity.grammar_id] || {};
+  else if (activity.verb_id) data = verbMap[activity.verb_id] || {};
+  return fn(data);
+}
+
+// Run one video per hour, cycling through curriculum then generating new combos
+async function runHourly(progress, pageId, accessToken) {
   const today = todayStr();
-  const hour = new Date().getHours();
-  const batch = process.env.BATCH || (hour < 12 ? "morning" : "evening");
-  const isMorning = batch === "morning";
-  const phaseLabel = isMorning ? "🔍 Discovery" : "🧠 Reinforcement";
-  // Discovery: MotDuJour + Grammaire | Reinforcement: PhraseDuJour + Quiz + Conjugaison
-  const startIdx = isMorning ? 0 : 2;
-  const count = isMorning ? 2 : 3;
-
-  log(`🎯 ${phaseLabel} - French Flow Method`);
-
   const curriculum = loadJSON(CURRICULUM_FILE);
   const words = loadJSON(WORDS_FILE);
   const grammar = loadJSON(GRAMMAR_FILE);
   const verbs = loadJSON(VERBS_FILE);
 
-  if (progress.current_day >= curriculum.days.length) {
-    log(`🏆 Félicitations! All ${curriculum.days.length} days completed!`);
-    return;
-  }
-
-  const dayData = curriculum.days[progress.current_day];
-  const isReviewDay = dayData.day % 7 === 0;
-
-  // Guard: skip if this batch was already done
-  if (progress.day_video_index >= startIdx + count) {
-    log(`✅ ${phaseLabel} already done for day ${dayData.day}`);
-    return;
-  }
-  if (progress.day_video_index < startIdx) {
-    log(`⏳ ${phaseLabel} not ready yet (waiting for previous batch)`);
-    return;
-  }
-
-  log(`📚 Day ${dayData.day}/${curriculum.days.length} - ${dayData.theme} (${dayData.level})`);
-
-  // Build lookup maps
   const wordMap = {}, grammarMap = {}, verbMap = {};
-  words.forEach((w) => (wordMap[w.id] = w));
-  grammar.forEach((g) => (grammarMap[g.id] = g));
-  verbs.forEach((v) => (verbMap[v.id] = v));
+  words.forEach(w => wordMap[w.id] = w);
+  grammar.forEach(g => grammarMap[g.id] = g);
+  verbs.forEach(v => verbMap[v.id] = v);
+
+  // Flatten curriculum
+  const allActivities = [];
+  for (const day of curriculum.days) {
+    for (const a of day.activities) {
+      a._dayNum = day.day;
+      allActivities.push(a);
+    }
+  }
+
+  initSRS(progress);
+  const durations = { MotDuJour: 12.5, PhraseDuJour: 14.5, Grammaire: 17.5, Quiz: 15.5, Conjugaison: 17.5, Dialogue: 20 };
 
   if (!fs.existsSync(OUTPUT_DIR)) {
     fs.mkdirSync(OUTPUT_DIR, { recursive: true });
   }
 
-  initSRS(progress);
-  const durations = { MotDuJour: 12.5, PhraseDuJour: 14.5, Grammaire: 17.5, Quiz: 15.5, Conjugaison: 17.5 };
-  const renderResults = [];
+  let activity;
+  let isGenerated = false;
 
-  if (isReviewDay) {
-    // 🔄 Review day: pull due items from Spaced Repetition
-    const dueItems = getDueItems(progress, words, grammar, verbs, 5);
-    if (dueItems.length > 0) {
-      log(`🔄 Révision: ${dueItems.length} items due for review`);
-      const batchItems = dueItems.slice(startIdx, startIdx + count);
-      for (const di of batchItems) {
-        const baseType = di.category === "words" ? "MotDuJour" : di.category === "grammar" ? "Grammaire" : "Conjugaison";
-        const act = { type: baseType, _dayNum: dayData.day };
-        if (di.category === "words") act.word_id = di.item.id;
-        else if (di.category === "grammar") act.grammar_id = di.item.id;
-        else act.verb_id = di.item.id;
-        const resolved = getActivityProps(act, wordMap, grammarMap, verbMap, durations);
-        if (!resolved) continue;
-        const result = await renderAndPublish(act, resolved.compositionId, resolved.props, resolved.outputFile, dayData.day, pageId, accessToken, progress, today);
-        if (result) renderResults.push(result);
-      }
-    } else {
-      log(`✅ No items due for review, proceeding with new lesson`);
-    }
-  }
+  if (progress.curriculum_idx < allActivities.length) {
+    // Phase 1: sequential curriculum (first 1825 hours = ~76 days)
+    activity = { ...allActivities[progress.curriculum_idx] };
+    log(`📚 [${progress.curriculum_idx + 1}/${allActivities.length}] ${activity.type} - Day ${activity._dayNum}`);
+  } else {
+    // Phase 2: generator mode - cycle with new combinations
+    isGenerated = true;
+    const genIdx = progress.generated_count;
+    const typeIdx = genIdx % 6;
+    const cyclePos = Math.floor(genIdx / 6);
 
-  // If no review items rendered (or not a review day), do normal curriculum
-  if (renderResults.length === 0) {
-    const batchActivities = dayData.activities.slice(startIdx, startIdx + count);
-    for (const activity of batchActivities) {
-      activity._dayNum = dayData.day;
-      const resolved = getActivityProps(activity, wordMap, grammarMap, verbMap, durations);
-      if (!resolved) continue;
-      const result = await renderAndPublish(activity, resolved.compositionId, resolved.props, resolved.outputFile, dayData.day, pageId, accessToken, progress, today);
-      if (result) renderResults.push(result);
-    }
-  }
-
-  progress.day_video_index += count;
-  progress.published_videos.push(...renderResults);
-  progress.last_publish_date = today;
-
-  if (!isMorning) {
-    progress.current_day += 1;
-    progress.day_video_index = 0;
-  }
-
-  saveJSON(PROGRESS_FILE, progress);
-  log(`✅ ${phaseLabel} - Day ${dayData.day} complete! ${renderResults.filter((r) => r.published).length}/${count} videos published`);
-}
-
-// Generate TTS audio for a phrase if missing
-function generateAudio(phrase, index) {
-  const AUDIO_DIR = path.join(PROJECT_ROOT, "public", "audio");
-  if (!fs.existsSync(AUDIO_DIR)) {
-    fs.mkdirSync(AUDIO_DIR, { recursive: true });
-  }
-
-  const filename = `phrase_${index}.mp3`;
-  const filepath = path.join(AUDIO_DIR, filename);
-
-  // Generate if missing or if phrase has no audioSrc
-  if (!phrase.audioSrc || !fs.existsSync(filepath)) {
-    phrase.audioSrc = `audio/${filename}`;
-    try {
-      execSync(`python3 "${path.join(BOT_DIR, "tts_helper.py")}" "${filepath}"`, {
-        input: phrase.french,
-        timeout: 15000,
-        stdio: ["pipe", "pipe", "pipe"],
-      });
-      log(`    🔊 Generated audio: ${filename}`);
-    } catch (err) {
-      log(`    ⚠️ TTS failed for "${phrase.french}": ${err.message}`);
-    }
-  }
-}
-
-// Render user phrases as FrenchShorts video (bonus content)
-async function renderUserPhrases(pageId, accessToken, progress) {
-  const today = todayStr();
-  if (progress.published_videos.some(v => v.type === "FrenchShorts" && v.date === today)) {
-    log(`✅ FrenchShorts already published today, skipping`);
-    return;
-  }
-
-  if (!fs.existsSync(USER_PHRASES_FILE)) {
-    log("ℹ️ No user_phrases.json found, skipping bonus video");
-    return;
-  }
-
-  const data = loadJSON(USER_PHRASES_FILE);
-  if (!data.phrases || data.phrases.length === 0) {
-    log("ℹ️ user_phrases.json is empty, skipping bonus video");
-    return;
-  }
-
-  log(`🎬 Rendering FrenchShorts (${data.phrases.length} phrases): ${data.title}`);
-
-  // Generate audio for each phrase if missing
-  data.phrases.forEach((p, i) => generateAudio(p, i + 1));
-  saveJSON(USER_PHRASES_FILE, data);
-
-  // Wait for audio files to be ready
-  await sleep(2000);
-
-  const props = { title: data.title, phrases: data.phrases, durationPerItem: 3 };
-  const propsJSON = JSON.stringify(props).replace(/"/g, '\\"');
-  const outputFile = `french_shorts_${today}.mp4`;
-  const outputPath = path.join(OUTPUT_DIR, outputFile);
-
-  const cmd = `npx remotion render FrenchShorts "${outputPath}" --props="${propsJSON}" --overwrite`;
-
-  try {
-    execSync(cmd, {
-      cwd: PROJECT_ROOT,
-      stdio: ["pipe", "pipe", "pipe"],
-      timeout: 300000,
-      env: { ...process.env, NODE_OPTIONS: "--max-old-space-size=2048" },
-    });
-
-    if (fs.existsSync(outputPath)) {
-      log(`  ✅ FrenchShorts rendered (${(fs.statSync(outputPath).size / 1024 / 1024).toFixed(1)} MB)`);
-      const desc = `🇫🇷 ${data.title}\n\n${data.phrases.map(p => `• ${p.french}`).join("\n")}\n\n#FrenchFlow #LearnFrench #Francais #FrenchTeacher`;
-      const published = await publishToFacebook(outputPath, desc, pageId, accessToken);
-      if (published) {
-        progress.published_videos.push({
-          type: "FrenchShorts",
-          file: outputFile,
-          published: true,
-          date: today,
-        });
+    if (typeIdx === 5) {
+      // Every 6th video: Dialogue
+      const dialogues = loadJSON(DIALOGUES_FILE);
+      if (dialogues.length > 0) {
+        const d = dialogues[genIdx % dialogues.length];
+        await renderDialogueVideo(d, pageId, accessToken, progress, today, wordMap, grammarMap, verbMap);
+        progress.generated_count++;
+        progress.last_publish_date = today;
         saveJSON(PROGRESS_FILE, progress);
-        log(`  ✅ FrenchShorts published to Facebook`);
+        return;
       }
     }
-  } catch (err) {
-    log(`  ❌ FrenchShorts render failed: ${err.message}`);
+
+    const type = ACTIVITY_TYPES[typeIdx];
+    const wordList = words, grammarList = grammar, verbList = verbs;
+
+    switch (type) {
+      case "MotDuJour":
+      case "PhraseDuJour":
+      case "Quiz": {
+        const wordId = wordList[cyclePos % wordList.length].id;
+        activity = { type, word_id: wordId, _dayNum: 0 };
+        break;
+      }
+      case "Grammaire": {
+        const gId = grammarList[cyclePos % grammarList.length].id;
+        activity = { type, grammar_id: gId, _dayNum: 0 };
+        break;
+      }
+      case "Conjugaison": {
+        const vId = verbList[cyclePos % verbList.length].id;
+        activity = { type, verb_id: vId, _dayNum: 0 };
+        break;
+      }
+    }
+    log(`🎯 [Gen ${genIdx + 1}] ${activity.type}`);
   }
+
+  const resolved = getActivityProps(activity, wordMap, grammarMap, verbMap, durations);
+  if (!resolved) {
+    log(`❌ Could not resolve activity`);
+    if (progress.curriculum_idx < allActivities.length) {
+      progress.curriculum_idx++;
+    } else {
+      progress.generated_count++;
+    }
+    saveJSON(PROGRESS_FILE, progress);
+    return;
+  }
+
+  const question = generateQuestion(activity, wordMap, grammarMap, verbMap);
+  const result = await renderAndPublish(
+    activity, resolved.compositionId, resolved.props, resolved.outputFile,
+    pageId, accessToken, progress, today, question
+  );
+
+  if (result) {
+    progress.published_videos.push(result);
+  }
+
+  if (progress.curriculum_idx < allActivities.length) {
+    progress.curriculum_idx++;
+  } else {
+    progress.generated_count++;
+  }
+
+  progress.last_publish_date = today;
+  saveJSON(PROGRESS_FILE, progress);
+  log(`✨ Video ${progress.curriculum_idx + progress.generated_count} published!`);
 }
 
-// Render daily dialogue as bonus video
-async function renderDialogue(pageId, accessToken, progress) {
-  const today = todayStr();
-  if (progress.published_videos.some(v => v.type === "Dialogue" && v.date === today)) {
-    log(`✅ Dialogue already published today, skipping`);
-    return;
-  }
+// Render a dialogue video
+async function renderDialogueVideo(dialogue, pageId, accessToken, progress, today, wordMap, grammarMap, verbMap) {
+  log(`🎬 Rendering Dialogue: "${dialogue.title}" (${dialogue.level})`);
 
-  if (!fs.existsSync(DIALOGUES_FILE)) {
-    log("ℹ️ No dialogues.json found, skipping dialogue video");
-    return;
-  }
-
-  const dialogues = loadJSON(DIALOGUES_FILE);
-  if (dialogues.length === 0) {
-    log("ℹ️ dialogues.json is empty, skipping dialogue video");
-    return;
-  }
-
-  const dayNum = progress.current_day || 1;
-  const dialogue = dialogues[(dayNum - 1) % dialogues.length];
-
-  // Generate TTS audio for each dialogue line
-  log(`  🔊 Generating TTS for ${dialogue.lines.length} lines...`);
   const AUDIO_DIR = path.join(PROJECT_ROOT, "public", "audio");
   if (!fs.existsSync(AUDIO_DIR)) fs.mkdirSync(AUDIO_DIR, { recursive: true });
+
   dialogue.lines.forEach((line, i) => {
     const filename = `dialogue_${dialogue.id}_${i}.mp3`;
     const filepath = path.join(AUDIO_DIR, filename);
@@ -659,25 +516,18 @@ async function renderDialogue(pageId, accessToken, progress) {
       try {
         execSync(`python3 "${path.join(BOT_DIR, "tts_helper.py")}" "${filepath}"`, {
           input: line.french,
-          timeout: 15000,
-          stdio: ["pipe", "pipe", "pipe"],
+          timeout: 15000, stdio: ["pipe", "pipe", "pipe"],
         });
-        log(`    ✅ ${filename}`);
       } catch (err) {
-        log(`    ⚠️ TTS failed: ${err.message}`);
+        log(`  ⚠️ TTS failed: ${err.message}`);
       }
     }
   });
   await sleep(2000);
 
-  const INTRO_F = 45;
-  const PER_LINE_F = 80;
-  const OUTRO_F = 30;
+  const INTRO_F = 45, PER_LINE_F = 80, OUTRO_F = 30;
   const totalDuration = INTRO_F + dialogue.lines.length * PER_LINE_F + OUTRO_F;
-
-  log(`🎬 Rendering Dialogue: "${dialogue.title}" (${dialogue.level})`);
-
-  const outputFile = `dialogue_day${dayNum}.mp4`;
+  const outputFile = `dialogue_h${String(new Date().getHours()).padStart(2, '0')}.mp4`;
   const outputPath = path.join(OUTPUT_DIR, outputFile);
 
   const props = { dialogue, totalDuration };
@@ -685,26 +535,15 @@ async function renderDialogue(pageId, accessToken, progress) {
   const cmd = `npx remotion render Dialogue "${outputPath}" --props="${propsJSON}" --overwrite`;
 
   try {
-    execSync(cmd, {
-      cwd: PROJECT_ROOT,
-      stdio: ["pipe", "pipe", "pipe"],
-      timeout: 120000,
-      env: { ...process.env, NODE_OPTIONS: "--max-old-space-size=2048" },
-    });
-
+    execSync(cmd, { cwd: PROJECT_ROOT, stdio: ["pipe", "pipe", "pipe"], timeout: 120000,
+      env: { ...process.env, NODE_OPTIONS: "--max-old-space-size=2048" } });
     if (fs.existsSync(outputPath)) {
-      log(`  ✅ Dialogue rendered (${(fs.statSync(outputPath).size / 1024 / 1024).toFixed(1)} MB)`);
-      const desc = buildDescription("Dialogue", dialogue);
+      const question = generateQuestion({ type: "Dialogue" }, wordMap, grammarMap, verbMap);
+      const desc = buildDescription("Dialogue", dialogue, question);
       const published = await publishToFacebook(outputPath, desc, pageId, accessToken);
       if (published) {
-        progress.published_videos.push({
-          type: "Dialogue",
-          file: outputFile,
-          published: true,
-          date: today,
-        });
-        saveJSON(PROGRESS_FILE, progress);
-        log(`  ✅ Dialogue published to Facebook`);
+        progress.published_videos.push({ type: "Dialogue", file: outputFile, published: true, date: today });
+        log(`  ✅ Dialogue published`);
       }
     }
   } catch (err) {
@@ -727,19 +566,10 @@ async function main() {
   }
 
   const progress = loadProgress();
-  log(`🤖 French Flow Bot - Phase ${progress.phase}, Day ${progress.current_day || progress.phase1_index}`);
+  const total = progress.curriculum_idx + progress.generated_count;
+  log(`🤖 French Flow Hourly - ${total} videos published so far`);
 
-  if (progress.phase === 1) {
-    await runPhase1(progress, pageId, accessToken);
-  } else {
-    await runPhase2(progress, pageId, accessToken);
-  }
-
-  // Bonus: render and publish user phrases as FrenchShorts
-  await renderUserPhrases(pageId, accessToken, progress);
-
-  // Bonus: render daily dialogue (communication practice)
-  await renderDialogue(pageId, accessToken, progress);
+  await runHourly(progress, pageId, accessToken);
 
   log("✨ Done!");
 }
