@@ -131,6 +131,18 @@
       "file": "day5_quiz.mp4",
       "published": true,
       "date": "2026-05-25"
+    },
+    {
+      "type": "Conjugaison",
+      "file": "day5_conjugaison.mp4",
+      "published": true,
+      "date": "2026-05-25"
+    },
+    {
+      "type": "Grammaire",
+      "file": "day6_grammaire.mp4",
+      "published": true,
+      "date": "2026-05-25"
     }
   ],
   "last_publish_date": "2026-05-25",
@@ -197,6 +209,12 @@
         "last_reviewed": "2026-05-25",
         "interval": 1,
         "next_review": "2026-05-26"
+      },
+      "6": {
+        "first_seen": "2026-05-25",
+        "last_reviewed": "2026-05-25",
+        "interval": 1,
+        "next_review": "2026-05-26"
       }
     },
     "verbs": {
@@ -217,10 +235,16 @@
         "last_reviewed": "2026-05-25",
         "interval": 1,
         "next_review": "2026-05-26"
+      },
+      "5": {
+        "first_seen": "2026-05-25",
+        "last_reviewed": "2026-05-25",
+        "interval": 1,
+        "next_review": "2026-05-26"
       }
     }
   },
-  "curriculum_idx": 24,
+  "curriculum_idx": 27,
   "generated_count": 0,
   "used_combos": []
 }
