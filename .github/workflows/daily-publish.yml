@@ -27,8 +27,8 @@ jobs:
           sudo apt-get install -y ffmpeg imagemagick fonts-noto espeak espeak-data
           sudo fc-cache -f
 
-      - name: Install Python TTS
-        run: pip3 install gtts
+      - name: Install Python deps
+        run: pip3 install edge-tts aiohttp beautifulsoup4 lxml
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -42,18 +42,27 @@ jobs:
       - name: Run teacher bot
         run: node bot/teacher.js
 
-      - name: Save progress
+      - name: Run storyteller (rotated content)
+        run: python3 bot/storyteller.py
+
+      - name: Run analytics
+        run: python3 bot/analytics.py
+
+      - name: Save progress files
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          if [ -f bot/progress.json ] && [ -s bot/progress.json ]; then
-            CONTENT=$(base64 -w0 bot/progress.json)
-            SHA=$(curl -s -H "Authorization: token $GH_TOKEN" \
-              "https://api.github.com/repos/${{ github.repository }}/contents/bot/progress.json" | \
-              python3 -c "import sys,json; print(json.load(sys.stdin).get('sha',''))" 2>/dev/null || echo "")
-            RESP=$(curl -s -X PUT -H "Authorization: token $GH_TOKEN" \
-              -H "Content-Type: application/json" \
-              -d "{\"message\":\"🤖 Update progress $(date +%Y-%m-%d)\",\"content\":\"$CONTENT\",\"sha\":\"$SHA\"}" \
-              "https://api.github.com/repos/${{ github.repository }}/contents/bot/progress.json")
-            echo "$RESP" | python3 -c "import sys,json; d=json.load(sys.stdin); print('✅' if d.get('commit') else '❌ '+d.get('message',str(d)))" 2>/dev/null
-          fi
+          for F in progress.json story_progress.json performance_log.json; do
+            FP="bot/$F"
+            if [ -f "$FP" ] && [ -s "$FP" ]; then
+              CONTENT=$(base64 -w0 "$FP")
+              SHA=$(curl -s -H "Authorization: token $GH_TOKEN" \
+                "https://api.github.com/repos/${{ github.repository }}/contents/$FP" | \
+                python3 -c "import sys,json; print(json.load(sys.stdin).get('sha',''))" 2>/dev/null || echo "")
+              RESP=$(curl -s -X PUT -H "Authorization: token $GH_TOKEN" \
+                -H "Content-Type: application/json" \
+                -d "{\"message\":\"🤖 Update $F $(date +%Y-%m-%d)\",\"content\":\"$CONTENT\",\"sha\":\"$SHA\"}" \
+                "https://api.github.com/repos/${{ github.repository }}/contents/$FP")
+              echo "$F: $(echo "$RESP" | python3 -c "import sys,json; d=json.load(sys.stdin); print('✅' if d.get('commit') else '❌')" 2>/dev/null)"
+            fi
+          done
