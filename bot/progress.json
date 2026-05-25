@@ -1,8 +1,4 @@
 {
-  "phase": 2,
-  "phase1_index": 0,
-  "current_day": 3,
-  "day_video_index": 0,
   "published_videos": [
     {
       "type": "MotDuJour",
@@ -140,7 +136,7 @@
       }
     }
   },
-  "curriculum_idx": 12,
+  "curriculum_idx": 15,
   "generated_count": 0,
   "used_combos": []
 }
