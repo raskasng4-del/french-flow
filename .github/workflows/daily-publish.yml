@@ -46,14 +46,17 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          if [ -f bot/progress.json ] && [ -s bot/progress.json ]; then
-            CONTENT=$(base64 -w0 bot/progress.json)
-            SHA=$(curl -s -H "Authorization: token $GH_TOKEN" \
-              "https://api.github.com/repos/${{ github.repository }}/contents/bot/progress.json" | \
-              python3 -c "import sys,json; print(json.load(sys.stdin).get('sha',''))" 2>/dev/null || echo "")
-            RESP=$(curl -s -X PUT -H "Authorization: token $GH_TOKEN" \
-              -H "Content-Type: application/json" \
-              -d "{\"message\":\"🤖 Update progress $(date +%Y-%m-%d)\",\"content\":\"$CONTENT\",\"sha\":\"$SHA\"}" \
-              "https://api.github.com/repos/${{ github.repository }}/contents/bot/progress.json")
-            echo "$RESP" | python3 -c "import sys,json; d=json.load(sys.stdin); print('✅' if d.get('commit') else '❌ '+d.get('message',str(d)))" 2>/dev/null
-          fi
+          # Commit all content changes via GitHub API
+          for f in progress.json idiomes.json culture.json words.json grammar.json verbs.json dialogues.json; do
+            F="bot/$f"
+            if [ -f "$F" ] && [ -s "$F" ]; then
+              CONTENT=$(base64 -w0 "$F")
+              SHA=$(curl -s -H "Authorization: token $GH_TOKEN" \
+                "https://api.github.com/repos/${{ github.repository }}/contents/$F" | \
+                python3 -c "import sys,json; print(json.load(sys.stdin).get('sha',''))" 2>/dev/null || echo "")
+              curl -s -X PUT -H "Authorization: token $GH_TOKEN" \
+                -H "Content-Type: application/json" \
+                -d "{\"message\":\"🤖 Update $f $(date +%Y-%m-%d)\",\"content\":\"$CONTENT\",\"sha\":\"$SHA\"}" \
+                "https://api.github.com/repos/${{ github.repository }}/contents/$F" > /dev/null
+            fi
+          done

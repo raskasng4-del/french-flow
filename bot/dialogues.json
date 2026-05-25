@@ -1,114 +1,26 @@
 [
-  {
-    "id": 1,
-    "title": "Se présenter",
-    "title_ar": "التعريف بالنفس",
-    "level": "A1",
-    "lines": [
-      { "speaker": "homme", "name": "Pierre", "french": "Bonjour ! Je m'appelle Pierre.", "arabic": "مرحباً! أنا أدعى بيير." },
-      { "speaker": "femme", "name": "Marie", "french": "Salut Pierre ! Moi, c'est Marie.", "arabic": "أهلاً بيير! أنا، هذه ماري." },
-      { "speaker": "homme", "name": "Pierre", "french": "Enchanté, Marie ! Tu es française ?", "arabic": "مسرور، ماري! أنت فرنسية؟" },
-      { "speaker": "femme", "name": "Marie", "french": "Oui, je suis française. Et toi ?", "arabic": "نعم، أنا فرنسية. وأنت؟" },
-      { "speaker": "homme", "name": "Pierre", "french": "Moi aussi ! Je suis de Paris.", "arabic": "أنا أيضاً! أنا من باريس." },
-      { "speaker": "femme", "name": "Marie", "french": "Super ! Moi, je suis de Lyon.", "arabic": "رائع! أنا، أنا من ليون." }
-    ]
-  },
-  {
-    "id": 2,
-    "title": "Au café",
-    "title_ar": "في المقهى",
-    "level": "A1",
-    "lines": [
-      { "speaker": "femme", "name": "Marie", "french": "Bonjour ! Qu'est-ce que tu veux boire ?", "arabic": "مرحباً! ماذا تريد أن تشرب؟" },
-      { "speaker": "homme", "name": "Pierre", "french": "Je voudrais un café, s'il te plaît.", "arabic": "أود قهوةً، من فضلك." },
-      { "speaker": "femme", "name": "Marie", "french": "Moi, je prends un thé vert.", "arabic": "أنا، آخذ شاياً أخضر." },
-      { "speaker": "homme", "name": "Pierre", "french": "Tu veux un croissant aussi ?", "arabic": "تريدين كرواسوناً أيضاً؟" },
-      { "speaker": "femme", "name": "Marie", "french": "Oui, volontiers ! Merci.", "arabic": "نعم، بكل سرور! شكراً." },
-      { "speaker": "homme", "name": "Pierre", "french": "Parfait ! Je vais commander.", "arabic": "ممتاز! أنا سأطلب." }
-    ]
-  },
-  {
-    "id": 3,
-    "title": "Demander son chemin",
-    "title_ar": "طلب الطريق",
-    "level": "A1",
-    "lines": [
-      { "speaker": "homme", "name": "Pierre", "french": "Excusez-moi, où est la gare ?", "arabic": "اعذروني، أين المحطة؟" },
-      { "speaker": "femme", "name": "Marie", "french": "La gare ? C'est tout droit.", "arabic": "المحطة؟ إنها مباشرةً." },
-      { "speaker": "homme", "name": "Pierre", "french": "C'est loin d'ici ?", "arabic": "إنها بعيدة من هنا؟" },
-      { "speaker": "femme", "name": "Marie", "french": "Non, c'est à cinq minutes à pied.", "arabic": "لا، إنها على بعد خمس دقائق مشياً." },
-      { "speaker": "homme", "name": "Pierre", "french": "Merci beaucoup madame !", "arabic": "شكراً جزيلاً سيدتي!" },
-      { "speaker": "femme", "name": "Marie", "french": "Je vous en prie, bonne journée !", "arabic": "عفواً، نهار سعيد!" }
-    ]
-  },
-  {
-    "id": 4,
-    "title": "Au restaurant",
-    "title_ar": "في المطعم",
-    "level": "A1",
-    "lines": [
-      { "speaker": "homme", "name": "Pierre", "french": "Tu as faim ? On va au restaurant ?", "arabic": "عندك جوع؟ نذهب إلى المطعم؟" },
-      { "speaker": "femme", "name": "Marie", "french": "Bonne idée ! Je meurs de faim.", "arabic": "فكرة جيدة! أموت من الجوع." },
-      { "speaker": "homme", "name": "Pierre", "french": "Qu'est-ce que tu veux manger ?", "arabic": "ماذا تريدين أن تأكلي؟" },
-      { "speaker": "femme", "name": "Marie", "french": "Je voudrais une salade et du poisson.", "arabic": "أود سلطةً وسمكاً." },
-      { "speaker": "homme", "name": "Pierre", "french": "Moi, je prends un steak-frites.", "arabic": "أنا، آخذ شريحة لحم مع بطاطا مقلية." },
-      { "speaker": "femme", "name": "Marie", "french": "Miam ! Ça a l'air bon !", "arabic": "لذيذ! هذا يبدو جيداً!" }
-    ]
-  },
-  {
-    "id": 5,
-    "title": "Parler de ses loisirs",
-    "title_ar": "التحدث عن الهوايات",
-    "level": "A1",
-    "lines": [
-      { "speaker": "femme", "name": "Marie", "french": "Qu'est-ce que tu aimes faire ?", "arabic": "ماذا تحب أن تفعل؟" },
-      { "speaker": "homme", "name": "Pierre", "french": "J'aime le sport. Je joue au foot.", "arabic": "أحب الرياضة. ألعب كرة القدم." },
-      { "speaker": "femme", "name": "Marie", "french": "Cool ! Moi, j'aime la musique.", "arabic": "رائع! أنا، أحب الموسيقى." },
-      { "speaker": "homme", "name": "Pierre", "french": "Tu joues d'un instrument ?", "arabic": "تعزفين على آلة موسيقية؟" },
-      { "speaker": "femme", "name": "Marie", "french": "Oui, je joue de la guitare.", "arabic": "نعم، أعزف على الغيتار." },
-      { "speaker": "homme", "name": "Pierre", "french": "Super ! On peut faire un concert !", "arabic": "رائع! يمكننا عمل حفل موسيقي!" }
-    ]
-  },
-  {
-    "id": 6,
-    "title": "Prendre rendez-vous",
-    "title_ar": "أخذ موعد",
-    "level": "A1",
-    "lines": [
-      { "speaker": "homme", "name": "Pierre", "french": "Tu es libre samedi ?", "arabic": "أنت حرة يوم السبت؟" },
-      { "speaker": "femme", "name": "Marie", "french": "Oui, je suis libre. Pourquoi ?", "arabic": "نعم، أنا حرة. لماذا؟" },
-      { "speaker": "homme", "name": "Pierre", "french": "On va au cinéma ensemble ?", "arabic": "نذهب إلى السينما معاً؟" },
-      { "speaker": "femme", "name": "Marie", "french": "Avec plaisir ! Quel film ?", "arabic": "بكل سرور! أي فيلم؟" },
-      { "speaker": "homme", "name": "Pierre", "french": "Il y a un nouveau film français.", "arabic": "هناك فيلم فرنسي جديد." },
-      { "speaker": "femme", "name": "Marie", "french": "D'accord ! À quelle heure ?", "arabic": "موافق! في أي ساعة؟" }
-    ]
-  },
-  {
-    "id": 7,
-    "title": "Faire les courses",
-    "title_ar": "عمل التسوق",
-    "level": "A1",
-    "lines": [
-      { "speaker": "femme", "name": "Marie", "french": "On va faire les courses ?", "arabic": "نذهب لعمل التسوق؟" },
-      { "speaker": "homme", "name": "Pierre", "french": "Oui, j'ai besoin de pain et de lait.", "arabic": "نعم، عندي حاجة لخبز وحليب." },
-      { "speaker": "femme", "name": "Marie", "french": "Moi, je dois acheter des fruits.", "arabic": "أنا، يجب أن أشتري فواكه." },
-      { "speaker": "homme", "name": "Pierre", "french": "Tu veux des pommes ou des bananes ?", "arabic": "تريدين تفاحاً أم موزاً؟" },
-      { "speaker": "femme", "name": "Marie", "french": "Des deux ! Et aussi des oranges.", "arabic": "كلاهما! وأيضاً برتقالاً." },
-      { "speaker": "homme", "name": "Pierre", "french": "D'accord, allons-y !", "arabic": "موافق، لنذهب!" }
-    ]
-  },
-  {
-    "id": 8,
-    "title": "À la gare",
-    "title_ar": "في المحطة",
-    "level": "A1",
-    "lines": [
-      { "speaker": "homme", "name": "Pierre", "french": "Le train part à quelle heure ?", "arabic": "القطار يغادر في أي ساعة؟" },
-      { "speaker": "femme", "name": "Marie", "french": "Il part à quatorze heures trente.", "arabic": "يغادر في الرابعة عشرة والثلاثين دقيقة." },
-      { "speaker": "homme", "name": "Pierre", "french": "Nous avons encore vingt minutes.", "arabic": "عندنا لا يزال عشرون دقيقة." },
-      { "speaker": "femme", "name": "Marie", "french": "On prend un café en attendant ?", "arabic": "نأخذ قهوة أثناء الانتظار؟" },
-      { "speaker": "homme", "name": "Pierre", "french": "Bonne idée ! Je t'invite.", "arabic": "فكرة جيدة! أنا أدعوك." },
-      { "speaker": "femme", "name": "Marie", "french": "Merci ! C'est très gentil.", "arabic": "شكراً! هذا لطيف جداً." }
-    ]
-  }
+  {"id":1,"title":"Se présenter","title_ar":"التعريف بالنفس","level":"A1","lines":[{"speaker":"homme","name":"Pierre","french":"Bonjour ! Je m'appelle Pierre.","arabic":"مرحباً! أنا أدعى بيير."},{"speaker":"femme","name":"Marie","french":"Salut Pierre ! Moi, c'est Marie.","arabic":"أهلاً بيير! أنا ماري."},{"speaker":"homme","name":"Pierre","french":"Enchanté, Marie ! Tu es française ?","arabic":"مسرور، ماري! أنت فرنسية؟"},{"speaker":"femme","name":"Marie","french":"Oui, je suis française. Et toi ?","arabic":"نعم، أنا فرنسية. وأنت؟"},{"speaker":"homme","name":"Pierre","french":"Moi aussi ! Je suis de Paris.","arabic":"أنا أيضاً! أنا من باريس."},{"speaker":"femme","name":"Marie","french":"Super ! Moi, je suis de Lyon.","arabic":"رائع! أنا من ليون."}]},
+  {"id":2,"title":"Au café","title_ar":"في المقهى","level":"A1","lines":[{"speaker":"femme","name":"Marie","french":"Bonjour ! Qu'est-ce que tu veux boire ?","arabic":"مرحباً! ماذا تريد أن تشرب؟"},{"speaker":"homme","name":"Pierre","french":"Je voudrais un café, s'il te plaît.","arabic":"أود قهوةً من فضلك."},{"speaker":"femme","name":"Marie","french":"Moi, je prends un thé vert.","arabic":"أنا آخذ شاياً أخضر."},{"speaker":"homme","name":"Pierre","french":"Tu veux un croissant aussi ?","arabic":"تريدين كرواسوناً أيضاً؟"},{"speaker":"femme","name":"Marie","french":"Oui, volontiers ! Merci.","arabic":"نعم بكل سرور! شكراً."},{"speaker":"homme","name":"Pierre","french":"Parfait ! Je vais commander.","arabic":"ممتاز! سأطلب."}]},
+  {"id":3,"title":"Demander son chemin","title_ar":"طلب الطريق","level":"A1","lines":[{"speaker":"homme","name":"Pierre","french":"Excusez-moi, où est la gare ?","arabic":"اعذروني أين المحطة؟"},{"speaker":"femme","name":"Marie","french":"La gare ? C'est tout droit.","arabic":"المحطة؟ إنها مباشرةً."},{"speaker":"homme","name":"Pierre","french":"C'est loin d'ici ?","arabic":"إنها بعيدة من هنا؟"},{"speaker":"femme","name":"Marie","french":"Non, c'est à cinq minutes à pied.","arabic":"لا إنها على بعد خمس دقائق مشياً."},{"speaker":"homme","name":"Pierre","french":"Merci beaucoup madame !","arabic":"شكراً جزيلاً سيدتي!"},{"speaker":"femme","name":"Marie","french":"Je vous en prie, bonne journée !","arabic":"عفواً نهار سعيد!"}]},
+  {"id":4,"title":"Au restaurant","title_ar":"في المطعم","level":"A1","lines":[{"speaker":"homme","name":"Pierre","french":"Tu as faim ? On va au restaurant ?","arabic":"عندك جوع؟ نذهب إلى المطعم؟"},{"speaker":"femme","name":"Marie","french":"Bonne idée ! Je meurs de faim.","arabic":"فكرة جيدة! أموت من الجوع."},{"speaker":"homme","name":"Pierre","french":"Qu'est-ce que tu veux manger ?","arabic":"ماذا تريدين أن تأكلي؟"},{"speaker":"femme","name":"Marie","french":"Je voudrais une salade et du poisson.","arabic":"أود سلطةً وسمكاً."},{"speaker":"homme","name":"Pierre","french":"Moi, je prends un steak-frites.","arabic":"آخذ شريحة لحم مع بطاطا مقلية."},{"speaker":"femme","name":"Marie","french":"Miam ! Ça a l'air bon !","arabic":"لذيذ! يبدو جيداً!"}]},
+  {"id":5,"title":"Parler de ses loisirs","title_ar":"التحدث عن الهوايات","level":"A1","lines":[{"speaker":"homme","name":"Pierre","french":"Qu'est-ce que tu aimes faire ?","arabic":"ماذا تحب أن تفعل؟"},{"speaker":"femme","name":"Marie","french":"J'aime lire et écouter de la musique.","arabic":"أحب القراءة واستماع الموسيقى."},{"speaker":"homme","name":"Pierre","french":"Moi, je préfère le sport.","arabic":"أنا أفضل الرياضة."},{"speaker":"femme","name":"Marie","french":"Tu fais quel sport ?","arabic":"أي رياضة تمارس؟"},{"speaker":"homme","name":"Pierre","french":"Je joue au football et je nage.","arabic":"ألعب كرة القدم وأسبح."},{"speaker":"femme","name":"Marie","french":"Super ! On peut faire du sport ensemble.","arabic":"رائع! يمكننا ممارسة الرياضة معاً."}]},
+  {"id":6,"title":"Faire les courses","title_ar":"التسوق","level":"A1","lines":[{"speaker":"femme","name":"Marie","french":"On va au supermarché ?","arabic":"نذهب إلى السوبرماركت؟"},{"speaker":"homme","name":"Pierre","french":"Oui, j'ai besoin de pain et de lait.","arabic":"نعم أحتاج خبزاً وحليباً."},{"speaker":"femme","name":"Marie","french":"Moi, je dois acheter des fruits.","arabic":"أنا يجب أن أشتري فواكه."},{"speaker":"homme","name":"Pierre","french":"Tu as pris un caddie ?","arabic":"أخذت عربة تسوق؟"},{"speaker":"femme","name":"Marie","french":"Oui, le voilà. On y va !","arabic":"نعم ها هي. نذهب!"},{"speaker":"homme","name":"Pierre","french":"D'accord, allons-y !","arabic":"حسناً نذهب!"}]},
+  {"id":7,"title":"À la pharmacie","title_ar":"في الصيدلية","level":"A2","lines":[{"speaker":"homme","name":"Client","french":"Bonjour, j'ai mal à la tête.","arabic":"صباح الخير عندي صداع."},{"speaker":"femme","name":"Pharmacienne","french":"Je peux vous aider. Vous avez de la fièvre ?","arabic":"يمكنني مساعدتك. هل عندك حرارة؟"},{"speaker":"homme","name":"Client","french":"Non, juste un mal de tête depuis hier.","arabic":"لا فقط صداع منذ أمس."},{"speaker":"femme","name":"Pharmacienne","french":"Je vous recommande du paracétamol.","arabic":"أنصحك بالباراسيتامول."},{"speaker":"homme","name":"Client","french":"Merci, combien ça coûte ?","arabic":"شكراً كم ثمنه؟"},{"speaker":"femme","name":"Pharmacienne","french":"Cinq euros, bonne journée !","arabic":"خمسة يوروهات نهار سعيد!"}]},
+  {"id":8,"title":"Chez le médecin","title_ar":"عند الطبيب","level":"A2","lines":[{"speaker":"femme","name":"Docteur","french":"Bonjour, qu'est-ce qui vous amène ?","arabic":"مرحباً ما الذي أتى بك؟"},{"speaker":"homme","name":"Patient","french":"Je tousse depuis une semaine.","arabic":"أنا أسعل منذ أسبوع."},{"speaker":"femme","name":"Docteur","french":"Je vais vous examiner. Ouvrez la bouche.","arabic":"سأفحصك. افتح فمك."},{"speaker":"homme","name":"Patient","french":"AAAAH...","arabic":"آآآآه..."},{"speaker":"femme","name":"Docteur","french":"Ce n'est pas grave, juste un rhume.","arabic":"ليس خطيراً مجرد نزلة برد."},{"speaker":"homme","name":"Patient","french":"Ouf ! Merci docteur.","arabic":"أوف! شكراً دكتور."}]},
+  {"id":9,"title":"À la gare","title_ar":"في محطة القطار","level":"A2","lines":[{"speaker":"homme","name":"Pierre","french":"Bonjour, un billet pour Paris s'il vous plaît.","arabic":"صباح الخير تذكرة إلى باريس من فضلك."},{"speaker":"femme","name":"Agent","french":"Aller simple ou aller-retour ?","arabic":"ذهاب فقط أم ذهاب وعودة؟"},{"speaker":"homme","name":"Pierre","french":"Aller-retour, s'il vous plaît.","arabic":"ذهاب وعودة من فضلك."},{"speaker":"femme","name":"Agent","french":"Cela fait 78 euros.","arabic":"78 يورو من فضلك."},{"speaker":"homme","name":"Pierre","french":"Voilà. À quelle heure part le train ?","arabic":"تفضل. في أي ساعة يغادر القطار؟"},{"speaker":"femme","name":"Agent","french":"À 14h30, quai numéro 3.","arabic":"في 14:30 الرصيف رقم 3."}]},
+  {"id":10,"title":"À l'hôtel","title_ar":"في الفندق","level":"A2","lines":[{"speaker":"femme","name":"Cliente","french":"Bonjour, j'ai une réservation.","arabic":"مرحباً عندي حجز."},{"speaker":"homme","name":"Réceptionniste","french":"Bonjour madame, votre nom ?","arabic":"صباح الخير سيدتي اسمك؟"},{"speaker":"femme","name":"Cliente","french":"Dupont. Marie Dupont.","arabic":"دوبون. ماري دوبون."},{"speaker":"homme","name":"Réceptionniste","french":"Oui, chambre 205, au deuxième étage.","arabic":"نعم الغرفة 205 في الطابق الثاني."},{"speaker":"femme","name":"Cliente","french":"Le petit-déjeuner est inclus ?","arabic":"هل الفطور مشمول؟"},{"speaker":"homme","name":"Réceptionniste","french":"Oui, de 7h à 10h au rez-de-chaussée.","arabic":"نعم من 7 إلى 10 في الطابق الأرضي."}]},
+  {"id":11,"title":"Les projets de vacances","title_ar":"مشاريع العطلة","level":"A2","lines":[{"speaker":"homme","name":"Pierre","french":"Tu as prévu quelque chose pour les vacances ?","arabic":"هل خططت شيئاً للعطلة؟"},{"speaker":"femme","name":"Marie","french":"Oui ! Je vais aller en Espagne.","arabic":"نعم! سأذهب إلى إسبانيا."},{"speaker":"homme","name":"Pierre","french":"Génial ! Pour combien de temps ?","arabic":"رائع! لكم من الوقت؟"},{"speaker":"femme","name":"Marie","french":"Deux semaines, au mois d'août.","arabic":"أسبوعان في شهر أغسطس."},{"speaker":"homme","name":"Pierre","french":"Tu vas à la plage ?","arabic":"هل ستذهب إلى الشاطئ؟"},{"speaker":"femme","name":"Marie","french":"Oui, à Barcelone !","arabic":"نعم إلى برشلونة!"}]},
+  {"id":12,"title":"Au travail","title_ar":"في العمل","level":"B1","lines":[{"speaker":"homme","name":"Chef","french":"Bonjour, nous avons une réunion à 10h.","arabic":"صباح الخير عندنا اجتماع في العاشرة."},{"speaker":"femme","name":"Employée","french":"Très bien, je prépare les documents.","arabic":"حسناً أحضر المستندات."},{"speaker":"homme","name":"Chef","french":"Et le rapport du projet ?","arabic":"وتقرير المشروع؟"},{"speaker":"femme","name":"Employée","french":"Je l'ai terminé hier soir.","arabic":"أنهيته البارحة."},{"speaker":"homme","name":"Chef","french":"Parfait ! Vous êtes très efficace.","arabic":"ممتاز! أنت فعالة جداً."},{"speaker":"femme","name":"Employée","french":"Merci, j'aime mon travail !","arabic":"شكراً أحب عملي!"}]},
+  {"id":13,"title":"Entretien d'embauche","title_ar":"مقابلة عمل","level":"B1","lines":[{"speaker":"femme","name":"Recruteuse","french":"Parlez-moi de votre expérience.","arabic":"تحدث عن خبرتك."},{"speaker":"homme","name":"Candidat","french":"J'ai travaillé cinq ans dans le marketing.","arabic":"عملت خمس سنوات في التسويق."},{"speaker":"femme","name":"Recruteuse","french":"Quelles sont vos compétences ?","arabic":"ما هي مهاراتك؟"},{"speaker":"homme","name":"Candidat","french":"Je maîtrise les réseaux sociaux et l'anglais.","arabic":"أتقن وسائل التواصل الاجتماعي والإنجليزية."},{"speaker":"femme","name":"Recruteuse","french":"Pourquoi voulez-vous travailler chez nous ?","arabic":"لماذا تريد العمل عندنا؟"},{"speaker":"homme","name":"Candidat","french":"Parce que votre entreprise est innovante.","arabic":"لأن شركتكم مبتكرة."}]},
+  {"id":14,"title":"À la banque","title_ar":"في البنك","level":"B1","lines":[{"speaker":"femme","name":"Cliente","french":"Bonjour, je voudrais ouvrir un compte.","arabic":"مرحباً أود فتح حساب."},{"speaker":"homme","name":"Banquier","french":"Bien sûr. Vous avez une pièce d'identité ?","arabic":"بالطبع. عندك بطاقة هوية؟"},{"speaker":"femme","name":"Cliente","french":"Oui, voici mon passeport.","arabic":"نعم هذا جواز سفري."},{"speaker":"homme","name":"Banquier","french":"Merci. C'est pour un compte courant ou épargne ?","arabic":"شكراً. لحساب جاري أم توفير؟"},{"speaker":"femme","name":"Cliente","french":"Compte courant, s'il vous plaît.","arabic":"حساب جاري من فضلك."},{"speaker":"homme","name":"Banquier","french":"Voilà, c'est fait. Vous recevrez votre carte sous 5 jours.","arabic":"تم الأمر. ستستلم بطاقتك خلال 5 أيام."}]},
+  {"id":15,"title":"Planifier une sortie","title_ar":"تخطيط نزهة","level":"B1","lines":[{"speaker":"homme","name":"Pierre","french":"Ça te dit d'aller au cinéma ce week-end ?","arabic":"هل ترغبين في الذهاب إلى السينما نهاية الأسبوع؟"},{"speaker":"femme","name":"Marie","french":"Oui, bonne idée ! Quel film tu veux voir ?","arabic":"نعم فكرة جيدة! أي فيلم تريد أن ترى؟"},{"speaker":"homme","name":"Pierre","french":"Je voudrais voir le nouveau film de science-fiction.","arabic":"أود رؤية فيلم الخيال العلمي الجديد."},{"speaker":"femme","name":"Marie","french":"D'accord, j'ai entendu dire qu'il était excellent.","arabic":"حسناً سمعت أنه ممتاز."},{"speaker":"homme","name":"Pierre","french":"Je peux prendre les billets en ligne ça t'évite la queue.","arabic":"يمكنني أخذ التذاكر أونلاين لتجنب الطابور."},{"speaker":"femme","name":"Marie","french":"Super organisé ! Merci Pierre.","arabic":"منظم جداً! شكراً بيير."}]},
+  {"id":16,"title":"Les transports en commun","title_ar":"وسائل النقل العامة","level":"B1","lines":[{"speaker":"femme","name":"Touriste","french":"Excusez-moi, comment aller au Musée du Louvre ?","arabic":"اعذروني كيف أذهب إلى متحف اللوفر؟"},{"speaker":"homme","name":"Passant","french":"Vous pouvez prendre le métro, ligne 1.","arabic":"يمكنك أخذ المترو الخط 1."},{"speaker":"femme","name":"Touriste","french":"Et quel arrêt ?","arabic":"وأي محطة؟"},{"speaker":"homme","name":"Passant","french":"Palais Royal - Musée du Louvre.","arabic":"قصر رويال - متحف اللوفر."},{"speaker":"femme","name":"Touriste","french":"Merci beaucoup ! Et le ticket ?","arabic":"شكراً جزيلاً! والتذكرة؟"},{"speaker":"homme","name":"Passant","french":"2 euros au distributeur là-bas.","arabic":"2 يورو من الموزع هناك."}]},
+  {"id":17,"title":"Débat : l'écologie","title_ar":"نقاش: البيئة","level":"B2","lines":[{"speaker":"homme","name":"Pierre","french":"Tu penses quoi du réchauffement climatique ?","arabic":"ما رأيك في الاحتباس الحراري؟"},{"speaker":"femme","name":"Marie","french":"C'est un problème grave. Il faut agir maintenant.","arabic":"هي مشكلة خطيرة. يجب التحرك الآن."},{"speaker":"homme","name":"Pierre","french":"Oui, mais les gouvernements ne font pas assez.","arabic":"نعم لكن الحكومات لا تفعل ما يكفي."},{"speaker":"femme","name":"Marie","french":"Je suis d'accord. Mais on peut agir à notre niveau.","arabic":"أوافق. لكن يمكننا التحرك على مستوانا."},{"speaker":"homme","name":"Pierre","french":"Par exemple, réduire les déchets et le plastique.","arabic":"مثلاً تقليل النفايات والبلاستيك."},{"speaker":"femme","name":"Marie","french":"Exactement. J'ai déjà arrêté les bouteilles en plastique.","arabic":"بالضبط. لقد توقفت عن القوارير البلاستيكية."}]},
+  {"id":18,"title":"Projet professionnel","title_ar":"مشروع مهني","level":"B2","lines":[{"speaker":"femme","name":"Sophie","french":"Je pense à créer ma propre entreprise.","arabic":"أفكر في إنشاء شركتي الخاصة."},{"speaker":"homme","name":"Marc","french":"C'est une bonne idée. Dans quel domaine ?","arabic":"فكرة جيدة. في أي مجال؟"},{"speaker":"femme","name":"Sophie","french":"Le consulting en marketing digital.","arabic":"الاستشارات في التسويق الرقمي."},{"speaker":"homme","name":"Marc","french":"Il y a beaucoup de concurrence. Tu as un plan ?","arabic":"هناك منافسة كبيرة. عندك خطة؟"},{"speaker":"femme","name":"Sophie","french":"Oui, j'ai préparé un business plan détaillé.","arabic":"نعم أعددت خطة عمل مفصلة."},{"speaker":"homme","name":"Marc","french":"Impressionnant ! Je te souhaite de réussir.","arabic":"مثير للإعجاب! أتمنى لك النجاح."}]},
+  {"id":19,"title":"Les réseaux sociaux","title_ar":"وسائل التواصل الاجتماعي","level":"B2","lines":[{"speaker":"homme","name":"Pierre","french":"Tu passes combien de temps sur les réseaux sociaux ?","arabic":"كم من الوقت تقضي على وسائل التواصل؟"},{"speaker":"femme","name":"Marie","french":"Trop ! Je devrais réduire.","arabic":"كثير جداً! يجب أن أقلل."},{"speaker":"homme","name":"Pierre","french":"Moi aussi, c'est une addiction.","arabic":"أنا أيضاً إنه إدمان."},{"speaker":"femme","name":"Marie","french":"J'ai essayé de désactiver les notifications.","arabic":"حاولت تعطيل الإشعارات."},{"speaker":"homme","name":"Pierre","french":"Et ça a marché ?","arabic":"وهل نجح ذلك؟"},{"speaker":"femme","name":"Marie","french":"Un peu, mais c'est difficile.","arabic":"قليلاً لكنه صعب."}]},
+  {"id":20,"title":"Débat : l'intelligence artificielle","title_ar":"نقاش: الذكاء الاصطناعي","level":"C1","lines":[{"speaker":"homme","name":"Pierre","french":"L'IA va transformer le monde du travail.","arabic":"الذكاء الاصطناعي سيغير عالم العمل."},{"speaker":"femme","name":"Marie","french":"Oui, mais beaucoup de gens vont perdre leur emploi.","arabic":"نعم لكن كثيرين سيفقدون وظائفهم."},{"speaker":"homme","name":"Pierre","french":"C'est vrai, mais de nouveaux métiers vont créer.","arabic":"صحيح لكن وظائف جديدة ستُخلق."},{"speaker":"femme","name":"Marie","french":"Quels genres de métiers par exemple ?","arabic":"أي نوع من الوظائف مثلاً؟"},{"speaker":"homme","name":"Pierre","french":"Des métiers liés à la gestion des données et à l'éthique.","arabic":"وظائف مرتبطة بإدارة البيانات والأخلاقيات."},{"speaker":"femme","name":"Marie","french":"Il faut donc repenser notre système éducatif.","arabic":"إذاً يجب إعادة التفكير في نظامنا التعليمي."}]},
+  {"id":21,"title":"L'immigration et l'intégration","title_ar":"الهجرة والاندماج","level":"C1","lines":[{"speaker":"femme","name":"Marie","french":"L'intégration est un défi pour beaucoup de pays.","arabic":"الاندماج تحدٍ لكثير من البلدان."},{"speaker":"homme","name":"Pierre","french":"Je pense que la langue est la clé de l'intégration.","arabic":"أعتقد أن اللغة هي مفتاح الاندماج."},{"speaker":"femme","name":"Marie","french":"Oui, et aussi la connaissance des valeurs républicaines.","arabic":"نعم وأيضاً معرفة القيم الجمهورية."},{"speaker":"homme","name":"Pierre","french":"L'école joue un rôle important dans ce processus.","arabic":"المدرسة تلعب دوراً مهماً في هذه العملية."},{"speaker":"femme","name":"Marie","french":"Et les associations aussi.","arabic":"والجمعيات أيضاً."},{"speaker":"homme","name":"Pierre","french":"Finalement, c'est un effort collectif.","arabic":"في النهاية هو جهد جماعي."}]},
+  {"id":22,"title":"Débat : la mondialisation","title_ar":"نقاش: العولمة","level":"C1","lines":[{"speaker":"femme","name":"Marie","french":"La mondialisation a des avantages et des inconvénients.","arabic":"العولمة لها مزايا وعيوب."},{"speaker":"homme","name":"Pierre","french":"Les avantages ? Les échanges culturels et économiques.","arabic":"المزايا؟ التبادل الثقافي والاقتصادي."},{"speaker":"femme","name":"Marie","french":"Et les inconvénients ?","arabic":"والعيوب؟"},{"speaker":"homme","name":"Pierre","french":"Les inégalités augmentent et l'environnement souffre.","arabic":"تزداد الفجوة والبيئة تتضرر."},{"speaker":"femme","name":"Marie","french":"Il faut une mondialisation plus équitable.","arabic":"يجب أن تكون العولمة أكثر إنصافاً."},{"speaker":"homme","name":"Pierre","french":"Je suis tout à fait d'accord avec toi.","arabic":"أوافقك تماماً."}]},
+  {"id":23,"title":"Discussion philosophique","title_ar":"نقاش فلسفي","level":"C2","lines":[{"speaker":"homme","name":"Pierre","french":"Selon toi, qu'est-ce que le bonheur ?","arabic":"برأيك ما هي السعادة؟"},{"speaker":"femme","name":"Marie","french":"Une question bien complexe. Le bonheur est subjectif.","arabic":"سؤال معقد جداً. السعادة ذاتية."},{"speaker":"homme","name":"Pierre","french":"Les philosophes disent que le bonheur est l'absence de souffrance.","arabic":"الفلاسفة يقولون أن السعادة غياب المعاناة."},{"speaker":"femme","name":"Marie","french":"Pour moi, le bonheur est dans les petites choses du quotidien.","arabic":"بالنسبة لي السعادة في الأشياء الصغيرة اليومية."},{"speaker":"homme","name":"Pierre","french":"C'est intéressant. Est-ce que l'argent fait le bonheur ?","arabic":"هذا مثير. هل المال يجلب السعادة؟"},{"speaker":"femme","name":"Marie","french":"Non, mais il y contribue jusqu'à un certain point.","arabic":"لا لكنه يساهم إلى حد معين."}]},
+  {"id":24,"title":"L'art et la culture","title_ar":"الفن والثقافة","level":"C2","lines":[{"speaker":"femme","name":"Marie","french":"As-tu visité la nouvelle exposition au centre Pompidou ?","arabic":"هل زرت المعرض الجديد في مركز بومبيدو؟"},{"speaker":"homme","name":"Pierre","french":"Pas encore. Elle est bien ?","arabic":"ليس بعد. هل هو جيد؟"},{"speaker":"femme","name":"Marie","french":"C'est une rétrospective fascinante de l'art contemporain.","arabic":"إنه استعادي رائع للفن المعاصر."},{"speaker":"homme","name":"Pierre","french":"L'art contemporain me laisse souvent perplexe.","arabic":"الفن المعاصر غالباً ما يحيرني."},{"speaker":"femme","name":"Marie","french":"Il faut le contempler avec un esprit ouvert.","arabic":"يجب تأمله بعقل منفتح."},{"speaker":"homme","name":"Pierre","french":"Tu as raison. Allons-y ce weekend.","arabic":"أنت على حق. لنذهب هذا الأسبوع."}]}
 ]

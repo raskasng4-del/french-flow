@@ -830,5 +830,941 @@
     "level": "B2",
     "example": "Actuellement, je cherche un emploi.",
     "example_ar": "حالياً، أبحث عن عمل."
+  },
+  {
+    "french": "pardon",
+    "arabic": "عفواً/سمحاً",
+    "level": "A1",
+    "example": "Pardon, je suis en retard.",
+    "example_ar": "سمحاً، أنا متأخر.",
+    "id": 105
+  },
+  {
+    "french": "bonsoir",
+    "arabic": "مساء الخير",
+    "level": "A1",
+    "example": "Bonsoir madame Dupont.",
+    "example_ar": "مساء الخير سيدة دوبون.",
+    "id": 106
+  },
+  {
+    "french": "bonne nuit",
+    "arabic": "تصبح على خير",
+    "level": "A1",
+    "example": "Bonne nuit, fais de beaux rêves.",
+    "example_ar": "تصبح على خير، أحلام سعيدة.",
+    "id": 107
+  },
+  {
+    "french": "beaucoup",
+    "arabic": "كثيراً",
+    "level": "A1",
+    "example": "Je t'aime beaucoup.",
+    "example_ar": "أحبك كثيراً.",
+    "id": 108
+  },
+  {
+    "french": "voiture",
+    "arabic": "سيارة",
+    "level": "A1",
+    "example": "La voiture est rouge.",
+    "example_ar": "السيارة حمراء.",
+    "id": 109
+  },
+  {
+    "french": "chat",
+    "arabic": "قط",
+    "level": "A1",
+    "example": "Le chat dort sur le canapé.",
+    "example_ar": "القط نائم على الأريكة.",
+    "id": 110
+  },
+  {
+    "french": "chien",
+    "arabic": "كلب",
+    "level": "A1",
+    "example": "Le chien court dans le parc.",
+    "example_ar": "الكلب يجري في الحديقة.",
+    "id": 111
+  },
+  {
+    "french": "soleil",
+    "arabic": "شمس",
+    "level": "A1",
+    "example": "Le soleil brille aujourd'hui.",
+    "example_ar": "الشمس تشرق اليوم.",
+    "id": 112
+  },
+  {
+    "french": "pluie",
+    "arabic": "مطر",
+    "level": "A1",
+    "example": "Il pleut aujourd'hui.",
+    "example_ar": "إنها تمطر اليوم.",
+    "id": 113
+  },
+  {
+    "french": "vite",
+    "arabic": "بسرعة",
+    "level": "A2",
+    "example": "Il court très vite.",
+    "example_ar": "يجري بسرعة كبيرة.",
+    "id": 114
+  },
+  {
+    "french": "lentement",
+    "arabic": "ببطء",
+    "level": "A2",
+    "example": "Parle lentement s'il te plaît.",
+    "example_ar": "تكلم ببطء من فضلك.",
+    "id": 115
+  },
+  {
+    "french": "toujours",
+    "arabic": "دائماً",
+    "level": "A2",
+    "example": "Elle est toujours souriante.",
+    "example_ar": "هي دائماً مبتسمة.",
+    "id": 116
+  },
+  {
+    "french": "parfois",
+    "arabic": "أحياناً",
+    "level": "A2",
+    "example": "Parfois je vais au cinéma.",
+    "example_ar": "أحياناً أذهب إلى السينما.",
+    "id": 117
+  },
+  {
+    "french": "souvent",
+    "arabic": "غالباً",
+    "level": "A2",
+    "example": "Nous allons souvent à la plage.",
+    "example_ar": "نذهب غالباً إلى الشاطئ.",
+    "id": 118
+  },
+  {
+    "french": "jamais",
+    "arabic": "أبداً",
+    "level": "A2",
+    "example": "Je ne fume jamais.",
+    "example_ar": "أنا لا أدخن أبداً.",
+    "id": 119
+  },
+  {
+    "french": "ensemble",
+    "arabic": "معاً",
+    "level": "A2",
+    "example": "Nous travaillons ensemble.",
+    "example_ar": "نعمل معاً.",
+    "id": 120
+  },
+  {
+    "french": "costume",
+    "arabic": "بدلة",
+    "level": "A2",
+    "example": "Il porte un costume noir.",
+    "example_ar": "يرتدي بدلة سوداء.",
+    "id": 121
+  },
+  {
+    "french": "chaussures",
+    "arabic": "أحذية",
+    "level": "A2",
+    "example": "Mes chaussures sont neuves.",
+    "example_ar": "حذائي جديد.",
+    "id": 122
+  },
+  {
+    "french": "cuisine",
+    "arabic": "مطبخ",
+    "level": "A2",
+    "example": "La cuisine est moderne.",
+    "example_ar": "المطبخ حديث.",
+    "id": 123
+  },
+  {
+    "french": "chambre",
+    "arabic": "غرفة نوم",
+    "level": "A2",
+    "example": "Ma chambre est bleue.",
+    "example_ar": "غرفتي زرقاء.",
+    "id": 124
+  },
+  {
+    "french": "jardin",
+    "arabic": "حديقة",
+    "level": "A2",
+    "example": "Le jardin est magnifique.",
+    "example_ar": "الحديقة رائعة.",
+    "id": 125
+  },
+  {
+    "french": "fenêtre",
+    "arabic": "نافذة",
+    "level": "A2",
+    "example": "Ouvre la fenêtre s'il te plaît.",
+    "example_ar": "افتح النافذة من فضلك.",
+    "id": 126
+  },
+  {
+    "french": "porte",
+    "arabic": "باب",
+    "level": "A2",
+    "example": "Ferme la porte derrière toi.",
+    "example_ar": "أغلق الباب وراءك.",
+    "id": 127
+  },
+  {
+    "french": "bureau",
+    "arabic": "مكتب",
+    "level": "A2",
+    "example": "Le bureau est en désordre.",
+    "example_ar": "المكتب في فوضى.",
+    "id": 128
+  },
+  {
+    "french": "chaise",
+    "arabic": "كرسي",
+    "level": "A2",
+    "example": "La chaise est confortable.",
+    "example_ar": "الكرسي مريح.",
+    "id": 129
+  },
+  {
+    "french": "vêtements",
+    "arabic": "ملابس",
+    "level": "A2",
+    "example": "Ses vêtements sont élégants.",
+    "example_ar": "ملابسه أنيقة.",
+    "id": 130
+  },
+  {
+    "french": "magasin",
+    "arabic": "متجر",
+    "level": "A2",
+    "example": "Le magasin est fermé le dimanche.",
+    "example_ar": "المتجر مغلق يوم الأحد.",
+    "id": 131
+  },
+  {
+    "french": "entreprise",
+    "arabic": "شركة",
+    "level": "B1",
+    "example": "Il travaille dans une grande entreprise.",
+    "example_ar": "يعمل في شركة كبيرة.",
+    "id": 132
+  },
+  {
+    "french": "salaire",
+    "arabic": "راتب",
+    "level": "B1",
+    "example": "Le salaire est payé mensuellement.",
+    "example_ar": "الراتب يدفع شهرياً.",
+    "id": 133
+  },
+  {
+    "french": "réunion",
+    "arabic": "اجتماع",
+    "level": "B1",
+    "example": "La réunion commence à 10h.",
+    "example_ar": "الاجتماع يبدأ في العاشرة.",
+    "id": 134
+  },
+  {
+    "french": "rendez-vous",
+    "arabic": "موعد",
+    "level": "B1",
+    "example": "J'ai un rendez-vous chez le médecin.",
+    "example_ar": "عندي موعد عند الطبيب.",
+    "id": 135
+  },
+  {
+    "french": "voyage",
+    "arabic": "سفر",
+    "level": "B1",
+    "example": "Le voyage dure trois heures.",
+    "example_ar": "السفر يستغرق ثلاث ساعات.",
+    "id": 136
+  },
+  {
+    "french": "bagage",
+    "arabic": "حقائب",
+    "level": "B1",
+    "example": "Mes bagages sont dans la voiture.",
+    "example_ar": "حقائبي في السيارة.",
+    "id": 137
+  },
+  {
+    "french": "aéroport",
+    "arabic": "مطار",
+    "level": "B1",
+    "example": "L'aéroport est loin du centre.",
+    "example_ar": "المطار بعيد عن المركز.",
+    "id": 138
+  },
+  {
+    "french": "gare",
+    "arabic": "محطة القطار",
+    "level": "B1",
+    "example": "La gare est à droite.",
+    "example_ar": "المحطة على اليمين.",
+    "id": 139
+  },
+  {
+    "french": "billet",
+    "arabic": "تذكرة",
+    "level": "B1",
+    "example": "J'ai acheté un billet aller-retour.",
+    "example_ar": "اشتريت تذكرة ذهاب وإياب.",
+    "id": 140
+  },
+  {
+    "french": "hôtel",
+    "arabic": "فندق",
+    "level": "B1",
+    "example": "L'hôtel est très confortable.",
+    "example_ar": "الفندق مريح جداً.",
+    "id": 141
+  },
+  {
+    "french": "réservation",
+    "arabic": "حجز",
+    "level": "B1",
+    "example": "J'ai fait une réservation pour ce soir.",
+    "example_ar": "قمت بحجز لهذا المساء.",
+    "id": 142
+  },
+  {
+    "french": "facture",
+    "arabic": "فاتورة",
+    "level": "B1",
+    "example": "La facture est sur la table.",
+    "example_ar": "الفاتورة على الطاولة.",
+    "id": 143
+  },
+  {
+    "french": "banque",
+    "arabic": "بنك",
+    "level": "B1",
+    "example": "La banque ouvre à 9 heures.",
+    "example_ar": "البنك يفتح في التاسعة.",
+    "id": 144
+  },
+  {
+    "french": "compte",
+    "arabic": "حساب",
+    "level": "B1",
+    "example": "J'ai ouvert un compte bancaire.",
+    "example_ar": "فتحت حساباً بنكياً.",
+    "id": 145
+  },
+  {
+    "french": "assurance",
+    "arabic": "تأمين",
+    "level": "B1",
+    "example": "L'assurance couvre tous les risques.",
+    "example_ar": "التأمين يغطي كل المخاطر.",
+    "id": 146
+  },
+  {
+    "french": "médecin",
+    "arabic": "طبيب",
+    "level": "B1",
+    "example": "Le médecin consulte de 14h à 18h.",
+    "example_ar": "الطبيب يستقبل من الثانية إلى السادسة.",
+    "id": 147
+  },
+  {
+    "french": "hôpital",
+    "arabic": "مستشفى",
+    "level": "B1",
+    "example": "L'hôpital est en centre-ville.",
+    "example_ar": "المستشفى في وسط المدينة.",
+    "id": 148
+  },
+  {
+    "french": "pharmacie",
+    "arabic": "صيدلية",
+    "level": "B1",
+    "example": "La pharmacie est ouverte la nuit.",
+    "example_ar": "الصيدلية مفتوحة ليلاً.",
+    "id": 149
+  },
+  {
+    "french": "ordonnance",
+    "arabic": "وصفة طبية",
+    "level": "B1",
+    "example": "Le docteur m'a donné une ordonnance.",
+    "example_ar": "أعطاني الطبيب وصفة طبية.",
+    "id": 150
+  },
+  {
+    "french": "impôt",
+    "arabic": "ضريبة",
+    "level": "B1",
+    "example": "Je dois payer mes impôts avant le 31 mai.",
+    "example_ar": "يجب أن أدفع ضرائبي قبل 31 مايو.",
+    "id": 151
+  },
+  {
+    "french": "loyer",
+    "arabic": "إيجار",
+    "level": "B1",
+    "example": "Le loyer est de 800 euros par mois.",
+    "example_ar": "الإيجار 800 يورو في الشهر.",
+    "id": 152
+  },
+  {
+    "french": "voisin",
+    "arabic": "جار",
+    "level": "B1",
+    "example": "Mon voisin est très sympathique.",
+    "example_ar": "جاري ودود جداً.",
+    "id": 153
+  },
+  {
+    "french": "courrier",
+    "arabic": "بريد",
+    "level": "B1",
+    "example": "J'attends un courrier important.",
+    "example_ar": "أنتظر بريداً مهماً.",
+    "id": 154
+  },
+  {
+    "french": "colis",
+    "arabic": "طرد",
+    "level": "B1",
+    "example": "Le colis est arrivé ce matin.",
+    "example_ar": "الطرد وصل هذا الصباح.",
+    "id": 155
+  },
+  {
+    "french": "abonnement",
+    "arabic": "اشتراك",
+    "level": "B1",
+    "example": "J'ai un abonnement mensuel.",
+    "example_ar": "عندي اشتراك شهري.",
+    "id": 156
+  },
+  {
+    "french": "négociation",
+    "arabic": "تفاوض",
+    "level": "B2",
+    "example": "Les négociations ont échoué.",
+    "example_ar": "المفاوضات فشلت.",
+    "id": 157
+  },
+  {
+    "french": "investissement",
+    "arabic": "استثمار",
+    "level": "B2",
+    "example": "L'investissement est rentable.",
+    "example_ar": "الاستثمار مربح.",
+    "id": 158
+  },
+  {
+    "french": "concurrence",
+    "arabic": "منافسة",
+    "level": "B2",
+    "example": "La concurrence est très forte.",
+    "example_ar": "المنافسة شديدة جداً.",
+    "id": 159
+  },
+  {
+    "french": "partenariat",
+    "arabic": "شراكة",
+    "level": "B2",
+    "example": "Nous avons signé un partenariat.",
+    "example_ar": "وقعنا شراكة.",
+    "id": 160
+  },
+  {
+    "french": "stratégie",
+    "arabic": "استراتيجية",
+    "level": "B2",
+    "example": "La stratégie de l'entreprise a changé.",
+    "example_ar": "استراتيجية الشركة تغيرت.",
+    "id": 161
+  },
+  {
+    "french": "innovation",
+    "arabic": "ابتكار",
+    "level": "B2",
+    "example": "L'innovation est essentielle.",
+    "example_ar": "الابتكار أساسي.",
+    "id": 162
+  },
+  {
+    "french": "développement durable",
+    "arabic": "تنمية مستدامة",
+    "level": "B2",
+    "example": "Le développement durable est une priorité.",
+    "example_ar": "التنمية المستدامة أولوية.",
+    "id": 163
+  },
+  {
+    "french": "démocratie",
+    "arabic": "ديمقراطية",
+    "level": "B2",
+    "example": "La démocratie est un système politique.",
+    "example_ar": "الديمقراطية نظام سياسي.",
+    "id": 164
+  },
+  {
+    "french": "citoyenneté",
+    "arabic": "مواطنة",
+    "level": "B2",
+    "example": "La citoyenneté donne des droits et des devoirs.",
+    "example_ar": "المواطنة تعطي حقوقاً وواجباتاً.",
+    "id": 165
+  },
+  {
+    "french": "discrimination",
+    "arabic": "تمييز",
+    "level": "B2",
+    "example": "La discrimination est interdite par la loi.",
+    "example_ar": "التمييز ممنوع قانوناً.",
+    "id": 166
+  },
+  {
+    "french": "égalité",
+    "arabic": "مساواة",
+    "level": "B2",
+    "example": "L'égalité des sexes est un droit fondamental.",
+    "example_ar": "المساواة بين الجنسين حق أساسي.",
+    "id": 167
+  },
+  {
+    "french": "justice",
+    "arabic": "عدالة",
+    "level": "B2",
+    "example": "La justice est indépendante.",
+    "example_ar": "العدالة مستقلة.",
+    "id": 168
+  },
+  {
+    "french": "liberté",
+    "arabic": "حرية",
+    "level": "B2",
+    "example": "La liberté d'expression est protégée.",
+    "example_ar": "حرية التعبير محمية.",
+    "id": 169
+  },
+  {
+    "french": "responsabilité",
+    "arabic": "مسؤولية",
+    "level": "B2",
+    "example": "La responsabilité est partagée.",
+    "example_ar": "المسؤولية مشتركة.",
+    "id": 170
+  },
+  {
+    "french": "engagement",
+    "arabic": "التزام",
+    "level": "B2",
+    "example": "Son engagement est remarquable.",
+    "example_ar": "التزامه ملحوظ.",
+    "id": 171
+  },
+  {
+    "french": "conscience",
+    "arabic": "ضمير",
+    "level": "B2",
+    "example": "Il a une conscience professionnelle.",
+    "example_ar": "لديه ضمير مهني.",
+    "id": 172
+  },
+  {
+    "french": "ambition",
+    "arabic": "طموح",
+    "level": "B2",
+    "example": "L'ambition est une qualité.",
+    "example_ar": "الطموح صفة حميدة.",
+    "id": 173
+  },
+  {
+    "french": "détermination",
+    "arabic": "عزيمة",
+    "level": "B2",
+    "example": "Sa détermination est impressionnante.",
+    "example_ar": "عزيمته مدهشة.",
+    "id": 174
+  },
+  {
+    "french": "persévérance",
+    "arabic": "مثابرة",
+    "level": "B2",
+    "example": "La persévérance mène au succès.",
+    "example_ar": "المثابرة تؤدي إلى النجاح.",
+    "id": 175
+  },
+  {
+    "french": "patience",
+    "arabic": "صبر",
+    "level": "B2",
+    "example": "La patience est une vertu.",
+    "example_ar": "الصبر فضيلة.",
+    "id": 176
+  },
+  {
+    "french": "confiance",
+    "arabic": "ثقة",
+    "level": "B2",
+    "example": "La confiance est importante.",
+    "example_ar": "الثقة مهمة.",
+    "id": 177
+  },
+  {
+    "french": "sincérité",
+    "arabic": "إخلاص",
+    "level": "B2",
+    "example": "La sincérité est appréciée.",
+    "example_ar": "الإخلاص محبوب.",
+    "id": 178
+  },
+  {
+    "french": "humilité",
+    "arabic": "تواضع",
+    "level": "B2",
+    "example": "L'humilité est une grande qualité.",
+    "example_ar": "التواضع صفة عظيمة.",
+    "id": 179
+  },
+  {
+    "french": "générosité",
+    "arabic": "كرم",
+    "level": "B2",
+    "example": "Sa générosité est connue de tous.",
+    "example_ar": "كرمه معروف للجميع.",
+    "id": 180
+  },
+  {
+    "french": "tolérance",
+    "arabic": "تسامح",
+    "level": "B2",
+    "example": "La tolérance est essentielle.",
+    "example_ar": "التسامح ضروري.",
+    "id": 181
+  },
+  {
+    "french": "réfutation",
+    "arabic": "دحض",
+    "level": "C1",
+    "example": "Sa réfutation de l'argument était convaincante.",
+    "example_ar": "دحضه للحجة كان مقنعاً.",
+    "id": 182
+  },
+  {
+    "french": "pléthore",
+    "arabic": "وفرة",
+    "level": "C1",
+    "example": "Il y a une pléthore d'options.",
+    "example_ar": "هناك وفرة من الخيارات.",
+    "id": 183
+  },
+  {
+    "french": "ubiquité",
+    "arabic": "شيوع/وجود في كل مكان",
+    "level": "C1",
+    "example": "L'ubiquité d'Internet a changé nos vies.",
+    "example_ar": "شيوع الإنترنت غير حياتنا.",
+    "id": 184
+  },
+  {
+    "french": "anachronisme",
+    "arabic": "خطأ زمني",
+    "level": "C1",
+    "example": "Ce terme est un anachronisme.",
+    "example_ar": "هذا المصطلح خطأ زمني.",
+    "id": 185
+  },
+  {
+    "french": "antagonisme",
+    "arabic": "عداء/تناقض",
+    "level": "C1",
+    "example": "L'antagonisme entre les deux groupes est ancien.",
+    "example_ar": "العداء بين المجموعتين قديم.",
+    "id": 186
+  },
+  {
+    "french": "conjecture",
+    "arabic": "تخمين",
+    "level": "C1",
+    "example": "Ce n'est qu'une conjecture.",
+    "example_ar": "هذا مجرد تخمين.",
+    "id": 187
+  },
+  {
+    "french": "dichotomie",
+    "arabic": "انقسام ثنائي",
+    "level": "C1",
+    "example": "Il y a une dichotomie entre théorie et pratique.",
+    "example_ar": "هناك انقسام بين النظرية والتطبيق.",
+    "id": 188
+  },
+  {
+    "french": "hégémonie",
+    "arabic": "هيمنة",
+    "level": "C1",
+    "example": "L'hégémonie économique est contestée.",
+    "example_ar": "الهيمنة الاقتصادية محل نزاع.",
+    "id": 189
+  },
+  {
+    "french": "métamorphose",
+    "arabic": "تحول جذري",
+    "level": "C1",
+    "example": "La ville a subi une métamorphose complète.",
+    "example_ar": "المدينة خضعت لتحول جذري.",
+    "id": 190
+  },
+  {
+    "french": "paradigme",
+    "arabic": "نموذج فكري",
+    "level": "C1",
+    "example": "C'est un changement de paradigme.",
+    "example_ar": "هذا تغيير في النموذج الفكري.",
+    "id": 191
+  },
+  {
+    "french": "pléonasme",
+    "arabic": "حشو لفظي",
+    "level": "C1",
+    "example": "'Monter en haut' est un pléonasme.",
+    "example_ar": "'يصعد إلى الأعلى' هو حشو لفظي.",
+    "id": 192
+  },
+  {
+    "french": "sophisme",
+    "arabic": "مغالطة منطقية",
+    "level": "C1",
+    "example": "Ce raisonnement est un sophisme.",
+    "example_ar": "هذا الاستدلال مغالطة منطقية.",
+    "id": 193
+  },
+  {
+    "french": "dialectique",
+    "arabic": "جدلية",
+    "level": "C1",
+    "example": "La dialectique hégélienne est complexe.",
+    "example_ar": "الجدلية الهيغلية معقدة.",
+    "id": 194
+  },
+  {
+    "french": "épistémologie",
+    "arabic": "نظرية المعرفة",
+    "level": "C1",
+    "example": "L'épistémologie étudie la connaissance.",
+    "example_ar": "نظرية المعرفة تدرس المعرفة.",
+    "id": 195
+  },
+  {
+    "french": "herméneutique",
+    "arabic": "تأويلية",
+    "level": "C1",
+    "example": "L'herméneutique est l'art de l'interprétation.",
+    "example_ar": "التأويلية هي فن التفسير.",
+    "id": 196
+  },
+  {
+    "french": "ontologie",
+    "arabic": "أنطولوجيا",
+    "level": "C1",
+    "example": "L'ontologie étudie l'être.",
+    "example_ar": "الأنطولوجيا تدرس الوجود.",
+    "id": 197
+  },
+  {
+    "french": "phénoménologie",
+    "arabic": "فينومينولوجيا",
+    "level": "C1",
+    "example": "La phénoménologie examine l'expérience vécue.",
+    "example_ar": "الفينومينولوجيا تدرس التجربة المعاشة.",
+    "id": 198
+  },
+  {
+    "french": "sémiotique",
+    "arabic": "سيميائية",
+    "level": "C1",
+    "example": "La sémiotique analyse les signes.",
+    "example_ar": "السيميائية تحلل العلامات.",
+    "id": 199
+  },
+  {
+    "french": "subsidiarité",
+    "arabic": "تبعية",
+    "level": "C1",
+    "example": "Le principe de subsidiarité est européen.",
+    "example_ar": "مبدأ التبعية أوروبي.",
+    "id": 200
+  },
+  {
+    "french": "transversalité",
+    "arabic": "عرضية",
+    "level": "C1",
+    "example": "La transversalité des compétences est essentielle.",
+    "example_ar": "عرضية المهارات أساسية.",
+    "id": 201
+  },
+  {
+    "french": "exacerbation",
+    "arabic": "تفاقم",
+    "level": "C2",
+    "example": "L'exacerbation des tensions est préoccupante.",
+    "example_ar": "تفاقم التوترات مقلق.",
+    "id": 202
+  },
+  {
+    "french": "oblitérer",
+    "arabic": "يمحو/يزيل",
+    "level": "C2",
+    "example": "Le temps n'a pas oblitéré les souvenirs.",
+    "example_ar": "الزمن لم يمح الذكريات.",
+    "id": 203
+  },
+  {
+    "french": "délictueux",
+    "arabic": "مخالف للقانون",
+    "level": "C2",
+    "example": "Ce comportement est délictueux.",
+    "example_ar": "هذا السلوك مخالف للقانون.",
+    "id": 204
+  },
+  {
+    "french": "exogène",
+    "arabic": "خارجي المنشأ",
+    "level": "C2",
+    "example": "Les facteurs exogènes influencent l'économie.",
+    "example_ar": "العوامل الخارجية تؤثر على الاقتصاد.",
+    "id": 205
+  },
+  {
+    "french": "endogène",
+    "arabic": "داخلي المنشأ",
+    "level": "C2",
+    "example": "Le développement endogène est durable.",
+    "example_ar": "التنمية الداخلية مستدامة.",
+    "id": 206
+  },
+  {
+    "french": "récalcitrant",
+    "arabic": "متمرد/عاصٍ",
+    "level": "C2",
+    "example": "Ce problème est récalcitrant.",
+    "example_ar": "هذه المشكلة متمردة.",
+    "id": 207
+  },
+  {
+    "french": "sycophante",
+    "arabic": "متملق",
+    "level": "C2",
+    "example": "Le sycophante cherche les faveurs du roi.",
+    "example_ar": "المتملق يبحث عن حظوة الملك.",
+    "id": 208
+  },
+  {
+    "french": "prosaïque",
+    "arabic": "عادي/نثري",
+    "level": "C2",
+    "example": "La vie prosaïque n'a rien d'exceptionnel.",
+    "example_ar": "الحياة العادية لا شيء استثنائي فيها.",
+    "id": 209
+  },
+  {
+    "french": "ésotérique",
+    "arabic": "باطني/غامض",
+    "level": "C2",
+    "example": "Ce texte ésotérique est difficile à comprendre.",
+    "example_ar": "هذا النص الغامض صعب الفهم.",
+    "id": 210
+  },
+  {
+    "french": "exotérique",
+    "arabic": "واضح/عام",
+    "level": "C2",
+    "example": "La version exotérique est pour le grand public.",
+    "example_ar": "النسخة العامة للجمهور العريض.",
+    "id": 211
+  },
+  {
+    "french": "hétéroclite",
+    "arabic": "متنوع/غير متجانس",
+    "level": "C2",
+    "example": "Un groupe hétéroclite de personnes.",
+    "example_ar": "مجموعة غير متجانسة من الناس.",
+    "id": 212
+  },
+  {
+    "french": "magnanime",
+    "arabic": "كريم النفس/عظيم",
+    "level": "C2",
+    "example": "Un geste magnanime de sa part.",
+    "example_ar": "لفتة كريمة منه.",
+    "id": 213
+  },
+  {
+    "french": "pusillanime",
+    "arabic": "جبان/ضعيف القلب",
+    "level": "C2",
+    "example": "Une décision pusillanime.",
+    "example_ar": "قرار جبان.",
+    "id": 214
+  },
+  {
+    "french": "sempiternel",
+    "arabic": "أبدي/دائم",
+    "level": "C2",
+    "example": "La sempiternelle question du sens de la vie.",
+    "example_ar": "السؤال الأبدي عن معنى الحياة.",
+    "id": 215
+  },
+  {
+    "french": "tautologie",
+    "arabic": "تكرار/ترادف",
+    "level": "C2",
+    "example": "C'est une tautologie inutile.",
+    "example_ar": "هذا تكرار لا طائل منه.",
+    "id": 216
+  },
+  {
+    "french": "vociférer",
+    "arabic": "يصرخ/يهتف",
+    "level": "C2",
+    "example": "Il vociférait contre l'injustice.",
+    "example_ar": "كان يصرخ ضد الظلم.",
+    "id": 217
+  },
+  {
+    "french": "dulcifié",
+    "arabic": "محلى",
+    "level": "C2",
+    "example": "Un langage dulcifié pour plaire à tous.",
+    "example_ar": "لغة محلاة لإرضاء الجميع.",
+    "id": 218
+  },
+  {
+    "french": "usurier",
+    "arabic": "مرابٍ",
+    "level": "C2",
+    "example": "L'usurier pratique des taux exorbitants.",
+    "example_ar": "المرابي يمارس فوائد باهظة.",
+    "id": 219
+  },
+  {
+    "french": "vaticiner",
+    "arabic": "يتنبأ",
+    "level": "C2",
+    "example": "Les experts vaticinent sur l'avenir.",
+    "example_ar": "الخبراء يتنبؤون بالمستقبل.",
+    "id": 220
+  },
+  {
+    "french": "ubuesque",
+    "arabic": "عبثي/سخيف (على طريقة أوبو)",
+    "level": "C2",
+    "example": "Une situation ubuesque et absurde.",
+    "example_ar": "موقف عبثي وسخيف.",
+    "id": 221
   }
 ]

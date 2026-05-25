@@ -11,18 +11,40 @@ const CURRICULUM_FILE = path.join(BOT_DIR, "curriculum.json");
 const PROGRESS_FILE = path.join(BOT_DIR, "progress.json");
 const USER_PHRASES_FILE = path.join(BOT_DIR, "user_phrases.json");
 const DIALOGUES_FILE = path.join(BOT_DIR, "dialogues.json");
+const IDIOMES_FILE = path.join(BOT_DIR, "idiomes.json");
+const CULTURE_FILE = path.join(BOT_DIR, "culture.json");
 const OUTPUT_DIR = path.join(PROJECT_ROOT, "output");
 
 const log = (msg) => console.log(`[${new Date().toISOString()}] ${msg}`);
 
-const ACTIVITY_TYPES = ["MotDuJour", "Grammaire", "PhraseDuJour", "Quiz", "Conjugaison"];
+const LEVEL_HASHTAGS = {
+  "A1": "#A1Français #Débutant #FrançaisPourTous",
+  "A2": "#A2Français #FauxDébutant #ApprendreLeFrançais",
+  "B1": "#B1Français #Intermédiaire #FrançaisFacile",
+  "B2": "#B2Français #IntermédiaireAvancé #MaîtriseLeFrançais",
+  "C1": "#C1Français #Avancé #FrançaisSoutenu",
+  "C2": "#C2Français #Expert #FrançaisAvancé",
+};
+const TYPE_HASHTAGS = {
+  "MotDuJour": "#MotDuJour #Vocabulaire",
+  "PhraseDuJour": "#PhraseDuJour #Expression",
+  "Grammaire": "#Grammaire #LeçonDeGrammaire",
+  "Quiz": "#QuizFrançais #Test",
+  "Conjugaison": "#Conjugaison #Verbe",
+  "Idiome": "#Idiome #ExpressionFrançaise",
+  "Culture": "#CultureFrançaise #Civilisation",
+  "Dialogue": "#DialogueFrançais #Conversation",
+  "Révision": "#Révision #ApprendreLeFrançais",
+};
+
+const ACTIVITY_TYPES = ["MotDuJour", "Grammaire", "PhraseDuJour", "Quiz", "Conjugaison", "Idiome", "Culture"];
 const INTERACTIVE_QUESTIONS = [
   "Écrivez votre réponse dans les commentaires ! 👇",
-  "Quelle est votre réponse ? Commentez ! 💬",
-  "Partagez votre phrase dans les commentaires ! ✍️",
-  "À vous ! Dites-nous en commentaire. 🗣",
+  "Partagez votre réponse dans les commentaires ! 💬",
   "Entraînez-vous à voix haute et commentez ! 🎯",
-  "Quiz ! Réfléchissez et répondez en commentaire. 🤔",
+  "Dites-nous en commentaire ce que vous en pensez ! 🗣",
+  "Réfléchissez et répondez en commentaire. 🤔",
+  "Pratiquez et écrivez un exemple en commentaire ! ✍️",
 ];
 
 // Spaced Repetition System
@@ -47,7 +69,7 @@ function initSRS(progress) {
 function trackForReview(progress, type, id) {
   initSRS(progress);
   const today = todayStr();
-  const map = { MotDuJour: "words", PhraseDuJour: "words", Grammaire: "grammar", Quiz: "words", Conjugaison: "verbs" };
+  const map = { MotDuJour: "words", PhraseDuJour: "words", Grammaire: "grammar", Quiz: "words", Conjugaison: "verbs", Idiome: "words", Culture: "words" };
   const category = map[type];
   if (!category) return;
   const entry = progress.spaced_repetition[category][id];
@@ -102,11 +124,14 @@ function sleep(ms) {
 }
 
 function buildDescription(type, data, question) {
-  const hashtags = "#FrenchFlow #ApprendreLeFrancais #Francais #LearnFrench #FrenchTeacher";
+  const level = data.level || "A1";
+  const typeTags = TYPE_HASHTAGS[type] || "#Français";
+  const levelTags = LEVEL_HASHTAGS[level] || "#ApprendreLeFrançais";
+  const hashtags = `#FrenchFlow #LearnFrench ${typeTags} ${levelTags}`;
   let desc = "";
   switch (type) {
     case "MotDuJour":
-      desc = `🇫🇷 **Mot du jour** - French Flow\n\n✨ ${data.french}\n💬 ${data.example}`;
+      desc = `🇫🇷 **Mot du jour** - French Flow\n\n✨ ${data.french} = ${data.arabic || ""}\n💬 ${data.example}`;
       break;
     case "PhraseDuJour":
       desc = `🇫🇷 **Phrase du jour** - French Flow\n\n🗣 ${data.example}\n📖 ${data.example_ar || ""}`;
@@ -115,14 +140,20 @@ function buildDescription(type, data, question) {
       desc = `🇫🇷 **Leçon de grammaire** - French Flow\n\n📚 ${data.title}\n📖 ${data.title_ar || ""}`;
       break;
     case "Quiz":
-      desc = `🇫🇷 **Quiz du jour** - French Flow\n\n❓ ${data.question}`;
+      desc = `🇫🇷 **Quiz du jour** - French Flow\n\n❓ ${typeof data === "string" ? data : data.question}`;
       break;
     case "Conjugaison":
       const tenses = data.passe_compose ? "Présent + Passé composé" : data.imparfait ? "Présent + Imparfait" : "Présent";
       desc = `🇫🇷 **Conjugaison** - French Flow\n\n📝 ${data.infinitive} (${data.level})\n📖 ${data.arabic || ""}\n🔄 ${tenses}`;
       break;
+    case "Idiome":
+      desc = `🇫🇷 **Idiome du jour** - French Flow\n\n🗣 ${data.expression}\n📖 ${data.arabic}\n💡 ${data.meaning}\n✏️ ${data.example}`;
+      break;
+    case "Culture":
+      desc = `🇫🇷 **Culture française** - French Flow\n\n📖 ${data.title}\n📖 ${data.title_ar || ""}\n\n${data.summary}`;
+      break;
     case "Révision":
-      desc = `🇫🇷 **Révision** - French Flow\n\n🔄 ${data.french || data.title || data.infinitive}\n📖 ${data.arabic || data.title_ar || ""}`;
+      desc = `🇫🇷 **Révision** - French Flow\n\n🔄 ${data.french || data.title || data.infinitive || data.expression}\n📖 ${data.arabic || data.title_ar || ""}`;
       break;
     case "Dialogue": {
       const dLines = data.lines || [];
@@ -363,19 +394,39 @@ function getActivityProps(activity, wordMap, grammarMap, verbMap, durations) {
         outputFile: `day${activity._dayNum}_conjugaison.mp4`,
       };
     }
+    case "Idiome": {
+      const idiom = idiomMap[activity.idiome_id];
+      if (!idiom) return null;
+      return {
+        compositionId: "MotDuJour",
+        props: { word: { french: idiom.expression, arabic: idiom.arabic, example: idiom.example, level: idiom.level }, totalDuration: Math.round(durations.Idiome * 30) },
+        outputFile: `gen_idiome_${idiom.id}.mp4`,
+      };
+    }
+    case "Culture": {
+      const culture = cultureMap[activity.culture_id];
+      if (!culture) return null;
+      return {
+        compositionId: "Grammaire",
+        props: { grammar: { title: culture.title, title_ar: culture.title_ar || "", explanation: culture.summary, level: culture.level, examples: [culture.detail] }, totalDuration: Math.round(durations.Culture * 30) },
+        outputFile: `gen_culture_${culture.id}.mp4`,
+      };
+    }
     default:
       return null;
   }
 }
 
 // Generate interactive question based on activity type
-function generateQuestion(activity, wordMap, grammarMap, verbMap) {
+function generateQuestion(activity, wordMap, grammarMap, verbMap, idiomMap, cultureMap) {
   const questions = {
     MotDuJour: (w) => `Connaissez-vous un autre mot lié à "${w.french}" ?`,
     PhraseDuJour: (w) => `Pouvez-vous créer une phrase similaire avec "${w.french}" ?`,
     Grammaire: (g) => `Pouvez-vous donner un autre exemple pour cette règle : "${g.title}" ?`,
     Quiz: () => `Avez-vous trouvé la bonne réponse ?`,
     Conjugaison: (v) => `Pouvez-vous conjuguer "${v.infinitive}" au futur proche ?`,
+    Idiome: (i) => `Pouvez-vous utiliser "${i.expression}" dans une phrase ?`,
+    Culture: (c) => `Que savez-vous d'autre sur "${c.title}" ?`,
     Dialogue: () => `Qu'avez-vous compris de ce dialogue ?`,
     Révision: () => `Avez-vous mémorisé ce mot ?`,
   };
@@ -384,6 +435,8 @@ function generateQuestion(activity, wordMap, grammarMap, verbMap) {
   if (activity.word_id) data = wordMap[activity.word_id] || {};
   else if (activity.grammar_id) data = grammarMap[activity.grammar_id] || {};
   else if (activity.verb_id) data = verbMap[activity.verb_id] || {};
+  else if (activity.idiome_id) data = idiomMap[activity.idiome_id] || {};
+  else if (activity.culture_id) data = cultureMap[activity.culture_id] || {};
   return fn(data);
 }
 
@@ -394,11 +447,15 @@ async function runHourly(progress, pageId, accessToken) {
   const words = loadJSON(WORDS_FILE);
   const grammar = loadJSON(GRAMMAR_FILE);
   const verbs = loadJSON(VERBS_FILE);
+  const idiomes = fs.existsSync(IDIOMES_FILE) ? loadJSON(IDIOMES_FILE) : [];
+  const cultures = fs.existsSync(CULTURE_FILE) ? loadJSON(CULTURE_FILE) : [];
 
-  const wordMap = {}, grammarMap = {}, verbMap = {};
+  const wordMap = {}, grammarMap = {}, verbMap = {}, idiomMap = {}, cultureMap = {};
   words.forEach(w => wordMap[w.id] = w);
   grammar.forEach(g => grammarMap[g.id] = g);
   verbs.forEach(v => verbMap[v.id] = v);
+  idiomes.forEach(i => idiomMap[i.id] = i);
+  cultures.forEach(c => cultureMap[c.id] = c);
 
   // Flatten curriculum
   const allActivities = [];
@@ -410,7 +467,7 @@ async function runHourly(progress, pageId, accessToken) {
   }
 
   initSRS(progress);
-  const durations = { MotDuJour: 12.5, PhraseDuJour: 14.5, Grammaire: 17.5, Quiz: 15.5, Conjugaison: 17.5, Dialogue: 20 };
+  const durations = { MotDuJour: 12.5, PhraseDuJour: 14.5, Grammaire: 17.5, Quiz: 15.5, Conjugaison: 17.5, Idiome: 15, Culture: 18, Dialogue: 20 };
 
   if (!fs.existsSync(OUTPUT_DIR)) {
     fs.mkdirSync(OUTPUT_DIR, { recursive: true });
@@ -427,15 +484,16 @@ async function runHourly(progress, pageId, accessToken) {
     // Phase 2: generator mode - cycle with new combinations
     isGenerated = true;
     const genIdx = progress.generated_count;
-    const typeIdx = genIdx % 6;
-    const cyclePos = Math.floor(genIdx / 6);
+    const cycleLen = ACTIVITY_TYPES.length + 1; // 7 types + Dialogue = 8
+    const typeIdx = genIdx % cycleLen;
+    const cyclePos = Math.floor(genIdx / cycleLen);
 
-    if (typeIdx === 5) {
-      // Every 6th video: Dialogue
+    if (typeIdx === ACTIVITY_TYPES.length) {
+      // Every 8th video: Dialogue
       const dialogues = loadJSON(DIALOGUES_FILE);
       if (dialogues.length > 0) {
         const d = dialogues[genIdx % dialogues.length];
-        await renderDialogueVideo(d, pageId, accessToken, progress, today, wordMap, grammarMap, verbMap);
+        await renderDialogueVideo(d, pageId, accessToken, progress, today, wordMap, grammarMap, verbMap, idiomMap, cultureMap);
         progress.generated_count++;
         progress.last_publish_date = today;
         saveJSON(PROGRESS_FILE, progress);
@@ -444,7 +502,7 @@ async function runHourly(progress, pageId, accessToken) {
     }
 
     const type = ACTIVITY_TYPES[typeIdx];
-    const wordList = words, grammarList = grammar, verbList = verbs;
+    const wordList = words, grammarList = grammar, verbList = verbs, idiomList = idiomes, cultureList = cultures;
 
     switch (type) {
       case "MotDuJour":
@@ -464,6 +522,16 @@ async function runHourly(progress, pageId, accessToken) {
         activity = { type, verb_id: vId, _dayNum: 0 };
         break;
       }
+      case "Idiome": {
+        const iId = idiomList[cyclePos % idiomList.length].id;
+        activity = { type, idiome_id: iId, _dayNum: 0 };
+        break;
+      }
+      case "Culture": {
+        const cId = cultureList[cyclePos % cultureList.length].id;
+        activity = { type, culture_id: cId, _dayNum: 0 };
+        break;
+      }
     }
     log(`🎯 [Gen ${genIdx + 1}] ${activity.type}`);
   }
@@ -480,7 +548,7 @@ async function runHourly(progress, pageId, accessToken) {
     return;
   }
 
-  const question = generateQuestion(activity, wordMap, grammarMap, verbMap);
+  const question = generateQuestion(activity, wordMap, grammarMap, verbMap, idiomMap, cultureMap);
   const result = await renderAndPublish(
     activity, resolved.compositionId, resolved.props, resolved.outputFile,
     pageId, accessToken, progress, today, question
@@ -502,7 +570,7 @@ async function runHourly(progress, pageId, accessToken) {
 }
 
 // Render a dialogue video
-async function renderDialogueVideo(dialogue, pageId, accessToken, progress, today, wordMap, grammarMap, verbMap) {
+async function renderDialogueVideo(dialogue, pageId, accessToken, progress, today, wordMap, grammarMap, verbMap, idiomMap, cultureMap) {
   log(`🎬 Rendering Dialogue: "${dialogue.title}" (${dialogue.level})`);
 
   const AUDIO_DIR = path.join(PROJECT_ROOT, "public", "audio");
@@ -538,7 +606,7 @@ async function renderDialogueVideo(dialogue, pageId, accessToken, progress, toda
     execSync(cmd, { cwd: PROJECT_ROOT, stdio: ["pipe", "pipe", "pipe"], timeout: 120000,
       env: { ...process.env, NODE_OPTIONS: "--max-old-space-size=2048" } });
     if (fs.existsSync(outputPath)) {
-      const question = generateQuestion({ type: "Dialogue" }, wordMap, grammarMap, verbMap);
+      const question = generateQuestion({ type: "Dialogue" }, wordMap, grammarMap, verbMap, idiomMap, cultureMap);
       const desc = buildDescription("Dialogue", dialogue, question);
       const published = await publishToFacebook(outputPath, desc, pageId, accessToken);
       if (published) {
