@@ -11,8 +11,6 @@ import { Audio } from "@remotion/media";
 import {
   fonts,
   colors,
-  GradientBackground,
-  GlassCard,
   IntroOverlay,
   OutroOverlay,
   TopBar,
@@ -22,15 +20,6 @@ import {
 const FPS = 30;
 const INTRO_F = 1.5 * FPS;
 const OUTRO_F = 1 * FPS;
-
-const springIn = (frame: number, delay = 0) => {
-  const f = Math.max(0, frame - delay);
-  const progress = interpolate(f, [0, 25], [0, 1], {
-    easing: Easing.bezier(0.34, 1.56, 0.64, 1),
-    extrapolateRight: "clamp",
-  });
-  return progress;
-};
 
 const fadeSlide = (frame: number, delay = 0, yFrom = 30) => {
   const f = Math.max(0, frame - delay);
@@ -42,37 +31,33 @@ const fadeSlide = (frame: number, delay = 0, yFrom = 30) => {
   return { opacity, y };
 };
 
-const GlowText: React.FC<{
-  text: string;
-  style?: React.CSSProperties;
-  color?: string;
-}> = ({ text, style, color = colors.accent }) => (
-  <span
+const Card: React.FC<{ children: React.ReactNode; style?: React.CSSProperties }> = ({ children, style }) => (
+  <div
     style={{
+      background: colors.cardBg,
+      border: `1px solid ${colors.cardBorder}`,
+      borderRadius: 16,
+      padding: 32,
+      width: "85%",
       ...style,
-      textShadow: `0 0 40px ${color}88, 0 0 80px ${color}44, 0 0 120px ${color}22`,
     }}
   >
-    {text}
-  </span>
+    {children}
+  </div>
 );
 
-const TagPill: React.FC<{ text: string; color?: string }> = ({
-  text,
-  color = colors.accent,
-}) => (
+const LevelPill: React.FC<{ text: string }> = ({ text }) => (
   <div
     style={{
       display: "inline-block",
-      padding: "10px 28px",
-      borderRadius: 30,
-      background: `${color}22`,
-      border: `1px solid ${color}44`,
-      fontSize: 18,
+      padding: "8px 24px",
+      borderRadius: 20,
+      background: colors.accent,
+      fontSize: 16,
       fontWeight: 600,
       fontFamily: fonts.body,
-      color: color,
-      letterSpacing: 2,
+      color: "#fff",
+      letterSpacing: 1,
     }}
   >
     {text}
@@ -82,10 +67,8 @@ const TagPill: React.FC<{ text: string; color?: string }> = ({
 interface WordData {
   id: number;
   french: string;
-  arabic: string;
   level: string;
   example: string;
-  example_ar: string;
   audioSrc?: string;
   exampleAudioSrc?: string;
   phraseAudioSrc?: string;
@@ -94,7 +77,6 @@ interface WordData {
 interface GrammarData {
   id: number;
   title: string;
-  title_ar: string;
   level: string;
   explanation: string;
   examples: string[];
@@ -104,7 +86,6 @@ interface GrammarData {
 interface VerbData {
   id: number;
   infinitive: string;
-  arabic: string;
   level: string;
   present: Record<string, string>;
   passe_compose?: Record<string, string>;
@@ -141,12 +122,11 @@ export const MotDuJour: React.FC<{
     );
 
   const cf = frame - INTRO_F;
+  const { opacity: s } = fadeSlide(cf);
   const { opacity: exOp, y: exY } = fadeSlide(cf, contentFrames * 0.45);
-  const s = springIn(cf);
 
   return (
     <VideoContainer>
-      <GradientBackground />
       <TopBar label="MOT DU JOUR" progress={cf / contentFrames} icon="🎯" />
       {word.audioSrc && (
         <Sequence from={INTRO_F} durationInFrames={Math.round(contentFrames * 0.45)}>
@@ -159,39 +139,58 @@ export const MotDuJour: React.FC<{
         </Sequence>
       )}
       <AbsoluteFill style={{ justifyContent: "center", alignItems: "center" }}>
-        <div style={{ opacity: s, transform: `scale(${s})`, marginBottom: 12 }}>
-          <TagPill text={word.level} color={colors.accent2} />
+        <div style={{ opacity: s, marginBottom: 12 }}>
+          <LevelPill text={word.level} />
         </div>
-        <GlowText
-          text={word.french}
-          color={colors.accent}
+        <div
           style={{
-            fontSize: 96,
+            fontSize: 110,
             fontWeight: 700,
             fontFamily: fonts.heading,
             color: colors.text,
-            marginBottom: 12,
+            marginBottom: 16,
             opacity: s,
-            transform: `scale(${s})`,
+            textAlign: "center",
           }}
-        />
-        <GlassCard>
+        >
+          {word.french}
+        </div>
+        <Card>
           <div
             style={{
-              fontSize: 26,
-              fontWeight: 400,
-              fontFamily: fonts.body,
+              fontSize: 40,
+              fontWeight: 600,
+              fontFamily: fonts.heading,
               color: colors.text,
-              fontStyle: "italic",
-              opacity: exOp,
-              transform: `translateY(${exY}px)`,
               textAlign: "center",
-              lineHeight: 1.7,
+              lineHeight: 2.4,
+              display: "flex",
+              flexWrap: "wrap",
+              justifyContent: "center",
+              gap: 8,
             }}
           >
-            {word.example}
-          </div>
-        </GlassCard>
+          {words.map((w, i) => {
+            const { opacity, y } = fadeSlide(cf, i * 8);
+            return (
+              <span
+                key={i}
+                style={{
+                  display: "inline-block",
+                  padding: "14px 24px",
+                  borderRadius: 14,
+                  background: colors.cardBg,
+                  border: `1px solid ${colors.cardBorder}`,
+                  opacity,
+                  transform: `translateY(${y}px)`,
+                }}
+              >
+                {w}
+              </span>
+            );
+          })}
+        </div>
+      </Card>
       </AbsoluteFill>
     </VideoContainer>
   );
@@ -222,7 +221,6 @@ export const PhraseDuJour: React.FC<{
 
   return (
     <VideoContainer>
-      <GradientBackground />
       <TopBar label="PHRASE DU JOUR" progress={cf / contentFrames} icon="💬" />
       {word.phraseAudioSrc && (
         <Sequence from={INTRO_F} durationInFrames={contentFrames}>
@@ -230,7 +228,7 @@ export const PhraseDuJour: React.FC<{
         </Sequence>
       )}
       <AbsoluteFill style={{ justifyContent: "center", alignItems: "center" }}>
-        <GlassCard width="92%">
+        <Card width="92%">
           <div
             style={{
               fontSize: 32,
@@ -254,8 +252,8 @@ export const PhraseDuJour: React.FC<{
                     display: "inline-block",
                     padding: "10px 20px",
                     borderRadius: 14,
-                    background: colors.glass,
-                    border: `1px solid ${colors.glassBorder}`,
+                    background: colors.cardBg,
+                    border: `1px solid ${colors.cardBorder}`,
                     opacity,
                     transform: `translateY(${y}px)`,
                   }}
@@ -265,7 +263,7 @@ export const PhraseDuJour: React.FC<{
               );
             })}
           </div>
-        </GlassCard>
+        </Card>
       </AbsoluteFill>
     </VideoContainer>
   );
@@ -297,7 +295,6 @@ export const Grammaire: React.FC<{
 
   return (
     <VideoContainer>
-      <GradientBackground />
       <TopBar label="GRAMMAIRE" progress={cf / contentFrames} icon="📚" />
       {grammar.audioSrc && (
         <Sequence from={INTRO_F} durationInFrames={contentFrames}>
@@ -305,14 +302,12 @@ export const Grammaire: React.FC<{
         </Sequence>
       )}
       <AbsoluteFill style={{ justifyContent: "center", alignItems: "center" }}>
-        <div style={{ opacity: tOp, transform: `translateY(${tY}px)`, textAlign: "center", marginBottom: 16 }}>
-          <TagPill text={grammar.level} color={colors.accent3} />
+        <div style={{ opacity: tOp, transform: `translateY(${tY}px)`, marginBottom: 16 }}>
+          <LevelPill text={grammar.level} />
         </div>
-        <GlowText
-          text={grammar.title}
-          color={colors.accent2}
+        <div
           style={{
-            fontSize: 44,
+            fontSize: 52,
             fontWeight: 700,
             fontFamily: fonts.heading,
             color: colors.text,
@@ -322,11 +317,13 @@ export const Grammaire: React.FC<{
             textAlign: "center",
             padding: "0 24px",
           }}
-        />
-        <GlassCard>
+        >
+          {grammar.title}
+        </div>
+        <Card>
           <div
             style={{
-              fontSize: 24,
+              fontSize: 30,
               fontWeight: 350,
               fontFamily: fonts.body,
               color: colors.text,
@@ -351,14 +348,14 @@ export const Grammaire: React.FC<{
               <div
                 key={i}
                 style={{
-                  fontSize: 22,
+                  fontSize: 28,
                   fontWeight: 500,
                   fontFamily: fonts.body,
-                  color: colors.accent3,
-                  padding: "14px 22px",
+                  color: colors.accent,
+                  padding: "16px 24px",
                   borderRadius: 12,
-                  background: `${colors.accent3}11`,
-                  border: `1px solid ${colors.accent3}22`,
+                  background: colors.cardBg,
+                  border: `1px solid ${colors.cardBorder}`,
                   textAlign: "center",
                 }}
               >
@@ -366,7 +363,7 @@ export const Grammaire: React.FC<{
               </div>
             ))}
           </div>
-        </GlassCard>
+        </Card>
       </AbsoluteFill>
     </VideoContainer>
   );
@@ -397,7 +394,6 @@ export const Quiz: React.FC<{
 
   return (
     <VideoContainer>
-      <GradientBackground />
       <TopBar label="QUIZ" progress={cf / contentFrames} icon="❓" />
       {quiz.audioSrc && (
         <Sequence from={INTRO_F} durationInFrames={contentFrames}>
@@ -407,15 +403,14 @@ export const Quiz: React.FC<{
       <AbsoluteFill style={{ justifyContent: "center", alignItems: "center" }}>
         <div
           style={{
-            fontSize: 38,
-            fontWeight: 700,
-            fontFamily: fonts.heading,
-            color: colors.text,
-            textAlign: "center",
-            marginBottom: 40,
+          fontSize: 44,
+          fontWeight: 700,
+          fontFamily: fonts.heading,
+          color: colors.text,
+          textAlign: "center",
+          marginBottom: 40,
             padding: "0 24px",
-            opacity: springIn(cf),
-            textShadow: `0 0 30px ${colors.accent2}44`,
+            opacity: interpolate(cf, [0, 15], [0, 1], { extrapolateRight: "clamp" }),
           }}
         >
           {quiz.question}
@@ -432,15 +427,15 @@ export const Quiz: React.FC<{
           {quiz.options.map((opt, i) => {
             const isCorrect = i === quiz.correctIndex;
             const showAnswer = cf >= revealFrame;
-            const s = springIn(cf, i * 4);
+            const prog = interpolate(Math.max(0, cf - i * 4), [0, 15], [0, 1], { extrapolateRight: "clamp" });
 
-            let bg = colors.glass;
-            let border = colors.glassBorder;
+            let bg = colors.cardBg;
+            let border = colors.cardBorder;
             let txtColor = colors.text;
             if (showAnswer) {
-              bg = isCorrect ? "#6BCB7722" : "#FF6B6B22";
-              border = isCorrect ? colors.accent3 : colors.accent;
-              txtColor = isCorrect ? colors.accent3 : colors.accent;
+              bg = isCorrect ? "#E8F5E9" : "#FFEBEE";
+              border = isCorrect ? colors.accent3 : colors.accent2;
+              txtColor = isCorrect ? colors.accent3 : colors.accent2;
             }
 
             return (
@@ -451,13 +446,13 @@ export const Quiz: React.FC<{
                   borderRadius: 16,
                   background: bg,
                   border: `2px solid ${border}`,
-                  fontSize: 26,
+                  fontSize: 30,
                   fontWeight: 600,
                   fontFamily: fonts.body,
                   color: txtColor,
                   textAlign: "center",
-                  opacity: s,
-                  transform: `scale(${s})`,
+                  opacity: prog,
+                  transform: `scale(${prog})`,
                 }}
               >
                 {String.fromCharCode(65 + i)}. {opt}
@@ -495,7 +490,6 @@ export const Conjugaison: React.FC<{
 
   return (
     <VideoContainer>
-      <GradientBackground />
       <TopBar label="CONJUGAISON" progress={cf / contentFrames} icon="📝" />
       {verb.audioSrc && (
         <Sequence from={INTRO_F} durationInFrames={contentFrames}>
@@ -503,25 +497,23 @@ export const Conjugaison: React.FC<{
         </Sequence>
       )}
       <AbsoluteFill style={{ justifyContent: "center", alignItems: "center" }}>
-        <div style={{ textAlign: "center", marginBottom: 20, opacity: springIn(cf) }}>
-          <TagPill text={verb.level} color={colors.accent} />
+        <div style={{ marginBottom: 20, opacity: interpolate(cf, [0, 15], [0, 1], { extrapolateRight: "clamp" }) }}>
+          <LevelPill text={verb.level} />
         </div>
-        <GlowText
-          text={verb.infinitive}
-          color={colors.accent}
+        <div
           style={{
-            fontSize: 56,
-            fontWeight: 700,
-            fontFamily: fonts.heading,
-            color: colors.text,
-            opacity: springIn(cf),
-            transform: `scale(${springIn(cf)})`,
-            marginBottom: 8,
+          fontSize: 64,
+          fontWeight: 700,
+          fontFamily: fonts.heading,
+          color: colors.text,
+          marginBottom: 8,
           }}
-        />
-        <GlassCard width="75%">
+        >
+          {verb.infinitive}
+        </div>
+        <Card style={{ width: "75%", padding: 0 }}>
           {pronouns.map((p, i) => {
-            const s = springIn(cf, i * 4);
+            const prog = interpolate(Math.max(0, cf - i * 4), [0, 15], [0, 1], { extrapolateRight: "clamp" });
             return (
               <div
                 key={p}
@@ -529,14 +521,14 @@ export const Conjugaison: React.FC<{
                   display: "flex",
                   justifyContent: "space-between",
                   padding: "14px 20px",
-                  borderBottom: i < pronouns.length - 1 ? `1px solid ${colors.glassBorder}` : "none",
-                  opacity: s,
-                  transform: `translateY(${interpolate(s, [0, 1], [10, 0])}px)`,
+                  borderBottom: i < pronouns.length - 1 ? `1px solid ${colors.cardBorder}` : "none",
+                  opacity: prog,
+                  transform: `translateY(${interpolate(prog, [0, 1], [10, 0])}px)`,
                 }}
               >
                 <span
                   style={{
-                    fontSize: 26,
+                    fontSize: 28,
                     fontWeight: 600,
                     fontFamily: fonts.heading,
                     color: colors.textMuted,
@@ -546,11 +538,10 @@ export const Conjugaison: React.FC<{
                 </span>
                 <span
                   style={{
-                    fontSize: 28,
+                    fontSize: 32,
                     fontWeight: 600,
                     fontFamily: fonts.body,
-                    color: colors.accent2,
-                    textShadow: `0 0 20px ${colors.accent2}44`,
+                    color: colors.accent,
                   }}
                 >
                   {verb.present[p]}
@@ -558,7 +549,7 @@ export const Conjugaison: React.FC<{
               </div>
             );
           })}
-        </GlassCard>
+        </Card>
       </AbsoluteFill>
     </VideoContainer>
   );

@@ -2,113 +2,105 @@
   {
     "id": 1,
     "title": "Se présenter",
-    "title_ar": "التعريف بالنفس",
     "level": "A1",
     "lines": [
-      { "speaker": "homme", "name": "Pierre", "french": "Bonjour ! Je m'appelle Pierre.", "arabic": "مرحباً! أنا أدعى بيير." },
-      { "speaker": "femme", "name": "Marie", "french": "Salut Pierre ! Moi, c'est Marie.", "arabic": "أهلاً بيير! أنا، هذه ماري." },
-      { "speaker": "homme", "name": "Pierre", "french": "Enchanté, Marie ! Tu es française ?", "arabic": "مسرور، ماري! أنت فرنسية؟" },
-      { "speaker": "femme", "name": "Marie", "french": "Oui, je suis française. Et toi ?", "arabic": "نعم، أنا فرنسية. وأنت؟" },
-      { "speaker": "homme", "name": "Pierre", "french": "Moi aussi ! Je suis de Paris.", "arabic": "أنا أيضاً! أنا من باريس." },
-      { "speaker": "femme", "name": "Marie", "french": "Super ! Moi, je suis de Lyon.", "arabic": "رائع! أنا، أنا من ليون." }
+      { "speaker": "homme", "name": "Pierre", "french": "Bonjour ! Je m'appelle Pierre." },
+      { "speaker": "femme", "name": "Marie", "french": "Salut Pierre ! Moi, c'est Marie." },
+      { "speaker": "homme", "name": "Pierre", "french": "Enchanté, Marie ! Tu es française ?" },
+      { "speaker": "femme", "name": "Marie", "french": "Oui, je suis française. Et toi ?" },
+      { "speaker": "homme", "name": "Pierre", "french": "Moi aussi ! Je suis de Paris." },
+      { "speaker": "femme", "name": "Marie", "french": "Super ! Moi, je suis de Lyon." }
     ]
   },
   {
     "id": 2,
     "title": "Au café",
-    "title_ar": "في المقهى",
     "level": "A1",
     "lines": [
-      { "speaker": "femme", "name": "Marie", "french": "Bonjour ! Qu'est-ce que tu veux boire ?", "arabic": "مرحباً! ماذا تريد أن تشرب؟" },
-      { "speaker": "homme", "name": "Pierre", "french": "Je voudrais un café, s'il te plaît.", "arabic": "أود قهوةً، من فضلك." },
-      { "speaker": "femme", "name": "Marie", "french": "Moi, je prends un thé vert.", "arabic": "أنا، آخذ شاياً أخضر." },
-      { "speaker": "homme", "name": "Pierre", "french": "Tu veux un croissant aussi ?", "arabic": "تريدين كرواسوناً أيضاً؟" },
-      { "speaker": "femme", "name": "Marie", "french": "Oui, volontiers ! Merci.", "arabic": "نعم، بكل سرور! شكراً." },
-      { "speaker": "homme", "name": "Pierre", "french": "Parfait ! Je vais commander.", "arabic": "ممتاز! أنا سأطلب." }
+      { "speaker": "femme", "name": "Marie", "french": "Bonjour ! Qu'est-ce que tu veux boire ?" },
+      { "speaker": "homme", "name": "Pierre", "french": "Je voudrais un café, s'il te plaît." },
+      { "speaker": "femme", "name": "Marie", "french": "Moi, je prends un thé vert." },
+      { "speaker": "homme", "name": "Pierre", "french": "Tu veux un croissant aussi ?" },
+      { "speaker": "femme", "name": "Marie", "french": "Oui, volontiers ! Merci." },
+      { "speaker": "homme", "name": "Pierre", "french": "Parfait ! Je vais commander." }
     ]
   },
   {
     "id": 3,
     "title": "Demander son chemin",
-    "title_ar": "طلب الطريق",
     "level": "A1",
     "lines": [
-      { "speaker": "homme", "name": "Pierre", "french": "Excusez-moi, où est la gare ?", "arabic": "اعذروني، أين المحطة؟" },
-      { "speaker": "femme", "name": "Marie", "french": "La gare ? C'est tout droit.", "arabic": "المحطة؟ إنها مباشرةً." },
-      { "speaker": "homme", "name": "Pierre", "french": "C'est loin d'ici ?", "arabic": "إنها بعيدة من هنا؟" },
-      { "speaker": "femme", "name": "Marie", "french": "Non, c'est à cinq minutes à pied.", "arabic": "لا، إنها على بعد خمس دقائق مشياً." },
-      { "speaker": "homme", "name": "Pierre", "french": "Merci beaucoup madame !", "arabic": "شكراً جزيلاً سيدتي!" },
-      { "speaker": "femme", "name": "Marie", "french": "Je vous en prie, bonne journée !", "arabic": "عفواً، نهار سعيد!" }
+      { "speaker": "homme", "name": "Pierre", "french": "Excusez-moi, où est la gare ?" },
+      { "speaker": "femme", "name": "Marie", "french": "La gare ? C'est tout droit." },
+      { "speaker": "homme", "name": "Pierre", "french": "C'est loin d'ici ?" },
+      { "speaker": "femme", "name": "Marie", "french": "Non, c'est à cinq minutes à pied." },
+      { "speaker": "homme", "name": "Pierre", "french": "Merci beaucoup madame !" },
+      { "speaker": "femme", "name": "Marie", "french": "Je vous en prie, bonne journée !" }
     ]
   },
   {
     "id": 4,
     "title": "Au restaurant",
-    "title_ar": "في المطعم",
     "level": "A1",
     "lines": [
-      { "speaker": "homme", "name": "Pierre", "french": "Tu as faim ? On va au restaurant ?", "arabic": "عندك جوع؟ نذهب إلى المطعم؟" },
-      { "speaker": "femme", "name": "Marie", "french": "Bonne idée ! Je meurs de faim.", "arabic": "فكرة جيدة! أموت من الجوع." },
-      { "speaker": "homme", "name": "Pierre", "french": "Qu'est-ce que tu veux manger ?", "arabic": "ماذا تريدين أن تأكلي؟" },
-      { "speaker": "femme", "name": "Marie", "french": "Je voudrais une salade et du poisson.", "arabic": "أود سلطةً وسمكاً." },
-      { "speaker": "homme", "name": "Pierre", "french": "Moi, je prends un steak-frites.", "arabic": "أنا، آخذ شريحة لحم مع بطاطا مقلية." },
-      { "speaker": "femme", "name": "Marie", "french": "Miam ! Ça a l'air bon !", "arabic": "لذيذ! هذا يبدو جيداً!" }
+      { "speaker": "homme", "name": "Pierre", "french": "Tu as faim ? On va au restaurant ?" },
+      { "speaker": "femme", "name": "Marie", "french": "Bonne idée ! Je meurs de faim." },
+      { "speaker": "homme", "name": "Pierre", "french": "Qu'est-ce que tu veux manger ?" },
+      { "speaker": "femme", "name": "Marie", "french": "Je voudrais une salade et du poisson." },
+      { "speaker": "homme", "name": "Pierre", "french": "Moi, je prends un steak-frites." },
+      { "speaker": "femme", "name": "Marie", "french": "Miam ! Ça a l'air bon !" }
     ]
   },
   {
     "id": 5,
     "title": "Parler de ses loisirs",
-    "title_ar": "التحدث عن الهوايات",
     "level": "A1",
     "lines": [
-      { "speaker": "femme", "name": "Marie", "french": "Qu'est-ce que tu aimes faire ?", "arabic": "ماذا تحب أن تفعل؟" },
-      { "speaker": "homme", "name": "Pierre", "french": "J'aime le sport. Je joue au foot.", "arabic": "أحب الرياضة. ألعب كرة القدم." },
-      { "speaker": "femme", "name": "Marie", "french": "Cool ! Moi, j'aime la musique.", "arabic": "رائع! أنا، أحب الموسيقى." },
-      { "speaker": "homme", "name": "Pierre", "french": "Tu joues d'un instrument ?", "arabic": "تعزفين على آلة موسيقية؟" },
-      { "speaker": "femme", "name": "Marie", "french": "Oui, je joue de la guitare.", "arabic": "نعم، أعزف على الغيتار." },
-      { "speaker": "homme", "name": "Pierre", "french": "Super ! On peut faire un concert !", "arabic": "رائع! يمكننا عمل حفل موسيقي!" }
+      { "speaker": "femme", "name": "Marie", "french": "Qu'est-ce que tu aimes faire ?" },
+      { "speaker": "homme", "name": "Pierre", "french": "J'aime le sport. Je joue au foot." },
+      { "speaker": "femme", "name": "Marie", "french": "Cool ! Moi, j'aime la musique." },
+      { "speaker": "homme", "name": "Pierre", "french": "Tu joues d'un instrument ?" },
+      { "speaker": "femme", "name": "Marie", "french": "Oui, je joue de la guitare." },
+      { "speaker": "homme", "name": "Pierre", "french": "Super ! On peut faire un concert !" }
     ]
   },
   {
     "id": 6,
     "title": "Prendre rendez-vous",
-    "title_ar": "أخذ موعد",
     "level": "A1",
     "lines": [
-      { "speaker": "homme", "name": "Pierre", "french": "Tu es libre samedi ?", "arabic": "أنت حرة يوم السبت؟" },
-      { "speaker": "femme", "name": "Marie", "french": "Oui, je suis libre. Pourquoi ?", "arabic": "نعم، أنا حرة. لماذا؟" },
-      { "speaker": "homme", "name": "Pierre", "french": "On va au cinéma ensemble ?", "arabic": "نذهب إلى السينما معاً؟" },
-      { "speaker": "femme", "name": "Marie", "french": "Avec plaisir ! Quel film ?", "arabic": "بكل سرور! أي فيلم؟" },
-      { "speaker": "homme", "name": "Pierre", "french": "Il y a un nouveau film français.", "arabic": "هناك فيلم فرنسي جديد." },
-      { "speaker": "femme", "name": "Marie", "french": "D'accord ! À quelle heure ?", "arabic": "موافق! في أي ساعة؟" }
+      { "speaker": "homme", "name": "Pierre", "french": "Tu es libre samedi ?" },
+      { "speaker": "femme", "name": "Marie", "french": "Oui, je suis libre. Pourquoi ?" },
+      { "speaker": "homme", "name": "Pierre", "french": "On va au cinéma ensemble ?" },
+      { "speaker": "femme", "name": "Marie", "french": "Avec plaisir ! Quel film ?" },
+      { "speaker": "homme", "name": "Pierre", "french": "Il y a un nouveau film français." },
+      { "speaker": "femme", "name": "Marie", "french": "D'accord ! À quelle heure ?" }
     ]
   },
   {
     "id": 7,
     "title": "Faire les courses",
-    "title_ar": "عمل التسوق",
     "level": "A1",
     "lines": [
-      { "speaker": "femme", "name": "Marie", "french": "On va faire les courses ?", "arabic": "نذهب لعمل التسوق؟" },
-      { "speaker": "homme", "name": "Pierre", "french": "Oui, j'ai besoin de pain et de lait.", "arabic": "نعم، عندي حاجة لخبز وحليب." },
-      { "speaker": "femme", "name": "Marie", "french": "Moi, je dois acheter des fruits.", "arabic": "أنا، يجب أن أشتري فواكه." },
-      { "speaker": "homme", "name": "Pierre", "french": "Tu veux des pommes ou des bananes ?", "arabic": "تريدين تفاحاً أم موزاً؟" },
-      { "speaker": "femme", "name": "Marie", "french": "Des deux ! Et aussi des oranges.", "arabic": "كلاهما! وأيضاً برتقالاً." },
-      { "speaker": "homme", "name": "Pierre", "french": "D'accord, allons-y !", "arabic": "موافق، لنذهب!" }
+      { "speaker": "femme", "name": "Marie", "french": "On va faire les courses ?" },
+      { "speaker": "homme", "name": "Pierre", "french": "Oui, j'ai besoin de pain et de lait." },
+      { "speaker": "femme", "name": "Marie", "french": "Moi, je dois acheter des fruits." },
+      { "speaker": "homme", "name": "Pierre", "french": "Tu veux des pommes ou des bananes ?" },
+      { "speaker": "femme", "name": "Marie", "french": "Des deux ! Et aussi des oranges." },
+      { "speaker": "homme", "name": "Pierre", "french": "D'accord, allons-y !" }
     ]
   },
   {
     "id": 8,
     "title": "À la gare",
-    "title_ar": "في المحطة",
     "level": "A1",
     "lines": [
-      { "speaker": "homme", "name": "Pierre", "french": "Le train part à quelle heure ?", "arabic": "القطار يغادر في أي ساعة؟" },
-      { "speaker": "femme", "name": "Marie", "french": "Il part à quatorze heures trente.", "arabic": "يغادر في الرابعة عشرة والثلاثين دقيقة." },
-      { "speaker": "homme", "name": "Pierre", "french": "Nous avons encore vingt minutes.", "arabic": "عندنا لا يزال عشرون دقيقة." },
-      { "speaker": "femme", "name": "Marie", "french": "On prend un café en attendant ?", "arabic": "نأخذ قهوة أثناء الانتظار؟" },
-      { "speaker": "homme", "name": "Pierre", "french": "Bonne idée ! Je t'invite.", "arabic": "فكرة جيدة! أنا أدعوك." },
-      { "speaker": "femme", "name": "Marie", "french": "Merci ! C'est très gentil.", "arabic": "شكراً! هذا لطيف جداً." }
+      { "speaker": "homme", "name": "Pierre", "french": "Le train part à quelle heure ?" },
+      { "speaker": "femme", "name": "Marie", "french": "Il part à quatorze heures trente." },
+      { "speaker": "homme", "name": "Pierre", "french": "Nous avons encore vingt minutes." },
+      { "speaker": "femme", "name": "Marie", "french": "On prend un café en attendant ?" },
+      { "speaker": "homme", "name": "Pierre", "french": "Bonne idée ! Je t'invite." },
+      { "speaker": "femme", "name": "Marie", "french": "Merci ! C'est très gentil." }
     ]
   }
 ]

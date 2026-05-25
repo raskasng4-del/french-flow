@@ -2,316 +2,1886 @@
   {
     "id": 1,
     "infinitive": "être",
-    "arabic": "يكون",
     "level": "A1",
-    "present": { "je": "suis", "tu": "es", "il/elle": "est", "nous": "sommes", "vous": "êtes", "ils/elles": "sont" },
-    "passe_compose": { "je": "ai été", "tu": "as été", "il/elle": "a été", "nous": "avons été", "vous": "avez été", "ils/elles": "ont été" },
-    "imparfait": { "je": "étais", "tu": "étais", "il/elle": "était", "nous": "étions", "vous": "étiez", "ils/elles": "étaient" }
+    "present": {
+      "je": "suis",
+      "tu": "es",
+      "il/elle": "est",
+      "nous": "sommes",
+      "vous": "êtes",
+      "ils/elles": "sont"
+    },
+    "passe_compose": {
+      "je": "ai été",
+      "tu": "as été",
+      "il/elle": "a été",
+      "nous": "avons été",
+      "vous": "avez été",
+      "ils/elles": "ont été"
+    },
+    "imparfait": {
+      "je": "étais",
+      "tu": "étais",
+      "il/elle": "était",
+      "nous": "étions",
+      "vous": "étiez",
+      "ils/elles": "étaient"
+    }
   },
   {
     "id": 2,
     "infinitive": "avoir",
-    "arabic": "يملك",
     "level": "A1",
-    "present": { "je": "ai", "tu": "as", "il/elle": "a", "nous": "avons", "vous": "avez", "ils/elles": "ont" },
-    "passe_compose": { "je": "ai eu", "tu": "as eu", "il/elle": "a eu", "nous": "avons eu", "vous": "avez eu", "ils/elles": "ont eu" },
-    "imparfait": { "je": "avais", "tu": "avais", "il/elle": "avait", "nous": "avions", "vous": "aviez", "ils/elles": "avaient" }
+    "present": {
+      "je": "ai",
+      "tu": "as",
+      "il/elle": "a",
+      "nous": "avons",
+      "vous": "avez",
+      "ils/elles": "ont"
+    },
+    "passe_compose": {
+      "je": "ai eu",
+      "tu": "as eu",
+      "il/elle": "a eu",
+      "nous": "avons eu",
+      "vous": "avez eu",
+      "ils/elles": "ont eu"
+    },
+    "imparfait": {
+      "je": "avais",
+      "tu": "avais",
+      "il/elle": "avait",
+      "nous": "avions",
+      "vous": "aviez",
+      "ils/elles": "avaient"
+    }
   },
   {
     "id": 3,
     "infinitive": "aller",
-    "arabic": "يذهب",
     "level": "A1",
-    "present": { "je": "vais", "tu": "vas", "il/elle": "va", "nous": "allons", "vous": "allez", "ils/elles": "vont" },
-    "passe_compose": { "je": "suis allé", "tu": "es allé", "il/elle": "est allé", "nous": "sommes allés", "vous": "êtes allés", "ils/elles": "sont allés" },
-    "imparfait": { "je": "allais", "tu": "allais", "il/elle": "allait", "nous": "allions", "vous": "alliez", "ils/elles": "allaient" }
+    "present": {
+      "je": "vais",
+      "tu": "vas",
+      "il/elle": "va",
+      "nous": "allons",
+      "vous": "allez",
+      "ils/elles": "vont"
+    },
+    "passe_compose": {
+      "je": "suis allé",
+      "tu": "es allé",
+      "il/elle": "est allé",
+      "nous": "sommes allés",
+      "vous": "êtes allés",
+      "ils/elles": "sont allés"
+    },
+    "imparfait": {
+      "je": "allais",
+      "tu": "allais",
+      "il/elle": "allait",
+      "nous": "allions",
+      "vous": "alliez",
+      "ils/elles": "allaient"
+    }
   },
   {
     "id": 4,
     "infinitive": "faire",
-    "arabic": "يفعل/يعمل",
     "level": "A1",
-    "present": { "je": "fais", "tu": "fais", "il/elle": "fait", "nous": "faisons", "vous": "faites", "ils/elles": "font" },
-    "passe_compose": { "je": "ai fait", "tu": "as fait", "il/elle": "a fait", "nous": "avons fait", "vous": "avez fait", "ils/elles": "ont fait" },
-    "imparfait": { "je": "faisais", "tu": "faisais", "il/elle": "faisait", "nous": "faisions", "vous": "faisiez", "ils/elles": "faisaient" }
+    "present": {
+      "je": "fais",
+      "tu": "fais",
+      "il/elle": "fait",
+      "nous": "faisons",
+      "vous": "faites",
+      "ils/elles": "font"
+    },
+    "passe_compose": {
+      "je": "ai fait",
+      "tu": "as fait",
+      "il/elle": "a fait",
+      "nous": "avons fait",
+      "vous": "avez fait",
+      "ils/elles": "ont fait"
+    },
+    "imparfait": {
+      "je": "faisais",
+      "tu": "faisais",
+      "il/elle": "faisait",
+      "nous": "faisions",
+      "vous": "faisiez",
+      "ils/elles": "faisaient"
+    }
   },
   {
     "id": 5,
     "infinitive": "parler",
-    "arabic": "يتحدث",
     "level": "A1",
-    "present": { "je": "parle", "tu": "parles", "il/elle": "parle", "nous": "parlons", "vous": "parlez", "ils/elles": "parlent" },
-    "passe_compose": { "je": "ai parlé", "tu": "as parlé", "il/elle": "a parlé", "nous": "avons parlé", "vous": "avez parlé", "ils/elles": "ont parlé" },
-    "imparfait": { "je": "parlais", "tu": "parlais", "il/elle": "parlait", "nous": "parlions", "vous": "parliez", "ils/elles": "parlaient" }
+    "present": {
+      "je": "parle",
+      "tu": "parles",
+      "il/elle": "parle",
+      "nous": "parlons",
+      "vous": "parlez",
+      "ils/elles": "parlent"
+    },
+    "passe_compose": {
+      "je": "ai parlé",
+      "tu": "as parlé",
+      "il/elle": "a parlé",
+      "nous": "avons parlé",
+      "vous": "avez parlé",
+      "ils/elles": "ont parlé"
+    },
+    "imparfait": {
+      "je": "parlais",
+      "tu": "parlais",
+      "il/elle": "parlait",
+      "nous": "parlions",
+      "vous": "parliez",
+      "ils/elles": "parlaient"
+    }
   },
   {
     "id": 6,
     "infinitive": "finir",
-    "arabic": "ينهي",
     "level": "A1",
-    "present": { "je": "finis", "tu": "finis", "il/elle": "finit", "nous": "finissons", "vous": "finissez", "ils/elles": "finissent" },
-    "passe_compose": { "je": "ai fini", "tu": "as fini", "il/elle": "a fini", "nous": "avons fini", "vous": "avez fini", "ils/elles": "ont fini" },
-    "imparfait": { "je": "finissais", "tu": "finissais", "il/elle": "finissait", "nous": "finissions", "vous": "finissiez", "ils/elles": "finissaient" }
+    "present": {
+      "je": "finis",
+      "tu": "finis",
+      "il/elle": "finit",
+      "nous": "finissons",
+      "vous": "finissez",
+      "ils/elles": "finissent"
+    },
+    "passe_compose": {
+      "je": "ai fini",
+      "tu": "as fini",
+      "il/elle": "a fini",
+      "nous": "avons fini",
+      "vous": "avez fini",
+      "ils/elles": "ont fini"
+    },
+    "imparfait": {
+      "je": "finissais",
+      "tu": "finissais",
+      "il/elle": "finissait",
+      "nous": "finissions",
+      "vous": "finissiez",
+      "ils/elles": "finissaient"
+    }
   },
   {
     "id": 7,
-    "infinitive": "vendre",
-    "arabic": "يبيع",
+    "infinitive": "manger",
     "level": "A1",
-    "present": { "je": "vends", "tu": "vends", "il/elle": "vend", "nous": "vendons", "vous": "vendez", "ils/elles": "vendent" },
-    "passe_compose": { "je": "ai vendu", "tu": "as vendu", "il/elle": "a vendu", "nous": "avons vendu", "vous": "avez vendu", "ils/elles": "ont vendu" },
-    "imparfait": { "je": "vendais", "tu": "vendais", "il/elle": "vendait", "nous": "vendions", "vous": "vendiez", "ils/elles": "vendaient" }
+    "present": {
+      "je": "mange",
+      "tu": "manges",
+      "il/elle": "mange",
+      "nous": "mangeons",
+      "vous": "mangez",
+      "ils/elles": "mangent"
+    },
+    "passe_compose": {
+      "je": "ai mangé",
+      "tu": "as mangé",
+      "il/elle": "a mangé",
+      "nous": "avons mangé",
+      "vous": "avez mangé",
+      "ils/elles": "ont mangé"
+    },
+    "imparfait": {
+      "je": "mangeais",
+      "tu": "mangeais",
+      "il/elle": "mangeait",
+      "nous": "mangions",
+      "vous": "mangiez",
+      "ils/elles": "mangeaient"
+    }
   },
   {
     "id": 8,
-    "infinitive": "pouvoir",
-    "arabic": "يستطيع",
-    "level": "A2",
-    "present": { "je": "peux", "tu": "peux", "il/elle": "peut", "nous": "pouvons", "vous": "pouvez", "ils/elles": "peuvent" },
-    "passe_compose": { "je": "ai pu", "tu": "as pu", "il/elle": "a pu", "nous": "avons pu", "vous": "avez pu", "ils/elles": "ont pu" },
-    "imparfait": { "je": "pouvais", "tu": "pouvais", "il/elle": "pouvait", "nous": "pouvions", "vous": "pouviez", "ils/elles": "pouvaient" }
+    "infinitive": "boire",
+    "level": "A1",
+    "present": {
+      "je": "bois",
+      "tu": "bois",
+      "il/elle": "boit",
+      "nous": "buvons",
+      "vous": "buvez",
+      "ils/elles": "boivent"
+    },
+    "passe_compose": {
+      "je": "ai bu",
+      "tu": "as bu",
+      "il/elle": "a bu",
+      "nous": "avons bu",
+      "vous": "avez bu",
+      "ils/elles": "ont bu"
+    },
+    "imparfait": {
+      "je": "buvais",
+      "tu": "buvais",
+      "il/elle": "buvait",
+      "nous": "buvions",
+      "vous": "buviez",
+      "ils/elles": "buvaient"
+    }
   },
   {
     "id": 9,
-    "infinitive": "vouloir",
-    "arabic": "يريد",
-    "level": "A2",
-    "present": { "je": "veux", "tu": "veux", "il/elle": "veut", "nous": "voulons", "vous": "voulez", "ils/elles": "veulent" },
-    "passe_compose": { "je": "ai voulu", "tu": "as voulu", "il/elle": "a voulu", "nous": "avons voulu", "vous": "avez voulu", "ils/elles": "ont voulu" },
-    "imparfait": { "je": "voulais", "tu": "voulais", "il/elle": "voulait", "nous": "voulions", "vous": "vouliez", "ils/elles": "voulaient" }
+    "infinitive": "prendre",
+    "level": "A1",
+    "present": {
+      "je": "prends",
+      "tu": "prends",
+      "il/elle": "prend",
+      "nous": "prenons",
+      "vous": "prenez",
+      "ils/elles": "prennent"
+    },
+    "passe_compose": {
+      "je": "ai pris",
+      "tu": "as pris",
+      "il/elle": "a pris",
+      "nous": "avons pris",
+      "vous": "avez pris",
+      "ils/elles": "ont pris"
+    },
+    "imparfait": {
+      "je": "prenais",
+      "tu": "prenais",
+      "il/elle": "prenait",
+      "nous": "prenions",
+      "vous": "preniez",
+      "ils/elles": "prenaient"
+    }
   },
   {
     "id": 10,
-    "infinitive": "devoir",
-    "arabic": "يجب/يدين",
-    "level": "A2",
-    "present": { "je": "dois", "tu": "dois", "il/elle": "doit", "nous": "devons", "vous": "devez", "ils/elles": "doivent" },
-    "passe_compose": { "je": "ai dû", "tu": "as dû", "il/elle": "a dû", "nous": "avons dû", "vous": "avez dû", "ils/elles": "ont dû" },
-    "imparfait": { "je": "devais", "tu": "devais", "il/elle": "devait", "nous": "devions", "vous": "deviez", "ils/elles": "devaient" }
+    "infinitive": "vouloir",
+    "level": "A1",
+    "present": {
+      "je": "veux",
+      "tu": "veux",
+      "il/elle": "veut",
+      "nous": "voulons",
+      "vous": "voulez",
+      "ils/elles": "veulent"
+    },
+    "passe_compose": {
+      "je": "ai voulu",
+      "tu": "as voulu",
+      "il/elle": "a voulu",
+      "nous": "avons voulu",
+      "vous": "avez voulu",
+      "ils/elles": "ont voulu"
+    },
+    "imparfait": {
+      "je": "voulais",
+      "tu": "voulais",
+      "il/elle": "voulait",
+      "nous": "voulions",
+      "vous": "vouliez",
+      "ils/elles": "voulaient"
+    }
   },
   {
     "id": 11,
-    "infinitive": "savoir",
-    "arabic": "يعرف",
-    "level": "A2",
-    "present": { "je": "sais", "tu": "sais", "il/elle": "sait", "nous": "savons", "vous": "savez", "ils/elles": "savent" },
-    "passe_compose": { "je": "ai su", "tu": "as su", "il/elle": "a su", "nous": "avons su", "vous": "avez su", "ils/elles": "ont su" },
-    "imparfait": { "je": "savais", "tu": "savais", "il/elle": "savait", "nous": "savions", "vous": "saviez", "ils/elles": "savaient" }
+    "infinitive": "pouvoir",
+    "level": "A1",
+    "present": {
+      "je": "peux",
+      "tu": "peux",
+      "il/elle": "peut",
+      "nous": "pouvons",
+      "vous": "pouvez",
+      "ils/elles": "peuvent"
+    },
+    "passe_compose": {
+      "je": "ai pu",
+      "tu": "as pu",
+      "il/elle": "a pu",
+      "nous": "avons pu",
+      "vous": "avez pu",
+      "ils/elles": "ont pu"
+    },
+    "imparfait": {
+      "je": "pouvais",
+      "tu": "pouvais",
+      "il/elle": "pouvait",
+      "nous": "pouvions",
+      "vous": "pouviez",
+      "ils/elles": "pouvaient"
+    }
   },
   {
     "id": 12,
-    "infinitive": "venir",
-    "arabic": "يأتي",
-    "level": "A2",
-    "present": { "je": "viens", "tu": "viens", "il/elle": "vient", "nous": "venons", "vous": "venez", "ils/elles": "viennent" },
-    "passe_compose": { "je": "suis venu", "tu": "es venu", "il/elle": "est venu", "nous": "sommes venus", "vous": "êtes venus", "ils/elles": "sont venus" },
-    "imparfait": { "je": "venais", "tu": "venais", "il/elle": "venait", "nous": "venions", "vous": "veniez", "ils/elles": "venaient" }
+    "infinitive": "devoir",
+    "level": "A1",
+    "present": {
+      "je": "dois",
+      "tu": "dois",
+      "il/elle": "doit",
+      "nous": "devons",
+      "vous": "devez",
+      "ils/elles": "doivent"
+    },
+    "passe_compose": {
+      "je": "ai dû",
+      "tu": "as dû",
+      "il/elle": "a dû",
+      "nous": "avons dû",
+      "vous": "avez dû",
+      "ils/elles": "ont dû"
+    },
+    "imparfait": {
+      "je": "devais",
+      "tu": "devais",
+      "il/elle": "devait",
+      "nous": "devions",
+      "vous": "deviez",
+      "ils/elles": "devaient"
+    }
   },
   {
     "id": 13,
-    "infinitive": "prendre",
-    "arabic": "يأخذ",
-    "level": "A2",
-    "present": { "je": "prends", "tu": "prends", "il/elle": "prend", "nous": "prenons", "vous": "prenez", "ils/elles": "prennent" },
-    "passe_compose": { "je": "ai pris", "tu": "as pris", "il/elle": "a pris", "nous": "avons pris", "vous": "avez pris", "ils/elles": "ont pris" },
-    "imparfait": { "je": "prenais", "tu": "prenais", "il/elle": "prenait", "nous": "prenions", "vous": "preniez", "ils/elles": "prenaient" }
+    "infinitive": "savoir",
+    "level": "A1",
+    "present": {
+      "je": "sais",
+      "tu": "sais",
+      "il/elle": "sait",
+      "nous": "savons",
+      "vous": "savez",
+      "ils/elles": "savent"
+    },
+    "passe_compose": {
+      "je": "ai su",
+      "tu": "as su",
+      "il/elle": "a su",
+      "nous": "avons su",
+      "vous": "avez su",
+      "ils/elles": "ont su"
+    },
+    "imparfait": {
+      "je": "savais",
+      "tu": "savais",
+      "il/elle": "savait",
+      "nous": "savions",
+      "vous": "saviez",
+      "ils/elles": "savaient"
+    }
   },
   {
     "id": 14,
-    "infinitive": "mettre",
-    "arabic": "يضع",
-    "level": "A2",
-    "present": { "je": "mets", "tu": "mets", "il/elle": "met", "nous": "mettons", "vous": "mettez", "ils/elles": "mettent" },
-    "passe_compose": { "je": "ai mis", "tu": "as mis", "il/elle": "a mis", "nous": "avons mis", "vous": "avez mis", "ils/elles": "ont mis" },
-    "imparfait": { "je": "mettais", "tu": "mettais", "il/elle": "mettait", "nous": "mettions", "vous": "mettiez", "ils/elles": "mettaient" }
+    "infinitive": "venir",
+    "level": "A1",
+    "present": {
+      "je": "viens",
+      "tu": "viens",
+      "il/elle": "vient",
+      "nous": "venons",
+      "vous": "venez",
+      "ils/elles": "viennent"
+    },
+    "passe_compose": {
+      "je": "suis venu",
+      "tu": "es venu",
+      "il/elle": "est venu",
+      "nous": "sommes venus",
+      "vous": "êtes venus",
+      "ils/elles": "sont venus"
+    },
+    "imparfait": {
+      "je": "venais",
+      "tu": "venais",
+      "il/elle": "venait",
+      "nous": "venions",
+      "vous": "veniez",
+      "ils/elles": "venaient"
+    }
   },
   {
     "id": 15,
-    "infinitive": "dire",
-    "arabic": "يقول",
-    "level": "A2",
-    "present": { "je": "dis", "tu": "dis", "il/elle": "dit", "nous": "disons", "vous": "dites", "ils/elles": "disent" },
-    "passe_compose": { "je": "ai dit", "tu": "as dit", "il/elle": "a dit", "nous": "avons dit", "vous": "avez dit", "ils/elles": "ont dit" },
-    "imparfait": { "je": "disais", "tu": "disais", "il/elle": "disait", "nous": "disions", "vous": "disiez", "ils/elles": "disaient" }
+    "infinitive": "mettre",
+    "level": "A1",
+    "present": {
+      "je": "mets",
+      "tu": "mets",
+      "il/elle": "met",
+      "nous": "mettons",
+      "vous": "mettez",
+      "ils/elles": "mettent"
+    },
+    "passe_compose": {
+      "je": "ai mis",
+      "tu": "as mis",
+      "il/elle": "a mis",
+      "nous": "avons mis",
+      "vous": "avez mis",
+      "ils/elles": "ont mis"
+    },
+    "imparfait": {
+      "je": "mettais",
+      "tu": "mettais",
+      "il/elle": "mettait",
+      "nous": "mettions",
+      "vous": "mettiez",
+      "ils/elles": "mettaient"
+    }
   },
   {
     "id": 16,
-    "infinitive": "voir",
-    "arabic": "يرى",
-    "level": "A2",
-    "present": { "je": "vois", "tu": "vois", "il/elle": "voit", "nous": "voyons", "vous": "voyez", "ils/elles": "voient" },
-    "passe_compose": { "je": "ai vu", "tu": "as vu", "il/elle": "a vu", "nous": "avons vu", "vous": "avez vu", "ils/elles": "ont vu" },
-    "imparfait": { "je": "voyais", "tu": "voyais", "il/elle": "voyait", "nous": "voyions", "vous": "voyiez", "ils/elles": "voyaient" }
+    "infinitive": "dire",
+    "level": "A1",
+    "present": {
+      "je": "dis",
+      "tu": "dis",
+      "il/elle": "dit",
+      "nous": "disons",
+      "vous": "dites",
+      "ils/elles": "disent"
+    },
+    "passe_compose": {
+      "je": "ai dit",
+      "tu": "as dit",
+      "il/elle": "a dit",
+      "nous": "avons dit",
+      "vous": "avez dit",
+      "ils/elles": "ont dit"
+    },
+    "imparfait": {
+      "je": "disais",
+      "tu": "disais",
+      "il/elle": "disait",
+      "nous": "disions",
+      "vous": "disiez",
+      "ils/elles": "disaient"
+    }
   },
   {
     "id": 17,
-    "infinitive": "croire",
-    "arabic": "يصدق/يعتقد",
+    "infinitive": "voir",
     "level": "A2",
-    "present": { "je": "crois", "tu": "crois", "il/elle": "croit", "nous": "croyons", "vous": "croyez", "ils/elles": "croient" },
-    "passe_compose": { "je": "ai cru", "tu": "as cru", "il/elle": "a cru", "nous": "avons cru", "vous": "avez cru", "ils/elles": "ont cru" },
-    "imparfait": { "je": "croyais", "tu": "croyais", "il/elle": "croyait", "nous": "croyions", "vous": "croyiez", "ils/elles": "croyaient" }
+    "present": {
+      "je": "vois",
+      "tu": "vois",
+      "il/elle": "voit",
+      "nous": "voyons",
+      "vous": "voyez",
+      "ils/elles": "voient"
+    },
+    "passe_compose": {
+      "je": "ai vu",
+      "tu": "as vu",
+      "il/elle": "a vu",
+      "nous": "avons vu",
+      "vous": "avez vu",
+      "ils/elles": "ont vu"
+    },
+    "imparfait": {
+      "je": "voyais",
+      "tu": "voyais",
+      "il/elle": "voyait",
+      "nous": "voyions",
+      "vous": "voyiez",
+      "ils/elles": "voyaient"
+    }
   },
   {
     "id": 18,
-    "infinitive": "écrire",
-    "arabic": "يكتب",
+    "infinitive": "lire",
     "level": "A2",
-    "present": { "je": "écris", "tu": "écris", "il/elle": "écrit", "nous": "écrivons", "vous": "écrivez", "ils/elles": "écrivent" },
-    "passe_compose": { "je": "ai écrit", "tu": "as écrit", "il/elle": "a écrit", "nous": "avons écrit", "vous": "avez écrit", "ils/elles": "ont écrit" },
-    "imparfait": { "je": "écrivais", "tu": "écrivais", "il/elle": "écrivait", "nous": "écrivions", "vous": "écriviez", "ils/elles": "écrivaient" }
+    "present": {
+      "je": "lis",
+      "tu": "lis",
+      "il/elle": "lit",
+      "nous": "lisons",
+      "vous": "lisez",
+      "ils/elles": "lisent"
+    },
+    "passe_compose": {
+      "je": "ai lu",
+      "tu": "as lu",
+      "il/elle": "a lu",
+      "nous": "avons lu",
+      "vous": "avez lu",
+      "ils/elles": "ont lu"
+    },
+    "imparfait": {
+      "je": "lisais",
+      "tu": "lisais",
+      "il/elle": "lisait",
+      "nous": "lisions",
+      "vous": "lisiez",
+      "ils/elles": "lisaient"
+    }
   },
   {
     "id": 19,
-    "infinitive": "lire",
-    "arabic": "يقرأ",
+    "infinitive": "écrire",
     "level": "A2",
-    "present": { "je": "lis", "tu": "lis", "il/elle": "lit", "nous": "lisons", "vous": "lisez", "ils/elles": "lisent" },
-    "passe_compose": { "je": "ai lu", "tu": "as lu", "il/elle": "a lu", "nous": "avons lu", "vous": "avez lu", "ils/elles": "ont lu" },
-    "imparfait": { "je": "lisais", "tu": "lisais", "il/elle": "lisait", "nous": "lisions", "vous": "lisiez", "ils/elles": "lisaient" }
+    "present": {
+      "je": "écris",
+      "tu": "écris",
+      "il/elle": "écrit",
+      "nous": "écrivons",
+      "vous": "écrivez",
+      "ils/elles": "écrivent"
+    },
+    "passe_compose": {
+      "je": "ai écrit",
+      "tu": "as écrit",
+      "il/elle": "a écrit",
+      "nous": "avons écrit",
+      "vous": "avez écrit",
+      "ils/elles": "ont écrit"
+    },
+    "imparfait": {
+      "je": "écrivais",
+      "tu": "écrivais",
+      "il/elle": "écrivait",
+      "nous": "écrivions",
+      "vous": "écriviez",
+      "ils/elles": "écrivaient"
+    }
   },
   {
     "id": 20,
     "infinitive": "partir",
-    "arabic": "يغادر",
     "level": "A2",
-    "present": { "je": "pars", "tu": "pars", "il/elle": "part", "nous": "partons", "vous": "partez", "ils/elles": "partent" },
-    "passe_compose": { "je": "suis parti", "tu": "es parti", "il/elle": "est parti", "nous": "sommes partis", "vous": "êtes partis", "ils/elles": "sont partis" },
-    "imparfait": { "je": "partais", "tu": "partais", "il/elle": "partait", "nous": "partions", "vous": "partiez", "ils/elles": "partaient" }
+    "present": {
+      "je": "pars",
+      "tu": "pars",
+      "il/elle": "part",
+      "nous": "partons",
+      "vous": "partez",
+      "ils/elles": "partent"
+    },
+    "passe_compose": {
+      "je": "suis parti",
+      "tu": "es parti",
+      "il/elle": "est parti",
+      "nous": "sommes partis",
+      "vous": "êtes partis",
+      "ils/elles": "sont partis"
+    },
+    "imparfait": {
+      "je": "partais",
+      "tu": "partais",
+      "il/elle": "partait",
+      "nous": "partions",
+      "vous": "partiez",
+      "ils/elles": "partaient"
+    }
   },
   {
     "id": 21,
     "infinitive": "sortir",
-    "arabic": "يخرج",
     "level": "A2",
-    "present": { "je": "sors", "tu": "sors", "il/elle": "sort", "nous": "sortons", "vous": "sortez", "ils/elles": "sortent" },
-    "passe_compose": { "je": "suis sorti", "tu": "es sorti", "il/elle": "est sorti", "nous": "sommes sortis", "vous": "êtes sortis", "ils/elles": "sont sortis" },
-    "imparfait": { "je": "sortais", "tu": "sortais", "il/elle": "sortait", "nous": "sortions", "vous": "sortiez", "ils/elles": "sortaient" }
+    "present": {
+      "je": "sors",
+      "tu": "sors",
+      "il/elle": "sort",
+      "nous": "sortons",
+      "vous": "sortez",
+      "ils/elles": "sortent"
+    },
+    "passe_compose": {
+      "je": "suis sorti",
+      "tu": "es sorti",
+      "il/elle": "est sorti",
+      "nous": "sommes sortis",
+      "vous": "êtes sortis",
+      "ils/elles": "sont sortis"
+    },
+    "imparfait": {
+      "je": "sortais",
+      "tu": "sortais",
+      "il/elle": "sortait",
+      "nous": "sortions",
+      "vous": "sortiez",
+      "ils/elles": "sortaient"
+    }
   },
   {
     "id": 22,
     "infinitive": "dormir",
-    "arabic": "ينام",
     "level": "A2",
-    "present": { "je": "dors", "tu": "dors", "il/elle": "dort", "nous": "dormons", "vous": "dormez", "ils/elles": "dorment" },
-    "passe_compose": { "je": "ai dormi", "tu": "as dormi", "il/elle": "a dormi", "nous": "avons dormi", "vous": "avez dormi", "ils/elles": "ont dormi" },
-    "imparfait": { "je": "dormais", "tu": "dormais", "il/elle": "dormait", "nous": "dormions", "vous": "dormiez", "ils/elles": "dormaient" }
+    "present": {
+      "je": "dors",
+      "tu": "dors",
+      "il/elle": "dort",
+      "nous": "dormons",
+      "vous": "dormez",
+      "ils/elles": "dorment"
+    },
+    "passe_compose": {
+      "je": "ai dormi",
+      "tu": "as dormi",
+      "il/elle": "a dormi",
+      "nous": "avons dormi",
+      "vous": "avez dormi",
+      "ils/elles": "ont dormi"
+    },
+    "imparfait": {
+      "je": "dormais",
+      "tu": "dormais",
+      "il/elle": "dormait",
+      "nous": "dormions",
+      "vous": "dormiez",
+      "ils/elles": "dormaient"
+    }
   },
   {
     "id": 23,
-    "infinitive": "servir",
-    "arabic": "يخدم/يقدم",
-    "level": "B1",
-    "present": { "je": "sers", "tu": "sers", "il/elle": "sert", "nous": "servons", "vous": "servez", "ils/elles": "servent" },
-    "passe_compose": { "je": "ai servi", "tu": "as servi", "il/elle": "a servi", "nous": "avons servi", "vous": "avez servi", "ils/elles": "ont servi" },
-    "imparfait": { "je": "servais", "tu": "servais", "il/elle": "servait", "nous": "servions", "vous": "serviez", "ils/elles": "servaient" }
+    "infinitive": "connaître",
+    "level": "A2",
+    "present": {
+      "je": "connais",
+      "tu": "connais",
+      "il/elle": "connaît",
+      "nous": "connaissons",
+      "vous": "connaissez",
+      "ils/elles": "connaissent"
+    },
+    "passe_compose": {
+      "je": "ai connu",
+      "tu": "as connu",
+      "il/elle": "a connu",
+      "nous": "avons connu",
+      "vous": "avez connu",
+      "ils/elles": "ont connu"
+    },
+    "imparfait": {
+      "je": "connaissais",
+      "tu": "connaissais",
+      "il/elle": "connaissait",
+      "nous": "connaissions",
+      "vous": "connaissiez",
+      "ils/elles": "connaissaient"
+    }
   },
   {
     "id": 24,
-    "infinitive": "ouvrir",
-    "arabic": "يفتح",
-    "level": "B1",
-    "present": { "je": "ouvre", "tu": "ouvres", "il/elle": "ouvre", "nous": "ouvrons", "vous": "ouvrez", "ils/elles": "ouvrent" },
-    "passe_compose": { "je": "ai ouvert", "tu": "as ouvert", "il/elle": "a ouvert", "nous": "avons ouvert", "vous": "avez ouvert", "ils/elles": "ont ouvert" },
-    "imparfait": { "je": "ouvrais", "tu": "ouvrais", "il/elle": "ouvrait", "nous": "ouvrions", "vous": "ouvriez", "ils/elles": "ouvraient" }
+    "infinitive": "vivre",
+    "level": "A2",
+    "present": {
+      "je": "vis",
+      "tu": "vis",
+      "il/elle": "vit",
+      "nous": "vivons",
+      "vous": "vivez",
+      "ils/elles": "vivent"
+    },
+    "passe_compose": {
+      "je": "ai vécu",
+      "tu": "as vécu",
+      "il/elle": "a vécu",
+      "nous": "avons vécu",
+      "vous": "avez vécu",
+      "ils/elles": "ont vécu"
+    },
+    "imparfait": {
+      "je": "vivais",
+      "tu": "vivais",
+      "il/elle": "vivait",
+      "nous": "vivions",
+      "vous": "viviez",
+      "ils/elles": "vivaient"
+    }
   },
   {
     "id": 25,
-    "infinitive": "offrir",
-    "arabic": "يهدي",
-    "level": "B1",
-    "present": { "je": "offre", "tu": "offres", "il/elle": "offre", "nous": "offrons", "vous": "offrez", "ils/elles": "offrent" },
-    "passe_compose": { "je": "ai offert", "tu": "as offert", "il/elle": "a offert", "nous": "avons offert", "vous": "avez offert", "ils/elles": "ont offert" },
-    "imparfait": { "je": "offrais", "tu": "offrais", "il/elle": "offrait", "nous": "offrions", "vous": "offriez", "ils/elles": "offraient" }
+    "infinitive": "suivre",
+    "level": "A2",
+    "present": {
+      "je": "suis",
+      "tu": "suis",
+      "il/elle": "suit",
+      "nous": "suivons",
+      "vous": "suivez",
+      "ils/elles": "suivent"
+    },
+    "passe_compose": {
+      "je": "ai suivi",
+      "tu": "as suivi",
+      "il/elle": "a suivi",
+      "nous": "avons suivi",
+      "vous": "avez suivi",
+      "ils/elles": "ont suivi"
+    },
+    "imparfait": {
+      "je": "suivais",
+      "tu": "suivais",
+      "il/elle": "suivait",
+      "nous": "suivions",
+      "vous": "suiviez",
+      "ils/elles": "suivaient"
+    }
   },
   {
     "id": 26,
-    "infinitive": "souffrir",
-    "arabic": "يعاني",
-    "level": "B1",
-    "present": { "je": "souffre", "tu": "souffres", "il/elle": "souffre", "nous": "souffrons", "vous": "souffrez", "ils/elles": "souffrent" },
-    "passe_compose": { "je": "ai souffert", "tu": "as souffert", "il/elle": "a souffert", "nous": "avons souffert", "vous": "avez souffert", "ils/elles": "ont souffert" },
-    "imparfait": { "je": "souffrais", "tu": "souffrais", "il/elle": "souffrait", "nous": "souffrions", "vous": "souffriez", "ils/elles": "souffraient" }
+    "infinitive": "rire",
+    "level": "A2",
+    "present": {
+      "je": "ris",
+      "tu": "ris",
+      "il/elle": "rit",
+      "nous": "rions",
+      "vous": "riez",
+      "ils/elles": "rient"
+    },
+    "passe_compose": {
+      "je": "ai ri",
+      "tu": "as ri",
+      "il/elle": "a ri",
+      "nous": "avons ri",
+      "vous": "avez ri",
+      "ils/elles": "ont ri"
+    },
+    "imparfait": {
+      "je": "riais",
+      "tu": "riais",
+      "il/elle": "riait",
+      "nous": "riions",
+      "vous": "riiez",
+      "ils/elles": "riaient"
+    }
   },
   {
     "id": 27,
-    "infinitive": "connaître",
-    "arabic": "يعرف/يعلم",
-    "level": "B1",
-    "present": { "je": "connais", "tu": "connais", "il/elle": "connaît", "nous": "connaissons", "vous": "connaissez", "ils/elles": "connaissent" },
-    "passe_compose": { "je": "ai connu", "tu": "as connu", "il/elle": "a connu", "nous": "avons connu", "vous": "avez connu", "ils/elles": "ont connu" },
-    "imparfait": { "je": "connaissais", "tu": "connaissais", "il/elle": "connaissait", "nous": "connaissions", "vous": "connaissiez", "ils/elles": "connaissaient" }
+    "infinitive": "conduire",
+    "level": "A2",
+    "present": {
+      "je": "conduis",
+      "tu": "conduis",
+      "il/elle": "conduit",
+      "nous": "conduisons",
+      "vous": "conduisez",
+      "ils/elles": "conduisent"
+    },
+    "passe_compose": {
+      "je": "ai conduit",
+      "tu": "as conduit",
+      "il/elle": "a conduit",
+      "nous": "avons conduit",
+      "vous": "avez conduit",
+      "ils/elles": "ont conduit"
+    },
+    "imparfait": {
+      "je": "conduisais",
+      "tu": "conduisais",
+      "il/elle": "conduisait",
+      "nous": "conduisions",
+      "vous": "conduisiez",
+      "ils/elles": "conduisaient"
+    }
   },
   {
     "id": 28,
-    "infinitive": "paraître",
-    "arabic": "يبدو",
-    "level": "B1",
-    "present": { "je": "parais", "tu": "parais", "il/elle": "paraît", "nous": "paraissons", "vous": "paraissez", "ils/elles": "paraissent" },
-    "passe_compose": { "je": "ai paru", "tu": "as paru", "il/elle": "a paru", "nous": "avons paru", "vous": "avez paru", "ils/elles": "ont paru" },
-    "imparfait": { "je": "paraissais", "tu": "paraissais", "il/elle": "paraissait", "nous": "paraissions", "vous": "paraissiez", "ils/elles": "paraissaient" }
+    "infinitive": "croire",
+    "level": "A2",
+    "present": {
+      "je": "crois",
+      "tu": "crois",
+      "il/elle": "croit",
+      "nous": "croyons",
+      "vous": "croyez",
+      "ils/elles": "croient"
+    },
+    "passe_compose": {
+      "je": "ai cru",
+      "tu": "as cru",
+      "il/elle": "a cru",
+      "nous": "avons cru",
+      "vous": "avez cru",
+      "ils/elles": "ont cru"
+    },
+    "imparfait": {
+      "je": "croyais",
+      "tu": "croyais",
+      "il/elle": "croyait",
+      "nous": "croyions",
+      "vous": "croyiez",
+      "ils/elles": "croyaient"
+    }
   },
   {
     "id": 29,
-    "infinitive": "vivre",
-    "arabic": "يعيش",
-    "level": "B1",
-    "present": { "je": "vis", "tu": "vis", "il/elle": "vit", "nous": "vivons", "vous": "vivez", "ils/elles": "vivent" },
-    "passe_compose": { "je": "ai vécu", "tu": "as vécu", "il/elle": "a vécu", "nous": "avons vécu", "vous": "avez vécu", "ils/elles": "ont vécu" },
-    "imparfait": { "je": "vivais", "tu": "vivais", "il/elle": "vivait", "nous": "vivions", "vous": "viviez", "ils/elles": "vivaient" }
+    "infinitive": "courir",
+    "level": "A2",
+    "present": {
+      "je": "cours",
+      "tu": "cours",
+      "il/elle": "court",
+      "nous": "courons",
+      "vous": "courez",
+      "ils/elles": "courent"
+    },
+    "passe_compose": {
+      "je": "ai couru",
+      "tu": "as couru",
+      "il/elle": "a couru",
+      "nous": "avons couru",
+      "vous": "avez couru",
+      "ils/elles": "ont couru"
+    },
+    "imparfait": {
+      "je": "courais",
+      "tu": "courais",
+      "il/elle": "courait",
+      "nous": "courions",
+      "vous": "couriez",
+      "ils/elles": "couraient"
+    }
   },
   {
     "id": 30,
-    "infinitive": "suivre",
-    "arabic": "يتبع",
-    "level": "B1",
-    "present": { "je": "suis", "tu": "suis", "il/elle": "suit", "nous": "suivons", "vous": "suivez", "ils/elles": "suivent" },
-    "passe_compose": { "je": "ai suivi", "tu": "as suivi", "il/elle": "a suivi", "nous": "avons suivi", "vous": "avez suivi", "ils/elles": "ont suivi" },
-    "imparfait": { "je": "suivais", "tu": "suivais", "il/elle": "suivait", "nous": "suivions", "vous": "suiviez", "ils/elles": "suivaient" }
+    "infinitive": "envoyer",
+    "level": "A2",
+    "present": {
+      "je": "envoie",
+      "tu": "envoies",
+      "il/elle": "envoie",
+      "nous": "envoyons",
+      "vous": "envoyez",
+      "ils/elles": "envoient"
+    },
+    "passe_compose": {
+      "je": "ai envoyé",
+      "tu": "as envoyé",
+      "il/elle": "a envoyé",
+      "nous": "avons envoyé",
+      "vous": "avez envoyé",
+      "ils/elles": "ont envoyé"
+    },
+    "imparfait": {
+      "je": "envoyais",
+      "tu": "envoyais",
+      "il/elle": "envoyait",
+      "nous": "envoyions",
+      "vous": "envoyiez",
+      "ils/elles": "envoyaient"
+    }
   },
   {
     "id": 31,
-    "infinitive": "rire",
-    "arabic": "يضحك",
-    "level": "B1",
-    "present": { "je": "ris", "tu": "ris", "il/elle": "rit", "nous": "rions", "vous": "riez", "ils/elles": "rient" },
-    "passe_compose": { "je": "ai ri", "tu": "as ri", "il/elle": "a ri", "nous": "avons ri", "vous": "avez ri", "ils/elles": "ont ri" },
-    "imparfait": { "je": "riais", "tu": "riais", "il/elle": "riait", "nous": "riions", "vous": "riiez", "ils/elles": "riaient" }
+    "infinitive": "essayer",
+    "level": "A2",
+    "present": {
+      "je": "essaie",
+      "tu": "essaies",
+      "il/elle": "essaie",
+      "nous": "essayons",
+      "vous": "essayez",
+      "ils/elles": "essaient"
+    },
+    "passe_compose": {
+      "je": "ai essayé",
+      "tu": "as essayé",
+      "il/elle": "a essayé",
+      "nous": "avons essayé",
+      "vous": "avez essayé",
+      "ils/elles": "ont essayé"
+    },
+    "imparfait": {
+      "je": "essayais",
+      "tu": "essayais",
+      "il/elle": "essayait",
+      "nous": "essayions",
+      "vous": "essayiez",
+      "ils/elles": "essayaient"
+    }
   },
   {
     "id": 32,
-    "infinitive": "conduire",
-    "arabic": "يقود",
-    "level": "B1",
-    "present": { "je": "conduis", "tu": "conduis", "il/elle": "conduit", "nous": "conduisons", "vous": "conduisez", "ils/elles": "conduisent" },
-    "passe_compose": { "je": "ai conduit", "tu": "as conduit", "il/elle": "a conduit", "nous": "avons conduit", "vous": "avez conduit", "ils/elles": "ont conduit" },
-    "imparfait": { "je": "conduisais", "tu": "conduisais", "il/elle": "conduisait", "nous": "conduisions", "vous": "conduisiez", "ils/elles": "conduisaient" }
+    "infinitive": "jouer",
+    "level": "A1",
+    "present": {
+      "je": "joue",
+      "tu": "joues",
+      "il/elle": "joue",
+      "nous": "jouons",
+      "vous": "jouez",
+      "ils/elles": "jouent"
+    },
+    "passe_compose": {
+      "je": "ai joué",
+      "tu": "as joué",
+      "il/elle": "a joué",
+      "nous": "avons joué",
+      "vous": "avez joué",
+      "ils/elles": "ont joué"
+    },
+    "imparfait": {
+      "je": "jouais",
+      "tu": "jouais",
+      "il/elle": "jouait",
+      "nous": "jouions",
+      "vous": "jouiez",
+      "ils/elles": "jouaient"
+    }
   },
   {
     "id": 33,
-    "infinitive": "traduire",
-    "arabic": "يترجم",
-    "level": "B2",
-    "present": { "je": "traduis", "tu": "traduis", "il/elle": "traduit", "nous": "traduisons", "vous": "traduisez", "ils/elles": "traduisent" },
-    "passe_compose": { "je": "ai traduit", "tu": "as traduit", "il/elle": "a traduit", "nous": "avons traduit", "vous": "avez traduit", "ils/elles": "ont traduit" },
-    "imparfait": { "je": "traduisais", "tu": "traduisais", "il/elle": "traduisait", "nous": "traduisions", "vous": "traduisiez", "ils/elles": "traduisaient" }
+    "infinitive": "chanter",
+    "level": "A1",
+    "present": {
+      "je": "chante",
+      "tu": "chantes",
+      "il/elle": "chante",
+      "nous": "chantons",
+      "vous": "chantez",
+      "ils/elles": "chantent"
+    },
+    "passe_compose": {
+      "je": "ai chanté",
+      "tu": "as chanté",
+      "il/elle": "a chanté",
+      "nous": "avons chanté",
+      "vous": "avez chanté",
+      "ils/elles": "ont chanté"
+    },
+    "imparfait": {
+      "je": "chantais",
+      "tu": "chantais",
+      "il/elle": "chantait",
+      "nous": "chantions",
+      "vous": "chantiez",
+      "ils/elles": "chantaient"
+    }
   },
   {
     "id": 34,
-    "infinitive": "peindre",
-    "arabic": "يرسم/يدهن",
-    "level": "B2",
-    "present": { "je": "peins", "tu": "peins", "il/elle": "peint", "nous": "peignons", "vous": "peignez", "ils/elles": "peignent" },
-    "passe_compose": { "je": "ai peint", "tu": "as peint", "il/elle": "a peint", "nous": "avons peint", "vous": "avez peint", "ils/elles": "ont peint" },
-    "imparfait": { "je": "peignais", "tu": "peignais", "il/elle": "peignait", "nous": "peignions", "vous": "peigniez", "ils/elles": "peignaient" }
+    "infinitive": "monter",
+    "level": "A1",
+    "present": {
+      "je": "monte",
+      "tu": "montes",
+      "il/elle": "monte",
+      "nous": "montons",
+      "vous": "montez",
+      "ils/elles": "montent"
+    },
+    "passe_compose": {
+      "je": "suis monté",
+      "tu": "es monté",
+      "il/elle": "est monté",
+      "nous": "sommes montés",
+      "vous": "êtes montés",
+      "ils/elles": "sont montés"
+    },
+    "imparfait": {
+      "je": "montais",
+      "tu": "montais",
+      "il/elle": "montait",
+      "nous": "montions",
+      "vous": "montiez",
+      "ils/elles": "montaient"
+    }
   },
   {
     "id": 35,
+    "infinitive": "descendre",
+    "level": "A1",
+    "present": {
+      "je": "descends",
+      "tu": "descends",
+      "il/elle": "descend",
+      "nous": "descendons",
+      "vous": "descendez",
+      "ils/elles": "descendent"
+    },
+    "passe_compose": {
+      "je": "suis descendu",
+      "tu": "es descendu",
+      "il/elle": "est descendu",
+      "nous": "sommes descendus",
+      "vous": "êtes descendus",
+      "ils/elles": "sont descendus"
+    },
+    "imparfait": {
+      "je": "descendais",
+      "tu": "descendais",
+      "il/elle": "descendait",
+      "nous": "descendions",
+      "vous": "descendiez",
+      "ils/elles": "descendaient"
+    }
+  },
+  {
+    "id": 36,
+    "infinitive": "tomber",
+    "level": "A1",
+    "present": {
+      "je": "tombe",
+      "tu": "tombes",
+      "il/elle": "tombe",
+      "nous": "tombons",
+      "vous": "tombez",
+      "ils/elles": "tombent"
+    },
+    "passe_compose": {
+      "je": "suis tombé",
+      "tu": "es tombé",
+      "il/elle": "est tombé",
+      "nous": "sommes tombés",
+      "vous": "êtes tombés",
+      "ils/elles": "sont tombés"
+    },
+    "imparfait": {
+      "je": "tombais",
+      "tu": "tombais",
+      "il/elle": "tombait",
+      "nous": "tombions",
+      "vous": "tombiez",
+      "ils/elles": "tombaient"
+    }
+  },
+  {
+    "id": 37,
+    "infinitive": "acheter",
+    "level": "A1",
+    "present": {
+      "je": "achète",
+      "tu": "achètes",
+      "il/elle": "achète",
+      "nous": "achetons",
+      "vous": "achetez",
+      "ils/elles": "achètent"
+    },
+    "passe_compose": {
+      "je": "ai acheté",
+      "tu": "as acheté",
+      "il/elle": "a acheté",
+      "nous": "avons acheté",
+      "vous": "avez acheté",
+      "ils/elles": "ont acheté"
+    },
+    "imparfait": {
+      "je": "achetais",
+      "tu": "achetais",
+      "il/elle": "achetait",
+      "nous": "achetions",
+      "vous": "achetiez",
+      "ils/elles": "achetaient"
+    }
+  },
+  {
+    "id": 38,
+    "infinitive": "appeler",
+    "level": "A1",
+    "present": {
+      "je": "appelle",
+      "tu": "appelles",
+      "il/elle": "appelle",
+      "nous": "appelons",
+      "vous": "appelez",
+      "ils/elles": "appellent"
+    },
+    "passe_compose": {
+      "je": "ai appelé",
+      "tu": "as appelé",
+      "il/elle": "a appelé",
+      "nous": "avons appelé",
+      "vous": "avez appelé",
+      "ils/elles": "ont appelé"
+    },
+    "imparfait": {
+      "je": "appelais",
+      "tu": "appelais",
+      "il/elle": "appelait",
+      "nous": "appelions",
+      "vous": "appeliez",
+      "ils/elles": "appelaient"
+    }
+  },
+  {
+    "id": 39,
+    "infinitive": "commencer",
+    "level": "A1",
+    "present": {
+      "je": "commence",
+      "tu": "commences",
+      "il/elle": "commence",
+      "nous": "commençons",
+      "vous": "commencez",
+      "ils/elles": "commencent"
+    },
+    "passe_compose": {
+      "je": "ai commencé",
+      "tu": "as commencé",
+      "il/elle": "a commencé",
+      "nous": "avons commencé",
+      "vous": "avez commencé",
+      "ils/elles": "ont commencé"
+    },
+    "imparfait": {
+      "je": "commençais",
+      "tu": "commençais",
+      "il/elle": "commençait",
+      "nous": "commencions",
+      "vous": "commenciez",
+      "ils/elles": "commençaient"
+    }
+  },
+  {
+    "id": 40,
+    "infinitive": "payer",
+    "level": "A1",
+    "present": {
+      "je": "paie",
+      "tu": "paies",
+      "il/elle": "paie",
+      "nous": "payons",
+      "vous": "payez",
+      "ils/elles": "paient"
+    },
+    "passe_compose": {
+      "je": "ai payé",
+      "tu": "as payé",
+      "il/elle": "a payé",
+      "nous": "avons payé",
+      "vous": "avez payé",
+      "ils/elles": "ont payé"
+    },
+    "imparfait": {
+      "je": "payais",
+      "tu": "payais",
+      "il/elle": "payait",
+      "nous": "payions",
+      "vous": "payiez",
+      "ils/elles": "payaient"
+    }
+  },
+  {
+    "id": 41,
+    "infinitive": "nettoyer",
+    "level": "A2",
+    "present": {
+      "je": "nettoie",
+      "tu": "nettoies",
+      "il/elle": "nettoie",
+      "nous": "nettoyons",
+      "vous": "nettoyez",
+      "ils/elles": "nettoient"
+    },
+    "passe_compose": {
+      "je": "ai nettoyé",
+      "tu": "as nettoyé",
+      "il/elle": "a nettoyé",
+      "nous": "avons nettoyé",
+      "vous": "avez nettoyé",
+      "ils/elles": "ont nettoyé"
+    },
+    "imparfait": {
+      "je": "nettoyais",
+      "tu": "nettoyais",
+      "il/elle": "nettoyait",
+      "nous": "nettoyions",
+      "vous": "nettoyiez",
+      "ils/elles": "nettoyaient"
+    }
+  },
+  {
+    "id": 42,
+    "infinitive": "employer",
+    "level": "A2",
+    "present": {
+      "je": "emploie",
+      "tu": "emploies",
+      "il/elle": "emploie",
+      "nous": "employons",
+      "vous": "employez",
+      "ils/elles": "emploient"
+    },
+    "passe_compose": {
+      "je": "ai employé",
+      "tu": "as employé",
+      "il/elle": "a employé",
+      "nous": "avons employé",
+      "vous": "avez employé",
+      "ils/elles": "ont employé"
+    },
+    "imparfait": {
+      "je": "employais",
+      "tu": "employais",
+      "il/elle": "employait",
+      "nous": "employions",
+      "vous": "employiez",
+      "ils/elles": "employaient"
+    }
+  },
+  {
+    "id": 43,
+    "infinitive": "avancer",
+    "level": "A2",
+    "present": {
+      "je": "avance",
+      "tu": "avances",
+      "il/elle": "avance",
+      "nous": "avançons",
+      "vous": "avancez",
+      "ils/elles": "avancent"
+    },
+    "passe_compose": {
+      "je": "ai avancé",
+      "tu": "as avancé",
+      "il/elle": "a avancé",
+      "nous": "avons avancé",
+      "vous": "avez avancé",
+      "ils/elles": "ont avancé"
+    },
+    "imparfait": {
+      "je": "avançais",
+      "tu": "avançais",
+      "il/elle": "avançait",
+      "nous": "avancions",
+      "vous": "avanciez",
+      "ils/elles": "avançaient"
+    }
+  },
+  {
+    "id": 44,
+    "infinitive": "prononcer",
+    "level": "A2",
+    "present": {
+      "je": "prononce",
+      "tu": "prononces",
+      "il/elle": "prononce",
+      "nous": "prononçons",
+      "vous": "prononcez",
+      "ils/elles": "prononcent"
+    },
+    "passe_compose": {
+      "je": "ai prononcé",
+      "tu": "as prononcé",
+      "il/elle": "a prononcé",
+      "nous": "avons prononcé",
+      "vous": "avez prononcé",
+      "ils/elles": "ont prononcé"
+    },
+    "imparfait": {
+      "je": "prononçais",
+      "tu": "prononçais",
+      "il/elle": "prononçait",
+      "nous": "prononcions",
+      "vous": "prononciez",
+      "ils/elles": "prononçaient"
+    }
+  },
+  {
+    "id": 45,
+    "infinitive": "servir",
+    "level": "B1",
+    "present": {
+      "je": "sers",
+      "tu": "sers",
+      "il/elle": "sert",
+      "nous": "servons",
+      "vous": "servez",
+      "ils/elles": "servent"
+    },
+    "passe_compose": {
+      "je": "ai servi",
+      "tu": "as servi",
+      "il/elle": "a servi",
+      "nous": "avons servi",
+      "vous": "avez servi",
+      "ils/elles": "ont servi"
+    },
+    "imparfait": {
+      "je": "servais",
+      "tu": "servais",
+      "il/elle": "servait",
+      "nous": "servions",
+      "vous": "serviez",
+      "ils/elles": "servaient"
+    }
+  },
+  {
+    "id": 46,
+    "infinitive": "ouvrir",
+    "level": "B1",
+    "present": {
+      "je": "ouvre",
+      "tu": "ouvres",
+      "il/elle": "ouvre",
+      "nous": "ouvrons",
+      "vous": "ouvrez",
+      "ils/elles": "ouvrent"
+    },
+    "passe_compose": {
+      "je": "ai ouvert",
+      "tu": "as ouvert",
+      "il/elle": "a ouvert",
+      "nous": "avons ouvert",
+      "vous": "avez ouvert",
+      "ils/elles": "ont ouvert"
+    },
+    "imparfait": {
+      "je": "ouvrais",
+      "tu": "ouvrais",
+      "il/elle": "ouvrait",
+      "nous": "ouvrions",
+      "vous": "ouvriez",
+      "ils/elles": "ouvraient"
+    }
+  },
+  {
+    "id": 47,
+    "infinitive": "offrir",
+    "level": "B1",
+    "present": {
+      "je": "offre",
+      "tu": "offres",
+      "il/elle": "offre",
+      "nous": "offrons",
+      "vous": "offrez",
+      "ils/elles": "offrent"
+    },
+    "passe_compose": {
+      "je": "ai offert",
+      "tu": "as offert",
+      "il/elle": "a offert",
+      "nous": "avons offert",
+      "vous": "avez offert",
+      "ils/elles": "ont offert"
+    },
+    "imparfait": {
+      "je": "offrais",
+      "tu": "offrais",
+      "il/elle": "offrait",
+      "nous": "offrions",
+      "vous": "offriez",
+      "ils/elles": "offraient"
+    }
+  },
+  {
+    "id": 48,
+    "infinitive": "souffrir",
+    "level": "B1",
+    "present": {
+      "je": "souffre",
+      "tu": "souffres",
+      "il/elle": "souffre",
+      "nous": "souffrons",
+      "vous": "souffrez",
+      "ils/elles": "souffrent"
+    },
+    "passe_compose": {
+      "je": "ai souffert",
+      "tu": "as souffert",
+      "il/elle": "a souffert",
+      "nous": "avons souffert",
+      "vous": "avez souffert",
+      "ils/elles": "ont souffert"
+    },
+    "imparfait": {
+      "je": "souffrais",
+      "tu": "souffrais",
+      "il/elle": "souffrait",
+      "nous": "souffrions",
+      "vous": "souffriez",
+      "ils/elles": "souffraient"
+    }
+  },
+  {
+    "id": 49,
+    "infinitive": "paraître",
+    "level": "B1",
+    "present": {
+      "je": "parais",
+      "tu": "parais",
+      "il/elle": "paraît",
+      "nous": "paraissons",
+      "vous": "paraissez",
+      "ils/elles": "paraissent"
+    },
+    "passe_compose": {
+      "je": "ai paru",
+      "tu": "as paru",
+      "il/elle": "a paru",
+      "nous": "avons paru",
+      "vous": "avez paru",
+      "ils/elles": "ont paru"
+    },
+    "imparfait": {
+      "je": "paraissais",
+      "tu": "paraissais",
+      "il/elle": "paraissait",
+      "nous": "paraissions",
+      "vous": "paraissiez",
+      "ils/elles": "paraissaient"
+    }
+  },
+  {
+    "id": 50,
+    "infinitive": "traduire",
+    "level": "B1",
+    "present": {
+      "je": "traduis",
+      "tu": "traduis",
+      "il/elle": "traduit",
+      "nous": "traduisons",
+      "vous": "traduisez",
+      "ils/elles": "traduisent"
+    },
+    "passe_compose": {
+      "je": "ai traduit",
+      "tu": "as traduit",
+      "il/elle": "a traduit",
+      "nous": "avons traduit",
+      "vous": "avez traduit",
+      "ils/elles": "ont traduit"
+    },
+    "imparfait": {
+      "je": "traduisais",
+      "tu": "traduisais",
+      "il/elle": "traduisait",
+      "nous": "traduisions",
+      "vous": "traduisiez",
+      "ils/elles": "traduisaient"
+    }
+  },
+  {
+    "id": 51,
+    "infinitive": "peindre",
+    "level": "B1",
+    "present": {
+      "je": "peins",
+      "tu": "peins",
+      "il/elle": "peint",
+      "nous": "peignons",
+      "vous": "peignez",
+      "ils/elles": "peignent"
+    },
+    "passe_compose": {
+      "je": "ai peint",
+      "tu": "as peint",
+      "il/elle": "a peint",
+      "nous": "avons peint",
+      "vous": "avez peint",
+      "ils/elles": "ont peint"
+    },
+    "imparfait": {
+      "je": "peignais",
+      "tu": "peignais",
+      "il/elle": "peignait",
+      "nous": "peignions",
+      "vous": "peigniez",
+      "ils/elles": "peignaient"
+    }
+  },
+  {
+    "id": 52,
     "infinitive": "recevoir",
-    "arabic": "يتلقى",
+    "level": "B1",
+    "present": {
+      "je": "reçois",
+      "tu": "reçois",
+      "il/elle": "reçoit",
+      "nous": "recevons",
+      "vous": "recevez",
+      "ils/elles": "reçoivent"
+    },
+    "passe_compose": {
+      "je": "ai reçu",
+      "tu": "as reçu",
+      "il/elle": "a reçu",
+      "nous": "avons reçu",
+      "vous": "avez reçu",
+      "ils/elles": "ont reçu"
+    },
+    "imparfait": {
+      "je": "recevais",
+      "tu": "recevais",
+      "il/elle": "recevait",
+      "nous": "recevions",
+      "vous": "receviez",
+      "ils/elles": "recevaient"
+    }
+  },
+  {
+    "id": 53,
+    "infinitive": "mourir",
+    "level": "B1",
+    "present": {
+      "je": "meurs",
+      "tu": "meurs",
+      "il/elle": "meurt",
+      "nous": "mourons",
+      "vous": "mourez",
+      "ils/elles": "meurent"
+    },
+    "passe_compose": {
+      "je": "suis mort",
+      "tu": "es mort",
+      "il/elle": "est mort",
+      "nous": "sommes morts",
+      "vous": "êtes morts",
+      "ils/elles": "sont morts"
+    },
+    "imparfait": {
+      "je": "mourais",
+      "tu": "mourais",
+      "il/elle": "mourait",
+      "nous": "mourions",
+      "vous": "mouriez",
+      "ils/elles": "mouraient"
+    }
+  },
+  {
+    "id": 54,
+    "infinitive": "naître",
+    "level": "B1",
+    "present": {
+      "je": "nais",
+      "tu": "nais",
+      "il/elle": "naît",
+      "nous": "naissons",
+      "vous": "naissez",
+      "ils/elles": "naissent"
+    },
+    "passe_compose": {
+      "je": "suis né",
+      "tu": "es né",
+      "il/elle": "est né",
+      "nous": "sommes nés",
+      "vous": "êtes nés",
+      "ils/elles": "sont nés"
+    },
+    "imparfait": {
+      "je": "naissais",
+      "tu": "naissais",
+      "il/elle": "naissait",
+      "nous": "naissions",
+      "vous": "naissiez",
+      "ils/elles": "naissaient"
+    }
+  },
+  {
+    "id": 55,
+    "infinitive": "apercevoir",
+    "level": "B1",
+    "present": {
+      "je": "aperçois",
+      "tu": "aperçois",
+      "il/elle": "aperçoit",
+      "nous": "apercevons",
+      "vous": "apercevez",
+      "ils/elles": "aperçoivent"
+    },
+    "passe_compose": {
+      "je": "ai aperçu",
+      "tu": "as aperçu",
+      "il/elle": "a aperçu",
+      "nous": "avons aperçu",
+      "vous": "avez aperçu",
+      "ils/elles": "ont aperçu"
+    },
+    "imparfait": {
+      "je": "apercevais",
+      "tu": "apercevais",
+      "il/elle": "apercevait",
+      "nous": "apercevions",
+      "vous": "aperceviez",
+      "ils/elles": "apercevaient"
+    }
+  },
+  {
+    "id": 56,
+    "infinitive": "défendre",
+    "level": "B1",
+    "present": {
+      "je": "défends",
+      "tu": "défends",
+      "il/elle": "défend",
+      "nous": "défendons",
+      "vous": "défendez",
+      "ils/elles": "défendent"
+    },
+    "passe_compose": {
+      "je": "ai défendu",
+      "tu": "as défendu",
+      "il/elle": "a défendu",
+      "nous": "avons défendu",
+      "vous": "avez défendu",
+      "ils/elles": "ont défendu"
+    },
+    "imparfait": {
+      "je": "défendais",
+      "tu": "défendais",
+      "il/elle": "défendait",
+      "nous": "défendions",
+      "vous": "défendiez",
+      "ils/elles": "défendaient"
+    }
+  },
+  {
+    "id": 57,
+    "infinitive": "permettre",
+    "level": "B1",
+    "present": {
+      "je": "permets",
+      "tu": "permets",
+      "il/elle": "permet",
+      "nous": "permettons",
+      "vous": "permettez",
+      "ils/elles": "permettent"
+    },
+    "passe_compose": {
+      "je": "ai permis",
+      "tu": "as permis",
+      "il/elle": "a permis",
+      "nous": "avons permis",
+      "vous": "avez permis",
+      "ils/elles": "ont permis"
+    },
+    "imparfait": {
+      "je": "permettais",
+      "tu": "permettais",
+      "il/elle": "permettait",
+      "nous": "permettions",
+      "vous": "permettiez",
+      "ils/elles": "permettaient"
+    }
+  },
+  {
+    "id": 58,
+    "infinitive": "promettre",
+    "level": "B1",
+    "present": {
+      "je": "promets",
+      "tu": "promets",
+      "il/elle": "promet",
+      "nous": "promettons",
+      "vous": "promettez",
+      "ils/elles": "promettent"
+    },
+    "passe_compose": {
+      "je": "ai promis",
+      "tu": "as promis",
+      "il/elle": "a promis",
+      "nous": "avons promis",
+      "vous": "avez promis",
+      "ils/elles": "ont promis"
+    },
+    "imparfait": {
+      "je": "promettais",
+      "tu": "promettais",
+      "il/elle": "promettait",
+      "nous": "promettions",
+      "vous": "promettiez",
+      "ils/elles": "promettaient"
+    }
+  },
+  {
+    "id": 59,
+    "infinitive": "valoir",
+    "level": "B1",
+    "present": {
+      "je": "vaux",
+      "tu": "vaux",
+      "il/elle": "vaut",
+      "nous": "valons",
+      "vous": "valez",
+      "ils/elles": "valent"
+    },
+    "passe_compose": {
+      "je": "ai valu",
+      "tu": "as valu",
+      "il/elle": "a valu",
+      "nous": "avons valu",
+      "vous": "avez valu",
+      "ils/elles": "ont valu"
+    },
+    "imparfait": {
+      "je": "valais",
+      "tu": "valais",
+      "il/elle": "valait",
+      "nous": "valions",
+      "vous": "valiez",
+      "ils/elles": "valaient"
+    }
+  },
+  {
+    "id": 60,
+    "infinitive": "falloir",
+    "level": "A2",
+    "present": {
+      "je": "",
+      "tu": "",
+      "il/elle": "faut",
+      "nous": "",
+      "vous": "",
+      "ils/elles": ""
+    },
+    "passe_compose": {
+      "je": "",
+      "tu": "",
+      "il/elle": "a fallu",
+      "nous": "",
+      "vous": "",
+      "ils/elles": ""
+    },
+    "imparfait": {
+      "je": "",
+      "tu": "",
+      "il/elle": "fallait",
+      "nous": "",
+      "vous": "",
+      "ils/elles": ""
+    }
+  },
+  {
+    "id": 61,
+    "infinitive": "pleuvoir",
+    "level": "A2",
+    "present": {
+      "je": "",
+      "tu": "",
+      "il/elle": "pleut",
+      "nous": "",
+      "vous": "",
+      "ils/elles": ""
+    },
+    "passe_compose": {
+      "je": "",
+      "tu": "",
+      "il/elle": "a plu",
+      "nous": "",
+      "vous": "",
+      "ils/elles": ""
+    },
+    "imparfait": {
+      "je": "",
+      "tu": "",
+      "il/elle": "pleuvait",
+      "nous": "",
+      "vous": "",
+      "ils/elles": ""
+    }
+  },
+  {
+    "id": 62,
+    "infinitive": "dépendre",
+    "level": "B1",
+    "present": {
+      "je": "dépends",
+      "tu": "dépends",
+      "il/elle": "dépend",
+      "nous": "dépendons",
+      "vous": "dépendez",
+      "ils/elles": "dépendent"
+    },
+    "passe_compose": {
+      "je": "ai dépendu",
+      "tu": "as dépendu",
+      "il/elle": "a dépendu",
+      "nous": "avons dépendu",
+      "vous": "avez dépendu",
+      "ils/elles": "ont dépendu"
+    },
+    "imparfait": {
+      "je": "dépendais",
+      "tu": "dépendais",
+      "il/elle": "dépendait",
+      "nous": "dépendions",
+      "vous": "dépendiez",
+      "ils/elles": "dépendaient"
+    }
+  },
+  {
+    "id": 63,
+    "infinitive": "prétendre",
     "level": "B2",
-    "present": { "je": "reçois", "tu": "reçois", "il/elle": "reçoit", "nous": "recevons", "vous": "recevez", "ils/elles": "reçoivent" },
-    "passe_compose": { "je": "ai reçu", "tu": "as reçu", "il/elle": "a reçu", "nous": "avons reçu", "vous": "avez reçu", "ils/elles": "ont reçu" },
-    "imparfait": { "je": "recevais", "tu": "recevais", "il/elle": "recevait", "nous": "recevions", "vous": "receviez", "ils/elles": "recevaient" }
+    "present": {
+      "je": "prétends",
+      "tu": "prétends",
+      "il/elle": "prétend",
+      "nous": "prétendons",
+      "vous": "prétendez",
+      "ils/elles": "prétendent"
+    },
+    "passe_compose": {
+      "je": "ai prétendu",
+      "tu": "as prétendu",
+      "il/elle": "a prétendu",
+      "nous": "avons prétendu",
+      "vous": "avez prétendu",
+      "ils/elles": "ont prétendu"
+    },
+    "imparfait": {
+      "je": "prétendais",
+      "tu": "prétendais",
+      "il/elle": "prétendait",
+      "nous": "prétendions",
+      "vous": "prétendiez",
+      "ils/elles": "prétendaient"
+    }
+  },
+  {
+    "id": 64,
+    "infinitive": "entreprendre",
+    "level": "B2",
+    "present": {
+      "je": "entreprends",
+      "tu": "entreprends",
+      "il/elle": "entreprend",
+      "nous": "entreprenez",
+      "vous": "entreprenez",
+      "ils/elles": "entreprennent"
+    },
+    "passe_compose": {
+      "je": "ai entrepris",
+      "tu": "as entrepris",
+      "il/elle": "a entrepris",
+      "nous": "avons entrepris",
+      "vous": "avez entrepris",
+      "ils/elles": "ont entrepris"
+    },
+    "imparfait": {
+      "je": "entreprenais",
+      "tu": "entreprenais",
+      "il/elle": "entreprenait",
+      "nous": "entreprenions",
+      "vous": "entrepreniez",
+      "ils/elles": "entreprenaient"
+    }
+  },
+  {
+    "id": 65,
+    "infinitive": "admettre",
+    "level": "B2",
+    "present": {
+      "je": "admets",
+      "tu": "admets",
+      "il/elle": "admet",
+      "nous": "admettons",
+      "vous": "admettez",
+      "ils/elles": "admettent"
+    },
+    "passe_compose": {
+      "je": "ai admis",
+      "tu": "as admis",
+      "il/elle": "a admis",
+      "nous": "avons admis",
+      "vous": "avez admis",
+      "ils/elles": "ont admis"
+    },
+    "imparfait": {
+      "je": "admettais",
+      "tu": "admettais",
+      "il/elle": "admettait",
+      "nous": "admettions",
+      "vous": "admettiez",
+      "ils/elles": "admettaient"
+    }
   }
 ]

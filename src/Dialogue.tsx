@@ -11,7 +11,6 @@ import { Audio } from "@remotion/media";
 import {
   fonts,
   colors,
-  GradientBackground,
   IntroOverlay,
   OutroOverlay,
   TopBar,
@@ -27,22 +26,18 @@ interface DialogueLine {
   speaker: "femme" | "homme";
   name: string;
   french: string;
-  arabic: string;
   audioSrc?: string;
 }
 
 interface DialogueData {
   id: number;
   title: string;
-  title_ar: string;
   level: string;
   lines: DialogueLine[];
 }
 
-const femmeColor = "#FF6B9D";
-const hommeColor = "#4FC3F7";
-
-const BUBBLE_H = 110;
+const femmeColor = "#E91E63";
+const hommeColor = "#1976D2";
 
 const ChatBubble: React.FC<{
   line: DialogueLine;
@@ -83,13 +78,13 @@ const ChatBubble: React.FC<{
           width: 40,
           height: 40,
           borderRadius: "50%",
-          background: `${bubbleColor}33`,
+          background: `${bubbleColor}11`,
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
           fontSize: 20,
           flexShrink: 0,
-          border: `2px solid ${bubbleColor}66`,
+          border: `2px solid ${bubbleColor}33`,
         }}
       >
         {avatar}
@@ -102,8 +97,8 @@ const ChatBubble: React.FC<{
           borderRadius: isLeft
             ? "18px 18px 18px 4px"
             : "18px 18px 4px 18px",
-          background: `linear-gradient(135deg, ${bubbleColor}22, ${bubbleColor}11)`,
-          border: `1px solid ${bubbleColor}44`,
+          background: colors.cardBg,
+          border: `1px solid ${colors.cardBorder}`,
         }}
       >
         <div
@@ -161,7 +156,6 @@ export const Dialogue: React.FC<{
 
   return (
     <VideoContainer>
-      <GradientBackground />
       <TopBar
         label="DIALOGUE"
         progress={cf / contentFrames}

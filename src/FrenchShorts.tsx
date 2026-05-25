@@ -12,15 +12,14 @@ import { Audio } from "@remotion/media";
 import {
   fonts,
   colors,
-  GradientBackground,
   FrenchFlagBar,
+  VideoContainer,
 } from "./FrenchFlowBrand";
 
 const FPS = 30;
 
 interface PhraseItem {
   french: string;
-  arabic: string;
   audioSrc?: string;
 }
 
@@ -51,16 +50,13 @@ const Header: React.FC<{ title: string; progress: number }> = ({
         style={{
           padding: "14px 40px",
           borderRadius: 50,
-          background: "rgba(255,255,255,0.1)",
-          border: "1px solid rgba(255,255,255,0.2)",
-          backdropFilter: "blur(10px)",
-          WebkitBackdropFilter: "blur(10px)",
+          background: colors.cardBg,
+          border: `1px solid ${colors.cardBorder}`,
           fontSize: 22,
           fontWeight: 700,
           fontFamily: fonts.heading,
-          color: "#fff",
+          color: colors.text,
           letterSpacing: 1,
-          textShadow: "0 2px 10px rgba(0,0,0,0.3)",
         }}
       >
         {title}
@@ -71,7 +67,7 @@ const Header: React.FC<{ title: string; progress: number }> = ({
           width: "80%",
           height: 3,
           borderRadius: 2,
-          background: "rgba(255,255,255,0.1)",
+          background: colors.cardBorder,
           overflow: "hidden",
         }}
       >
@@ -80,7 +76,7 @@ const Header: React.FC<{ title: string; progress: number }> = ({
             width: `${progress * 100}%`,
             height: "100%",
             borderRadius: 2,
-            background: `linear-gradient(90deg, ${colors.accent}, ${colors.accent2})`,
+            background: colors.accent,
           }}
         />
       </div>
@@ -108,25 +104,22 @@ const PhraseCard: React.FC<{
     >
       <div
         style={{
-          background: "rgba(255,255,255,0.06)",
+          background: colors.cardBg,
           borderRadius: 24,
-          border: "1px solid rgba(255,255,255,0.1)",
+          border: `1px solid ${colors.cardBorder}`,
           padding: "48px 36px",
           width: "90%",
-          backdropFilter: "blur(8px)",
-          WebkitBackdropFilter: "blur(8px)",
         }}
       >
         <div
           style={{
-            fontSize: 52,
+            fontSize: 60,
             fontWeight: 700,
             fontFamily: fonts.heading,
-            color: "#fff",
+            color: colors.text,
             textAlign: "center",
             lineHeight: 1.4,
             transform: `scale(${frenchScale})`,
-            textShadow: `0 0 40px ${colors.accent}66`,
           }}
         >
           {french}
@@ -160,10 +153,8 @@ const Avatar: React.FC = () => {
           gap: 16,
           padding: "12px 24px 12px 12px",
           borderRadius: 50,
-          background: "rgba(255,255,255,0.08)",
-          border: "1px solid rgba(255,255,255,0.12)",
-          backdropFilter: "blur(10px)",
-          WebkitBackdropFilter: "blur(10px)",
+          background: colors.cardBg,
+          border: `1px solid ${colors.cardBorder}`,
         }}
       >
         <div
@@ -171,7 +162,7 @@ const Avatar: React.FC = () => {
             width: 48,
             height: 48,
             borderRadius: "50%",
-            background: `linear-gradient(135deg, ${colors.accent}, ${colors.accent2})`,
+            background: colors.accent,
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
@@ -187,7 +178,7 @@ const Avatar: React.FC = () => {
               fontSize: 14,
               fontWeight: 600,
               fontFamily: fonts.heading,
-              color: "#fff",
+              color: colors.text,
             }}
           >
             French Flow
@@ -197,10 +188,10 @@ const Avatar: React.FC = () => {
               fontSize: 11,
               fontWeight: 400,
               fontFamily: fonts.body,
-              color: colors.accent2,
+              color: colors.textMuted,
             }}
           >
-            {"Professeur de français"}
+            Professeur de français
           </div>
         </div>
       </div>
@@ -209,7 +200,7 @@ const Avatar: React.FC = () => {
 };
 
 export const FrenchShorts: React.FC<FrenchShortsProps> = ({
-  title = "تعلم اللغة الفرنسية 🇫🇷",
+  title = "French Flow",
   phrases = [],
   durationPerItem = 3,
 }) => {
@@ -224,7 +215,7 @@ export const FrenchShorts: React.FC<FrenchShortsProps> = ({
         style={{
           justifyContent: "center",
           alignItems: "center",
-          background: colors.bg1,
+          background: colors.bg,
         }}
       >
         <div
@@ -241,9 +232,7 @@ export const FrenchShorts: React.FC<FrenchShortsProps> = ({
   }
 
   return (
-    <AbsoluteFill>
-      <BackgroundMusic volume={0.5} />
-      <GradientBackground />
+    <VideoContainer>
       <FrenchFlagBar />
       <Header title={title} progress={progress} />
 
@@ -260,6 +249,6 @@ export const FrenchShorts: React.FC<FrenchShortsProps> = ({
       ))}
 
       <Avatar />
-    </AbsoluteFill>
+    </VideoContainer>
   );
 };

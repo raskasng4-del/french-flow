@@ -15,26 +15,22 @@ const FPS = 30;
 const sampleWord = {
   id: 1,
   french: "Bonjour",
-  arabic: "صباح الخير",
   level: "A1",
   example: "Bonjour, comment allez-vous ?",
-  example_ar: "صباح الخير، كيف حالكم؟",
 };
 
 const sampleGrammar = {
   id: 1,
   title: "Les articles définis",
-  title_ar: "أدوات التعريف",
   level: "A1",
   explanation:
-    "في الفرنسية، هناك أدوات تعريف: le (مذكر), la (مؤنث), les (جمع). تستخدم قبل الاسم لتحديده.",
+    "Les articles définis (le, la, les) sont utilisés pour parler d'une chose spécifique.",
   examples: ["Le livre est sur la table.", "La maison est grande.", "Les enfants jouent."],
 };
 
 const sampleVerb = {
   id: 1,
   infinitive: "Être",
-  arabic: "يكون",
   level: "A1",
   present: {
     je: "suis",
@@ -88,9 +84,9 @@ export const RemotionRoot: React.FC = () => {
         height={1920}
         defaultProps={{
           quiz: {
-            question: 'Quelle est la traduction de "Bonjour" ?',
-            options: ["مساء الخير", "صباح الخير", "تصبح على خير", "وداعاً"],
-            correctIndex: 1,
+            question: 'Quel est ce mot ?',
+            options: ["Bonjour", "Merci", "Ami", "Livre"],
+            correctIndex: 0,
           },
           totalDuration: Math.round(15.5 * FPS),
         }}
@@ -115,13 +111,13 @@ export const RemotionRoot: React.FC = () => {
         width={1080}
         height={1920}
         defaultProps={{
-          title: "تعلم اللغة الفرنسية 🇫🇷",
+          title: "French Flow",
           phrases: [
-            { french: "arrête de parler", arabic: "توقف عن الكلام", audioSrc: "audio/phrase_1.mp3" },
-            { french: "je suis fatigué", arabic: "أنا متعب", audioSrc: "audio/phrase_2.mp3" },
-            { french: "où est la gare ?", arabic: "أين المحطة؟", audioSrc: "audio/phrase_3.mp3" },
-            { french: "combien ça coûte ?", arabic: "بكم هذا؟", audioSrc: "audio/phrase_4.mp3" },
-            { french: "je ne comprends pas", arabic: "أنا لا أفهم", audioSrc: "audio/phrase_5.mp3" },
+            { french: "Arrête de parler", audioSrc: "audio/phrase_1.mp3" },
+            { french: "Je suis fatigué", audioSrc: "audio/phrase_2.mp3" },
+            { french: "Où est la gare ?", audioSrc: "audio/phrase_3.mp3" },
+            { french: "Combien ça coûte ?", audioSrc: "audio/phrase_4.mp3" },
+            { french: "Je ne comprends pas", audioSrc: "audio/phrase_5.mp3" },
           ],
           durationPerItem: 3,
         }}
@@ -137,15 +133,14 @@ export const RemotionRoot: React.FC = () => {
           dialogue: {
             id: 1,
             title: "Se présenter",
-            title_ar: "التعريف بالنفس",
             level: "A1",
             lines: [
-              { speaker: "homme", name: "Pierre", french: "Bonjour ! Je m'appelle Pierre.", arabic: "مرحباً! اسمي بيير." },
-              { speaker: "femme", name: "Marie", french: "Salut Pierre ! Moi, c'est Marie.", arabic: "مرحباً بيير! أنا ماري." },
-              { speaker: "homme", name: "Pierre", french: "Enchanté ! Tu es française ?", arabic: "تشرفت! هل أنت فرنسية؟" },
-              { speaker: "femme", name: "Marie", french: "Oui, je suis française. Et toi ?", arabic: "نعم، أنا فرنسية. وأنت؟" },
-              { speaker: "homme", name: "Pierre", french: "Moi aussi ! Je suis de Paris.", arabic: "أنا أيضاً! أنا من باريس." },
-              { speaker: "femme", name: "Marie", french: "Super ! Moi, je suis de Lyon.", arabic: "رائع! أنا من ليون." },
+              { speaker: "homme", name: "Pierre", french: "Bonjour ! Je m'appelle Pierre." },
+              { speaker: "femme", name: "Marie", french: "Salut Pierre ! Moi, c'est Marie." },
+              { speaker: "homme", name: "Pierre", french: "Enchanté ! Tu es française ?" },
+              { speaker: "femme", name: "Marie", french: "Oui, je suis française. Et toi ?" },
+              { speaker: "homme", name: "Pierre", french: "Moi aussi ! Je suis de Paris." },
+              { speaker: "femme", name: "Marie", french: "Super ! Moi, je suis de Lyon." },
             ],
           },
           totalDuration: Math.round(17.5 * FPS),
