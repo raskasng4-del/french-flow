@@ -1,0 +1,52 @@
+name: French Flow Story
+
+on:
+  schedule:
+    - cron: "0 */4 * * *"
+  workflow_dispatch:
+
+env:
+  FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
+  FB_ACCESS_TOKEN: ${{ secrets.FB_ACCESS_TOKEN }}
+
+jobs:
+  story:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install system deps
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y ffmpeg fonts-noto fonts-dejavu
+          sudo fc-cache -f
+
+      - name: Install Python deps
+        run: pip3 install edge-tts beautifulsoup4 lxml aiohttp
+
+      - name: Run storyteller
+        run: python3 bot/storyteller.py
+
+      - name: Save story progress
+        if: always()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          for F in story_progress.json performance_log.json; do
+            FP="bot/$F"
+            if [ -f "$FP" ] && [ -s "$FP" ]; then
+              CONTENT=$(base64 -w0 "$FP")
+              SHA=$(curl -s -H "Authorization: token $GH_TOKEN" \
+                "https://api.github.com/repos/${{ github.repository }}/contents/$FP" | \
+                python3 -c "import sys,json; print(json.load(sys.stdin).get('sha',''))" 2>/dev/null || echo "")
+              RESP=$(curl -s -X PUT -H "Authorization: token $GH_TOKEN" \
+                -H "Content-Type: application/json" \
+                -d "{\"message\":\"🤖 Update $F $(date +%Y-%m-%d)\",\"content\":\"$CONTENT\",\"sha\":\"$SHA\"}" \
+                "https://api.github.com/repos/${{ github.repository }}/contents/$FP")
+              echo "$F: $(echo "$RESP" | python3 -c "import sys,json; d=json.load(sys.stdin); print('✅' if d.get('commit') else '❌')" 2>/dev/null)"
+            fi
+          done
