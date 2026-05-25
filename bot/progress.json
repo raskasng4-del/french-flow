@@ -2,7 +2,7 @@
   "phase": 2,
   "phase1_index": 0,
   "current_day": 2,
-  "day_video_index": 0,
+  "day_video_index": 2,
   "published_videos": [
     {
       "type": "MotDuJour",
@@ -63,9 +63,27 @@
       "file": "dialogue_day2.mp4",
       "published": true,
       "date": "2026-05-24"
+    },
+    {
+      "type": "MotDuJour",
+      "file": "day3_mot.mp4",
+      "published": true,
+      "date": "2026-05-25"
+    },
+    {
+      "type": "Grammaire",
+      "file": "day3_grammaire.mp4",
+      "published": true,
+      "date": "2026-05-25"
+    },
+    {
+      "type": "Dialogue",
+      "file": "dialogue_day2.mp4",
+      "published": true,
+      "date": "2026-05-25"
     }
   ],
-  "last_publish_date": "2026-05-24",
+  "last_publish_date": "2026-05-25",
   "spaced_repetition": {
     "words": {
       "2": {
@@ -73,6 +91,12 @@
         "last_reviewed": "2026-05-24",
         "interval": 1,
         "next_review": "2026-05-25"
+      },
+      "5": {
+        "first_seen": "2026-05-25",
+        "last_reviewed": "2026-05-25",
+        "interval": 1,
+        "next_review": "2026-05-26"
       }
     },
     "grammar": {
@@ -81,6 +105,12 @@
         "last_reviewed": "2026-05-24",
         "interval": 1,
         "next_review": "2026-05-25"
+      },
+      "3": {
+        "first_seen": "2026-05-25",
+        "last_reviewed": "2026-05-25",
+        "interval": 1,
+        "next_review": "2026-05-26"
       }
     },
     "verbs": {
