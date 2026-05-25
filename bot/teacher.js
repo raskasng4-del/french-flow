@@ -564,6 +564,12 @@ function generateAudio(phrase, index) {
 
 // Render user phrases as FrenchShorts video (bonus content)
 async function renderUserPhrases(pageId, accessToken, progress) {
+  const today = todayStr();
+  if (progress.published_videos.some(v => v.type === "FrenchShorts" && v.date === today)) {
+    log(`✅ FrenchShorts already published today, skipping`);
+    return;
+  }
+
   if (!fs.existsSync(USER_PHRASES_FILE)) {
     log("ℹ️ No user_phrases.json found, skipping bonus video");
     return;
@@ -584,7 +590,6 @@ async function renderUserPhrases(pageId, accessToken, progress) {
   // Wait for audio files to be ready
   await sleep(2000);
 
-  const today = todayStr();
   const props = { title: data.title, phrases: data.phrases, durationPerItem: 3 };
   const propsJSON = JSON.stringify(props).replace(/"/g, '\\"');
   const outputFile = `french_shorts_${today}.mp4`;
@@ -622,6 +627,12 @@ async function renderUserPhrases(pageId, accessToken, progress) {
 
 // Render daily dialogue as bonus video
 async function renderDialogue(pageId, accessToken, progress) {
+  const today = todayStr();
+  if (progress.published_videos.some(v => v.type === "Dialogue" && v.date === today)) {
+    log(`✅ Dialogue already published today, skipping`);
+    return;
+  }
+
   if (!fs.existsSync(DIALOGUES_FILE)) {
     log("ℹ️ No dialogues.json found, skipping dialogue video");
     return;
@@ -633,7 +644,6 @@ async function renderDialogue(pageId, accessToken, progress) {
     return;
   }
 
-  const today = todayStr();
   const dayNum = progress.current_day || 1;
   const dialogue = dialogues[(dayNum - 1) % dialogues.length];
 
