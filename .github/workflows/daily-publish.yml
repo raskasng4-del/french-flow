@@ -5,6 +5,7 @@ on:
     branches: [main]
   schedule:
     - cron: "0 * * * *"
+    - cron: "0 8 * * *"
   workflow_dispatch:
 
 env:
@@ -27,7 +28,7 @@ jobs:
           sudo apt-get install -y ffmpeg imagemagick fonts-noto espeak espeak-data
           sudo fc-cache -f
 
-      - name: Install Python TTS
+      - name: Install Python deps
         run: pip3 install edge-tts
 
       - name: Setup Node.js
@@ -43,10 +44,10 @@ jobs:
         run: node bot/teacher.js
 
       - name: Save progress
+        if: always()
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          # Commit all content changes via GitHub API
           for f in progress.json idiomes.json culture.json words.json grammar.json verbs.json dialogues.json; do
             F="bot/$f"
             if [ -f "$F" ] && [ -s "$F" ]; then
@@ -60,3 +61,42 @@ jobs:
                 "https://api.github.com/repos/${{ github.repository }}/contents/$F" > /dev/null
             fi
           done
+
+  story:
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install system deps
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y ffmpeg fonts-noto fonts-dejavu
+          sudo fc-cache -f
+
+      - name: Install Python deps
+        run: pip3 install edge-tts beautifulsoup4 lxml aiohttp
+
+      - name: Run storyteller
+        run: python3 bot/storyteller.py
+
+      - name: Save story progress
+        if: always()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          F="bot/story_progress.json"
+          if [ -f "$F" ] && [ -s "$F" ]; then
+            CONTENT=$(base64 -w0 "$F")
+            SHA=$(curl -s -H "Authorization: token $GH_TOKEN" \
+              "https://api.github.com/repos/${{ github.repository }}/contents/$F" | \
+              python3 -c "import sys,json; print(json.load(sys.stdin).get('sha',''))" 2>/dev/null || echo "")
+            curl -s -X PUT -H "Authorization: token $GH_TOKEN" \
+              -H "Content-Type: application/json" \
+              -d "{\"message\":\"🤖 Update story_progress.json $(date +%Y-%m-%d)\",\"content\":\"$CONTENT\",\"sha\":\"$SHA\"}" \
+              "https://api.github.com/repos/${{ github.repository }}/contents/$F" > /dev/null
+          fi
