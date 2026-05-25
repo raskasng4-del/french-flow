@@ -10,15 +10,19 @@ Formats:
 
 Rotation: A→B→C→A→B→C across 6 daily slots
 """
-import os, sys, json, re, asyncio, subprocess, tempfile, random, textwrap, math
+import os, sys, json, re, asyncio, subprocess, tempfile, random, textwrap, math, shutil
 from pathlib import Path
 
 BOT_DIR = Path(__file__).parent
 PROJECT_ROOT = BOT_DIR.parent
 OUTPUT_DIR = PROJECT_ROOT / "output"
 AUDIO_DIR = PROJECT_ROOT / "public" / "audio"
+TEMP_DIR = PROJECT_ROOT / "temp"
 PROGRESS_FILE = BOT_DIR / "story_progress.json"
 FONT = "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"
+
+PEXELS_API_URL = "https://api.pexels.com/videos/search"
+TEMP_VIDEOS = []
 
 VOICES = ["fr-FR-VivienneMultilingualNeural", "fr-FR-RemyMultilingualNeural"]
 
@@ -132,7 +136,53 @@ def compress_video(input_path, output_path):
     return True
 
 
-def create_scrolling_video(text_lines, audio_path, output_path, audio_duration, title=None):
+def get_pexels_video(query, api_key):
+    """Fetch a background video from Pexels based on keyword, download to TEMP_DIR."""
+    import requests
+    headers = {"Authorization": api_key}
+    params = {"query": query, "per_page": 1, "orientation": "portrait", "size": "medium"}
+    try:
+        resp = requests.get(PEXELS_API_URL, headers=headers, params=params, timeout=15)
+        resp.raise_for_status()
+        data = resp.json()
+        if not data.get("videos"):
+            print(f"  ⚠️ No Pexels video for '{query}'")
+            return None
+        video = data["videos"][0]
+        video_url = None
+        for f in video.get("video_files", []):
+            if f.get("quality") in ("hd", "sd") and f.get("width", 9999) <= 1920:
+                video_url = f["link"]
+                break
+        if not video_url:
+            video_url = video["video_files"][0]["link"]
+        os.makedirs(TEMP_DIR, exist_ok=True)
+        dst = TEMP_DIR / f"pexels_{video['id']}.mp4"
+        r = requests.get(video_url, stream=True, timeout=30)
+        with open(dst, "wb") as f:
+            for chunk in r.iter_content(8192):
+                f.write(chunk)
+        sz = os.path.getsize(dst) / 1024 / 1024
+        print(f"  🎬 Pexels '{query}': {sz:.0f} MB")
+        TEMP_VIDEOS.append(dst)
+        return str(dst)
+    except Exception as e:
+        print(f"  ⚠️ Pexels error: {e}")
+        return None
+
+
+def get_video_keyword(fmt, data):
+    """Derive a keyword for Pexels search from the content."""
+    if fmt == "grammar_quiz":
+        return f"{data.get('title', 'grammaire')} français"
+    elif fmt == "storytelling":
+        return f"{data.get('title', 'histoire')} livre"
+    elif fmt == "vocabulary_wotd":
+        return f"{data.get('french', 'mot')} vocabulaire français"
+    return "français"
+
+
+def create_scrolling_video(text_lines, audio_path, output_path, audio_duration, title=None, background_video=None):
     w, h = 1080, 1920
     font_size = 38
     line_height = font_size + 12
@@ -153,21 +203,39 @@ def create_scrolling_video(text_lines, audio_path, output_path, audio_duration, 
     scroll_distance = total_text_height + visible_height
     scroll_speed = scroll_distance / audio_duration if audio_duration > 0 else 10
 
-    cmd = [
-        "ffmpeg", "-y",
-        "-f", "lavfi", "-i", f"color=c=#0d0d1a:s={w}x{h}:r=30:d={audio_duration}",
-        "-i", str(audio_path),
-        "-filter_complex",
-        f"[0:v]drawtext=textfile={tf.name}:fontfile={FONT}:fontsize={font_size}:"
-        f"fontcolor=white:bordercolor=black@0.3:borderw=1:"
-        f"x=(w-text_w)/2:y=h-{margin_bottom}+{visible_height}-t*{scroll_speed:.2f}:"
-        f"line_spacing={line_height - font_size}[v]",
-        "-map", "[v]", "-map", "1:a",
-        "-c:v", "libx264", "-preset", "medium", "-crf", "28",
-        "-c:a", "aac", "-b:a", "128k",
-        "-pix_fmt", "yuv420p", "-shortest",
-        str(output_path),
-    ]
+    if background_video:
+        cmd = [
+            "ffmpeg", "-y",
+            "-stream_loop", "-1", "-i", background_video,
+            "-i", str(audio_path),
+            "-filter_complex",
+            f"[0:v]scale={w}:{h}:force_original_aspect_ratio=decrease,crop={w}:{h},"
+            f"drawtext=textfile={tf.name}:fontfile={FONT}:fontsize={font_size}:"
+            f"fontcolor=white:bordercolor=black@0.5:borderw=1:"
+            f"x=(w-text_w)/2:y=h-{margin_bottom}+{visible_height}-t*{scroll_speed:.2f}:"
+            f"line_spacing={line_height - font_size}[v]",
+            "-map", "[v]", "-map", "1:a",
+            "-c:v", "libx264", "-preset", "medium", "-crf", "28",
+            "-c:a", "aac", "-b:a", "128k",
+            "-pix_fmt", "yuv420p", "-shortest",
+            str(output_path),
+        ]
+    else:
+        cmd = [
+            "ffmpeg", "-y",
+            "-f", "lavfi", "-i", f"color=c=#0d0d1a:s={w}x{h}:r=30:d={audio_duration}",
+            "-i", str(audio_path),
+            "-filter_complex",
+            f"[0:v]drawtext=textfile={tf.name}:fontfile={FONT}:fontsize={font_size}:"
+            f"fontcolor=white:bordercolor=black@0.3:borderw=1:"
+            f"x=(w-text_w)/2:y=h-{margin_bottom}+{visible_height}-t*{scroll_speed:.2f}:"
+            f"line_spacing={line_height - font_size}[v]",
+            "-map", "[v]", "-map", "1:a",
+            "-c:v", "libx264", "-preset", "medium", "-crf", "28",
+            "-c:a", "aac", "-b:a", "128k",
+            "-pix_fmt", "yuv420p", "-shortest",
+            str(output_path),
+        ]
     r = subprocess.run(cmd, capture_output=True, text=True)
     os.unlink(tf.name)
     if r.returncode != 0:
@@ -176,7 +244,7 @@ def create_scrolling_video(text_lines, audio_path, output_path, audio_duration, 
     return os.path.exists(output_path) and os.path.getsize(output_path) > 1000
 
 
-def create_static_video(text_lines, audio_path, output_path, audio_duration, title=None):
+def create_static_video(text_lines, audio_path, output_path, audio_duration, title=None, background_video=None):
     w, h = 1080, 1920
     font_size = 48
     line_height = font_size + 16
@@ -193,20 +261,37 @@ def create_static_video(text_lines, audio_path, output_path, audio_duration, tit
     tf.write(text_content)
     tf.close()
 
-    cmd = [
-        "ffmpeg", "-y",
-        "-f", "lavfi", "-i", f"color=c=#1a1a2e:s={w}x{h}:r=30:d={audio_duration}",
-        "-i", str(audio_path),
-        "-filter_complex",
-        f"[0:v]drawtext=textfile={tf.name}:fontfile={FONT}:fontsize={font_size}:"
-        f"fontcolor=white:bordercolor=black@0.3:borderw=2:"
-        f"x=(w-text_w)/2:y={y_pos}:line_spacing={line_height - font_size}[v]",
-        "-map", "[v]", "-map", "1:a",
-        "-c:v", "libx264", "-preset", "medium", "-crf", "28",
-        "-c:a", "aac", "-b:a", "128k",
-        "-pix_fmt", "yuv420p", "-shortest",
-        str(output_path),
-    ]
+    if background_video:
+        cmd = [
+            "ffmpeg", "-y",
+            "-stream_loop", "-1", "-i", background_video,
+            "-i", str(audio_path),
+            "-filter_complex",
+            f"[0:v]scale={w}:{h}:force_original_aspect_ratio=decrease,crop={w}:{h},"
+            f"drawtext=textfile={tf.name}:fontfile={FONT}:fontsize={font_size}:"
+            f"fontcolor=white:bordercolor=black@0.5:borderw=2:"
+            f"x=(w-text_w)/2:y={y_pos}:line_spacing={line_height - font_size}[v]",
+            "-map", "[v]", "-map", "1:a",
+            "-c:v", "libx264", "-preset", "medium", "-crf", "28",
+            "-c:a", "aac", "-b:a", "128k",
+            "-pix_fmt", "yuv420p", "-shortest",
+            str(output_path),
+        ]
+    else:
+        cmd = [
+            "ffmpeg", "-y",
+            "-f", "lavfi", "-i", f"color=c=#1a1a2e:s={w}x{h}:r=30:d={audio_duration}",
+            "-i", str(audio_path),
+            "-filter_complex",
+            f"[0:v]drawtext=textfile={tf.name}:fontfile={FONT}:fontsize={font_size}:"
+            f"fontcolor=white:bordercolor=black@0.3:borderw=2:"
+            f"x=(w-text_w)/2:y={y_pos}:line_spacing={line_height - font_size}[v]",
+            "-map", "[v]", "-map", "1:a",
+            "-c:v", "libx264", "-preset", "medium", "-crf", "28",
+            "-c:a", "aac", "-b:a", "128k",
+            "-pix_fmt", "yuv420p", "-shortest",
+            str(output_path),
+        ]
     r = subprocess.run(cmd, capture_output=True, text=True)
     os.unlink(tf.name)
     if r.returncode != 0:
@@ -274,8 +359,14 @@ async def generate_grammar_quiz(progress):
         print("  ⚠️ Too short"); return None
     print(f"  ⏱️  {dur:.0f}s")
 
+    pexels_key = os.environ.get("PEXELS_API_KEY")
+    bg_video = None
+    if pexels_key:
+        kw = get_video_keyword("grammar_quiz", g)
+        bg_video = get_pexels_video(kw, pexels_key)
+
     output = OUTPUT_DIR / f"grammar_quiz_{g['id']}.mp4"
-    ok = create_static_video(lines, audio_path, output, dur, title=title)
+    ok = create_static_video(lines, audio_path, output, dur, title=title, background_video=bg_video)
     if not ok:
         return None
 
@@ -399,8 +490,14 @@ async def generate_storytelling(progress):
     if dur < 60:
         print("  ⚠️ Too short"); return None
 
+    pexels_key = os.environ.get("PEXELS_API_KEY")
+    bg_video = None
+    if pexels_key:
+        kw = get_video_keyword("storytelling", book)
+        bg_video = get_pexels_video(kw, pexels_key)
+
     output = OUTPUT_DIR / f"story_{book['id']}_p{part_num}.mp4"
-    ok = create_scrolling_video(lines, audio_path, output, dur, title=f"📖 {book['title']}")
+    ok = create_scrolling_video(lines, audio_path, output, dur, title=f"📖 {book['title']}", background_video=bg_video)
     if not ok:
         return None
 
@@ -460,8 +557,14 @@ async def generate_vocabulary_wotd(progress):
         print("  ⚠️ Too short"); return None
     print(f"  ⏱️  {dur:.0f}s")
 
+    pexels_key = os.environ.get("PEXELS_API_KEY")
+    bg_video = None
+    if pexels_key:
+        kw = get_video_keyword("vocabulary_wotd", w)
+        bg_video = get_pexels_video(kw, pexels_key)
+
     output = OUTPUT_DIR / f"wotd_{w['id']}.mp4"
-    ok = create_static_video(lines, audio_path, output, dur, title=title)
+    ok = create_static_video(lines, audio_path, output, dur, title=title, background_video=bg_video)
     if not ok:
         return None
 
@@ -506,6 +609,10 @@ async def main():
             print(f"  ✅ Published! Next slot: {progress['slot']}")
     else:
         print(f"  ❌ Generation failed for {fmt}")
+
+    for f in TEMP_VIDEOS:
+        if os.path.exists(f):
+            os.unlink(f)
 
     print("✨ Done!")
 

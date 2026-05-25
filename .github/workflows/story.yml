@@ -8,6 +8,7 @@ on:
 env:
   FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
   FB_ACCESS_TOKEN: ${{ secrets.FB_ACCESS_TOKEN }}
+  PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
 
 jobs:
   story:
@@ -26,7 +27,7 @@ jobs:
           sudo fc-cache -f
 
       - name: Install Python deps
-        run: pip3 install edge-tts beautifulsoup4 lxml aiohttp
+        run: pip3 install edge-tts beautifulsoup4 lxml aiohttp requests
 
       - name: Run storyteller
         run: python3 bot/storyteller.py
