@@ -387,10 +387,43 @@ function getActivityProps(activity, wordMap, grammarMap, verbMap, durations) {
     case "Conjugaison": {
       const verb = verbMap[activity.verb_id];
       if (!verb) return null;
-      verb.audioSrc = generateAudioFile(verb.infinitive, `verb_${verb.id}`);
+      const tense = verb.present ? "present" : verb.passe_compose ? "passe_compose" : "imparfait";
+      const conjugations = verb[tense];
+      if (!conjugations) return null;
+      const pronounOrder = ["je", "tu", "il/elle", "nous", "vous", "ils/elles"];
+      const timeline = [];
+      let totalFrames = 0;
+      for (const pronoun of pronounOrder) {
+        const conj = conjugations[pronoun];
+        if (!conj) continue;
+        const text = `${verb.infinitive}. ${pronoun} ${conj}`;
+        const name = `conj_${verb.id}_${tense}_${pronoun}`;
+        const audioPath = generateAudioFile(text, name);
+        const audioFull = path.join(PROJECT_ROOT, "public", audioPath);
+        let dur = 1.5;
+        try {
+          const out = execSync(
+            `ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 "${audioFull}"`,
+            { timeout: 5000, stdio: ["pipe", "pipe", "pipe"] },
+          );
+          dur = parseFloat(out.toString().trim()) || 1.5;
+        } catch (e) {
+          dur = 1.5;
+        }
+        const durFrames = Math.max(1, Math.ceil(dur * 30));
+        timeline.push({
+          pronoun,
+          conjugation: conj,
+          audioSrc: audioPath,
+          startFrame: totalFrames,
+          durationInFrames: durFrames,
+        });
+        totalFrames += durFrames;
+      }
+      if (timeline.length === 0) return null;
       return {
         compositionId: "Conjugaison",
-        props: { verb, totalDuration: Math.round(durations.Conjugaison * 30) },
+        props: { verb, tense, timeline, totalDuration: totalFrames },
         outputFile: `day${activity._dayNum}_conjugaison.mp4`,
       };
     }
