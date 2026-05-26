@@ -173,6 +173,12 @@
       "file": "day7_phrase.mp4",
       "published": true,
       "date": "2026-05-26"
+    },
+    {
+      "type": "Quiz",
+      "file": "day7_quiz.mp4",
+      "published": true,
+      "date": "2026-05-26"
     }
   ],
   "last_publish_date": "2026-05-26",
@@ -298,7 +304,7 @@
       }
     }
   },
-  "curriculum_idx": 33,
+  "curriculum_idx": 34,
   "generated_count": 0,
   "used_combos": []
 }
