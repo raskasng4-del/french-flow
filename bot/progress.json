@@ -155,9 +155,39 @@
       "file": "day6_quiz.mp4",
       "published": true,
       "date": "2026-05-25"
+    },
+    {
+      "type": "Conjugaison",
+      "file": "day6_conjugaison.mp4",
+      "published": true,
+      "date": "2026-05-25"
+    },
+    {
+      "type": "Grammaire",
+      "file": "day7_grammaire.mp4",
+      "published": true,
+      "date": "2026-05-26"
+    },
+    {
+      "type": "PhraseDuJour",
+      "file": "day7_phrase.mp4",
+      "published": true,
+      "date": "2026-05-26"
+    },
+    {
+      "type": "Quiz",
+      "file": "day7_quiz.mp4",
+      "published": true,
+      "date": "2026-05-26"
+    },
+    {
+      "type": "Conjugaison",
+      "file": "day7_conjugaison.mp4",
+      "published": true,
+      "date": "2026-05-26"
     }
   ],
-  "last_publish_date": "2026-05-25",
+  "last_publish_date": "2026-05-26",
   "spaced_repetition": {
     "words": {
       "2": {
@@ -201,6 +231,12 @@
         "last_reviewed": "2026-05-25",
         "interval": 1,
         "next_review": "2026-05-26"
+      },
+      "14": {
+        "first_seen": "2026-05-26",
+        "last_reviewed": "2026-05-26",
+        "interval": 1,
+        "next_review": "2026-05-27"
       }
     },
     "grammar": {
@@ -233,6 +269,12 @@
         "last_reviewed": "2026-05-25",
         "interval": 1,
         "next_review": "2026-05-26"
+      },
+      "7": {
+        "first_seen": "2026-05-26",
+        "last_reviewed": "2026-05-26",
+        "interval": 1,
+        "next_review": "2026-05-27"
       }
     },
     "verbs": {
@@ -259,10 +301,22 @@
         "last_reviewed": "2026-05-25",
         "interval": 1,
         "next_review": "2026-05-26"
+      },
+      "6": {
+        "first_seen": "2026-05-25",
+        "last_reviewed": "2026-05-25",
+        "interval": 1,
+        "next_review": "2026-05-26"
+      },
+      "7": {
+        "first_seen": "2026-05-26",
+        "last_reviewed": "2026-05-26",
+        "interval": 1,
+        "next_review": "2026-05-27"
       }
     }
   },
-  "curriculum_idx": 29,
+  "curriculum_idx": 35,
   "generated_count": 0,
   "used_combos": []
 }
