@@ -163,7 +163,7 @@
       "date": "2026-05-25"
     }
   ],
-  "last_publish_date": "2026-05-25",
+  "last_publish_date": "2026-05-26",
   "spaced_repetition": {
     "words": {
       "2": {
@@ -274,7 +274,7 @@
       }
     }
   },
-  "curriculum_idx": 30,
+  "curriculum_idx": 31,
   "generated_count": 0,
   "used_combos": []
 }
