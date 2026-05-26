@@ -191,6 +191,12 @@
       "file": "day8_grammaire.mp4",
       "published": true,
       "date": "2026-05-26"
+    },
+    {
+      "type": "PhraseDuJour",
+      "file": "day8_phrase.mp4",
+      "published": true,
+      "date": "2026-05-26"
     }
   ],
   "last_publish_date": "2026-05-26",
@@ -239,6 +245,12 @@
         "next_review": "2026-05-26"
       },
       "14": {
+        "first_seen": "2026-05-26",
+        "last_reviewed": "2026-05-26",
+        "interval": 1,
+        "next_review": "2026-05-27"
+      },
+      "16": {
         "first_seen": "2026-05-26",
         "last_reviewed": "2026-05-26",
         "interval": 1,
@@ -328,7 +340,7 @@
       }
     }
   },
-  "curriculum_idx": 37,
+  "curriculum_idx": 38,
   "generated_count": 0,
   "used_combos": []
 }
