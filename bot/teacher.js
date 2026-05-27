@@ -420,8 +420,11 @@ function getActivityProps(activity, wordMap, grammarMap, verbMap, durations) {
       const conjugations = verb[tense];
       if (!conjugations) return null;
       const pronounOrder = ["je", "tu", "il/elle", "nous", "vous", "ils/elles"];
+
+      // Generate per-pronoun audio for karaoke timeline AND a single full audio for verb.audioSrc
       const timeline = [];
       let totalFrames = 0;
+      const fullParts = [];
       for (const pronoun of pronounOrder) {
         const conj = conjugations[pronoun];
         if (!conj) continue;
@@ -448,8 +451,14 @@ function getActivityProps(activity, wordMap, grammarMap, verbMap, durations) {
           durationInFrames: durFrames,
         });
         totalFrames += durFrames;
+        fullParts.push(`${pronoun} ${conj}`);
       }
       if (timeline.length === 0) return null;
+
+      // Set verb.audioSrc for the Conjugaison component (single full audio)
+      const fullText = `${verb.infinitive}. ${fullParts.join(", ")}`;
+      verb.audioSrc = generateAudioFile(fullText, `conj_${verb.id}_${tense}_full`);
+
       return {
         compositionId: "Conjugaison",
         props: { verb, tense, timeline, totalDuration: totalFrames },
@@ -459,18 +468,32 @@ function getActivityProps(activity, wordMap, grammarMap, verbMap, durations) {
     case "Idiome": {
       const idiom = idiomMap[activity.idiome_id];
       if (!idiom) return null;
+      const word = {
+        french: idiom.expression,
+        example: idiom.example,
+        level: idiom.level,
+        audioSrc: generateAudioFile(idiom.expression, `idiome_${idiom.id}`),
+        exampleAudioSrc: generateAudioFile(idiom.example, `idiome_ex_${idiom.id}`),
+      };
       return {
         compositionId: "MotDuJour",
-        props: { word: { french: idiom.expression, example: idiom.example, level: idiom.level }, totalDuration: Math.round(durations.Idiome * 30) },
+        props: { word, totalDuration: Math.round(durations.Idiome * 30) },
         outputFile: `gen_idiome_${idiom.id}.mp4`,
       };
     }
     case "Culture": {
       const culture = cultureMap[activity.culture_id];
       if (!culture) return null;
+      const grammar = {
+        title: culture.title,
+        explanation: culture.summary,
+        level: culture.level,
+        examples: [culture.detail],
+        audioSrc: generateAudioFile(`${culture.title}. ${culture.summary}`, `culture_${culture.id}`),
+      };
       return {
         compositionId: "Grammaire",
-        props: { grammar: { title: culture.title, explanation: culture.summary, level: culture.level, examples: [culture.detail] }, totalDuration: Math.round(durations.Culture * 30) },
+        props: { grammar, totalDuration: Math.round(durations.Culture * 30) },
         outputFile: `gen_culture_${culture.id}.mp4`,
       };
     }
