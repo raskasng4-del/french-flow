@@ -209,6 +209,12 @@
       "file": "day8_conjugaison.mp4",
       "published": true,
       "date": "2026-05-27"
+    },
+    {
+      "type": "Grammaire",
+      "file": "day9_grammaire.mp4",
+      "published": true,
+      "date": "2026-05-27"
     }
   ],
   "last_publish_date": "2026-05-27",
@@ -311,6 +317,12 @@
         "last_reviewed": "2026-05-26",
         "interval": 1,
         "next_review": "2026-05-27"
+      },
+      "9": {
+        "first_seen": "2026-05-27",
+        "last_reviewed": "2026-05-27",
+        "interval": 1,
+        "next_review": "2026-05-28"
       }
     },
     "verbs": {
@@ -358,7 +370,7 @@
       }
     }
   },
-  "curriculum_idx": 41,
+  "curriculum_idx": 42,
   "generated_count": 0,
   "used_combos": []
 }
