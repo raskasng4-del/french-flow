@@ -131,7 +131,7 @@ function buildDescription(type, data, question) {
   let desc = "";
   switch (type) {
     case "MotDuJour":
-      desc = `🇫🇷 **Mot du jour** - French Flow\n\n✨ ${data.french} = ${data.arabic || ""}\n💬 ${data.example}`;
+      desc = `🇫🇷 **Mot du jour** - French Flow\n\n✨ ${data.french}\n💬 ${data.example}`;
       break;
     case "PhraseDuJour":
       desc = `🇫🇷 **Phrase du jour** - French Flow\n\n🗣 ${data.example}`;
@@ -432,7 +432,7 @@ function getActivityProps(activity, wordMap, grammarMap, verbMap, durations) {
       if (!idiom) return null;
       return {
         compositionId: "MotDuJour",
-        props: { word: { french: idiom.expression, arabic: idiom.arabic, example: idiom.example, level: idiom.level }, totalDuration: Math.round(durations.Idiome * 30) },
+        props: { word: { french: idiom.expression, example: idiom.example, level: idiom.level }, totalDuration: Math.round(durations.Idiome * 30) },
         outputFile: `gen_idiome_${idiom.id}.mp4`,
       };
     }
@@ -441,7 +441,7 @@ function getActivityProps(activity, wordMap, grammarMap, verbMap, durations) {
       if (!culture) return null;
       return {
         compositionId: "Grammaire",
-        props: { grammar: { title: culture.title, title_ar: culture.title_ar || "", explanation: culture.summary, level: culture.level, examples: [culture.detail] }, totalDuration: Math.round(durations.Culture * 30) },
+        props: { grammar: { title: culture.title, explanation: culture.summary, level: culture.level, examples: [culture.detail] }, totalDuration: Math.round(durations.Culture * 30) },
         outputFile: `gen_culture_${culture.id}.mp4`,
       };
     }

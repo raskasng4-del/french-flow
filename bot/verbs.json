@@ -205,7 +205,6 @@
   {
     "id": 8,
     "infinitive": "pouvoir",
-    "arabic": "يستطيع",
     "level": "A2",
     "present": {
       "je": "peux",
@@ -235,7 +234,6 @@
   {
     "id": 9,
     "infinitive": "vouloir",
-    "arabic": "يريد",
     "level": "A2",
     "present": {
       "je": "veux",
@@ -265,7 +263,6 @@
   {
     "id": 10,
     "infinitive": "devoir",
-    "arabic": "يجب/يدين",
     "level": "A2",
     "present": {
       "je": "dois",
@@ -295,7 +292,6 @@
   {
     "id": 11,
     "infinitive": "savoir",
-    "arabic": "يعرف",
     "level": "A2",
     "present": {
       "je": "sais",
@@ -325,7 +321,6 @@
   {
     "id": 12,
     "infinitive": "venir",
-    "arabic": "يأتي",
     "level": "A2",
     "present": {
       "je": "viens",
@@ -355,7 +350,6 @@
   {
     "id": 13,
     "infinitive": "prendre",
-    "arabic": "يأخذ",
     "level": "A2",
     "present": {
       "je": "prends",
@@ -385,7 +379,6 @@
   {
     "id": 14,
     "infinitive": "mettre",
-    "arabic": "يضع",
     "level": "A2",
     "present": {
       "je": "mets",
@@ -415,7 +408,6 @@
   {
     "id": 15,
     "infinitive": "dire",
-    "arabic": "يقول",
     "level": "A2",
     "present": {
       "je": "dis",
@@ -445,7 +437,6 @@
   {
     "id": 16,
     "infinitive": "voir",
-    "arabic": "يرى",
     "level": "A2",
     "present": {
       "je": "vois",
@@ -649,7 +640,6 @@
   {
     "id": 23,
     "infinitive": "servir",
-    "arabic": "يخدم/يقدم",
     "level": "B1",
     "present": {
       "je": "sers",
@@ -679,7 +669,6 @@
   {
     "id": 24,
     "infinitive": "ouvrir",
-    "arabic": "يفتح",
     "level": "B1",
     "present": {
       "je": "ouvre",
@@ -709,7 +698,6 @@
   {
     "id": 25,
     "infinitive": "offrir",
-    "arabic": "يهدي",
     "level": "B1",
     "present": {
       "je": "offre",
@@ -739,7 +727,6 @@
   {
     "id": 26,
     "infinitive": "souffrir",
-    "arabic": "يعاني",
     "level": "B1",
     "present": {
       "je": "souffre",
@@ -769,7 +756,6 @@
   {
     "id": 27,
     "infinitive": "connaître",
-    "arabic": "يعرف/يعلم",
     "level": "B1",
     "present": {
       "je": "connais",
@@ -799,7 +785,6 @@
   {
     "id": 28,
     "infinitive": "paraître",
-    "arabic": "يبدو",
     "level": "B1",
     "present": {
       "je": "parais",
@@ -829,7 +814,6 @@
   {
     "id": 29,
     "infinitive": "vivre",
-    "arabic": "يعيش",
     "level": "B1",
     "present": {
       "je": "vis",
@@ -859,7 +843,6 @@
   {
     "id": 30,
     "infinitive": "suivre",
-    "arabic": "يتبع",
     "level": "B1",
     "present": {
       "je": "suis",
@@ -889,7 +872,6 @@
   {
     "id": 31,
     "infinitive": "rire",
-    "arabic": "يضحك",
     "level": "B1",
     "present": {
       "je": "ris",
@@ -919,7 +901,6 @@
   {
     "id": 32,
     "infinitive": "conduire",
-    "arabic": "يقود",
     "level": "B1",
     "present": {
       "je": "conduis",
@@ -949,7 +930,6 @@
   {
     "id": 33,
     "infinitive": "traduire",
-    "arabic": "يترجم",
     "level": "B2",
     "present": {
       "je": "traduis",
@@ -979,7 +959,6 @@
   {
     "id": 34,
     "infinitive": "peindre",
-    "arabic": "يرسم/يدهن",
     "level": "B2",
     "present": {
       "je": "peins",
@@ -1849,7 +1828,6 @@
   },
   {
     "infinitive": "s'appeler",
-    "arabic": "يدعى/اسمه",
     "level": "A1",
     "present": {
       "je": "m'appelle",
@@ -1871,7 +1849,6 @@
   },
   {
     "infinitive": "habiter",
-    "arabic": "يسكن",
     "level": "A1",
     "present": {
       "je": "habite",
@@ -1893,7 +1870,6 @@
   },
   {
     "infinitive": "aimer",
-    "arabic": "يحب",
     "level": "A1",
     "present": {
       "je": "aime",
@@ -1923,7 +1899,6 @@
   },
   {
     "infinitive": "marcher",
-    "arabic": "يمشي",
     "level": "A1",
     "present": {
       "je": "marche",
@@ -1945,7 +1920,6 @@
   },
   {
     "infinitive": "manger",
-    "arabic": "يأكل",
     "level": "A1",
     "present": {
       "je": "mange",
@@ -1975,7 +1949,6 @@
   },
   {
     "infinitive": "boire",
-    "arabic": "يشرب",
     "level": "A1",
     "present": {
       "je": "bois",
@@ -1997,7 +1970,6 @@
   },
   {
     "infinitive": "comprendre",
-    "arabic": "يفهم",
     "level": "B1",
     "present": {
       "je": "comprends",
@@ -2019,7 +1991,6 @@
   },
   {
     "infinitive": "apprendre",
-    "arabic": "يتعلم",
     "level": "B1",
     "present": {
       "je": "apprends",
@@ -2041,7 +2012,6 @@
   },
   {
     "infinitive": "attendre",
-    "arabic": "ينتظر",
     "level": "B1",
     "present": {
       "je": "attends",
@@ -2063,7 +2033,6 @@
   },
   {
     "infinitive": "répondre",
-    "arabic": "يجيب",
     "level": "B1",
     "present": {
       "je": "réponds",
@@ -2085,7 +2054,6 @@
   },
   {
     "infinitive": "sentir",
-    "arabic": "يشعر/يَشُم",
     "level": "B1",
     "present": {
       "je": "sens",
@@ -2107,7 +2075,6 @@
   },
   {
     "infinitive": "construire",
-    "arabic": "يبني",
     "level": "B1",
     "present": {
       "je": "construis",
@@ -2129,7 +2096,6 @@
   },
   {
     "infinitive": "acquérir",
-    "arabic": "يكتسب",
     "level": "B2",
     "present": {
       "je": "acquiers",
@@ -2151,7 +2117,6 @@
   },
   {
     "infinitive": "apercevoir",
-    "arabic": "يلاحظ/يرى",
     "level": "B2",
     "present": {
       "je": "aperçois",
@@ -2173,7 +2138,6 @@
   },
   {
     "infinitive": "découvrir",
-    "arabic": "يكتشف",
     "level": "B2",
     "present": {
       "je": "découvre",
@@ -2195,7 +2159,6 @@
   },
   {
     "infinitive": "plaindre",
-    "arabic": "يأسف/يشفق",
     "level": "B2",
     "present": {
       "je": " plains",
@@ -2217,7 +2180,6 @@
   },
   {
     "infinitive": "résoudre",
-    "arabic": "يحل",
     "level": "B2",
     "present": {
       "je": "résous",
@@ -2239,7 +2201,6 @@
   },
   {
     "infinitive": "mourir",
-    "arabic": "يموت",
     "level": "B2",
     "present": {
       "je": "meurs",
@@ -2261,7 +2222,6 @@
   },
   {
     "infinitive": "naître",
-    "arabic": "يولد",
     "level": "B2",
     "present": {
       "je": "nais",
@@ -2283,7 +2243,6 @@
   },
   {
     "infinitive": "accroître",
-    "arabic": "يزيد/ينمو",
     "level": "C1",
     "present": {
       "je": "accrois",
@@ -2305,7 +2264,6 @@
   },
   {
     "infinitive": "admettre",
-    "arabic": "يعترف/يقبل",
     "level": "C1",
     "present": {
       "je": "admets",
@@ -2327,7 +2285,6 @@
   },
   {
     "infinitive": "conquérir",
-    "arabic": "يغزو/يفتتح",
     "level": "C1",
     "present": {
       "je": "conquiers",
@@ -2349,7 +2306,6 @@
   },
   {
     "infinitive": "dépendre",
-    "arabic": "يعتمد",
     "level": "C1",
     "present": {
       "je": "dépends",
@@ -2371,7 +2327,6 @@
   },
   {
     "infinitive": "intervenir",
-    "arabic": "يتدخل",
     "level": "C1",
     "present": {
       "je": "interviens",
@@ -2393,7 +2348,6 @@
   },
   {
     "infinitive": "maintenir",
-    "arabic": "يحافظ",
     "level": "C1",
     "present": {
       "je": "maintiens",
@@ -2415,7 +2369,6 @@
   },
   {
     "infinitive": "obtenir",
-    "arabic": "يحصل",
     "level": "C1",
     "present": {
       "je": "obtiens",
@@ -2437,7 +2390,6 @@
   },
   {
     "infinitive": "prévoir",
-    "arabic": "يتوقع",
     "level": "C1",
     "present": {
       "je": "prévois",
@@ -2459,7 +2411,6 @@
   },
   {
     "infinitive": "suffire",
-    "arabic": "يكفي",
     "level": "C1",
     "present": {
       "je": "suffis",
@@ -2481,7 +2432,6 @@
   },
   {
     "infinitive": "valoir",
-    "arabic": "يسوى/يستحق",
     "level": "C1",
     "present": {
       "je": "vaux",
@@ -2503,7 +2453,6 @@
   },
   {
     "infinitive": "circonscrire",
-    "arabic": "يحصر/يحدد",
     "level": "C2",
     "present": {
       "je": "circonscris",
@@ -2525,7 +2474,6 @@
   },
   {
     "infinitive": "corroborer",
-    "arabic": "يؤكد/يدعم",
     "level": "C2",
     "present": {
       "je": "corrobore",
@@ -2547,7 +2495,6 @@
   },
   {
     "infinitive": "disjoindre",
-    "arabic": "يفصل/ينفصل",
     "level": "C2",
     "present": {
       "je": "disjoins",
@@ -2569,7 +2516,6 @@
   },
   {
     "infinitive": "circuler",
-    "arabic": "يدور/يتنقل",
     "level": "C2",
     "present": {
       "je": "circule",
@@ -2591,7 +2537,6 @@
   },
   {
     "infinitive": "émaner",
-    "arabic": "ينبعث/يصدر",
     "level": "C2",
     "present": {
       "je": "émane",
@@ -2613,7 +2558,6 @@
   },
   {
     "infinitive": "subvenir",
-    "arabic": "يوفر/يؤمن",
     "level": "C2",
     "present": {
       "je": "subviens",
@@ -2635,7 +2579,6 @@
   },
   {
     "infinitive": "coïncider",
-    "arabic": "يتطابق/يتزامن",
     "level": "C2",
     "present": {
       "je": "coïncide",
@@ -2657,7 +2600,6 @@
   },
   {
     "infinitive": "seoir",
-    "arabic": "يناسب/يلائم",
     "level": "C2",
     "present": {
       "je": "siés",
@@ -2671,7 +2613,6 @@
   },
   {
     "infinitive": "déchoir",
-    "arabic": "يسقط/يفقد المكانة",
     "level": "C2",
     "present": {
       "je": "déchois",
@@ -2693,7 +2634,6 @@
   },
   {
     "infinitive": "gesticuler",
-    "arabic": "يشير بيديه",
     "level": "C2",
     "present": {
       "je": "gesticule",

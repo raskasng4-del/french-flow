@@ -1,52 +1,352 @@
 [
-  {"id":1,"expression":"Avoir un coup de foudre","arabic":"يقع في الحب من النظرة الأولى","level":"B1","meaning":"Tomber amoureux soudainement","example":"Quand je l'ai vue, j'ai eu un coup de foudre."},
-  {"id":2,"expression":"Poser un lapin","arabic":"يتخلف عن موعد","level":"A2","meaning":"Ne pas venir à un rendez-vous","example":"Elle m'a posé un lapin hier soir."},
-  {"id":3,"expression":"Coûter les yeux de la tête","arabic":"غالي جداً","level":"A2","meaning":"Être très cher","example":"Cette voiture coûte les yeux de la tête."},
-  {"id":4,"expression":"Donner sa langue au chat","arabic":"يستسلم في التخمين","level":"B1","meaning":"Abandonner une devinette ou une recherche","example":"Je donne ma langue au chat, quelle est la réponse ?"},
-  {"id":5,"expression":"Avoir la main verte","arabic":"لديه موهبة الزراعة","level":"B1","meaning":"Être bon en jardinage","example":"Ma grand-mère a la main verte."},
-  {"id":6,"expression":"Appeler un chat un chat","arabic":"يدعو الأشياء بأسمائها","level":"B2","meaning":"Parler franchement sans détour","example":"Il faut appeler un chat un chat, c'est un mensonge."},
-  {"id":7,"expression":"Mettre les pieds dans le plat","arabic":"يتصرف بدون لباقة","level":"B2","meaning":"Aborder un sujet délicat sans tact","example":"Il a mis les pieds dans le plat en parlant de son ex-femme."},
-  {"id":8,"expression":"Faire le pont","arabic":"يأخذ عطلة طويلة (بين عطلتين)","level":"A2","meaning":"Prendre un jour de congé entre deux jours fériés","example":"Je fais le pont vendredi pour avoir 4 jours de repos."},
-  {"id":9,"expression":"Raconter des salades","arabic":"يحكي قصصاً غير صحيحة","level":"B1","meaning":"Dire des mensonges ou des histoires inventées","example":"Il raconte toujours des salades pour se rendre intéressant."},
-  {"id":10,"expression":"Avoir le cafard","arabic":"يكون مكتئباً","level":"B1","meaning":"Être triste ou déprimé","example":"Depuis qu'elle est partie, j'ai le cafard."},
-  {"id":11,"expression":"Être dans la lune","arabic":"يكون شارد الذهن","level":"A2","meaning":"Être distrait, rêveur","example":"Il est toujours dans la lune en cours."},
-  {"id":12,"expression":"Faire d'une pierre deux coups","arabic":"يضرب عصفورين بحجر","level":"B2","meaning":"Accomplir deux choses en une seule action","example":"En allant à Paris pour le travail, j'ai visité ma famille : j'ai fait d'une pierre deux coups."},
-  {"id":13,"expression":"Ne pas être dans son assiette","arabic":"ليس في حالته الطبيعية","level":"B1","meaning":"Ne pas se sentir bien physiquement ou moralement","example":"Tu es pâle, tu n'es pas dans ton assiette ?"},
-  {"id":14,"expression":"Prendre des vessies pour des lanternes","arabic":"يخلط بين الأشياء","level":"C1","meaning":"Se tromper grossièrement, confondre des choses différentes","example":"Il prend des vessies pour des lanternes !"},
-  {"id":15,"expression":"Verser des larmes de crocodile","arabic":"يذرف دموع التماسيح","level":"B2","meaning":"Pleurer pour faire semblant","example":"Ne le crois pas, ce sont des larmes de crocodile."},
-  {"id":16,"expression":"Avoir le cœur sur la main","arabic":"كريم جداً","level":"B2","meaning":"Être très généreux","example":"Il donne tout aux autres, il a le cœur sur la main."},
-  {"id":17,"expression":"Mettre de l'eau dans son vin","arabic":"يهدأ/يتنازل","level":"C1","meaning":"Devenir plus modéré, moins radical","example":"Avec l'âge, il a mis de l'eau dans son vin."},
-  {"id":18,"expression":"Faire la grasse matinée","arabic":"ينام متأخراً(حتى الظهر)","level":"A2","meaning":"Dormir tard le matin","example":"Dimanche, j'ai fait la grasse matinée."},
-  {"id":19,"expression":"Tenir le coup","arabic":"يقاوم/يتحمل","level":"B1","meaning":"Résister physiquement ou moralement","example":"C'est difficile mais je tiens le coup."},
-  {"id":20,"expression":"Sauter du coq à l'âne","arabic":"ينتقل بين المواضيع فجأة","level":"B2","meaning":"Changer brusquement de sujet de conversation","example":"Il saute du coq à l'âne, on ne le suit plus."},
-  {"id":21,"expression":"Pleurer comme une madeleine","arabic":"يبكي بغزارة","level":"B1","meaning":"Pleurer beaucoup","example":"À la fin du film, elle pleurait comme une madeleine."},
-  {"id":22,"expression":"Ne pas y aller par quatre chemins","arabic":"يذهب مباشرة إلى الهدف","level":"B2","meaning":"Aller droit au but, être direct","example":"Je n'y vais pas par quatre chemins : tu dois te ressaisir."},
-  {"id":23,"expression":"Passer l'arme à gauche","arabic":"يموت","level":"C1","meaning":"Mourir (familier)","example":"Le pauvre, il a passé l'arme à gauche."},
-  {"id":24,"expression":"Mettre la charrue avant les bœufs","arabic":"يضع العربة أمام الحصان","level":"C1","meaning":"Faire les choses dans le désordre","example":"Ne mets pas la charrue avant les bœufs."},
-  {"id":25,"expression":"Se lever du pied gauche","arabic":"يستيقظ على غير طبيعته","level":"A2","meaning":"Être de mauvaise humeur dès le matin","example":"Qu'est-ce qu'il a ? Il s'est levé du pied gauche ?"},
-  {"id":26,"expression":"Avoir plusieurs cordes à son arc","arabic":"لديه عدة مهارات","level":"B2","meaning":"Avoir plusieurs talents, compétences","example":"Elle a plusieurs cordes à son arc : elle chante, danse et peint."},
-  {"id":27,"expression":"En faire tout un fromage","arabic":"يكبر الأمور","level":"B1","meaning":"Exagérer l'importance de quelque chose","example":"Il en fait tout un fromage pour une petite erreur."},
-  {"id":28,"expression":"Vendre la peau de l'ours avant de l'avoir tué","arabic":"يفرح بشيء لم يحصل بعد","level":"C2","meaning":"Compter sur un résultat incertain","example":"N'achète pas encore la maison, tu vends la peau de l'ours avant de l'avoir tué."},
-  {"id":29,"expression":"Pédaler dans la semoule","arabic":"يدور في حلقة مفرغة","level":"C1","meaning":"Faire des efforts inutiles, piétiner","example":"Je pédale dans la semoule, mon projet n'avance pas."},
-  {"id":30,"expression":"Casser du sucre sur le dos de quelqu'un","arabic":"يغتاب شخصاً","level":"B2","meaning":"Médire de quelqu'un en son absence","example":"Arrête de casser du sucre sur le dos de tes collègues."},
-  {"id":31,"expression":"Avoir un poil dans la main","arabic":"كسول جداً","level":"B1","meaning":"Être très paresseux","example":"Il ne travaille jamais, il a un poil dans la main."},
-  {"id":32,"expression":"Les carottes sont cuites","arabic":"انتهى الأمر/فات الأوان","level":"B2","meaning":"Il n'y a plus d'espoir, tout est fini","example":"Pour le match, les carottes sont cuites."},
-  {"id":33,"expression":"Mettre la main à la pâte","arabic":"يساعد/يشارك في العمل","level":"A2","meaning":"Participer activement au travail","example":"Tout le monde doit mettre la main à la pâte."},
-  {"id":34,"expression":"Faire chou blanc","arabic":"يفشل","level":"B1","meaning":"Échouer, obtenir un résultat nul","example":"J'ai fait chou blanc à mon examen."},
-  {"id":35,"expression":"Tomber dans les pommes","arabic":"يغمى عليه","level":"B1","meaning":"S'évanouir","example":"Il est tombé dans les pommes à cause de la chaleur."},
-  {"id":36,"expression":"Se faire du mouron","arabic":"يقلق","level":"B2","meaning":"Se faire du souci","example":"Ne te fais pas de mouron, tout va bien se passer."},
-  {"id":37,"expression":"Couper la poire en deux","arabic":"يقسم الشيء بالتساوي/يتوصل لوسط","level":"B2","meaning":"Trouver un compromis","example":"On a coupé la poire en deux : je prends le matin et lui l'après-midi."},
-  {"id":38,"expression":"En avoir plein le dos","arabic":"طفح كيله","level":"A2","meaning":"En avoir assez, être fatigué de quelque chose","example":"J'en ai plein le dos de ses excuses."},
-  {"id":39,"expression":"Mettre les points sur les i","arabic":"يضع النقاط على الحروف","level":"B2","meaning":"Clarifier une situation, parler franchement","example":"Il a mis les points sur les i : c'est fini entre nous."},
-  {"id":40,"expression":"Connaître une personne comme sa poche","arabic":"يعرف شخصاً جيداً","level":"B1","meaning":"Connaître quelqu'un très bien","example":"Je le connais comme ma poche, il va accepter."},
-  {"id":41,"expression":"Revenons à nos moutons","arabic":"نعود إلى موضوعنا","level":"C1","meaning":"Revenons au sujet principal","example":"Assez digressé, revenons à nos moutons."},
-  {"id":42,"expression":"Noyer le poisson","arabic":"يضيع الموضوع/يهرب من الإجابة","level":"B2","meaning":"Éviter le sujet, semer la confusion","example":"Arrête de noyer le poisson et réponds à ma question."},
-  {"id":43,"expression":"Faire amende honorable","arabic":"يعترف بخطئه","level":"C1","meaning":"Reconnaître sa faute et s'excuser","example":"Il a fait amende honorable devant tout le monde."},
-  {"id":44,"expression":"Tirer les marrons du feu","arabic":"يجني ثمار عمل غيره","level":"C1","meaning":"Profiter d'une situation risquée pour quelqu'un d'autre","example":"Il m'a fait faire le travail pendant que lui tirait les marrons du feu."},
-  {"id":45,"expression":"Attacher le grelot","arabic":"يأخذ المبادرة في أمر صعب","level":"C2","meaning":"Prendre l'initiative dans une affaire délicate","example":"Qui va attacher le grelot et lui annoncer la nouvelle ?"},
-  {"id":46,"expression":"Battre le fer quand il est chaud","arabic":"يضرب الحديد وهو ساخن","level":"B2","meaning":"Profiter du moment favorable","example":"Il faut battre le fer quand il est chaud, signons maintenant."},
-  {"id":47,"expression":"Découvrir le pot aux roses","arabic":"يكتشف الحقيقة المخفية","level":"C1","meaning":"Découvrir un secret, une supercherie","example":"Elle a découvert le pot aux roses : il la trompait."},
-  {"id":48,"expression":"Monter sur ses grands chevaux","arabic":"يثور/يغضب بشدة","level":"B2","meaning":"Se fâcher, s'indigner","example":"Ne monte pas sur tes grands chevaux pour si peu."},
-  {"id":49,"expression":"Faire feu de tout bois","arabic":"يستعمل كل الوسائل","level":"C2","meaning":"Utiliser tous les moyens disponibles","example":"Pour réussir, il fait feu de tout bois."},
-  {"id":50,"expression":"Scier la branche sur laquelle on est assis","arabic":"يضر نفسه بنفسه","level":"C2","meaning":"Agir contre ses propres intérêts","example":"En démissionnant, il scie la branche sur laquelle il est assis."}
+  {
+    "id": 1,
+    "expression": "Avoir un coup de foudre",
+    "level": "B1",
+    "meaning": "Tomber amoureux soudainement",
+    "example": "Quand je l'ai vue, j'ai eu un coup de foudre."
+  },
+  {
+    "id": 2,
+    "expression": "Poser un lapin",
+    "level": "A2",
+    "meaning": "Ne pas venir à un rendez-vous",
+    "example": "Elle m'a posé un lapin hier soir."
+  },
+  {
+    "id": 3,
+    "expression": "Coûter les yeux de la tête",
+    "level": "A2",
+    "meaning": "Être très cher",
+    "example": "Cette voiture coûte les yeux de la tête."
+  },
+  {
+    "id": 4,
+    "expression": "Donner sa langue au chat",
+    "level": "B1",
+    "meaning": "Abandonner une devinette ou une recherche",
+    "example": "Je donne ma langue au chat, quelle est la réponse ?"
+  },
+  {
+    "id": 5,
+    "expression": "Avoir la main verte",
+    "level": "B1",
+    "meaning": "Être bon en jardinage",
+    "example": "Ma grand-mère a la main verte."
+  },
+  {
+    "id": 6,
+    "expression": "Appeler un chat un chat",
+    "level": "B2",
+    "meaning": "Parler franchement sans détour",
+    "example": "Il faut appeler un chat un chat, c'est un mensonge."
+  },
+  {
+    "id": 7,
+    "expression": "Mettre les pieds dans le plat",
+    "level": "B2",
+    "meaning": "Aborder un sujet délicat sans tact",
+    "example": "Il a mis les pieds dans le plat en parlant de son ex-femme."
+  },
+  {
+    "id": 8,
+    "expression": "Faire le pont",
+    "level": "A2",
+    "meaning": "Prendre un jour de congé entre deux jours fériés",
+    "example": "Je fais le pont vendredi pour avoir 4 jours de repos."
+  },
+  {
+    "id": 9,
+    "expression": "Raconter des salades",
+    "level": "B1",
+    "meaning": "Dire des mensonges ou des histoires inventées",
+    "example": "Il raconte toujours des salades pour se rendre intéressant."
+  },
+  {
+    "id": 10,
+    "expression": "Avoir le cafard",
+    "level": "B1",
+    "meaning": "Être triste ou déprimé",
+    "example": "Depuis qu'elle est partie, j'ai le cafard."
+  },
+  {
+    "id": 11,
+    "expression": "Être dans la lune",
+    "level": "A2",
+    "meaning": "Être distrait, rêveur",
+    "example": "Il est toujours dans la lune en cours."
+  },
+  {
+    "id": 12,
+    "expression": "Faire d'une pierre deux coups",
+    "level": "B2",
+    "meaning": "Accomplir deux choses en une seule action",
+    "example": "En allant à Paris pour le travail, j'ai visité ma famille : j'ai fait d'une pierre deux coups."
+  },
+  {
+    "id": 13,
+    "expression": "Ne pas être dans son assiette",
+    "level": "B1",
+    "meaning": "Ne pas se sentir bien physiquement ou moralement",
+    "example": "Tu es pâle, tu n'es pas dans ton assiette ?"
+  },
+  {
+    "id": 14,
+    "expression": "Prendre des vessies pour des lanternes",
+    "level": "C1",
+    "meaning": "Se tromper grossièrement, confondre des choses différentes",
+    "example": "Il prend des vessies pour des lanternes !"
+  },
+  {
+    "id": 15,
+    "expression": "Verser des larmes de crocodile",
+    "level": "B2",
+    "meaning": "Pleurer pour faire semblant",
+    "example": "Ne le crois pas, ce sont des larmes de crocodile."
+  },
+  {
+    "id": 16,
+    "expression": "Avoir le cœur sur la main",
+    "level": "B2",
+    "meaning": "Être très généreux",
+    "example": "Il donne tout aux autres, il a le cœur sur la main."
+  },
+  {
+    "id": 17,
+    "expression": "Mettre de l'eau dans son vin",
+    "level": "C1",
+    "meaning": "Devenir plus modéré, moins radical",
+    "example": "Avec l'âge, il a mis de l'eau dans son vin."
+  },
+  {
+    "id": 18,
+    "expression": "Faire la grasse matinée",
+    "level": "A2",
+    "meaning": "Dormir tard le matin",
+    "example": "Dimanche, j'ai fait la grasse matinée."
+  },
+  {
+    "id": 19,
+    "expression": "Tenir le coup",
+    "level": "B1",
+    "meaning": "Résister physiquement ou moralement",
+    "example": "C'est difficile mais je tiens le coup."
+  },
+  {
+    "id": 20,
+    "expression": "Sauter du coq à l'âne",
+    "level": "B2",
+    "meaning": "Changer brusquement de sujet de conversation",
+    "example": "Il saute du coq à l'âne, on ne le suit plus."
+  },
+  {
+    "id": 21,
+    "expression": "Pleurer comme une madeleine",
+    "level": "B1",
+    "meaning": "Pleurer beaucoup",
+    "example": "À la fin du film, elle pleurait comme une madeleine."
+  },
+  {
+    "id": 22,
+    "expression": "Ne pas y aller par quatre chemins",
+    "level": "B2",
+    "meaning": "Aller droit au but, être direct",
+    "example": "Je n'y vais pas par quatre chemins : tu dois te ressaisir."
+  },
+  {
+    "id": 23,
+    "expression": "Passer l'arme à gauche",
+    "level": "C1",
+    "meaning": "Mourir (familier)",
+    "example": "Le pauvre, il a passé l'arme à gauche."
+  },
+  {
+    "id": 24,
+    "expression": "Mettre la charrue avant les bœufs",
+    "level": "C1",
+    "meaning": "Faire les choses dans le désordre",
+    "example": "Ne mets pas la charrue avant les bœufs."
+  },
+  {
+    "id": 25,
+    "expression": "Se lever du pied gauche",
+    "level": "A2",
+    "meaning": "Être de mauvaise humeur dès le matin",
+    "example": "Qu'est-ce qu'il a ? Il s'est levé du pied gauche ?"
+  },
+  {
+    "id": 26,
+    "expression": "Avoir plusieurs cordes à son arc",
+    "level": "B2",
+    "meaning": "Avoir plusieurs talents, compétences",
+    "example": "Elle a plusieurs cordes à son arc : elle chante, danse et peint."
+  },
+  {
+    "id": 27,
+    "expression": "En faire tout un fromage",
+    "level": "B1",
+    "meaning": "Exagérer l'importance de quelque chose",
+    "example": "Il en fait tout un fromage pour une petite erreur."
+  },
+  {
+    "id": 28,
+    "expression": "Vendre la peau de l'ours avant de l'avoir tué",
+    "level": "C2",
+    "meaning": "Compter sur un résultat incertain",
+    "example": "N'achète pas encore la maison, tu vends la peau de l'ours avant de l'avoir tué."
+  },
+  {
+    "id": 29,
+    "expression": "Pédaler dans la semoule",
+    "level": "C1",
+    "meaning": "Faire des efforts inutiles, piétiner",
+    "example": "Je pédale dans la semoule, mon projet n'avance pas."
+  },
+  {
+    "id": 30,
+    "expression": "Casser du sucre sur le dos de quelqu'un",
+    "level": "B2",
+    "meaning": "Médire de quelqu'un en son absence",
+    "example": "Arrête de casser du sucre sur le dos de tes collègues."
+  },
+  {
+    "id": 31,
+    "expression": "Avoir un poil dans la main",
+    "level": "B1",
+    "meaning": "Être très paresseux",
+    "example": "Il ne travaille jamais, il a un poil dans la main."
+  },
+  {
+    "id": 32,
+    "expression": "Les carottes sont cuites",
+    "level": "B2",
+    "meaning": "Il n'y a plus d'espoir, tout est fini",
+    "example": "Pour le match, les carottes sont cuites."
+  },
+  {
+    "id": 33,
+    "expression": "Mettre la main à la pâte",
+    "level": "A2",
+    "meaning": "Participer activement au travail",
+    "example": "Tout le monde doit mettre la main à la pâte."
+  },
+  {
+    "id": 34,
+    "expression": "Faire chou blanc",
+    "level": "B1",
+    "meaning": "Échouer, obtenir un résultat nul",
+    "example": "J'ai fait chou blanc à mon examen."
+  },
+  {
+    "id": 35,
+    "expression": "Tomber dans les pommes",
+    "level": "B1",
+    "meaning": "S'évanouir",
+    "example": "Il est tombé dans les pommes à cause de la chaleur."
+  },
+  {
+    "id": 36,
+    "expression": "Se faire du mouron",
+    "level": "B2",
+    "meaning": "Se faire du souci",
+    "example": "Ne te fais pas de mouron, tout va bien se passer."
+  },
+  {
+    "id": 37,
+    "expression": "Couper la poire en deux",
+    "level": "B2",
+    "meaning": "Trouver un compromis",
+    "example": "On a coupé la poire en deux : je prends le matin et lui l'après-midi."
+  },
+  {
+    "id": 38,
+    "expression": "En avoir plein le dos",
+    "level": "A2",
+    "meaning": "En avoir assez, être fatigué de quelque chose",
+    "example": "J'en ai plein le dos de ses excuses."
+  },
+  {
+    "id": 39,
+    "expression": "Mettre les points sur les i",
+    "level": "B2",
+    "meaning": "Clarifier une situation, parler franchement",
+    "example": "Il a mis les points sur les i : c'est fini entre nous."
+  },
+  {
+    "id": 40,
+    "expression": "Connaître une personne comme sa poche",
+    "level": "B1",
+    "meaning": "Connaître quelqu'un très bien",
+    "example": "Je le connais comme ma poche, il va accepter."
+  },
+  {
+    "id": 41,
+    "expression": "Revenons à nos moutons",
+    "level": "C1",
+    "meaning": "Revenons au sujet principal",
+    "example": "Assez digressé, revenons à nos moutons."
+  },
+  {
+    "id": 42,
+    "expression": "Noyer le poisson",
+    "level": "B2",
+    "meaning": "Éviter le sujet, semer la confusion",
+    "example": "Arrête de noyer le poisson et réponds à ma question."
+  },
+  {
+    "id": 43,
+    "expression": "Faire amende honorable",
+    "level": "C1",
+    "meaning": "Reconnaître sa faute et s'excuser",
+    "example": "Il a fait amende honorable devant tout le monde."
+  },
+  {
+    "id": 44,
+    "expression": "Tirer les marrons du feu",
+    "level": "C1",
+    "meaning": "Profiter d'une situation risquée pour quelqu'un d'autre",
+    "example": "Il m'a fait faire le travail pendant que lui tirait les marrons du feu."
+  },
+  {
+    "id": 45,
+    "expression": "Attacher le grelot",
+    "level": "C2",
+    "meaning": "Prendre l'initiative dans une affaire délicate",
+    "example": "Qui va attacher le grelot et lui annoncer la nouvelle ?"
+  },
+  {
+    "id": 46,
+    "expression": "Battre le fer quand il est chaud",
+    "level": "B2",
+    "meaning": "Profiter du moment favorable",
+    "example": "Il faut battre le fer quand il est chaud, signons maintenant."
+  },
+  {
+    "id": 47,
+    "expression": "Découvrir le pot aux roses",
+    "level": "C1",
+    "meaning": "Découvrir un secret, une supercherie",
+    "example": "Elle a découvert le pot aux roses : il la trompait."
+  },
+  {
+    "id": 48,
+    "expression": "Monter sur ses grands chevaux",
+    "level": "B2",
+    "meaning": "Se fâcher, s'indigner",
+    "example": "Ne monte pas sur tes grands chevaux pour si peu."
+  },
+  {
+    "id": 49,
+    "expression": "Faire feu de tout bois",
+    "level": "C2",
+    "meaning": "Utiliser tous les moyens disponibles",
+    "example": "Pour réussir, il fait feu de tout bois."
+  },
+  {
+    "id": 50,
+    "expression": "Scier la branche sur laquelle on est assis",
+    "level": "C2",
+    "meaning": "Agir contre ses propres intérêts",
+    "example": "En démissionnant, il scie la branche sur laquelle il est assis."
+  }
 ]

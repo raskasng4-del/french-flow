@@ -1,26 +1,170 @@
 [
-  {"id":1,"title":"La cuisine française","title_ar":"المطبخ الفرنسي","level":"A2","summary":"المطبخ الفرنسي معترف به عالمياً. من الأطباق الشهيرة: croissant, baguette, escargots, foie gras.","detail":"للغداء في فرنسا 3 أطباق: entrée (مقبلات), plat principal (طبق رئيسي), dessert (حلوى). الخبز جزء أساسي من كل وجبة."},
-  {"id":2,"title":"Le système éducatif","title_ar":"النظام التعليمي","level":"B1","summary":"النظام التعليمي الفرنسي مقسم إلى: école maternelle (3-6ans), école élémentaire (6-11ans), collège (11-15ans), lycée (15-18ans).","detail":"بعد البكالوريا (bac) يذهب الطلاب إلى université أو grande école. المدارس العليا grandes écoles مرموقة جداً مثل Polytechnique و HEC."},
-  {"id":3,"title":"Les fêtes françaises","title_ar":"الأعياد الفرنسية","level":"A2","summary":"أهم الأعياد: 14 juillet (العيد الوطني), Noël (الكريسماس), Pâques (عيد الفصح), 1er mai (عيد العمال), 11 novembre (هدنة الحرب).","detail":"في 14 يوليه 1789 تم اقتحام سجن الباستيل وهو اليوم الوطني الفرنسي. في 1er mai يهدي الفرنسيون زهرة le muguet (زنبق الوادي) للحظ السعيد."},
-  {"id":4,"title":"La mode et le luxe","title_ar":"الموضة والرفاهية","level":"B1","summary":"فرنسا عاصمة الموضة العالمية. مدن مثل Paris, Lyon, Cannes معروفة بصناعة الرفاهية.","detail":"ماركات شهيرة: Louis Vuitton, Chanel, Dior, Hermès. La Fashion Week de Paris حدث سنوي يجمع المصممين العالميين."},
-  {"id":5,"title":"Le cinéma français","title_ar":"السينما الفرنسية","level":"B1","summary":"السينما الفرنسية ولدت في 1895 مع الأخوين Lumière. فرنسا تنتج أكثر من 200 فيلم سنوياً.","detail":"أهم المهرجانات: Festival de Cannes (مهرجان كان السينمائي) أشهر مهرجان سينمائي عالمي. الجائزة الأولى تسمى Palme d'Or (السعفة الذهبية)."},
-  {"id":6,"title":"Les régions de France","title_ar":"مناطق فرنسا","level":"A2","summary":"فرنسا مقسمة إلى 18 منطقة: 13 في أوروبا و5 أقاليم خارجية (DROM-COM).","detail":"مناطق مشهورة: Île-de-France (باريس), Provence-Alpes-Côte d'Azur (البحر الأزرق), Bretagne, Alsace, Normandie. كل منطقة لها لهجتها وأطباقها التقليدية."},
-  {"id":7,"title":"La Tour Eiffel","title_ar":"برج إيفل","level":"A2","summary":"بني برج إيفل بين 1887 و1889 بمناسبة المعرض العالمي. ارتفاعه 330 متراً.","detail":"صممه Gustave Eiffel وكان مكروهاً في البداية وأطلق عليه 'عمود الحديد المشوه'. الآن هو أشهر معلم في فرنسا يستقبل 7 ملايين زائر سنوياً."},
-  {"id":8,"title":"Le TGV","title_ar":"القطار فائق السرعة","level":"A2","summary":"TGV (Train à Grande Vitesse) هو قطار فائق السرعة فرنسي. سرعته تصل إلى 320 كلم/ساعة.","detail":"تم إطلاق TGV في 1981 بين Paris و Lyon. الآن يربط المدن الفرنسية والأوروبية. فرنسا لديها ثاني أكبر شبكة قطارات فائقة السرعة في أوروبا."},
-  {"id":9,"title":"Le sport en France","title_ar":"الرياضة في فرنسا","level":"B1","summary":"الرياضات الأكثر شعبية: football (كرة القدم), rugby, tennis, cyclisme. فرنسا استضافت كأس العالم 1998 و 2019 للسيدات و الأولمبياد 2024.","detail":"نادي باريس سان جيرمان PSG أشهر نادي كرة قدم. فرنسا فازت بكأس العالم مرتين: 1998 و 2018. Tour de France (طواف فرنسا) أقدم وأشهر سباق دراجات في العالم."},
-  {"id":10,"title":"La laïcité","title_ar":"العلمانية","level":"B2","summary":"العلمانية (laïcité) مبدأ أساسي في الجمهورية الفرنسية. فصل الدين عن الدولة.","detail":"قانون 1905 فصل الكنيسة عن الدولة. في الجمهورية الفرنسية جميع الأديان متساوية والدولة محايدة تجاه الأديان. مبدأ laïcité يطبق في المدارس والإدارات العامة."},
-  {"id":11,"title":"Les symboles de la République","title_ar":"رموز الجمهورية","level":"B1","summary":"رموز الجمهورية الفرنسية: le drapeau tricolore (العلم ثلاثي الألوان), La Marseillaise (النشيد الوطني), Marianne (رمز الجمهورية).","detail":"العلم: أزرق (الحرية), أبيض (المساواة), أحمر (الإخاء). La Marseillaise نشيد وطني كتبه Rouget de Lisle عام 1792. Marianne تمثل الأم الفرنسية."},
-  {"id":12,"title":"Les grandes écoles","title_ar":"المدارس العليا","level":"B1","summary":"المدارس العليا grandes écoles هي مؤسسات تعليم عالي مرموقة جداً في فرنسا.","detail":"أشهرها: Polytechnique (الهندسة), HEC (إدارة الأعمال), Sciences Po (علوم سياسية), ESSEC, CentraleSupélec. الدخول إليها يتم عبر concours (مسابقة وطنية صعبة جداً)."},
-  {"id":13,"title":"Le fromage français","title_ar":"الجبن الفرنسي","level":"A2","summary":"يوجد أكثر من 1200 نوع من الجبن في فرنسا! قال De Gaulle: 'كيف تحكم بلداً لديه 246 نوعاً من الجبن؟'","detail":"أشهر الأنواع: Camembert (نورماندي), Roquefort (من حليب الغنم), Brie, Comté, Reblochon. كل منطقة تنتج جبنها التقليدي."},
-  {"id":14,"title":"L'impressionnisme","title_ar":"الانطباعية","level":"C1","summary":"الحركة الانطباعية impressionnisme ولدت في فرنسا في القرن 19. ركزت على الضوء والألوان.","detail":"أشهر الرسامين الانطباعيين: Claude Monet, Pierre-Auguste Renoir, Edgar Degas, Camille Pissarro. Musée d'Orsay في باريس يضم أكبر مجموعة انطباعية في العالم."},
-  {"id":15,"title":"Les Droits de l'Homme","title_ar":"حقوق الإنسان","level":"B2","summary":"إعلان حقوق الإنسان والمواطن (Déclaration des Droits de l'Homme et du Citoyen) صدر عام 1789.","detail":"هذا الإعلان نص أساسي في الثورة الفرنسية. ألهم الإعلان العالمي لحقوق الإنسان 1948. شعاره: liberté (حرية), égalité (مساواة), fraternité (إخاء)."},
-  {"id":16,"title":"La littérature française","title_ar":"الأدب الفرنسي","level":"C1","summary":"فرنسا لديها أغنى التقاليد الأدبية في العالم. 16 فرنسياً حصلوا على جائزة نوبل في الأدب.","detail":"كتاب مشهورون: Victor Hugo (البؤساء), Marcel Proust, Albert Camus (الغريب), Jean-Paul Sartre, Simone de Beauvoir. Prix Goncourt أشهر جائزة أدبية فرنسية."},
-  {"id":17,"title":"Le métro parisien","title_ar":"مترو باريس","level":"A2","summary":"مترو باريس من أقدم وأشهر شبكات المترو في العالم (افتتح 1900). 308 محطات و 16 خطاً.","detail":"كل محطة لها تصميمها الخاص. أشهرها: Louvre-Rivoli (تعرض نسخاً من اللوفر), Arts et Métiers (تصميم بخاري). مداخل Guimard الشهيرة أصبحت رمزاً لباريس."},
-  {"id":18,"title":"La gastronomie moléculaire","title_ar":"فن الطهي الجزيئي","level":"C2","summary":"المطبخ الجزيئي cuisine moléculaire هو تيار طهي حديث يستخدم العلم في تحضير الطعام بطرق مبتكرة.","detail":"رائد هذا المجال الشيف Pierre Gagnaire والكيميائي Hervé This. التقنيات تشمل: sphérification (تكوير السوائل), mousses (رغاوي), gelées (هلامات). أشهر مطاعم الجزيئية: Le Cordon Bleu."},
-  {"id":19,"title":"Les monuments historiques","title_ar":"المعالم التاريخية","level":"A2","summary":"فرنسا تملك 49 موقعاً في قائمة التراث العالمي لليونسكو. من أشهرها: Mont Saint-Michel, Château de Versailles, Cathédrale Notre-Dame.","detail":"قصر فرساي (Château de Versailles) بناه لويس الرابع عشر ويحتوي على 2300 غرفة. Mont Saint-Michel دير على جزيرة. إعادة بناء Notre-Dame بعد حريق 2019 مستمرة."},
-  {"id":20,"title":"La chanson française","title_ar":"الأغنية الفرنسية","level":"A2","summary":"الأغنية الفرنسية متنوعة وتأثرت بالعديد من الثقافات. من chanson française إلى le rap français.","detail":"فنانون مشهورون: Édith Piaf (La vie en rose), Jacques Brel, Charles Aznavour, Serge Gainsbourg حديثاً: Stromae, Angèle, Aya Nakamura. مهرجان Francofolies في La Rochelle."},
-  {"id":21,"title":"L'économie française","title_ar":"الاقتصاد الفرنسي","level":"B2","summary":"سابع أكبر اقتصاد في العالم. من أكبر الصناعات: الطيران (Airbus), السيارات (Renault, Peugeot), الرفاهية (LVMH).","detail":"الناتج المحلي الإجمالي: 3000 مليار دولار. الشركات الكبرى: TotalEnergies (طاقة), AXA (تأمين), BNP Paribas (بنك), Sanofi (أدوية). LVMH أكبر مجموعة رفاهية في العالم."},
-  {"id":22,"title":"La francophonie","title_ar":"الفرنكوفونية","level":"B1","summary":"الفرنكوفونية تضم 321 مليون متحدث بالفرنسية في 88 دولة ومنظمة حول العالم.","detail":"الفرنسية لغة رسمية في 29 دولة. هي اللغة الخامسة عالمياً من حيث عدد المتحدثين. منظمة OIF (Organisation Internationale de la Francophonie) مقرها باريس. اليوم العالمي للفرنكوفونية: 20 مارس."},
-  {"id":23,"title":"Les scientifiques français","title_ar":"العلماء الفرنسيون","level":"C1","summary":"فرنسا أنجبت العديد من العلماء الذين غيروا العالم في جميع المجالات.","detail":"Marie Curie (حائزة نوبل مرتين في الفيزياء والكيمياء), Louis Pasteur (البسترة واللقاحات), Blaise Pascal (الرياضيات), Pierre et Marie Curie (النشاط الإشعاعي). فرنسا تحتل المرتبة الرابعة في جوائز نوبل العلمية."},
-  {"id":24,"title":"Le vin français","title_ar":"النبيذ الفرنسي","level":"A2","summary":"فرنسا من أشهر دول العالم في صناعة النبيذ. مناطق مشهورة: Bordeaux, Bourgogne, Champagne, Vallée du Rhône.","detail":"نظام Appellation d'Origine Contrôlée (AOC) يحدد جودة النبيذ. أنواع النبيذ: rouge (أحمر), blanc (أبيض), rosé (وردي), mousseux (شمبانيا مثل Champagne). النبيذ جزء أساسي من الثقافة الفرنسية."}
+  {
+    "id": 1,
+    "title": "La cuisine française",
+    "level": "A2",
+    "summary": "La cuisine française est reconnue mondialement. Des plats célèbres : croissant, baguette, escargots, foie gras.",
+    "detail": "En France, un repas se compose de 3 plats : entrée, plat principal, dessert. Le pain fait partie intégrante de chaque repas."
+  },
+  {
+    "id": 2,
+    "title": "Le système éducatif",
+    "level": "B1",
+    "summary": "Le système éducatif français comprend : école maternelle (3-6 ans), école élémentaire (6-11 ans), collège (11-15 ans), lycée (15-18 ans).",
+    "detail": "Après le baccalauréat, les étudiants vont à l'université ou en grande école. Les grandes écoles sont très prestigieuses comme Polytechnique et HEC."
+  },
+  {
+    "id": 3,
+    "title": "Les fêtes françaises",
+    "level": "A2",
+    "summary": "Les fêtes principales : 14 juillet (fête nationale), Noël, Pâques, 1er mai (fête du travail), 11 novembre (armistice).",
+    "detail": "Le 14 juillet 1789, la prise de la Bastille a eu lieu, c'est la fête nationale française. Le 1er mai, les Français offrent du muguet pour porter chance."
+  },
+  {
+    "id": 4,
+    "title": "La mode et le luxe",
+    "level": "B1",
+    "summary": "La France est la capitale mondiale de la mode. Paris, Lyon, Cannes sont réputées pour l'industrie du luxe.",
+    "detail": "Marques célèbres : Louis Vuitton, Chanel, Dior, Hermès. La Fashion Week de Paris est un événement annuel qui rassemble les créateurs du monde entier."
+  },
+  {
+    "id": 5,
+    "title": "Le cinéma français",
+    "level": "B1",
+    "summary": "Le cinéma français est né en 1895 avec les frères Lumière. La France produit plus de 200 films par an.",
+    "detail": "Le Festival de Cannes est le festival de cinéma le plus célèbre au monde. Le prix principal s'appelle la Palme d'Or."
+  },
+  {
+    "id": 6,
+    "title": "Les régions de France",
+    "level": "A2",
+    "summary": "La France est divisée en 18 régions : 13 en Europe et 5 outre-mer (DROM-COM).",
+    "detail": "Régions célèbres : Île-de-France (Paris), Provence-Alpes-Côte d'Azur, Bretagne, Alsace, Normandie. Chaque région a son dialecte et ses plats traditionnels."
+  },
+  {
+    "id": 7,
+    "title": "La Tour Eiffel",
+    "level": "A2",
+    "summary": "La Tour Eiffel a été construite entre 1887 et 1889 pour l'Exposition universelle. Sa hauteur est de 330 mètres.",
+    "detail": "Conçue par Gustave Eiffel, elle était détestée au début et appelée 'le pilier de fer difforme'. Aujourd'hui, c'est le monument le plus célèbre de France avec 7 millions de visiteurs par an."
+  },
+  {
+    "id": 8,
+    "title": "Le TGV",
+    "level": "A2",
+    "summary": "Le TGV (Train à Grande Vitesse) est un train français à grande vitesse. Sa vitesse atteint 320 km/h.",
+    "detail": "Le TGV a été lancé en 1981 entre Paris et Lyon. Il relie maintenant les villes françaises et européennes. La France possède le deuxième plus grand réseau de trains à grande vitesse en Europe."
+  },
+  {
+    "id": 9,
+    "title": "Le sport en France",
+    "level": "B1",
+    "summary": "Les sports les plus populaires : football, rugby, tennis, cyclisme. La France a accueilli la Coupe du monde 1998, 2019 (féminine) et les Jeux Olympiques 2024.",
+    "detail": "Le Paris Saint-Germain est le club de football le plus célèbre. La France a gagné la Coupe du monde deux fois : 1998 et 2018. Le Tour de France est la plus ancienne et célèbre course cycliste du monde."
+  },
+  {
+    "id": 10,
+    "title": "La laïcité",
+    "level": "B2",
+    "summary": "La laïcité est un principe fondamental de la République française. Séparation de l'Église et de l'État.",
+    "detail": "La loi de 1905 a séparé l'Église et l'État. Dans la République française, toutes les religions sont égales et l'État est neutre. Le principe de laïcité s'applique dans les écoles et les administrations publiques."
+  },
+  {
+    "id": 11,
+    "title": "Les symboles de la République",
+    "level": "B1",
+    "summary": "Les symboles de la République française : le drapeau tricolore, La Marseillaise (hymne national), Marianne (symbole de la République).",
+    "detail": "Le drapeau : bleu (liberté), blanc (égalité), rouge (fraternité). La Marseillaise a été écrite par Rouget de Lisle en 1792. Marianne représente la mère française."
+  },
+  {
+    "id": 12,
+    "title": "Les grandes écoles",
+    "level": "B1",
+    "summary": "Les grandes écoles sont des établissements d'enseignement supérieur très prestigieux en France.",
+    "detail": "Les plus célèbres : Polytechnique (ingénierie), HEC (commerce), Sciences Po (sciences politiques), ESSEC, CentraleSupélec. L'entrée se fait par concours national très difficile."
+  },
+  {
+    "id": 13,
+    "title": "Le fromage français",
+    "level": "A2",
+    "summary": "Il existe plus de 1200 sortes de fromages en France ! De Gaulle disait : 'Comment gouverner un pays qui a 246 sortes de fromages ?'",
+    "detail": "Les plus célèbres : Camembert (Normandie), Roquefort (lait de brebis), Brie, Comté, Reblochon. Chaque région produit son fromage traditionnel."
+  },
+  {
+    "id": 14,
+    "title": "L'impressionnisme",
+    "level": "C1",
+    "summary": "Le mouvement impressionniste est né en France au XIXe siècle. Il se concentrait sur la lumière et les couleurs.",
+    "detail": "Les peintres impressionnistes les plus célèbres : Claude Monet, Pierre-Auguste Renoir, Edgar Degas, Camille Pissarro. Le Musée d'Orsay à Paris possède la plus grande collection impressionniste du monde."
+  },
+  {
+    "id": 15,
+    "title": "Les Droits de l'Homme",
+    "level": "B2",
+    "summary": "La Déclaration des Droits de l'Homme et du Citoyen a été publiée en 1789.",
+    "detail": "Ce texte est un texte fondateur de la Révolution française. Il a inspiré la Déclaration universelle des droits de l'homme de 1948. Sa devise : liberté, égalité, fraternité."
+  },
+  {
+    "id": 16,
+    "title": "La littérature française",
+    "level": "C1",
+    "summary": "La France possède la tradition littéraire la plus riche du monde. 16 Français ont reçu le prix Nobel de littérature.",
+    "detail": "Écrivains célèbres : Victor Hugo (Les Misérables), Marcel Proust, Albert Camus (L'Étranger), Jean-Paul Sartre, Simone de Beauvoir. Le Prix Goncourt est le prix littéraire français le plus célèbre."
+  },
+  {
+    "id": 17,
+    "title": "Le métro parisien",
+    "level": "A2",
+    "summary": "Le métro parisien est l'un des plus anciens et célèbres réseaux de métro au monde (ouvert en 1900). 308 stations et 16 lignes.",
+    "detail": "Chaque station a son propre design. Les plus célèbres : Louvre-Rivoli (expose des copies du Louvre), Arts et Métiers (design steampunk). Les entrées Guimard sont devenues un symbole de Paris."
+  },
+  {
+    "id": 18,
+    "title": "La gastronomie moléculaire",
+    "level": "C2",
+    "summary": "La cuisine moléculaire est un courant culinaire moderne qui utilise la science pour préparer les aliments de façon innovante.",
+    "detail": "Les pionniers : le chef Pierre Gagnaire et le chimiste Hervé This. Les techniques incluent : sphérification, mousses, gelées. Le Cordon Bleu est l'école la plus célèbre."
+  },
+  {
+    "id": 19,
+    "title": "Les monuments historiques",
+    "level": "A2",
+    "summary": "La France possède 49 sites classés au patrimoine mondial de l'UNESCO. Les plus célèbres : Mont Saint-Michel, Château de Versailles, Cathédrale Notre-Dame.",
+    "detail": "Le Château de Versailles a été construit par Louis XIV et contient 2300 pièces. Le Mont Saint-Michel est une abbaye sur une île. La reconstruction de Notre-Dame après l'incendie de 2019 continue."
+  },
+  {
+    "id": 20,
+    "title": "La chanson française",
+    "level": "A2",
+    "summary": "La chanson française est variée et influencée par de nombreuses cultures. De la chanson française au rap français.",
+    "detail": "Artistes célèbres : Édith Piaf (La vie en rose), Jacques Brel, Charles Aznavour, Serge Gainsbourg. Artistes récents : Stromae, Angèle, Aya Nakamura. Festival des Francofolies à La Rochelle."
+  },
+  {
+    "id": 21,
+    "title": "L'économie française",
+    "level": "B2",
+    "summary": "Septième économie mondiale. Les grandes industries : aéronautique (Airbus), automobile (Renault, Peugeot), luxe (LVMH).",
+    "detail": "PIB : 3000 milliards de dollars. Grandes entreprises : TotalEnergies (énergie), AXA (assurance), BNP Paribas (banque), Sanofi (pharmacie). LVMH est le plus grand groupe de luxe au monde."
+  },
+  {
+    "id": 22,
+    "title": "La francophonie",
+    "level": "B1",
+    "summary": "La francophonie rassemble 321 millions de francophones dans 88 pays et organisations à travers le monde.",
+    "detail": "Le français est langue officielle dans 29 pays. C'est la 5e langue la plus parlée au monde. L'OIF (Organisation Internationale de la Francophonie) a son siège à Paris. Journée mondiale de la francophonie : 20 mars."
+  },
+  {
+    "id": 23,
+    "title": "Les scientifiques français",
+    "level": "C1",
+    "summary": "La France a produit de nombreux scientifiques qui ont changé le monde dans tous les domaines.",
+    "detail": "Marie Curie (double prix Nobel en physique et chimie), Louis Pasteur (pasteurisation et vaccins), Blaise Pascal (mathématiques), Pierre et Marie Curie (radioactivité). La France est 4e pour les prix Nobel scientifiques."
+  },
+  {
+    "id": 24,
+    "title": "Le vin français",
+    "level": "A2",
+    "summary": "La France est l'un des pays les plus célèbres pour la production de vin. Régions célèbres : Bordeaux, Bourgogne, Champagne, Vallée du Rhône.",
+    "detail": "Le système Appellation d'Origine Contrôlée (AOC) détermine la qualité du vin. Types de vin : rouge, blanc, rosé, mousseux (Champagne). Le vin fait partie intégrante de la culture française."
+  }
 ]
