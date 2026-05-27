@@ -26,9 +26,9 @@ TEMP_VIDEOS = []
 
 VOICES = ["fr-FR-VivienneMultilingualNeural", "fr-FR-RemyMultilingualNeural"]
 
-# 6 daily slots: which format each slot produces
+# 6 daily slots: rotating through 5 content types every 6 slots
 SLOT_FORMATS = ["grammar_quiz", "storytelling", "vocabulary_wotd",
-                "grammar_quiz", "storytelling", "vocabulary_wotd"]
+                "idiome", "grammar_quiz", "culture"]
 
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 os.makedirs(AUDIO_DIR, exist_ok=True)
@@ -49,6 +49,8 @@ def load_progress():
         "last_date": None,
         "used_words": [],
         "used_grammar": [],
+        "used_idiome": [],
+        "used_culture": [],
     }
 
 
@@ -176,6 +178,10 @@ def get_video_keyword(fmt, data):
         return f"{data.get('title', 'histoire')} livre"
     elif fmt == "vocabulary_wotd":
         return f"{data.get('french', 'mot')} vocabulaire français"
+    elif fmt == "idiome":
+        return f"{data.get('expression', 'expression')} français"
+    elif fmt == "culture":
+        return f"{data.get('title', 'culture')} français"
     return "français"
 
 
@@ -379,7 +385,7 @@ async def generate_grammar_quiz(progress):
 
 # ── Format B: Storytelling ──────────────────────────────────────────────
 async def generate_storytelling(progress):
-    MAX_WORDS_PER_PART = 4500
+    MAX_WORDS_PER_PART = 2250
     GUTENBERG_SEARCH = "https://www.gutenberg.org/ebooks/search/?query={query}&submit_search=Go"
     GUTENBERG_BOOK_URL = "https://www.gutenberg.org/ebooks/{id}"
     GUTENBERG_TEXT = "https://www.gutenberg.org/cache/epub/{id}/pg{id}.txt"
@@ -537,8 +543,7 @@ async def generate_vocabulary_wotd(progress):
 
     title = f"🌟 Mot du jour: {w['french']}"
     lines = [
-        f"{w['french']} ({w.get('article', '')} {w.get('english', '')})",
-        f"{w.get('level', 'A1')}",
+        f"{w['french']} — Niveau {w.get('level', 'A1')}",
         "",
         w.get('example', ''),
     ]
@@ -569,10 +574,112 @@ async def generate_vocabulary_wotd(progress):
     print(f"  ✅ WOTD: {size:.1f} MB")
     desc = (
         f"🇫🇷 Mot du jour — French Flow\n\n"
-        f"🌟 {w['french']}\n"
-        f"📖 {w.get('english', '')}\n"
+        f"🌟 {w['french']} ({w.get('level', 'A1')})\n"
         f"💬 {w.get('example', '')}\n\n"
         f"#FrenchFlow #MotDuJour #LearnFrench #Vocabulaire"
+    )
+    return output, desc
+
+
+# ── Format D: Idiome ────────────────────────────────────────────────────
+async def generate_idiome(progress):
+    idiomes = load_json(BOT_DIR / "idiomes.json")
+    used = set(progress.get("used_idiome", []))
+    avail = [i for i in idiomes if str(i["id"]) not in used]
+    if not avail:
+        avail = idiomes
+        progress["used_idiome"] = []
+    i = random.choice(avail)
+    used.add(str(i["id"]))
+    progress["used_idiome"] = list(used)
+    save_progress(progress)
+
+    title = f"🗣 Idiome: {i['expression']}"
+    lines = [
+        f"💡 {i.get('meaning', '')}",
+        "",
+        f"✏️ {i.get('example', '')}",
+    ]
+
+    tts_text = f"{i['expression']}. {i.get('meaning', '')}. {i.get('example', '')}"
+    audio_path = AUDIO_DIR / f"idiome_{i['id']}.mp3"
+    print(f"  🔊 TTS idiome...")
+    ok = await generate_tts(tts_text, audio_path, voice_idx=i["id"])
+    if not ok:
+        print("  ❌ TTS failed"); return None
+    dur = get_audio_duration(audio_path)
+    if dur < 3:
+        print("  ⚠️ Too short"); return None
+    print(f"  ⏱️  {dur:.0f}s")
+
+    pexels_key = os.environ.get("PEXELS_API_KEY")
+    bg_video = None
+    if pexels_key:
+        kw = get_video_keyword("idiome", i)
+        bg_video = get_pexels_video(kw, pexels_key)
+
+    output = OUTPUT_DIR / f"idiome_{i['id']}.mp4"
+    ok = create_static_video(lines, audio_path, output, dur, title=title, background_video=bg_video)
+    if not ok:
+        return None
+
+    size = os.path.getsize(output) / 1024 / 1024
+    print(f"  ✅ Idiome: {size:.1f} MB")
+    desc = (
+        f"🇫🇷 Idiome du jour — French Flow\n\n"
+        f"🗣 {i['expression']}\n"
+        f"💡 {i.get('meaning', '')}\n"
+        f"✏️ {i.get('example', '')}\n\n"
+        f"#FrenchFlow #Idiome #ExpressionFrançaise #LearnFrench"
+    )
+    return output, desc
+
+
+# ── Format E: Culture ────────────────────────────────────────────────────
+async def generate_culture(progress):
+    cultures = load_json(BOT_DIR / "culture.json")
+    used = set(progress.get("used_culture", []))
+    avail = [c for c in cultures if str(c["id"]) not in used]
+    if not avail:
+        avail = cultures
+        progress["used_culture"] = []
+    c = random.choice(avail)
+    used.add(str(c["id"]))
+    progress["used_culture"] = list(used)
+    save_progress(progress)
+
+    title = f"📖 Culture: {c['title']}"
+    lines = wrap_text(c.get("summary", ""), width=45)
+
+    tts_text = f"{c['title']}. {c.get('summary', '')}"
+    audio_path = AUDIO_DIR / f"culture_{c['id']}.mp3"
+    print(f"  🔊 TTS culture...")
+    ok = await generate_tts(tts_text, audio_path, voice_idx=c["id"])
+    if not ok:
+        print("  ❌ TTS failed"); return None
+    dur = get_audio_duration(audio_path)
+    if dur < 5:
+        print("  ⚠️ Too short"); return None
+    print(f"  ⏱️  {dur:.0f}s")
+
+    pexels_key = os.environ.get("PEXELS_API_KEY")
+    bg_video = None
+    if pexels_key:
+        kw = get_video_keyword("culture", c)
+        bg_video = get_pexels_video(kw, pexels_key)
+
+    output = OUTPUT_DIR / f"culture_{c['id']}.mp4"
+    ok = create_static_video(lines, audio_path, output, dur, title=title, background_video=bg_video)
+    if not ok:
+        return None
+
+    size = os.path.getsize(output) / 1024 / 1024
+    print(f"  ✅ Culture: {size:.1f} MB")
+    desc = (
+        f"🇫🇷 Culture française — French Flow\n\n"
+        f"📖 {c['title']}\n"
+        f"{c.get('summary', '')}\n\n"
+        f"#FrenchFlow #CultureFrançaise #Civilisation #LearnFrench"
     )
     return output, desc
 
@@ -595,6 +702,10 @@ async def main():
         result = await generate_storytelling(progress)
     elif fmt == "vocabulary_wotd":
         result = await generate_vocabulary_wotd(progress)
+    elif fmt == "idiome":
+        result = await generate_idiome(progress)
+    elif fmt == "culture":
+        result = await generate_culture(progress)
 
     if result:
         video_path, desc = result
