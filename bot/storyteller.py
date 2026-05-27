@@ -113,7 +113,7 @@ def compress_video(input_path, output_path):
         cmd = [
             "ffmpeg", "-y",
             "-i", str(input_path),
-            "-c:v", "libx264", "-crf", "28", "-preset", "medium",
+            "-c:v", "libx264", "-preset", "medium",
             "-b:v", f"{bitrate}k",
             "-c:a", "aac", "-b:a", "128k",
             "-movflags", "+faststart",
@@ -130,11 +130,11 @@ def compress_video(input_path, output_path):
                 return True
             out.unlink(missing_ok=True)
 
-    # Fallback: keep best attempt
-    best = tmp_dir / f"{base_name}_b200.mp4"
-    if best.exists():
-        os.replace(best, output_path)
-    print(f"  ⚠️ Best effort: {os.path.getsize(output_path) / (1024*1024):.0f} MB")
+    # Fallback: keep the original if no compression succeeded
+    if not os.path.exists(output_path):
+        os.replace(input_path, output_path)
+    sz = os.path.getsize(output_path) / (1024 * 1024)
+    print(f"  ⚠️ Best effort (uncompressed): {sz:.0f} MB")
     return True
 
 
