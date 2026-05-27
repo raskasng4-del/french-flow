@@ -9,6 +9,7 @@ import {
 } from "./DailyLesson";
 import { FrenchShorts } from "./FrenchShorts";
 import { Dialogue } from "./Dialogue";
+import { VocabularyGridComposition } from "./VocabularyGridComposition";
 
 const FPS = 30;
 
@@ -144,6 +145,22 @@ export const RemotionRoot: React.FC = () => {
             ],
           },
           totalDuration: Math.round(17.5 * FPS),
+        }}
+      />
+      <Composition
+        id="VocabularyGrid"
+        component={VocabularyGridComposition}
+        durationInFrames={600}
+        fps={FPS}
+        width={1080}
+        height={1920}
+        defaultProps={{
+          title: "Vocabulaire Essentiel",
+          words: [
+            { french: "Bonjour", english: "A1", emoji: "👋", audioSrc: "audio/placeholder.mp3" },
+          ],
+          timeline: [{ wordIndex: 0, startFrame: 0, durationInFrames: 90, audioSrc: "audio/placeholder.mp3" }],
+          totalDuration: 600,
         }}
       />
     </>

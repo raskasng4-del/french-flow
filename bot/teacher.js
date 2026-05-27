@@ -38,6 +38,28 @@ const TYPE_HASHTAGS = {
 };
 
 const ACTIVITY_TYPES = ["MotDuJour", "Grammaire", "PhraseDuJour", "Quiz", "Conjugaison", "Idiome", "Culture"];
+const VOCAB_EMOJIS = ["🏠", "🚗", "📖", "🐱", "🌸", "🥖", "🍎", "🐶", "🌍", "🎵", "✈️", "🏖️", "🎂", "☕", "👗", "📚", "🎮", "🎨", "💻", "📱", "🔑", "💡", "📷", "👟", "🧥", "👜", "👒", "🧸", "🎈", "🎁", "🕶️", "🌻", "🍕", "🥗", "🍩"];
+
+function getVocabEmoji(word) {
+  let hash = 0;
+  for (let i = 0; i < word.length; i++) hash = (hash * 31 + word.charCodeAt(i)) | 0;
+  return VOCAB_EMOJIS[Math.abs(hash) % VOCAB_EMOJIS.length];
+}
+
+const VOCAB_GRID_DESCRIPTION_HOOKS = [
+  "Want to expand your French vocabulary? 🚀",
+  "Ready to learn some new French words today? 🇫🇷",
+  "Boost your French vocabulary with these essential words! 💪",
+  "Looking to grow your French word bank? 📚",
+  "Master these French words and sound more natural! 🗣️",
+];
+const VOCAB_GRID_CTAS = [
+  "Which word is new for you? Let us know in the comments! 👇",
+  "Try using one of these words in a sentence below! 🗣️",
+  "Practice these words out loud and tell us which one you like best! 🎯",
+  "How many of these words did you already know? Comment below! 💬",
+];
+
 const INTERACTIVE_QUESTIONS = [
   "Écrivez votre réponse dans les commentaires ! 👇",
   "Partagez votre réponse dans les commentaires ! 💬",
@@ -166,6 +188,13 @@ function buildDescription(type, data, question) {
   }
   if (question) desc += `\n\n❓ **${question}**\n${INTERACTIVE_QUESTIONS[Math.floor(Math.random() * INTERACTIVE_QUESTIONS.length)]}`;
   return desc + `\n\n${hashtags}`;
+}
+
+function buildVocabGridDescription() {
+  const hook = VOCAB_GRID_DESCRIPTION_HOOKS[Math.floor(Math.random() * VOCAB_GRID_DESCRIPTION_HOOKS.length)];
+  const cta = VOCAB_GRID_CTAS[Math.floor(Math.random() * VOCAB_GRID_CTAS.length)];
+  const hashtags = "#FrenchFlow #LearnFrench #FrenchVocabulary #FrenchWords #StudyFrench #FrenchForBeginners";
+  return `${hook}\n\nHere are 6 essential French words for you to practice today. Listen, repeat, and try using them in sentences!\n\n${cta}\n\n${hashtags}`;
 }
 
 // Generate TTS audio for a text, returns audio path
@@ -517,12 +546,12 @@ async function runHourly(progress, pageId, accessToken) {
     // Phase 2: generator mode - cycle with new combinations
     isGenerated = true;
     const genIdx = progress.generated_count;
-    const cycleLen = ACTIVITY_TYPES.length + 1; // 7 types + Dialogue = 8
+    const cycleLen = ACTIVITY_TYPES.length + 2; // 7 types + Dialogue + VocabularyGrid = 9
     const typeIdx = genIdx % cycleLen;
     const cyclePos = Math.floor(genIdx / cycleLen);
 
     if (typeIdx === ACTIVITY_TYPES.length) {
-      // Every 8th video: Dialogue
+      // Dialogue slot
       const dialogues = loadJSON(DIALOGUES_FILE);
       if (dialogues.length > 0) {
         const d = dialogues[genIdx % dialogues.length];
@@ -532,6 +561,15 @@ async function runHourly(progress, pageId, accessToken) {
         saveJSON(PROGRESS_FILE, progress);
         return;
       }
+    }
+
+    if (typeIdx === ACTIVITY_TYPES.length + 1) {
+      // VocabularyGrid slot
+      await renderVocabGridVideo(pageId, accessToken, progress, today, wordMap);
+      progress.generated_count++;
+      progress.last_publish_date = today;
+      saveJSON(PROGRESS_FILE, progress);
+      return;
     }
 
     const type = ACTIVITY_TYPES[typeIdx];
@@ -649,6 +687,68 @@ async function renderDialogueVideo(dialogue, pageId, accessToken, progress, toda
     }
   } catch (err) {
     log(`  ❌ Dialogue render failed: ${err.message}`);
+  }
+}
+
+// Render a VocabularyGrid video
+async function renderVocabGridVideo(pageId, accessToken, progress, today, wordMap) {
+  log(`🎬 Rendering VocabularyGrid`);
+
+  // Pick 6 random words
+  const wordList = Object.values(wordMap);
+  const shuffled = [...wordList].sort(() => Math.random() - 0.5);
+  const selected = shuffled.slice(0, 6);
+
+  const words = [];
+  const timeline = [];
+  let totalFrames = 0;
+
+  for (let i = 0; i < selected.length; i++) {
+    const w = selected[i];
+    const audioPath = generateAudioFile(w.french, `vocab_grid_${i}_${Date.now()}`);
+    const audioFull = path.join(PROJECT_ROOT, "public", audioPath);
+    let dur = 1.5;
+    try {
+      const out = execSync(
+        `ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 "${audioFull}"`,
+        { timeout: 5000, stdio: ["pipe", "pipe", "pipe"] },
+      );
+      dur = parseFloat(out.toString().trim()) || 1.5;
+    } catch (e) {
+      dur = 1.5;
+    }
+    const durFrames = Math.max(1, Math.ceil(dur * 30));
+    words.push({
+      french: w.french,
+      english: w.level,
+      emoji: getVocabEmoji(w.french),
+      audioSrc: audioPath,
+    });
+    timeline.push({
+      wordIndex: i,
+      startFrame: totalFrames,
+      durationInFrames: durFrames,
+      audioSrc: audioPath,
+    });
+    totalFrames += durFrames;
+  }
+
+  await sleep(2000);
+
+  const outputFile = `vocab_grid_h${String(new Date().getHours()).padStart(2, "0")}.mp4`;
+  const props = { title: "Vocabulaire Essentiel", words, timeline, totalDuration: totalFrames };
+  const ok = renderVideo("VocabularyGrid", props, outputFile);
+
+  if (ok) {
+    const videoPath = path.join(OUTPUT_DIR, outputFile);
+    if (fs.existsSync(videoPath)) {
+      const desc = buildVocabGridDescription();
+      const published = await publishToFacebook(videoPath, desc, pageId, accessToken);
+      if (published) {
+        progress.published_videos.push({ type: "VocabularyGrid", file: outputFile, published: true, date: today });
+        log(`  ✅ VocabularyGrid published`);
+      }
+    }
   }
 }
 
