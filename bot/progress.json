@@ -203,9 +203,15 @@
       "file": "day8_quiz.mp4",
       "published": true,
       "date": "2026-05-26"
+    },
+    {
+      "type": "Conjugaison",
+      "file": "day8_conjugaison.mp4",
+      "published": true,
+      "date": "2026-05-27"
     }
   ],
-  "last_publish_date": "2026-05-26",
+  "last_publish_date": "2026-05-27",
   "spaced_repetition": {
     "words": {
       "2": {
@@ -343,10 +349,16 @@
         "last_reviewed": "2026-05-26",
         "interval": 1,
         "next_review": "2026-05-27"
+      },
+      "8": {
+        "first_seen": "2026-05-27",
+        "last_reviewed": "2026-05-27",
+        "interval": 1,
+        "next_review": "2026-05-28"
       }
     }
   },
-  "curriculum_idx": 39,
+  "curriculum_idx": 40,
   "generated_count": 0,
   "used_combos": []
 }
