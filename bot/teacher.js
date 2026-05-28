@@ -198,14 +198,16 @@ function buildVocabGridDescription() {
 }
 
 // Generate TTS audio for a text, returns audio path
-function generateAudioFile(text, name) {
+function generateAudioFile(text, name, voice) {
   const AUDIO_DIR = path.join(PROJECT_ROOT, "public", "audio");
   if (!fs.existsSync(AUDIO_DIR)) fs.mkdirSync(AUDIO_DIR, { recursive: true });
   const filename = `${name}.mp3`;
   const filepath = path.join(AUDIO_DIR, filename);
   if (!fs.existsSync(filepath)) {
     try {
-      execSync(`python3 "${path.join(BOT_DIR, "tts_helper.py")}" "${filepath}"`, {
+      let cmd = `python3 "${path.join(BOT_DIR, "tts_helper.py")}" "${filepath}"`;
+      if (voice) cmd += ` "${voice}"`;
+      execSync(cmd, {
         input: text,
         timeout: 30000,
         stdio: ["pipe", "pipe", "pipe"],
@@ -379,10 +381,55 @@ function getActivityProps(activity, wordMap, grammarMap, verbMap, durations) {
     case "Grammaire": {
       const g = grammarMap[activity.grammar_id];
       if (!g) return null;
-      g.audioSrc = generateAudioFile(`${g.title}. ${g.explanation}`, `grammar_${g.id}`);
+      const MALE_VOICE = "fr-FR-RemyMultilingualNeural";
+
+      // Split explanation into sentences
+      const rawSentences = g.explanation.split(/\.\s+/).filter(s => s.trim().length > 0);
+      const sentences = rawSentences.map((s, i) => {
+        const trimmed = s.trim();
+        return i < rawSentences.length - 1 || g.explanation.endsWith(".") ? trimmed + "." : trimmed;
+      });
+
+      // Build lines: title first, then explanation sentences, then examples
+      const lines = [
+        { text: g.title, type: "title" },
+        ...sentences.map(s => ({ text: s, type: "explanation" })),
+        ...g.examples.map(s => ({ text: s, type: "example" })),
+      ];
+
+      // Generate per-line audio with male voice, measure durations, build timeline
+      const timeline = [];
+      let totalFrames = 0;
+      for (let i = 0; i < lines.length; i++) {
+        const line = lines[i];
+        const audioPath = generateAudioFile(line.text, `grammar_${g.id}_line_${i}`, MALE_VOICE);
+        const audioFull = path.join(PROJECT_ROOT, "public", audioPath);
+        let dur = 1.5;
+        try {
+          const out = execSync(
+            `ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 "${audioFull}"`,
+            { timeout: 5000, stdio: ["pipe", "pipe", "pipe"] },
+          );
+          dur = parseFloat(out.toString().trim()) || 1.5;
+        } catch (e) {
+          dur = 1.5;
+        }
+        const durFrames = Math.max(1, Math.ceil(dur * 30));
+        timeline.push({
+          lineIndex: i,
+          startFrame: totalFrames,
+          durationInFrames: durFrames,
+          audioSrc: audioPath,
+        });
+        totalFrames += durFrames;
+      }
+
+      g.lines = lines;
+      g.timeline = timeline;
+
       return {
         compositionId: "Grammaire",
-        props: { grammar: g, totalDuration: Math.round(durations.Grammaire * 30) },
+        props: { grammar: g, totalDuration: totalFrames },
         outputFile: `day${activity._dayNum}_grammaire.mp4`,
       };
     }

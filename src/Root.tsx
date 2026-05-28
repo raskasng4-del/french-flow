@@ -27,6 +27,20 @@ const sampleGrammar = {
   explanation:
     "Les articles définis (le, la, les) sont utilisés pour parler d'une chose spécifique.",
   examples: ["Le livre est sur la table.", "La maison est grande.", "Les enfants jouent."],
+  lines: [
+    { text: "Les articles définis", type: "title" },
+    { text: "Les articles définis (le, la, les) sont utilisés pour parler d'une chose spécifique.", type: "explanation" },
+    { text: "Le livre est sur la table.", type: "example" },
+    { text: "La maison est grande.", type: "example" },
+    { text: "Les enfants jouent.", type: "example" },
+  ],
+  timeline: [
+    { lineIndex: 0, startFrame: 0, durationInFrames: 45, audioSrc: "audio/sample_grammar_0.mp3" },
+    { lineIndex: 1, startFrame: 45, durationInFrames: 90, audioSrc: "audio/sample_grammar_1.mp3" },
+    { lineIndex: 2, startFrame: 135, durationInFrames: 60, audioSrc: "audio/sample_grammar_2.mp3" },
+    { lineIndex: 3, startFrame: 195, durationInFrames: 60, audioSrc: "audio/sample_grammar_3.mp3" },
+    { lineIndex: 4, startFrame: 255, durationInFrames: 60, audioSrc: "audio/sample_grammar_4.mp3" },
+  ],
 };
 
 const sampleVerb = {
@@ -67,13 +81,13 @@ export const RemotionRoot: React.FC = () => {
       <Composition
         id="Grammaire"
         component={Grammaire}
-        durationInFrames={Math.round(17.5 * FPS)}
+        durationInFrames={390}
         fps={FPS}
         width={1080}
         height={1920}
         defaultProps={{
           grammar: sampleGrammar,
-          totalDuration: Math.round(17.5 * FPS),
+          totalDuration: 390,
         }}
       />
       <Composition

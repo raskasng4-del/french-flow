@@ -74,6 +74,18 @@ interface WordData {
   phraseAudioSrc?: string;
 }
 
+interface GrammarLine {
+  text: string;
+  type: "title" | "explanation" | "example";
+}
+
+interface GrammarTimelineEntry {
+  lineIndex: number;
+  startFrame: number;
+  durationInFrames: number;
+  audioSrc: string;
+}
+
 interface GrammarData {
   id: number;
   title: string;
@@ -81,6 +93,8 @@ interface GrammarData {
   explanation: string;
   examples: string[];
   audioSrc?: string;
+  lines?: GrammarLine[];
+  timeline?: GrammarTimelineEntry[];
 }
 
 interface VerbData {
@@ -290,6 +304,98 @@ export const Grammaire: React.FC<{
     );
 
   const cf = frame - INTRO_F;
+
+  // Timeline-based karaoke mode
+  if (grammar.timeline && grammar.lines) {
+    const activeIndex = grammar.timeline.findIndex(
+      (t) => cf >= t.startFrame && cf < t.startFrame + t.durationInFrames,
+    );
+
+    return (
+      <VideoContainer>
+        <TopBar label="GRAMMAIRE" progress={cf / contentFrames} icon="📚" />
+        {grammar.timeline.map((entry, i) => (
+          <Sequence key={i} from={INTRO_F + entry.startFrame} durationInFrames={entry.durationInFrames}>
+            <Audio src={staticFile(entry.audioSrc)} volume={0.9} />
+          </Sequence>
+        ))}
+        <AbsoluteFill style={{ justifyContent: "center", alignItems: "center" }}>
+          <div style={{ marginBottom: 16, opacity: interpolate(cf, [0, 15], [0, 1], { extrapolateRight: "clamp" }) }}>
+            <LevelPill text={grammar.level} />
+          </div>
+          <div
+            style={{
+              width: "85%",
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+            }}
+          >
+            {grammar.lines.map((line, i) => {
+              const entry = grammar.timeline[i];
+              if (!entry) return null;
+              const isActive = i === activeIndex;
+              const isReached = cf >= entry.startFrame;
+              const lineAge = Math.max(0, cf - entry.startFrame);
+              const opacity = interpolate(lineAge, [0, 10], [0, 1], { extrapolateRight: "clamp" });
+              const translateY = interpolate(lineAge, [0, 10], [15, 0], { extrapolateRight: "clamp" });
+
+              if (line.type === "title") {
+                return (
+                  <div
+                    key={i}
+                    style={{
+                      fontSize: 48,
+                      fontWeight: 700,
+                      fontFamily: fonts.heading,
+                      color: isActive ? "#00d4ff" : colors.text,
+                      textAlign: "center",
+                      marginBottom: 20,
+                      opacity: Math.max(opacity, 0.3),
+                    }}
+                  >
+                    {line.text}
+                  </div>
+                );
+              }
+
+              return (
+                <div
+                  key={i}
+                  style={{
+                    width: "100%",
+                    padding: "12px 20px",
+                    margin: "3px 0",
+                    borderRadius: 12,
+                    background: isActive ? "rgba(0, 212, 255, 0.08)" : "transparent",
+                    borderLeft: isActive ? `4px solid #00d4ff` : `4px solid transparent`,
+                    opacity: isReached ? opacity : 0,
+                    transform: isReached ? `translateY(${translateY}px)` : "translateY(10px)",
+                    display: isReached ? "block" : "none",
+                  }}
+                >
+                  <span
+                    style={{
+                      fontSize: line.type === "example" ? 26 : 28,
+                      fontWeight: line.type === "example" ? 600 : 350,
+                      fontFamily: fonts.body,
+                      color: line.type === "example" ? colors.accent : (isActive ? "#00d4ff" : colors.text),
+                      textAlign: "center",
+                      display: "block",
+                    }}
+                  >
+                    {line.text}
+                  </span>
+                </div>
+              );
+            })}
+          </div>
+        </AbsoluteFill>
+      </VideoContainer>
+    );
+  }
+
+  // Fallback: old static behavior
   const { opacity: tOp, y: tY } = fadeSlide(cf);
   const { opacity: eOp, y: eY } = fadeSlide(cf, contentFrames * 0.35);
 
