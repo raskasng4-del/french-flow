@@ -250,6 +250,18 @@ async function callLLM(userPrompt, systemPrompt = "You are a French teacher.", m
   }
 }
 
+// Call LLM and parse JSON result — returns null on failure
+async function generateJSON(prompt, fallback = null) {
+  const system = "You are an expert French teacher. Return ONLY valid JSON with no markdown formatting or extra text.";
+  const raw = await callLLM(prompt, system);
+  if (!raw) return fallback;
+  try {
+    return JSON.parse(raw);
+  } catch {
+    return fallback;
+  }
+}
+
 // Render a Remotion composition to video
 function renderVideo(compositionId, props, outputFile) {
   const outputPath = path.join(OUTPUT_DIR, outputFile);
@@ -391,7 +403,12 @@ async function getActivityProps(activity, wordMap, grammarMap, verbMap, duration
       const word = wordMap[activity.word_id];
       if (!word) return null;
       word.audioSrc = generateAudioFile(word.french, `word_${word.id}`);
+      const llmEx = await generateJSON(
+        `Generate a useful example sentence in French using the word "${word.french}" at ${word.level} level. Return JSON: {"example": "sentence in French"}`,
+      );
+      if (llmEx?.example) word.example = llmEx.example;
       word.exampleAudioSrc = generateAudioFile(word.example, `example_${word.id}`);
+      log(`  🤖 LLM enhanced MotDuJour: "${word.french}"`);
       return {
         compositionId: "MotDuJour",
         props: { word, totalDuration: Math.round(durations.MotDuJour * 30) },
@@ -401,7 +418,12 @@ async function getActivityProps(activity, wordMap, grammarMap, verbMap, duration
     case "PhraseDuJour": {
       const word = wordMap[activity.word_id];
       if (!word) return null;
+      const llmEx2 = await generateJSON(
+        `Generate a natural example sentence in French using the word "${word.french}" at ${word.level} level. Return JSON: {"example": "sentence in French"}`,
+      );
+      if (llmEx2?.example) word.example = llmEx2.example;
       word.phraseAudioSrc = generateAudioFile(word.example, `phrase_${word.id}`);
+      log(`  🤖 LLM enhanced PhraseDuJour: "${word.french}"`);
       return {
         compositionId: "PhraseDuJour",
         props: { word, totalDuration: Math.round(durations.PhraseDuJour * 30) },
@@ -416,21 +438,12 @@ async function getActivityProps(activity, wordMap, grammarMap, verbMap, duration
       // Try to generate explanation + examples with LLM
       let explanation = g.explanation;
       let examples = g.examples;
-      const llmSystem = "You are an expert French teacher. Return ONLY valid JSON with no markdown formatting or extra text.";
-      const llmPrompt = `Generate a French grammar explanation for "${g.title}" at ${g.level} level.
-Return JSON:
-{"explanation": "concise explanation in French (2-3 sentences)", "examples": ["example 1", "example 2", "example 3"]}`;
-      const llmRaw = await callLLM(llmPrompt, llmSystem);
-      if (llmRaw) {
-        try {
-          const parsed = JSON.parse(llmRaw);
-          if (parsed.explanation) explanation = parsed.explanation;
-          if (parsed.examples && Array.isArray(parsed.examples)) examples = parsed.examples;
-          log(`  🤖 LLM generated grammar: "${g.title}"`);
-        } catch (e) {
-          log(`  ⚠️ LLM JSON parse failed, using static data: ${e.message.slice(0, 50)}`);
-        }
-      }
+      const llmGram = await generateJSON(
+        `Generate a French grammar explanation for "${g.title}" at ${g.level} level. Return JSON: {"explanation": "concise explanation in French (2-3 sentences)", "examples": ["3 example sentences in French"]}`,
+      );
+      if (llmGram?.explanation) explanation = llmGram.explanation;
+      if (llmGram?.examples && Array.isArray(llmGram.examples)) examples = llmGram.examples;
+      if (llmGram) log(`  🤖 LLM generated grammar: "${g.title}"`);
 
       // Split explanation into sentences
       const rawSentences = explanation.split(/\.\s+/).filter(s => s.trim().length > 0);
@@ -485,25 +498,35 @@ Return JSON:
     case "Quiz": {
       const word = wordMap[activity.word_id];
       if (!word) return null;
-      const allWords = Object.values(wordMap);
-      const distractors = allWords
-        .filter(w => w.id !== word.id && w.level === word.level)
-        .sort(() => Math.random() - 0.5)
-        .slice(0, 3)
-        .map(w => w.french);
-      while (distractors.length < 3) distractors.push("???");
-      const allOptions = [word.french, ...distractors].sort(() => Math.random() - 0.5);
-      const correctIndex = allOptions.indexOf(word.french);
-      const qText = "Quel est ce mot ?";
+      let question = "Quel est ce mot ?";
+      let options = [word.french];
+      let correctIndex = 0;
+      const llmQuiz = await generateJSON(
+        `Generate a French vocabulary quiz about "${word.french}" at ${word.level} level. Return JSON: {"question": "short question in French about this word", "wrongAnswers": ["3 plausible wrong answers in French"]}`,
+      );
+      if (llmQuiz?.question && llmQuiz?.wrongAnswers?.length >= 3) {
+        question = llmQuiz.question;
+        const allOpts = [word.french, ...llmQuiz.wrongAnswers.slice(0, 3)].sort(() => Math.random() - 0.5);
+        options = allOpts;
+        correctIndex = allOpts.indexOf(word.french);
+        log(`  🤖 LLM generated quiz: "${word.french}"`);
+      } else {
+        // Static fallback
+        const allWords = Object.values(wordMap);
+        const distractors = allWords
+          .filter(w => w.id !== word.id && w.level === word.level)
+          .sort(() => Math.random() - 0.5)
+          .slice(0, 3)
+          .map(w => w.french);
+        while (distractors.length < 3) distractors.push("???");
+        const allOpts = [word.french, ...distractors].sort(() => Math.random() - 0.5);
+        options = allOpts;
+        correctIndex = allOpts.indexOf(word.french);
+      }
       return {
         compositionId: "Quiz",
         props: {
-          quiz: {
-            question: qText,
-            options: allOptions,
-            correctIndex,
-            audioSrc: generateAudioFile(word.french, `quiz_word_${word.id}`),
-          },
+          quiz: { question, options, correctIndex, audioSrc: generateAudioFile(word.french, `quiz_word_${word.id}`) },
           totalDuration: Math.round(durations.Quiz * 30),
         },
         outputFile: `day${activity._dayNum}_quiz.mp4`,
@@ -562,7 +585,27 @@ Return JSON:
       };
     }
     case "Idiome": {
-      const idiom = idiomMap[activity.idiome_id];
+      // Try LLM first (idiomMap is not passed to this function, so LLM is primary)
+      const llmIdiom = await generateJSON(
+        `Generate a French idiomatic expression for level A2-B1. Return JSON: {"expression": "idiom in French", "meaning": "explanation in English", "example": "example sentence in French"}`,
+      );
+      if (llmIdiom?.expression && llmIdiom?.meaning) {
+        const word = {
+          french: llmIdiom.expression,
+          example: llmIdiom.example || llmIdiom.expression,
+          level: "A2",
+          audioSrc: generateAudioFile(llmIdiom.expression, `idiome_llm_${Date.now()}`),
+          exampleAudioSrc: generateAudioFile(llmIdiom.example || llmIdiom.expression, `idiome_ex_llm_${Date.now()}`),
+        };
+        log(`  🤖 LLM generated idiome: "${llmIdiom.expression}"`);
+        return {
+          compositionId: "MotDuJour",
+          props: { word, totalDuration: Math.round(durations.Idiome * 30) },
+          outputFile: `gen_idiome_llm_${Date.now()}.mp4`,
+        };
+      }
+      // Fallback to static data
+      const idiom = idiomMap?.[activity.idiome_id];
       if (!idiom) return null;
       const word = {
         french: idiom.expression,
@@ -578,7 +621,27 @@ Return JSON:
       };
     }
     case "Culture": {
-      const culture = cultureMap[activity.culture_id];
+      // Try LLM first (cultureMap is not passed to this function, so LLM is primary)
+      const llmCulture = await generateJSON(
+        `Generate a short French cultural fact at A2-B1 level. Return JSON: {"title": "short title in French", "summary": "2-3 sentence explanation in French", "detail": "one more interesting detail in French"}`,
+      );
+      if (llmCulture?.title && llmCulture?.summary) {
+        const grammar = {
+          title: llmCulture.title,
+          explanation: llmCulture.summary,
+          level: "A2",
+          examples: llmCulture.detail ? [llmCulture.detail] : ["Intéressant, n'est-ce pas ?"],
+          audioSrc: generateAudioFile(`${llmCulture.title}. ${llmCulture.summary}`, `culture_llm_${Date.now()}`),
+        };
+        log(`  🤖 LLM generated culture: "${llmCulture.title}"`);
+        return {
+          compositionId: "Grammaire",
+          props: { grammar, totalDuration: Math.round(durations.Culture * 30) },
+          outputFile: `gen_culture_llm_${Date.now()}.mp4`,
+        };
+      }
+      // Fallback to static data
+      const culture = cultureMap?.[activity.culture_id];
       if (!culture) return null;
       const grammar = {
         title: culture.title,
