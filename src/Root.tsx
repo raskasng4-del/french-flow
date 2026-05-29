@@ -81,13 +81,13 @@ export const RemotionRoot: React.FC = () => {
       <Composition
         id="Grammaire"
         component={Grammaire}
-        durationInFrames={390}
+        durationInFrames={900}
         fps={FPS}
         width={1080}
         height={1920}
         defaultProps={{
           grammar: sampleGrammar,
-          totalDuration: 390,
+          totalDuration: 900,
         }}
       />
       <Composition
