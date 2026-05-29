@@ -299,9 +299,15 @@
       "file": "day12_quiz.mp4",
       "published": true,
       "date": "2026-05-28"
+    },
+    {
+      "type": "Conjugaison",
+      "file": "day12_conjugaison.mp4",
+      "published": true,
+      "date": "2026-05-29"
     }
   ],
-  "last_publish_date": "2026-05-28",
+  "last_publish_date": "2026-05-29",
   "spaced_repetition": {
     "words": {
       "2": {
@@ -511,10 +517,16 @@
         "last_reviewed": "2026-05-28",
         "interval": 1,
         "next_review": "2026-05-29"
+      },
+      "12": {
+        "first_seen": "2026-05-29",
+        "last_reviewed": "2026-05-29",
+        "interval": 1,
+        "next_review": "2026-05-30"
       }
     }
   },
-  "curriculum_idx": 59,
+  "curriculum_idx": 60,
   "generated_count": 0,
   "used_combos": []
 }
