@@ -317,6 +317,12 @@
       "file": "day13_phrase.mp4",
       "published": true,
       "date": "2026-05-29"
+    },
+    {
+      "type": "Quiz",
+      "file": "day13_quiz.mp4",
+      "published": true,
+      "date": "2026-05-29"
     }
   ],
   "last_publish_date": "2026-05-29",
@@ -550,7 +556,7 @@
       }
     }
   },
-  "curriculum_idx": 63,
+  "curriculum_idx": 64,
   "generated_count": 0,
   "used_combos": []
 }
