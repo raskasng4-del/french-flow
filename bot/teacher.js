@@ -220,6 +220,36 @@ function generateAudioFile(text, name, voice) {
   return `audio/${filename}`;
 }
 
+// Call LLM via OpenCode Zen API — returns text or null on failure
+async function callLLM(userPrompt, systemPrompt = "You are a French teacher.", model = "claude-sonnet-4") {
+  const apiKey = process.env.ZEN_API_KEY;
+  if (!apiKey) return null;
+  try {
+    const response = await fetch("https://opencode.ai/zen/v1/chat/completions", {
+      method: "POST",
+      headers: { "Content-Type": "application/json", Authorization: `Bearer ${apiKey}` },
+      body: JSON.stringify({
+        model,
+        messages: [
+          { role: "system", content: systemPrompt },
+          { role: "user", content: userPrompt },
+        ],
+        max_tokens: 1500,
+        temperature: 0.7,
+      }),
+    });
+    if (!response.ok) {
+      log(`  ⚠️ LLM API error: ${response.status}`);
+      return null;
+    }
+    const data = await response.json();
+    return data.choices?.[0]?.message?.content || null;
+  } catch (err) {
+    log(`  ⚠️ LLM call failed: ${err.message}`);
+    return null;
+  }
+}
+
 // Render a Remotion composition to video
 function renderVideo(compositionId, props, outputFile) {
   const outputPath = path.join(OUTPUT_DIR, outputFile);
@@ -355,7 +385,7 @@ async function renderAndPublish(activity, compositionId, props, outputFile, page
   return null;
 }
 
-function getActivityProps(activity, wordMap, grammarMap, verbMap, durations) {
+async function getActivityProps(activity, wordMap, grammarMap, verbMap, durations) {
   switch (activity.type) {
     case "MotDuJour": {
       const word = wordMap[activity.word_id];
@@ -383,18 +413,37 @@ function getActivityProps(activity, wordMap, grammarMap, verbMap, durations) {
       if (!g) return null;
       const MALE_VOICE = "fr-FR-RemyMultilingualNeural";
 
+      // Try to generate explanation + examples with LLM
+      let explanation = g.explanation;
+      let examples = g.examples;
+      const llmSystem = "You are an expert French teacher. Return ONLY valid JSON with no markdown formatting or extra text.";
+      const llmPrompt = `Generate a French grammar explanation for "${g.title}" at ${g.level} level.
+Return JSON:
+{"explanation": "concise explanation in French (2-3 sentences)", "examples": ["example 1", "example 2", "example 3"]}`;
+      const llmRaw = await callLLM(llmPrompt, llmSystem);
+      if (llmRaw) {
+        try {
+          const parsed = JSON.parse(llmRaw);
+          if (parsed.explanation) explanation = parsed.explanation;
+          if (parsed.examples && Array.isArray(parsed.examples)) examples = parsed.examples;
+          log(`  🤖 LLM generated grammar: "${g.title}"`);
+        } catch (e) {
+          log(`  ⚠️ LLM JSON parse failed, using static data: ${e.message.slice(0, 50)}`);
+        }
+      }
+
       // Split explanation into sentences
-      const rawSentences = g.explanation.split(/\.\s+/).filter(s => s.trim().length > 0);
+      const rawSentences = explanation.split(/\.\s+/).filter(s => s.trim().length > 0);
       const sentences = rawSentences.map((s, i) => {
         const trimmed = s.trim();
-        return i < rawSentences.length - 1 || g.explanation.endsWith(".") ? trimmed + "." : trimmed;
+        return i < rawSentences.length - 1 || explanation.endsWith(".") ? trimmed + "." : trimmed;
       });
 
       // Build lines: title first, then explanation sentences, then examples
       const lines = [
         { text: g.title, type: "title" },
         ...sentences.map(s => ({ text: s, type: "explanation" })),
-        ...g.examples.map(s => ({ text: s, type: "example" })),
+        ...examples.map(s => ({ text: s, type: "example" })),
       ];
 
       // Generate per-line audio with male voice, measure durations, build timeline
@@ -677,7 +726,7 @@ async function runHourly(progress, pageId, accessToken) {
     log(`🎯 [Gen ${genIdx + 1}] ${activity.type}`);
   }
 
-  const resolved = getActivityProps(activity, wordMap, grammarMap, verbMap, durations);
+  const resolved = await getActivityProps(activity, wordMap, grammarMap, verbMap, durations);
   if (!resolved) {
     log(`❌ Could not resolve activity`);
     if (progress.curriculum_idx < allActivities.length) {
