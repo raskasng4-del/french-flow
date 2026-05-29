@@ -221,7 +221,7 @@ function generateAudioFile(text, name, voice) {
 }
 
 // Call LLM via OpenCode Zen API — returns text or null on failure
-async function callLLM(userPrompt, systemPrompt = "You are a French teacher.", model = "claude-sonnet-4") {
+async function callLLM(userPrompt, systemPrompt = "You are a French teacher.", model = "deepseek-v4-flash-free") {
   const apiKey = process.env.ZEN_API_KEY;
   if (!apiKey) return null;
   try {
