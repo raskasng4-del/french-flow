@@ -401,6 +401,12 @@
       "file": "day16_conjugaison.mp4",
       "published": true,
       "date": "2026-05-30"
+    },
+    {
+      "type": "Grammaire",
+      "file": "day17_grammaire.mp4",
+      "published": true,
+      "date": "2026-05-30"
     }
   ],
   "last_publish_date": "2026-05-30",
@@ -599,6 +605,12 @@
         "last_reviewed": "2026-05-30",
         "interval": 1,
         "next_review": "2026-05-31"
+      },
+      "17": {
+        "first_seen": "2026-05-30",
+        "last_reviewed": "2026-05-30",
+        "interval": 1,
+        "next_review": "2026-05-31"
       }
     },
     "verbs": {
@@ -694,7 +706,7 @@
       }
     }
   },
-  "curriculum_idx": 81,
+  "curriculum_idx": 82,
   "generated_count": 0,
   "used_combos": []
 }
