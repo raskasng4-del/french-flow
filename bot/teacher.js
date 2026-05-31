@@ -198,7 +198,7 @@ function buildVocabGridDescription() {
 }
 
 // Generate TTS audio for a text, returns audio path
-function generateAudioFile(text, name, voice) {
+function generateAudioFile(text, name, voice, rate, pitch) {
   const AUDIO_DIR = path.join(PROJECT_ROOT, "public", "audio");
   if (!fs.existsSync(AUDIO_DIR)) fs.mkdirSync(AUDIO_DIR, { recursive: true });
   const filename = `${name}.mp3`;
@@ -206,7 +206,9 @@ function generateAudioFile(text, name, voice) {
   if (!fs.existsSync(filepath)) {
     try {
       let cmd = `python3 "${path.join(BOT_DIR, "tts_helper.py")}" "${filepath}"`;
-      if (voice) cmd += ` "${voice}"`;
+      cmd += ` "${voice || ""}"`;
+      cmd += ` "${rate || "+0%"}"`;
+      cmd += ` "${pitch || "+0Hz"}"`;
       execSync(cmd, {
         input: text,
         timeout: 30000,
@@ -459,12 +461,12 @@ async function getActivityProps(activity, wordMap, grammarMap, verbMap, duration
         ...examples.map(s => ({ text: s, type: "example" })),
       ];
 
-      // Generate per-line audio with male voice, measure durations, build timeline
+      // Generate per-line audio with male voice (slower rate for educational content), measure durations, build timeline
       const timeline = [];
       let totalFrames = 0;
       for (let i = 0; i < lines.length; i++) {
         const line = lines[i];
-        const audioPath = generateAudioFile(line.text, `grammar_${g.id}_line_${i}`, MALE_VOICE);
+        const audioPath = generateAudioFile(line.text, `grammar_${g.id}_line_${i}`, MALE_VOICE, "-15%");
         const audioFull = path.join(PROJECT_ROOT, "public", audioPath);
         let dur = 1.5;
         try {
