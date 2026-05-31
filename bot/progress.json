@@ -431,6 +431,12 @@
       "file": "day18_grammaire.mp4",
       "published": true,
       "date": "2026-05-31"
+    },
+    {
+      "type": "PhraseDuJour",
+      "file": "day18_phrase.mp4",
+      "published": true,
+      "date": "2026-05-31"
     }
   ],
   "last_publish_date": "2026-05-31",
@@ -543,6 +549,12 @@
         "last_reviewed": "2026-05-30",
         "interval": 1,
         "next_review": "2026-05-31"
+      },
+      "36": {
+        "first_seen": "2026-05-31",
+        "last_reviewed": "2026-05-31",
+        "interval": 1,
+        "next_review": "2026-06-01"
       }
     },
     "grammar": {
@@ -748,7 +760,7 @@
       }
     }
   },
-  "curriculum_idx": 87,
+  "curriculum_idx": 88,
   "generated_count": 0,
   "used_combos": []
 }
