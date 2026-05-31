@@ -198,7 +198,7 @@ function buildVocabGridDescription() {
 }
 
 // Generate TTS audio for a text, returns audio path
-function generateAudioFile(text, name, voice, rate, pitch) {
+function generateAudioFile(text, name, voice, rate, pitch, style) {
   const AUDIO_DIR = path.join(PROJECT_ROOT, "public", "audio");
   if (!fs.existsSync(AUDIO_DIR)) fs.mkdirSync(AUDIO_DIR, { recursive: true });
   const filename = `${name}.mp3`;
@@ -209,12 +209,13 @@ function generateAudioFile(text, name, voice, rate, pitch) {
       cmd += ` "${voice || ""}"`;
       cmd += ` "${rate || "+0%"}"`;
       cmd += ` "${pitch || "+0Hz"}"`;
+      cmd += ` "${style || "default"}"`;
       execSync(cmd, {
         input: text,
         timeout: 30000,
         stdio: ["pipe", "pipe", "pipe"],
       });
-      log(`  🔊 Generated: ${name}.mp3`);
+      log(`  🔊 Generated: ${name}.mp3 (${style || "default"})`);
     } catch (err) {
       log(`  ⚠️ TTS failed for "${text.slice(0, 30)}": ${err.message}`);
     }
@@ -404,7 +405,7 @@ async function getActivityProps(activity, wordMap, grammarMap, verbMap, duration
     case "MotDuJour": {
       const word = wordMap[activity.word_id];
       if (!word) return null;
-      word.audioSrc = generateAudioFile(word.french, `word_${word.id}`);
+      word.audioSrc = generateAudioFile(word.french, `word_${word.id}`, null, "+0%", "+0Hz", "title");
       const llmEx = await generateJSON(
         `Generate a useful example sentence in French using the word "${word.french}" at ${word.level} level. Return JSON: {"example": "sentence in French"}`,
       );
@@ -461,12 +462,13 @@ async function getActivityProps(activity, wordMap, grammarMap, verbMap, duration
         ...examples.map(s => ({ text: s, type: "example" })),
       ];
 
-      // Generate per-line audio with male voice (slower rate for educational content), measure durations, build timeline
+      // Generate per-line audio with male voice and human-like SSML styles, measure durations, build timeline
       const timeline = [];
       let totalFrames = 0;
       for (let i = 0; i < lines.length; i++) {
         const line = lines[i];
-        const audioPath = generateAudioFile(line.text, `grammar_${g.id}_line_${i}`, MALE_VOICE, "-15%");
+        const ttsStyle = line.type === "title" ? "title" : line.type === "example" ? "example" : "explanation";
+        const audioPath = generateAudioFile(line.text, `grammar_${g.id}_line_${i}`, MALE_VOICE, "-15%", "+0Hz", ttsStyle);
         const audioFull = path.join(PROJECT_ROOT, "public", audioPath);
         let dur = 1.5;
         try {
@@ -528,7 +530,7 @@ async function getActivityProps(activity, wordMap, grammarMap, verbMap, duration
       return {
         compositionId: "Quiz",
         props: {
-          quiz: { question, options, correctIndex, audioSrc: generateAudioFile(word.french, `quiz_word_${word.id}`) },
+          quiz: { question, options, correctIndex, audioSrc: generateAudioFile(word.french, `quiz_word_${word.id}`, null, "+0%", "+0Hz", "question") },
           totalDuration: Math.round(durations.Quiz * 30),
         },
         outputFile: `day${activity._dayNum}_quiz.mp4`,
