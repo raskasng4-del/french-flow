@@ -461,6 +461,12 @@
       "file": "day19_phrase.mp4",
       "published": true,
       "date": "2026-05-31"
+    },
+    {
+      "type": "Quiz",
+      "file": "day19_quiz.mp4",
+      "published": true,
+      "date": "2026-05-31"
     }
   ],
   "last_publish_date": "2026-05-31",
@@ -802,7 +808,7 @@
       }
     }
   },
-  "curriculum_idx": 93,
+  "curriculum_idx": 94,
   "generated_count": 0,
   "used_combos": []
 }
