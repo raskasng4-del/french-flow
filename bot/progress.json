@@ -497,9 +497,15 @@
       "file": "day20_conjugaison.mp4",
       "published": true,
       "date": "2026-05-31"
+    },
+    {
+      "type": "Grammaire",
+      "file": "day21_grammaire.mp4",
+      "published": true,
+      "date": "2026-06-01"
     }
   ],
-  "last_publish_date": "2026-05-31",
+  "last_publish_date": "2026-06-01",
   "spaced_repetition": {
     "words": {
       "2": {
@@ -743,6 +749,12 @@
         "last_reviewed": "2026-05-31",
         "interval": 1,
         "next_review": "2026-06-01"
+      },
+      "21": {
+        "first_seen": "2026-06-01",
+        "last_reviewed": "2026-06-01",
+        "interval": 1,
+        "next_review": "2026-06-02"
       }
     },
     "verbs": {
@@ -862,7 +874,7 @@
       }
     }
   },
-  "curriculum_idx": 101,
+  "curriculum_idx": 102,
   "generated_count": 0,
   "used_combos": []
 }
