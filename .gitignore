@@ -7,3 +7,4 @@ output
 temp/
 bot/run_bot.sh
 bot/logs/
+build/
