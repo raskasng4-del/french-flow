@@ -141,6 +141,52 @@ function loadProgress() {
   return p;
 }
 
+// Strip text for TTS: remove markdown, emojis, brackets, expand numbers/abbreviations
+function stripForTTS(text) {
+  const NUM_MAP = {
+    "0": "zéro", "1": "un", "2": "deux", "3": "trois", "4": "quatre", "5": "cinq",
+    "6": "six", "7": "sept", "8": "huit", "9": "neuf", "10": "dix",
+    "11": "onze", "12": "douze", "13": "treize", "14": "quatorze", "15": "quinze",
+    "16": "seize", "17": "dix-sept", "18": "dix-huit", "19": "dix-neuf", "20": "vingt",
+    "30": "trente", "40": "quarante", "50": "cinquante", "60": "soixante",
+    "70": "soixante-dix", "80": "quatre-vingts", "90": "quatre-vingt-dix", "100": "cent",
+  };
+  const ABBR_MAP = {
+    "M\\.(?=\\s)": "Monsieur",
+    "Mme": "Madame",
+    "Mlles": "Mesdemoiselles",
+    "etc\\.?": "et cetera",
+    "n°": "numéro",
+    "N°": "Numéro",
+    "n\\.b\\.?": "nota bene",
+    "cf\\.?": "considérez",
+    "ex\\.?": "exemple",
+  };
+
+  let result = text;
+  // Remove markdown bold/italic
+  result = result.replace(/\*\*(.+?)\*\*/g, "$1");
+  result = result.replace(/\*(.+?)\*/g, "$1");
+  // Remove markdown links
+  result = result.replace(/\[(.+?)\]\(.+?\)/g, "$1");
+  // Remove hashtags
+  result = result.replace(/#(\w+)/g, "$1");
+  // Remove content in parentheses and brackets
+  result = result.replace(/\([^)]*\)/g, "");
+  result = result.replace(/\[[^\]]*\]/g, "");
+  // Remove emojis (common unicode ranges)
+  result = result.replace(/[\u{1F600}-\u{1F64F}\u{1F300}-\u{1F5FF}\u{1F680}-\u{1F6FF}\u{1F1E0}-\u{1F1FF}\u{2600}-\u{26FF}\u{2700}-\u{27BF}\u{FE00}-\u{FE0F}\u{200D}]/gu, "");
+  // Expand abbreviations
+  for (const [pat, replacement] of Object.entries(ABBR_MAP)) {
+    result = result.replace(new RegExp(pat, "g"), replacement);
+  }
+  // Expand standalone numbers (simple cases)
+  result = result.replace(/\b(\d+)\b/g, (m) => NUM_MAP[m] || m);
+  // Collapse whitespace
+  result = result.replace(/\s+/g, " ").trim();
+  return result;
+}
+
 function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
@@ -198,11 +244,13 @@ function buildVocabGridDescription() {
 }
 
 // Generate TTS audio for a text, returns audio path
+// Automatically strips markdown/emojis/brackets for clean TTS
 function generateAudioFile(text, name, voice, rate, pitch, style) {
   const AUDIO_DIR = path.join(PROJECT_ROOT, "public", "audio");
   if (!fs.existsSync(AUDIO_DIR)) fs.mkdirSync(AUDIO_DIR, { recursive: true });
   const filename = `${name}.mp3`;
   const filepath = path.join(AUDIO_DIR, filename);
+  const cleanText = stripForTTS(text);
   if (!fs.existsSync(filepath)) {
     try {
       let cmd = `python3 "${path.join(BOT_DIR, "tts_helper.py")}" "${filepath}"`;
@@ -211,13 +259,13 @@ function generateAudioFile(text, name, voice, rate, pitch, style) {
       cmd += ` "${pitch || "+0Hz"}"`;
       cmd += ` "${style || "default"}"`;
       execSync(cmd, {
-        input: text,
+        input: cleanText,
         timeout: 30000,
         stdio: ["pipe", "pipe", "pipe"],
       });
       log(`  🔊 Generated: ${name}.mp3 (${style || "default"})`);
     } catch (err) {
-      log(`  ⚠️ TTS failed for "${text.slice(0, 30)}": ${err.message}`);
+      log(`  ⚠️ TTS failed for "${cleanText.slice(0, 30)}": ${err.message}`);
     }
   }
   return `audio/${filename}`;
@@ -457,9 +505,9 @@ async function getActivityProps(activity, wordMap, grammarMap, verbMap, duration
 
       // Build lines: title first, then explanation sentences, then examples
       const lines = [
-        { text: g.title, type: "title" },
-        ...sentences.map(s => ({ text: s, type: "explanation" })),
-        ...examples.map(s => ({ text: s, type: "example" })),
+        { text_display: g.title, text_audio: stripForTTS(g.title), type: "title" },
+        ...sentences.map(s => ({ text_display: s, text_audio: stripForTTS(s), type: "explanation" })),
+        ...examples.map(s => ({ text_display: s, text_audio: stripForTTS(s), type: "example" })),
       ];
 
       // Generate per-line audio with male voice and human-like SSML styles, measure durations, build timeline
@@ -468,7 +516,7 @@ async function getActivityProps(activity, wordMap, grammarMap, verbMap, duration
       for (let i = 0; i < lines.length; i++) {
         const line = lines[i];
         const ttsStyle = line.type === "title" ? "title" : line.type === "example" ? "example" : "explanation";
-        const audioPath = generateAudioFile(line.text, `grammar_${g.id}_line_${i}`, MALE_VOICE, "-15%", "+0Hz", ttsStyle);
+        const audioPath = generateAudioFile(line.text_audio, `grammar_${g.id}_line_${i}`, MALE_VOICE, "-15%", "+0Hz", ttsStyle);
         const audioFull = path.join(PROJECT_ROOT, "public", audioPath);
         let dur = 1.5;
         try {
@@ -837,10 +885,11 @@ async function renderDialogueVideo(dialogue, pageId, accessToken, progress, toda
     const filename = `dialogue_${dialogue.id}_${i}.mp3`;
     const filepath = path.join(AUDIO_DIR, filename);
     line.audioSrc = `audio/${filename}`;
+    const cleanFrench = stripForTTS(line.french);
     if (!fs.existsSync(filepath)) {
       try {
         execSync(`python3 "${path.join(BOT_DIR, "tts_helper.py")}" "${filepath}"`, {
-          input: line.french,
+          input: cleanFrench,
           timeout: 30000, stdio: ["pipe", "pipe", "pipe"],
         });
       } catch (err) {

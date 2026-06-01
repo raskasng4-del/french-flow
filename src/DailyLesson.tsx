@@ -75,7 +75,9 @@ interface WordData {
 }
 
 interface GrammarLine {
-  text: string;
+  text?: string;
+  text_display?: string;
+  text_audio?: string;
   type: "title" | "explanation" | "example";
 }
 
@@ -340,6 +342,7 @@ export const Grammaire: React.FC<{
               const opacity = interpolate(lineAge, [0, 10], [0, 1], { extrapolateRight: "clamp" });
               const translateY = interpolate(lineAge, [0, 10], [15, 0], { extrapolateRight: "clamp" });
 
+              const displayText = line.text_display || line.text || "";
               if (line.type === "title") {
                 return (
                   <div
@@ -354,7 +357,7 @@ export const Grammaire: React.FC<{
                       opacity: Math.max(opacity, 0.3),
                     }}
                   >
-                    {line.text}
+                    {displayText}
                   </div>
                 );
               }
@@ -384,7 +387,7 @@ export const Grammaire: React.FC<{
                       display: "block",
                     }}
                   >
-                    {line.text}
+                    {displayText}
                   </span>
                 </div>
               );
