@@ -5,3 +5,5 @@ dist
 out
 output
 temp/
+bot/run_bot.sh
+bot/logs/
