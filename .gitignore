@@ -7,4 +7,6 @@ output
 temp/
 bot/run_bot.sh
 bot/logs/
+bot/__pycache__/
 build/
+public/audio/

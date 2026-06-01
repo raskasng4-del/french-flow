@@ -139,7 +139,7 @@ export const MotDuJour: React.FC<{
 
   const cf = frame - INTRO_F;
   const { opacity: s } = fadeSlide(cf);
-  const { opacity: exOp, y: exY } = fadeSlide(cf, contentFrames * 0.45);
+  const words = word.example.split(" ");
 
   return (
     <VideoContainer>
