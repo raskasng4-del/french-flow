@@ -521,6 +521,12 @@
       "file": "day21_conjugaison.mp4",
       "published": false,
       "date": "2026-06-01"
+    },
+    {
+      "type": "Grammaire",
+      "file": "day22_grammaire.mp4",
+      "published": false,
+      "date": "2026-06-01"
     }
   ],
   "last_publish_date": "2026-06-01",
@@ -779,6 +785,12 @@
         "last_reviewed": "2026-06-01",
         "interval": 1,
         "next_review": "2026-06-02"
+      },
+      "22": {
+        "first_seen": "2026-06-01",
+        "last_reviewed": "2026-06-01",
+        "interval": 1,
+        "next_review": "2026-06-02"
       }
     },
     "verbs": {
@@ -904,7 +916,7 @@
       }
     }
   },
-  "curriculum_idx": 106,
+  "curriculum_idx": 107,
   "generated_count": 0,
   "used_combos": []
 }
