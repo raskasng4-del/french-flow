@@ -538,23 +538,11 @@
       "type": "Quiz",
       "file": "day22_quiz.mp4",
       "published": false,
-      "date": "2026-06-01"
-    },
-    {
-      "type": "Conjugaison",
-      "file": "day22_conjugaison.mp4",
-      "published": false,
-      "date": "2026-06-01"
+      "date": "2026-06-02"
     },
     {
       "type": "MotDuJour",
       "file": "day23_mot.mp4",
-      "published": false,
-      "date": "2026-06-02"
-    },
-    {
-      "type": "Grammaire",
-      "file": "day23_grammaire.mp4",
       "published": false,
       "date": "2026-06-02"
     },
@@ -568,6 +556,12 @@
       "type": "Quiz",
       "file": "day23_quiz.mp4",
       "published": false,
+      "date": "2026-06-02"
+    },
+    {
+      "type": "Conjugaison",
+      "file": "day23_conjugaison.mp4",
+      "published": true,
       "date": "2026-06-02"
     }
   ],
@@ -708,9 +702,9 @@
       },
       "44": {
         "first_seen": "2026-06-01",
-        "last_reviewed": "2026-06-01",
-        "interval": 1,
-        "next_review": "2026-06-02"
+        "last_reviewed": "2026-06-02",
+        "interval": 2,
+        "next_review": "2026-06-04"
       },
       "45": {
         "first_seen": "2026-06-02",
@@ -851,12 +845,6 @@
         "last_reviewed": "2026-06-01",
         "interval": 1,
         "next_review": "2026-06-02"
-      },
-      "23": {
-        "first_seen": "2026-06-02",
-        "last_reviewed": "2026-06-02",
-        "interval": 1,
-        "next_review": "2026-06-03"
       }
     },
     "verbs": {
@@ -980,15 +968,15 @@
         "interval": 1,
         "next_review": "2026-06-02"
       },
-      "37": {
-        "first_seen": "2026-06-01",
-        "last_reviewed": "2026-06-01",
+      "38": {
+        "first_seen": "2026-06-02",
+        "last_reviewed": "2026-06-02",
         "interval": 1,
-        "next_review": "2026-06-02"
+        "next_review": "2026-06-03"
       }
     }
   },
-  "curriculum_idx": 114,
+  "curriculum_idx": 115,
   "generated_count": 0,
   "used_combos": []
 }
