@@ -545,9 +545,15 @@
       "file": "day22_conjugaison.mp4",
       "published": false,
       "date": "2026-06-01"
+    },
+    {
+      "type": "MotDuJour",
+      "file": "day23_mot.mp4",
+      "published": false,
+      "date": "2026-06-02"
     }
   ],
-  "last_publish_date": "2026-06-01",
+  "last_publish_date": "2026-06-02",
   "spaced_repetition": {
     "words": {
       "2": {
@@ -687,6 +693,12 @@
         "last_reviewed": "2026-06-01",
         "interval": 1,
         "next_review": "2026-06-02"
+      },
+      "45": {
+        "first_seen": "2026-06-02",
+        "last_reviewed": "2026-06-02",
+        "interval": 1,
+        "next_review": "2026-06-03"
       }
     },
     "grammar": {
@@ -946,7 +958,7 @@
       }
     }
   },
-  "curriculum_idx": 110,
+  "curriculum_idx": 111,
   "generated_count": 0,
   "used_combos": []
 }
