@@ -581,6 +581,12 @@
       "file": "day24_phrase.mp4",
       "published": false,
       "date": "2026-06-02"
+    },
+    {
+      "type": "Quiz",
+      "file": "day24_quiz.mp4",
+      "published": false,
+      "date": "2026-06-02"
     }
   ],
   "last_publish_date": "2026-06-02",
@@ -1012,7 +1018,7 @@
       }
     }
   },
-  "curriculum_idx": 118,
+  "curriculum_idx": 119,
   "generated_count": 0,
   "used_combos": []
 }
