@@ -551,6 +551,12 @@
       "file": "day23_mot.mp4",
       "published": false,
       "date": "2026-06-02"
+    },
+    {
+      "type": "Grammaire",
+      "file": "day23_grammaire.mp4",
+      "published": false,
+      "date": "2026-06-02"
     }
   ],
   "last_publish_date": "2026-06-02",
@@ -827,6 +833,12 @@
         "last_reviewed": "2026-06-01",
         "interval": 1,
         "next_review": "2026-06-02"
+      },
+      "23": {
+        "first_seen": "2026-06-02",
+        "last_reviewed": "2026-06-02",
+        "interval": 1,
+        "next_review": "2026-06-03"
       }
     },
     "verbs": {
@@ -958,7 +970,7 @@
       }
     }
   },
-  "curriculum_idx": 111,
+  "curriculum_idx": 112,
   "generated_count": 0,
   "used_combos": []
 }
