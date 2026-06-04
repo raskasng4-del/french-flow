@@ -623,6 +623,12 @@
       "file": "day27_grammaire.mp4",
       "published": false,
       "date": "2026-06-04"
+    },
+    {
+      "type": "PhraseDuJour",
+      "file": "day27_phrase.mp4",
+      "published": false,
+      "date": "2026-06-04"
     }
   ],
   "last_publish_date": "2026-06-04",
@@ -803,6 +809,12 @@
         "next_review": "2026-06-05"
       },
       "53": {
+        "first_seen": "2026-06-04",
+        "last_reviewed": "2026-06-04",
+        "interval": 1,
+        "next_review": "2026-06-05"
+      },
+      "54": {
         "first_seen": "2026-06-04",
         "last_reviewed": "2026-06-04",
         "interval": 1,
@@ -1084,7 +1096,7 @@
       }
     }
   },
-  "curriculum_idx": 132,
+  "curriculum_idx": 133,
   "generated_count": 0,
   "used_combos": []
 }
