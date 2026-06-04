@@ -599,9 +599,15 @@
       "file": "day26_mot.mp4",
       "published": false,
       "date": "2026-06-03"
+    },
+    {
+      "type": "Grammaire",
+      "file": "day26_grammaire.mp4",
+      "published": false,
+      "date": "2026-06-04"
     }
   ],
-  "last_publish_date": "2026-06-03",
+  "last_publish_date": "2026-06-04",
   "spaced_repetition": {
     "words": {
       "2": {
@@ -905,6 +911,12 @@
         "last_reviewed": "2026-06-03",
         "interval": 1,
         "next_review": "2026-06-04"
+      },
+      "26": {
+        "first_seen": "2026-06-04",
+        "last_reviewed": "2026-06-04",
+        "interval": 1,
+        "next_review": "2026-06-05"
       }
     },
     "verbs": {
@@ -1042,7 +1054,7 @@
       }
     }
   },
-  "curriculum_idx": 126,
+  "curriculum_idx": 127,
   "generated_count": 0,
   "used_combos": []
 }
