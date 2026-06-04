@@ -28,11 +28,11 @@ const sampleGrammar = {
     "Les articles définis (le, la, les) sont utilisés pour parler d'une chose spécifique.",
   examples: ["Le livre est sur la table.", "La maison est grande.", "Les enfants jouent."],
   lines: [
-    { text: "Les articles définis", type: "title" },
-    { text: "Les articles définis (le, la, les) sont utilisés pour parler d'une chose spécifique.", type: "explanation" },
-    { text: "Le livre est sur la table.", type: "example" },
-    { text: "La maison est grande.", type: "example" },
-    { text: "Les enfants jouent.", type: "example" },
+    { text: "Les articles définis", type: "title" as const },
+    { text: "Les articles définis (le, la, les) sont utilisés pour parler d'une chose spécifique.", type: "explanation" as const },
+    { text: "Le livre est sur la table.", type: "example" as const },
+    { text: "La maison est grande.", type: "example" as const },
+    { text: "Les enfants jouent.", type: "example" as const },
   ],
   timeline: [
     { lineIndex: 0, startFrame: 0, durationInFrames: 45, audioSrc: "audio/sample_grammar_0.mp3" },
@@ -120,7 +120,7 @@ export const RemotionRoot: React.FC = () => {
       />
       <Composition
         id="FrenchShorts"
-        component={FrenchShorts}
+        component={FrenchShorts as unknown as React.ComponentType<Record<string, unknown>>}
         durationInFrames={Math.round(18 * FPS)}
         fps={FPS}
         width={1080}
@@ -163,7 +163,7 @@ export const RemotionRoot: React.FC = () => {
       />
       <Composition
         id="VocabularyGrid"
-        component={VocabularyGridComposition}
+        component={VocabularyGridComposition as unknown as React.ComponentType<Record<string, unknown>>}
         durationInFrames={600}
         fps={FPS}
         width={1080}

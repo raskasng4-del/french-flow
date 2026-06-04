@@ -186,7 +186,7 @@ export const MotDuJour: React.FC<{
               gap: 8,
             }}
           >
-          {words.map((w, i) => {
+          {words.map((w: string, i: number) => {
             const { opacity, y } = fadeSlide(cf, i * 8);
             return (
               <span
@@ -244,7 +244,7 @@ export const PhraseDuJour: React.FC<{
         </Sequence>
       )}
       <AbsoluteFill style={{ justifyContent: "center", alignItems: "center" }}>
-        <Card width="92%">
+        <Card style={{ width: "92%" }}>
           <div
             style={{
               fontSize: 32,
@@ -259,7 +259,7 @@ export const PhraseDuJour: React.FC<{
               gap: 8,
             }}
           >
-            {words.map((w, i) => {
+            {words.map((w: string, i: number) => {
               const { opacity, y } = fadeSlide(cf, i * 8);
               return (
                 <span
@@ -334,7 +334,7 @@ export const Grammaire: React.FC<{
             }}
           >
             {grammar.lines.map((line, i) => {
-              const entry = grammar.timeline[i];
+              const entry = grammar.timeline![i];
               if (!entry) return null;
               const isActive = i === activeIndex;
               const isReached = cf >= entry.startFrame;
@@ -453,7 +453,7 @@ export const Grammaire: React.FC<{
               gap: 10,
             }}
           >
-            {grammar.examples.map((ex, i) => (
+            {grammar.examples.map((ex: string, i: number) => (
               <div
                 key={i}
                 style={{
@@ -533,7 +533,7 @@ export const Quiz: React.FC<{
             width: "85%",
           }}
         >
-          {quiz.options.map((opt, i) => {
+          {quiz.options.map((opt: string, i: number) => {
             const isCorrect = i === quiz.correctIndex;
             const showAnswer = cf >= revealFrame;
             const prog = interpolate(Math.max(0, cf - i * 4), [0, 15], [0, 1], { extrapolateRight: "clamp" });
@@ -621,7 +621,7 @@ export const Conjugaison: React.FC<{
           {verb.infinitive}
         </div>
         <Card style={{ width: "75%", padding: 0 }}>
-          {pronouns.map((p, i) => {
+          {pronouns.map((p: string, i: number) => {
             const prog = interpolate(Math.max(0, cf - i * 4), [0, 15], [0, 1], { extrapolateRight: "clamp" });
             return (
               <div

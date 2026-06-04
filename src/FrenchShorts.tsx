@@ -2,8 +2,6 @@ import React from "react";
 import {
   AbsoluteFill,
   useCurrentFrame,
-  interpolate,
-  Easing,
   Sequence,
   spring,
   staticFile,

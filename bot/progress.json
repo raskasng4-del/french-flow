@@ -589,27 +589,21 @@
       "date": "2026-06-03"
     },
     {
-      "type": "Conjugaison",
-      "file": "day25_conjugaison.mp4",
-      "published": false,
-      "date": "2026-06-03"
-    },
-    {
       "type": "MotDuJour",
       "file": "day26_mot.mp4",
-      "published": false,
+      "published": true,
       "date": "2026-06-03"
-    },
-    {
-      "type": "Grammaire",
-      "file": "day26_grammaire.mp4",
-      "published": false,
-      "date": "2026-06-04"
     },
     {
       "type": "PhraseDuJour",
       "file": "day26_phrase.mp4",
-      "published": false,
+      "published": true,
+      "date": "2026-06-04"
+    },
+    {
+      "type": "Quiz",
+      "file": "day26_quiz.mp4",
+      "published": true,
       "date": "2026-06-04"
     }
   ],
@@ -923,12 +917,6 @@
         "last_reviewed": "2026-06-03",
         "interval": 1,
         "next_review": "2026-06-04"
-      },
-      "26": {
-        "first_seen": "2026-06-04",
-        "last_reviewed": "2026-06-04",
-        "interval": 1,
-        "next_review": "2026-06-05"
       }
     },
     "verbs": {
@@ -1057,16 +1045,10 @@
         "last_reviewed": "2026-06-02",
         "interval": 1,
         "next_review": "2026-06-03"
-      },
-      "40": {
-        "first_seen": "2026-06-03",
-        "last_reviewed": "2026-06-03",
-        "interval": 1,
-        "next_review": "2026-06-04"
       }
     }
   },
-  "curriculum_idx": 128,
+  "curriculum_idx": 129,
   "generated_count": 0,
   "used_combos": []
 }
