@@ -175,6 +175,7 @@ export const RemotionRoot: React.FC = () => {
           ],
           timeline: [{ wordIndex: 0, startFrame: 0, durationInFrames: 90, audioSrc: "audio/placeholder.mp3" }],
           totalDuration: 600,
+          bgMusicSrc: "bg-music.mp3",
         }}
       />
     </>
