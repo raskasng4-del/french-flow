@@ -609,67 +609,37 @@
     {
       "type": "Conjugaison",
       "file": "day26_conjugaison.mp4",
-      "published": false,
+      "published": true,
       "date": "2026-06-04"
     },
     {
       "type": "MotDuJour",
       "file": "day27_mot.mp4",
-      "published": false,
-      "date": "2026-06-04"
-    },
-    {
-      "type": "Grammaire",
-      "file": "day27_grammaire.mp4",
-      "published": false,
+      "published": true,
       "date": "2026-06-04"
     },
     {
       "type": "PhraseDuJour",
       "file": "day27_phrase.mp4",
-      "published": false,
+      "published": true,
       "date": "2026-06-04"
     },
     {
       "type": "Quiz",
       "file": "day27_quiz.mp4",
-      "published": false,
+      "published": true,
       "date": "2026-06-04"
     },
     {
       "type": "Conjugaison",
       "file": "day27_conjugaison.mp4",
-      "published": false,
+      "published": true,
       "date": "2026-06-04"
     },
     {
       "type": "MotDuJour",
       "file": "day28_mot.mp4",
-      "published": false,
-      "date": "2026-06-04"
-    },
-    {
-      "type": "Grammaire",
-      "file": "day28_grammaire.mp4",
-      "published": false,
-      "date": "2026-06-05"
-    },
-    {
-      "type": "PhraseDuJour",
-      "file": "day28_phrase.mp4",
-      "published": false,
-      "date": "2026-06-05"
-    },
-    {
-      "type": "Quiz",
-      "file": "day28_quiz.mp4",
-      "published": false,
-      "date": "2026-06-05"
-    },
-    {
-      "type": "Conjugaison",
-      "file": "day28_conjugaison.mp4",
-      "published": false,
+      "published": true,
       "date": "2026-06-05"
     }
   ],
@@ -863,12 +833,6 @@
         "next_review": "2026-06-05"
       },
       "55": {
-        "first_seen": "2026-06-04",
-        "last_reviewed": "2026-06-04",
-        "interval": 1,
-        "next_review": "2026-06-05"
-      },
-      "56": {
         "first_seen": "2026-06-05",
         "last_reviewed": "2026-06-05",
         "interval": 1,
@@ -1007,18 +971,6 @@
         "last_reviewed": "2026-06-03",
         "interval": 1,
         "next_review": "2026-06-04"
-      },
-      "27": {
-        "first_seen": "2026-06-04",
-        "last_reviewed": "2026-06-04",
-        "interval": 1,
-        "next_review": "2026-06-05"
-      },
-      "28": {
-        "first_seen": "2026-06-05",
-        "last_reviewed": "2026-06-05",
-        "interval": 1,
-        "next_review": "2026-06-06"
       }
     },
     "verbs": {
@@ -1036,9 +988,9 @@
       },
       "3": {
         "first_seen": "2026-05-25",
-        "last_reviewed": "2026-06-05",
-        "interval": 2,
-        "next_review": "2026-06-07"
+        "last_reviewed": "2026-05-25",
+        "interval": 1,
+        "next_review": "2026-05-26"
       },
       "4": {
         "first_seen": "2026-05-25",
@@ -1156,7 +1108,7 @@
       }
     }
   },
-  "curriculum_idx": 140,
+  "curriculum_idx": 136,
   "generated_count": 0,
   "used_combos": []
 }
