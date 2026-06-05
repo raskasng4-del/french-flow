@@ -647,9 +647,15 @@
       "file": "day28_mot.mp4",
       "published": false,
       "date": "2026-06-04"
+    },
+    {
+      "type": "Grammaire",
+      "file": "day28_grammaire.mp4",
+      "published": false,
+      "date": "2026-06-05"
     }
   ],
-  "last_publish_date": "2026-06-04",
+  "last_publish_date": "2026-06-05",
   "spaced_repetition": {
     "words": {
       "2": {
@@ -983,6 +989,12 @@
         "last_reviewed": "2026-06-04",
         "interval": 1,
         "next_review": "2026-06-05"
+      },
+      "28": {
+        "first_seen": "2026-06-05",
+        "last_reviewed": "2026-06-05",
+        "interval": 1,
+        "next_review": "2026-06-06"
       }
     },
     "verbs": {
@@ -1120,7 +1132,7 @@
       }
     }
   },
-  "curriculum_idx": 136,
+  "curriculum_idx": 137,
   "generated_count": 0,
   "used_combos": []
 }
