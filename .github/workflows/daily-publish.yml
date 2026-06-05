@@ -12,6 +12,7 @@ env:
   FB_ACCESS_TOKEN: ${{ secrets.FB_ACCESS_TOKEN }}
   PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
   ZEN_API_KEY: ${{ secrets.ZEN_API_KEY }}
+  GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
   REMOTION_BROWSER: google-chrome-stable
 
 jobs:
