@@ -9,16 +9,11 @@ def build_ssml(text, voice, rate="+0%", pitch="+0Hz", style="default"):
     prosody_close = "</prosody>"
 
     if style == "explanation":
-        # Slower, with emphasis on key terms and breaks between sentences
+        # Slower with natural breaks between sentences
         inner = ""
         for i, p in enumerate(parts):
             if p:
-                em = re.sub(
-                    r"\b(le|la|les|un|une|des|je|tu|il|elle|nous|vous|ils|elles|avoir|être)\b",
-                    r'<emphasis level="moderate">\1</emphasis>',
-                    p,
-                )
-                inner += em
+                inner += p
                 if i < len(parts) - 1:
                     inner += '<break time="400ms"/>'
         content = f"{prosody_open}{inner}{prosody_close}"
