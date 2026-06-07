@@ -2,46 +2,44 @@ import sys, asyncio, re
 import edge_tts
 
 
+def escape_xml(text):
+    return text.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;").replace('"', "&quot;")
+
 def build_ssml(text, voice, rate="+0%", pitch="+0Hz", style="default"):
-    """Wrap text in SSML for natural human-like speech."""
     parts = re.split(r"(?<=[.!?])\s+", text.strip())
+    safe = escape_xml(text)
     prosody_open = f'<prosody rate="{rate}" pitch="{pitch}">'
     prosody_close = "</prosody>"
 
     if style == "explanation":
-        # Slower with natural breaks between sentences
         inner = ""
         for i, p in enumerate(parts):
             if p:
-                inner += p
+                inner += escape_xml(p)
                 if i < len(parts) - 1:
                     inner += '<break time="400ms"/>'
         content = f"{prosody_open}{inner}{prosody_close}"
 
     elif style == "example":
-        # Normal speed, short breaks
         inner = ""
         for i, p in enumerate(parts):
             if p:
-                inner += p
+                inner += escape_xml(p)
                 if i < len(parts) - 1:
                     inner += '<break time="200ms"/>'
         content = f'{prosody_open}{inner}{prosody_close}'
 
     elif style == "title":
-        # Slightly higher pitch, clear
-        content = f'<prosody rate="{rate}" pitch="+8Hz">{text}</prosody>'
+        content = f'<prosody rate="{rate}" pitch="+8Hz">{safe}</prosody>'
 
     elif style == "question":
-        # Slightly rising intonation
-        content = f'<prosody rate="+5%" pitch="+5Hz">{text}</prosody>'
+        content = f'<prosody rate="+5%" pitch="+5Hz">{safe}</prosody>'
 
     else:
-        # Default: just natural breaks
         inner = ""
         for i, p in enumerate(parts):
             if p:
-                inner += p
+                inner += escape_xml(p)
                 if i < len(parts) - 1:
                     inner += '<break time="300ms"/>'
         content = f"{prosody_open}{inner}{prosody_close}"
@@ -60,7 +58,7 @@ async def main():
         voices = ["fr-FR-VivienneMultilingualNeural", "fr-FR-RemyMultilingualNeural"]
         voice = voices[hash(raw) % len(voices)]
     ssml = build_ssml(raw, voice, rate, pitch, style)
-    tts = edge_tts.Communicate(ssml, voice, rate="+0%", pitch="+0Hz")
+    tts = edge_tts.Communicate(ssml)
     await tts.save(outpath)
 
 
