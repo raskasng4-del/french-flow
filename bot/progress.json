@@ -719,9 +719,15 @@
       "file": "day30_quiz.mp4",
       "published": false,
       "date": "2026-06-08"
+    },
+    {
+      "type": "Conjugaison",
+      "file": "day30_conjugaison.mp4",
+      "published": false,
+      "date": "2026-06-09"
     }
   ],
-  "last_publish_date": "2026-06-08",
+  "last_publish_date": "2026-06-09",
   "spaced_repetition": {
     "words": {
       "2": {
@@ -1120,9 +1126,9 @@
       },
       "5": {
         "first_seen": "2026-05-25",
-        "last_reviewed": "2026-05-25",
-        "interval": 1,
-        "next_review": "2026-05-26"
+        "last_reviewed": "2026-06-09",
+        "interval": 2,
+        "next_review": "2026-06-11"
       },
       "6": {
         "first_seen": "2026-05-25",
@@ -1228,7 +1234,7 @@
       }
     }
   },
-  "curriculum_idx": 149,
+  "curriculum_idx": 150,
   "generated_count": 0,
   "used_combos": []
 }
