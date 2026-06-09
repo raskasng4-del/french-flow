@@ -743,6 +743,12 @@
       "file": "day31_phrase.mp4",
       "published": false,
       "date": "2026-06-09"
+    },
+    {
+      "type": "Quiz",
+      "file": "day31_quiz.mp4",
+      "published": false,
+      "date": "2026-06-09"
     }
   ],
   "last_publish_date": "2026-06-09",
@@ -1264,7 +1270,7 @@
       }
     }
   },
-  "curriculum_idx": 153,
+  "curriculum_idx": 154,
   "generated_count": 0,
   "used_combos": []
 }
