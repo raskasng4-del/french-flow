@@ -803,6 +803,12 @@
       "file": "day33_phrase.mp4",
       "published": false,
       "date": "2026-06-10"
+    },
+    {
+      "type": "Quiz",
+      "file": "day33_quiz.mp4",
+      "published": false,
+      "date": "2026-06-10"
     }
   ],
   "last_publish_date": "2026-06-10",
@@ -1348,7 +1354,7 @@
       }
     }
   },
-  "curriculum_idx": 163,
+  "curriculum_idx": 164,
   "generated_count": 0,
   "used_combos": []
 }
