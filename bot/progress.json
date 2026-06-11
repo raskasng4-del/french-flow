@@ -815,9 +815,15 @@
       "file": "day33_conjugaison.mp4",
       "published": false,
       "date": "2026-06-10"
+    },
+    {
+      "type": "MotDuJour",
+      "file": "day34_mot.mp4",
+      "published": false,
+      "date": "2026-06-11"
     }
   ],
-  "last_publish_date": "2026-06-10",
+  "last_publish_date": "2026-06-11",
   "spaced_repetition": {
     "words": {
       "2": {
@@ -1077,6 +1083,12 @@
         "last_reviewed": "2026-06-10",
         "interval": 1,
         "next_review": "2026-06-11"
+      },
+      "67": {
+        "first_seen": "2026-06-11",
+        "last_reviewed": "2026-06-11",
+        "interval": 1,
+        "next_review": "2026-06-12"
       }
     },
     "grammar": {
@@ -1360,7 +1372,7 @@
       }
     }
   },
-  "curriculum_idx": 165,
+  "curriculum_idx": 166,
   "generated_count": 0,
   "used_combos": []
 }
