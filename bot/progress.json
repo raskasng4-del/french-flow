@@ -959,6 +959,12 @@
       "file": "day38_quiz.mp4",
       "published": false,
       "date": "2026-06-13"
+    },
+    {
+      "type": "Conjugaison",
+      "file": "day38_conjugaison.mp4",
+      "published": false,
+      "date": "2026-06-13"
     }
   ],
   "last_publish_date": "2026-06-13",
@@ -1504,9 +1510,9 @@
       },
       "13": {
         "first_seen": "2026-05-29",
-        "last_reviewed": "2026-05-29",
-        "interval": 1,
-        "next_review": "2026-05-30"
+        "last_reviewed": "2026-06-13",
+        "interval": 2,
+        "next_review": "2026-06-15"
       },
       "14": {
         "first_seen": "2026-05-29",
@@ -1564,7 +1570,7 @@
       }
     }
   },
-  "curriculum_idx": 189,
+  "curriculum_idx": 190,
   "generated_count": 0,
   "used_combos": []
 }
