@@ -965,6 +965,12 @@
       "file": "day38_conjugaison.mp4",
       "published": false,
       "date": "2026-06-13"
+    },
+    {
+      "type": "MotDuJour",
+      "file": "day39_mot.mp4",
+      "published": false,
+      "date": "2026-06-13"
     }
   ],
   "last_publish_date": "2026-06-13",
@@ -1287,6 +1293,12 @@
         "last_reviewed": "2026-06-13",
         "interval": 1,
         "next_review": "2026-06-14"
+      },
+      "77": {
+        "first_seen": "2026-06-13",
+        "last_reviewed": "2026-06-13",
+        "interval": 1,
+        "next_review": "2026-06-14"
       }
     },
     "grammar": {
@@ -1570,7 +1582,7 @@
       }
     }
   },
-  "curriculum_idx": 190,
+  "curriculum_idx": 191,
   "generated_count": 0,
   "used_combos": []
 }
