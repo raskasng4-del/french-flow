@@ -983,6 +983,12 @@
       "file": "day39_phrase.mp4",
       "published": false,
       "date": "2026-06-14"
+    },
+    {
+      "type": "Quiz",
+      "file": "day39_quiz.mp4",
+      "published": false,
+      "date": "2026-06-14"
     }
   ],
   "last_publish_date": "2026-06-14",
@@ -1600,7 +1606,7 @@
       }
     }
   },
-  "curriculum_idx": 193,
+  "curriculum_idx": 194,
   "generated_count": 0,
   "used_combos": []
 }
