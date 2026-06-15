@@ -1043,6 +1043,12 @@
       "file": "day41_phrase.mp4",
       "published": false,
       "date": "2026-06-15"
+    },
+    {
+      "type": "Quiz",
+      "file": "day41_quiz.mp4",
+      "published": false,
+      "date": "2026-06-15"
     }
   ],
   "last_publish_date": "2026-06-15",
@@ -1684,7 +1690,7 @@
       }
     }
   },
-  "curriculum_idx": 203,
+  "curriculum_idx": 204,
   "generated_count": 0,
   "used_combos": []
 }
