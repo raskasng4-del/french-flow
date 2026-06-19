@@ -1217,6 +1217,12 @@
       "file": "day47_grammaire.mp4",
       "published": false,
       "date": "2026-06-19"
+    },
+    {
+      "type": "PhraseDuJour",
+      "file": "day47_phrase.mp4",
+      "published": false,
+      "date": "2026-06-19"
     }
   ],
   "last_publish_date": "2026-06-19",
@@ -1641,6 +1647,12 @@
         "last_reviewed": "2026-06-19",
         "interval": 1,
         "next_review": "2026-06-20"
+      },
+      "94": {
+        "first_seen": "2026-06-19",
+        "last_reviewed": "2026-06-19",
+        "interval": 1,
+        "next_review": "2026-06-20"
       }
     },
     "grammar": {
@@ -1924,7 +1936,7 @@
       }
     }
   },
-  "curriculum_idx": 232,
+  "curriculum_idx": 233,
   "generated_count": 0,
   "used_combos": []
 }
