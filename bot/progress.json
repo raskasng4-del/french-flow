@@ -1283,6 +1283,12 @@
       "file": "day49_phrase.mp4",
       "published": false,
       "date": "2026-06-20"
+    },
+    {
+      "type": "Quiz",
+      "file": "day49_quiz.mp4",
+      "published": false,
+      "date": "2026-06-20"
     }
   ],
   "last_publish_date": "2026-06-20",
@@ -2026,7 +2032,7 @@
       }
     }
   },
-  "curriculum_idx": 243,
+  "curriculum_idx": 244,
   "generated_count": 0,
   "used_combos": []
 }
