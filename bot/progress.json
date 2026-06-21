@@ -1325,6 +1325,12 @@
       "file": "day50_conjugaison.mp4",
       "published": false,
       "date": "2026-06-21"
+    },
+    {
+      "type": "MotDuJour",
+      "file": "day51_mot.mp4",
+      "published": false,
+      "date": "2026-06-21"
     }
   ],
   "last_publish_date": "2026-06-21",
@@ -1791,6 +1797,12 @@
         "last_reviewed": "2026-06-21",
         "interval": 1,
         "next_review": "2026-06-22"
+      },
+      "101": {
+        "first_seen": "2026-06-21",
+        "last_reviewed": "2026-06-21",
+        "interval": 1,
+        "next_review": "2026-06-22"
       }
     },
     "grammar": {
@@ -2092,7 +2104,7 @@
       }
     }
   },
-  "curriculum_idx": 250,
+  "curriculum_idx": 251,
   "generated_count": 0,
   "used_combos": []
 }
