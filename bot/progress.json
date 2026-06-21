@@ -1349,6 +1349,12 @@
       "file": "day51_quiz.mp4",
       "published": false,
       "date": "2026-06-21"
+    },
+    {
+      "type": "Conjugaison",
+      "file": "day51_conjugaison.mp4",
+      "published": false,
+      "date": "2026-06-21"
     }
   ],
   "last_publish_date": "2026-06-21",
@@ -1984,9 +1990,9 @@
     "verbs": {
       "1": {
         "first_seen": "2026-06-04",
-        "last_reviewed": "2026-06-04",
-        "interval": 1,
-        "next_review": "2026-06-05"
+        "last_reviewed": "2026-06-21",
+        "interval": 2,
+        "next_review": "2026-06-23"
       },
       "2": {
         "first_seen": "2026-05-24",
@@ -2134,7 +2140,7 @@
       }
     }
   },
-  "curriculum_idx": 254,
+  "curriculum_idx": 255,
   "generated_count": 0,
   "used_combos": []
 }
