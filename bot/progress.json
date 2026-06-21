@@ -1313,6 +1313,12 @@
       "file": "day50_phrase.mp4",
       "published": false,
       "date": "2026-06-21"
+    },
+    {
+      "type": "Quiz",
+      "file": "day50_quiz.mp4",
+      "published": false,
+      "date": "2026-06-21"
     }
   ],
   "last_publish_date": "2026-06-21",
@@ -2074,7 +2080,7 @@
       }
     }
   },
-  "curriculum_idx": 248,
+  "curriculum_idx": 249,
   "generated_count": 0,
   "used_combos": []
 }
