@@ -1373,6 +1373,12 @@
       "file": "day52_phrase.mp4",
       "published": false,
       "date": "2026-06-22"
+    },
+    {
+      "type": "Quiz",
+      "file": "day52_quiz.mp4",
+      "published": false,
+      "date": "2026-06-22"
     }
   ],
   "last_publish_date": "2026-06-22",
@@ -2170,7 +2176,7 @@
       }
     }
   },
-  "curriculum_idx": 258,
+  "curriculum_idx": 259,
   "generated_count": 0,
   "used_combos": []
 }
