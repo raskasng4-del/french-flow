@@ -1439,6 +1439,12 @@
       "file": "day54_quiz.mp4",
       "published": false,
       "date": "2026-06-23"
+    },
+    {
+      "type": "Conjugaison",
+      "file": "day54_conjugaison.mp4",
+      "published": false,
+      "date": "2026-06-23"
     }
   ],
   "last_publish_date": "2026-06-23",
@@ -2122,9 +2128,9 @@
       },
       "4": {
         "first_seen": "2026-05-25",
-        "last_reviewed": "2026-06-08",
-        "interval": 2,
-        "next_review": "2026-06-10"
+        "last_reviewed": "2026-06-23",
+        "interval": 4,
+        "next_review": "2026-06-27"
       },
       "5": {
         "first_seen": "2026-05-25",
@@ -2254,7 +2260,7 @@
       }
     }
   },
-  "curriculum_idx": 269,
+  "curriculum_idx": 270,
   "generated_count": 0,
   "used_combos": []
 }
