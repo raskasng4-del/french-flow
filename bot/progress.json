@@ -1433,6 +1433,12 @@
       "file": "day54_phrase.mp4",
       "published": false,
       "date": "2026-06-23"
+    },
+    {
+      "type": "Quiz",
+      "file": "day54_quiz.mp4",
+      "published": false,
+      "date": "2026-06-23"
     }
   ],
   "last_publish_date": "2026-06-23",
@@ -2248,7 +2254,7 @@
       }
     }
   },
-  "curriculum_idx": 268,
+  "curriculum_idx": 269,
   "generated_count": 0,
   "used_combos": []
 }
