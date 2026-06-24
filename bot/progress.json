@@ -1493,6 +1493,12 @@
       "file": "day56_phrase.mp4",
       "published": false,
       "date": "2026-06-24"
+    },
+    {
+      "type": "Quiz",
+      "file": "day56_quiz.mp4",
+      "published": false,
+      "date": "2026-06-24"
     }
   ],
   "last_publish_date": "2026-06-24",
@@ -2320,7 +2326,7 @@
       }
     }
   },
-  "curriculum_idx": 278,
+  "curriculum_idx": 279,
   "generated_count": 0,
   "used_combos": []
 }
