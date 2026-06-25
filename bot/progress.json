@@ -1499,9 +1499,15 @@
       "file": "day56_quiz.mp4",
       "published": false,
       "date": "2026-06-24"
+    },
+    {
+      "type": "Conjugaison",
+      "file": "day56_conjugaison.mp4",
+      "published": false,
+      "date": "2026-06-25"
     }
   ],
-  "last_publish_date": "2026-06-24",
+  "last_publish_date": "2026-06-25",
   "spaced_repetition": {
     "words": {
       "1": {
@@ -2206,9 +2212,9 @@
       },
       "6": {
         "first_seen": "2026-05-25",
-        "last_reviewed": "2026-06-09",
-        "interval": 2,
-        "next_review": "2026-06-11"
+        "last_reviewed": "2026-06-25",
+        "interval": 4,
+        "next_review": "2026-06-29"
       },
       "7": {
         "first_seen": "2026-05-26",
@@ -2326,7 +2332,7 @@
       }
     }
   },
-  "curriculum_idx": 279,
+  "curriculum_idx": 280,
   "generated_count": 0,
   "used_combos": []
 }
