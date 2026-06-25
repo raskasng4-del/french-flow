@@ -1523,6 +1523,12 @@
       "file": "day57_phrase.mp4",
       "published": false,
       "date": "2026-06-25"
+    },
+    {
+      "type": "Quiz",
+      "file": "day57_quiz.mp4",
+      "published": false,
+      "date": "2026-06-25"
     }
   ],
   "last_publish_date": "2026-06-25",
@@ -2356,7 +2362,7 @@
       }
     }
   },
-  "curriculum_idx": 283,
+  "curriculum_idx": 284,
   "generated_count": 0,
   "used_combos": []
 }
