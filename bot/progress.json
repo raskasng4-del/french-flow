@@ -1595,6 +1595,12 @@
       "file": "day59_conjugaison.mp4",
       "published": false,
       "date": "2026-06-26"
+    },
+    {
+      "type": "MotDuJour",
+      "file": "day60_mot.mp4",
+      "published": false,
+      "date": "2026-06-26"
     }
   ],
   "last_publish_date": "2026-06-26",
@@ -1695,6 +1701,12 @@
         "last_reviewed": "2026-06-26",
         "interval": 2,
         "next_review": "2026-06-28"
+      },
+      "17": {
+        "first_seen": "2026-06-26",
+        "last_reviewed": "2026-06-26",
+        "interval": 1,
+        "next_review": "2026-06-27"
       },
       "18": {
         "first_seen": "2026-05-27",
@@ -2440,7 +2452,7 @@
       }
     }
   },
-  "curriculum_idx": 295,
+  "curriculum_idx": 296,
   "generated_count": 0,
   "used_combos": []
 }
