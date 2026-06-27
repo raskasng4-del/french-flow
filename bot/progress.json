@@ -1607,9 +1607,15 @@
       "file": "day60_grammaire.mp4",
       "published": false,
       "date": "2026-06-26"
+    },
+    {
+      "type": "PhraseDuJour",
+      "file": "day60_phrase.mp4",
+      "published": false,
+      "date": "2026-06-27"
     }
   ],
-  "last_publish_date": "2026-06-26",
+  "last_publish_date": "2026-06-27",
   "spaced_repetition": {
     "words": {
       "1": {
@@ -1716,9 +1722,9 @@
       },
       "18": {
         "first_seen": "2026-05-27",
-        "last_reviewed": "2026-05-27",
-        "interval": 1,
-        "next_review": "2026-05-28"
+        "last_reviewed": "2026-06-27",
+        "interval": 2,
+        "next_review": "2026-06-29"
       },
       "20": {
         "first_seen": "2026-05-27",
@@ -2458,7 +2464,7 @@
       }
     }
   },
-  "curriculum_idx": 297,
+  "curriculum_idx": 298,
   "generated_count": 0,
   "used_combos": []
 }
