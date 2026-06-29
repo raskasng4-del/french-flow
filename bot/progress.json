@@ -1763,9 +1763,15 @@
       "file": "day65_phrase.mp4",
       "published": false,
       "date": "2026-06-28"
+    },
+    {
+      "type": "Quiz",
+      "file": "day65_quiz.mp4",
+      "published": false,
+      "date": "2026-06-29"
     }
   ],
-  "last_publish_date": "2026-06-28",
+  "last_publish_date": "2026-06-29",
   "spaced_repetition": {
     "words": {
       "1": {
@@ -2644,7 +2650,7 @@
       }
     }
   },
-  "curriculum_idx": 323,
+  "curriculum_idx": 324,
   "generated_count": 0,
   "used_combos": []
 }
