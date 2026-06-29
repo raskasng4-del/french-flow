@@ -1793,6 +1793,12 @@
       "file": "day66_phrase.mp4",
       "published": false,
       "date": "2026-06-29"
+    },
+    {
+      "type": "Quiz",
+      "file": "day66_quiz.mp4",
+      "published": false,
+      "date": "2026-06-29"
     }
   ],
   "last_publish_date": "2026-06-29",
@@ -2680,7 +2686,7 @@
       }
     }
   },
-  "curriculum_idx": 328,
+  "curriculum_idx": 329,
   "generated_count": 0,
   "used_combos": []
 }
