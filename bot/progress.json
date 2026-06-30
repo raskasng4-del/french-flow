@@ -1853,6 +1853,12 @@
       "file": "day68_phrase.mp4",
       "published": false,
       "date": "2026-06-30"
+    },
+    {
+      "type": "Quiz",
+      "file": "day68_quiz.mp4",
+      "published": false,
+      "date": "2026-06-30"
     }
   ],
   "last_publish_date": "2026-06-30",
@@ -2752,7 +2758,7 @@
       }
     }
   },
-  "curriculum_idx": 338,
+  "curriculum_idx": 339,
   "generated_count": 0,
   "used_combos": []
 }
