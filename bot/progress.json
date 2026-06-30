@@ -1811,9 +1811,15 @@
       "file": "day67_mot.mp4",
       "published": false,
       "date": "2026-06-29"
+    },
+    {
+      "type": "Grammaire",
+      "file": "day67_grammaire.mp4",
+      "published": false,
+      "date": "2026-06-30"
     }
   ],
-  "last_publish_date": "2026-06-29",
+  "last_publish_date": "2026-06-30",
   "spaced_repetition": {
     "words": {
       "1": {
@@ -2444,9 +2450,9 @@
       },
       "11": {
         "first_seen": "2026-05-27",
-        "last_reviewed": "2026-06-14",
-        "interval": 2,
-        "next_review": "2026-06-16"
+        "last_reviewed": "2026-06-30",
+        "interval": 4,
+        "next_review": "2026-07-04"
       },
       "12": {
         "first_seen": "2026-05-28",
@@ -2704,7 +2710,7 @@
       }
     }
   },
-  "curriculum_idx": 331,
+  "curriculum_idx": 332,
   "generated_count": 0,
   "used_combos": []
 }
