@@ -1883,6 +1883,12 @@
       "file": "day69_phrase.mp4",
       "published": false,
       "date": "2026-07-01"
+    },
+    {
+      "type": "Quiz",
+      "file": "day69_quiz.mp4",
+      "published": false,
+      "date": "2026-07-01"
     }
   ],
   "last_publish_date": "2026-07-01",
@@ -2788,7 +2794,7 @@
       }
     }
   },
-  "curriculum_idx": 343,
+  "curriculum_idx": 344,
   "generated_count": 0,
   "used_combos": []
 }
