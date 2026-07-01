@@ -1907,6 +1907,12 @@
       "file": "day70_grammaire.mp4",
       "published": false,
       "date": "2026-07-01"
+    },
+    {
+      "type": "PhraseDuJour",
+      "file": "day70_phrase.mp4",
+      "published": false,
+      "date": "2026-07-01"
     }
   ],
   "last_publish_date": "2026-07-01",
@@ -2136,9 +2142,9 @@
       },
       "38": {
         "first_seen": "2026-05-31",
-        "last_reviewed": "2026-05-31",
-        "interval": 1,
-        "next_review": "2026-06-01"
+        "last_reviewed": "2026-07-01",
+        "interval": 2,
+        "next_review": "2026-07-03"
       },
       "40": {
         "first_seen": "2026-05-31",
@@ -2818,7 +2824,7 @@
       }
     }
   },
-  "curriculum_idx": 347,
+  "curriculum_idx": 348,
   "generated_count": 0,
   "used_combos": []
 }
