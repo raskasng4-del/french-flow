@@ -1943,6 +1943,12 @@
       "file": "day71_phrase.mp4",
       "published": false,
       "date": "2026-07-02"
+    },
+    {
+      "type": "Quiz",
+      "file": "day71_quiz.mp4",
+      "published": false,
+      "date": "2026-07-02"
     }
   ],
   "last_publish_date": "2026-07-02",
@@ -2860,7 +2866,7 @@
       }
     }
   },
-  "curriculum_idx": 353,
+  "curriculum_idx": 354,
   "generated_count": 0,
   "used_combos": []
 }
