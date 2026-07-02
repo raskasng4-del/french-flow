@@ -1967,6 +1967,12 @@
       "file": "day72_grammaire.mp4",
       "published": false,
       "date": "2026-07-02"
+    },
+    {
+      "type": "PhraseDuJour",
+      "file": "day72_phrase.mp4",
+      "published": false,
+      "date": "2026-07-02"
     }
   ],
   "last_publish_date": "2026-07-02",
@@ -2220,9 +2226,9 @@
       },
       "42": {
         "first_seen": "2026-06-01",
-        "last_reviewed": "2026-06-01",
-        "interval": 1,
-        "next_review": "2026-06-02"
+        "last_reviewed": "2026-07-02",
+        "interval": 2,
+        "next_review": "2026-07-04"
       },
       "44": {
         "first_seen": "2026-06-01",
@@ -2890,7 +2896,7 @@
       }
     }
   },
-  "curriculum_idx": 357,
+  "curriculum_idx": 358,
   "generated_count": 0,
   "used_combos": []
 }
