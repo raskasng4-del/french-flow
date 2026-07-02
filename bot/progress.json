@@ -1931,6 +1931,12 @@
       "file": "day71_mot.mp4",
       "published": false,
       "date": "2026-07-02"
+    },
+    {
+      "type": "Grammaire",
+      "file": "day71_grammaire.mp4",
+      "published": false,
+      "date": "2026-07-02"
     }
   ],
   "last_publish_date": "2026-07-02",
@@ -2612,9 +2618,9 @@
       },
       "15": {
         "first_seen": "2026-05-30",
-        "last_reviewed": "2026-06-16",
-        "interval": 2,
-        "next_review": "2026-06-18"
+        "last_reviewed": "2026-07-02",
+        "interval": 4,
+        "next_review": "2026-07-06"
       },
       "16": {
         "first_seen": "2026-05-30",
@@ -2848,7 +2854,7 @@
       }
     }
   },
-  "curriculum_idx": 351,
+  "curriculum_idx": 352,
   "generated_count": 0,
   "used_combos": []
 }
