@@ -1913,9 +1913,15 @@
       "file": "day70_phrase.mp4",
       "published": false,
       "date": "2026-07-01"
+    },
+    {
+      "type": "Quiz",
+      "file": "day70_quiz.mp4",
+      "published": false,
+      "date": "2026-07-02"
     }
   ],
-  "last_publish_date": "2026-07-01",
+  "last_publish_date": "2026-07-02",
   "spaced_repetition": {
     "words": {
       "1": {
@@ -2824,7 +2830,7 @@
       }
     }
   },
-  "curriculum_idx": 348,
+  "curriculum_idx": 349,
   "generated_count": 0,
   "used_combos": []
 }
