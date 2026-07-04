@@ -2069,6 +2069,12 @@
       "file": "day75_quiz.mp4",
       "published": false,
       "date": "2026-07-04"
+    },
+    {
+      "type": "Conjugaison",
+      "file": "day75_conjugaison.mp4",
+      "published": false,
+      "date": "2026-07-04"
     }
   ],
   "last_publish_date": "2026-07-04",
@@ -3004,13 +3010,13 @@
       },
       "40": {
         "first_seen": "2026-06-21",
-        "last_reviewed": "2026-06-21",
-        "interval": 1,
-        "next_review": "2026-06-22"
+        "last_reviewed": "2026-07-04",
+        "interval": 2,
+        "next_review": "2026-07-06"
       }
     }
   },
-  "curriculum_idx": 374,
+  "curriculum_idx": 375,
   "generated_count": 0,
   "used_combos": []
 }
