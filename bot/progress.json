@@ -2099,6 +2099,12 @@
       "file": "day76_quiz.mp4",
       "published": false,
       "date": "2026-07-04"
+    },
+    {
+      "type": "Conjugaison",
+      "file": "day76_conjugaison.mp4",
+      "published": false,
+      "date": "2026-07-04"
     }
   ],
   "last_publish_date": "2026-07-04",
@@ -2890,9 +2896,9 @@
     "verbs": {
       "1": {
         "first_seen": "2026-06-04",
-        "last_reviewed": "2026-06-21",
-        "interval": 2,
-        "next_review": "2026-06-23"
+        "last_reviewed": "2026-07-04",
+        "interval": 4,
+        "next_review": "2026-07-08"
       },
       "2": {
         "first_seen": "2026-05-24",
@@ -3040,7 +3046,7 @@
       }
     }
   },
-  "curriculum_idx": 379,
+  "curriculum_idx": 380,
   "generated_count": 0,
   "used_combos": []
 }
