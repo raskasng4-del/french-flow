@@ -2153,6 +2153,12 @@
       "file": "day78_phrase.mp4",
       "published": false,
       "date": "2026-07-05"
+    },
+    {
+      "type": "Quiz",
+      "file": "day78_quiz.mp4",
+      "published": false,
+      "date": "2026-07-05"
     }
   ],
   "last_publish_date": "2026-07-05",
@@ -3094,7 +3100,7 @@
       }
     }
   },
-  "curriculum_idx": 388,
+  "curriculum_idx": 389,
   "generated_count": 0,
   "used_combos": []
 }
