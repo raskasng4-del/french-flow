@@ -2243,6 +2243,12 @@
       "file": "day81_phrase.mp4",
       "published": false,
       "date": "2026-07-06"
+    },
+    {
+      "type": "Quiz",
+      "file": "day81_quiz.mp4",
+      "published": false,
+      "date": "2026-07-06"
     }
   ],
   "last_publish_date": "2026-07-06",
@@ -3184,7 +3190,7 @@
       }
     }
   },
-  "curriculum_idx": 403,
+  "curriculum_idx": 404,
   "generated_count": 0,
   "used_combos": []
 }
