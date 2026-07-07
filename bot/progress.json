@@ -2273,9 +2273,15 @@
       "file": "day82_phrase.mp4",
       "published": false,
       "date": "2026-07-06"
+    },
+    {
+      "type": "Quiz",
+      "file": "day82_quiz.mp4",
+      "published": false,
+      "date": "2026-07-07"
     }
   ],
-  "last_publish_date": "2026-07-06",
+  "last_publish_date": "2026-07-07",
   "spaced_repetition": {
     "words": {
       "1": {
@@ -3214,7 +3220,7 @@
       }
     }
   },
-  "curriculum_idx": 408,
+  "curriculum_idx": 409,
   "generated_count": 0,
   "used_combos": []
 }
