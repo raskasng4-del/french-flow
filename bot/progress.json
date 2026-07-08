@@ -2363,6 +2363,12 @@
       "file": "day85_phrase.mp4",
       "published": false,
       "date": "2026-07-08"
+    },
+    {
+      "type": "Quiz",
+      "file": "day85_quiz.mp4",
+      "published": false,
+      "date": "2026-07-08"
     }
   ],
   "last_publish_date": "2026-07-08",
@@ -3304,7 +3310,7 @@
       }
     }
   },
-  "curriculum_idx": 423,
+  "curriculum_idx": 424,
   "generated_count": 0,
   "used_combos": []
 }
