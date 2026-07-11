@@ -2561,6 +2561,12 @@
       "file": "day92_phrase.mp4",
       "published": false,
       "date": "2026-07-11"
+    },
+    {
+      "type": "Quiz",
+      "file": "day92_quiz.mp4",
+      "published": false,
+      "date": "2026-07-11"
     }
   ],
   "last_publish_date": "2026-07-11",
@@ -3538,7 +3544,7 @@
       }
     }
   },
-  "curriculum_idx": 458,
+  "curriculum_idx": 459,
   "generated_count": 0,
   "used_combos": []
 }
