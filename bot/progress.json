@@ -2699,9 +2699,15 @@
       "file": "day97_mot.mp4",
       "published": false,
       "date": "2026-07-12"
+    },
+    {
+      "type": "Grammaire",
+      "file": "day97_grammaire.mp4",
+      "published": false,
+      "date": "2026-07-13"
     }
   ],
-  "last_publish_date": "2026-07-12",
+  "last_publish_date": "2026-07-13",
   "spaced_repetition": {
     "words": {
       "1": {
@@ -3593,6 +3599,12 @@
         "last_reviewed": "2026-07-12",
         "interval": 1,
         "next_review": "2026-07-13"
+      },
+      "35": {
+        "first_seen": "2026-07-13",
+        "last_reviewed": "2026-07-13",
+        "interval": 1,
+        "next_review": "2026-07-14"
       }
     },
     "verbs": {
@@ -3784,7 +3796,7 @@
       }
     }
   },
-  "curriculum_idx": 481,
+  "curriculum_idx": 482,
   "generated_count": 0,
   "used_combos": []
 }
