@@ -2741,6 +2741,12 @@
       "file": "day98_phrase.mp4",
       "published": false,
       "date": "2026-07-13"
+    },
+    {
+      "type": "Quiz",
+      "file": "day98_quiz.mp4",
+      "published": false,
+      "date": "2026-07-13"
     }
   ],
   "last_publish_date": "2026-07-13",
@@ -3862,7 +3868,7 @@
       }
     }
   },
-  "curriculum_idx": 488,
+  "curriculum_idx": 489,
   "generated_count": 0,
   "used_combos": []
 }
