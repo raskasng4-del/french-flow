@@ -2855,6 +2855,12 @@
       "file": "day102_grammaire.mp4",
       "published": false,
       "date": "2026-07-15"
+    },
+    {
+      "type": "PhraseDuJour",
+      "file": "day102_phrase.mp4",
+      "published": false,
+      "date": "2026-07-15"
     }
   ],
   "last_publish_date": "2026-07-15",
@@ -3603,6 +3609,12 @@
         "last_reviewed": "2026-07-15",
         "interval": 1,
         "next_review": "2026-07-16"
+      },
+      "126": {
+        "first_seen": "2026-07-15",
+        "last_reviewed": "2026-07-15",
+        "interval": 1,
+        "next_review": "2026-07-16"
       }
     },
     "grammar": {
@@ -4066,7 +4078,7 @@
       }
     }
   },
-  "curriculum_idx": 507,
+  "curriculum_idx": 508,
   "generated_count": 0,
   "used_combos": []
 }
