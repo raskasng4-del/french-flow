@@ -2921,9 +2921,15 @@
       "file": "day104_phrase.mp4",
       "published": false,
       "date": "2026-07-15"
+    },
+    {
+      "type": "Quiz",
+      "file": "day104_quiz.mp4",
+      "published": false,
+      "date": "2026-07-16"
     }
   ],
-  "last_publish_date": "2026-07-15",
+  "last_publish_date": "2026-07-16",
   "spaced_repetition": {
     "words": {
       "1": {
@@ -3696,9 +3702,9 @@
       },
       "130": {
         "first_seen": "2026-07-15",
-        "last_reviewed": "2026-07-15",
-        "interval": 1,
-        "next_review": "2026-07-16"
+        "last_reviewed": "2026-07-16",
+        "interval": 2,
+        "next_review": "2026-07-18"
       }
     },
     "grammar": {
@@ -4186,7 +4192,7 @@
       }
     }
   },
-  "curriculum_idx": 518,
+  "curriculum_idx": 519,
   "generated_count": 0,
   "used_combos": []
 }
