@@ -34,20 +34,20 @@ jobs:
 
       - name: Save story progress
         if: always()
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          for F in story_progress.json performance_log.json; do
-            FP="bot/$F"
-            if [ -f "$FP" ] && [ -s "$FP" ]; then
-              CONTENT=$(base64 -w0 "$FP")
-              SHA=$(curl -s -H "Authorization: token $GH_TOKEN" \
-                "https://api.github.com/repos/${{ github.repository }}/contents/$FP" | \
-                python3 -c "import sys,json; print(json.load(sys.stdin).get('sha',''))" 2>/dev/null || echo "")
-              RESP=$(curl -s -X PUT -H "Authorization: token $GH_TOKEN" \
-                -H "Content-Type: application/json" \
-                -d "{\"message\":\"🤖 Update $F $(date +%Y-%m-%d)\",\"content\":\"$CONTENT\",\"sha\":\"$SHA\"}" \
-                "https://api.github.com/repos/${{ github.repository }}/contents/$FP")
-              echo "$F: $(echo "$RESP" | python3 -c "import sys,json; d=json.load(sys.stdin); print('✅' if d.get('commit') else '❌')" 2>/dev/null)"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git pull --rebase --autostash origin main || true
+          CHANGED=0
+          for F in bot/story_progress.json bot/performance_log.json; do
+            if [ -f "$F" ] && [ -s "$F" ]; then
+              git add "$F"
+              CHANGED=1
             fi
           done
+          if [ "$CHANGED" = "1" ] && ! git diff --cached --quiet; then
+            git commit -m "🤖 Update story progress $(date +%Y-%m-%d)"
+            git push
+          else
+            echo "No story files changed"
+          fi
