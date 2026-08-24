@@ -3023,6 +3023,12 @@
       "file": "day108_mot.mp4",
       "published": true,
       "date": "2026-08-24"
+    },
+    {
+      "type": "Grammaire",
+      "file": "day108_grammaire.mp4",
+      "published": true,
+      "date": "2026-08-24"
     }
   ],
   "last_publish_date": "2026-08-24",
@@ -4109,6 +4115,12 @@
         "last_reviewed": "2026-08-24",
         "interval": 1,
         "next_review": "2026-08-25"
+      },
+      "46": {
+        "first_seen": "2026-08-24",
+        "last_reviewed": "2026-08-24",
+        "interval": 1,
+        "next_review": "2026-08-25"
       }
     },
     "verbs": {
@@ -4366,7 +4378,7 @@
       }
     }
   },
-  "curriculum_idx": 536,
+  "curriculum_idx": 537,
   "generated_count": 0,
   "used_combos": []
 }
