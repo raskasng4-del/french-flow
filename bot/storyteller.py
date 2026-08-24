@@ -313,25 +313,52 @@ async def publish_to_fb(video_path, desc, page_id, access_token):
         os.replace(compressed, video_path)
 
     file_size = os.path.getsize(video_path)
-    api_base = f"https://graph.facebook.com/v22.0/{page_id}"
-    print(f"  📤 Uploading ({file_size / 1024 / 1024:.0f} MB)...")
+    api_base = f"https://graph.facebook.com/v22.0/{page_id}/video_reels"
+    print(f"  📤 Uploading Reel ({file_size / 1024 / 1024:.0f} MB)...")
 
     import aiohttp
     async with aiohttp.ClientSession() as session:
-        with open(video_path, 'rb') as f:
-            data = aiohttp.FormData()
-            data.add_field('source', f, filename='video.mp4', content_type='video/mp4')
-            data.add_field('description', desc)
-            data.add_field('access_token', access_token)
-            async with session.post(f'{api_base}/videos', data=data) as resp:
-                try:
-                    r = await resp.json()
-                    if r.get('id'):
-                        print(f"  ✅ Published ID: {r['id']}"); return True
-                    print(f"  ❌ FB: {r}"); return False
-                except:
-                    body = await resp.text()
-                    print(f"  ❌ FB {resp.status}: {body[:200]}"); return False
+        async with session.post(api_base, data={
+                "upload_phase": "start", "access_token": access_token}) as resp:
+            try:
+                r = await resp.json()
+            except Exception:
+                print(f"  ❌ FB START {resp.status}: {(await resp.text())[:200]}"); return False
+            if not r.get("video_id"):
+                print(f"  ❌ FB START: {r}"); return False
+        video_id = r["video_id"]
+
+        with open(video_path, "rb") as f:
+            video_bytes = f.read()
+        headers = {
+            "Authorization": f"OAuth {access_token}",
+            "offset": "0",
+            "file_size": str(file_size),
+            "Content-Type": "application/octet-stream",
+        }
+        async with session.post(
+                f"https://rupload.facebook.com/video-upload/v22.0/{video_id}",
+                data=video_bytes, headers=headers) as resp:
+            try:
+                r = await resp.json()
+                if not r.get("success"):
+                    print(f"  ❌ FB UPLOAD: {r}"); return False
+            except Exception:
+                body = await resp.text()
+                print(f"  ❌ FB UPLOAD {resp.status}: {body[:200]}"); return False
+
+        async with session.post(api_base, data={
+                "upload_phase": "finish", "video_id": video_id,
+                "video_state": "PUBLISHED", "description": desc,
+                "access_token": access_token}) as resp:
+            try:
+                r = await resp.json()
+                if r.get("success"):
+                    print(f"  ✅ Reel published! ID: {video_id}"); return True
+                print(f"  ❌ FB FINISH: {r}"); return False
+            except Exception:
+                body = await resp.text()
+                print(f"  ❌ FB FINISH {resp.status}: {body[:200]}"); return False
 
 
 # ── Format A: Grammar Quiz ──────────────────────────────────────────────
