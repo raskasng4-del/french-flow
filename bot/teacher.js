@@ -335,34 +335,53 @@ function renderVideo(compositionId, props, outputFile) {
   }
 }
 
-// Publish video to Facebook
+// Publish video as Facebook Reel (3-phase: start -> upload -> finish)
 async function publishToFacebook(videoPath, description, pageId, accessToken) {
   if (!pageId || !accessToken) {
     log("  ⚠️ No Facebook credentials, skipping publish");
     return false;
   }
 
-  log(`  📤 Publishing to Facebook...`);
-  const url = `https://graph.facebook.com/v22.0/${pageId}/videos`;
+  log(`  📤 Publishing Reel to Facebook...`);
+  const graphUrl = `https://graph.facebook.com/v22.0/${pageId}/video_reels`;
 
   try {
+    const startForm = new FormData();
+    startForm.append("upload_phase", "start");
+    startForm.append("access_token", accessToken);
+    const startRes = await fetch(graphUrl, { method: "POST", body: startForm });
+    const start = await startRes.json();
+    if (!start.video_id) throw new Error(`START failed: ${JSON.stringify(start)}`);
+
     const videoBuffer = fs.readFileSync(videoPath);
-    const blob = new Blob([videoBuffer], { type: "video/mp4" });
-    const form = new FormData();
-    form.append("source", blob, path.basename(videoPath));
-    form.append("description", description);
-    form.append("access_token", accessToken);
+    const uploadRes = await fetch(
+      `https://rupload.facebook.com/video-upload/v22.0/${start.video_id}`,
+      {
+        method: "POST",
+        headers: {
+          "Authorization": `OAuth ${accessToken}`,
+          "offset": "0",
+          "file_size": String(videoBuffer.length),
+          "Content-Type": "application/octet-stream",
+        },
+        body: videoBuffer,
+      }
+    );
+    const upload = await uploadRes.json();
+    if (!upload.success) throw new Error(`UPLOAD failed: ${JSON.stringify(upload)}`);
 
-    const response = await fetch(url, { method: "POST", body: form });
-    const result = await response.json();
+    const finishForm = new FormData();
+    finishForm.append("upload_phase", "finish");
+    finishForm.append("video_id", start.video_id);
+    finishForm.append("video_state", "PUBLISHED");
+    finishForm.append("description", description);
+    finishForm.append("access_token", accessToken);
+    const finishRes = await fetch(graphUrl, { method: "POST", body: finishForm });
+    const finish = await finishRes.json();
+    if (!finish.success) throw new Error(`FINISH failed: ${JSON.stringify(finish)}`);
 
-    if (result.id) {
-      log(`  ✅ Published! Video ID: ${result.id}`);
-      return true;
-    } else {
-      log(`  ❌ Facebook error: ${JSON.stringify(result)}`);
-      return false;
-    }
+    log(`  ✅ Reel published! ID: ${start.video_id}`);
+    return true;
   } catch (err) {
     log(`  ❌ Publish failed: ${err.message}`);
     return false;
