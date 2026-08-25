@@ -3131,6 +3131,12 @@
       "file": "day111_quiz.mp4",
       "published": true,
       "date": "2026-08-25"
+    },
+    {
+      "type": "Conjugaison",
+      "file": "day111_conjugaison.mp4",
+      "published": true,
+      "date": "2026-08-25"
     }
   ],
   "last_publish_date": "2026-08-25",
@@ -4555,10 +4561,16 @@
         "last_reviewed": "2026-08-25",
         "interval": 1,
         "next_review": "2026-08-26"
+      },
+      "61": {
+        "first_seen": "2026-08-25",
+        "last_reviewed": "2026-08-25",
+        "interval": 1,
+        "next_review": "2026-08-26"
       }
     }
   },
-  "curriculum_idx": 554,
+  "curriculum_idx": 555,
   "generated_count": 0,
   "used_combos": []
 }
