@@ -3179,9 +3179,15 @@
       "file": "day113_grammaire.mp4",
       "published": true,
       "date": "2026-08-25"
+    },
+    {
+      "type": "PhraseDuJour",
+      "file": "day113_phrase.mp4",
+      "published": true,
+      "date": "2026-08-26"
     }
   ],
-  "last_publish_date": "2026-08-25",
+  "last_publish_date": "2026-08-26",
   "spaced_repetition": {
     "words": {
       "1": {
@@ -4053,6 +4059,12 @@
         "last_reviewed": "2026-08-25",
         "interval": 1,
         "next_review": "2026-08-26"
+      },
+      "148": {
+        "first_seen": "2026-08-26",
+        "last_reviewed": "2026-08-26",
+        "interval": 1,
+        "next_review": "2026-08-27"
       }
     },
     "grammar": {
@@ -4642,7 +4654,7 @@
       }
     }
   },
-  "curriculum_idx": 562,
+  "curriculum_idx": 563,
   "generated_count": 0,
   "used_combos": []
 }
