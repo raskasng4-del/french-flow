@@ -3215,6 +3215,12 @@
       "file": "day114_phrase.mp4",
       "published": true,
       "date": "2026-08-26"
+    },
+    {
+      "type": "Quiz",
+      "file": "day114_quiz.mp4",
+      "published": true,
+      "date": "2026-08-26"
     }
   ],
   "last_publish_date": "2026-08-26",
@@ -4702,7 +4708,7 @@
       }
     }
   },
-  "curriculum_idx": 568,
+  "curriculum_idx": 569,
   "generated_count": 0,
   "used_combos": []
 }
