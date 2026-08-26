@@ -3257,6 +3257,12 @@
       "file": "day115_conjugaison.mp4",
       "published": true,
       "date": "2026-08-26"
+    },
+    {
+      "type": "MotDuJour",
+      "file": "day116_mot.mp4",
+      "published": true,
+      "date": "2026-08-26"
     }
   ],
   "last_publish_date": "2026-08-26",
@@ -4161,6 +4167,12 @@
         "last_reviewed": "2026-08-26",
         "interval": 1,
         "next_review": "2026-08-27"
+      },
+      "153": {
+        "first_seen": "2026-08-26",
+        "last_reviewed": "2026-08-26",
+        "interval": 1,
+        "next_review": "2026-08-27"
       }
     },
     "grammar": {
@@ -4762,7 +4774,7 @@
       }
     }
   },
-  "curriculum_idx": 575,
+  "curriculum_idx": 576,
   "generated_count": 0,
   "used_combos": []
 }
