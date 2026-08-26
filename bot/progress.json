@@ -3221,6 +3221,12 @@
       "file": "day114_quiz.mp4",
       "published": true,
       "date": "2026-08-26"
+    },
+    {
+      "type": "Conjugaison",
+      "file": "day114_conjugaison.mp4",
+      "published": true,
+      "date": "2026-08-26"
     }
   ],
   "last_publish_date": "2026-08-26",
@@ -4540,9 +4546,9 @@
       },
       "19": {
         "first_seen": "2026-07-11",
-        "last_reviewed": "2026-07-11",
-        "interval": 1,
-        "next_review": "2026-07-12"
+        "last_reviewed": "2026-08-26",
+        "interval": 2,
+        "next_review": "2026-08-28"
       },
       "20": {
         "first_seen": "2026-07-12",
@@ -4708,7 +4714,7 @@
       }
     }
   },
-  "curriculum_idx": 569,
+  "curriculum_idx": 570,
   "generated_count": 0,
   "used_combos": []
 }
