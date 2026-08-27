@@ -3281,9 +3281,15 @@
       "file": "day116_quiz.mp4",
       "published": true,
       "date": "2026-08-26"
+    },
+    {
+      "type": "Conjugaison",
+      "file": "day116_conjugaison.mp4",
+      "published": true,
+      "date": "2026-08-27"
     }
   ],
-  "last_publish_date": "2026-08-26",
+  "last_publish_date": "2026-08-27",
   "spaced_repetition": {
     "words": {
       "1": {
@@ -4648,9 +4654,9 @@
       },
       "21": {
         "first_seen": "2026-07-12",
-        "last_reviewed": "2026-07-12",
-        "interval": 1,
-        "next_review": "2026-07-13"
+        "last_reviewed": "2026-08-27",
+        "interval": 2,
+        "next_review": "2026-08-29"
       },
       "22": {
         "first_seen": "2026-07-12",
@@ -4804,7 +4810,7 @@
       }
     }
   },
-  "curriculum_idx": 579,
+  "curriculum_idx": 580,
   "generated_count": 0,
   "used_combos": []
 }
