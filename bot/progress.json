@@ -3335,6 +3335,12 @@
       "file": "day118_phrase.mp4",
       "published": true,
       "date": "2026-08-29"
+    },
+    {
+      "type": "Quiz",
+      "file": "day118_quiz.mp4",
+      "published": true,
+      "date": "2026-08-29"
     }
   ],
   "last_publish_date": "2026-08-29",
@@ -4894,7 +4900,7 @@
       }
     }
   },
-  "curriculum_idx": 588,
+  "curriculum_idx": 589,
   "generated_count": 0,
   "used_combos": []
 }
