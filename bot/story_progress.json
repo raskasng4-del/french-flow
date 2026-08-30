@@ -1,11 +1,11 @@
 {
-  "slot": 1,
+  "slot": 2,
   "current_book": {
     "id": 40284,
     "title": "The Sex Life of the Gods by M. E. Knerr",
     "total_parts": 15
   },
-  "current_part": 3,
+  "current_part": 4,
   "finished_books": [],
   "last_date": "2026-08-30",
   "used_words": [
