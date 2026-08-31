@@ -3389,6 +3389,12 @@
       "file": "day120_grammaire.mp4",
       "published": true,
       "date": "2026-08-31"
+    },
+    {
+      "type": "PhraseDuJour",
+      "file": "day120_phrase.mp4",
+      "published": true,
+      "date": "2026-08-31"
     }
   ],
   "last_publish_date": "2026-08-31",
@@ -4347,6 +4353,12 @@
         "last_reviewed": "2026-08-30",
         "interval": 1,
         "next_review": "2026-08-31"
+      },
+      "162": {
+        "first_seen": "2026-08-31",
+        "last_reviewed": "2026-08-31",
+        "interval": 1,
+        "next_review": "2026-09-01"
       }
     },
     "grammar": {
@@ -4966,7 +4978,7 @@
       }
     }
   },
-  "curriculum_idx": 597,
+  "curriculum_idx": 598,
   "generated_count": 0,
   "used_combos": []
 }
