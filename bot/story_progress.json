@@ -1,5 +1,5 @@
 {
-  "slot": 5,
+  "slot": 0,
   "current_book": {
     "id": 40284,
     "title": "The Sex Life of the Gods by M. E. Knerr",
@@ -35,9 +35,10 @@
     "31"
   ],
   "used_culture": [
-    "9",
     "21",
-    "13",
-    "20"
+    "9",
+    "3",
+    "20",
+    "13"
   ]
 }
