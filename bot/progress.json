@@ -3413,9 +3413,15 @@
       "file": "day121_mot.mp4",
       "published": true,
       "date": "2026-08-31"
+    },
+    {
+      "type": "Grammaire",
+      "file": "day121_grammaire.mp4",
+      "published": true,
+      "date": "2026-09-01"
     }
   ],
-  "last_publish_date": "2026-08-31",
+  "last_publish_date": "2026-09-01",
   "spaced_repetition": {
     "words": {
       "1": {
@@ -4568,9 +4574,9 @@
       },
       "31": {
         "first_seen": "2026-07-11",
-        "last_reviewed": "2026-07-11",
-        "interval": 1,
-        "next_review": "2026-07-12"
+        "last_reviewed": "2026-09-01",
+        "interval": 2,
+        "next_review": "2026-09-03"
       },
       "32": {
         "first_seen": "2026-07-12",
@@ -5002,7 +5008,7 @@
       }
     }
   },
-  "curriculum_idx": 601,
+  "curriculum_idx": 602,
   "generated_count": 0,
   "used_combos": []
 }
