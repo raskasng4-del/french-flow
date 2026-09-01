@@ -3425,6 +3425,12 @@
       "file": "day121_phrase.mp4",
       "published": true,
       "date": "2026-09-01"
+    },
+    {
+      "type": "Quiz",
+      "file": "day121_quiz.mp4",
+      "published": true,
+      "date": "2026-09-01"
     }
   ],
   "last_publish_date": "2026-09-01",
@@ -5020,7 +5026,7 @@
       }
     }
   },
-  "curriculum_idx": 603,
+  "curriculum_idx": 604,
   "generated_count": 0,
   "used_combos": []
 }
