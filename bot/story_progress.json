@@ -1,5 +1,5 @@
 {
-  "slot": 5,
+  "slot": 0,
   "current_book": {
     "id": 40284,
     "title": "The Sex Life of the Gods by M. E. Knerr",
@@ -7,7 +7,7 @@
   },
   "current_part": 5,
   "finished_books": [],
-  "last_date": "2026-09-01",
+  "last_date": "2026-09-02",
   "used_words": [
     "318",
     "72",
@@ -40,9 +40,10 @@
   ],
   "used_culture": [
     "21",
-    "9",
-    "3",
+    "19",
+    "13",
     "20",
-    "13"
+    "9",
+    "3"
   ]
 }
