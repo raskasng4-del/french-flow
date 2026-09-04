@@ -3545,6 +3545,12 @@
       "file": "day125_phrase.mp4",
       "published": true,
       "date": "2026-09-04"
+    },
+    {
+      "type": "Quiz",
+      "file": "day125_quiz.mp4",
+      "published": true,
+      "date": "2026-09-04"
     }
   ],
   "last_publish_date": "2026-09-04",
@@ -5188,7 +5194,7 @@
       }
     }
   },
-  "curriculum_idx": 623,
+  "curriculum_idx": 624,
   "generated_count": 0,
   "used_combos": []
 }
