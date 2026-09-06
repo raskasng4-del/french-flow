@@ -3617,9 +3617,15 @@
       "file": "day127_conjugaison.mp4",
       "published": true,
       "date": "2026-09-05"
+    },
+    {
+      "type": "MotDuJour",
+      "file": "day128_mot.mp4",
+      "published": true,
+      "date": "2026-09-06"
     }
   ],
-  "last_publish_date": "2026-09-05",
+  "last_publish_date": "2026-09-06",
   "spaced_repetition": {
     "words": {
       "1": {
@@ -4665,6 +4671,12 @@
         "last_reviewed": "2026-09-05",
         "interval": 1,
         "next_review": "2026-09-06"
+      },
+      "177": {
+        "first_seen": "2026-09-06",
+        "last_reviewed": "2026-09-06",
+        "interval": 1,
+        "next_review": "2026-09-07"
       }
     },
     "grammar": {
@@ -5284,7 +5296,7 @@
       }
     }
   },
-  "curriculum_idx": 635,
+  "curriculum_idx": 636,
   "generated_count": 0,
   "used_combos": []
 }
