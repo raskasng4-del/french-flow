@@ -3641,6 +3641,12 @@
       "file": "day128_quiz.mp4",
       "published": true,
       "date": "2026-09-06"
+    },
+    {
+      "type": "Conjugaison",
+      "file": "day128_conjugaison.mp4",
+      "published": true,
+      "date": "2026-09-06"
     }
   ],
   "last_publish_date": "2026-09-06",
@@ -5290,9 +5296,9 @@
       },
       "42": {
         "first_seen": "2026-08-24",
-        "last_reviewed": "2026-08-24",
-        "interval": 1,
-        "next_review": "2026-08-25"
+        "last_reviewed": "2026-09-06",
+        "interval": 2,
+        "next_review": "2026-09-08"
       },
       "43": {
         "first_seen": "2026-08-25",
@@ -5320,7 +5326,7 @@
       }
     }
   },
-  "curriculum_idx": 639,
+  "curriculum_idx": 640,
   "generated_count": 0,
   "used_combos": []
 }
