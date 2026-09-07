@@ -3695,6 +3695,12 @@
       "file": "day130_phrase.mp4",
       "published": true,
       "date": "2026-09-07"
+    },
+    {
+      "type": "Quiz",
+      "file": "day130_quiz.mp4",
+      "published": true,
+      "date": "2026-09-07"
     }
   ],
   "last_publish_date": "2026-09-07",
@@ -5398,7 +5404,7 @@
       }
     }
   },
-  "curriculum_idx": 648,
+  "curriculum_idx": 649,
   "generated_count": 0,
   "used_combos": []
 }
