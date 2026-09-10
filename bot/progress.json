@@ -3815,6 +3815,12 @@
       "file": "day134_phrase.mp4",
       "published": true,
       "date": "2026-09-10"
+    },
+    {
+      "type": "Quiz",
+      "file": "day134_quiz.mp4",
+      "published": true,
+      "date": "2026-09-10"
     }
   ],
   "last_publish_date": "2026-09-10",
@@ -5566,7 +5572,7 @@
       }
     }
   },
-  "curriculum_idx": 668,
+  "curriculum_idx": 669,
   "generated_count": 0,
   "used_combos": []
 }
