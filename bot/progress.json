@@ -4091,9 +4091,15 @@
       "file": "day143_quiz.mp4",
       "published": true,
       "date": "2026-09-17"
+    },
+    {
+      "type": "Conjugaison",
+      "file": "day143_conjugaison.mp4",
+      "published": true,
+      "date": "2026-09-18"
     }
   ],
-  "last_publish_date": "2026-09-17",
+  "last_publish_date": "2026-09-18",
   "spaced_repetition": {
     "words": {
       "1": {
@@ -5830,9 +5836,9 @@
       },
       "27": {
         "first_seen": "2026-07-14",
-        "last_reviewed": "2026-09-02",
-        "interval": 2,
-        "next_review": "2026-09-04"
+        "last_reviewed": "2026-09-18",
+        "interval": 4,
+        "next_review": "2026-09-22"
       },
       "28": {
         "first_seen": "2026-07-15",
@@ -5950,7 +5956,7 @@
       }
     }
   },
-  "curriculum_idx": 714,
+  "curriculum_idx": 715,
   "generated_count": 0,
   "used_combos": []
 }
