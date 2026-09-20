@@ -4205,6 +4205,12 @@
       "file": "day147_phrase.mp4",
       "published": true,
       "date": "2026-09-20"
+    },
+    {
+      "type": "Quiz",
+      "file": "day147_quiz.mp4",
+      "published": true,
+      "date": "2026-09-20"
     }
   ],
   "last_publish_date": "2026-09-20",
@@ -6112,7 +6118,7 @@
       }
     }
   },
-  "curriculum_idx": 733,
+  "curriculum_idx": 734,
   "generated_count": 0,
   "used_combos": []
 }
