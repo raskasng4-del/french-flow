@@ -4193,6 +4193,12 @@
       "file": "day147_mot.mp4",
       "published": true,
       "date": "2026-09-20"
+    },
+    {
+      "type": "Grammaire",
+      "file": "day147_grammaire.mp4",
+      "published": true,
+      "date": "2026-09-20"
     }
   ],
   "last_publish_date": "2026-09-20",
@@ -5648,9 +5654,9 @@
       },
       "29": {
         "first_seen": "2026-07-11",
-        "last_reviewed": "2026-08-30",
-        "interval": 2,
-        "next_review": "2026-09-01"
+        "last_reviewed": "2026-09-20",
+        "interval": 4,
+        "next_review": "2026-09-24"
       },
       "30": {
         "first_seen": "2026-07-11",
@@ -6094,7 +6100,7 @@
       }
     }
   },
-  "curriculum_idx": 731,
+  "curriculum_idx": 732,
   "generated_count": 0,
   "used_combos": []
 }
