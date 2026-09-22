@@ -4271,6 +4271,12 @@
       "file": "day149_quiz.mp4",
       "published": true,
       "date": "2026-09-22"
+    },
+    {
+      "type": "Conjugaison",
+      "file": "day149_conjugaison.mp4",
+      "published": true,
+      "date": "2026-09-22"
     }
   ],
   "last_publish_date": "2026-09-22",
@@ -6172,9 +6178,9 @@
       },
       "42": {
         "first_seen": "2026-08-24",
-        "last_reviewed": "2026-09-06",
-        "interval": 2,
-        "next_review": "2026-09-08"
+        "last_reviewed": "2026-09-22",
+        "interval": 4,
+        "next_review": "2026-09-26"
       },
       "43": {
         "first_seen": "2026-08-25",
@@ -6202,7 +6208,7 @@
       }
     }
   },
-  "curriculum_idx": 744,
+  "curriculum_idx": 745,
   "generated_count": 0,
   "used_combos": []
 }
