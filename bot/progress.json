@@ -4291,7 +4291,7 @@
       "date": "2026-09-22"
     }
   ],
-  "last_publish_date": "2026-09-22",
+  "last_publish_date": "2026-09-23",
   "spaced_repetition": {
     "words": {
       "1": {
@@ -6226,7 +6226,7 @@
       }
     }
   },
-  "curriculum_idx": 747,
+  "curriculum_idx": 748,
   "generated_count": 0,
   "used_combos": []
 }
