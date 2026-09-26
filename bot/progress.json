@@ -4331,9 +4331,15 @@
       "file": "day153_grammaire.mp4",
       "published": true,
       "date": "2026-09-25"
+    },
+    {
+      "type": "Conjugaison",
+      "file": "day153_conjugaison.mp4",
+      "published": true,
+      "date": "2026-09-26"
     }
   ],
-  "last_publish_date": "2026-09-25",
+  "last_publish_date": "2026-09-26",
   "spaced_repetition": {
     "words": {
       "1": {
@@ -6268,13 +6274,13 @@
       },
       "61": {
         "first_seen": "2026-08-25",
-        "last_reviewed": "2026-09-09",
-        "interval": 2,
-        "next_review": "2026-09-11"
+        "last_reviewed": "2026-09-26",
+        "interval": 4,
+        "next_review": "2026-09-30"
       }
     }
   },
-  "curriculum_idx": 764,
+  "curriculum_idx": 765,
   "generated_count": 0,
   "used_combos": []
 }
