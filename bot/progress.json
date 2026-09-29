@@ -4379,6 +4379,12 @@
       "file": "day157_grammaire.mp4",
       "published": true,
       "date": "2026-09-29"
+    },
+    {
+      "type": "Conjugaison",
+      "file": "day157_conjugaison.mp4",
+      "published": true,
+      "date": "2026-09-29"
     }
   ],
   "last_publish_date": "2026-09-29",
@@ -6160,9 +6166,9 @@
       },
       "20": {
         "first_seen": "2026-07-12",
-        "last_reviewed": "2026-09-12",
-        "interval": 4,
-        "next_review": "2026-09-16"
+        "last_reviewed": "2026-09-29",
+        "interval": 8,
+        "next_review": "2026-10-07"
       },
       "21": {
         "first_seen": "2026-07-12",
@@ -6322,7 +6328,7 @@
       }
     }
   },
-  "curriculum_idx": 784,
+  "curriculum_idx": 785,
   "generated_count": 0,
   "used_combos": []
 }
