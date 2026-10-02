@@ -4403,9 +4403,15 @@
       "file": "day159_grammaire.mp4",
       "published": true,
       "date": "2026-10-01"
+    },
+    {
+      "type": "Conjugaison",
+      "file": "day159_conjugaison.mp4",
+      "published": true,
+      "date": "2026-10-02"
     }
   ],
-  "last_publish_date": "2026-10-01",
+  "last_publish_date": "2026-10-02",
   "spaced_repetition": {
     "words": {
       "1": {
@@ -6196,9 +6202,9 @@
       },
       "22": {
         "first_seen": "2026-07-12",
-        "last_reviewed": "2026-09-13",
-        "interval": 4,
-        "next_review": "2026-09-17"
+        "last_reviewed": "2026-10-02",
+        "interval": 8,
+        "next_review": "2026-10-10"
       },
       "23": {
         "first_seen": "2026-07-13",
@@ -6346,7 +6352,7 @@
       }
     }
   },
-  "curriculum_idx": 794,
+  "curriculum_idx": 795,
   "generated_count": 0,
   "used_combos": []
 }
