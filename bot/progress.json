@@ -4487,6 +4487,12 @@
       "file": "day166_grammaire.mp4",
       "published": true,
       "date": "2026-10-09"
+    },
+    {
+      "type": "Conjugaison",
+      "file": "day166_conjugaison.mp4",
+      "published": true,
+      "date": "2026-10-09"
     }
   ],
   "last_publish_date": "2026-10-09",
@@ -6322,9 +6328,9 @@
       },
       "29": {
         "first_seen": "2026-07-15",
-        "last_reviewed": "2026-09-19",
-        "interval": 4,
-        "next_review": "2026-09-23"
+        "last_reviewed": "2026-10-09",
+        "interval": 8,
+        "next_review": "2026-10-17"
       },
       "30": {
         "first_seen": "2026-07-16",
@@ -6430,7 +6436,7 @@
       }
     }
   },
-  "curriculum_idx": 829,
+  "curriculum_idx": 830,
   "generated_count": 0,
   "used_combos": []
 }
