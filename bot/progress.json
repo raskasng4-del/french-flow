@@ -4493,9 +4493,15 @@
       "file": "day166_conjugaison.mp4",
       "published": true,
       "date": "2026-10-09"
+    },
+    {
+      "type": "Grammaire",
+      "file": "day167_grammaire.mp4",
+      "published": true,
+      "date": "2026-10-10"
     }
   ],
-  "last_publish_date": "2026-10-09",
+  "last_publish_date": "2026-10-10",
   "spaced_repetition": {
     "words": {
       "1": {
@@ -6110,9 +6116,9 @@
       },
       "49": {
         "first_seen": "2026-08-25",
-        "last_reviewed": "2026-09-14",
-        "interval": 2,
-        "next_review": "2026-09-16"
+        "last_reviewed": "2026-10-10",
+        "interval": 4,
+        "next_review": "2026-10-14"
       },
       "50": {
         "first_seen": "2026-08-25",
@@ -6436,7 +6442,7 @@
       }
     }
   },
-  "curriculum_idx": 831,
+  "curriculum_idx": 832,
   "generated_count": 0,
   "used_combos": []
 }
