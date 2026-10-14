@@ -4529,6 +4529,12 @@
       "file": "day170_conjugaison.mp4",
       "published": true,
       "date": "2026-10-14"
+    },
+    {
+      "type": "Grammaire",
+      "file": "day171_grammaire.mp4",
+      "published": true,
+      "date": "2026-10-14"
     }
   ],
   "last_publish_date": "2026-10-14",
@@ -6170,9 +6176,9 @@
       },
       "53": {
         "first_seen": "2026-08-26",
-        "last_reviewed": "2026-09-17",
-        "interval": 2,
-        "next_review": "2026-09-19"
+        "last_reviewed": "2026-10-14",
+        "interval": 4,
+        "next_review": "2026-10-18"
       },
       "54": {
         "first_seen": "2026-08-26",
@@ -6472,7 +6478,7 @@
       }
     }
   },
-  "curriculum_idx": 851,
+  "curriculum_idx": 852,
   "generated_count": 0,
   "used_combos": []
 }
