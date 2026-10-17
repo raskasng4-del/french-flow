@@ -1,11 +1,11 @@
 {
-  "slot": 1,
+  "slot": 2,
   "current_book": {
     "id": 394,
     "title": "Cranford by Elizabeth Cleghorn Gaskell",
     "total_parts": 32
   },
-  "current_part": 13,
+  "current_part": 14,
   "finished_books": [
     {
       "id": 40284,
@@ -13,7 +13,7 @@
       "total_parts": 15
     }
   ],
-  "last_date": "2026-10-16",
+  "last_date": "2026-10-17",
   "used_words": [
     "190",
     "131",
