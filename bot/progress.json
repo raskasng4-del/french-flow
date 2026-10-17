@@ -4565,6 +4565,12 @@
       "file": "day173_conjugaison.mp4",
       "published": true,
       "date": "2026-10-17"
+    },
+    {
+      "type": "Grammaire",
+      "file": "day174_grammaire.mp4",
+      "published": true,
+      "date": "2026-10-17"
     }
   ],
   "last_publish_date": "2026-10-17",
@@ -6224,9 +6230,9 @@
       },
       "56": {
         "first_seen": "2026-08-29",
-        "last_reviewed": "2026-09-19",
-        "interval": 2,
-        "next_review": "2026-09-21"
+        "last_reviewed": "2026-10-17",
+        "interval": 4,
+        "next_review": "2026-10-21"
       }
     },
     "verbs": {
@@ -6508,7 +6514,7 @@
       }
     }
   },
-  "curriculum_idx": 866,
+  "curriculum_idx": 867,
   "generated_count": 0,
   "used_combos": []
 }
