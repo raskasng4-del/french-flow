@@ -4607,9 +4607,15 @@
       "file": "day177_grammaire.mp4",
       "published": true,
       "date": "2026-10-19"
+    },
+    {
+      "type": "Conjugaison",
+      "file": "day177_conjugaison.mp4",
+      "published": true,
+      "date": "2026-10-20"
     }
   ],
-  "last_publish_date": "2026-10-19",
+  "last_publish_date": "2026-10-20",
   "spaced_repetition": {
     "words": {
       "1": {
@@ -6382,9 +6388,9 @@
       },
       "19": {
         "first_seen": "2026-07-11",
-        "last_reviewed": "2026-09-28",
-        "interval": 8,
-        "next_review": "2026-10-06"
+        "last_reviewed": "2026-10-20",
+        "interval": 16,
+        "next_review": "2026-11-05"
       },
       "20": {
         "first_seen": "2026-07-12",
@@ -6550,7 +6556,7 @@
       }
     }
   },
-  "curriculum_idx": 884,
+  "curriculum_idx": 885,
   "generated_count": 0,
   "used_combos": []
 }
