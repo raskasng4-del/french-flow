@@ -4715,9 +4715,15 @@
       "file": "day184_quiz.mp4",
       "published": true,
       "date": "2026-10-25"
+    },
+    {
+      "type": "Conjugaison",
+      "file": "day184_conjugaison.mp4",
+      "published": true,
+      "date": "2026-10-26"
     }
   ],
-  "last_publish_date": "2026-10-25",
+  "last_publish_date": "2026-10-26",
   "spaced_repetition": {
     "words": {
       "1": {
@@ -6710,6 +6716,12 @@
         "interval": 1,
         "next_review": "2026-10-26"
       },
+      "48": {
+        "first_seen": "2026-10-26",
+        "last_reviewed": "2026-10-26",
+        "interval": 1,
+        "next_review": "2026-10-27"
+      },
       "60": {
         "first_seen": "2026-08-25",
         "last_reviewed": "2026-10-17",
@@ -6724,7 +6736,7 @@
       }
     }
   },
-  "curriculum_idx": 919,
+  "curriculum_idx": 920,
   "generated_count": 0,
   "used_combos": []
 }
