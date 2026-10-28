@@ -4739,9 +4739,15 @@
       "file": "day186_grammaire.mp4",
       "published": true,
       "date": "2026-10-27"
+    },
+    {
+      "type": "Quiz",
+      "file": "day186_quiz.mp4",
+      "published": true,
+      "date": "2026-10-28"
     }
   ],
-  "last_publish_date": "2026-10-27",
+  "last_publish_date": "2026-10-28",
   "spaced_repetition": {
     "words": {
       "1": {
@@ -6087,6 +6093,12 @@
         "last_reviewed": "2026-10-25",
         "interval": 1,
         "next_review": "2026-10-26"
+      },
+      "234": {
+        "first_seen": "2026-10-28",
+        "last_reviewed": "2026-10-28",
+        "interval": 1,
+        "next_review": "2026-10-29"
       }
     },
     "grammar": {
@@ -6772,7 +6784,7 @@
       }
     }
   },
-  "curriculum_idx": 928,
+  "curriculum_idx": 929,
   "generated_count": 0,
   "used_combos": []
 }
