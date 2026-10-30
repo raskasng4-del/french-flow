@@ -4777,7 +4777,7 @@
       "date": "2026-10-29"
     }
   ],
-  "last_publish_date": "2026-10-29",
+  "last_publish_date": "2026-10-30",
   "spaced_repetition": {
     "words": {
       "1": {
@@ -6844,7 +6844,7 @@
       }
     }
   },
-  "curriculum_idx": 937,
+  "curriculum_idx": 938,
   "generated_count": 0,
   "used_combos": []
 }
