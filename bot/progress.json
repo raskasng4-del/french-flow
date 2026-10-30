@@ -4775,6 +4775,12 @@
       "file": "day188_grammaire.mp4",
       "published": true,
       "date": "2026-10-29"
+    },
+    {
+      "type": "Quiz",
+      "file": "day188_quiz.mp4",
+      "published": true,
+      "date": "2026-10-30"
     }
   ],
   "last_publish_date": "2026-10-30",
@@ -6135,6 +6141,12 @@
         "last_reviewed": "2026-10-29",
         "interval": 1,
         "next_review": "2026-10-30"
+      },
+      "238": {
+        "first_seen": "2026-10-30",
+        "last_reviewed": "2026-10-30",
+        "interval": 1,
+        "next_review": "2026-10-31"
       }
     },
     "grammar": {
@@ -6844,7 +6856,7 @@
       }
     }
   },
-  "curriculum_idx": 938,
+  "curriculum_idx": 939,
   "generated_count": 0,
   "used_combos": []
 }
