@@ -4841,6 +4841,12 @@
       "file": "day191_conjugaison.mp4",
       "published": true,
       "date": "2026-11-03"
+    },
+    {
+      "type": "Grammaire",
+      "file": "day192_grammaire.mp4",
+      "published": true,
+      "date": "2026-11-03"
     }
   ],
   "last_publish_date": "2026-11-03",
@@ -6629,6 +6635,12 @@
         "last_reviewed": "2026-11-02",
         "interval": 1,
         "next_review": "2026-11-03"
+      },
+      "68": {
+        "first_seen": "2026-11-03",
+        "last_reviewed": "2026-11-03",
+        "interval": 1,
+        "next_review": "2026-11-04"
       }
     },
     "verbs": {
@@ -6976,7 +6988,7 @@
       }
     }
   },
-  "curriculum_idx": 956,
+  "curriculum_idx": 957,
   "generated_count": 0,
   "used_combos": []
 }
