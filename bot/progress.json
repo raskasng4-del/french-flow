@@ -4925,6 +4925,12 @@
       "file": "day196_quiz.mp4",
       "published": true,
       "date": "2026-11-09"
+    },
+    {
+      "type": "Grammaire",
+      "file": "day197_grammaire.mp4",
+      "published": true,
+      "date": "2026-11-10"
     }
   ],
   "last_publish_date": "2026-11-10",
@@ -6773,6 +6779,12 @@
         "last_reviewed": "2026-11-08",
         "interval": 1,
         "next_review": "2026-11-09"
+      },
+      "73": {
+        "first_seen": "2026-11-10",
+        "last_reviewed": "2026-11-10",
+        "interval": 1,
+        "next_review": "2026-11-11"
       }
     },
     "verbs": {
@@ -7144,7 +7156,7 @@
       }
     }
   },
-  "curriculum_idx": 981,
+  "curriculum_idx": 982,
   "generated_count": 0,
   "used_combos": []
 }
