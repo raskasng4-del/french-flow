@@ -4967,6 +4967,12 @@
       "file": "day199_grammaire.mp4",
       "published": true,
       "date": "2026-11-13"
+    },
+    {
+      "type": "Quiz",
+      "file": "day199_quiz.mp4",
+      "published": true,
+      "date": "2026-11-13"
     }
   ],
   "last_publish_date": "2026-11-13",
@@ -6393,6 +6399,12 @@
         "last_reviewed": "2026-11-12",
         "interval": 1,
         "next_review": "2026-11-13"
+      },
+      "260": {
+        "first_seen": "2026-11-13",
+        "last_reviewed": "2026-11-13",
+        "interval": 1,
+        "next_review": "2026-11-14"
       }
     },
     "grammar": {
@@ -7216,7 +7228,7 @@
       }
     }
   },
-  "curriculum_idx": 993,
+  "curriculum_idx": 994,
   "generated_count": 0,
   "used_combos": []
 }
