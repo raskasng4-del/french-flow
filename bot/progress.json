@@ -4973,9 +4973,15 @@
       "file": "day199_quiz.mp4",
       "published": true,
       "date": "2026-11-13"
+    },
+    {
+      "type": "Conjugaison",
+      "file": "day199_conjugaison.mp4",
+      "published": true,
+      "date": "2026-11-14"
     }
   ],
-  "last_publish_date": "2026-11-13",
+  "last_publish_date": "2026-11-14",
   "spaced_repetition": {
     "words": {
       "1": {
@@ -7138,9 +7144,9 @@
       },
       "47": {
         "first_seen": "2026-10-25",
-        "last_reviewed": "2026-10-25",
-        "interval": 1,
-        "next_review": "2026-10-26"
+        "last_reviewed": "2026-11-14",
+        "interval": 2,
+        "next_review": "2026-11-16"
       },
       "48": {
         "first_seen": "2026-10-26",
@@ -7228,7 +7234,7 @@
       }
     }
   },
-  "curriculum_idx": 994,
+  "curriculum_idx": 995,
   "generated_count": 0,
   "used_combos": []
 }
