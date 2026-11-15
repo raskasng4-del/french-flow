@@ -4997,6 +4997,12 @@
       "file": "day200_conjugaison.mp4",
       "published": true,
       "date": "2026-11-15"
+    },
+    {
+      "type": "Grammaire",
+      "file": "day201_grammaire.mp4",
+      "published": true,
+      "date": "2026-11-15"
     }
   ],
   "last_publish_date": "2026-11-15",
@@ -6893,6 +6899,12 @@
         "last_reviewed": "2026-11-14",
         "interval": 1,
         "next_review": "2026-11-15"
+      },
+      "77": {
+        "first_seen": "2026-11-15",
+        "last_reviewed": "2026-11-15",
+        "interval": 1,
+        "next_review": "2026-11-16"
       }
     },
     "verbs": {
@@ -7264,7 +7276,7 @@
       }
     }
   },
-  "curriculum_idx": 1001,
+  "curriculum_idx": 1002,
   "generated_count": 0,
   "used_combos": []
 }
