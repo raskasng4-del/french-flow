@@ -5057,6 +5057,12 @@
       "file": "day204_grammaire.mp4",
       "published": true,
       "date": "2026-11-20"
+    },
+    {
+      "type": "Quiz",
+      "file": "day204_quiz.mp4",
+      "published": true,
+      "date": "2026-11-20"
     }
   ],
   "last_publish_date": "2026-11-20",
@@ -6513,6 +6519,12 @@
         "last_reviewed": "2026-11-19",
         "interval": 1,
         "next_review": "2026-11-20"
+      },
+      "270": {
+        "first_seen": "2026-11-20",
+        "last_reviewed": "2026-11-20",
+        "interval": 1,
+        "next_review": "2026-11-21"
       }
     },
     "grammar": {
@@ -7366,7 +7378,7 @@
       }
     }
   },
-  "curriculum_idx": 1018,
+  "curriculum_idx": 1019,
   "generated_count": 0,
   "used_combos": []
 }
