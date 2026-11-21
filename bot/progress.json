@@ -5063,9 +5063,15 @@
       "file": "day204_quiz.mp4",
       "published": true,
       "date": "2026-11-20"
+    },
+    {
+      "type": "Conjugaison",
+      "file": "day204_conjugaison.mp4",
+      "published": true,
+      "date": "2026-11-21"
     }
   ],
-  "last_publish_date": "2026-11-20",
+  "last_publish_date": "2026-11-21",
   "spaced_repetition": {
     "words": {
       "1": {
@@ -7318,9 +7324,9 @@
       },
       "52": {
         "first_seen": "2026-10-30",
-        "last_reviewed": "2026-10-30",
-        "interval": 1,
-        "next_review": "2026-10-31"
+        "last_reviewed": "2026-11-21",
+        "interval": 2,
+        "next_review": "2026-11-23"
       },
       "53": {
         "first_seen": "2026-10-31",
@@ -7378,7 +7384,7 @@
       }
     }
   },
-  "curriculum_idx": 1019,
+  "curriculum_idx": 1020,
   "generated_count": 0,
   "used_combos": []
 }
