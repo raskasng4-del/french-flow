@@ -5075,9 +5075,15 @@
       "file": "day205_grammaire.mp4",
       "published": true,
       "date": "2026-11-21"
+    },
+    {
+      "type": "Quiz",
+      "file": "day205_quiz.mp4",
+      "published": true,
+      "date": "2026-11-22"
     }
   ],
-  "last_publish_date": "2026-11-21",
+  "last_publish_date": "2026-11-22",
   "spaced_repetition": {
     "words": {
       "1": {
@@ -6537,6 +6543,12 @@
         "last_reviewed": "2026-11-20",
         "interval": 1,
         "next_review": "2026-11-21"
+      },
+      "272": {
+        "first_seen": "2026-11-22",
+        "last_reviewed": "2026-11-22",
+        "interval": 1,
+        "next_review": "2026-11-23"
       }
     },
     "grammar": {
@@ -7396,7 +7408,7 @@
       }
     }
   },
-  "curriculum_idx": 1023,
+  "curriculum_idx": 1024,
   "generated_count": 0,
   "used_combos": []
 }
