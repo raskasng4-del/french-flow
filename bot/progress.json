@@ -5105,9 +5105,15 @@
       "file": "day206_conjugaison.mp4",
       "published": true,
       "date": "2026-11-24"
+    },
+    {
+      "type": "Grammaire",
+      "file": "day207_grammaire.mp4",
+      "published": true,
+      "date": "2026-11-25"
     }
   ],
-  "last_publish_date": "2026-11-24",
+  "last_publish_date": "2026-11-25",
   "spaced_repetition": {
     "words": {
       "1": {
@@ -7073,6 +7079,12 @@
         "last_reviewed": "2026-11-23",
         "interval": 1,
         "next_review": "2026-11-24"
+      },
+      "83": {
+        "first_seen": "2026-11-25",
+        "last_reviewed": "2026-11-25",
+        "interval": 1,
+        "next_review": "2026-11-26"
       }
     },
     "verbs": {
@@ -7444,7 +7456,7 @@
       }
     }
   },
-  "curriculum_idx": 1031,
+  "curriculum_idx": 1032,
   "generated_count": 0,
   "used_combos": []
 }
