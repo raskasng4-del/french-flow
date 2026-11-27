@@ -5135,6 +5135,12 @@
       "file": "day208_quiz.mp4",
       "published": true,
       "date": "2026-11-27"
+    },
+    {
+      "type": "Conjugaison",
+      "file": "day208_conjugaison.mp4",
+      "published": true,
+      "date": "2026-11-27"
     }
   ],
   "last_publish_date": "2026-11-27",
@@ -7462,9 +7468,9 @@
       },
       "56": {
         "first_seen": "2026-11-04",
-        "last_reviewed": "2026-11-04",
-        "interval": 1,
-        "next_review": "2026-11-05"
+        "last_reviewed": "2026-11-27",
+        "interval": 2,
+        "next_review": "2026-11-29"
       },
       "57": {
         "first_seen": "2026-11-05",
@@ -7498,7 +7504,7 @@
       }
     }
   },
-  "curriculum_idx": 1039,
+  "curriculum_idx": 1040,
   "generated_count": 0,
   "used_combos": []
 }
